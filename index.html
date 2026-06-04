@@ -2,138 +2,123 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Catalogo Parti YOYO</title>
+<title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
 <style>
     body { font-family: Arial; margin: 20px; }
-    #loginBox { max-width: 300px; margin: 100px auto; text-align: center; }
-    #catalogo { display: none; }
-    input { padding: 6px; width: 250px; margin: 5px 0; }
-    button { padding: 6px 12px; margin-top: 10px; }
+    .hidden { display: none; }
     table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 6px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
     th { background: #eee; }
 </style>
 </head>
+
 <body>
+
+<h2>YOYO UNIQUE SPARE PARTS CATALOGUE</h2>
 
 <!-- LOGIN -->
 <div id="loginBox">
-    <h2>Accesso Catalogo Parti</h2>
-    <input type="password" id="pwd" placeholder="Inserisci password">
-    <br>
-    <button onclick="login()">Entra</button>
-    <p id="msg" style="color:red;"></p>
+    <p>Inserisci la password per accedere:</p>
+    <input type="password" id="pwd">
+    <button onclick="checkPwd()">Entra</button>
+    <p id="pwdMsg" style="color:red;"></p>
 </div>
 
-<!-- CATALOGO -->
-<div id="catalogo">
-    <h2>Catalogo Parti YOYO</h2>
+<!-- CONTENUTO PRINCIPALE -->
+<div id="main" class="hidden">
 
     <h3>Identificazione modello tramite VIN</h3>
-    <input type="text" id="vinInput" maxlength="6" placeholder="Ultime 6 cifre VIN">
-    <button onclick="identificaModello()">Identifica modello</button>
-    <p id="modelInfo"></p>
+    <p>Inserisci le ultime 6 cifre del VIN:</p>
+    <input type="text" id="vinInput" maxlength="6">
+    <button onclick="identificaModello()">Identifica</button>
+    <p id="modelInfo" style="font-weight:bold;"></p>
 
-    <h3>Ricerca per nome</h3>
-    <input type="text" id="nomeInput" oninput="cercaPerNome()" placeholder="Nome parte (anche parziale)">
+    <hr>
 
-    <h3>Ricerca per codice</h3>
-    <input type="text" id="codiceInput" oninput="cercaPerCodice()" placeholder="Codice parte (anche parziale)">
+    <h3>Catalogo ricambi</h3>
+    <p>(In attesa del file catalogo.csv)</p>
 
-    <table id="risultatiTable">
-        <thead>
-            <tr>
-                <th>Modello</th>
-                <th>Esploso</th>
-                <th>Rif</th>
-                <th>Codice</th>
-                <th>Nome</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
 </div>
 
 <script>
+// ------------------------------
 // PASSWORD DI ACCESSO
-const PASSWORD = "YOYO2024"; // puoi cambiarla
+// ------------------------------
+const PASSWORD = "YOYO2024";
 
-function login() {
-    const pwd = document.getElementById("pwd").value;
-    if (pwd === PASSWORD) {
-        document.getElementById("loginBox").style.display = "none";
-        document.getElementById("catalogo").style.display = "block";
+function checkPwd() {
+    const p = document.getElementById("pwd").value;
+    if (p === PASSWORD) {
+        document.getElementById("loginBox").classList.add("hidden");
+        document.getElementById("main").classList.remove("hidden");
     } else {
-        document.getElementById("msg").textContent = "Password errata";
+        document.getElementById("pwdMsg").textContent = "Password errata";
     }
 }
 
-// DATI DI TEST (poi li sostituiremo con i CSV da OneDrive)
-let vinTable = [
-    { vin6: "123456", modello: "YOYO" },
-    { vin6: "654321", modello: "YOYO PLUS" }
-];
+// ------------------------------
+// CARICAMENTO VIN.csv DA ONEDRIVE
+// ------------------------------
+let vinTable = [];
 
-let catalogo = [
-    { modello: "YOYO", esploso: "MOTORE_01", rif: "12", codice: "ABC123456", nome: "Filtro olio" },
-    { modello: "YOYO", esploso: "MOTORE_01", rif: "13", codice: "ABC123457", nome: "Guarnizione filtro olio" },
-    { modello: "YOYO PLUS", esploso: "FRENI_02", rif: "5", codice: "DEF987654", nome: "Pastiglia freno anteriore" }
-];
+const VIN_URL = "https://xevglobaleu-my.sharepoint.com/:x:/g/personal/cloud_xev-global_eu/IQCBOm05PfeySKjXBJjqcMFjAXE2biGFMNnOhNDwYN2bK6o?e=DHEWJT";
 
+async function caricaVIN() {
+    try {
+        const response = await fetch(VIN_URL);
+        const text = await response.text();
+
+        const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
+
+        for (let i = 1; i < righe.length; i++) {
+            const [start, end, modello] = righe[i].split(",");
+
+            vinTable.push({
+                start: parseInt(start),
+                end: parseInt(end),
+                modello: modello.trim()
+            });
+        }
+
+        console.log("VIN.csv caricato:", vinTable);
+
+    } catch (e) {
+        console.error("Errore nel caricamento VIN.csv:", e);
+    }
+}
+
+caricaVIN();
+
+// ------------------------------
+// IDENTIFICAZIONE MODELLO
+// ------------------------------
 let modelloCorrente = null;
 
-// IDENTIFICA MODELLO
 function identificaModello() {
-    const vin = document.getElementById("vinInput").value.trim();
-    const record = vinTable.find(r => r.vin6 === vin);
-    const info = document.getElementById("modelInfo");
+    const vinInput = document.getElementById("vinInput").value.trim();
+
+    if (vinInput.length !== 6 || isNaN(vinInput)) {
+        document.getElementById("modelInfo").textContent = "Inserisci 6 cifre numeriche";
+        return;
+    }
+
+    const vinNumber = parseInt(vinInput);
+
+    const record = vinTable.find(r =>
+        vinNumber >= r.start && vinNumber <= r.end
+    );
 
     if (record) {
         modelloCorrente = record.modello;
-        info.textContent = "Modello identificato: " + modelloCorrente;
+        document.getElementById("modelInfo").textContent =
+            "Modello identificato: " + modelloCorrente;
     } else {
         modelloCorrente = null;
-        info.textContent = "VIN non trovato";
+        document.getElementById("modelInfo").textContent =
+            "VIN non trovato nei range";
     }
-    aggiornaRisultati([]);
 }
 
-// RICERCA PER NOME
-function cercaPerNome() {
-    if (!modelloCorrente) return;
-    const t = document.getElementById("nomeInput").value.toLowerCase();
-    const risultati = catalogo.filter(p =>
-        p.modello === modelloCorrente && p.nome.toLowerCase().includes(t)
-    );
-    aggiornaRisultati(risultati);
-}
-
-// RICERCA PER CODICE
-function cercaPerCodice() {
-    if (!modelloCorrente) return;
-    const t = document.getElementById("codiceInput").value.toLowerCase();
-    const risultati = catalogo.filter(p =>
-        p.modello === modelloCorrente && p.codice.toLowerCase().includes(t)
-    );
-    aggiornaRisultati(risultati);
-}
-
-// AGGIORNA TABELLA
-function aggiornaRisultati(lista) {
-    const tbody = document.querySelector("#risultatiTable tbody");
-    tbody.innerHTML = "";
-    lista.forEach(p => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-            <td>${p.modello}</td>
-            <td>${p.esploso}</td>
-            <td>${p.rif}</td>
-            <td>${p.codice}</td>
-            <td>${p.nome}</td>
-        `;
-        tbody.appendChild(tr);
-    });
-}
 </script>
 
 </body>

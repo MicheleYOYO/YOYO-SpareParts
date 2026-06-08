@@ -1371,7 +1371,7 @@ B5305040Y0230,Armrest assy,1,* * * MY24
 5306040Y0210,Lower body assembly instrument panel,1,* * * MY24
 5306208Y0230,Instrument front pad,3,* * * MY24
 5402011Y0230,Guard panel inside front left wall side wall,1,* * * MY24
-5703011Y0240,Roof ceiling, interior,1,* * * MY24
+5703011Y0240,Roof ceiling interior,1,* * * MY24
 5703021Y0240,Service opening cap left hinge tailgate,1,* * * MY24
 5703022Y0240,Service opening cap right hinge tailgate,1,* * * MY24
 6102031Y0240D,Intermediate left trim panel,1,* * * MY24
@@ -1388,12 +1388,12 @@ B5305040Y0230,Armrest assy,1,* * * MY24
 5305013Y0230,Cup pad,1,* * * MY24
 5305014Y0230,Middle storage box pad,1,* * * MY24
 5305017Y0230D,Spray paint panel assembly, auxiliary dashboard,1,* * * MY24
-3102111Y0240,Guard panel, front left wheel cowling,1,* * * MY24
-3102112Y0240,Guard panel, front right wheel cowling,1,* * * MY24
-3102113Y0240,Guard panel, rear left wheel cowling,1,* * * MY24
-3102117Y0240,Side trim panel, rear left wheel cowling,1,* * * MY24
-3102114Y0240,Guard panel, rear right wheel cowling,1,* * * MY24
-3102118Y0240,Side trim panel, rear right wheel cowling,1,* * * MY24
+3102111Y0240,Guard panel front left wheel cowling,1,* * * MY24
+3102112Y0240,Guard panel front right wheel cowling,1,* * * MY24
+3102113Y0240,Guard panel rear left wheel cowling,1,* * * MY24
+3102117Y0240,Side trim panel rear left wheel cowling,1,* * * MY24
+3102114Y0240,Guard panel rear right wheel cowling,1,* * * MY24
+3102118Y0240,Side trim panel rear right wheel cowling,1,* * * MY24
 5603100Y0250,Rear windshield glass assy,1,* * * MY24
 5206010Y0240,Front windshield glass,1,* * * MY24
 5107103Y0230,Bottom guard,1,* * * MY24

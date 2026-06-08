@@ -420,12 +420,12 @@ BNJ-0270,Tail light buckle,4,MY23 * * MY24
 5810020-Y01,Seat belt assembly - right,1,MY23 MY22 MY22.5 MY24
 5810011-Y01,Seat belt buckle-left,1,MY23 MY22 MY22.5 MY24
 5810021-Y01,Seat belt buckle- right,1,MY23 MY22 MY22.5 MY24
-6101710Y0210,Front guide rail assy, left door,1,MY23 * * MY24
-6101720Y0210,Front guide rail assy, right door,1,MY23 * * MY24
-6101750Y0210,Rubber coating assy, rear guide rail, left door,1,MY23 * * MY24
-6107127Y0210,Rear mud groove, left door,1,MY23 * * MY24
+6101710Y0210,Front guide rail assy left door,1,MY23 * * MY24
+6101720Y0210,Front guide rail assy right door,1,MY23 * * MY24
+6101750Y0210,Rubber coating assy rear guide rail, left door,1,MY23 * * MY24
+6107127Y0210,Rear mud groove left door,1,MY23 * * MY24
 6101733Y0210,Mounting block of rear triangular window-Left,1,MY23 * * MY24
-6101760Y0210,Rubber coating assy, rear guide rail, right door,1,MY23 * * MY24
+6101760Y0210,Rubber coating assy rear guide rail, right door,1,MY23 * * MY24
 6107128Y0210,Rear mud groove, right door,1,MY23 * * MY24
 6101734Y0210,Mounting block of rear triangular window- Right,1,MY23 * * MY24
 6101901Y0205,Upper waterproof membrane assy, left door,1,MY23 MY22 MY22.5 MY24

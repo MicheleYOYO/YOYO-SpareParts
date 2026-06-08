@@ -118,11 +118,11 @@ S32008001,hexagon nut with flange,3,MY23 MY22 MY22.5 *
 3508102Y0210,Front section parking cable,1,MY23 * * *
 3508103Y0210,Left parking cable,1,MY23 * * *
 3508104Y0210,Right parking cable,1,MY23 * * *
-3506048Y0210,Spring retainer ring, parking wire-drawing,1,MY23 * * *
+3506048Y0210,Spring retainer ring parking wire-drawing,1,MY23 * * *
 S50108001,Locking pin,1,MY23 MY22 MY22.5 MY24
 S18406003,Hexagon bolt with flange,3,MY23 MY22 MY22.5 *
 3540103Y0211,Electronic vacuum pump,1,MY23 * * MY24
-3540104Y0211,Vent hose, electronic vacuum pump,1,MY23 * * *
+3540104Y0211,Vent hose electronic vacuum pump,1,MY23 * * *
 Q402B06,gasket,2,MY23 MY22 MY22.5 *
 3540102Y0211,vacuum tank,1,MY23 * * MY24
 3540108Y0211,Vacuum tank bracket,1,MY23 * * *

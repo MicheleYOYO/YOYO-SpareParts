@@ -456,11 +456,10 @@ S99006121,Cross-recessed countersunk-head screw and cone saw locking washer assy
 6105520Y0205D,Outer handle assy right door,1,MY23 MY22 MY22.5 MY24
 6307111Y0210,Sealing strip. tailgate,1,MY23 * * MY24
 6307113-Y01,Upper sealing strip tailgate,1,MY23 MY22 MY22.5 *
-6307114Y0210,Upper sealing strip, tailgate,1,MY23 MY22 * *
-6107117Y0210,Outer weather strip, left door glass,1,MY23 * * *
-6107118Y0210,Outer weather strip, right door glass,1,MY23 * * *
-6107121Y0210,Inner weather strip, left door glass,1,MY23 * * MY24
-6107122Y0210,Inner weather strip, right door glass,1,MY23 * * MY24
+6307114Y0210,Upper sealing strip tailgate,1,MY23 MY22 * *
+6107117Y0210,Outer weather strip right door glass,1,MY23 * * *
+6107121Y0210,Inner weather strip left door glass,1,MY23 * * MY24
+6107122Y0210,Inner weather strip right door glass,1,MY23 * * MY24
 6107111Y0210,Seal strip, front left door opening,1,MY23 * * MY24
 6107112Y0210,Seal strip, front right door opening,1,MY23 * * MY24
 6107113Y0210,Upper seal strip, front left door opening,1,MY23 * * MY24

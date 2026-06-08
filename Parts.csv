@@ -1350,8 +1350,8 @@ S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2
 5301510-Y01,Wiper holder assembly,1,* * * MY24
 5301530-Y01,Front windshield upper beam assembly,1,* * * MY24
 5301570Y0240,Front windshield lower beam assembly,1,* * * MY24
-5301039-Y01,Upper mounting bracket reinforcing plate, the steering column,1,* * * MY24
-5301541-Y01,Upper mounting bracket assembly, steering column,1,* * * MY24
+5301039-Y01,Upper mounting bracket reinforcing plate the steering column,1,* * * MY24
+5301541-Y01,Upper mounting bracket assembly steering column,1,* * * MY24
 5301971Y0230,VCU mounting bracket assembly,1,* * * MY24
 5101125Y0230,Underfloor protection panel mounting bracket assembly,2,* * * MY24
 S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,* * * MY24
@@ -1363,17 +1363,17 @@ S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,* * * MY24
 B5305040Y0230,Armrest assy,1,* * * MY24
 5305065Y0230,Rubber pad,1,* * * MY24
 5305064Y0230D,Left trim panel, Armrest,1,* * * MY24
-5305066Y0230D,Right trim panel, Armrest,1,* * * MY24
-5306020Y0240,Upper Body assembly, instrument panel,1,* * * MY24
-5306134Y0240,Storage box, instrument panel,1,* * * MY24
+5305066Y0230D,Right trim panel Armrest,1,* * * MY24
+5306020Y0240,Upper Body assembly instrument panel,1,* * * MY24
+5306134Y0240,Storage box instrument panel,1,* * * MY24
 5306140-Y01,Right tuyere assy,1,* * * MY24
 5306151Y0240D,Instrument mask,1,* * * MY24
-5306040Y0210,Lower body assembly, instrument panel,1,* * * MY24
+5306040Y0210,Lower body assembly instrument panel,1,* * * MY24
 5306208Y0230,Instrument front pad,3,* * * MY24
-5402011Y0230,Guard panel, inside front left wall, side wall,1,* * * MY24
+5402011Y0230,Guard panel inside front left wall, side wall,1,* * * MY24
 5703011Y0240,Roof ceiling, interior,1,* * * MY24
-5703021Y0240,Service opening cap, left hinge, tailgate,1,* * * MY24
-5703022Y0240,Service opening cap, right hinge, tailgate,1,* * * MY24
+5703021Y0240,Service opening cap, left hinge tailgate,1,* * * MY24
+5703022Y0240,Service opening cap, right hinge tailgate,1,* * * MY24
 6102031Y0240D,Intermediate left trim panel,1,* * * MY24
 6102021Y0260,Right door Inner panel,1,* * * MY24
 6102041Y0240D,Intermediate right trim panel,1,* * * MY24

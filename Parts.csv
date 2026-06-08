@@ -641,8 +641,8 @@ ZH850,C-shaped buckle,2,MY23 MY22 MY22.5 MY24
 1108001-Y01,Acceleration System,1,* MY22 * *
 1108010-Y01,Electrical accelerator pedal,1,* MY22 MY22.5 *
 Q1860625,Hexagon bolt with flange,3,* MY22 MY22.5 *
-2101000-Y01,Power battery assy* MY22 * *
-2101000-Y0201,Power Battery Assy (with battery lock) (ENI customized version)* MY22 * *
+2101000-Y01,Power battery assy,1,* MY22 * *
+2101000-Y0201,Power Battery Assy (with battery lock) (ENI customized version),1,* MY22 * *
 2101010-Y01,Power battery box,1,* MY22 * *
 2101010Y0201,Power battery box* MY22 * *
 2101013-Y01,Anti-friction bushing,6,* MY22 MY22.5 *

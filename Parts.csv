@@ -1008,15 +1008,15 @@ Z039,Screw,4,* MY22 MY22.5 *
 3774013-Y01,Steering shield-lower ,1,* MY22 MY22.5 *
 5305001-Y01,Auxiliary Dashboard System,1,* MY22 * *
 5402001-Y01,Column Guard Panel System,1,* MY22 * *
-5402021-Y01,Guard panel, inside front right wall, side wall,1,* MY22 MY22.5 *
+5402021-Y01,Guard panel inside front right wall side wall,1,* MY22 MY22.5 *
 5703001-Y01,Interiors and Ceiling System,1,* MY22 * *
 6102001-Y01,front door system,1,* MY22 * *
-6102071-Y01,Trim panel, front window, left door,1,* MY22 MY22.5 *
+6102071-Y01,Trim panel front window left door,1,* MY22 MY22.5 *
 6102075-Y01D,Left door outer panel,1,* MY22 MY22.5 *
 6102073-Y01D,Left door upper trim panel,1,* MY22 MY22.5 *
 6102011-Y01,Left door inner panel,1,* MY22 MY22.5 *
-6102079-Y01,Mounting plate, PE Switch,1,* MY22 MY22.5 *
-6102081-Y01,Trim panel, front window, right door,1,* MY22 MY22.5 *
+6102079-Y01,Mounting plate PE Switch,1,* MY22 MY22.5 *
+6102081-Y01,Trim panel front window, right door,1,* MY22 MY22.5 *
 6102076-Y01D,Right door outer panel,1,* MY22 MY22.5 *
 6102040-Y01,Right door inner panel assembly,1,* MY22 MY22.5 *
 6102021-Y01,right door Inner panel,1,* MY22 MY22.5 *
@@ -1027,22 +1027,22 @@ Z039,Screw,4,* MY22 MY22.5 *
 5200010-Y01,Windshield Glass System,1,* MY22 * *
 5109100-Y01,Carpet system,1,* MY22 * *
 5109101-Y01,Carpet body,1,* MY22 MY22.5 *
-5109106-Y01,Insulator cushion I, carpet,1,* MY22 MY22.5 *
-5109107-Y01,Insulator cushion II, carpet,1,* MY22 MY22.5 *
-5109108-Y01,Insulator cushion III, carpet,2,* MY22 MY22.5 *
+5109106-Y01,Insulator cushion I carpet,1,* MY22 MY22.5 *
+5109107-Y01,Insulator cushion II carpet,1,* MY22 MY22.5 *
+5109108-Y01,Insulator cushion III carpet,2,* MY22 MY22.5 *
 2101010Y0205,Power battery box,1,* * MY22.5 *
 2101014-Y01,Battery box assembly,1,* * MY22.5 *
 210101AY0205,Battery negative wiring harness,1,* * MY22.5 *
 210101CY0205,Battery box communication wiring harness,1,* * MY22.5 *
 2101020Y0205,Power battery module,3,* * MY22.5 *
 2101011Y0205,Battery sampling unit? BSU?,3,* * MY22.5 *
-2109013Y0205,Left mounting bracket, BSU        ,3,* * MY22.5 *
-2109014Y0205,Rightt mounting bracket, BSU        ,3,* * MY22.5 *
+2109013Y0205,Left mounting bracket BSU,3,* * MY22.5 *
+2109014Y0205,Rightt mounting bracket BSU,3,* * MY22.5 *
 2109010Y0205,Control box, power system (formerly HV box),1,* * MY22.5 *
 2109011Y0205,Power system control box body,1,* * MY22.5 *
 2101012Y0205,HV sampling case,1,* * MY22.5 *
-2109113Y0205,Communications wiring harness, high-voltage box,1,* * MY22.5 *
-2105030Y0205,High voltage wiring harness, auxiliary system,1,* * MY22.5 *
+2109113Y0205,Communications wiring harness high-voltage box,1,* * MY22.5 *
+2105030Y0205,High voltage wiring harness auxiliary system,1,* * MY22.5 *
 2107020Y0200,European standard charging base,1,* * MY22.5 *
 2108010Y0205,Vehicle control unit,1,* * MY22.5 *
 3601010Y0205,Body control module?BCM?,1,* * MY22.5 *

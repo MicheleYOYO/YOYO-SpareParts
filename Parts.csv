@@ -237,7 +237,7 @@ ZH1210,Plastic nut seat,2,MY23 MY22 MY22.5 MY24
 3703010-Y01,12V Battery,1,MY23 MY22 MY22.5 *
 3721010Y0210,High pitch horn,1,MY23 * * *
 3721020Y0210,low speed alarm (AVAS),1,MY23 * * *
-S14606003,Hexagon bolt, spring washer and plain washer assy,1,MY23 * * MY24
+S14606003,Hexagon bolt spring washer and plain washer assy,1,MY23 * * MY24
 3736010-Y01,Power off switch,1,MY23 MY22 MY22.5 *
 3736011-Y01,Power-off switch shield,1,MY23 MY22 * *
 3746010-Y01,Windows regulator control switch,2,MY23 MY22 MY22.5 *
@@ -246,18 +246,18 @@ S14606003,Hexagon bolt, spring washer and plain washer assy,1,MY23 * * MY24
 S23004001,Cross recessed pan head screw,2,MY23 MY22 MY22.5 MY24
 3778010Y0200,Steering wheel lock,1,MY23 * MY22.5 MY24
 3781010Y0210,Shift switch,1,MY23 * MY22.5 *
-3782010-Y01,Adjusting switch, electric rear-view mirror,1,MY23 MY22 MY22.5 MY24
+3782010-Y01,Adjusting switch electric rear-view mirror,1,MY23 MY22 MY22.5 MY24
 3790020-Y01,Tailgate open switch,1,MY23 MY22 MY22.5 MY24
-3790040Y0210,Movable door assy, rear bumper,1,MY23 * * MY24
+3790040Y0210,Movable door assy rear bumper,1,MY23 * * MY24
 3504102Y0210,Brake switch,1,MY23 * * MY24
 3504102-Y01,Brake switch,1,MY23 MY22 MY22.5 *
 3736020Y0200,Power off switch shield,1,MY23 * * *
-3790010Y0210,Lock cylinder, left door,1,MY23 * * *
+3790010Y0210,Lock cylinder left door,1,MY23 * * *
 3790030-Y01,Circlip, lock cylinder, left door,1,MY23 MY22 MY22.5 MY24
 3791010Y0210,Remote key casing,2,MY23 * * *
 3791012Y0210,Key gear piece,1,MY23 * * *
 3791001Y0210,Remote key assy,2,MY23 * * MY24
-3790010Y0210-Z001,Lock cylinder , left door,1,MY23 * * MY24
+3790010Y0210-Z001,Lock cylinder left door,1,MY23 * * MY24
 4002010Y0210,Front compartment wiring harness,1,MY23 * * *
 4002020Y0210,Roof wiring harness assembly hall version,1,MY23 * * *
 4002030Y0210,Left door wiring harness assy (Hall version),1,MY23 * * *

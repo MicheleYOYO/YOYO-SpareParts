@@ -979,8 +979,8 @@ ZH860,Tail light buckle,4,* MY22 MY22.5 *
 5302003-Y01,Front flow flume body,1,* MY22 * *
 8402500-Y01,Hood Trim System,1,* MY22 * *
 B8402510-Y01D,Front hood assy,1,* MY22 * *
-8402517Y01A,Left mount, hood,1,* MY22 * *
-8402518Y01A,Right mount, hood,1,* MY22 * *
+8402517Y01A,Left mount hood,1,* MY22 * *
+8402518Y01A,Right mount hood,1,* MY22 * *
 5302010-Y01,Cover plate assy front charging port,1,* MY22 * *
 5302011-Y01D,Cover plate front charging port,1,* MY22 MY22.5 *
 5302013-Y01,Inner plate front charging port,1,* MY22 * *
@@ -994,12 +994,12 @@ Z054,spring,1,* MY22 * *
 2803001-Y01D,Front bumper body,1,* MY22 MY22.5 *
 Z039,Screw,4,* MY22 MY22.5 *
 2804500-Y01,Rear bumper system,1,* MY22 * *
-2804520-Y01D,Movable door assy, rear bumper,1,* MY22 MY22.5 *
+2804520-Y01D,Movable door assy rear bumper,1,* MY22 MY22.5 *
 2804515-Y01,Anti-theft bolt M8*45,2,* MY22 MY22.5 *
 2804507,?25 blanking cap,2,* MY22 MY22.5 *
 5306001-Y01,Dashboard System,1,* MY22 * *
 5306131-Y01,Instrument Panel,1,* MY22 MY22.5 *
-5306104-Y01,Air duct, central air outlet,1,* MY22 MY22.5 *
+5306104-Y01,Air duct central air outlet,1,* MY22 MY22.5 *
 5306136-Y01,Left defrosting duct,1,* MY22 MY22.5 *
 5306141-Y01,Right defrosting duct,1,* MY22 MY22.5 *
 5306030-Y01,Front defrost assembly,1,* MY22 MY22.5 *

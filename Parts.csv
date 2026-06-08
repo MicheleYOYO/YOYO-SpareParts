@@ -1452,7 +1452,7 @@ S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zin
 4133042Y0240,Rear right retroreflector,1,* * * MY24
 6302010Y0240D,Upper panel spoiler hood,1,* * * MY24
 6103200Y0240,Windshield assy right door,1,* * * MY24
-6104120Y0230,Electric window regulator assy, right door,1,* * * MY24
+6104120Y0230,Electric window regulator assy right door,1,* * * MY24
 6103100Y0240,Windshield assy left door,1,* * * MY24
 6104110Y0230,Electric window regulator assy left door,1,* * * MY24
 6107118Y0230,Outer weather strip right door glass,1,* * * MY24
@@ -1462,22 +1462,22 @@ S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zin
 6309103Y0240,Ball stud air spring,2,* * * MY24
 S99008001,Hexagon flange nut M8 Silver Dacromet,4,* * * MY24
 6309300Y0240,Tailgate buffer block,2,* * * MY24
-6309101Y0240,Mounting bracket pneumatic stay bar, tailgate- left,1,* * * MY24
-6309102Y0240,Mounting bracket pneumatic stay bar, tailgate- right,1,* * * MY24
+6309101Y0240,Mounting bracket pneumatic stay bar tailgate- left,1,* * * MY24
+6309102Y0240,Mounting bracket pneumatic stay bar tailgate- right,1,* * * MY24
 Z6900100Y0230,Front left seat assembly,1,* * * MY24
 Z6900200Y0230,Front right seat assembly,1,* * * MY24
 S40210002,Large washer ?10 black Dacromet,4,* * * MY24
 8201010Y0205,Inner rear-view mirror,1,* * * MY24
 8204010Y0230,Sun visor assembly,2,* * * MY24
-5606032Y0210,Handle, front charging port cap lock,1,* * * MY24
-5606033Y0210,Cap lock cable, front charging port,1,* * * MY24
+5606032Y0210,Handle front charging port cap lock,1,* * * MY24
+5606033Y0210,Cap lock cable front charging port,1,* * * MY24
 4133010Y0250,Rear left combination light assy,1,* * * MY24
 4133020Y0250,Rear right combination light assy,1,* * * MY24
-6105207Y0260,Trim, door lock latch,2,* * * MY24
-5606011Y0205,Electric lock system body, tailgate,1,* * * MY24
+6105207Y0260,Trim door lock latch,2,* * * MY24
+5606011Y0205,Electric lock system body tailgate,1,* * * MY24
 4121010Y0210,Front left combination light assy (Thick-walled part of daytime running light),1,* * * MY24
 4121901Y0210,H7 bulb,2,* * * MY24
-4121903Y0210,Rear cover, front left combination light,2,* * * MY24
+4121903Y0210,Rear cover front left combination light,2,* * * MY24
 4121020Y0210,Front right combination light assy (Thick-walled part of daytime running light),1,* * * MY24
 5111020Y0280,Hot melt ?20 hole plug,4,* * * MY24
 5111040Y0280,Hot melt ?40 hole plug,4,* * * MY24

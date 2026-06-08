@@ -151,26 +151,26 @@ S32006003,hexagon nut with flange,2,MY23 MY22 MY22.5 MY24
 3506112Y0210,rear brake hose,2,MY23 * * *
 3506106Y0210,Punched bolts,4,MY23 * * MY24
 3506107Y0210,Sealing washer,8,MY23 * * MY24
-3506105Y0210,Spring retainer ring, brake hose,4,MY23 * * MY24
+3506105Y0210,Spring retainer ring brake hose,4,MY23 * * MY24
 3550101-Y01,ABS controller,1,MY23 MY22 MY22.5 *
-3550111-Y01,Mounting sleeve, ABS controller,1,MY23 MY22 MY22.5 *
+3550111-Y01,Mounting sleeve ABS controller,1,MY23 MY22 MY22.5 *
 3926010-Y01,Warning triangles,1,MY23 MY22 MY22.5 MY24
 3926020-Y01,Reflective vest,1,MY23 * * MY24
 2101020Y0210,Power battery module,3,MY23 * * MY24
 2101024Y0210,Module cover plate 1,1,MY23 * * MY24
 2101025Y0210,Module cover plate 2,1,MY23 * * MY24
-2101026Y0210,Fixing plate, wiring harness,1,MY23 * * MY24
-2101037Y0210,Handle, battery pack,1,MY23 * * MY24
-2101038Y0210,Fixing sheet metal, handle,2,MY23 * * MY24
+2101026Y0210,Fixing plate wiring harness,1,MY23 * * MY24
+2101037Y0210,Handle battery pack,1,MY23 * * MY24
+2101038Y0210,Fixing sheet metal handle,2,MY23 * * MY24
 2101039Y0210,Y02 heating film,1,MY23 * * MY24
 2101040Y0210,Seal ring,3,MY23 * * MY24
-2101041Y0210,Flexible connection, positive terminal,1,MY23 * * MY24
-2101042Y0210,Flexible connection, negative terminal,1,MY23 * * MY24
-2101043Y0210,Switching hard copper bar, negative terminal,1,MY23 * * MY24
+2101041Y0210,Flexible connection positive terminal,1,MY23 * * MY24
+2101042Y0210,Flexible connection negative terminal,1,MY23 * * MY24
+2101043Y0210,Switching hard copper bar negative terminal,1,MY23 * * MY24
 2101011Y0210,BSU,1,MY23 * * MY24
 2101049Y0210-Z001,Quick wiring harness assy,1,MY23 * * MY24
 2101044Y0210,Bottom hole 3.7 plastic rivets BNJ-0005B,5,MY23 * * MY24
-2101045Y0210,Model: VV-P124-00-KS1, breather valve,1,MY23 * * MY24
+2101045Y0210,Model: VV-P124-00-KS1 breather valve,1,MY23 * * MY24
 2101055Y0210,M6*12 Outer hexagon Dacromet bolts with flange (with  nylon adhesive),3,MY23 * * MY24
 2101056Y0210,M5*30 Outer hexagon Dacromet bolts, single coil lock washer and plain washer assemblies,4,MY23 * * MY24
 2101057Y0210,Prevailing torque type hexagon Dacromet nuts with flange (non-metallic insert),2,MY23 * * MY24

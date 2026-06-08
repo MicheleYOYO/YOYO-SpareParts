@@ -422,33 +422,33 @@ BNJ-0270,Tail light buckle,4,MY23 * * MY24
 5810021-Y01,Seat belt buckle- right,1,MY23 MY22 MY22.5 MY24
 6101710Y0210,Front guide rail assy left door,1,MY23 * * MY24
 6101720Y0210,Front guide rail assy right door,1,MY23 * * MY24
-6101750Y0210,Rubber coating assy rear guide rail, left door,1,MY23 * * MY24
+6101750Y0210,Rubber coating assy rear guide rail left door,1,MY23 * * MY24
 6107127Y0210,Rear mud groove left door,1,MY23 * * MY24
 6101733Y0210,Mounting block of rear triangular window-Left,1,MY23 * * MY24
-6101760Y0210,Rubber coating assy rear guide rail, right door,1,MY23 * * MY24
-6107128Y0210,Rear mud groove, right door,1,MY23 * * MY24
+6101760Y0210,Rubber coating assy rear guide rail right door,1,MY23 * * MY24
+6107128Y0210,Rear mud groove right door,1,MY23 * * MY24
 6101734Y0210,Mounting block of rear triangular window- Right,1,MY23 * * MY24
-6101901Y0205,Upper waterproof membrane assy, left door,1,MY23 MY22 MY22.5 MY24
-6101902Y0205,Upper waterproof membrane assy, right door,1,MY23 MY22 MY22.5 MY24
-6101903Y0205,Lower waterproof membrane, left&right door,2,MY23 MY22 MY22.5 MY24
-6104110Y0210,Electric window regulator assy, left door,1,MY23 * * *
-6104120Y0210,Electric window regulator assy, right door,1,MY23 * * *
-6105101Y0205,Electronic controlling lock body, left door,1,MY23 * * MY24
-6105103Y0205,Pull rod, electronic controlling lock,left door,1,MY23 * * MY24
-6105105Y0205,Pull rod, electronic controlling lock cylinder,left door,1,MY23 * * MY24
-6105107Y0205,Lock catch, electronic controlling Lock, door,1,MY23 * * MY24
-6105111Y0205,Electronic controlling lock cable, left door,2,MY23 * * MY24
+6101901Y0205,Upper waterproof membrane assy left door,1,MY23 MY22 MY22.5 MY24
+6101902Y0205,Upper waterproof membrane assy right door,1,MY23 MY22 MY22.5 MY24
+6101903Y0205,Lower waterproof membrane left&right door,2,MY23 MY22 MY22.5 MY24
+6104110Y0210,Electric window regulator assy left door,1,MY23 * * *
+6104120Y0210,Electric window regulator assy right door,1,MY23 * * *
+6105101Y0205,Electronic controlling lock body left door,1,MY23 * * MY24
+6105103Y0205,Pull rod electronic controlling lockleft door,1,MY23 * * MY24
+6105105Y0205,Pull rod electronic controlling lock cylinder left door,1,MY23 * * MY24
+6105107Y0205,Lock catch electronic controlling Lock door,1,MY23 * * MY24
+6105111Y0205,Electronic controlling lock cable left door,2,MY23 * * MY24
 S25808001,Cross recessed countersunk head screw and countersunk external toothed lock washer,4,MY23 * * MY24
 S99006121,Cross-recessed countersunk-head screw and cone saw locking washer assy,6,MY23 * * MY24
-6105102Y0205,Electronic controlling lock body, right door,1,MY23 * * MY24
-6105104Y0205,Pull rod, electronic controlling lock, right door,1,MY23 * * MY24
-5606011-Y01,Electric lock system body, tailgate,1,MY23 MY22 MY22.5 *
-6105107-Y01,Lock catch, electronic controlling lock, door,1,MY23 MY22 MY22.5 *
-5606032-Y01,Handle, front charging port cap lock,1,MY23 MY22 MY22.5 *
-5606033-Y01,Cap lock cable, front charging port,1,MY23 MY22 MY22.5 *
+6105102Y0205,Electronic controlling lock body right door,1,MY23 * * MY24
+6105104Y0205,Pull rod electronic controlling lock right door,1,MY23 * * MY24
+5606011-Y01,Electric lock system body tailgate,1,MY23 MY22 MY22.5 *
+6105107-Y01,Lock catch electronic controlling lock door,1,MY23 MY22 MY22.5 *
+5606032-Y01,Handle front charging port cap lock,1,MY23 MY22 MY22.5 *
+5606033-Y01,Cap lock cable front charging port,1,MY23 MY22 MY22.5 *
 5606034-Y01,Fastener ties ?7,3,MY23 MY22 MY22.5 *
-5606410Y0210,Lock assy, battery box,2,MY23 * * MY24
-5606420Y0210,Locking hook assy, battery box,2,MY23 * * MY24
+5606410Y0210,Lock assy battery box,2,MY23 * * MY24
+5606420Y0210,Locking hook assy battery box,2,MY23 * * MY24
 5606600Y0210,Bobes recess flange screw with black nickel plating M6 1.0 ,4,MY23 * * MY24
 6105330Y0205,Inner handle assemly-left,1,MY23 MY22 MY22.5 MY24
 6105340Y0205,Inner handle assemly-right,1,MY23 MY22 MY22.5 MY24

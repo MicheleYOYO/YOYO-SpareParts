@@ -964,14 +964,14 @@ ZH860,Tail light buckle,4,* MY22 MY22.5 *
 5702010-Y01D,Roof cover assembly,1,* MY22 * *
 5702015-Y01,Butyl rubber adhesive tape for waterproof and sealing,1,* MY22 MY22.5 *
 5702017-Y01,Waterproof sealing washer roof cover,4,* MY22 MY22.5 *
-802011,Sealant, front windscreen (soft),1,* MY22 * *
+802011,Sealant front windscreen (soft),1,* MY22 * *
 5400009-Y01,Exterior SystemSide Wall ,1,* MY22 * *
-5400010-Y01D,Trim panel assy front upper section, left wall,1,* MY22 MY22.5 *
-5400030-Y01D,Trim panel assy rear upper section, left wall,1,* MY22 MY22.5 *
+5400010-Y01D,Trim panel assy front upper section left wall,1,* MY22 MY22.5 *
+5400030-Y01D,Trim panel assy rear upper section left wall,1,* MY22 MY22.5 *
 5400331-Y01,Left side body outer small trim,1,* MY22 * *
 5400332-Y01,Left side body inner small trim,1,* MY22 * *
-5400020-Y01D,Trim panel assy front upper section, right wall,1,* MY22 MY22.5 *
-5400040-Y01D,Trim panel assy rear upper section, right wall,1,* MY22 MY22.5 *
+5400020-Y01D,Trim panel assy front upper section right wall,1,* MY22 MY22.5 *
+5400040-Y01D,Trim panel assy rear upper section right wall,1,* MY22 MY22.5 *
 5400341-Y01,Right side body outer small trim,1,* MY22 * *
 5400342-Y01,Right side body inner small trim,1,* MY22 * *
 8403100-Y01,fender  system,1,* MY22 * *
@@ -981,11 +981,11 @@ ZH860,Tail light buckle,4,* MY22 MY22.5 *
 B8402510-Y01D,Front hood assy,1,* MY22 * *
 8402517Y01A,Left mount, hood,1,* MY22 * *
 8402518Y01A,Right mount, hood,1,* MY22 * *
-5302010-Y01,Cover plate assy, front charging port,1,* MY22 * *
-5302011-Y01D,Cover plate, front charging port,1,* MY22 MY22.5 *
-5302013-Y01,Inner plate, front charging port,1,* MY22 * *
+5302010-Y01,Cover plate assy front charging port,1,* MY22 * *
+5302011-Y01D,Cover plate front charging port,1,* MY22 MY22.5 *
+5302013-Y01,Inner plate front charging port,1,* MY22 * *
 5302015-Y01,Front charging port base,1,* MY22 * *
-5302017-Y01,Rotating shaft, front charging port,1,* MY22 * *
+5302017-Y01,Rotating shaft front charging port,1,* MY22 * *
 Q5002525,Split pin,1,* MY22 * *
 Z054,spring,1,* MY22 * *
 5302030-Y01,Front charging port base assy,1,* MY22 MY22.5 *

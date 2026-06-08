@@ -47,11 +47,13 @@ async function caricaVIN() {
     for (let i = 1; i < righe.length; i++) {
         const [start, end, modello] = righe[i].split(",");
         vinTable.push({
-            start: parseInt(start),
-            end: parseInt(end),
+            start: parseInt(start.trim()),
+            end: parseInt(end.trim()),
             modello: modello.trim()
         });
     }
+
+    console.log("VIN.csv caricato:", vinTable);
 }
 caricaVIN();
 
@@ -61,18 +63,31 @@ caricaVIN();
 // ------------------------------------------------------
 function identificaModello() {
     const vinInput = document.getElementById("vinInput").value.trim();
-    const vinNumber = parseInt(vinInput);
+    if (!vinInput) {
+        modelloCorrente = "";
+        document.getElementById("risultatoVIN").innerText = "Inserisci un VIN valido";
+        mostraRicambi();
+        return;
+    }
 
+    const vinNumber = parseInt(vinInput);
     modelloCorrente = "";
+
     for (let r of vinTable) {
         if (vinNumber >= r.start && vinNumber <= r.end) {
-            modelloCorrente = r.modello;
+            modelloCorrente = r.modello.trim();
             break;
         }
     }
 
-    document.getElementById("risultatoVIN").innerText =
-        modelloCorrente ? "Modello identificato: " + modelloCorrente : "VIN non trovato";
+    if (!modelloCorrente) {
+        document.getElementById("risultatoVIN").innerText = "VIN non trovato nei range";
+    } else {
+        document.getElementById("risultatoVIN").innerText =
+            "Modello identificato: " + modelloCorrente;
+    }
+
+    console.log("VIN:", vinInput, "→ modello VIN:", modelloCorrente);
 
     mostraRicambi();
 }
@@ -95,18 +110,20 @@ async function caricaParts() {
 
         // PULIZIA MODELLI: rimuove *, spazi doppi, ecc.
         const modelliPuliti = modello
-            .replace(/\*/g, "")       // rimuove asterischi
+            .replace(/\*/g, "")   // rimuove asterischi
             .trim()
-            .split(/\s+/);            // divide per spazi multipli
+            .split(/\s+/)        // divide per spazi
+            .filter(m => m.length > 0); // elimina vuoti
 
         partsTable.push({
             codice: codice.trim(),
             descrizione: descrizione.trim(),
             quantita: quantita.trim(),
-            modelli: modelliPuliti    // array di modelli
+            modelli: modelliPuliti
         });
     }
 
+    console.log("Parts.csv caricato:", partsTable);
     mostraRicambi();
 }
 caricaParts();
@@ -117,7 +134,7 @@ caricaParts();
 // ------------------------------------------------------
 const MODEL_MAP = {
     "Y0210": "MY23",
-    "Y01": "MY22",
+    "Y01":   "MY22",
     "Y0205": "MY22.5",
     "Y0230": "MY24"
 };
@@ -130,19 +147,39 @@ function mostraRicambi() {
     let html = "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
 
-    let modelloParts = MODEL_MAP[modelloCorrente];
-
-    partsTable.forEach(p => {
-        // Se non c'è modello VIN → mostra tutto
-        if (!modelloParts || p.modelli.includes(modelloParts)) {
+    // Se non abbiamo ancora identificato un modello VIN → mostra tutto
+    if (!modelloCorrente) {
+        partsTable.forEach(p => {
             html += "<tr>";
             html += "<td>" + p.codice + "</td>";
             html += "<td>" + p.descrizione + "</td>";
             html += "<td>" + p.quantita + "</td>";
             html += "<td>" + p.modelli.join(", ") + "</td>";
             html += "</tr>";
+        });
+    } else {
+        const modelloParts = MODEL_MAP[modelloCorrente.trim()];
+        console.log("Modello VIN:", modelloCorrente, "→ modello ricambi:", modelloParts);
+
+        if (!modelloParts) {
+            html += "<tr><td colspan='4'>Modello VIN non mappato</td></tr>";
+        } else {
+            const filtrati = partsTable.filter(p => p.modelli.includes(modelloParts));
+
+            filtrati.forEach(p => {
+                html += "<tr>";
+                html += "<td>" + p.codice + "</td>";
+                html += "<td>" + p.descrizione + "</td>";
+                html += "<td>" + p.quantita + "</td>";
+                html += "<td>" + p.modelli.join(", ") + "</td>";
+                html += "</tr>";
+            });
+
+            if (filtrati.length === 0) {
+                html += "<tr><td colspan='4'>Nessun ricambio disponibile per questo modello</td></tr>";
+            }
         }
-    });
+    }
 
     html += "</table>";
     document.getElementById("partsBox").innerHTML = html;

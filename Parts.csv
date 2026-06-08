@@ -1038,7 +1038,7 @@ Z039,Screw,4,* MY22 MY22.5 *
 2101011Y0205,Battery sampling unit? BSU?,3,* * MY22.5 *
 2109013Y0205,Left mounting bracket BSU,3,* * MY22.5 *
 2109014Y0205,Rightt mounting bracket BSU,3,* * MY22.5 *
-2109010Y0205,Control box, power system (formerly HV box),1,* * MY22.5 *
+2109010Y0205,Control box power system (formerly HV box),1,* * MY22.5 *
 2109011Y0205,Power system control box body,1,* * MY22.5 *
 2101012Y0205,HV sampling case,1,* * MY22.5 *
 2109113Y0205,Communications wiring harness high-voltage box,1,* * MY22.5 *
@@ -1053,7 +1053,7 @@ Z039,Screw,4,* MY22 MY22.5 *
 8105010Y0205,Condenser assembly,1,* * MY22.5 *
 8108010Y0205,Compressor suction pipe (EU filler),1,* * MY22.5 *
 8108020Y0205,Compressor exhaust pipe,1,* * MY22.5 *
-8108030Y0205,Fluid inlet pipe, evaporation tank,1,* * MY22.5 *
+8108030Y0205,Fluid inlet pipe evaporation tank,1,* * MY22.5 *
 8112010Y0205,Air conditioning control panel assembly,1,* * MY22.5 *
 Q38312,II type Hexagon slotted nut,2,* * MY22.5 *
 Q5003222,Split pin,2,* * MY22.5 *

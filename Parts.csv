@@ -510,41 +510,41 @@ S21406001,Cross recessed pan-headed screw,4,MY23 MY22 * MY24
 5301000Y0210,Front wall assy,1,MY23 * * *
 5101750Y0210,Seat assy,1,MY23 * * *
 5101940-Y01,Rear floor assy,1,MY23 MY22 MY22.5 *
-5601111-Y01,Outer plate assy, rear wall,1,MY23 * * *
-5401350-Y01,Inner panel component, left A-pillar,1,MY23 MY22 MY22.5 MY24
-5401360-Y01,Inner panel component, right A-pillar,1,MY23 MY22 MY22.5 MY24
-5401230-Y01,Inner panel assy, left doorsill,1,MY23 MY22 MY22.5 MY24
-5401240-Y01,Inner panel assy, right doorsill,1,MY23 MY22 MY22.5 *
-5401030-Y01,Inner panel assy, doorsill, left side wall,1,MY23 MY22 MY22.5 MY24
-5401040-Y01,Inner panel assy, doorsill, right side wall,1,MY23 MY22 MY22.5 MY24
+5601111-Y01,Outer plate assy rear wall,1,MY23 * * *
+5401350-Y01,Inner panel component left A-pillar,1,MY23 MY22 MY22.5 MY24
+5401360-Y01,Inner panel component right A-pillar,1,MY23 MY22 MY22.5 MY24
+5401230-Y01,Inner panel assy left doorsill,1,MY23 MY22 MY22.5 MY24
+5401240-Y01,Inner panel assy right doorsill,1,MY23 MY22 MY22.5 *
+5401030-Y01,Inner panel assy doorsill left side wall,1,MY23 MY22 MY22.5 MY24
+5401040-Y01,Inner panel assy doorsill right side wall,1,MY23 MY22 MY22.5 MY24
 5401010-Y01,Left side wall assy,1,MY23 MY22 MY22.5 *
 5401020-Y01,Right side wall assy,1,MY23 MY22 MY22.5 *
 5701010-Y01,Roof cover assy,1,MY23 MY22 MY22.5 *
 5101270Y0205,Two-in-one mounting bracket assy,1,MY23 * MY22.5 *
-5101273Y0210,Mounting bracket, condenser,2,MY23 * * *
+5101273Y0210,Mounting bracket condenser,2,MY23 * * *
 5101901-Y01,Access panel,1,MY23 MY22 MY22.5 *
 5306147-Y01,Sponge bar (W12*8),2,2,MY23 * * *
-5301811-Y01,Tie rod, battery,2,MY23 MY22 MY22.5 *
+5301811-Y01,Tie rod battery,2,MY23 MY22 MY22.5 *
 5301813-Y01,Pressing plate,1,MY23 MY22 MY22.5 *
-5101467-Y01,Mounting plate, power-off Switch,1,MY23 MY22 MY22.5 *
-5103520-Y01,Intermediate mounting bracket assy, rear bumper,1,MY23 MY22 MY22.5 *
-5101187Y0210,Component, MCU mounting bracket I,1,MY23 * * MY24
-5101191Y0210,Component, MCU mounting bracket II,1,MY23 * * MY24
+5101467-Y01,Mounting plate power-off Switch,1,MY23 MY22 MY22.5 *
+5103520-Y01,Intermediate mounting bracket assy rear bumper,1,MY23 MY22 MY22.5 *
+5101187Y0210,Component MCU mounting bracket I,1,MY23 * * MY24
+5101191Y0210,Component MCU mounting bracket II,1,MY23 * * MY24
 6101100Y0210,Front left door assy,1,MY23 * * MY24
-6106010Y0210,Upper hinge, side door,1,MY23 * * MY24
-6106030Y0210,Lower hinge, side door,1,MY23 * * MY24
+6106010Y0210,Upper hinge side door,1,MY23 * * MY24
+6106030Y0210,Lower hinge side door,1,MY23 * * MY24
 S18608010,Hexagon bolt with flange,8,MY23 MY22 MY22.5 MY24
 6101200Y0210,Front right door assy,1,MY23 * * MY24
-6301591-Y01,Mounting plate, tailgate lock,1,MY23 MY22 MY22.5 *
-6301552-Y01,Right mounting plate, buffer block, tailgate,1,MY23 MY22 MY22.5 *
-6301551-Y01,Left mounting plate, buffer block, tailgate,1,MY23 MY22 MY22.5 *
+6301591-Y01,Mounting plate tailgate lock,1,MY23 MY22 MY22.5 *
+6301552-Y01,Right mounting plate buffer block tailgate,1,MY23 MY22 MY22.5 *
+6301551-Y01,Left mounting plate buffer block tailgate,1,MY23 MY22 MY22.5 *
 6306310Y0205,Tailgate hinge,2,MY23 * MY22.5 *
-6301711-Y01,Upper crossbeam assy, inner frame, tailgate,1,MY23 * * *
-5401170-Y01,Mounting bracket component, left tubular beam,1,MY23 MY22 MY22.5 MY24
-5401180-Y01,Mounting bracket component, right tubular beam,1,MY23 MY22 MY22.5 MY24
-5133990Y0211,Rear crossbeam, power battery box,1,MY23 * * MY24
+6301711-Y01,Upper crossbeam assy inner frame tailgate,1,MY23 * * *
+5401170-Y01,Mounting bracket component left tubular beam,1,MY23 MY22 MY22.5 MY24
+5401180-Y01,Mounting bracket component right tubular beam,1,MY23 MY22 MY22.5 MY24
+5133990Y0211,Rear crossbeam power battery box,1,MY23 * * MY24
 S18510003,Hexagon head bolt with flange,2,MY23 * * MY24
-5133910Y0210,Welding assy, power battery body,1,MY23 * * *
+5133910Y0210,Welding assy power battery body,1,MY23 * * *
 5133992Y0210,Front cover plate, power battery box,1,MY23 * * *
 S14604001,Hexagon head bolt, spring washer and plain washer assy,12,MY23 * * MY24
 5301710Y0210,Cross beam body assy, dashboard,1,MY23 * * *

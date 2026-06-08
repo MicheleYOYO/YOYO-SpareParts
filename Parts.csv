@@ -741,7 +741,7 @@ ST0205,Cross-recessed tapping screw M2*5,2,* MY22 * *
 4003020-Y01,Auxiliary dashboard wiring harness assy,1,* MY22 * *
 4013010-Y01,Tailgate wiring harness assy,1,* MY22 MY22.5 *
 4013020-Y01,Rear bumper harness assembly,1,* MY22 MY22.5 *
-4013020Y0201,Wiring harness assy, rear bumper (ENI customized version),1,* MY22 * *
+4013020Y0201,Wiring harness assy rear bumper (ENI customized version),1,* MY22 * *
 5200000-Y01,Wiper and Washer System,1,* MY22 * *
 5205010-Y01,Wiper motor,1,* MY22 * *
 Q1860635,Hexagon bolts with flange M6X35,2,* MY22 MY22.5 *
@@ -752,9 +752,9 @@ Q1860635,Hexagon bolts with flange M6X35,2,* MY22 MY22.5 *
 8107010Y0205,HVAC assembly,1,* MY22 MY22.5 *
 8108010Y0101,Compressor suction pipe (EU filler),1,* MY22 * *
 8108020-Y01,Compressor exhaust pipe,1,* MY22 * *
-8108030Y0101,Fluid inlet pipe, evaporation tank,1,* MY22 * *
+8108030Y0101,Fluid inlet pipe evaporation tank,1,* MY22 * *
 8112010-Y01,Air conditioning control panel assembly,1,* MY22 * *
-Q1460625,Hexagon bolt, spring washer and plain washer assy,4,* MY22 MY22.5 *
+Q1460625,Hexagon bolt spring washer and plain washer assy,4,* MY22 MY22.5 *
 7900000-Y01,Information Communication Device* MY22 * *
 7903010-Y01,start antenna,1,* MY22 MY22.5 *
 7911010-Y01,Speaker,1,* MY22 MY22.5 *
@@ -775,7 +775,7 @@ Q1461030,Hexagon head bolt, spring washer and plain washer assy,4,* MY22 MY22.5 
 2912166-Y01,Sealing washer, motor,1,* MY22 MY22.5 *
 2912119-Y01,Nut, filler plug,1,* MY22 MY22.5 *
 2912132-Y01,Gasket, filler plug* MY22 * *
-2912120-Y01,Nut?drain plug,1,* MY22 MY22.5 *
+2912120-Y01,Nut drain plug,1,* MY22 MY22.5 *
 2912133-Y01,Gasket, drain plug* MY22 * *
 2912126-Y01,Oil seal, input shaft,1,* MY22 MY22.5 *
 2914300-Y01,Thrust rod assy,2,* MY22 MY22.5 *

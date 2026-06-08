@@ -545,33 +545,33 @@ S18608010,Hexagon bolt with flange,8,MY23 MY22 MY22.5 MY24
 5133990Y0211,Rear crossbeam power battery box,1,MY23 * * MY24
 S18510003,Hexagon head bolt with flange,2,MY23 * * MY24
 5133910Y0210,Welding assy power battery body,1,MY23 * * *
-5133992Y0210,Front cover plate, power battery box,1,MY23 * * *
-S14604001,Hexagon head bolt, spring washer and plain washer assy,12,MY23 * * MY24
-5301710Y0210,Cross beam body assy, dashboard,1,MY23 * * *
-5301710Y0211,Cross beam body assy, dashboard,1,MY23 * * MY24
+5133992Y0210,Front cover plate power battery box,1,MY23 * * *
+S14604001,Hexagon head bolt spring washer and plain washer assy,12,MY23 * * MY24
+5301710Y0210,Cross beam body assy dashboard,1,MY23 * * *
+5301710Y0211,Cross beam body assy dashboard,1,MY23 * * MY24
 5109101Y0210,Carpet body,1,MY23 * * *
 5109103-Y01,Trunk cover plate,1,MY23 MY22 MY22.5 *
-5109104-Y01,Cushion block, trunk cover plate,4,MY23 MY22 MY22.5 *
-5109109-Y01,Cushion block 2, trunk cover plate,2,MY23 MY22 MY22.5 *
+5109104-Y01,Cushion block trunk cover plate,4,MY23 MY22 MY22.5 *
+5109109-Y01,Cushion block trunk cover plate,2,MY23 MY22 MY22.5 *
 5109105-Y01,Footrest pad,1,MY23 MY22 MY22.5 *
 5305011-Y01,Auxiliary dashboard body,1,MY23 MY22 MY22.5 *
-5305016-Y01,Lower front cover plate, auxiliary dashboard body,1,MY23 MY22 MY22.5 *
+5305016-Y01,Lower front cover plate auxiliary dashboard body,1,MY23 MY22 MY22.5 *
 5305017-Y01D,Auxiliary dashboard panel,1,MY23 MY22 MY22.5 *
-5305019-Y01,Rear cover plate, auxiliary dashboard body,1,MY23 MY22 MY22.5 *
+5305019-Y01,Rear cover plate auxiliary dashboard body,1,MY23 MY22 MY22.5 *
 5305020-Y01,Handrail framework assy,1,MY23 MY22 MY22.5 *
-5305028-Y01D,Left trim panel, handrail,1,MY23 MY22 * *
-5305029-Y01D,Right trim panel, handrail,1,MY23 MY22 * *
-5305027-Y01,Bottom cover plate, handrail,1,MY23 MY22 MY22.5 *
-5305033-Y01,Male fastener, handrail lock mechanism,1,MY23 MY22 * *
+5305028-Y01D,Left trim panel handrail,1,MY23 MY22 * *
+5305029-Y01D,Right trim panel handrail,1,MY23 MY22 * *
+5305027-Y01,Bottom cover plate handrail,1,MY23 MY22 MY22.5 *
+5305033-Y01,Male fastener handrail lock mechanism,1,MY23 MY22 * *
 5305012-Y01,Screw cap,4,MY23 MY22 MY22.5 MY24
-5305032-Y01,Female fastener, handrail lock mechanism,1,MY23 MY22 MY22.5 *
+5305032-Y01,Female fastener handrail lock mechanism,1,MY23 MY22 MY22.5 *
 5305013Y0220,Rubber pad 1,1,MY23 MY22 MY22.5 *
 5305014Y0220,Rubber pad 2,1,MY23 MY22 MY22.5 *
 5305015Y0220,Rubber pad 3,1,MY23 MY22 MY22.5 *
 5305031-Y01,Handrail hinge,1,MY23 MY22 MY22.5 *
 5306151-Y01D,Instrument mask,1,MY23 MY22 MY22.5 *
 5306139-Y01,Right air vent,1,MY23 MY22 MY22.5 *
-5306161-Y01,Control panel, A/C remote control,1,MY23 MY22 MY22.5 MY24
+5306161-Y01,Control panel A/C remote control,1,MY23 MY22 MY22.5 MY24
 5306200Y0205D,Center air outlet assy,1,MY23 MY22 MY22.5 MY24
 5306100Y0210,Upper body welding assy, dashboard,1,MY23 * * *
 5306121-Y01,Left defroster air vent,1,MY23 MY22 MY22.5 MY24

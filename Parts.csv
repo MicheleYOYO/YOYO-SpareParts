@@ -338,9 +338,9 @@ Q2214816,Cross recessed head self-tapping screw and plain washer assy,12,MY23 MY
 Z058,Stud fastener,10,MY23 MY22 MY22.5 MY24
 3102112-Y01,Guard panel front right wheel cowling,1,MY23 MY22 MY22.5 *
 3102113-Y01,Guard panel rear left wheel cowling,1,MY23 MY22 MY22.5 *
-3102117-Y01,Side trim panel guard panel, rear left wheel cowling,1,MY23 MY22 MY22.5 *
+3102117-Y01,Side trim panel guard panel rear left wheel cowling,1,MY23 MY22 MY22.5 *
 3102114-Y01,Guard panel rear right wheel cowling,1,MY23 MY22 MY22.5 *
-3102118-Y01,Side trim panel guard panel, rear right wheel cowling,1,MY23 MY22 MY22.5 *
+3102118-Y01,Side trim panel guard panel rear right wheel cowling,1,MY23 MY22 MY22.5 *
 5107101Y0210,Left bottom guard panel,1,MY23 MY22 MY22.5 *
 5107102-Y01,Right bottom guard panel,1,MY23 MY22 MY22.5 *
 5107103Y0210,Center bottom guard panel,1,MY23 MY22 MY22.5 *
@@ -358,25 +358,25 @@ Z058,Stud fastener,10,MY23 MY22 MY22.5 MY24
 5302007-Y01D,Front combo light upper trim panel - left,1,MY23 MY22 MY22.5 *
 5302008-Y01D,Front combo light upper trim panel - right,1,MY23 MY22 MY22.5 *
 5302011Y0210D,Cover plate, front charging port,1,MY23 * * MY24
-5302032Y0210,Inner plate, front charging port,1,MY23 * * MY24
+5302032Y0210,Inner plate front charging port,1,MY23 * * MY24
 5302031Y0210,Front charging port base,1,MY23 * * MY24
-5302033Y0210,Rotating shaft, front charging port,1,MY23 * * MY24
-5302035Y0210,cushion,front charging port cover,1,MY23 * * *
+5302033Y0210,Rotating shaft front charging port,1,MY23 * * MY24
+5302035Y0210,cushion front charging port cover,1,MY23 * * *
 5302034Y0210,spring,1,MY23 * * MY24
 5306155-Y01,Complete vehicle nameplate,1,MY23 MY22 MY22.5 *
 5306156-Y01,X Logo,1,MY23 MY22 MY22.5 MY24
 5306157-Y01,YOYO logo,1,MY23 MY22 MY22.5 MY24
 5306010Y0220,XEV logo,1,MY23 MY22 MY22.5 MY24
-5400100Y0210D,Trim panel assy, front upper section, left wall,1,MY23 * * *
+5400100Y0210D,Trim panel assy front upper section, left wall,1,MY23 * * *
 ZH1255,D-shaped buckle,17,MY23 MY22 MY22.5 MY24
-5400300Y0210D,Trim panel assy, rear upper section, left wall,1,MY23 * * *
+5400300Y0210D,Trim panel assy rear upper section, left wall,1,MY23 * * *
 5400500-Y01D,Left side small trim assembly,1,MY23 MY22 MY22.5 *
 ZH680,Metal V-fastener,3,MY23 MY22 MY22.5 MY24
 5400101-Y01D,Left rear wheel plate,1,MY23 MY22 MY22.5 MY24
 5400771-Y01D,The lower left threshold,1,MY23 MY22 MY22.5 *
 S22148002,Cross recessed head self-tapping screw and plain washer assy,4,MY23 * * MY24
-5400200Y0210D,Trim panel assy, front upper section, right wall,1,MY23 * * *
-5400400Y0210D,Trim panel assy, rear upper section, right wall,1,MY23 * * *
+5400200Y0210D,Trim panel assy front upper section, right wall,1,MY23 * * *
+5400400Y0210D,Trim panel assy rear upper section, right wall,1,MY23 * * *
 5400600-Y01D,Right side small trim assembly,1,MY23 MY22 MY22.5 *
 5400201-Y01D,Right rear wheel plate,1,MY23 MY22 MY22.5 MY24
 5400781-Y01D,Right lower threshold,1,MY23 MY22 MY22.5 *

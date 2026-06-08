@@ -1,36 +1,15 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
-    input {
-        padding: 6px;
-        font-size: 16px;
-    }
-    button {
-        padding: 6px 12px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    table {
-        border-collapse: collapse;
-        margin-top: 20px;
-        width: 100%;
-    }
-    th, td {
-        border: 1px solid #333;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #eee;
-    }
+    body { font-family: Arial; margin: 20px; }
+    input, button { padding: 6px; font-size: 16px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #333; padding: 8px; }
+    th { background: #eee; }
 </style>
 </head>
 
@@ -61,43 +40,27 @@ let modelloCorrente = "";
 const VIN_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/VIN.csv";
 
 async function caricaVIN() {
-    try {
-        const response = await fetch(VIN_URL);
-        const text = await response.text();
+    const response = await fetch(VIN_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
-        const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
-
-        for (let i = 1; i < righe.length; i++) {
-            const [start, end, modello] = righe[i].split(",");
-
-            vinTable.push({
-                start: parseInt(start.trim()),
-                end: parseInt(end.trim()),
-                modello: modello.trim()
-            });
-        }
-
-        console.log("VIN.csv caricato:", vinTable);
-
-    } catch (err) {
-        console.error("Errore nel caricamento VIN.csv:", err);
+    for (let i = 1; i < righe.length; i++) {
+        const [start, end, modello] = righe[i].split(",");
+        vinTable.push({
+            start: parseInt(start),
+            end: parseInt(end),
+            modello: modello.trim()
+        });
     }
 }
-
 caricaVIN();
 
 
 // ------------------------------------------------------
-// IDENTIFICAZIONE MODELLO
+// IDENTIFICAZIONE MODELLO VIN
 // ------------------------------------------------------
 function identificaModello() {
     const vinInput = document.getElementById("vinInput").value.trim();
-
-    if (vinInput.length === 0) {
-        document.getElementById("risultatoVIN").innerText = "Inserisci un VIN valido";
-        return;
-    }
-
     const vinNumber = parseInt(vinInput);
 
     modelloCorrente = "";
@@ -108,12 +71,8 @@ function identificaModello() {
         }
     }
 
-    if (modelloCorrente === "") {
-        document.getElementById("risultatoVIN").innerText = "VIN non trovato nei range";
-    } else {
-        document.getElementById("risultatoVIN").innerText =
-            "Modello identificato: " + modelloCorrente;
-    }
+    document.getElementById("risultatoVIN").innerText =
+        modelloCorrente ? "Modello identificato: " + modelloCorrente : "VIN non trovato";
 
     mostraRicambi();
 }
@@ -127,55 +86,65 @@ let partsTable = [];
 const PARTS_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
 
 async function caricaParts() {
-    try {
-        const response = await fetch(PARTS_URL);
-        const text = await response.text();
+    const response = await fetch(PARTS_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
-        const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
+    for (let i = 1; i < righe.length; i++) {
+        const [codice, descrizione, quantita, modello] = righe[i].split(",");
 
-        for (let i = 1; i < righe.length; i++) {
-            const [codice, descrizione, quantita, modello] = righe[i].split(",");
+        // PULIZIA MODELLI: rimuove *, spazi doppi, ecc.
+        const modelliPuliti = modello
+            .replace(/\*/g, "")       // rimuove asterischi
+            .trim()
+            .split(/\s+/);            // divide per spazi multipli
 
-            partsTable.push({
-                codice: codice.trim(),
-                descrizione: descrizione.trim(),
-                quantita: quantita.trim(),
-                modello: modello.trim()
-            });
-        }
-
-        console.log("Parts.csv caricato:", partsTable);
-
-        mostraRicambi();
-
-    } catch (err) {
-        console.error("Errore nel caricamento Parts.csv:", err);
+        partsTable.push({
+            codice: codice.trim(),
+            descrizione: descrizione.trim(),
+            quantita: quantita.trim(),
+            modelli: modelliPuliti    // array di modelli
+        });
     }
-}
 
+    mostraRicambi();
+}
 caricaParts();
 
 
 // ------------------------------------------------------
-// MOSTRARE LA TABELLA RICAMBI
+// MAPPATURA VIN → MODELLO RICAMBI
+// ------------------------------------------------------
+const MODEL_MAP = {
+    "Y0210": "MY23",
+    "Y01": "MY22",
+    "Y0205": "MY22.5",
+    "Y0230": "MY24"
+};
+
+
+// ------------------------------------------------------
+// MOSTRARE RICAMBI FILTRATI
 // ------------------------------------------------------
 function mostraRicambi() {
-    if (partsTable.length === 0) return;
-
     let html = "<table>";
-    html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modello</th></tr>";
+    html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
+
+    let modelloParts = MODEL_MAP[modelloCorrente];
 
     partsTable.forEach(p => {
-        html += "<tr>";
-        html += "<td>" + p.codice + "</td>";
-        html += "<td>" + p.descrizione + "</td>";
-        html += "<td>" + p.quantita + "</td>";
-        html += "<td>" + p.modello + "</td>";
-        html += "</tr>";
+        // Se non c'è modello VIN → mostra tutto
+        if (!modelloParts || p.modelli.includes(modelloParts)) {
+            html += "<tr>";
+            html += "<td>" + p.codice + "</td>";
+            html += "<td>" + p.descrizione + "</td>";
+            html += "<td>" + p.quantita + "</td>";
+            html += "<td>" + p.modelli.join(", ") + "</td>";
+            html += "</tr>";
+        }
     });
 
     html += "</table>";
-
     document.getElementById("partsBox").innerHTML = html;
 }
 
@@ -183,4 +152,3 @@ function mostraRicambi() {
 
 </body>
 </html>
-   

@@ -183,10 +183,10 @@ S32006003,hexagon nut with flange,2,MY23 MY22 MY22.5 MY24
 S18408004,Hexagon bolt with flange,3,MY23 MY22 MY22.5 MY24
 4002616Y0210,M6 Bonding Bolt (FT thread),1,MY23 * * MY24
 2103020Y0210,Phase line pressing plate,1,MY23 * * *
-S14606004,Hexagon head bolt, spring washer and plain washer assy,2,MY23 * * MY24
+S14606004,Hexagon head bolt spring washer and plain washer assy,2,MY23 * * MY24
 S32006002,Hexagon nut with flange,2,MY23 * * *
 2103030Y0210,Grounding wire,1,MY23 * * *
-2108010Y0210,Vehicle control unit?VBU?,1,MY23 * * *
+2108010Y0210,Vehicle control unit VBU,1,MY23 * * *
 2142010Y0210,Motor controller,1,MY23 * * MY24
 2142040Y0210,MCU grounding wire,1,MY23 * * *
 7925040-Y01,T-BOX?4G?,1,MY23 MY22 MY22.5 *

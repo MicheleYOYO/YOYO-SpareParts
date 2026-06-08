@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
+
 <style>
     body { font-family: Arial; margin: 20px; }
     .hidden { display: none; }
-    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background: #eee; }
+    input { padding: 6px; font-size: 16px; }
+    button { padding: 6px 12px; font-size: 16px; cursor: pointer; }
 </style>
 </head>
 
@@ -31,19 +31,15 @@
     <p>Inserisci le ultime 6 cifre del VIN:</p>
     <input type="text" id="vinInput" maxlength="6">
     <button onclick="identificaModello()">Identifica</button>
-    <p id="modelInfo" style="font-weight:bold;"></p>
 
-    <hr>
-
-    <h3>Catalogo ricambi</h3>
-    <p>(In attesa del file catalogo.csv)</p>
+    <p id="modelInfo" style="font-weight:bold; margin-top:10px;"></p>
 
 </div>
 
 <script>
-// ------------------------------
-// PASSWORD DI ACCESSO
-// ------------------------------
+// ------------------------------------------------------
+// PASSWORD
+// ------------------------------------------------------
 const PASSWORD = "YOYO2024";
 
 function checkPwd() {
@@ -56,11 +52,12 @@ function checkPwd() {
     }
 }
 
-// ------------------------------
+// ------------------------------------------------------
 // CARICAMENTO VIN.csv DA DROPBOX
-// ------------------------------
+// ------------------------------------------------------
 let vinTable = [];
 
+// LINK DIRETTO (dl=1)
 const VIN_URL = "https://www.dropbox.com/scl/fi/ydcn5d907gklgrrohm7ww/VIN.csv?rlkey=xqcwoq1ulv4twlfa3m6zv3mke&st=cvjs35lr&dl=1";
 
 async function caricaVIN() {
@@ -70,6 +67,7 @@ async function caricaVIN() {
 
         const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
+        // Salta intestazione
         for (let i = 1; i < righe.length; i++) {
             const [start, end, modello] = righe[i].split(",");
 
@@ -80,30 +78,34 @@ async function caricaVIN() {
             });
         }
 
-        console.log("VIN.csv caricato:", vinTable);
+        console.log("VIN.csv caricato correttamente:", vinTable);
 
-    } catch (e) {
-        console.error("Errore nel caricamento VIN.csv:", e);
+    } catch (err) {
+        console.error("Errore nel caricamento VIN.csv:", err);
     }
 }
 
 caricaVIN();
 
-// ------------------------------
+// ------------------------------------------------------
 // IDENTIFICAZIONE MODELLO
-// ------------------------------
+// ------------------------------------------------------
 let modelloCorrente = null;
 
 function identificaModello() {
     const vinInput = document.getElementById("vinInput").value.trim();
 
+    // Controllo base
     if (vinInput.length !== 6 || isNaN(vinInput)) {
         document.getElementById("modelInfo").textContent = "Inserisci 6 cifre numeriche";
         return;
     }
 
+    // CONVERSIONE CORRETTA:
+    // 001355 → 1355
     const vinNumber = parseInt(vinInput);
 
+    // Ricerca nei range del CSV
     const record = vinTable.find(r =>
         vinNumber >= r.start && vinNumber <= r.end
     );

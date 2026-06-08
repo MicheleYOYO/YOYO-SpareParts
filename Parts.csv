@@ -1398,8 +1398,8 @@ B5305040Y0230,Armrest assy,1,* * * MY24
 5206010Y0240,Front windshield glass,1,* * * MY24
 5107103Y0230,Bottom guard,1,* * * MY24
 3100120Y0230,Steel wheel rim trim cap assy,4,* * * MY24
-5400100Y0240D,Trim panel assy front upper section, left wall,1,* * * MY24
-5400300Y0240D,Trim panel assy rear upper section, left wall,1,* * * MY24
+5400100Y0240D,Trim panel assy front upper section left wall,1,* * * MY24
+5400300Y0240D,Trim panel assy rear upper section left wall,1,* * * MY24
 5400500Y0260D,Left side small trim assembly,1,* * * MY24
 5400777-Y01,Buckle,4,* * * MY24
 Q221B4213F71,Cross recessed pan head tapping screw and flat washer assembly,4,* * * MY24
@@ -1408,8 +1408,8 @@ Q221B4213F71,Cross recessed pan head tapping screw and flat washer assembly,4,* 
 5400324Y0210,Waterproof sponge mat,1,* * * MY24
 S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zinc-nickel,4,* * * MY24
 5400783-Y01D,Right lower threshold,1,* * * MY24
-5400200Y0240D,Trim panel assy front upper section, right wall,1,* * * MY24
-5400400Y0240D,Trim panel assy rear upper section, right wall,1,* * * MY24
+5400200Y0240D,Trim panel assy front upper section right wall,1,* * * MY24
+5400400Y0240D,Trim panel assy rear upper section right wall,1,* * * MY24
 5400600Y0260D,Right side small trim assembly,1,* * * MY24
 5702110Y0240D,Roof cover assembly,1,* * * MY24
 5702301Y0240,Roof cover F-bolt,6,* * * MY24
@@ -1418,7 +1418,7 @@ S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zin
 6102073Y0240D,Upper trim panel left door,1,* * * MY24
 6102057Y0260,Metal V-fastener,13,* * * MY24
 6102079Y0240,Mounting plate PE Switch,1,* * * MY24
-6102052Y0240,Mounting bolt outer panel, door,3,* * * MY24
+6102052Y0240,Mounting bolt outer panel door,3,* * * MY24
 6102507Y0240,Dustproof sponge,1,* * * MY24
 6102055Y0240,A-type reed nut-ST4.2,1,* * * MY24
 6102509Y0240,Felt 100X20X0.7,1,* * * MY24

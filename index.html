@@ -140,52 +140,53 @@ const MODEL_MAP = {
 };
 
 
-// ------------------------------------------------------
-// MOSTRARE RICAMBI FILTRATI
-// ------------------------------------------------------
 function mostraRicambi() {
+    let search = document.getElementById("searchInput")?.value.toLowerCase().trim() || "";
+
     let html = "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
 
-    // Se non abbiamo ancora identificato un modello VIN → mostra tutto
-    if (!modelloCorrente) {
-        partsTable.forEach(p => {
-            html += "<tr>";
-            html += "<td>" + p.codice + "</td>";
-            html += "<td>" + p.descrizione + "</td>";
-            html += "<td>" + p.quantita + "</td>";
-            html += "<td>" + p.modelli.join(", ") + "</td>";
-            html += "</tr>";
-        });
-    } else {
-        const modelloParts = MODEL_MAP[modelloCorrente.trim()];
-        console.log("Modello VIN:", modelloCorrente, "→ modello ricambi:", modelloParts);
+    // 1) Determina modello ricambi dal VIN
+    const modelloParts = modelloCorrente ? MODEL_MAP[modelloCorrente.trim()] : null;
 
-        if (!modelloParts) {
-            html += "<tr><td colspan='4'>Modello VIN non mappato</td></tr>";
-        } else {
-            const filtrati = partsTable.filter(p => p.modelli.includes(modelloParts));
+    // 2) FILTRAGGIO COMPLETO
+    const filtrati = partsTable.filter(p => {
 
-            filtrati.forEach(p => {
-                html += "<tr>";
-                html += "<td>" + p.codice + "</td>";
-                html += "<td>" + p.descrizione + "</td>";
-                html += "<td>" + p.quantita + "</td>";
-                html += "<td>" + p.modelli.join(", ") + "</td>";
-                html += "</tr>";
-            });
-
-            if (filtrati.length === 0) {
-                html += "<tr><td colspan='4'>Nessun ricambio disponibile per questo modello</td></tr>";
+        // A) FILTRO MODELLO (SE VIN INSERITO)
+        if (modelloParts) {
+            if (!p.modelli.includes(modelloParts)) {
+                return false; // NON compatibile → escludi
             }
         }
+
+        // B) FILTRO RICERCA PARZIALE
+        if (search.length > 0) {
+            const codice = p.codice.toLowerCase();
+            const descrizione = p.descrizione.toLowerCase();
+
+            if (!codice.includes(search) && !descrizione.includes(search)) {
+                return false; // non corrisponde alla ricerca
+            }
+        }
+
+        return true;
+    });
+
+    // 3) COSTRUZIONE TABELLA
+    filtrati.forEach(p => {
+        html += "<tr>";
+        html += "<td>" + p.codice + "</td>";
+        html += "<td>" + p.descrizione + "</td>";
+        html += "<td>" + p.quantita + "</td>";
+        html += "<td>" + p.modelli.join(", ") + "</td>";
+        html += "</tr>";
+    });
+
+    if (filtrati.length === 0) {
+        html += "<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
     }
 
     html += "</table>";
     document.getElementById("partsBox").innerHTML = html;
 }
 
-</script>
-
-</body>
-</html>

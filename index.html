@@ -30,7 +30,7 @@ let vinTable = [];
 let modelloCorrente = "";
 
 /* ------------------------------
-   1. CARICA VIN.csv
+   1. CARICA VIN.csv (VIRGOLE)
 --------------------------------*/
 fetch("VIN.csv")
     .then(res => res.text())
@@ -41,7 +41,8 @@ fetch("VIN.csv")
             .map(r => r.trim())
             .filter(r => r.length > 0)
             .map(r => {
-                const c = r.split("\t");
+                const c = r.split(",");   // CSV A VIRGOLE
+
                 return {
                     start: parseInt(c[0]),
                     end: parseInt(c[1]),
@@ -51,7 +52,7 @@ fetch("VIN.csv")
     });
 
 /* ------------------------------
-   2. CARICA PARTS.csv
+   2. CARICA PARTS.csv (VIRGOLE)
 --------------------------------*/
 fetch("Parts.csv")
     .then(res => res.text())
@@ -63,6 +64,7 @@ fetch("Parts.csv")
             .filter(r => r.length > 0)
             .map(r => {
                 const c = r.split(",");
+
                 return {
                     codice: c[0],
                     descrizione: c[1],
@@ -86,7 +88,6 @@ function cercaVIN() {
 
     const ultimi6 = parseInt(vin.slice(-6));
 
-    // Cerca il range corretto
     const trovato = vinTable.find(r => ultimi6 >= r.start && ultimi6 <= r.end);
 
     if (!trovato) {

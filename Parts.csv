@@ -638,8 +638,8 @@ ZH850,C-shaped buckle,2,MY23 MY22 MY22.5 MY24,
 8200115-Y01,Base plate right hinge,1,MY23 MY22 MY22.5 MY24,
 8200116-Y01,Inner panel right hinge,1,MY23 MY22 MY22.5 MY24,
 8200117-Y01,Limiting block rear carrier,2,MY23 MY22 MY22.5 MY24,
-1108001-Y01,Acceleration System,1,* MY22 * *,MY22001
-1108010-Y01,Electrical accelerator pedal,1,* MY22 MY22.5 *,MY22001
+1108001-Y01,Acceleration System,1,* MY22 * *,Y01001
+1108010-Y01,Electrical accelerator pedal,1,* MY22 MY22.5 *,Y01001
 Q1860625,Hexagon bolt with flange,3,* MY22 MY22.5 *,
 2101000-Y01,Power battery assy,1,* MY22 * *,
 2101000-Y0201,Power Battery Assy (with battery lock) (ENI customized version),1,* MY22 * *,

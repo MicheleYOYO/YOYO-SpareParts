@@ -27,6 +27,11 @@
 
 <hr>
 
+<h2>Ricerca ricambi</h2>
+<input type="text" id="searchInput" placeholder="Cerca ricambio per codice o nome" oninput="mostraRicambi()">
+
+<hr>
+
 <h2>Catalogo Ricambi</h2>
 <div id="partsBox"></div>
 
@@ -140,6 +145,9 @@ const MODEL_MAP = {
 };
 
 
+// ------------------------------------------------------
+// MOSTRARE RICAMBI FILTRATI (SOLO MODELLO ESATTO)
+// ------------------------------------------------------
 function mostraRicambi() {
     let search = document.getElementById("searchInput")?.value.toLowerCase().trim() || "";
 
@@ -154,8 +162,6 @@ function mostraRicambi() {
 
         // A) FILTRO MODELLO (SOLO MODELLO ESATTO)
         if (modelloParts) {
-            // Il ricambio deve avere SOLO 1 modello
-            // E deve essere esattamente quello del VIN
             if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) {
                 return false;
             }
@@ -192,34 +198,7 @@ function mostraRicambi() {
     document.getElementById("partsBox").innerHTML = html;
 }
 
-        // B) FILTRO RICERCA PARZIALE
-        if (search.length > 0) {
-            const codice = p.codice.toLowerCase();
-            const descrizione = p.descrizione.toLowerCase();
+</script>
 
-            if (!codice.includes(search) && !descrizione.includes(search)) {
-                return false; // non corrisponde alla ricerca
-            }
-        }
-
-        return true;
-    });
-
-    // 3) COSTRUZIONE TABELLA
-    filtrati.forEach(p => {
-        html += "<tr>";
-        html += "<td>" + p.codice + "</td>";
-        html += "<td>" + p.descrizione + "</td>";
-        html += "<td>" + p.quantita + "</td>";
-        html += "<td>" + p.modelli.join(", ") + "</td>";
-        html += "</tr>";
-    });
-
-    if (filtrati.length === 0) {
-        html += "<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
-    }
-
-    html += "</table>";
-    document.getElementById("partsBox").innerHTML = html;
-}
-
+</body>
+</html>

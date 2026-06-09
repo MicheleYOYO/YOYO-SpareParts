@@ -111,20 +111,20 @@ async function caricaParts() {
     const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
     for (let i = 1; i < righe.length; i++) {
-        const [codice, descrizione, quantita, modello] = righe[i].split(",");
+        const [codice, descrizione, quantita, modello, esploso] = righe[i].split(",");
 
-        // PULIZIA MODELLI: rimuove *, spazi doppi, ecc.
         const modelliPuliti = modello
-            .replace(/\*/g, "")   // rimuove asterischi
+            .replace(/\*/g, "")
             .trim()
-            .split(/\s+/)        // divide per spazi
-            .filter(m => m.length > 0); // elimina vuoti
+            .split(/\s+/)
+            .filter(m => m.length > 0);
 
         partsTable.push({
             codice: codice.trim(),
             descrizione: descrizione.trim(),
             quantita: quantita.trim(),
-            modelli: modelliPuliti
+            modelli: modelliPuliti,
+            esploso: esploso ? esploso.trim() : ""
         });
     }
 
@@ -146,7 +146,7 @@ const MODEL_MAP = {
 
 
 // ------------------------------------------------------
-// MOSTRARE RICAMBI FILTRATI (SOLO MODELLO ESATTO)
+// MOSTRARE RICAMBI FILTRATI
 // ------------------------------------------------------
 function mostraRicambi() {
     let search = document.getElementById("searchInput")?.value.toLowerCase().trim() || "";
@@ -158,14 +158,12 @@ function mostraRicambi() {
 
     const filtrati = partsTable.filter(p => {
 
-        // FILTRO MODELLO CORRETTO
         if (modelloParts) {
             if (!p.modelli.includes(modelloParts)) {
                 return false;
             }
         }
 
-        // FILTRO TESTO
         if (search.length > 0) {
             const codice = p.codice.toLowerCase();
             const descrizione = p.descrizione.toLowerCase();
@@ -179,7 +177,7 @@ function mostraRicambi() {
     });
 
     filtrati.forEach(p => {
-        html += "<tr>";
+        html += `<tr onclick="mostraEsploso('${p.esploso}', '${p.codice}')">`;
         html += "<td>" + p.codice + "</td>";
         html += "<td>" + p.descrizione + "</td>";
         html += "<td>" + p.quantita + "</td>";
@@ -195,6 +193,28 @@ function mostraRicambi() {
     document.getElementById("partsBox").innerHTML = html;
 }
 
+
+// ------------------------------------------------------
+// MOSTRA ESPLOSO
+// ------------------------------------------------------
+function mostraEsploso(file, codice) {
+    if (!file) {
+        alert("Nessun esploso disponibile per questo ricambio");
+        return;
+    }
+
+    const url = "esplosi/" + file + ".png";
+
+    const win = window.open("", "_blank");
+    win.document.write(`
+        <html>
+        <head><title>Esploso ${codice}</title></head>
+        <body style="margin:0; padding:0;">
+            <img src="${url}" style="width:100%; height:auto;">
+        </body>
+        </html>
+    `);
+}
 
 </script>
 

@@ -154,20 +154,18 @@ function mostraRicambi() {
     let html = "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
 
-    // 1) Determina modello ricambi dal VIN
     const modelloParts = modelloCorrente ? MODEL_MAP[modelloCorrente.trim()] : null;
 
-    // 2) FILTRAGGIO COMPLETO
     const filtrati = partsTable.filter(p => {
 
-        // A) FILTRO MODELLO (SOLO MODELLO ESATTO)
+        // FILTRO MODELLO CORRETTO
         if (modelloParts) {
-            if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) {
+            if (!p.modelli.includes(modelloParts)) {
                 return false;
             }
         }
 
-        // B) FILTRO RICERCA PARZIALE
+        // FILTRO TESTO
         if (search.length > 0) {
             const codice = p.codice.toLowerCase();
             const descrizione = p.descrizione.toLowerCase();
@@ -180,7 +178,6 @@ function mostraRicambi() {
         return true;
     });
 
-    // 3) COSTRUZIONE TABELLA
     filtrati.forEach(p => {
         html += "<tr>";
         html += "<td>" + p.codice + "</td>";
@@ -197,6 +194,7 @@ function mostraRicambi() {
     html += "</table>";
     document.getElementById("partsBox").innerHTML = html;
 }
+
 
 </script>
 

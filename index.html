@@ -1,179 +1,203 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>YOYO Spare Parts</title>
-    <style>
-        body { font-family: Arial; margin: 20px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-        tr:hover { background: #eef; cursor: pointer; }
-        #explodedView img { max-width: 100%; border: 1px solid #333; padding: 10px; }
-    </style>
+<meta charset="UTF-8">
+<title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
+
+<style>
+    body { font-family: Arial; margin: 20px; }
+    input, button { padding: 6px; font-size: 16px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #333; padding: 8px; }
+    th { background: #eee; }
+</style>
 </head>
 
 <body>
 
-<h2>Catalogo Ricambi YOYO</h2>
+<h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
 
-<label>Inserisci VIN:</label>
-<input type="text" id="vinInput">
-<button onclick="cercaVIN()">Cerca</button>
+<h2>Identificazione modello tramite VIN</h2>
+<p>Inserisci le ultime 6 cifre del VIN:</p>
 
-<div id="vinResult"></div>
+<input type="text" id="vinInput" maxlength="6">
+<button onclick="identificaModello()">Identifica</button>
+
+<p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
+
+<hr>
+
+<h2>Ricerca ricambi</h2>
+<input type="text" id="searchInput" placeholder="Cerca ricambio per codice o nome" oninput="mostraRicambi()">
+
+<hr>
+
+<h2>Catalogo Ricambi</h2>
 <div id="partsBox"></div>
-<div id="explodedView" style="margin-top:20px;"></div>
 
 <script>
-let partsTable = [];
+// ------------------------------------------------------
+// CARICAMENTO VIN.csv
+// ------------------------------------------------------
 let vinTable = [];
 let modelloCorrente = "";
 
-/* ------------------------------
-   1. CARICA VIN.csv (VIRGOLE)
---------------------------------*/
-fetch("VIN.csv")
-    .then(res => res.text())
-    .then(text => {
-        const righe = text.split("\n").slice(1);
+const VIN_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/VIN.csv";
 
-        vinTable = righe
-            .map(r => r.trim())
-            .filter(r => r.length > 0)
-            .map(r => {
-                const c = r.split(",");   // CSV A VIRGOLE
+async function caricaVIN() {
+    const response = await fetch(VIN_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
-                return {
-                    start: parseInt(c[0]),
-                    end: parseInt(c[1]),
-                    modello: c[2].trim()
-                };
-            });
-    });
+    for (let i = 1; i < righe.length; i++) {
+        const [start, end, modello] = righe[i].split(",");
+        vinTable.push({
+            start: parseInt(start.trim()),
+            end: parseInt(end.trim()),
+            modello: modello.trim()
+        });
+    }
 
-/* ------------------------------
-   2. CARICA PARTS.csv (VIRGOLE)
---------------------------------*/
-fetch("Parts.csv")
-    .then(res => res.text())
-    .then(text => {
-        const righe = text.split("\n").slice(1);
+    console.log("VIN.csv caricato:", vinTable);
+}
+caricaVIN();
 
-        partsTable = righe
-            .map(r => r.trim())
-            .filter(r => r.length > 0)
-            .map(r => {
-                const c = r.split(",");
 
-                return {
-                    codice: c[0],
-                    descrizione: c[1],
-                    quantita: c[2],
-                    modello: c[3],
-                    esploso: c[4] ? c[4].trim() : ""
-                };
-            });
-    });
-
-/* ------------------------------
-   3. CERCA VIN → TROVA MODELLO
---------------------------------*/
-function cercaVIN() {
-    const vin = document.getElementById("vinInput").value.trim();
-
-    if (vin.length < 6) {
-        document.getElementById("vinResult").innerHTML = "<p>Inserisci almeno le ultime 6 cifre.</p>";
+// ------------------------------------------------------
+// IDENTIFICAZIONE MODELLO VIN
+// ------------------------------------------------------
+function identificaModello() {
+    const vinInput = document.getElementById("vinInput").value.trim();
+    if (!vinInput) {
+        modelloCorrente = "";
+        document.getElementById("risultatoVIN").innerText = "Inserisci un VIN valido";
+        mostraRicambi();
         return;
     }
 
-    const ultimi6 = parseInt(vin.slice(-6));
+    const vinNumber = parseInt(vinInput);
+    modelloCorrente = "";
 
-    const trovato = vinTable.find(r => ultimi6 >= r.start && ultimi6 <= r.end);
-
-    if (!trovato) {
-        document.getElementById("vinResult").innerHTML = "<p>Modello non trovato.</p>";
-        return;
+    for (let r of vinTable) {
+        if (vinNumber >= r.start && vinNumber <= r.end) {
+            modelloCorrente = r.modello.trim();
+            break;
+        }
     }
 
-    modelloCorrente = trovato.modello;
+    if (!modelloCorrente) {
+        document.getElementById("risultatoVIN").innerText = "VIN non trovato nei range";
+    } else {
+        document.getElementById("risultatoVIN").innerText =
+            "Modello identificato: " + modelloCorrente;
+    }
 
-    document.getElementById("vinResult").innerHTML =
-        `<p>Modello rilevato: <b>${modelloCorrente}</b></p>`;
+    console.log("VIN:", vinInput, "→ modello VIN:", modelloCorrente);
 
     mostraRicambi();
 }
 
-/* ------------------------------
-   4. MOSTRA RICAMBI DEL MODELLO
---------------------------------*/
-function mostraRicambi() {
-    const lista = partsTable.filter(p =>
-        p.modello
-            .replace(/\*/g, "")
-            .replace(/\s+/g, " ")
-            .split("|")
-            .includes(modelloCorrente)
-    );
 
-    if (lista.length === 0) {
-        document.getElementById("partsBox").innerHTML =
-            "<p>Nessun ricambio trovato per questo modello.</p>";
-        return;
+// ------------------------------------------------------
+// CARICAMENTO PARTS.csv
+// ------------------------------------------------------
+let partsTable = [];
+
+const PARTS_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
+
+async function caricaParts() {
+    const response = await fetch(PARTS_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
+
+    for (let i = 1; i < righe.length; i++) {
+        const [codice, descrizione, quantita, modello] = righe[i].split(",");
+
+        // PULIZIA MODELLI: rimuove *, spazi doppi, ecc.
+        const modelliPuliti = modello
+            .replace(/\*/g, "")   // rimuove asterischi
+            .trim()
+            .split(/\s+/)        // divide per spazi
+            .filter(m => m.length > 0); // elimina vuoti
+
+        partsTable.push({
+            codice: codice.trim(),
+            descrizione: descrizione.trim(),
+            quantita: quantita.trim(),
+            modelli: modelliPuliti
+        });
     }
 
-    let html = "<table><tr><th>Codice</th><th>Descrizione</th><th>Q.tà</th><th>Modello</th></tr>";
+    console.log("Parts.csv caricato:", partsTable);
+    mostraRicambi();
+}
+caricaParts();
 
-    lista.forEach(p => {
-        html += `
-            <tr onclick="mostraEsploso('${p.esploso}', '${p.codice}')">
-                <td>${p.codice}</td>
-                <td>${p.descrizione}</td>
-                <td>${p.quantita}</td>
-                <td>${p.modello}</td>
-            </tr>
-        `;
+
+// ------------------------------------------------------
+// MAPPATURA VIN → MODELLO RICAMBI
+// ------------------------------------------------------
+const MODEL_MAP = {
+    "Y0210": "MY23",
+    "Y01":   "MY22",
+    "Y0205": "MY22.5",
+    "Y0230": "MY24"
+};
+
+
+// ------------------------------------------------------
+// MOSTRARE RICAMBI FILTRATI (SOLO MODELLO ESATTO)
+// ------------------------------------------------------
+function mostraRicambi() {
+    let search = document.getElementById("searchInput")?.value.toLowerCase().trim() || "";
+
+    let html = "<table>";
+    html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
+
+    // 1) Determina modello ricambi dal VIN
+    const modelloParts = modelloCorrente ? MODEL_MAP[modelloCorrente.trim()] : null;
+
+    // 2) FILTRAGGIO COMPLETO
+    const filtrati = partsTable.filter(p => {
+
+        // A) FILTRO MODELLO (SOLO MODELLO ESATTO)
+        if (modelloParts) {
+            if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) {
+                return false;
+            }
+        }
+
+        // B) FILTRO RICERCA PARZIALE
+        if (search.length > 0) {
+            const codice = p.codice.toLowerCase();
+            const descrizione = p.descrizione.toLowerCase();
+
+            if (!codice.includes(search) && !descrizione.includes(search)) {
+                return false;
+            }
+        }
+
+        return true;
     });
 
-    html += "</table>";
+    // 3) COSTRUZIONE TABELLA
+    filtrati.forEach(p => {
+        html += "<tr>";
+        html += "<td>" + p.codice + "</td>";
+        html += "<td>" + p.descrizione + "</td>";
+        html += "<td>" + p.quantita + "</td>";
+        html += "<td>" + p.modelli.join(", ") + "</td>";
+        html += "</tr>";
+    });
 
+    if (filtrati.length === 0) {
+        html += "<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
+    }
+
+    html += "</table>";
     document.getElementById("partsBox").innerHTML = html;
 }
 
-/* ------------------------------
-   5. MOSTRA ESPLOSO
---------------------------------*/
-function mostraEsploso(file, codice) {
-
-    if (!file) {
-        document.getElementById("explodedView").innerHTML =
-            "<p>Nessun esploso disponibile per questo ricambio.</p>";
-        return;
-    }
-
-    const percorso = `esplosi/${file}.png`;
-
-    document.getElementById("explodedView").innerHTML = `
-        <h3>Esploso del ricambio: ${codice}</h3>
-        <img src="${percorso}">
-    `;
-
-    evidenziaRiga(codice);
-}
-
-/* ------------------------------
-   6. EVIDENZIA RIGA
---------------------------------*/
-function evidenziaRiga(codice) {
-    const righe = document.querySelectorAll("#partsBox table tr");
-
-    righe.forEach(r => r.style.background = "white");
-
-    righe.forEach(r => {
-        if (r.innerText.includes(codice)) {
-            r.style.background = "#ffff99";
-        }
-    });
-}
 </script>
 
 </body>

@@ -154,8 +154,8 @@ function mostraRicambi() {
 
         // A) FILTRO MODELLO (SE VIN INSERITO)
         if (modelloParts) {
-            if (!p.modelli.includes(modelloParts)) {
-                return false; // NON compatibile → escludi
+            if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) return false;
+
             }
         }
 

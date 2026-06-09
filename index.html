@@ -26,45 +26,75 @@
 
 <script>
 let partsTable = [];
+let vinTable = [];
 let modelloCorrente = "";
 
 /* ------------------------------
-   1. CARICAMENTO PARTS.CSV
+   1. CARICA VIN.csv
 --------------------------------*/
-fetch("Parts.csv")
+fetch("VIN.csv")
     .then(res => res.text())
     .then(text => {
-        const righe = text.split("\n").slice(1); // salta intestazione
+        const righe = text.split("\n").slice(1);
 
-        partsTable = righe
+        vinTable = righe
             .map(r => r.trim())
             .filter(r => r.length > 0)
             .map(r => {
-                const campi = r.split(",");
-
+                const c = r.split("\t");
                 return {
-                    codice: campi[0],
-                    descrizione: campi[1],
-                    quantita: campi[2],
-                    modello: campi[3],
-                    esploso: campi[4] ? campi[4].trim() : ""
+                    start: parseInt(c[0]),
+                    end: parseInt(c[1]),
+                    modello: c[2].trim()
                 };
             });
     });
 
 /* ------------------------------
-   2. CERCA VIN → TROVA MODELLO
+   2. CARICA PARTS.csv
+--------------------------------*/
+fetch("Parts.csv")
+    .then(res => res.text())
+    .then(text => {
+        const righe = text.split("\n").slice(1);
+
+        partsTable = righe
+            .map(r => r.trim())
+            .filter(r => r.length > 0)
+            .map(r => {
+                const c = r.split(",");
+                return {
+                    codice: c[0],
+                    descrizione: c[1],
+                    quantita: c[2],
+                    modello: c[3],
+                    esploso: c[4] ? c[4].trim() : ""
+                };
+            });
+    });
+
+/* ------------------------------
+   3. CERCA VIN → TROVA MODELLO
 --------------------------------*/
 function cercaVIN() {
-    const vin = document.getElementById("vinInput").value.trim().toUpperCase();
+    const vin = document.getElementById("vinInput").value.trim();
 
-    if (vin.length < 4) {
-        document.getElementById("vinResult").innerHTML = "<p>VIN non valido.</p>";
+    if (vin.length < 6) {
+        document.getElementById("vinResult").innerHTML = "<p>Inserisci almeno le ultime 6 cifre.</p>";
         return;
     }
 
-    // Ultime 2 cifre = modello MYxx
-    modelloCorrente = "MY" + vin.slice(-2);
+    const ultimi6 = parseInt(vin.slice(-6));
+
+    // Cerca il range corretto
+    const trovato = vinTable.find(r => ultimi6 >= r.start && ultimi6 <= r.end);
+
+    if (!trovato) {
+        document.getElementById("vinResult").innerHTML = "<p>Modello non trovato.</p>";
+        return;
+    }
+
+    modelloCorrente = trovato.modello;
 
     document.getElementById("vinResult").innerHTML =
         `<p>Modello rilevato: <b>${modelloCorrente}</b></p>`;
@@ -73,16 +103,14 @@ function cercaVIN() {
 }
 
 /* ------------------------------
-   3. MOSTRA RICAMBI DEL MODELLO
+   4. MOSTRA RICAMBI DEL MODELLO
 --------------------------------*/
 function mostraRicambi() {
-
-    // Normalizza e supporta MY22|MY22.5 oppure * MY22 MY22.5 *
     const lista = partsTable.filter(p =>
         p.modello
-            .replace(/\*/g, "")     // rimuove asterischi
-            .replace(/\s+/g, " ")   // normalizza spazi
-            .split("|")             // supporta MY22|MY22.5
+            .replace(/\*/g, "")
+            .replace(/\s+/g, " ")
+            .split("|")
             .includes(modelloCorrente)
     );
 
@@ -111,7 +139,7 @@ function mostraRicambi() {
 }
 
 /* ------------------------------
-   4. MOSTRA ESPLOSO
+   5. MOSTRA ESPLOSO
 --------------------------------*/
 function mostraEsploso(file, codice) {
 
@@ -132,7 +160,7 @@ function mostraEsploso(file, codice) {
 }
 
 /* ------------------------------
-   5. EVIDENZIA RIGA SELEZIONATA
+   6. EVIDENZIA RIGA
 --------------------------------*/
 function evidenziaRiga(codice) {
     const righe = document.querySelectorAll("#partsBox table tr");

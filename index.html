@@ -63,8 +63,8 @@ function cercaVIN() {
         return;
     }
 
-    // Ultime 4 cifre = modello
-    modelloCorrente = "MY" + vin.slice(-2); // esempio: MY23
+    // Ultime 2 cifre = modello MYxx
+    modelloCorrente = "MY" + vin.slice(-2);
 
     document.getElementById("vinResult").innerHTML =
         `<p>Modello rilevato: <b>${modelloCorrente}</b></p>`;
@@ -76,7 +76,15 @@ function cercaVIN() {
    3. MOSTRA RICAMBI DEL MODELLO
 --------------------------------*/
 function mostraRicambi() {
-    const lista = partsTable.filter(p => p.modello.includes(modelloCorrente));
+
+    // Normalizza e supporta MY22|MY22.5 oppure * MY22 MY22.5 *
+    const lista = partsTable.filter(p =>
+        p.modello
+            .replace(/\*/g, "")     // rimuove asterischi
+            .replace(/\s+/g, " ")   // normalizza spazi
+            .split("|")             // supporta MY22|MY22.5
+            .includes(modelloCorrente)
+    );
 
     if (lista.length === 0) {
         document.getElementById("partsBox").innerHTML =

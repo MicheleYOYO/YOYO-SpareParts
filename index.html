@@ -209,7 +209,8 @@ function mostraEsploso(file, codice) {
         return;
     }
 
-    const url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/esplosi/" + file + ".jpg";
+    // Costruisce l'URL esatto su GitHub Pages
+    const url = "https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/" + file + ".jpg";
 
     const win = window.open("", "_blank");
     win.document.write(`
@@ -221,6 +222,7 @@ function mostraEsploso(file, codice) {
         </html>
     `);
 }
+
 
 
 </script>

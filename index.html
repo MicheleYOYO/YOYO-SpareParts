@@ -111,7 +111,12 @@ async function caricaParts() {
     const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
     for (let i = 1; i < righe.length; i++) {
-        const [codice, descrizione, quantita, modello, esploso] = righe[i].split(",");
+        const cols = righe[i].split(",");
+        const codice      = cols[0];
+        const descrizione = cols[1];
+        const quantita    = cols[2];
+        const modello     = cols[3];
+        const esploso     = cols[4] || "";   // opzionale, se presente
 
         const modelliPuliti = modello
             .replace(/\*/g, "")
@@ -124,7 +129,7 @@ async function caricaParts() {
             descrizione: descrizione.trim(),
             quantita: quantita.trim(),
             modelli: modelliPuliti,
-            esploso: esploso ? esploso.trim() : ""
+            esploso: esploso.trim()
         });
     }
 
@@ -146,7 +151,7 @@ const MODEL_MAP = {
 
 
 // ------------------------------------------------------
-// MOSTRARE RICAMBI FILTRATI
+// MOSTRARE RICAMBI FILTRATI (SOLO SPECIFICI DEL MODELLO)
 // ------------------------------------------------------
 function mostraRicambi() {
     let search = document.getElementById("searchInput")?.value.toLowerCase().trim() || "";
@@ -158,14 +163,13 @@ function mostraRicambi() {
 
     const filtrati = partsTable.filter(p => {
 
-        // 🔥 FILTRO MODELLO: SOLO ricambi specifici del modello
+        // SOLO ricambi specifici del modello (non multipli)
         if (modelloParts) {
             if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) {
                 return false;
             }
         }
 
-        // FILTRO TESTO
         if (search.length > 0) {
             const codice = p.codice.toLowerCase();
             const descrizione = p.descrizione.toLowerCase();
@@ -194,7 +198,6 @@ function mostraRicambi() {
     html += "</table>";
     document.getElementById("partsBox").innerHTML = html;
 }
-
 
 
 // ------------------------------------------------------

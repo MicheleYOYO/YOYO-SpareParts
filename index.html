@@ -10,12 +10,18 @@
     table { border-collapse: collapse; width: 100%; margin-top: 20px; }
     th, td { border: 1px solid #333; padding: 8px; }
     th { background: #eee; }
-    tr:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-}
 
+    /* Cambia colore quando passi sopra un ricambio */
+    #partsBox table tr:hover td {
+        background-color: #f0f0f0;
+    }
+
+    /* Cambia il cursore quando passi sopra una riga cliccabile */
+    #partsBox table tr:hover {
+        cursor: pointer;
+    }
 </style>
+
 </head>
 
 <body>

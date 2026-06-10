@@ -158,12 +158,14 @@ function mostraRicambi() {
 
     const filtrati = partsTable.filter(p => {
 
+        // 🔥 FILTRO MODELLO: SOLO ricambi specifici del modello
         if (modelloParts) {
-            if (!p.modelli.includes(modelloParts)) {
+            if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) {
                 return false;
             }
         }
 
+        // FILTRO TESTO
         if (search.length > 0) {
             const codice = p.codice.toLowerCase();
             const descrizione = p.descrizione.toLowerCase();
@@ -192,6 +194,7 @@ function mostraRicambi() {
     html += "</table>";
     document.getElementById("partsBox").innerHTML = html;
 }
+
 
 
 // ------------------------------------------------------

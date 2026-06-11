@@ -34,7 +34,7 @@ let modello = "";
 let csvData = [];
 
 /* ---------------------------------------------------
-   1. RICERCA VIN ORIGINALE (FUNZIONANTE)
+   1. RICERCA VIN (ULTIME 6 CIFRE, CONFRONTO NUMERICO)
 --------------------------------------------------- */
 function cercaVIN() {
     const vin6 = document.getElementById("vinInput").value.trim();
@@ -44,6 +44,8 @@ function cercaVIN() {
         return;
     }
 
+    const vinNum = parseInt(vin6, 10);
+
     fetch("https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/VIN.csv")
         .then(response => response.text())
         .then(text => {
@@ -51,4 +53,120 @@ function cercaVIN() {
             let trovato = false;
 
             righe.forEach(r => {
-                const
+                const campi = r.split(",");
+
+                if (campi.length < 3) return;
+
+                const startNum = parseInt(campi[0].trim(), 10);
+                const endNum = parseInt(campi[1].trim(), 10);
+                const model = campi[2].trim();
+
+                if (vinNum >= startNum && vinNum <= endNum) {
+                    modello = model;
+                    trovato = true;
+                }
+            });
+
+            if (!trovato) {
+                alert("VIN non trovato nei range");
+                return;
+            }
+
+            caricaCSV();
+        });
+}
+
+/* ---------------------------------------------------
+   2. CARICA CSV DEL MODELLO
+--------------------------------------------------- */
+function caricaCSV() {
+    let url = "";
+
+    if (modello === "Y01") {
+        url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/partsMY22.csv";
+    } 
+    else if (modello === "Y0230") {
+        url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/partsMY24.csv";
+    }
+    else {
+        url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/parts.csv";
+    }
+
+    fetch(url)
+        .then(response => response.text())
+        .then(text => {
+            csvData = parseCSV(text);
+            mostraRicambi();
+        });
+}
+
+/* ---------------------------------------------------
+   3. PARSER CSV
+--------------------------------------------------- */
+function parseCSV(text) {
+    const righe = text.split("\n");
+    return righe.map(r => r.split(";"));
+}
+
+/* ---------------------------------------------------
+   4. MOSTRA RICAMBI
+--------------------------------------------------- */
+function mostraRicambi() {
+    let html = "<h2>Ricambi</h2><table><tr><th>Codice</th><th>Descrizione</th><th>Esploso</th></tr>";
+
+    csvData.forEach(r => {
+        if (r.length > 4) {
+            const esploso = r[4].trim();
+            html += `<tr>
+                        <td>${r[0]}</td>
+                        <td>${r[1]}</td>
+                        <td><button onclick="apriEsploso('${esploso}')">${esploso}</button></td>
+                     </tr>`;
+        }
+    });
+
+    html += "</table>";
+    document.getElementById("parts").innerHTML = html;
+}
+
+/* ---------------------------------------------------
+   5. APRI IMMAGINE ESPLOSO
+--------------------------------------------------- */
+function apriEsploso(code) {
+    let folder = modello === "Y0230" ? "MY24" : modello;
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${folder}/${code}.jpg`;
+    window.open(url, "_blank");
+}
+
+/* ---------------------------------------------------
+   6. RICERCA VISUALE
+--------------------------------------------------- */
+function mostraSinottici() {
+    if (!modello) {
+        alert("Prima fai la ricerca VIN");
+        return;
+    }
+
+    let folder = modello === "Y0230" ? "MY24" : modello;
+    let html = "<h2>Esplosi disponibili</h2>";
+
+    for (let i = 1; i <= 99; i++) {
+        let code = "";
+
+        if (modello === "Y0230") {
+            code = "Y0230" + String(i).padStart(3, "0"); // Y02300001
+        } else {
+            code = modello + String(i).padStart(2, "0"); // Y0101
+        }
+
+        html += `<img class="exploded-img" 
+                     src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${folder}/${code}.jpg"
+                     onclick="apriEsploso('${code}')">`;
+    }
+
+    document.getElementById("results").innerHTML = html;
+}
+</script>
+
+</body>
+</html>

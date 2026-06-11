@@ -34,8 +34,7 @@ let modello = "";
 let csvData = [];
 
 /* ---------------------------------------------------
-   1. RICERCA VIN: usa SOLO le ultime 6 cifre
-   confronta con VIN.csv per determinare il modello
+   1. RICERCA VIN: ultime 6 cifre + confronto VIN.csv
 --------------------------------------------------- */
 function cercaVIN() {
     const vin6 = document.getElementById("vinInput").value.trim();
@@ -52,7 +51,7 @@ function cercaVIN() {
             let trovato = false;
 
             righe.forEach(r => {
-                const campi = r.split(";");
+                const campi = r.split(",");   // <-- CORRETTO: VIN.csv usa la virgola
 
                 if (campi.length < 3) return;
 

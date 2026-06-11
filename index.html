@@ -11,12 +11,10 @@
     th, td { border: 1px solid #333; padding: 8px; }
     th { background: #eee; }
 
-    /* Cambia colore quando passi sopra un ricambio */
     #partsBox table tr:hover td {
         background-color: #f0f0f0;
     }
 
-    /* Cambia il cursore quando passi sopra una riga cliccabile */
     #partsBox table tr:hover {
         cursor: pointer;
     }
@@ -40,6 +38,11 @@
 
 <h2>Ricerca ricambi</h2>
 <input type="text" id="searchInput" placeholder="Cerca ricambio per codice o nome" oninput="mostraRicambi()">
+
+<br><br>
+
+<button onclick="mostraSinottici()">🔍 Ricerca visuale</button>
+<button onclick="tornaAllaHome()">🏠 Torna alla pagina iniziale</button>
 
 <hr>
 
@@ -68,8 +71,6 @@ async function caricaVIN() {
             modello: modello.trim()
         });
     }
-
-    console.log("VIN.csv caricato:", vinTable);
 }
 caricaVIN();
 
@@ -103,8 +104,6 @@ function identificaModello() {
             "Modello identificato: " + modelloCorrente;
     }
 
-    console.log("VIN:", vinInput, "→ modello VIN:", modelloCorrente);
-
     mostraRicambi();
 }
 
@@ -127,7 +126,7 @@ async function caricaParts() {
         const descrizione = cols[1];
         const quantita    = cols[2];
         const modello     = cols[3];
-        const esploso     = cols[4] || "";   // opzionale, se presente
+        const esploso     = cols[4] || "";
 
         const modelliPuliti = modello
             .replace(/\*/g, "")
@@ -144,14 +143,13 @@ async function caricaParts() {
         });
     }
 
-    console.log("Parts.csv caricato:", partsTable);
     mostraRicambi();
 }
 caricaParts();
 
 
 // ------------------------------------------------------
-// CARICAMENTO PartsMY22.csv (solo modello Y01 / MY22)
+// CARICAMENTO partsMY22.csv (solo modello Y01 / MY22)
 // ------------------------------------------------------
 let partsTableMY22 = [];
 
@@ -170,19 +168,16 @@ async function caricaPartsMY22() {
         const modello     = cols[3];
         const esploso     = cols[4] || "";
 
-        // Qui sappiamo che questa tabella è SOLO per MY22 (Y01)
         partsTableMY22.push({
             codice: codice.trim(),
             descrizione: descrizione.trim(),
             quantita: quantita.trim(),
-            modelli: [ "MY22" ],   // fisso
+            modelli: ["MY22"],
             esploso: esploso.trim()
         });
     }
-
-    console.log("partsMY22.csv caricato:", partsTableMY22);
 }
-caricapartsMY22();
+caricaPartsMY22();
 
 
 // ------------------------------------------------------
@@ -205,20 +200,14 @@ function mostraRicambi() {
     let html = "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
 
-    // Mappa modello VIN → modello ricambi (MY22, MY23, ecc.)
     const modelloParts = modelloCorrente ? MODEL_MAP[modelloCorrente.trim()] : null;
 
-    // Scegli la tabella giusta:
-    // - se il VIN è Y01 → usa partsMY22.csv
-    // - altrimenti → usa Parts.csv
     let tabella = partsTable;
     if (modelloCorrente === "Y01") {
         tabella = partsTableMY22;
     }
 
     const filtrati = tabella.filter(p => {
-
-        // SOLO ricambi specifici del modello (non multipli)
         if (modelloParts) {
             if (p.modelli.length !== 1 || p.modelli[0] !== modelloParts) {
                 return false;
@@ -228,7 +217,6 @@ function mostraRicambi() {
         if (search.length > 0) {
             const codice = p.codice.toLowerCase();
             const descrizione = p.descrizione.toLowerCase();
-
             if (!codice.includes(search) && !descrizione.includes(search)) {
                 return false;
             }
@@ -252,6 +240,74 @@ function mostraRicambi() {
 
     html += "</table>";
     document.getElementById("partsBox").innerHTML = html;
+}
+
+
+// ------------------------------------------------------
+// RICERCA VISUALE — MOSTRA TUTTI I SINOTTICI (solo MY22)
+// ------------------------------------------------------
+function mostraSinottici() {
+    const tabella = partsTableMY22;
+
+    const sinottici = [...new Set(tabella.map(p => p.esploso))];
+
+    let html = "<h3>Seleziona un sinottico</h3>";
+    html += "<div style='display:flex; flex-wrap:wrap; gap:20px;'>";
+
+    sinottici.forEach(s => {
+        html += `
+            <div onclick="mostraRicambiSinottico('${s}')"
+                 style="border:1px solid #333; padding:10px; width:150px; text-align:center; cursor:pointer;">
+                <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${s}.jpg"
+                     style="width:100%; height:auto;">
+                <div style="margin-top:5px; font-weight:bold;">${s}</div>
+            </div>
+        `;
+    });
+
+    html += "</div>";
+
+    document.getElementById("partsBox").innerHTML = html;
+}
+
+
+// ------------------------------------------------------
+// MOSTRA RICAMBI DI UN SINOTTICO
+// ------------------------------------------------------
+function mostraRicambiSinottico(codiceEsploso) {
+    const tabella = partsTableMY22;
+
+    const risultati = tabella.filter(p => p.esploso === codiceEsploso);
+
+    let html = `<h3>Ricambi del sinottico ${codiceEsploso}</h3>`;
+    html += "<table>";
+    html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
+
+    risultati.forEach(p => {
+        html += `
+            <tr onclick="mostraEsploso('${p.esploso}', '${p.codice}')">
+                <td>${p.codice}</td>
+                <td>${p.descrizione}</td>
+                <td>${p.quantita}</td>
+            </tr>
+        `;
+    });
+
+    html += "</table>";
+
+    document.getElementById("partsBox").innerHTML = html;
+}
+
+
+// ------------------------------------------------------
+// TORNA ALLA PAGINA INIZIALE
+// ------------------------------------------------------
+function tornaAllaHome() {
+    document.getElementById("vinInput").value = "";
+    document.getElementById("searchInput").value = "";
+    modelloCorrente = "";
+    document.getElementById("risultatoVIN").innerText = "";
+    mostraRicambi();
 }
 
 

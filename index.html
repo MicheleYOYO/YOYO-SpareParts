@@ -19,8 +19,8 @@
 
 <h1>YOYO Spare Parts</h1>
 
-<h2>Ricerca per VIN</h2>
-<input type="text" id="vinInput" placeholder="Inserisci VIN">
+<h2>Ricerca per VIN (ultime 6 cifre)</h2>
+<input type="text" id="vinInput" placeholder="Inserisci ultime 6 cifre">
 <button onclick="cercaVIN()">Cerca</button>
 
 <h2>Ricerca Visuale</h2>
@@ -33,37 +33,61 @@
 let modello = "";
 let csvData = [];
 
-/* ------------------------------
-   1. Determina modello dal VIN
---------------------------------*/
+/* ---------------------------------------------------
+   1. RICERCA VIN: usa SOLO le ultime 6 cifre
+   confronta con VIN.csv per determinare il modello
+--------------------------------------------------- */
 function cercaVIN() {
-    const vin = document.getElementById("vinInput").value.trim().toUpperCase();
+    const vin6 = document.getElementById("vinInput").value.trim();
 
-    if (vin.length < 10) {
-        alert("VIN non valido");
+    if (vin6.length !== 6 || isNaN(vin6)) {
+        alert("Inserisci le ultime 6 cifre del VIN");
         return;
     }
 
-    const codice = vin.substring(3, 7);
+    fetch("https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/VIN.csv")
+        .then(response => response.text())
+        .then(text => {
+            const righe = text.split("\n");
+            let trovato = false;
 
-    if (codice === "Y01") modello = "Y01";
-    else if (codice === "Y023") modello = "Y0230";
-    else modello = "GENERIC";
+            righe.forEach(r => {
+                const campi = r.split(";");
 
-    caricaCSV();
+                if (campi.length < 3) return;
+
+                const start = campi[0].trim();
+                const end = campi[1].trim();
+                const model = campi[2].trim();
+
+                if (vin6 >= start && vin6 <= end) {
+                    modello = model;
+                    trovato = true;
+                }
+            });
+
+            if (!trovato) {
+                alert("VIN non trovato nei range");
+                return;
+            }
+
+            caricaCSV();
+        });
 }
 
-/* ------------------------------
-   2. Carica CSV corretto
---------------------------------*/
+/* ---------------------------------------------------
+   2. CARICA CSV DEL MODELLO
+--------------------------------------------------- */
 function caricaCSV() {
     let url = "";
 
     if (modello === "Y01") {
         url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/partsMY22.csv";
-    } else if (modello === "Y0230") {
+    } 
+    else if (modello === "Y0230") {
         url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/partsMY24.csv";
-    } else {
+    }
+    else {
         url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/parts.csv";
     }
 
@@ -75,17 +99,17 @@ function caricaCSV() {
         });
 }
 
-/* ------------------------------
-   3. Parser CSV
---------------------------------*/
+/* ---------------------------------------------------
+   3. PARSER CSV
+--------------------------------------------------- */
 function parseCSV(text) {
     const righe = text.split("\n");
     return righe.map(r => r.split(";"));
 }
 
-/* ------------------------------
-   4. Mostra ricambi del modello
---------------------------------*/
+/* ---------------------------------------------------
+   4. MOSTRA RICAMBI DEL MODELLO
+--------------------------------------------------- */
 function mostraRicambi() {
     let html = "<h2>Ricambi</h2><table><tr><th>Codice</th><th>Descrizione</th><th>Esploso</th></tr>";
 
@@ -104,41 +128,39 @@ function mostraRicambi() {
     document.getElementById("parts").innerHTML = html;
 }
 
-/* ------------------------------
-   5. Apri immagine esploso
---------------------------------*/
+/* ---------------------------------------------------
+   5. APRI IMMAGINE ESPLOSO
+--------------------------------------------------- */
 function apriEsploso(code) {
     let folder = modello === "Y0230" ? "MY24" : modello;
-
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${folder}/${code}.jpg`;
-
     window.open(url, "_blank");
 }
 
-/* ------------------------------
-   6. Ricerca visuale: mostra tutti gli esplosi
---------------------------------*/
+/* ---------------------------------------------------
+   6. RICERCA VISUALE: mostra tutti gli esplosi
+--------------------------------------------------- */
 function mostraSinottici() {
     if (!modello) {
-        alert("Prima inserisci un VIN");
+        alert("Prima fai la ricerca VIN");
         return;
     }
 
     let folder = modello === "Y0230" ? "MY24" : modello;
-
     let html = "<h2>Esplosi disponibili</h2>";
 
     for (let i = 1; i <= 99; i++) {
         let code = "";
 
         if (modello === "Y0230") {
-            code = "Y0230" + String(i).padStart(3, "0");
+            code = "Y0230" + String(i).padStart(3, "0"); // Y02300001
         } else {
-            code = modello + String(i).padStart(2, "0");
+            code = modello + String(i).padStart(2, "0"); // Y0101
         }
 
-        html += `<img class="exploded-img" src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${folder}/${code}.jpg"
-                 onclick="apriEsploso('${code}')">`;
+        html += `<img class="exploded-img" 
+                     src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${folder}/${code}.jpg"
+                     onclick="apriEsploso('${code}')">`;
     }
 
     document.getElementById("results").innerHTML = html;

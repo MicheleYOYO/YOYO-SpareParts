@@ -272,23 +272,42 @@ function mostraSinottici() {
 
 
 // ------------------------------------------------------
-// MOSTRA RICAMBI DI UN SINOTTICO
+// MOSTRA RICAMBI DI UN SINOTTICO (SEPARATI DAGLI ALTRI)
 // ------------------------------------------------------
 function mostraRicambiSinottico(codiceEsploso) {
     const tabella = partsTableMY22;
 
-    const risultati = tabella.filter(p => p.esploso === codiceEsploso);
+    const ricambiSinottico = tabella.filter(p => p.esploso === codiceEsploso);
+    const altriRicambi = tabella.filter(p => p.esploso !== codiceEsploso);
 
-    let html = `<h3>Ricambi del sinottico ${codiceEsploso}</h3>`;
+    let html = `<h2>Ricambi del sinottico ${codiceEsploso}</h2>`;
     html += "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
-    risultati.forEach(p => {
+    ricambiSinottico.forEach(p => {
         html += `
             <tr onclick="mostraEsploso('${p.esploso}', '${p.codice}')">
                 <td>${p.codice}</td>
                 <td>${p.descrizione}</td>
                 <td>${p.quantita}</td>
+            </tr>
+        `;
+    });
+
+    html += "</table>";
+
+    html += "<hr><h3>Altri ricambi MY22</h3>";
+
+    html += "<table>";
+    html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Sinottico</th></tr>";
+
+    altriRicambi.forEach(p => {
+        html += `
+            <tr onclick="mostraEsploso('${p.esploso}', '${p.codice}')">
+                <td>${p.codice}</td>
+                <td>${p.descrizione}</td>
+                <td>${p.quantita}</td>
+                <td>${p.esploso}</td>
             </tr>
         `;
     });

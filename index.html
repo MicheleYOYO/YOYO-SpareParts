@@ -180,9 +180,9 @@ async function caricaPartsMY22() {
         });
     }
 
-    console.log("PartsMY22.csv caricato:", partsTableMY22);
+    console.log("partsMY22.csv caricato:", partsTableMY22);
 }
-caricaPartsMY22();
+caricapartsMY22();
 
 
 // ------------------------------------------------------
@@ -209,7 +209,7 @@ function mostraRicambi() {
     const modelloParts = modelloCorrente ? MODEL_MAP[modelloCorrente.trim()] : null;
 
     // Scegli la tabella giusta:
-    // - se il VIN è Y01 → usa PartsMY22.csv
+    // - se il VIN è Y01 → usa partsMY22.csv
     // - altrimenti → usa Parts.csv
     let tabella = partsTable;
     if (modelloCorrente === "Y01") {

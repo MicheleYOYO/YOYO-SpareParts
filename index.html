@@ -110,7 +110,7 @@ function identificaModello() {
 
 
 // ------------------------------------------------------
-// CARICAMENTO PARTS.csv
+// CARICAMENTO PARTS.csv (tabella generale)
 // ------------------------------------------------------
 let partsTable = [];
 
@@ -151,6 +151,41 @@ caricaParts();
 
 
 // ------------------------------------------------------
+// CARICAMENTO PartsMY22.csv (solo modello Y01 / MY22)
+// ------------------------------------------------------
+let partsTableMY22 = [];
+
+const PARTS_MY22_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/PartsMY22.csv";
+
+async function caricaPartsMY22() {
+    const response = await fetch(PARTS_MY22_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
+
+    for (let i = 1; i < righe.length; i++) {
+        const cols = righe[i].split(",");
+        const codice      = cols[0];
+        const descrizione = cols[1];
+        const quantita    = cols[2];
+        const modello     = cols[3];
+        const esploso     = cols[4] || "";
+
+        // Qui sappiamo che questa tabella è SOLO per MY22 (Y01)
+        partsTableMY22.push({
+            codice: codice.trim(),
+            descrizione: descrizione.trim(),
+            quantita: quantita.trim(),
+            modelli: [ "MY22" ],   // fisso
+            esploso: esploso.trim()
+        });
+    }
+
+    console.log("PartsMY22.csv caricato:", partsTableMY22);
+}
+caricaPartsMY22();
+
+
+// ------------------------------------------------------
 // MAPPATURA VIN → MODELLO RICAMBI
 // ------------------------------------------------------
 const MODEL_MAP = {
@@ -162,7 +197,7 @@ const MODEL_MAP = {
 
 
 // ------------------------------------------------------
-// MOSTRARE RICAMBI FILTRATI (SOLO SPECIFICI DEL MODELLO)
+// MOSTRARE RICAMBI FILTRATI
 // ------------------------------------------------------
 function mostraRicambi() {
     let search = document.getElementById("searchInput")?.value.toLowerCase().trim() || "";
@@ -170,9 +205,18 @@ function mostraRicambi() {
     let html = "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
 
+    // Mappa modello VIN → modello ricambi (MY22, MY23, ecc.)
     const modelloParts = modelloCorrente ? MODEL_MAP[modelloCorrente.trim()] : null;
 
-    const filtrati = partsTable.filter(p => {
+    // Scegli la tabella giusta:
+    // - se il VIN è Y01 → usa PartsMY22.csv
+    // - altrimenti → usa Parts.csv
+    let tabella = partsTable;
+    if (modelloCorrente === "Y01") {
+        tabella = partsTableMY22;
+    }
+
+    const filtrati = tabella.filter(p => {
 
         // SOLO ricambi specifici del modello (non multipli)
         if (modelloParts) {
@@ -220,7 +264,6 @@ function mostraEsploso(file, codice) {
         return;
     }
 
-    // Costruisce l'URL esatto su GitHub Pages
     const url = "https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/" + file + ".jpg";
 
     const win = window.open("", "_blank");
@@ -233,8 +276,6 @@ function mostraEsploso(file, codice) {
         </html>
     `);
 }
-
-
 
 </script>
 

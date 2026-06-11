@@ -252,19 +252,19 @@ function mostraSinottici() {
     const sinottici = [...new Set(tabella.map(p => p.esploso))];
 
     let html = "<h3>Seleziona un sinottico</h3>";
-    html += "<div>";
+
+    html += "<div style='display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between;'>";
 
     sinottici.forEach(s => {
         html += `
             <div onclick="mostraRicambiSinottico('${s}')"
-                 style="border:1px solid #333; padding:10px; margin:15px; 
-                        display:inline-block; width:320px; text-align:center; 
-                        cursor:pointer; vertical-align:top;">
+                 style="border:1px solid #333; padding:15px; 
+                        width:48%; text-align:center; cursor:pointer;">
                 
                 <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${s}.jpg"
-                     style="width:300px; height:auto;">
+                     style="width:100%; height:auto;">
 
-                <div style="margin-top:8px; font-weight:bold; font-size:18px;">
+                <div style="margin-top:10px; font-weight:bold; font-size:22px;">
                     ${s}
                 </div>
             </div>
@@ -275,6 +275,7 @@ function mostraSinottici() {
 
     document.getElementById("partsBox").innerHTML = html;
 }
+
 
 
 

@@ -98,12 +98,18 @@ function aggiornaTextarea(){
 }
 
 function esportaJSON(){
+    const sin = document.getElementById("sinottico").value.trim();
+    if(!sin){
+        alert("Inserisci il nome del sinottico prima di esportare");
+        return;
+    }
+
     const blob = new Blob([JSON.stringify(coords, null, 4)], {type:"application/json"});
     const url = URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "coordinateEsplosi.json";
+    a.download = sin + ".json";   // <-- NOME AUTOMATICO UGUALE AL JPG
     a.click();
 }
 </script>

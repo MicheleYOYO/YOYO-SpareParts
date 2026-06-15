@@ -98,9 +98,22 @@ function aggiornaTextarea(){
 }
 
 function esportaJSON(){
-    const sin = document.getElementById("sinottico").value.trim();
+    // Legge il valore in modo sicuro
+    let sinInput = document.getElementById("sinottico");
+    let sin = (sinInput.value || "").trim();
+
     if(!sin){
         alert("Inserisci il nome del sinottico prima di esportare");
+        sinInput.focus();
+        return;
+    }
+
+    // Rimuove eventuali caratteri strani
+    sin = sin.replace(/[^a-zA-Z0-9_-]/g, "");
+
+    // Controllo finale
+    if(!sin){
+        alert("Nome sinottico non valido");
         return;
     }
 
@@ -109,8 +122,10 @@ function esportaJSON(){
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = sin + ".json";   // <-- NOME AUTOMATICO UGUALE AL JPG
+    a.download = sin + ".json";   // <-- NOME GARANTITO
     a.click();
+
+    alert("File salvato come: " + sin + ".json");
 }
 </script>
 

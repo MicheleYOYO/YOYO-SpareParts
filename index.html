@@ -149,7 +149,7 @@ caricaParts();
 
 
 // ------------------------------------------------------
-// CARICAMENTO partsMY22.csv (solo modello Y01 / MY22)
+// CARICAMENTO partsMY22.csv
 // ------------------------------------------------------
 let partsTableMY22 = [];
 
@@ -181,6 +181,38 @@ caricaPartsMY22();
 
 
 // ------------------------------------------------------
+// CARICAMENTO partsMY24.csv
+// ------------------------------------------------------
+let partsTableMY24 = [];
+
+const PARTS_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24.csv";
+
+async function caricaPartsMY24() {
+    const response = await fetch(PARTS_MY24_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
+
+    for (let i = 1; i < righe.length; i++) {
+        const cols = righe[i].split(",");
+        const codice      = cols[0];
+        const descrizione = cols[1];
+        const quantita    = cols[2];
+        const modello     = cols[3];
+        const esploso     = cols[4] || "";
+
+        partsTableMY24.push({
+            codice: codice.trim(),
+            descrizione: descrizione.trim(),
+            quantita: quantita.trim(),
+            modelli: ["MY24"],
+            esploso: esploso.trim()
+        });
+    }
+}
+caricaPartsMY24();
+
+
+// ------------------------------------------------------
 // MAPPATURA VIN → MODELLO RICAMBI
 // ------------------------------------------------------
 const MODEL_MAP = {
@@ -205,6 +237,8 @@ function mostraRicambi() {
     let tabella = partsTable;
     if (modelloCorrente === "Y01") {
         tabella = partsTableMY22;
+    } else if (modelloCorrente === "Y0230") {
+        tabella = partsTableMY24;
     }
 
     const filtrati = tabella.filter(p => {
@@ -244,10 +278,20 @@ function mostraRicambi() {
 
 
 // ------------------------------------------------------
-// RICERCA VISUALE — MOSTRA TUTTI I SINOTTICI (solo MY22)
+// RICERCA VISUALE — MOSTRA SINOTTICI DEL MODELLO CORRENTE
 // ------------------------------------------------------
 function mostraSinottici() {
-    const tabella = partsTableMY22;
+    let tabella = [];
+
+    if (modelloCorrente === "Y01") {
+        tabella = partsTableMY22;
+    } else if (modelloCorrente === "Y0230") {
+        tabella = partsTableMY24;
+    } else {
+        document.getElementById("partsBox").innerHTML =
+            "<p>Identifica prima un VIN valido per vedere i sinottici.</p>";
+        return;
+    }
 
     const sinottici = [...new Set(tabella.map(p => p.esploso))];
 
@@ -261,7 +305,7 @@ function mostraSinottici() {
                  style="border:1px solid #333; padding:15px; 
                         width:48%; text-align:center; cursor:pointer;">
                 
-                <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${s}.jpg"
+                <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modelloCorrente]}/${s}.jpg"
                      style="width:100%; height:auto;">
 
                 <div style="margin-top:10px; font-weight:bold; font-size:22px;">
@@ -281,7 +325,13 @@ function mostraSinottici() {
 // MOSTRA RICAMBI DI UN SINOTTICO
 // ------------------------------------------------------
 function mostraRicambiSinottico(codiceEsploso) {
-    const tabella = partsTableMY22;
+    let tabella = [];
+
+    if (modelloCorrente === "Y01") {
+        tabella = partsTableMY22;
+    } else if (modelloCorrente === "Y0230") {
+        tabella = partsTableMY24;
+    }
 
     const ricambiSinottico = tabella.filter(p => p.esploso === codiceEsploso);
     const altriRicambi = tabella.filter(p => p.esploso !== codiceEsploso);
@@ -302,7 +352,7 @@ function mostraRicambiSinottico(codiceEsploso) {
 
     html += "</table>";
 
-    html += "<hr><h3>Altri ricambi MY22</h3>";
+    html += `<hr><h3>Altri ricambi ${MODEL_MAP[modelloCorrente]}</h3>`;
 
     html += "<table>";
     html += "<tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Sinottico</th></tr>";
@@ -345,7 +395,8 @@ function mostraEsploso(file, codice) {
         return;
     }
 
-    const url = "https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/" + file + ".jpg";
+    const cartella = MODEL_MAP[modelloCorrente];
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
     const win = window.open("", "_blank");
     win.document.write(`

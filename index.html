@@ -326,7 +326,7 @@ function mostraEsploso(file,codice,id){
     if(!file){
         alert("Nessun esploso disponibile per questo ricambio");
         return;
-    
+    }
 
     const cartella = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
@@ -354,6 +354,8 @@ function mostraEsploso(file,codice,id){
             #explodedImg{
                 width:60%;
                 height:auto;
+                display:block;
+                margin:auto;
             }
             .marker{
                 position:absolute;
@@ -381,16 +383,29 @@ function mostraEsploso(file,codice,id){
             const container = document.getElementById("container");
 
             img.onload = function(){
+
                 const naturalW = img.naturalWidth;
+                const naturalH = img.naturalHeight;
+
                 const displayedW = img.clientWidth;
-                const scale = displayedW / naturalW;
+                const displayedH = img.clientHeight;
+
+                const rect = img.getBoundingClientRect();
+
+                const offsetX = rect.left - container.getBoundingClientRect().left;
+                const offsetY = rect.top  - container.getBoundingClientRect().top;
+
+                const scaleX = displayedW / naturalW;
+                const scaleY = displayedH / naturalH;
 
                 if(coords[fileName] && coords[fileName][partId]){
                     coords[fileName][partId].forEach(pt=>{
                         const marker = document.createElement("div");
                         marker.className = "marker";
-                        marker.style.left = (pt.x * scale) + "px";
-                        marker.style.top = (pt.y * scale) + "px";
+
+                        marker.style.left = (offsetX + pt.x * scaleX) + "px";
+                        marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+
                         container.appendChild(marker);
                     });
                 }
@@ -400,7 +415,3 @@ function mostraEsploso(file,codice,id){
     </html>
     `);
 }
-</script>
-
-</body>
-</html>

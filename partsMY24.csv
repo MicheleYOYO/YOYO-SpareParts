@@ -1,917 +1,917 @@
 codice,descrizione,quantita,id,esploso
-1108010Y0210,Electrical accelerator pedal,1,1,Y02100001
-S18606002,Hexagon bolt with flange M6*20 Black Dacromet,3,2,Y02100001
-3508100Y0230,Parking control handle,1,1,Y02100002
-3508200Y0230,Front parking cable,1,2,Y02100002
-3508300Y0230,Left parking cable,1,3,Y02100002
-3508400Y0230,Right parking cable,1,4,Y02100002
-S99035001,Universal pipe clamp ?20?10,1,5,Y02100002
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,6,Y02100002
-S32008002,Hexagon flange nut M8 Silver Dacromet,2,7,Y02100002
-3540102Y0240-Z001,Vacuum tank with sensor assembly,1,1,Y02100003
-3540102Y0211,Vacuum tank,1,2,Y02100003
-3540106Y0210,Vacuum sensor,1,3,Y02100003
-3540103Y0240-Z001,Electronic vacuum pump with exhaust pipe assembly,1,4,Y02100003
-3540103Y0211,Electronic vacuum pump,1,5,Y02100003
-3540104Y0240,Vent hose electronic vacuum pump,1,6,Y02100003
-3540400Y0240,Vacuum hose,1,7,Y02100003
-S18406002,Hexagon flange face bolts M6*45 Silver Dacromet,2,8,Y02100003
-S32008002,Hexagon flange nut M8 Silver Dacromet,2,9,Y02100003
-3506011Y0240,First out of the oil hard tube,1,1,Y02100004
-3506012Y0240,The second oil out of the hard tube,1,2,Y02100004
-3506013Y0240,Front left brake pipe,1,3,Y02100004
-3506014Y0240,Front right brake pipe,1,4,Y02100004
-3506015Y0240,Rear left brake hard tube I,1,5,Y02100004
-3506016Y0240,Rear right brake hard tube I,1,6,Y02100004
-3506100Y0230,Front left brake hose,1,7,Y02100004
-3506105Y0210,Spring retainer ring brake hose,2,8,Y02100004
-3506107Y0210,Sealing washer,4,9,Y02100004
-3506106Y0210,Punched bolts,2,10,Y02100004
-3506116Y0240,Single hole pipe clip,2,11,Y02100004
-3506200Y0230,Front right brake hose,1,12,Y02100004
-3550300Y0240,Front left wheel speed sensor,1,13,Y02100004
-3550400Y0240,Front right wheel speed sensor,1,14,Y02100004
-3506113Y0240,Double-hole pipe clip,2,15,Y02100004
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,16,Y02100004
-3506300Y0240,Rear brake hose assembly,2,1,Y02100005
-3506020Y0230,Rear brake hard tube III,2,2,Y02100005
-3506017Y0240,Rear left brake hard tube II,1,3,Y02100005
-3506018Y0240,Rear right brake hard tube II,5,4,Y02100005
-3506105Y0210,Spring retainer ring brake hose,4,5,Y02100005
-3506113Y0240,Double-hole pipe clip,1,6,Y02100005
-3506116Y0240,Single hole pipe clip,3,7,Y02100005
-3550500Y0240B,Rear left wheel speed sensor,1,8,Y02100005
-3550600Y0240B,Rear right wheel speed sensor,1,9,Y02100005
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,10,Y02100005
-3540101Y0210,Vacuum booster,1,1,Y02100006
-3550100Y0230,ABS controller assembly,1,2,Y02100006
-3569100Y0240,Brake pedal assy,1,3,Y02100006
-S18608003,Hexagon flange bolt M8*20 Silver Dacromet T,2,4,Y02100006
-S32008002,Hexagon flange nut M8 Silver Dacromet,4,5,Y02100006
-S50108001,Lock pin ?8,1,6,Y02100006
-S51008001,Pin shaft ?8*25,1,7,Y02100006
-3540113Y0210,Brake fluid tank cap,1,8,Y02100006
-2915100Y0210,Rear shock absorber,2,1,Y02100007
-2912011Y0210,Rear coil spring,2,2,Y02100007
-2914300Y0240,Thrust rod assy,2,3,Y02100007
-2914200Y0210,Rear balance bar,1,4,Y02100007
-2912013Y0210,Rear buffer block,2,5,Y02100007
-2912012Y0210,Upper mounting base of rear spring,2,6,Y02100007
-S18512004,Hexagon flange bolts M12*85 Silver Dacromet T,4,7,Y02100007
-S18512001,Hexagon flange bolts M12*55 Silver Dacromet T,2,8,Y02100007
-S18512003,Hexagon flange bolts M12*75 Silver Dacromet T,1,9,Y02100007
-2906106Y0210,?12 large gasket,1,10,Y02100007
-S40212002,Large washer ?12 black Dacromet,2,11,Y02100007
-S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,10,12,Y02100007
-S18512901,Hexagon flange bolt M12*90*P1.25 Silver Dacromet 10.9 class,2,13,Y02100007
-3100101Y0230,Tire (155/70-R13),4,1,Y02100008
-3100106Y0230,13 inch steel wheel,4,2,Y02100008
-3100102Y0240,Inflating valve (TR418),4,3,Y02100008
-3106107Y0240,Wheel nut (steel wheel),16,4,Y02100008
-5306163Y0230,Tire tag -13 inches,1,5,Y02100008
-3100105-Y01,15 aluminum wheel (light color),4,1,Y02100009
-3100101Y0241,Tire  (155/60-R15),4,2,Y02100009
-3100102Y0241,Inflating valve (TR413),4,3,Y02100009
-3106106Y0240,Wheel nut?aluminum wheel?,16,4,Y02100009
-3100104-Y01,Trim cap of wheel rim,4,5,Y02100009
-5306164Y0210,Tire label - 15 ,1,6,Y02100009
-Z3400104Y0240,Steering wheel with switch assembly,1,1,Y02100010
-3400104Y0240,Steering wheel assembly,1,2,Y02100010
-3400135Y0230,Horn hood,1,3,Y02100010
-3400106Y0210,Electric steering column assembly,1,1,Y02100011
-3400102Y0230,steering lower shaft assy,1,2,Y02100011
-3400108Y0210,Lower shaft shield steering column,1,3,Y02100011
-Q32312F61,Steering wheel nut,1,4,Y02100011
-3400161Y0210,Steering column and motor,1,5,Y02100011
-3400162Y0210,Universal joint steering column,1,6,Y02100011
-Q1420830T13F61,Hexagon head bolt and spring washer assembly,1,7,Y02100011
-3400166Y0210,Hexagon head bolt spring washer and plain washer assy,2,8,Y02100011
-3400165Y0210,EPS Controller bracket,1,9,Y02100011
-3400164Y0210,EPS Controller,1,10,Y02100011
-S32008002,Hexagon flange nut M8 Silver Dacromet,3,11,Y02100011
-S18608006,Hexagon flange bolt M8*70 color zinc T,1,12,Y02100011
-Q1420830T13F61,Hexagon head bolt and spring washer assembly,2,13,Y02100011
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,14,Y02100011
-3400101Y0230,Steering gear with tie rod assembly,1,1,Y02100012
-S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,2,2,Y02100012
-S50032002,Split pin,2,3,Y02100012
-Q381B12,Type I hexagon slotted nut,2,4,Y02100012
-3400113Y0210,Steering wheel ball head,2,5,Y02100012
-3400111Y0230,Steering gear body with inner tie rod,1,6,Y02100012
-3400116Y0210,Dust cover,2,7,Y02100012
-16850006,Dust cover clamp,2,8,Y02100012
-16812004,Dust cover tube collar,2,9,Y02100012
-S18512002,Hexagon flange bolts M12*65 Silver Dacromet T,2,10,Y02100012
-3400115Y0210,Sealant sleeve,1,11,Y02100012
-3400114Y0210,Sealed base,1,12,Y02100012
-2801100Y0240,Front auxiliary frame assy,1,1,Y02100013
-2904100Y0210,Front swing arm assembly,2,2,Y02100013
-2906101Y0210,Front stabilizer bar,1,3,Y02100013
-2906102-Y01,Stabilizer rod bushing,2,4,Y02100013
-2906103Y0210,Stabilizer rod mounting bracket,2,5,Y02100013
-2906105-Y01,Stabilizer rod end bushing,4,6,Y02100013
-2906106Y0210,?12 large gasket,2,7,Y02100013
-2906107Y0210,?16 large gasket,2,8,Y02100013
-S18510001,Hexagon flange bolts M10*25 Silver Dacromet T,10,9,Y02100013
-S33110001,All metal hexagonal flange face lock nut M10 Silver Dacromet T13,4,10,Y02100013
-S18510006,Hexagon flange bolts M10*75 Silver Dacromet T,2,11,Y02100013
-S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,2,12,Y02100013
-3501102Y0230,Front right brake with steering knuckle assy,1,1,Y02100014
-3501101Y0230,Front left brake with steering knuckle assy,1,2,Y02100014
-3501112Y0230,Left steering knuckle belt intermediate shaft,1,3,Y02100014
-3501113Y0230,Left brake caliper assy,1,4,Y02100014
-3501122Y0230,Right steering knuckle with intermediate shaft,1,5,Y02100014
-3501123Y0230,Right brake caliper assy,1,6,Y02100014
-3501114Y0230,Wheel hub unit with ABS gear ring,2,7,Y02100014
-3501111Y0230,Brake disc,2,8,Y02100014
-3501115Y0230,Front outer Brake lining,2,9,Y02100014
-3501117Y0240,Caliper bracket mounting bolt (with flange),4,10,Y02100014
-3501118Y0240,Center nut,2,11,Y02100014
-3501120Y0240,End cover,2,12,Y02100014
-S18510005,Hexagon flange bolts M10*50 Silver Dacromet T,2,13,Y02100014
-3501116Y0230,Front left inner Brake lining,1,14,Y02100014
-3501126Y0230,Front right inner Brake lining,1,15,Y02100014
-S33110001,All metal hexagonal flange face lock nut M10 Silver Dacromet T13,2,16,Y02100014
-2904101Y0210,Front left shock absorber assembly,1,1,Y02100015
-2904102Y0210,Front right shock absorber assembly,1,2,Y02100015
-S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,4,3,Y02100015
-S18512001,Hexagon flange bolts M12*55 Silver Dacromet T,4,4,Y02100015
-S32008002,Hexagon flange nut M8 Silver Dacromet,4,5,Y02100015
-Z2912100Y0230,Rear drive axle with parking cable assembly,1,1,Y02100016
-2912101Y0230,Brake drum,2,1,Y02100017
-2912102Y0230,Right brake assembly,1,2,Y02100017
-2912103Y0230,Shaft assembly,2,3,Y02100017
-2912104Y0230,Oil seal for half shaft,2,4,Y02100017
-2912105Y0230,Rear axle housing assembly,1,5,Y02100017
-2912106Y0230,Left brake assy,1,6,Y02100017
-2912107Y0230,Final drive assy,1,7,Y02100017
-2912108Y0230,Brake connection bolt,8,8,Y02100017
-2912109Y0230,Washer 10,8,9,Y02100017
-2912110Y0230,Brake connection nut,8,10,Y02100017
-2912111Y0230,Final drive connection nut M8,8,11,Y02100017
-2912112Y0230,Washer 8,8,12,Y02100017
-2912113Y0230,Breather valve,1,13,Y02100017
-2912114Y0230,Drain plug assembly,1,14,Y02100017
-2912115Y0230,Drain plug gasket,1,15,Y02100017
-2912116Y0230,Filler plug gasket,1,16,Y02100017
-2912117Y0230,Filler plug,1,17,Y02100017
-S18408002,Hexagon flange bolt M8*20 Silver Dacromet T,4,18,Y02100017
-S32008002,Hexagon flange nut M8 Silver Dacromet,2,19,Y02100017
-2912017Y0210,E-Motor mounting bracket,1,20,Y02100017
-S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,3,21,Y02100017
-2912118Y0230,Left brake shoe assembly,1,22,Y02100017
-2912119Y0230,Right brake shoe assembly,1,23,Y02100017
-2101020Y0210,Power battery module,3,1,Y02100018
-2101024Y0210,Module cover plate 1,1,2,Y02100018
-2101025Y0210,Module cover plate 2,1,3,Y02100018
-2101026Y0210,Fixing plate wiring harness,1,4,Y02100018
-2101037Y0210,Handle battery pack,1,5,Y02100018
-2101038Y0210,Fixing sheet metal handle,2,6,Y02100018
-2101039Y0210,Y02 heating film,1,7,Y02100018
-2101040Y0210,Seal ring,3,8,Y02100018
-2101041Y0210,Flexible connection positive terminal,1,9,Y02100018
-2101042Y0210,Flexible connection negative terminal,1,10,Y02100018
-2101043Y0210,Switching hard copper bar negative terminal,1,11,Y02100018
-2101011Y0210,BSU-SINOEV,1,12,Y02100018
-2101049Y0210-Z001,Quick wiring harness assy,1,13,Y02100018
-2101044Y0210,Bottom hole 3.7 plastic rivets BNJ-0005B,25,14,Y02100018
-2101045Y0210,Model: VV-P124-00-KS1 breather valve,1,15,Y02100018
-2101055Y0210,M6*12 Outer hexagon Dacromet bolts with flange (with  nylon adhesive),3,16,Y02100018
-2101056Y0210,M5*30 Outer hexagon Dacromet bolts single coil lock washer and plain washer assemblies,4,17,Y02100018
-2101057Y0210,Prevailing torque type hexagon Dacromet nuts with flange (non-metallic insert),2,18,Y02100018
-2101058Y0210,M4*10 Hexagon socket button head Dacromet bolt single coil lock washer and plain washer assemblies,4,19,Y02100018
-2101060Y0210,M4*20 Outer hexagon Dacromet bolts single coil lock washer and plain washer assemblies,42,20,Y02100018
-2101061Y0210,M3*10 Hexagon socket button head Dacromet bolt single coil lock washer and plain washer assemblies,14,21,Y02100018
-2101064Y0210,M4*10 Countersunk socket head flat head screw black dacromet,4,22,Y02100018
-2101046Y0210,BNJ-0181 Rivet tie 5.5 hole,2,23,Y02100018
-2101054Y0210,High-voltage warning sign,1,24,Y02100018
-2103010Y0250,Drive motor,1,1,Y02100019
-2103020Y0240,Motor three-phase wire harness bracket,1,2,Y02100019
-S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,3,3,Y02100019
-4002616Y0210,M6 Bonding Bolt (FT thread),1,4,Y02100019
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,5,Y02100019
-2108010Y0250,VCU assembly,1,1,Y02100020
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,4,2,Y02100020
-2142010Y0210,Motor controller body,1,1,Y02100021
-S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,8,2,Y02100021
-4002616Y0210,M6 Bonding Bolt (FT thread),1,3,Y02100021
-2105010Y0210,Positive wiring harness motor controller,1,1,Y02100022
-2105020Y0210,Negative wiring harness motor controller,1,2,Y02100022
-2105040Y0230,PTC& Compressor conversion cable,1,3,Y02100022
-2105050Y0230,High voltage wiring harness auxiliary system,1,4,Y02100022
-2105020Y0230,High voltage switching harness auxiliary system,1,5,Y02100022
-2105060-Y01,Dual-head hoop line card(19mm),1,6,Y02100022
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,1,7,Y02100022
-2107020Y0230,Charging socket (EN),1,1,Y02100023
-2107030-Y01,EV Charger (EN),1,2,Y02100023
-2107060Y0230,Three-in-one assembly,1,3,Y02100023
-2107061Y0230,Three-in-one upper left bracket,1,4,Y02100023
-2107062Y0230,Three-in-one lower bracket,1,5,Y02100023
-2107063Y0230,Three-in-one upper right bracket,1,6,Y02100023
-4002616Y0210,M6 Bonding Bolt (FT thread),1,7,Y02100023
-S18406004,Hexagon flange bolt M6*16*P1 Black zinc 8.8 grade,6,8,Y02100023
-S18608003,Hexagon flange bolt M8*20 Silver Dacromet T,4,9,Y02100023
-S32008002,Hexagon flange nut M8 Silver Dacromet,1,10,Y02100023
-S18608009,Hexagon flange bolt M8*16*P1.25 Silver Dacromet 8.8 class,1,11,Y02100023
-2107050-Y01,Charger bag,1,12,Y02100023
-2107064Y0230,63A fuse,2,13,Y02100023
-2107040-Y01,Double-head charger (EN),1,14,Y02100023
-Z2101100Y0230,Power Battery Box device,1,1,Y02100024
-Z2101100Y0280,Power Battery Box device,1,1,Y02100025
-2101013Y0210,Anti-friction bushing,6,1,Y02100026
-210101B-Y01,Battery box fast-plug,3,2,Y02100026
-210101AY0230,Battery negative wiring harness,1,3,Y02100026
-2101019Y0230,Battery positive wiring harness,1,4,Y02100026
-210101H-Y01,Battery module connecting line,2,5,Y02100026
-210101CY0210,Battery box communication wiring harness,1,6,Y02100026
-210101DY0230,The positive and negative battery wires pass through the hole rubber plug,2,7,Y02100026
-Z2109100Y0230,High voltage box assembly,1,1,Y02100027
-2101012Y0210,High voltage acquisition box,1,1,Y02100028
-2101054Y0210,High-voltage warning sign,1,2,Y02100028
-2109010Y0230B,High voltage box,1,3,Y02100028
-2101518Y0240,Shunt,1,4,Y02100028
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,5,Y02100028
-2109011Y0250,High-voltage box casing assy,1,6,Y02100028
-2109015Y0250,150A relay,1,7,Y02100028
-2109017-Y01,20A relay,2,8,Y02100028
-2109018Y0250,300A slow-blow fuse,1,9,Y02100028
-2101515Y0240,Heating fuse,1,10,Y02100028
-2109112Y0250,25?60W precharged resistor,1,11,Y02100028
-2109113Y0250,Communications wiring harness high-voltage box,1,12,Y02100028
-3601010Y0240,Body control module,1,1,Y02100029
-3601030Y0210,start antenna,1,2,Y02100029
-3704010Y0210,Passive start switch,1,3,Y02100029
-3791020Y0210,PE switch (with antenna),1,4,Y02100029
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,3,5,Y02100029
-S27348004,Cross recessed large half round head tapping screw ST4.8*13 black zinc-nickel,2,6,Y02100029
-3721010Y0240,High pitch horn,1,1,Y02100030
-3774010Y0230,Combination switch assembly,1,2,Y02100030
-S23004001,Cross recessed pan head screw and flat washer assembly M4*10*P0.7 Color zinc 4.8 grade,2,3,Y02100030
-3782010-Y01,Adjusting switch electric rear-view mirror,1,4,Y02100030
-S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,4,5,Y02100030
-3504102Y0210,Brake switch,1,6,Y02100030
-3778010Y0200,Steering wheel lock,1,7,Y02100030
-3781010Y0250,Shift switch,1,8,Y02100030
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,1,9,Y02100030
-3790020-Y01,Tailgate open switch,1,10,Y02100030
-3766010Y0230,Warning switch,1,11,Y02100030
-3746010Y0240,Windows regulator control switch,2,12,Y02100030
-3790040Y0210,Movable door assy rear bumper,1,13,Y02100030
-3774020Y0230,Clock spring assembly,1,14,Y02100030
-3790010Y0210-Z001,Left door lock core with mechanical key assembly,1,1,Y02100031
-3790030-Y01,Circlip lock cylinder left door,1,2,Y02100031
-3791001Y0210,Remote key assembly,1,3,Y02100031
-4002010Y0230,Front compartment wiring harness assy,1,1,Y02100032
-4002020Y0230,Roof wiring harness assy,1,2,Y02100032
-4002030Y0240,Left door wiring harness assy,1,3,Y02100032
-4002040Y0240,Right door wiring harness assy,1,4,Y02100032
-4003010Y0230,Main wiring harness assy,1,5,Y02100032
-S18606002,Hexagon flange face bolt M6*20 black Dacromet,2,6,Y02100032
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,2,7,Y02100032
-S18406001,Hexagonal flange bolts M6*12*P1 Black Dacromet 8.8 class,2,8,Y02100032
-4002200Y0230,Right body wiring harness assy,1,9,Y02100032
-4003020Y0230,Auxiliary dashboard wiring harness assy,1,10,Y02100032
-4013010Y0250,Tailgate wiring harness assy,1,11,Y02100032
-4013020Y0250,Rear bumper harness assy,1,12,Y02100032
-4002616Y0210,M6 Bonding Bolt (FT thread),11,13,Y02100032
-4003011Y0210,Bracket main wiring harness,1,14,Y02100032
-S14606121,Hexagon head bolt spring washer and flat washer assembly M6*12*P1 Silver Dacromet 8.8,1,15,Y02100032
-4014010Y0210,Battery box lock wiring harness,1,16,Y02100032
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,17,Y02100032
-5205010Y0200,Wiper motor,1,1,Y02100033
-5205020Y0200,Wiper arm (including nozzle leather hose),1,2,Y02100033
-5205030Y0200,Wiper blade,1,3,Y02100033
-5205040Y0200,Front wiper nut cap,1,4,Y02100033
-5207030Y0240,Washing hose,1,5,Y02100033
-5207010Y0240,Washing Kettle Assembly,1,6,Y02100033
-5207020Y0200,Two-way hose assy,1,7,Y02100033
-5207020Y0240,Dust cap for filling port of washing kettle,1,8,Y02100033
-S99006201,Hexagon head bolt spring washer and large flat washer assembly M6*20*P1 Black Dacromet 8.8,2,9,Y02100033
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,5,10,Y02100033
-3820050Y0205,Steering wheel switch,1,1,Y02100034
-3820010Y0205,GPS antenna and radio antenna assembly,1,2,Y02100034
-7911010Y0241,Speaker,2,3,Y02100034
-3820021Y0205,Host machine,1,4,Y02100034
-3820022Y0205,Liquid crystal screen,1,5,Y02100034
-7925020Y0240,USB assy auxiliary dashboard,1,6,Y02100034
-7925030Y0240,USB assy Instrument panel,1,7,Y02100034
-S18406001,Hexagonal flange bolts M6*12*P1 Black Dacromet 8.8 class,2,8,Y02100034
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,9,Y02100034
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,4,10,Y02100034
-3820010Y0230,Radio and navigation antenna assembly,1,11,Y02100034
-3820011Y0230,Antenna mounting bracket,1,12,Y02100034
-8103010Y0230,Electric compressor assembly,1,1,Y02100035
-4002616Y0210,M6 Bonding Bolt (FT thread),1,2,Y02100035
-8103011Y0230,Electric compressor bracket assy,2,3,Y02100035
-8105010Y0210,Condenser assembly,1,4,Y02100035
-8105011Y0210,Electronic fan assembly,1,5,Y02100035
-8108020Y0230,Compressor exhaust pipe,1,6,Y02100035
-8108040Y0230,Refrigeration line assembly,1,7,Y02100035
-5306153Y0210,Specification label condenser fan,1,8,Y02100035
-5306154Y0230,Refrigerant label air conditioning,1,9,Y02100035
-S32008002,Hexagon flange nut M8 Silver Dacromet,6,10,Y02100035
-S18608007,Hexagon flange face bolt M8*150 silver Dacromet,2,11,Y02100035
-S14606004,Hexagon head bolt spring washer and flat washer assembly M6*35 silver Dacromet,4,12,Y02100035
-S14606003,Hexagon head bolt spring washer and flat washer assembly M6*25 silver Dacromet,4,13,Y02100035
-S14606002,Hexagon head bolt spring washer and flat washer assembly M6*20 silver Dacromet,2,14,Y02100035
-8107010Y0210,HVAC assembly,1,1,Y02100036
-8112010Y0240,Air conditioning control panel assembly,1,2,Y02100036
-5306104Y0210,Air duct central air outlet,1,3,Y02100036
-5306030Y0210,Front defrost assembly,1,4,Y02100036
-5306136Y0210,Left defrosting duct,1,5,Y02100036
-5306141Y0210,Right defrosting duct,1,6,Y02100036
-S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,2,7,Y02100036
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,16,8,Y02100036
-S32008002,Hexagon flange nut M8 Silver Dacromet,5,9,Y02100036
-7925040Y0210,T-BOX,1,1,Y02100037
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,3,2,Y02100037
-7925041Y0210,GPS+4G antenna,1,3,Y02100037
-3703010Y0230,12V Battery,1,1,Y02100038
-S18606002,Hexagon flange face bolt M6*20 black Dacromet,4,2,Y02100038
-6301711Y0240,Back door hinges reinforce plate left assembly,1,1,Y02100039
-6301713Y0240,Back door hinges reinforce plate right assembly,1,2,Y02100039
-6301591Y0240,Taildoor lock mounting bracket assembly,1,3,Y02100039
-5101571Y0240,Torque beam mounting bracket assembly,1,4,Y02100039
-S18510001,Hexagon flange bolts M10*25 Silver Dacromet T,5,5,Y02100039
-5101272Y0240,Upper mounting bracket condenser,2,6,Y02100039
-S18408006,Hexagon flange bolt M8*12*P1.25 Black Dacromet 8.8 class,2,7,Y02100039
-5101191Y0210,Component MCU mounting bracket II,1,8,Y02100039
-5101187Y0210,Component MCU mounting bracket I,1,9,Y02100039
-S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2,10,Y02100039
-5133832Y0280,Rear bumper mounting bracket ?,1,11,Y02100039
-5101850-Y01,Front suspension spring reinforced beam outer plate assembly - left,1,1,Y02100040
-5101860-Y01,Front suspension spring strengthens beam outer plate assembly - right,1,2,Y02100040
-5401170-Y01,Mount bracket assembly on left tube beam,1,3,Y02100040
-5401180-Y01,Mount bracket assembly on right tube beam,1,4,Y02100040
-6101100Y0210,Front left door assy,1,5,Y02100040
-6106010Y0210,Upper hinge side door,2,6,Y02100040
-6106030Y0210,Lower hinge side door,2,7,Y02100040
-S18608010,Hexagon flange bolt M8*25*P1.25 Silver Dacromet 10.9 class,16,8,Y02100040
-6101200Y0210,Front right door assy,1,9,Y02100040
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,12,10,Y02100040
-5133834Y0280,Rear bumper mounting bracket ?,2,11,Y02100040
-5701090-Y01,Top stringer assembly,1,1,Y02100041
-5701011-Y01,Cover the front cross beam on the cover,1,2,Y02100041
-5701030-Y01,Roof front beam lower plate assembly,1,3,Y02100041
-5701020Y0240,Top cover rear beam assembly,1,4,Y02100041
-5601112Y0280,Top cover rear beam assembly,1,5,Y02100041
-5401030-Y01,Inner panel assy doorsill left side wall,1,1,Y02100042
-5401230-Y01,Inner panel assy left doorsill,1,2,Y02100042
-5401111-Y01,Left side outer panel,1,3,Y02100042
-5401110-Y01,Rear bumper mounting bracket assembly- left,1,4,Y02100042
-5401150-Y01,Left side surrounding rear flow sink assembly,1,5,Y02100042
-5101551-Y01,Integrated mounting bracket,1,6,Y02100042
-5401810-Y01,Door latch mounting plate assembly left,1,7,Y02100042
-5401301-Y01,Left pillar A reinforcing plate,1,8,Y02100042
-5401303-Y01,Left pillar A strengthens the upper plate segment,1,9,Y02100042
-5401310-Y01,Upper left hinge reinforced plate assembly,1,10,Y02100042
-5401330-Y01,Left lower hinge reinforced plate assembly,1,11,Y02100042
-5401313Y0230,Headlight bracket ? - left assembly,1,12,Y02100042
-5401011-Y01,Left roof front beam connecting plate,1,13,Y02100042
-5401015-Y01,Left top side beam inner plate,1,14,Y02100042
-5401017-Y01,Left posterior medial segment,1,15,Y02100042
-5401710Y0240,Upper section assy left side inner panel around rear,1,16,Y02100042
-5701037Y0240,Rear hinge reinforcing plate left,1,17,Y02100042
-5401713Y0240,Seat belt nut plate assembly,1,18,Y02100042
-5401350-Y01,Inner panel component left A-pillar,1,19,Y02100042
-5401040-Y01,Inner panel assy doorsill right side wall,1,1,Y02100043
-5401240Y0230,Inner panel assy right doorsill,1,2,Y02100043
-5401112-Y01,Right side outer panel,1,3,Y02100043
-5101551-Y01,Integrated mounting bracket,1,4,Y02100043
-5401120-Y01,Rear bumper mounting bracket assembly- right,1,5,Y02100043
-5401160-Y01,Right side surrounding rear flow sink assembly,1,6,Y02100043
-5401820-Y01,Right door latch mounting plate assembly,1,7,Y02100043
-5401302-Y01,Right A-pillar reinforced plate,1,8,Y02100043
-5401304-Y01,Right pillar A strengthens the upper plate segment,1,9,Y02100043
-5401320-Y01,Right upper hinge reinforcing plate assembly,1,10,Y02100043
-5401340-Y01,Lower right hinge reinforcing plate assembly,1,11,Y02100043
-5401413Y0230,Headlight bracket ? - right assembly,1,12,Y02100043
-5401012-Y01,Right top front beam connecting plate,1,13,Y02100043
-5401016-Y01,Right top side beam inner plate,1,14,Y02100043
-5401018-Y01,Right side surrounding inferior posterior inner plate,1,15,Y02100043
-5401810Y0240,Upper panel assembly right side perimeter back inner panel,1,16,Y02100043
-5701038Y0240,Rear hinge reinforced plate right,1,17,Y02100043
-5401713Y0240,Seat belt nut plate assembly,1,18,Y02100043
-5401360-Y01,Inner panel component right A-pillar,1,19,Y02100043
-5130158Y0240,Battery bottom skeleton beam ? - left,1,1,Y02100044
-5130258Y0240,Battery bottom skeleton beam ? - right,1,2,Y02100044
-5101790Y0230,Middle floor lower beam assy ?,1,3,Y02100044
-5301037-Y01,Mounting bracket assembly on the lower right of the front wall,1,4,Y02100044
-5101503-Y01,Rear repair cover plate support plate,1,5,Y02100044
-5101803-Y01,Rear floor seal - Left,1,6,Y02100044
-5101804-Y01,Back floor seal - Right,1,7,Y02100044
-5601130-Y01,Rear inner panel assembly,1,8,Y02100044
-5101950Y0230,Center floor seal assembly - left,1,9,Y02100044
-5101960Y0230,Middle floor seal assembly - right,1,10,Y02100044
-5101801-Y01,Seat back sealing plate,1,11,Y02100044
-5101751-Y01,Bucket body,1,12,Y02100044
-5101753-Y01,Bucket seal plate - left,1,13,Y02100044
-5101745Y0230,Bucket seal plate - right assembly,1,14,Y02100044
-5102630-Y01,Seat reinforced front beam assembly,1,15,Y02100044
-5102620Y0250,Seat reinforcement rear beam assembly,1,16,Y02100044
-5101331Y0230,Auxiliary dashboard mounting front bracket assembly,1,17,Y02100044
-5101341Y0230,Auxiliary dashboard mounting rear bracket assembly,1,18,Y02100044
-5101759Y0230,Handbrake mounting bracket assembly,1,19,Y02100044
-5130100Y0250,Rear left stringer assembly,1,1,Y02100045
-5130200Y0250,Rear right stringer assembly,1,2,Y02100045
-5130710Y0240,Rear floor skeleton beam ? assembly,1,3,Y02100045
-5130301Y0240,Rear floor skeleton stringer ? - left assembly,1,4,Y02100045
-5130401Y0240,Rear floor skeleton stringer ? - right assembly,1,5,Y02100045
-5130156Y0240,Rear left floor frame stringer ? patch plate,1,6,Y02100045
-5130256Y0240,Rear right floor frame stringer ? patch,1,7,Y02100045
-5301120Y0210,Accelerator pedal mounting bracket assembly,1,8,Y02100045
-5301400-Y01,Front wheel cover - right assembly,1,9,Y02100045
-5301300-Y01,Front wheel cover - left assembly,1,10,Y02100045
-5101739Y0210,Steering column mounting base,1,11,Y02100045
-5101731-Y01,Middle floor body,1,12,Y02100045
-5101480Y0240,Front outer plate assembly Front right stringer,1,1,Y02100046
-5101490Y0240,Front outer plate assembly Front left stringer,1,2,Y02100046
-5101573-Y01,Front suspension spring strengthens inner beam plate - left,1,3,Y02100046
-5101311-Y01,Front suspension spring support upper plate - left,1,4,Y02100046
-5101131Y0240,Front suspension spring support lower plate - left assembly,1,5,Y02100046
-5101577Y0240,Front wheel cover connection plate - left assembly,1,6,Y02100046
-5101710-Y01,Headlight mounting bracket II - Left assembly,1,7,Y02100046
-5101574-Y01,Front suspension spring strengthens inner beam plate - right,1,8,Y02100046
-5101141Y0240,Front suspension spring support lower plate - right assembly,1,9,Y02100046
-5101143Y0240,Front wheel cover connection plate - right assembly,1,10,Y02100046
-5101720-Y01,Headlight mounting bracket II - right assembly,1,11,Y02100046
-5101312-Y01,Front suspension spring support upper plate - right,1,12,Y02100046
-5101933-Y01,Rear brake hose bracket,2,13,Y02100046
-5101470Y0230,Front frame left stringer assembly,1,1,Y02100047
-5101390Y0230,Front frame right stringer assembly,1,2,Y02100047
-5101820Y0240,Charging socket lower beam assembly,1,3,Y02100047
-5101830Y0240,Charging socket upper beam assembly,1,4,Y02100047
-5101291Y0240,Front protection mounting bracket - right component,1,5,Y02100047
-5101283Y0240,Front protection mounting bracket - left assembly,1,6,Y02100047
-5101287Y0240,Front protection mounting bracket connecting plate left assembly,1,7,Y02100047
-5101297Y0240,Front protection mounting bracket connecting plate right assembly,1,8,Y02100047
-5301110Y0240,Front wall body assembly,1,9,Y02100047
-5301151-Y01,Brake pump mounting plate,1,10,Y02100047
-5301165Y0210,Air conditioning host small bracket assembly,1,11,Y02100047
-5301153Y0250,Front wall upper left reinforcing plate assembly,1,12,Y02100047
-5101174-Y01,Middle floor lower beam sealing plate,1,1,Y02100048
-5101178Y0240,Stringer reinforcing plate middle left,1,2,Y02100048
-5101278Y0240,Stringer reinforcing plate middle right,1,3,Y02100048
-5101650Y0240,Middle floor lower stringer left assembly,2,4,Y02100048
-5103760Y0240,Middle floor rear beam assembly,1,5,Y02100048
-5101770Y0240,Middle floor lower beam assembly ?,1,6,Y02100048
-5101910Y0240,Rear left swing arm mounting base assembly,1,7,Y02100048
-5101920Y0240,Rear right swing arm mounting base assembly,1,8,Y02100048
-5101981Y0240,Beam connector ? left assembly,1,9,Y02100048
-5101991Y0240,Beam connector ? right assembly,1,10,Y02100048
-5130128Y0240,Rear brake hose bracket left ?,2,11,Y02100048
-5104760-Y01,Middle floor lower beam assembly ?,1,12,Y02100048
-5101175Y0230,Handbrake wire fixed bracket,1,13,Y02100048
-5301190Y0240,Front wall reinforcement beam assembly,1,1,Y02100049
-5301103Y0240,Front wall reinforcement under beam assembly,1,2,Y02100049
-5301140Y0205,Brake pedal mounting bracket ? assembly,1,3,Y02100049
-5301050Y0250,Right wiper mounting bracket assembly,1,4,Y02100049
-5301510-Y01,Wiper holder assembly,1,5,Y02100049
-5301530-Y01,Front windshield upper beam assembly,1,6,Y02100049
-5301570Y0240,Front windshield lower beam assembly,1,7,Y02100049
-5301039-Y01,Upper mounting bracket reinforcing plate the steering column,1,8,Y02100049
-5301541-Y01,Upper mounting bracket assembly steering column,1,9,Y02100049
-5301971Y0230,VCU mounting bracket assembly,1,10,Y02100049
-5101125Y0230,Underfloor protection panel mounting bracket assembly,2,11,Y02100049
-5301710Y0211,Cross beam body assy Instrument panel,1,1,Y02100050
-S18608009,Hexagon flange bolt M8*16*P1.25 Silver Dacromet 8.8 class,4,2,Y02100050
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,3,Y02100050
-5133990Y0211,Battery box rear beam assy,1,1,Y02100051
-S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,2,Y02100051
-S18510003,Hexagon flange bolt M10*35*P1.25 Silver Dacromet 10.9 class,12,3,Y02100051
-5606600Y0210,Bobes recess flange screw with black nickel plating M6 1.0,6,4,Y02100051
-5133812Y0250,Battery lower skeleton beam ?,1,5,Y02100051
-5133820Y0280,Battery lower skeleton beam assembly,1,6,Y02100051
-5133992Y0210B,Front cover plate power battery box,1,7,Y02100051
-S14604001,Hexagon head bolt spring washer and plain washer assy M4*16*P0.7 8.8 class,12,8,Y02100051
-5133990Y0211,Battery box rear beam assy,1,1,Y02100052
-S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,2,Y02100052
-S18510003,Hexagon flange bolt M10*35*P1.25 Silver Dacromet 10.9 class,12,3,Y02100052
-5606600Y0210,Bobes recess flange screw with black nickel plating M6 1.0,6,4,Y02100052
-5133812Y0250,Battery lower skeleton beam ?,1,5,Y02100052
-5133820Y0250,Battery lower skeleton beam assembly,1,6,Y02100052
-5133992Y0210B,Front cover plate power battery box,1,7,Y02100052
-S14604001,Hexagon head bolt spring washer and plain washer assy M4*16*P0.7 8.8 class,12,8,Y02100052
-8200111-Y01,Rear carrier,1,1,Y02100053
-8200113-Y01,Base plate left hinge,1,2,Y02100053
-8200114-Y01,Inner plate left hinge,1,3,Y02100053
-8200115-Y01,Base plate right hinge,1,4,Y02100053
-8200116-Y01,Inner panel right hinge,1,5,Y02100053
-8200117-Y01,Limiting block rear carrier,2,6,Y02100053
-S27342004,Cross recessed large semi-round head self-tapping screw ST4.2*9.5 black zinc,4,7,Y02100053
-5109105-Y01B,Footrest pad,1,8,Y02100053
-B5305040Y0230,Armrest assy,1,9,Y02100053
-5305065Y0230,Rubber pad,1,10,Y02100053
-5305064Y0230D,Left trim panel Armrest,1,11,Y02100053
-5305066Y0230D,Right trim panel Armrest,1,12,Y02100053
-5306020,Upper Body assembly instrument panel,1,1,Y02100054
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,9,2,Y02100054
-6102051-Y01,Dustproof sponge,1,3,Y02100054
-5306134Y0240,Storage box instrument panel,1,4,Y02100054
-ZH680,Metal V-fastener,9,5,Y02100054
-ZH2204-16,A-type reed nut,3,6,Y02100054
-5306121-Y01,Left defroster air vent,1,7,Y02100054
-5306123-Y01,Left defroster air deflector,1,8,Y02100054
-6102051-Y01,Dustproof sponge,1,9,Y02100054
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,4,10,Y02100054
-5306122-Y01,Right defroster air vent,1,11,Y02100054
-5306124-Y01,Right defroster air deflector,1,12,Y02100054
-5306161-Y01,Trim air conditioning control panel,1,13,Y02100054
-S27342004,Cross recessed large semi-round head self-tapping screw ST4.2*9.5 black zinc,5,14,Y02100054
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,3,15,Y02100054
-5306140-Y01,Right tuyere assy,1,1,Y02100055
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,6,2,Y02100055
-5306200Y0205D,Center air outlet assy,1,3,Y02100055
-5306151Y0240D,Instrument mask,1,4,Y02100055
-ZH2204-6,Leaf spring nut B type,2,5,Y02100055
-ZH680,Metal V-fastener,7,6,Y02100055
-5306040Y0210,Lower body assembly instrument panel,1,1,Y02100056
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,5,2,Y02100056
-5306208Y0230,Instrument front pad,3,3,Y02100056
-3774011Y0210,Steering shield-upper,1,1,Y02100057
-3774013Y0210,Steering shield-lower,1,2,Y02100057
-S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,1,3,Y02100057
-S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,3,4,Y02100057
-5402031-Y01,Upper guard panel left inner A-pillar side wall,1,1,Y02100058
-5402041-Y01,Upper guard panel right inner A-column side wall,1,2,Y02100058
-5402131-Y01,Guard panel front inner window trim side wall,1,3,Y02100058
-5402051-Y01,Lower guard panel left inner A-columnside wall,1,4,Y02100058
-5402053-Y01,Lower repair opening cap left A-column,1,5,Y02100058
-5402061-Y01,Lower guard panel right inner A-columnside wall,1,6,Y02100058
-5402063-Y01,Lower repair opening cap right A-column,1,7,Y02100058
-5402011Y0230,Guard panel inside front left wall side wall,1,8,Y02100058
-5402021Y0210,Guard panel inside front right wall side wall,1,9,Y02100058
-ZH1210,Plastic nut seat,25,10,Y02100058
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,2,11,Y02100058
-S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,2,12,Y02100058
-ZH1255,D-shaped buckle,50,13,Y02100058
-ZH1506,Plastic V-fastener,2,14,Y02100058
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,26,15,Y02100058
-5402111-Y01,Trim strip inside left doorsill side wall,1,1,Y02100059
-5402121-Y01,Trim strip inside right doorsill side wall,1,2,Y02100059
-5402071-Y01,Guard panel inside rear left wall side wall,1,3,Y02100059
-5402081-Y01,Guard panel inside rear right wall side wall,1,4,Y02100059
-5402141-Y01,Guard panel inside rear doorsill,1,5,Y02100059
-5402091-Y01,Inside rear left lower guard panel side wall,1,6,Y02100059
-5402101-Y01,Inside rear right lower guard panel side wall,1,7,Y02100059
-5402128-Y01,Left service opening cover plate,1,8,Y02100059
-5402129-Y01,Right service opening cover plate,1,9,Y02100059
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,26,10,Y02100059
-ZH1210,Plastic nut seat,25,11,Y02100059
-ZH1255,D-shaped buckle,50,12,Y02100059
-5703011Y0240,Roof ceiling interior,1,1,Y02100060
-ZH1610,Roof ceiling buckle,13,2,Y02100060
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,6,3,Y02100060
-5703021Y0240,Service opening cap left hinge tailgate,1,4,Y02100060
-5703022Y0240,Service opening cap right hinge tailgate,1,5,Y02100060
-ZH1210,Plastic nut seat,6,6,Y02100060
-6102011Y0210,Left door inner panel,1,1,Y02100061
-6102032-Y01,Mounting plate left pull strap,1,2,Y02100061
-S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,2,3,Y02100061
-6102033-Y01,Leather pull strap door,1,4,Y02100061
-ZH1255,D-shaped buckle,11,5,Y02100061
-6102031Y0240D,Intermediate left trim panel,1,6,Y02100061
-ZH680,Metal V-fastener,11,7,Y02100061
-6102072Y0210,Inner trim panel front left guide rail,1,8,Y02100061
-6102086-Y01,Trim cover upper hinge left door,1,9,Y02100061
-6102087-Y01,Trim cover lower hinge left door,1,10,Y02100061
-ZH850,C-shaped buckle,6,11,Y02100061
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,5,12,Y02100061
-S27348004,Cross recessed large semi-round head tapping screw ST4.8*13 black zinc-nickel,1,13,Y02100061
-S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,1,14,Y02100061
-6102051-Y01,Dustproof sponge,1,15,Y02100061
-S21406001,Cross slot pan head screw M6*25*P1 Black zinc 4.8 grade,1,16,Y02100061
-6102021Y0260,Right door Inner panel,1,1,Y02100062
-6102042-Y01,Mounting plate right pull strap,1,2,Y02100062
-S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,2,3,Y02100062
-6102033-Y01,Leather pull strap door,1,4,Y02100062
-ZH1255,D-shaped buckle,11,5,Y02100062
-6102041Y0240D,Intermediate right trim panel,1,6,Y02100062
-ZH680,Metal V-fastener,11,7,Y02100062
-6102082Y0210,Right door front guide rail innter trim panel,1,8,Y02100062
-6102089-Y01,Trim cover upper hinge right door,1,9,Y02100062
-6102088-Y01,Trim cover lower hinge right door,1,10,Y02100062
-ZH850,C-shaped buckle,6,11,Y02100062
-S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,5,12,Y02100062
-S27348004,Cross recessed large semi-round head tapping screw ST4.8*13 black zinc-nickel,1,13,Y02100062
-S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,1,14,Y02100062
-6102051-Y01,Dustproof sponge,1,15,Y02100062
-S21406001,Cross slot pan head screw M6*25*P1 Black zinc 4.8 grade,1,16,Y02100062
-6102050Y0260,Hidden hook,1,17,Y02100062
-6302011Y0250,Tailgate,1,1,Y02100063
-6302016Y0240,Service cover,1,2,Y02100063
-5109101Y0230,Carpet body,1,1,Y02100064
-5109150Y0230,Access panel,1,2,Y02100064
-Z058,Stud fastener,1,3,Y02100064
-ZH830,Snap fastener (Small head),2,4,Y02100064
-5109103Y0230,Trunk cover plate,1,5,Y02100064
-5606600Y0210,Bobes recess flange screw with black nickel plating M6 1.0,4,6,Y02100064
-5305010Y0230,Auxiliary dashboard body assembly,1,1,Y02100065
-5305016Y0230,Auxiliary dashboard lower trim body,1,2,Y02100065
-S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,2,3,Y02100065
-5305012-Y01,Screw cap,2,4,Y02100065
-5305013Y0230,Cup pad,1,5,Y02100065
-5305014Y0230,Middle storage box pad,1,6,Y02100065
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,7,7,Y02100065
-5305017Y0230D,Spray paint panel assembly auxiliary dashboard,1,8,Y02100065
-3102111Y0240,Guard panel front left wheel cowling,1,1,Y02100066
-3102112Y0240,Guard panel front right wheel cowling,1,2,Y02100066
-3102113Y0240,Guard panel rear left wheel cowling,1,3,Y02100066
-3102117Y0240,Side trim panel rear left wheel cowling,1,4,Y02100066
-3102114Y0240,Guard panel rear right wheel cowling,1,5,Y02100066
-3102118Y0240,Side trim panel rear right wheel cowling,1,6,Y02100066
-Z058,Stud fastener,16,7,Y02100066
-ZH830,Snap fastener (Small head),6,8,Y02100066
-ZH890,Snap fastener (Big head),18,9,Y02100066
-S22148002,Cross recessed hexagonal head tapping screw and large flat washer assembly ST5*20 black zinc-nickel,18,10,Y02100066
-5603100Y0250,Rear windshield glass assy,1,1,Y02100067
-5206010Y0240,Front windshield glass,1,1,Y02100068
-5206011Y0210,Sealing strip front windshield,1,2,Y02100068
-5107103Y0230,Bottom guard,1,1,Y02100069
-Z058,Stud fastener,16,2,Y02100069
-3100104-Y01,Trim cap of wheel rim,4,3,Y02100069
-3100120Y0230,Steel wheel rim trim cap assy,4,4,Y02100069
-2804901Y0210,Switching guide block,2,5,Y02100069
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,6,Y02100069
-5400100Y0240D,Trim panel assy front upper section left wall,1,1,Y02100070
-5400300Y0240D,Trim panel assy rear upper section left wall,1,2,Y02100070
-5400500Y0260D,Left side small trim assembly,1,3,Y02100070
-5400777-Y01,Buckle,4,4,Y02100070
-ZH680,Metal V-fastener,3,5,Y02100070
-5400101-Y01D,Rear left wheel plate,1,6,Y02100070
-Q221B4213F71,Cross recessed pan head tapping screw and flat washer assembly,4,7,Y02100070
-5400773-Y01D,Left lower threshold,1,8,Y02100070
-ZH1210,Plastic nut seat,12,9,Y02100070
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,12,10,Y02100070
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,11,Y02100070
-ZH1255,D-shaped buckle,16,12,Y02100070
-5400315Y0210,Long D-shaped buckle,2,13,Y02100070
-6102051-Y01,Dustproof sponge,1,14,Y02100070
-5400324Y0210,Waterproof sponge mat,1,15,Y02100070
-S22148002,Cross recessed pan head tapping screw and flat washer assembly ST4.8*16 Black zinc-nickel,1,16,Y02100070
-ZH830,Snap fastener (Small head),2,17,Y02100070
-ZH2204-16,A-type reed nut,1,18,Y02100070
-S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zinc-nickel,4,19,Y02100070
-5400783-Y01D,Right lower threshold,1,1,Y02100071
-S22148002,Cross recessed pan head tapping screw and flat washer assembly ST4.8*16 Black zinc-nickel,1,2,Y02100071
-5400200Y0240D,Trim panel assy front upper section right wall,1,3,Y02100071
-5400400Y0240D,Trim panel assy rear upper section right wall,1,4,Y02100071
-5400600Y0260D,Right side small trim assembly,1,5,Y02100071
-Q221B4213F71,Cross recessed pan head tapping screw and flat washer assembly,4,6,Y02100071
-ZH680,Metal V-fastener,3,7,Y02100071
-5400201-Y01D,Rear right wheel plate,1,8,Y02100071
-ZH1255,D-shaped buckle,17,9,Y02100071
-ZH1210,Plastic nut seat,12,10,Y02100071
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,12,11,Y02100071
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,12,Y02100071
-6102051-Y01,Dustproof sponge,1,13,Y02100071
-5400315Y0210,Long D-shaped buckle,2,14,Y02100071
-5400324Y0210,Waterproof sponge mat,1,15,Y02100071
-5400777-Y01,Buckle,4,16,Y02100071
-S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zinc-nickel,4,17,Y02100071
-ZH830,Snap fastener (Small head),2,18,Y02100071
-ZH2204-16,A-type reed nut,1,19,Y02100071
-5702110Y0240D,Roof cover assembly,1,1,Y02100072
-5702301Y0240,Roof cover F-bolt,6,2,Y02100072
-ZH1255,D-shaped buckle,2,3,Y02100072
-5702018Y0240,Waterproof gasket roof cover,10,4,Y02100072
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,10,5,Y02100072
-6102071Y0210,Trim panel front window left door,1,1,Y02100073
-6102077-Y01D,Lower trim panel left door,1,2,Y02100073
-6102500Y0240D,Left door outer panel,1,3,Y02100073
-ZH1255,D-shaped buckle,7,4,Y02100073
-6102073Y0240D,Upper trim panel left door,1,5,Y02100073
-6102057Y0260,Metal V-fastener,13,6,Y02100073
-6102079Y0240,Mounting plate PE Switch,1,7,Y02100073
-ZH2204-16,A-type reed nut,6,8,Y02100073
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,14,9,Y02100073
-S27342004,Cross recessed large half round head self-tapping screw ST4.2*9.5 black zinc,6,10,Y02100073
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,6,11,Y02100073
-S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,8,12,Y02100073
-5306148Y0210,Double-sided tape - (width 10mm thick 0.8mm), ,13,Y02100073
-6102052Y0240,Mounting bolt outer panel door,3,14,Y02100073
-6102507Y0240,Dustproof sponge,1,15,Y02100073
-6102055Y0240,A-type reed nut-ST4.2,1,16,Y02100073
-6102509Y0240,Felt 100X20X0.7,1,17,Y02100073
-6102081Y0210,Trim panel front window right door,1,1,Y02100074
-6102600Y0240D,Right door outer panel,1,2,Y02100074
-ZH1255,D-shaped buckle,7,3,Y02100074
-ZH2204-16,A-type reed nut,6,4,Y02100074
-6102078-Y01D,Lower trim panel right door,1,5,Y02100074
-6102074Y0240D,Upper trim panel right door,1,6,Y02100074
-6102057Y0260,Metal V-fastener,13,7,Y02100074
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,14,8,Y02100074
-S27342004,Cross recessed large half round head self-tapping screw ST4.2*9.5 black zinc,6,9,Y02100074
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,6,10,Y02100074
-S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,8,11,Y02100074
-5306148Y0210,Double-sided tape - (width 10mm thick 0.8mm), ,12,Y02100074
-6102052Y0240,Mounting bolt outer panel door,3,13,Y02100074
-6102507Y0240,Dustproof sponge,1,14,Y02100074
-6102055Y0240,A-type reed nut-ST4.2,1,15,Y02100074
-6102509Y0240,Felt 100X20X0.7,1,16,Y02100074
-5306158Y0230,Pro logo,1,1,Y02100075
-5306156-Y01,X Logo,1,2,Y02100075
-5306157-Y01,YOYO logo,1,3,Y02100075
-5306010Y0220,XEV logo,1,4,Y02100075
-5302100Y0240,Front wiper cover plate assembly,1,1,Y02100076
-5302102Y0240,Washing liquid Filling port Cover (I),1,2,Y02100076
-5302200Y0240,Front flow tank body assembly,1,3,Y02100076
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,6,4,Y02100076
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,8,5,Y02100076
-5302700Y0210D,Front left combination light upper trim panel,1,6,Y02100076
-5302800Y0210D,Front right combination light upper trim panel,1,7,Y02100076
-ZH830,Snap fastener (Small head),2,8,Y02100076
-8200105Y0210,Front overflow pipe,1,9,Y02100076
-S67325001,C-worm drive type hose hoop ?16~25,1,10,Y02100076
-8200151Y0210,Welcome pedal-left,1,1,Y02100077
-8200152Y0210,Welcome pedal-right,1,2,Y02100077
-5704100Y0240,Left roof ceiling glass assy,1,1,Y02100078
-5701211Y0230,Roof ceiling glass sealing rubber strip - Left,1,2,Y02100078
-5704200Y0240,Right Left roof ceiling glass assy,1,3,Y02100078
-5701212Y0230,Roof ceiling glass sealing rubber strip - right,1,4,Y02100078
-8402110Y0240D,Front hood welding assy,1,1,Y02100079
-8402505Y0210,Front hood knob-Left,1,2,Y02100079
-8402506Y0210,Front hood knob-Right,1,3,Y02100079
-8402507Y0210,Front hood steel clip base,2,4,Y02100079
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,2,5,Y02100079
-S27348004,Cross recessed large half round head tapping screw ST4.8*13 black zinc-nickel,2,6,Y02100079
-8403101Y0240D,Left fender,1,1,Y02100080
-8403107Y0240,Plastic nut seat,10,2,Y02100080
-ZH2204-16,A-type reed nut,8,3,Y02100080
-8403105Y0240,Left fender bracket,1,4,Y02100080
-8403102-Y01,Lower trim panel left triangular window,1,5,Y02100080
-8403201Y0240D,Right fender,1,6,Y02100080
-8403205Y0240,Right fender bracket,1,7,Y02100080
-8403202-Y01,Lower trim panel right triangular window,1,8,Y02100080
-5306148Y0210,Double-sided tape - (width 10mm thick 0.8mm), ,9,Y02100080
-S22148002,Cross recessed pan head tapping screw and flat washer assembly ST4.8*16 Black zinc-nickel,20,10,Y02100080
-ZH1255,D-shaped buckle,2,11,Y02100080
-8403109Y0240,Mushroom Buckle -(Length 25 width 20 thickness 5.5),6,12,Y02100080
-2803013Y0240,Mounting bracket front bumper-left,1,1,Y02100081
-2803014Y0240,Mounting bracket front bumper-right,1,2,Y02100081
-2803002Y0210D-KIT,Front bumper service kit,1,3,Y02100081
-2803009-Y01D,Lower trim panel front bumper,1,4,Y02100081
-2803007-Y01D,Upper trim panel front bumper,1,5,Y02100081
-2803003-Y01D,Central trim panel front bumper,1,6,Y02100081
-2803005-Y01D,Front bumper trim strip,1,7,Y02100081
-2803011-Y01D,Front combination light lower trim panel-left,1,8,Y02100081
-2803012-Y01D,Front combination light lower trim panel-right,1,9,Y02100081
-5302031Y0210,Front charging port base,1,10,Y02100081
-5302032Y0210,Front charging port cover inner panel,1,11,Y02100081
-5302033Y0210,Front charging port cover pivots,1,12,Y02100081
-5302034Y0210,Front charging port cover spring,1,13,Y02100081
-Z056,Cushion,3,14,Y02100081
-5302011Y0210D,Cover plate front charging port,1,15,Y02100081
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,2,16,Y02100081
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,11,17,Y02100081
-ZH2204-16,A-type reed nut,6,18,Y02100081
-2804100Y0250D,Rear bumper body assy,1,1,Y02100082
-S22148002,Bobes recess flange screw with black nickel plating M6 1.0,2,2,Y02100082
-ZH1210,Plastic nut seat,4,3,Y02100082
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,6,4,Y02100082
-2804521Y0210D,Rear bumper sliding door welding assembly,1,5,Y02100082
-2804530Y0210,Sliding door interior trim panel,1,6,Y02100082
-2804201Y0240,Mounting bracket rear left bumper,1,7,Y02100082
-ZH2204-16,A-type reed nut,6,8,Y02100082
-2804301Y0240,Mounting bracket rear right bumper,1,9,Y02100082
-S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,4,10,Y02100082
-2804101Y0250D,Rear bumper body,1,11,Y02100082
-5107003-Y01,Side door buffer block,4,12,Y02100082
-2804102Y0250D,Rear bumper lower trim plate,1,13,Y02100082
-ZH2204-6,Leaf spring nut B type,4,14,Y02100082
-ZH830,Snap fastener (Small head),2,15,Y02100082
-4133041Y0240,Rear left retroreflector,1,16,Y02100082
-4133042Y0240,Rear right retroreflector,1,17,Y02100082
-S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,4,1,Y02100083
-2804201Y0210,Rear bumper hinge assy-left,1,2,Y02100083
-2804202Y0210,Rear bumper hinge assy-Right,1,3,Y02100083
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,10,4,Y02100083
-6302010Y0240D,Upper panel spoiler hood,1,1,Y02100084
-6302018-Y01D,Lower panel spoiler hood,1,2,Y02100084
-5306148Y0210,Double-sided tape - (width 10mm thick 0.8mm), ,3,Y02100084
-ZH680,Metal V-fastener,4,4,Y02100084
-4123010Y0205,Ceiling light,1,1,Y02100085
-4123020Y0205,Ceil light shield,1,2,Y02100085
-S21405002,Cross slot pan head screw M5*16*P0.8 Color zinc 4.8 grade,2,3,Y02100085
-5810010-Y01,Seat belt assembly - left,1,1,Y02100086
-5810020-Y01,Seat belt assembly - right,1,2,Y02100086
-5810011-Y01,Seat belt buckle-left,1,3,Y02100086
-5810021-Y01,Seat belt buckle- right,1,4,Y02100086
-6101710Y0210,Front guide rail assy left door,1,1,Y02100087
-6101720Y0210,Front guide rail assy right door,1,2,Y02100087
-6101750Y0210,Rubber coating assy rear guide rail left door,1,3,Y02100087
-6107127Y0210,Rear mud groove left door,1,4,Y02100087
-6101733Y0210,Mounting block of rear triangular window-Left,1,5,Y02100087
-6101760Y0210,Rubber coating assy rear guide rail right door,1,6,Y02100087
-6107128Y0210,Rear mud groove right door,1,7,Y02100087
-6101734Y0210,Mounting block of rear triangular window- Right,1,8,Y02100087
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,9,Y02100087
-S99006201,Hexagon head bolt spring washer and large flat washer assembly M6*20*P1 Black Dacromet 8.8,8,10,Y02100087
-6101901Y0205,Upper waterproof membrane assy left door,1,1,Y02100088
-6101902Y0205,Upper waterproof membrane assy right door,1,2,Y02100088
-6101903Y0205,Lower waterproof membrane left&right door,2,3,Y02100088
-6103200Y0240,Windshield assy right door,1,1,Y02100089
-6104120Y0230,Electric window regulator assy right door,1,2,Y02100089
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,8,3,Y02100089
-6103100Y0240,Windshield assy left door,1,4,Y02100089
-5203010-Y01,Front left triangle window glass,1,5,Y02100089
-6104110Y0230,Electric window regulator assy left door,1,6,Y02100089
-5203020-Y01,Front right triangle window glass,1,7,Y02100089
-5606410Y0210,Lock assy battery box,2,1,Y02100090
-S18606002,Hexagon flange face bolt M6*20 black Dacromet,4,2,Y02100090
-5606420Y0210,Locking hook assy battery box,2,3,Y02100090
-S32008002,Hexagon flange nut M8 Silver Dacromet,4,4,Y02100090
-5107014-Y01,?40 plug cover,2,5,Y02100090
-6105330Y0205,Inner handle assemly-left,1,1,Y02100091
-6105340Y0205,Inner handle assemly-right,1,2,Y02100091
-S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,8,3,Y02100091
-6105510Y0205D,Outer handle assy left door,1,1,Y02100092
-6105520Y0205D,Outer handle assy right door,1,2,Y02100092
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,6,3,Y02100092
-6107116Y0210,Joint angle front mud groove right door,1,1,Y02100093
-6107115Y0210,Joint angle front mud groove left door,1,2,Y02100093
-6107132Y0210,Sealing strip front triangle window-right,1,3,Y02100093
-6107131Y0210,Sealing strip front triangle window-left,1,4,Y02100093
-6107118Y0230,Outer weather strip right door glass,1,5,Y02100093
-6107117Y0230,Outer weather strip left door glass,1,6,Y02100093
-6107112Y0210,Seal strip front right door opening,1,7,Y02100093
-6107111Y0210,Seal strip front left door opening,1,8,Y02100093
-6107122Y0210,Inner weather strip right door glass,1,9,Y02100093
-6107121Y0210,Inner weather strip left door glass,1,10,Y02100093
-6307111Y0210,Sealing strip tailgate,1,1,Y02100094
-6107113Y0210,Upper seal strip front left door opening,1,2,Y02100094
-6107114Y0210,Upper seal strip front right door opening,1,3,Y02100094
-6107135Y0210,Sealing strip battery box,1,4,Y02100094
-6107137Y0210,Sealing washer roof,1,5,Y02100094
-6309110Y0240,Air spring,2,1,Y02100095
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,2,Y02100095
-6309200Y0240,Tailgate hinge,2,3,Y02100095
-6309103Y0240,Ball stud air spring,2,4,Y02100095
-S99008001,Hexagon flange nut M8 Silver Dacromet,4,5,Y02100095
-S18408002,Hexagon head flange bolt M8*20*P1.25 Black Dacromet 8.8 class,4,6,Y02100095
-6309300Y0240,Tailgate buffer block,2,7,Y02100095
-6309101Y0240,Mounting bracket pneumatic stay bar tailgate- left,1,8,Y02100095
-6309102Y0240,Mounting bracket pneumatic stay bar tailgate- right,1,9,Y02100095
-Z6900100Y0230,Front left seat assembly,1,1,Y02100096
-Z6900200Y0230,Front right seat assembly,1,2,Y02100096
-6900300Y0210,Trim cover seat bracket-left,2,3,Y02100096
-6900400Y0210,Trim cover seat bracket-right,2,4,Y02100096
-S18510002,Hexagon flange bolt M10*25*P1.25 Black Dacromet 10.9 grade with adhesive,8,5,Y02100096
-8200101-Y01,Lifter rubber block,4,1,Y02100097
-S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,4,2,Y02100097
-S40210002,Large washer ?10 black Dacromet,4,3,Y02100097
-8201010Y0205,Inner rear-view mirror,1,1,Y02100098
-8204010Y0230,Sun visor assembly,2,1,Y02100099
-8204020Y0205,Base cover plate sunvisor,2,2,Y02100099
-S21406001,Cross slot pan head screw M6*25*P1 Black zinc 4.8 grade,4,3,Y02100099
-8202010Y0210D,Left outer rear-view mirror assy,1,1,Y02100100
-8202020Y0210D,Right outer rear-view mirror assy,1,2,Y02100100
-S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,6,3,Y02100100
-8202011Y0210D,Left exterior rear-view mirror assy,1,4,Y02100100
-8202012Y0210,Left exterior rear-view mirror lens assy,1,5,Y02100100
-8202021Y0210D,Right exterior rear-view mirror assy,1,6,Y02100100
-8202022Y0210,Right exterior rear-view mirror lens ass,1,7,Y02100100
-5606032Y0210,Handle front charging port cap lock,1,1,Y02100101
-5606033Y0210,Cap lock cable front charging port,1,2,Y02100101
-S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,2,3,Y02100101
-4108010Y0205,License light assembly,2,1,Y02100102
-8208030-Y01,Side retroreflector,2,1,Y02100103
-4133010Y0250,Rear left combination light assy,1,1,Y02100104
-4133020Y0250,Rear right combination light assy,1,2,Y02100104
-BNJ-0270,Tail light buckle,4,3,Y02100104
-ZH1210,Plastic nut seat,6,4,Y02100104
-S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,2,5,Y02100104
-S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,6,6,Y02100104
-6105101Y0205,Electronic controlling lock body left door,1,1,Y02100105
-6105103Y0205,Pull rod electronic controlling lockleft door,1,2,Y02100105
-6105105Y0205,Pull rod electronic controlling lock cylinderleft door,1,3,Y02100105
-6105107Y0205,Lock catch electronic controlling Lock door,2,4,Y02100105
-6105111Y0205,Electronic controlling lock cable left door,2,5,Y02100105
-6105102Y0205,Electronic controlling lock body right door,1,6,Y02100105
-6105104Y0205,Pull rod electronic controlling lock right door,1,7,Y02100105
-S25808001,Hexagonal flower countersunk head screw M8*20*P1.25 Black zinc 8.8 grade with adhesive,4,8,Y02100105
-S99006121,Countersunk head screw M6*12*P1 Silver Dacromet 8.8 with rubber,6,9,Y02100105
-6105207Y0260,Trim door lock latch,2,10,Y02100105
-5606011Y0205,Electric lock system body tailgate,1,1,Y02100106
-6105107Y0205,Lock catch electronic controlling Lock door,1,2,Y02100106
-5606600Y0210,Bobes recess flange screw with black nickel plating M6 1.0,3,3,Y02100106
-S25808001,Hexagonal flower countersunk head screw M8*20*P1.25 Black zinc 8.8 grade with adhesive,2,4,Y02100106
-4121010Y0210,Front left combination light assy (Thick-walled part of daytime running light),1,1,Y02100107
-4121901Y0210,H7 bulb,2,2,Y02100107
-4121903Y0210,Rear cover front left combination light,2,3,Y02100107
-4121020Y0210,Front right combination light assy (Thick-walled part of daytime running light),1,4,Y02100107
-S99006201,Hexagon head bolt spring washer and large flat washer assembly M6*20*P1 Black Dacromet 8.8,8,5,Y02100107
-5107011-Y01,?10 plug cover,6,1,Y02100108
-5107013-Y01,?20 plug cover,20,2,Y02100108
-5111020Y0280,Hot melt ?20 hole plug,4,3,Y02100108
-5111040Y0280,Hot melt ?40 hole plug,4,4,Y02100108
-5107015-Y01,?30 plug cover,6,5,Y02100108
-5107016-Y01,?15 plug cover,12,6,Y02100108
-5107018Y0210,Hole sticker ?25,18,7,Y02100108
-5107101Y0240,?25 Special plug cover for sliding and cocking holes,2,8,Y02100108
-3926010-Y01,Warning triangles,1,1,Y02100109
-3926020-Y01,Reflective vest,1,2,Y02100109
-5302105Y0230,Filler cap tool,1,3,Y02100109
+1108010Y0230,Electrical accelerator pedal,1,1,Y02300001
+S18606002,Hexagon bolt with flange M6*20 Black Dacromet,3,2,Y02300001
+3508100Y0230,Parking control handle,1,1,Y02300002
+3508200Y0230,Front parking cable,1,2,Y02300002
+3508300Y0230,Left parking cable,1,3,Y02300002
+3508400Y0230,Right parking cable,1,4,Y02300002
+S99035001,Universal pipe clamp ?20?10,1,5,Y02300002
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,6,Y02300002
+S32008002,Hexagon flange nut M8 Silver Dacromet,2,7,Y02300002
+3540102Y0240-Z001,Vacuum tank with sensor assembly,1,1,Y02300003
+3540102Y0211,Vacuum tank,1,2,Y02300003
+3540106Y0230,Vacuum sensor,1,3,Y02300003
+3540103Y0240-Z001,Electronic vacuum pump with exhaust pipe assembly,1,4,Y02300003
+3540103Y0211,Electronic vacuum pump,1,5,Y02300003
+3540104Y0240,Vent hose electronic vacuum pump,1,6,Y02300003
+3540400Y0240,Vacuum hose,1,7,Y02300003
+S18406002,Hexagon flange face bolts M6*45 Silver Dacromet,2,8,Y02300003
+S32008002,Hexagon flange nut M8 Silver Dacromet,2,9,Y02300003
+3506011Y0240,First out of the oil hard tube,1,1,Y02300004
+3506012Y0240,The second oil out of the hard tube,1,2,Y02300004
+3506013Y0240,Front left brake pipe,1,3,Y02300004
+3506014Y0240,Front right brake pipe,1,4,Y02300004
+3506015Y0240,Rear left brake hard tube I,1,5,Y02300004
+3506016Y0240,Rear right brake hard tube I,1,6,Y02300004
+3506100Y0230,Front left brake hose,1,7,Y02300004
+3506105Y0230,Spring retainer ring brake hose,2,8,Y02300004
+3506107Y0230,Sealing washer,4,9,Y02300004
+3506106Y0230,Punched bolts,2,10,Y02300004
+3506116Y0240,Single hole pipe clip,2,11,Y02300004
+3506200Y0230,Front right brake hose,1,12,Y02300004
+3550300Y0240,Front left wheel speed sensor,1,13,Y02300004
+3550400Y0240,Front right wheel speed sensor,1,14,Y02300004
+3506113Y0240,Double-hole pipe clip,2,15,Y02300004
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,16,Y02300004
+3506300Y0240,Rear brake hose assembly,2,1,Y02300005
+3506020Y0230,Rear brake hard tube III,2,2,Y02300005
+3506017Y0240,Rear left brake hard tube II,1,3,Y02300005
+3506018Y0240,Rear right brake hard tube II,5,4,Y02300005
+3506105Y0230,Spring retainer ring brake hose,4,5,Y02300005
+3506113Y0240,Double-hole pipe clip,1,6,Y02300005
+3506116Y0240,Single hole pipe clip,3,7,Y02300005
+3550500Y0240B,Rear left wheel speed sensor,1,8,Y02300005
+3550600Y0240B,Rear right wheel speed sensor,1,9,Y02300005
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,10,Y02300005
+3540101Y0230,Vacuum booster,1,1,Y02300006
+3550100Y0230,ABS controller assembly,1,2,Y02300006
+3569100Y0240,Brake pedal assy,1,3,Y02300006
+S18608003,Hexagon flange bolt M8*20 Silver Dacromet T,2,4,Y02300006
+S32008002,Hexagon flange nut M8 Silver Dacromet,4,5,Y02300006
+S50108001,Lock pin ?8,1,6,Y02300006
+S51008001,Pin shaft ?8*25,1,7,Y02300006
+3540113Y0230,Brake fluid tank cap,1,8,Y02300006
+2915100Y0230,Rear shock absorber,2,1,Y02300007
+2912011Y0230,Rear coil spring,2,2,Y02300007
+2914300Y0240,Thrust rod assy,2,3,Y02300007
+2914200Y0230,Rear balance bar,1,4,Y02300007
+2912013Y0230,Rear buffer block,2,5,Y02300007
+2912012Y0230,Upper mounting base of rear spring,2,6,Y02300007
+S18512004,Hexagon flange bolts M12*85 Silver Dacromet T,4,7,Y02300007
+S18512001,Hexagon flange bolts M12*55 Silver Dacromet T,2,8,Y02300007
+S18512003,Hexagon flange bolts M12*75 Silver Dacromet T,1,9,Y02300007
+2906106Y0230,?12 large gasket,1,10,Y02300007
+S40212002,Large washer ?12 black Dacromet,2,11,Y02300007
+S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,10,12,Y02300007
+S18512901,Hexagon flange bolt M12*90*P1.25 Silver Dacromet 10.9 class,2,13,Y02300007
+3100101Y0230,Tire (155/70-R13),4,1,Y02300008
+3100106Y0230,13 inch steel wheel,4,2,Y02300008
+3100102Y0240,Inflating valve (TR418),4,3,Y02300008
+3106107Y0240,Wheel nut (steel wheel),16,4,Y02300008
+5306163Y0230,Tire tag -13 inches,1,5,Y02300008
+3100105-Y01,15 aluminum wheel (light color),4,1,Y02300009
+3100101Y0241,Tire  (155/60-R15),4,2,Y02300009
+3100102Y0241,Inflating valve (TR413),4,3,Y02300009
+3106106Y0240,Wheel nut?aluminum wheel?,16,4,Y02300009
+3100104-Y01,Trim cap of wheel rim,4,5,Y02300009
+5306164Y0230,Tire label - 15 ,1,6,Y02300009
+Z3400104Y0240,Steering wheel with switch assembly,1,1,Y02300010
+3400104Y0240,Steering wheel assembly,1,2,Y02300010
+3400135Y0230,Horn hood,1,3,Y02300010
+3400106Y0230,Electric steering column assembly,1,1,Y02300011
+3400102Y0230,steering lower shaft assy,1,2,Y02300011
+3400108Y0230,Lower shaft shield steering column,1,3,Y02300011
+Q32312F61,Steering wheel nut,1,4,Y02300011
+3400161Y0230,Steering column and motor,1,5,Y02300011
+3400162Y0230,Universal joint steering column,1,6,Y02300011
+Q1420830T13F61,Hexagon head bolt and spring washer assembly,1,7,Y02300011
+3400166Y0230,Hexagon head bolt spring washer and plain washer assy,2,8,Y02300011
+3400165Y0230,EPS Controller bracket,1,9,Y02300011
+3400164Y0230,EPS Controller,1,10,Y02300011
+S32008002,Hexagon flange nut M8 Silver Dacromet,3,11,Y02300011
+S18608006,Hexagon flange bolt M8*70 color zinc T,1,12,Y02300011
+Q1420830T13F61,Hexagon head bolt and spring washer assembly,2,13,Y02300011
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,14,Y02300011
+3400101Y0230,Steering gear with tie rod assembly,1,1,Y02300012
+S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,2,2,Y02300012
+S50032002,Split pin,2,3,Y02300012
+Q381B12,Type I hexagon slotted nut,2,4,Y02300012
+3400113Y0230,Steering wheel ball head,2,5,Y02300012
+3400111Y0230,Steering gear body with inner tie rod,1,6,Y02300012
+3400116Y0230,Dust cover,2,7,Y02300012
+16850006,Dust cover clamp,2,8,Y02300012
+16812004,Dust cover tube collar,2,9,Y02300012
+S18512002,Hexagon flange bolts M12*65 Silver Dacromet T,2,10,Y02300012
+3400115Y0230,Sealant sleeve,1,11,Y02300012
+3400114Y0230,Sealed base,1,12,Y02300012
+2801100Y0240,Front auxiliary frame assy,1,1,Y02300013
+2904100Y0230,Front swing arm assembly,2,2,Y02300013
+2906101Y0230,Front stabilizer bar,1,3,Y02300013
+2906102-Y01,Stabilizer rod bushing,2,4,Y02300013
+2906103Y0230,Stabilizer rod mounting bracket,2,5,Y02300013
+2906105-Y01,Stabilizer rod end bushing,4,6,Y02300013
+2906106Y0230,?12 large gasket,2,7,Y02300013
+2906107Y0230,?16 large gasket,2,8,Y02300013
+S18510001,Hexagon flange bolts M10*25 Silver Dacromet T,10,9,Y02300013
+S33110001,All metal hexagonal flange face lock nut M10 Silver Dacromet T13,4,10,Y02300013
+S18510006,Hexagon flange bolts M10*75 Silver Dacromet T,2,11,Y02300013
+S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,2,12,Y02300013
+3501102Y0230,Front right brake with steering knuckle assy,1,1,Y02300014
+3501101Y0230,Front left brake with steering knuckle assy,1,2,Y02300014
+3501112Y0230,Left steering knuckle belt intermediate shaft,1,3,Y02300014
+3501113Y0230,Left brake caliper assy,1,4,Y02300014
+3501122Y0230,Right steering knuckle with intermediate shaft,1,5,Y02300014
+3501123Y0230,Right brake caliper assy,1,6,Y02300014
+3501114Y0230,Wheel hub unit with ABS gear ring,2,7,Y02300014
+3501111Y0230,Brake disc,2,8,Y02300014
+3501115Y0230,Front outer Brake lining,2,9,Y02300014
+3501117Y0240,Caliper bracket mounting bolt (with flange),4,10,Y02300014
+3501118Y0240,Center nut,2,11,Y02300014
+3501120Y0240,End cover,2,12,Y02300014
+S18510005,Hexagon flange bolts M10*50 Silver Dacromet T,2,13,Y02300014
+3501116Y0230,Front left inner Brake lining,1,14,Y02300014
+3501126Y0230,Front right inner Brake lining,1,15,Y02300014
+S33110001,All metal hexagonal flange face lock nut M10 Silver Dacromet T13,2,16,Y02300014
+2904101Y0230,Front left shock absorber assembly,1,1,Y02300015
+2904102Y0230,Front right shock absorber assembly,1,2,Y02300015
+S33112001,All metal hexagonal flange face lock nut M12 silver Dacromet T13,4,3,Y02300015
+S18512001,Hexagon flange bolts M12*55 Silver Dacromet T,4,4,Y02300015
+S32008002,Hexagon flange nut M8 Silver Dacromet,4,5,Y02300015
+Z2912100Y0230,Rear drive axle with parking cable assembly,1,1,Y02300016
+2912101Y0230,Brake drum,2,1,Y02300017
+2912102Y0230,Right brake assembly,1,2,Y02300017
+2912103Y0230,Shaft assembly,2,3,Y02300017
+2912104Y0230,Oil seal for half shaft,2,4,Y02300017
+2912105Y0230,Rear axle housing assembly,1,5,Y02300017
+2912106Y0230,Left brake assy,1,6,Y02300017
+2912107Y0230,Final drive assy,1,7,Y02300017
+2912108Y0230,Brake connection bolt,8,8,Y02300017
+2912109Y0230,Washer 10,8,9,Y02300017
+2912110Y0230,Brake connection nut,8,10,Y02300017
+2912111Y0230,Final drive connection nut M8,8,11,Y02300017
+2912112Y0230,Washer 8,8,12,Y02300017
+2912113Y0230,Breather valve,1,13,Y02300017
+2912114Y0230,Drain plug assembly,1,14,Y02300017
+2912115Y0230,Drain plug gasket,1,15,Y02300017
+2912116Y0230,Filler plug gasket,1,16,Y02300017
+2912117Y0230,Filler plug,1,17,Y02300017
+S18408002,Hexagon flange bolt M8*20 Silver Dacromet T,4,18,Y02300017
+S32008002,Hexagon flange nut M8 Silver Dacromet,2,19,Y02300017
+2912017Y0230,E-Motor mounting bracket,1,20,Y02300017
+S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,3,21,Y02300017
+2912118Y0230,Left brake shoe assembly,1,22,Y02300017
+2912119Y0230,Right brake shoe assembly,1,23,Y02300017
+2101020Y0230,Power battery module,3,1,Y02300018
+2101024Y0230,Module cover plate 1,1,2,Y02300018
+2101025Y0230,Module cover plate 2,1,3,Y02300018
+2101026Y0230,Fixing plate wiring harness,1,4,Y02300018
+2101037Y0230,Handle battery pack,1,5,Y02300018
+2101038Y0230,Fixing sheet metal handle,2,6,Y02300018
+2101039Y0230,Y02 heating film,1,7,Y02300018
+2101040Y0230,Seal ring,3,8,Y02300018
+2101041Y0230,Flexible connection positive terminal,1,9,Y02300018
+2101042Y0230,Flexible connection negative terminal,1,10,Y02300018
+2101043Y0230,Switching hard copper bar negative terminal,1,11,Y02300018
+2101011Y0230,BSU-SINOEV,1,12,Y02300018
+2101049Y0230-Z001,Quick wiring harness assy,1,13,Y02300018
+2101044Y0230,Bottom hole 3.7 plastic rivets BNJ-0005B,25,14,Y02300018
+2101045Y0230,Model: VV-P124-00-KS1 breather valve,1,15,Y02300018
+2101055Y0230,M6*12 Outer hexagon Dacromet bolts with flange (with  nylon adhesive),3,16,Y02300018
+2101056Y0230,M5*30 Outer hexagon Dacromet bolts single coil lock washer and plain washer assemblies,4,17,Y02300018
+2101057Y0230,Prevailing torque type hexagon Dacromet nuts with flange (non-metallic insert),2,18,Y02300018
+2101058Y0230,M4*10 Hexagon socket button head Dacromet bolt single coil lock washer and plain washer assemblies,4,19,Y02300018
+2101060Y0230,M4*20 Outer hexagon Dacromet bolts single coil lock washer and plain washer assemblies,42,20,Y02300018
+2101061Y0230,M3*10 Hexagon socket button head Dacromet bolt single coil lock washer and plain washer assemblies,14,21,Y02300018
+2101064Y0230,M4*10 Countersunk socket head flat head screw black dacromet,4,22,Y02300018
+2101046Y0230,BNJ-0181 Rivet tie 5.5 hole,2,23,Y02300018
+2101054Y0230,High-voltage warning sign,1,24,Y02300018
+2103010Y0250,Drive motor,1,1,Y02300019
+2103020Y0240,Motor three-phase wire harness bracket,1,2,Y02300019
+S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,3,3,Y02300019
+4002616Y0230,M6 Bonding Bolt (FT thread),1,4,Y02300019
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,5,Y02300019
+2108010Y0250,VCU assembly,1,1,Y02300020
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,4,2,Y02300020
+2142010Y0230,Motor controller body,1,1,Y02300021
+S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,8,2,Y02300021
+4002616Y0230,M6 Bonding Bolt (FT thread),1,3,Y02300021
+2105010Y0230,Positive wiring harness motor controller,1,1,Y02300022
+2105020Y0230,Negative wiring harness motor controller,1,2,Y02300022
+2105040Y0230,PTC& Compressor conversion cable,1,3,Y02300022
+2105050Y0230,High voltage wiring harness auxiliary system,1,4,Y02300022
+2105020Y0230,High voltage switching harness auxiliary system,1,5,Y02300022
+2105060-Y01,Dual-head hoop line card(19mm),1,6,Y02300022
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,1,7,Y02300022
+2107020Y0230,Charging socket (EN),1,1,Y02300023
+2107030-Y01,EV Charger (EN),1,2,Y02300023
+2107060Y0230,Three-in-one assembly,1,3,Y02300023
+2107061Y0230,Three-in-one upper left bracket,1,4,Y02300023
+2107062Y0230,Three-in-one lower bracket,1,5,Y02300023
+2107063Y0230,Three-in-one upper right bracket,1,6,Y02300023
+4002616Y0230,M6 Bonding Bolt (FT thread),1,7,Y02300023
+S18406004,Hexagon flange bolt M6*16*P1 Black zinc 8.8 grade,6,8,Y02300023
+S18608003,Hexagon flange bolt M8*20 Silver Dacromet T,4,9,Y02300023
+S32008002,Hexagon flange nut M8 Silver Dacromet,1,10,Y02300023
+S18608009,Hexagon flange bolt M8*16*P1.25 Silver Dacromet 8.8 class,1,11,Y02300023
+2107050-Y01,Charger bag,1,12,Y02300023
+2107064Y0230,63A fuse,2,13,Y02300023
+2107040-Y01,Double-head charger (EN),1,14,Y02300023
+Z2101100Y0230,Power Battery Box device,1,1,Y02300024
+Z2101100Y0280,Power Battery Box device,1,1,Y02300025
+2101013Y0230,Anti-friction bushing,6,1,Y02300026
+210101B-Y01,Battery box fast-plug,3,2,Y02300026
+210101AY0230,Battery negative wiring harness,1,3,Y02300026
+2101019Y0230,Battery positive wiring harness,1,4,Y02300026
+210101H-Y01,Battery module connecting line,2,5,Y02300026
+210101CY0230,Battery box communication wiring harness,1,6,Y02300026
+210101DY0230,The positive and negative battery wires pass through the hole rubber plug,2,7,Y02300026
+Z2109100Y0230,High voltage box assembly,1,1,Y02300027
+2101012Y0230,High voltage acquisition box,1,1,Y02300028
+2101054Y0230,High-voltage warning sign,1,2,Y02300028
+2109010Y0230B,High voltage box,1,3,Y02300028
+2101518Y0240,Shunt,1,4,Y02300028
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,5,Y02300028
+2109011Y0250,High-voltage box casing assy,1,6,Y02300028
+2109015Y0250,150A relay,1,7,Y02300028
+2109017-Y01,20A relay,2,8,Y02300028
+2109018Y0250,300A slow-blow fuse,1,9,Y02300028
+2101515Y0240,Heating fuse,1,10,Y02300028
+2109112Y0250,25?60W precharged resistor,1,11,Y02300028
+2109113Y0250,Communications wiring harness high-voltage box,1,12,Y02300028
+3601010Y0240,Body control module,1,1,Y02300029
+3601030Y0230,start antenna,1,2,Y02300029
+3704010Y0230,Passive start switch,1,3,Y02300029
+3791020Y0230,PE switch (with antenna),1,4,Y02300029
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,3,5,Y02300029
+S27348004,Cross recessed large half round head tapping screw ST4.8*13 black zinc-nickel,2,6,Y02300029
+3721010Y0240,High pitch horn,1,1,Y02300030
+3774010Y0230,Combination switch assembly,1,2,Y02300030
+S23004001,Cross recessed pan head screw and flat washer assembly M4*10*P0.7 Color zinc 4.8 grade,2,3,Y02300030
+3782010-Y01,Adjusting switch electric rear-view mirror,1,4,Y02300030
+S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,4,5,Y02300030
+3504102Y0230,Brake switch,1,6,Y02300030
+3778010Y0200,Steering wheel lock,1,7,Y02300030
+3781010Y0250,Shift switch,1,8,Y02300030
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,1,9,Y02300030
+3790020-Y01,Tailgate open switch,1,10,Y02300030
+3766010Y0230,Warning switch,1,11,Y02300030
+3746010Y0240,Windows regulator control switch,2,12,Y02300030
+3790040Y0230,Movable door assy rear bumper,1,13,Y02300030
+3774020Y0230,Clock spring assembly,1,14,Y02300030
+3790010Y0230-Z001,Left door lock core with mechanical key assembly,1,1,Y02300031
+3790030-Y01,Circlip lock cylinder left door,1,2,Y02300031
+3791001Y0230,Remote key assembly,1,3,Y02300031
+4002010Y0230,Front compartment wiring harness assy,1,1,Y02300032
+4002020Y0230,Roof wiring harness assy,1,2,Y02300032
+4002030Y0240,Left door wiring harness assy,1,3,Y02300032
+4002040Y0240,Right door wiring harness assy,1,4,Y02300032
+4003010Y0230,Main wiring harness assy,1,5,Y02300032
+S18606002,Hexagon flange face bolt M6*20 black Dacromet,2,6,Y02300032
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,2,7,Y02300032
+S18406001,Hexagonal flange bolts M6*12*P1 Black Dacromet 8.8 class,2,8,Y02300032
+4002200Y0230,Right body wiring harness assy,1,9,Y02300032
+4003020Y0230,Auxiliary dashboard wiring harness assy,1,10,Y02300032
+4013010Y0250,Tailgate wiring harness assy,1,11,Y02300032
+4013020Y0250,Rear bumper harness assy,1,12,Y02300032
+4002616Y0230,M6 Bonding Bolt (FT thread),11,13,Y02300032
+4003011Y0230,Bracket main wiring harness,1,14,Y02300032
+S14606121,Hexagon head bolt spring washer and flat washer assembly M6*12*P1 Silver Dacromet 8.8,1,15,Y02300032
+4014010Y0230,Battery box lock wiring harness,1,16,Y02300032
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,17,Y02300032
+5205010Y0200,Wiper motor,1,1,Y02300033
+5205020Y0200,Wiper arm (including nozzle leather hose),1,2,Y02300033
+5205030Y0200,Wiper blade,1,3,Y02300033
+5205040Y0200,Front wiper nut cap,1,4,Y02300033
+5207030Y0240,Washing hose,1,5,Y02300033
+5207010Y0240,Washing Kettle Assembly,1,6,Y02300033
+5207020Y0200,Two-way hose assy,1,7,Y02300033
+5207020Y0240,Dust cap for filling port of washing kettle,1,8,Y02300033
+S99006201,Hexagon head bolt spring washer and large flat washer assembly M6*20*P1 Black Dacromet 8.8,2,9,Y02300033
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,5,10,Y02300033
+3820050Y0205,Steering wheel switch,1,1,Y02300034
+3820010Y0205,GPS antenna and radio antenna assembly,1,2,Y02300034
+7911010Y0241,Speaker,2,3,Y02300034
+3820021Y0205,Host machine,1,4,Y02300034
+3820022Y0205,Liquid crystal screen,1,5,Y02300034
+7925020Y0240,USB assy auxiliary dashboard,1,6,Y02300034
+7925030Y0240,USB assy Instrument panel,1,7,Y02300034
+S18406001,Hexagonal flange bolts M6*12*P1 Black Dacromet 8.8 class,2,8,Y02300034
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,9,Y02300034
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,4,10,Y02300034
+3820010Y0230,Radio and navigation antenna assembly,1,11,Y02300034
+3820011Y0230,Antenna mounting bracket,1,12,Y02300034
+8103010Y0230,Electric compressor assembly,1,1,Y02300035
+4002616Y0230,M6 Bonding Bolt (FT thread),1,2,Y02300035
+8103011Y0230,Electric compressor bracket assy,2,3,Y02300035
+8105010Y0230,Condenser assembly,1,4,Y02300035
+8105011Y0230,Electronic fan assembly,1,5,Y02300035
+8108020Y0230,Compressor exhaust pipe,1,6,Y02300035
+8108040Y0230,Refrigeration line assembly,1,7,Y02300035
+5306153Y0230,Specification label condenser fan,1,8,Y02300035
+5306154Y0230,Refrigerant label air conditioning,1,9,Y02300035
+S32008002,Hexagon flange nut M8 Silver Dacromet,6,10,Y02300035
+S18608007,Hexagon flange face bolt M8*150 silver Dacromet,2,11,Y02300035
+S14606004,Hexagon head bolt spring washer and flat washer assembly M6*35 silver Dacromet,4,12,Y02300035
+S14606003,Hexagon head bolt spring washer and flat washer assembly M6*25 silver Dacromet,4,13,Y02300035
+S14606002,Hexagon head bolt spring washer and flat washer assembly M6*20 silver Dacromet,2,14,Y02300035
+8107010Y0230,HVAC assembly,1,1,Y02300036
+8112010Y0240,Air conditioning control panel assembly,1,2,Y02300036
+5306104Y0230,Air duct central air outlet,1,3,Y02300036
+5306030Y0230,Front defrost assembly,1,4,Y02300036
+5306136Y0230,Left defrosting duct,1,5,Y02300036
+5306141Y0230,Right defrosting duct,1,6,Y02300036
+S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,2,7,Y02300036
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,16,8,Y02300036
+S32008002,Hexagon flange nut M8 Silver Dacromet,5,9,Y02300036
+7925040Y0230,T-BOX,1,1,Y02300037
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,3,2,Y02300037
+7925041Y0230,GPS+4G antenna,1,3,Y02300037
+3703010Y0230,12V Battery,1,1,Y02300038
+S18606002,Hexagon flange face bolt M6*20 black Dacromet,4,2,Y02300038
+6301711Y0240,Back door hinges reinforce plate left assembly,1,1,Y02300039
+6301713Y0240,Back door hinges reinforce plate right assembly,1,2,Y02300039
+6301591Y0240,Taildoor lock mounting bracket assembly,1,3,Y02300039
+5101571Y0240,Torque beam mounting bracket assembly,1,4,Y02300039
+S18510001,Hexagon flange bolts M10*25 Silver Dacromet T,5,5,Y02300039
+5101272Y0240,Upper mounting bracket condenser,2,6,Y02300039
+S18408006,Hexagon flange bolt M8*12*P1.25 Black Dacromet 8.8 class,2,7,Y02300039
+5101191Y0230,Component MCU mounting bracket II,1,8,Y02300039
+5101187Y0230,Component MCU mounting bracket I,1,9,Y02300039
+S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2,10,Y02300039
+5133832Y0280,Rear bumper mounting bracket ?,1,11,Y02300039
+5101850-Y01,Front suspension spring reinforced beam outer plate assembly - left,1,1,Y02300040
+5101860-Y01,Front suspension spring strengthens beam outer plate assembly - right,1,2,Y02300040
+5401170-Y01,Mount bracket assembly on left tube beam,1,3,Y02300040
+5401180-Y01,Mount bracket assembly on right tube beam,1,4,Y02300040
+6101100Y0230,Front left door assy,1,5,Y02300040
+6106010Y0230,Upper hinge side door,2,6,Y02300040
+6106030Y0230,Lower hinge side door,2,7,Y02300040
+S18608010,Hexagon flange bolt M8*25*P1.25 Silver Dacromet 10.9 class,16,8,Y02300040
+6101200Y0230,Front right door assy,1,9,Y02300040
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,12,10,Y02300040
+5133834Y0280,Rear bumper mounting bracket ?,2,11,Y02300040
+5701090-Y01,Top stringer assembly,1,1,Y02300041
+5701011-Y01,Cover the front cross beam on the cover,1,2,Y02300041
+5701030-Y01,Roof front beam lower plate assembly,1,3,Y02300041
+5701020Y0240,Top cover rear beam assembly,1,4,Y02300041
+5601112Y0280,Top cover rear beam assembly,1,5,Y02300041
+5401030-Y01,Inner panel assy doorsill left side wall,1,1,Y02300042
+5401230-Y01,Inner panel assy left doorsill,1,2,Y02300042
+5401111-Y01,Left side outer panel,1,3,Y02300042
+5401110-Y01,Rear bumper mounting bracket assembly- left,1,4,Y02300042
+5401150-Y01,Left side surrounding rear flow sink assembly,1,5,Y02300042
+5101551-Y01,Integrated mounting bracket,1,6,Y02300042
+5401810-Y01,Door latch mounting plate assembly left,1,7,Y02300042
+5401301-Y01,Left pillar A reinforcing plate,1,8,Y02300042
+5401303-Y01,Left pillar A strengthens the upper plate segment,1,9,Y02300042
+5401310-Y01,Upper left hinge reinforced plate assembly,1,10,Y02300042
+5401330-Y01,Left lower hinge reinforced plate assembly,1,11,Y02300042
+5401313Y0230,Headlight bracket ? - left assembly,1,12,Y02300042
+5401011-Y01,Left roof front beam connecting plate,1,13,Y02300042
+5401015-Y01,Left top side beam inner plate,1,14,Y02300042
+5401017-Y01,Left posterior medial segment,1,15,Y02300042
+5401710Y0240,Upper section assy left side inner panel around rear,1,16,Y02300042
+5701037Y0240,Rear hinge reinforcing plate left,1,17,Y02300042
+5401713Y0240,Seat belt nut plate assembly,1,18,Y02300042
+5401350-Y01,Inner panel component left A-pillar,1,19,Y02300042
+5401040-Y01,Inner panel assy doorsill right side wall,1,1,Y02300043
+5401240Y0230,Inner panel assy right doorsill,1,2,Y02300043
+5401112-Y01,Right side outer panel,1,3,Y02300043
+5101551-Y01,Integrated mounting bracket,1,4,Y02300043
+5401120-Y01,Rear bumper mounting bracket assembly- right,1,5,Y02300043
+5401160-Y01,Right side surrounding rear flow sink assembly,1,6,Y02300043
+5401820-Y01,Right door latch mounting plate assembly,1,7,Y02300043
+5401302-Y01,Right A-pillar reinforced plate,1,8,Y02300043
+5401304-Y01,Right pillar A strengthens the upper plate segment,1,9,Y02300043
+5401320-Y01,Right upper hinge reinforcing plate assembly,1,10,Y02300043
+5401340-Y01,Lower right hinge reinforcing plate assembly,1,11,Y02300043
+5401413Y0230,Headlight bracket ? - right assembly,1,12,Y02300043
+5401012-Y01,Right top front beam connecting plate,1,13,Y02300043
+5401016-Y01,Right top side beam inner plate,1,14,Y02300043
+5401018-Y01,Right side surrounding inferior posterior inner plate,1,15,Y02300043
+5401810Y0240,Upper panel assembly right side perimeter back inner panel,1,16,Y02300043
+5701038Y0240,Rear hinge reinforced plate right,1,17,Y02300043
+5401713Y0240,Seat belt nut plate assembly,1,18,Y02300043
+5401360-Y01,Inner panel component right A-pillar,1,19,Y02300043
+5130158Y0240,Battery bottom skeleton beam ? - left,1,1,Y02300044
+5130258Y0240,Battery bottom skeleton beam ? - right,1,2,Y02300044
+5101790Y0230,Middle floor lower beam assy ?,1,3,Y02300044
+5301037-Y01,Mounting bracket assembly on the lower right of the front wall,1,4,Y02300044
+5101503-Y01,Rear repair cover plate support plate,1,5,Y02300044
+5101803-Y01,Rear floor seal - Left,1,6,Y02300044
+5101804-Y01,Back floor seal - Right,1,7,Y02300044
+5601130-Y01,Rear inner panel assembly,1,8,Y02300044
+5101950Y0230,Center floor seal assembly - left,1,9,Y02300044
+5101960Y0230,Middle floor seal assembly - right,1,10,Y02300044
+5101801-Y01,Seat back sealing plate,1,11,Y02300044
+5101751-Y01,Bucket body,1,12,Y02300044
+5101753-Y01,Bucket seal plate - left,1,13,Y02300044
+5101745Y0230,Bucket seal plate - right assembly,1,14,Y02300044
+5102630-Y01,Seat reinforced front beam assembly,1,15,Y02300044
+5102620Y0250,Seat reinforcement rear beam assembly,1,16,Y02300044
+5101331Y0230,Auxiliary dashboard mounting front bracket assembly,1,17,Y02300044
+5101341Y0230,Auxiliary dashboard mounting rear bracket assembly,1,18,Y02300044
+5101759Y0230,Handbrake mounting bracket assembly,1,19,Y02300044
+5130100Y0250,Rear left stringer assembly,1,1,Y02300045
+5130200Y0250,Rear right stringer assembly,1,2,Y02300045
+5130710Y0240,Rear floor skeleton beam ? assembly,1,3,Y02300045
+5130301Y0240,Rear floor skeleton stringer ? - left assembly,1,4,Y02300045
+5130401Y0240,Rear floor skeleton stringer ? - right assembly,1,5,Y02300045
+5130156Y0240,Rear left floor frame stringer ? patch plate,1,6,Y02300045
+5130256Y0240,Rear right floor frame stringer ? patch,1,7,Y02300045
+5301120Y0230,Accelerator pedal mounting bracket assembly,1,8,Y02300045
+5301400-Y01,Front wheel cover - right assembly,1,9,Y02300045
+5301300-Y01,Front wheel cover - left assembly,1,10,Y02300045
+5101739Y0230,Steering column mounting base,1,11,Y02300045
+5101731-Y01,Middle floor body,1,12,Y02300045
+5101480Y0240,Front outer plate assembly Front right stringer,1,1,Y02300046
+5101490Y0240,Front outer plate assembly Front left stringer,1,2,Y02300046
+5101573-Y01,Front suspension spring strengthens inner beam plate - left,1,3,Y02300046
+5101311-Y01,Front suspension spring support upper plate - left,1,4,Y02300046
+5101131Y0240,Front suspension spring support lower plate - left assembly,1,5,Y02300046
+5101577Y0240,Front wheel cover connection plate - left assembly,1,6,Y02300046
+5101710-Y01,Headlight mounting bracket II - Left assembly,1,7,Y02300046
+5101574-Y01,Front suspension spring strengthens inner beam plate - right,1,8,Y02300046
+5101141Y0240,Front suspension spring support lower plate - right assembly,1,9,Y02300046
+5101143Y0240,Front wheel cover connection plate - right assembly,1,10,Y02300046
+5101720-Y01,Headlight mounting bracket II - right assembly,1,11,Y02300046
+5101312-Y01,Front suspension spring support upper plate - right,1,12,Y02300046
+5101933-Y01,Rear brake hose bracket,2,13,Y02300046
+5101470Y0230,Front frame left stringer assembly,1,1,Y02300047
+5101390Y0230,Front frame right stringer assembly,1,2,Y02300047
+5101820Y0240,Charging socket lower beam assembly,1,3,Y02300047
+5101830Y0240,Charging socket upper beam assembly,1,4,Y02300047
+5101291Y0240,Front protection mounting bracket - right component,1,5,Y02300047
+5101283Y0240,Front protection mounting bracket - left assembly,1,6,Y02300047
+5101287Y0240,Front protection mounting bracket connecting plate left assembly,1,7,Y02300047
+5101297Y0240,Front protection mounting bracket connecting plate right assembly,1,8,Y02300047
+5301110Y0240,Front wall body assembly,1,9,Y02300047
+5301151-Y01,Brake pump mounting plate,1,10,Y02300047
+5301165Y0230,Air conditioning host small bracket assembly,1,11,Y02300047
+5301153Y0250,Front wall upper left reinforcing plate assembly,1,12,Y02300047
+5101174-Y01,Middle floor lower beam sealing plate,1,1,Y02300048
+5101178Y0240,Stringer reinforcing plate middle left,1,2,Y02300048
+5101278Y0240,Stringer reinforcing plate middle right,1,3,Y02300048
+5101650Y0240,Middle floor lower stringer left assembly,2,4,Y02300048
+5103760Y0240,Middle floor rear beam assembly,1,5,Y02300048
+5101770Y0240,Middle floor lower beam assembly ?,1,6,Y02300048
+5101910Y0240,Rear left swing arm mounting base assembly,1,7,Y02300048
+5101920Y0240,Rear right swing arm mounting base assembly,1,8,Y02300048
+5101981Y0240,Beam connector ? left assembly,1,9,Y02300048
+5101991Y0240,Beam connector ? right assembly,1,10,Y02300048
+5130128Y0240,Rear brake hose bracket left ?,2,11,Y02300048
+5104760-Y01,Middle floor lower beam assembly ?,1,12,Y02300048
+5101175Y0230,Handbrake wire fixed bracket,1,13,Y02300048
+5301190Y0240,Front wall reinforcement beam assembly,1,1,Y02300049
+5301103Y0240,Front wall reinforcement under beam assembly,1,2,Y02300049
+5301140Y0205,Brake pedal mounting bracket ? assembly,1,3,Y02300049
+5301050Y0250,Right wiper mounting bracket assembly,1,4,Y02300049
+5301510-Y01,Wiper holder assembly,1,5,Y02300049
+5301530-Y01,Front windshield upper beam assembly,1,6,Y02300049
+5301570Y0240,Front windshield lower beam assembly,1,7,Y02300049
+5301039-Y01,Upper mounting bracket reinforcing plate the steering column,1,8,Y02300049
+5301541-Y01,Upper mounting bracket assembly steering column,1,9,Y02300049
+5301971Y0230,VCU mounting bracket assembly,1,10,Y02300049
+5101125Y0230,Underfloor protection panel mounting bracket assembly,2,11,Y02300049
+5301710Y0211,Cross beam body assy Instrument panel,1,1,Y02300050
+S18608009,Hexagon flange bolt M8*16*P1.25 Silver Dacromet 8.8 class,4,2,Y02300050
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,2,3,Y02300050
+5133990Y0211,Battery box rear beam assy,1,1,Y02300051
+S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,2,Y02300051
+S18510003,Hexagon flange bolt M10*35*P1.25 Silver Dacromet 10.9 class,12,3,Y02300051
+5606600Y0230,Bobes recess flange screw with black nickel plating M6 1.0,6,4,Y02300051
+5133812Y0250,Battery lower skeleton beam ?,1,5,Y02300051
+5133820Y0280,Battery lower skeleton beam assembly,1,6,Y02300051
+5133992Y0230B,Front cover plate power battery box,1,7,Y02300051
+S14604001,Hexagon head bolt spring washer and plain washer assy M4*16*P0.7 8.8 class,12,8,Y02300051
+5133990Y0211,Battery box rear beam assy,1,1,Y02300052
+S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,2,Y02300052
+S18510003,Hexagon flange bolt M10*35*P1.25 Silver Dacromet 10.9 class,12,3,Y02300052
+5606600Y0230,Bobes recess flange screw with black nickel plating M6 1.0,6,4,Y02300052
+5133812Y0250,Battery lower skeleton beam ?,1,5,Y02300052
+5133820Y0250,Battery lower skeleton beam assembly,1,6,Y02300052
+5133992Y0230B,Front cover plate power battery box,1,7,Y02300052
+S14604001,Hexagon head bolt spring washer and plain washer assy M4*16*P0.7 8.8 class,12,8,Y02300052
+8200111-Y01,Rear carrier,1,1,Y02300053
+8200113-Y01,Base plate left hinge,1,2,Y02300053
+8200114-Y01,Inner plate left hinge,1,3,Y02300053
+8200115-Y01,Base plate right hinge,1,4,Y02300053
+8200116-Y01,Inner panel right hinge,1,5,Y02300053
+8200117-Y01,Limiting block rear carrier,2,6,Y02300053
+S27342004,Cross recessed large semi-round head self-tapping screw ST4.2*9.5 black zinc,4,7,Y02300053
+5109105-Y01B,Footrest pad,1,8,Y02300053
+B5305040Y0230,Armrest assy,1,9,Y02300053
+5305065Y0230,Rubber pad,1,10,Y02300053
+5305064Y0230D,Left trim panel Armrest,1,11,Y02300053
+5305066Y0230D,Right trim panel Armrest,1,12,Y02300053
+5306020,Upper Body assembly instrument panel,1,1,Y02300054
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,9,2,Y02300054
+6102051-Y01,Dustproof sponge,1,3,Y02300054
+5306134Y0240,Storage box instrument panel,1,4,Y02300054
+ZH680,Metal V-fastener,9,5,Y02300054
+ZH2204-16,A-type reed nut,3,6,Y02300054
+5306121-Y01,Left defroster air vent,1,7,Y02300054
+5306123-Y01,Left defroster air deflector,1,8,Y02300054
+6102051-Y01,Dustproof sponge,1,9,Y02300054
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,4,10,Y02300054
+5306122-Y01,Right defroster air vent,1,11,Y02300054
+5306124-Y01,Right defroster air deflector,1,12,Y02300054
+5306161-Y01,Trim air conditioning control panel,1,13,Y02300054
+S27342004,Cross recessed large semi-round head self-tapping screw ST4.2*9.5 black zinc,5,14,Y02300054
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,3,15,Y02300054
+5306140-Y01,Right tuyere assy,1,1,Y02300055
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,6,2,Y02300055
+5306200Y0205D,Center air outlet assy,1,3,Y02300055
+5306151Y0240D,Instrument mask,1,4,Y02300055
+ZH2204-6,Leaf spring nut B type,2,5,Y02300055
+ZH680,Metal V-fastener,7,6,Y02300055
+5306040Y0230,Lower body assembly instrument panel,1,1,Y02300056
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,5,2,Y02300056
+5306208Y0230,Instrument front pad,3,3,Y02300056
+3774011Y0230,Steering shield-upper,1,1,Y02300057
+3774013Y0230,Steering shield-lower,1,2,Y02300057
+S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,1,3,Y02300057
+S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,3,4,Y02300057
+5402031-Y01,Upper guard panel left inner A-pillar side wall,1,1,Y02300058
+5402041-Y01,Upper guard panel right inner A-column side wall,1,2,Y02300058
+5402131-Y01,Guard panel front inner window trim side wall,1,3,Y02300058
+5402051-Y01,Lower guard panel left inner A-columnside wall,1,4,Y02300058
+5402053-Y01,Lower repair opening cap left A-column,1,5,Y02300058
+5402061-Y01,Lower guard panel right inner A-columnside wall,1,6,Y02300058
+5402063-Y01,Lower repair opening cap right A-column,1,7,Y02300058
+5402011Y0230,Guard panel inside front left wall side wall,1,8,Y02300058
+5402021Y0230,Guard panel inside front right wall side wall,1,9,Y02300058
+ZH1210,Plastic nut seat,25,10,Y02300058
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,2,11,Y02300058
+S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,2,12,Y02300058
+ZH1255,D-shaped buckle,50,13,Y02300058
+ZH1506,Plastic V-fastener,2,14,Y02300058
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,26,15,Y02300058
+5402111-Y01,Trim strip inside left doorsill side wall,1,1,Y02300059
+5402121-Y01,Trim strip inside right doorsill side wall,1,2,Y02300059
+5402071-Y01,Guard panel inside rear left wall side wall,1,3,Y02300059
+5402081-Y01,Guard panel inside rear right wall side wall,1,4,Y02300059
+5402141-Y01,Guard panel inside rear doorsill,1,5,Y02300059
+5402091-Y01,Inside rear left lower guard panel side wall,1,6,Y02300059
+5402101-Y01,Inside rear right lower guard panel side wall,1,7,Y02300059
+5402128-Y01,Left service opening cover plate,1,8,Y02300059
+5402129-Y01,Right service opening cover plate,1,9,Y02300059
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,26,10,Y02300059
+ZH1210,Plastic nut seat,25,11,Y02300059
+ZH1255,D-shaped buckle,50,12,Y02300059
+5703011Y0240,Roof ceiling interior,1,1,Y02300060
+ZH1610,Roof ceiling buckle,13,2,Y02300060
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,6,3,Y02300060
+5703021Y0240,Service opening cap left hinge tailgate,1,4,Y02300060
+5703022Y0240,Service opening cap right hinge tailgate,1,5,Y02300060
+ZH1210,Plastic nut seat,6,6,Y02300060
+6102011Y0230,Left door inner panel,1,1,Y02300061
+6102032-Y01,Mounting plate left pull strap,1,2,Y02300061
+S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,2,3,Y02300061
+6102033-Y01,Leather pull strap door,1,4,Y02300061
+ZH1255,D-shaped buckle,11,5,Y02300061
+6102031Y0240D,Intermediate left trim panel,1,6,Y02300061
+ZH680,Metal V-fastener,11,7,Y02300061
+6102072Y0230,Inner trim panel front left guide rail,1,8,Y02300061
+6102086-Y01,Trim cover upper hinge left door,1,9,Y02300061
+6102087-Y01,Trim cover lower hinge left door,1,10,Y02300061
+ZH850,C-shaped buckle,6,11,Y02300061
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,5,12,Y02300061
+S27348004,Cross recessed large semi-round head tapping screw ST4.8*13 black zinc-nickel,1,13,Y02300061
+S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,1,14,Y02300061
+6102051-Y01,Dustproof sponge,1,15,Y02300061
+S21406001,Cross slot pan head screw M6*25*P1 Black zinc 4.8 grade,1,16,Y02300061
+6102021Y0260,Right door Inner panel,1,1,Y02300062
+6102042-Y01,Mounting plate right pull strap,1,2,Y02300062
+S27342003,Cross recessed large semi-round head self-tapping screw ST4.2*13 black zinc-nickel,2,3,Y02300062
+6102033-Y01,Leather pull strap door,1,4,Y02300062
+ZH1255,D-shaped buckle,11,5,Y02300062
+6102041Y0240D,Intermediate right trim panel,1,6,Y02300062
+ZH680,Metal V-fastener,11,7,Y02300062
+6102082Y0230,Right door front guide rail innter trim panel,1,8,Y02300062
+6102089-Y01,Trim cover upper hinge right door,1,9,Y02300062
+6102088-Y01,Trim cover lower hinge right door,1,10,Y02300062
+ZH850,C-shaped buckle,6,11,Y02300062
+S27348002,Cross recessed large semi-round head tapping screws ST4.8*16 black zinc,5,12,Y02300062
+S27348004,Cross recessed large semi-round head tapping screw ST4.8*13 black zinc-nickel,1,13,Y02300062
+S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,1,14,Y02300062
+6102051-Y01,Dustproof sponge,1,15,Y02300062
+S21406001,Cross slot pan head screw M6*25*P1 Black zinc 4.8 grade,1,16,Y02300062
+6102050Y0260,Hidden hook,1,17,Y02300062
+6302011Y0250,Tailgate,1,1,Y02300063
+6302016Y0240,Service cover,1,2,Y02300063
+5109101Y0230,Carpet body,1,1,Y02300064
+5109150Y0230,Access panel,1,2,Y02300064
+Z058,Stud fastener,1,3,Y02300064
+ZH830,Snap fastener (Small head),2,4,Y02300064
+5109103Y0230,Trunk cover plate,1,5,Y02300064
+5606600Y0230,Bobes recess flange screw with black nickel plating M6 1.0,4,6,Y02300064
+5305010Y0230,Auxiliary dashboard body assembly,1,1,Y02300065
+5305016Y0230,Auxiliary dashboard lower trim body,1,2,Y02300065
+S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,2,3,Y02300065
+5305012-Y01,Screw cap,2,4,Y02300065
+5305013Y0230,Cup pad,1,5,Y02300065
+5305014Y0230,Middle storage box pad,1,6,Y02300065
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,7,7,Y02300065
+5305017Y0230D,Spray paint panel assembly auxiliary dashboard,1,8,Y02300065
+3102111Y0240,Guard panel front left wheel cowling,1,1,Y02300066
+3102112Y0240,Guard panel front right wheel cowling,1,2,Y02300066
+3102113Y0240,Guard panel rear left wheel cowling,1,3,Y02300066
+3102117Y0240,Side trim panel rear left wheel cowling,1,4,Y02300066
+3102114Y0240,Guard panel rear right wheel cowling,1,5,Y02300066
+3102118Y0240,Side trim panel rear right wheel cowling,1,6,Y02300066
+Z058,Stud fastener,16,7,Y02300066
+ZH830,Snap fastener (Small head),6,8,Y02300066
+ZH890,Snap fastener (Big head),18,9,Y02300066
+S22148002,Cross recessed hexagonal head tapping screw and large flat washer assembly ST5*20 black zinc-nickel,18,10,Y02300066
+5603100Y0250,Rear windshield glass assy,1,1,Y02300067
+5206010Y0240,Front windshield glass,1,1,Y02300068
+5206011Y0230,Sealing strip front windshield,1,2,Y02300068
+5107103Y0230,Bottom guard,1,1,Y02300069
+Z058,Stud fastener,16,2,Y02300069
+3100104-Y01,Trim cap of wheel rim,4,3,Y02300069
+3100120Y0230,Steel wheel rim trim cap assy,4,4,Y02300069
+2804901Y0230,Switching guide block,2,5,Y02300069
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,6,Y02300069
+5400100Y0240D,Trim panel assy front upper section left wall,1,1,Y02300070
+5400300Y0240D,Trim panel assy rear upper section left wall,1,2,Y02300070
+5400500Y0260D,Left side small trim assembly,1,3,Y02300070
+5400777-Y01,Buckle,4,4,Y02300070
+ZH680,Metal V-fastener,3,5,Y02300070
+5400101-Y01D,Rear left wheel plate,1,6,Y02300070
+Q221B4213F71,Cross recessed pan head tapping screw and flat washer assembly,4,7,Y02300070
+5400773-Y01D,Left lower threshold,1,8,Y02300070
+ZH1210,Plastic nut seat,12,9,Y02300070
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,12,10,Y02300070
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,11,Y02300070
+ZH1255,D-shaped buckle,16,12,Y02300070
+5400315Y0230,Long D-shaped buckle,2,13,Y02300070
+6102051-Y01,Dustproof sponge,1,14,Y02300070
+5400324Y0230,Waterproof sponge mat,1,15,Y02300070
+S22148002,Cross recessed pan head tapping screw and flat washer assembly ST4.8*16 Black zinc-nickel,1,16,Y02300070
+ZH830,Snap fastener (Small head),2,17,Y02300070
+ZH2204-16,A-type reed nut,1,18,Y02300070
+S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zinc-nickel,4,19,Y02300070
+5400783-Y01D,Right lower threshold,1,1,Y02300071
+S22148002,Cross recessed pan head tapping screw and flat washer assembly ST4.8*16 Black zinc-nickel,1,2,Y02300071
+5400200Y0240D,Trim panel assy front upper section right wall,1,3,Y02300071
+5400400Y0240D,Trim panel assy rear upper section right wall,1,4,Y02300071
+5400600Y0260D,Right side small trim assembly,1,5,Y02300071
+Q221B4213F71,Cross recessed pan head tapping screw and flat washer assembly,4,6,Y02300071
+ZH680,Metal V-fastener,3,7,Y02300071
+5400201-Y01D,Rear right wheel plate,1,8,Y02300071
+ZH1255,D-shaped buckle,17,9,Y02300071
+ZH1210,Plastic nut seat,12,10,Y02300071
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,12,11,Y02300071
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,12,Y02300071
+6102051-Y01,Dustproof sponge,1,13,Y02300071
+5400315Y0230,Long D-shaped buckle,2,14,Y02300071
+5400324Y0230,Waterproof sponge mat,1,15,Y02300071
+5400777-Y01,Buckle,4,16,Y02300071
+S99006161,Internal pan head screw and plastic washer assembly M6*16*P1 Black zinc-nickel,4,17,Y02300071
+ZH830,Snap fastener (Small head),2,18,Y02300071
+ZH2204-16,A-type reed nut,1,19,Y02300071
+5702110Y0240D,Roof cover assembly,1,1,Y02300072
+5702301Y0240,Roof cover F-bolt,6,2,Y02300072
+ZH1255,D-shaped buckle,2,3,Y02300072
+5702018Y0240,Waterproof gasket roof cover,10,4,Y02300072
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,10,5,Y02300072
+6102071Y0230,Trim panel front window left door,1,1,Y02300073
+6102077-Y01D,Lower trim panel left door,1,2,Y02300073
+6102500Y0240D,Left door outer panel,1,3,Y02300073
+ZH1255,D-shaped buckle,7,4,Y02300073
+6102073Y0240D,Upper trim panel left door,1,5,Y02300073
+6102057Y0260,Metal V-fastener,13,6,Y02300073
+6102079Y0240,Mounting plate PE Switch,1,7,Y02300073
+ZH2204-16,A-type reed nut,6,8,Y02300073
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,14,9,Y02300073
+S27342004,Cross recessed large half round head self-tapping screw ST4.2*9.5 black zinc,6,10,Y02300073
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,6,11,Y02300073
+S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,8,12,Y02300073
+5306148Y0230,Double-sided tape - (width 10mm thick 0.8mm), ,13,Y02300073
+6102052Y0240,Mounting bolt outer panel door,3,14,Y02300073
+6102507Y0240,Dustproof sponge,1,15,Y02300073
+6102055Y0240,A-type reed nut-ST4.2,1,16,Y02300073
+6102509Y0240,Felt 100X20X0.7,1,17,Y02300073
+6102081Y0230,Trim panel front window right door,1,1,Y02300074
+6102600Y0240D,Right door outer panel,1,2,Y02300074
+ZH1255,D-shaped buckle,7,3,Y02300074
+ZH2204-16,A-type reed nut,6,4,Y02300074
+6102078-Y01D,Lower trim panel right door,1,5,Y02300074
+6102074Y0240D,Upper trim panel right door,1,6,Y02300074
+6102057Y0260,Metal V-fastener,13,7,Y02300074
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,14,8,Y02300074
+S27342004,Cross recessed large half round head self-tapping screw ST4.2*9.5 black zinc,6,9,Y02300074
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,6,10,Y02300074
+S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,8,11,Y02300074
+5306148Y0230,Double-sided tape - (width 10mm thick 0.8mm), ,12,Y02300074
+6102052Y0240,Mounting bolt outer panel door,3,13,Y02300074
+6102507Y0240,Dustproof sponge,1,14,Y02300074
+6102055Y0240,A-type reed nut-ST4.2,1,15,Y02300074
+6102509Y0240,Felt 100X20X0.7,1,16,Y02300074
+5306158Y0230,Pro logo,1,1,Y02300075
+5306156-Y01,X Logo,1,2,Y02300075
+5306157-Y01,YOYO logo,1,3,Y02300075
+5306010Y0220,XEV logo,1,4,Y02300075
+5302100Y0240,Front wiper cover plate assembly,1,1,Y02300076
+5302102Y0240,Washing liquid Filling port Cover (I),1,2,Y02300076
+5302200Y0240,Front flow tank body assembly,1,3,Y02300076
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,6,4,Y02300076
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,8,5,Y02300076
+5302700Y0230D,Front left combination light upper trim panel,1,6,Y02300076
+5302800Y0230D,Front right combination light upper trim panel,1,7,Y02300076
+ZH830,Snap fastener (Small head),2,8,Y02300076
+8200105Y0230,Front overflow pipe,1,9,Y02300076
+S67325001,C-worm drive type hose hoop ?16~25,1,10,Y02300076
+8200151Y0230,Welcome pedal-left,1,1,Y02300077
+8200152Y0230,Welcome pedal-right,1,2,Y02300077
+5704100Y0240,Left roof ceiling glass assy,1,1,Y02300078
+5701211Y0230,Roof ceiling glass sealing rubber strip - Left,1,2,Y02300078
+5704200Y0240,Right Left roof ceiling glass assy,1,3,Y02300078
+5701212Y0230,Roof ceiling glass sealing rubber strip - right,1,4,Y02300078
+8402110Y0240D,Front hood welding assy,1,1,Y02300079
+8402505Y0230,Front hood knob-Left,1,2,Y02300079
+8402506Y0230,Front hood knob-Right,1,3,Y02300079
+8402507Y0230,Front hood steel clip base,2,4,Y02300079
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,2,5,Y02300079
+S27348004,Cross recessed large half round head tapping screw ST4.8*13 black zinc-nickel,2,6,Y02300079
+8403101Y0240D,Left fender,1,1,Y02300080
+8403107Y0240,Plastic nut seat,10,2,Y02300080
+ZH2204-16,A-type reed nut,8,3,Y02300080
+8403105Y0240,Left fender bracket,1,4,Y02300080
+8403102-Y01,Lower trim panel left triangular window,1,5,Y02300080
+8403201Y0240D,Right fender,1,6,Y02300080
+8403205Y0240,Right fender bracket,1,7,Y02300080
+8403202-Y01,Lower trim panel right triangular window,1,8,Y02300080
+5306148Y0230,Double-sided tape - (width 10mm thick 0.8mm), ,9,Y02300080
+S22148002,Cross recessed pan head tapping screw and flat washer assembly ST4.8*16 Black zinc-nickel,20,10,Y02300080
+ZH1255,D-shaped buckle,2,11,Y02300080
+8403109Y0240,Mushroom Buckle -(Length 25 width 20 thickness 5.5),6,12,Y02300080
+2803013Y0240,Mounting bracket front bumper-left,1,1,Y02300081
+2803014Y0240,Mounting bracket front bumper-right,1,2,Y02300081
+2803002Y0230D-KIT,Front bumper service kit,1,3,Y02300081
+2803009-Y01D,Lower trim panel front bumper,1,4,Y02300081
+2803007-Y01D,Upper trim panel front bumper,1,5,Y02300081
+2803003-Y01D,Central trim panel front bumper,1,6,Y02300081
+2803005-Y01D,Front bumper trim strip,1,7,Y02300081
+2803011-Y01D,Front combination light lower trim panel-left,1,8,Y02300081
+2803012-Y01D,Front combination light lower trim panel-right,1,9,Y02300081
+5302031Y0230,Front charging port base,1,10,Y02300081
+5302032Y0230,Front charging port cover inner panel,1,11,Y02300081
+5302033Y0230,Front charging port cover pivots,1,12,Y02300081
+5302034Y0230,Front charging port cover spring,1,13,Y02300081
+Z056,Cushion,3,14,Y02300081
+5302011Y0230D,Cover plate front charging port,1,15,Y02300081
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,2,16,Y02300081
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,11,17,Y02300081
+ZH2204-16,A-type reed nut,6,18,Y02300081
+2804100Y0250D,Rear bumper body assy,1,1,Y02300082
+S22148002,Bobes recess flange screw with black nickel plating M6 1.0,2,2,Y02300082
+ZH1210,Plastic nut seat,4,3,Y02300082
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,6,4,Y02300082
+2804521Y0230D,Rear bumper sliding door welding assembly,1,5,Y02300082
+2804530Y0230,Sliding door interior trim panel,1,6,Y02300082
+2804201Y0240,Mounting bracket rear left bumper,1,7,Y02300082
+ZH2204-16,A-type reed nut,6,8,Y02300082
+2804301Y0240,Mounting bracket rear right bumper,1,9,Y02300082
+S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,4,10,Y02300082
+2804101Y0250D,Rear bumper body,1,11,Y02300082
+5107003-Y01,Side door buffer block,4,12,Y02300082
+2804102Y0250D,Rear bumper lower trim plate,1,13,Y02300082
+ZH2204-6,Leaf spring nut B type,4,14,Y02300082
+ZH830,Snap fastener (Small head),2,15,Y02300082
+4133041Y0240,Rear left retroreflector,1,16,Y02300082
+4133042Y0240,Rear right retroreflector,1,17,Y02300082
+S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,4,1,Y02300083
+2804201Y0230,Rear bumper hinge assy-left,1,2,Y02300083
+2804202Y0230,Rear bumper hinge assy-Right,1,3,Y02300083
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,10,4,Y02300083
+6302010Y0240D,Upper panel spoiler hood,1,1,Y02300084
+6302018-Y01D,Lower panel spoiler hood,1,2,Y02300084
+5306148Y0230,Double-sided tape - (width 10mm thick 0.8mm), ,3,Y02300084
+ZH680,Metal V-fastener,4,4,Y02300084
+4123010Y0205,Ceiling light,1,1,Y02300085
+4123020Y0205,Ceil light shield,1,2,Y02300085
+S21405002,Cross slot pan head screw M5*16*P0.8 Color zinc 4.8 grade,2,3,Y02300085
+5810010-Y01,Seat belt assembly - left,1,1,Y02300086
+5810020-Y01,Seat belt assembly - right,1,2,Y02300086
+5810011-Y01,Seat belt buckle-left,1,3,Y02300086
+5810021-Y01,Seat belt buckle- right,1,4,Y02300086
+6101710Y0230,Front guide rail assy left door,1,1,Y02300087
+6101720Y0230,Front guide rail assy right door,1,2,Y02300087
+6101750Y0230,Rubber coating assy rear guide rail left door,1,3,Y02300087
+6107127Y0230,Rear mud groove left door,1,4,Y02300087
+6101733Y0230,Mounting block of rear triangular window-Left,1,5,Y02300087
+6101760Y0230,Rubber coating assy rear guide rail right door,1,6,Y02300087
+6107128Y0230,Rear mud groove right door,1,7,Y02300087
+6101734Y0230,Mounting block of rear triangular window- Right,1,8,Y02300087
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,9,Y02300087
+S99006201,Hexagon head bolt spring washer and large flat washer assembly M6*20*P1 Black Dacromet 8.8,8,10,Y02300087
+6101901Y0205,Upper waterproof membrane assy left door,1,1,Y02300088
+6101902Y0205,Upper waterproof membrane assy right door,1,2,Y02300088
+6101903Y0205,Lower waterproof membrane left&right door,2,3,Y02300088
+6103200Y0240,Windshield assy right door,1,1,Y02300089
+6104120Y0230,Electric window regulator assy right door,1,2,Y02300089
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,8,3,Y02300089
+6103100Y0240,Windshield assy left door,1,4,Y02300089
+5203010-Y01,Front left triangle window glass,1,5,Y02300089
+6104110Y0230,Electric window regulator assy left door,1,6,Y02300089
+5203020-Y01,Front right triangle window glass,1,7,Y02300089
+5606410Y0230,Lock assy battery box,2,1,Y02300090
+S18606002,Hexagon flange face bolt M6*20 black Dacromet,4,2,Y02300090
+5606420Y0230,Locking hook assy battery box,2,3,Y02300090
+S32008002,Hexagon flange nut M8 Silver Dacromet,4,4,Y02300090
+5107014-Y01,?40 plug cover,2,5,Y02300090
+6105330Y0205,Inner handle assemly-left,1,1,Y02300091
+6105340Y0205,Inner handle assemly-right,1,2,Y02300091
+S27342003,Cross recessed large half round head self-tapping screw ST4.2*13 black zinc-nickel,8,3,Y02300091
+6105510Y0205D,Outer handle assy left door,1,1,Y02300092
+6105520Y0205D,Outer handle assy right door,1,2,Y02300092
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,6,3,Y02300092
+6107116Y0230,Joint angle front mud groove right door,1,1,Y02300093
+6107115Y0230,Joint angle front mud groove left door,1,2,Y02300093
+6107132Y0230,Sealing strip front triangle window-right,1,3,Y02300093
+6107131Y0230,Sealing strip front triangle window-left,1,4,Y02300093
+6107118Y0230,Outer weather strip right door glass,1,5,Y02300093
+6107117Y0230,Outer weather strip left door glass,1,6,Y02300093
+6107112Y0230,Seal strip front right door opening,1,7,Y02300093
+6107111Y0230,Seal strip front left door opening,1,8,Y02300093
+6107122Y0230,Inner weather strip right door glass,1,9,Y02300093
+6107121Y0230,Inner weather strip left door glass,1,10,Y02300093
+6307111Y0230,Sealing strip tailgate,1,1,Y02300094
+6107113Y0230,Upper seal strip front left door opening,1,2,Y02300094
+6107114Y0230,Upper seal strip front right door opening,1,3,Y02300094
+6107135Y0230,Sealing strip battery box,1,4,Y02300094
+6107137Y0230,Sealing washer roof,1,5,Y02300094
+6309110Y0240,Air spring,2,1,Y02300095
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,4,2,Y02300095
+6309200Y0240,Tailgate hinge,2,3,Y02300095
+6309103Y0240,Ball stud air spring,2,4,Y02300095
+S99008001,Hexagon flange nut M8 Silver Dacromet,4,5,Y02300095
+S18408002,Hexagon head flange bolt M8*20*P1.25 Black Dacromet 8.8 class,4,6,Y02300095
+6309300Y0240,Tailgate buffer block,2,7,Y02300095
+6309101Y0240,Mounting bracket pneumatic stay bar tailgate- left,1,8,Y02300095
+6309102Y0240,Mounting bracket pneumatic stay bar tailgate- right,1,9,Y02300095
+Z6900100Y0230,Front left seat assembly,1,1,Y02300096
+Z6900200Y0230,Front right seat assembly,1,2,Y02300096
+6900300Y0230,Trim cover seat bracket-left,2,3,Y02300096
+6900400Y0230,Trim cover seat bracket-right,2,4,Y02300096
+S18510002,Hexagon flange bolt M10*25*P1.25 Black Dacromet 10.9 grade with adhesive,8,5,Y02300096
+8200101-Y01,Lifter rubber block,4,1,Y02300097
+S18408004,Hexagon flange bolt M8*30*P1.25 Silver Dacromet 8.8 class,4,2,Y02300097
+S40210002,Large washer ?10 black Dacromet,4,3,Y02300097
+8201010Y0205,Inner rear-view mirror,1,1,Y02300098
+8204010Y0230,Sun visor assembly,2,1,Y02300099
+8204020Y0205,Base cover plate sunvisor,2,2,Y02300099
+S21406001,Cross slot pan head screw M6*25*P1 Black zinc 4.8 grade,4,3,Y02300099
+8202010Y0230D,Left outer rear-view mirror assy,1,1,Y02300100
+8202020Y0230D,Right outer rear-view mirror assy,1,2,Y02300100
+S18606003,Hexagon flange bolts M6*16*P1 Black Dacromet 8.8 class,6,3,Y02300100
+8202011Y0230D,Left exterior rear-view mirror assy,1,4,Y02300100
+8202012Y0230,Left exterior rear-view mirror lens assy,1,5,Y02300100
+8202021Y0230D,Right exterior rear-view mirror assy,1,6,Y02300100
+8202022Y0230,Right exterior rear-view mirror lens ass,1,7,Y02300100
+5606032Y0230,Handle front charging port cap lock,1,1,Y02300101
+5606033Y0230,Cap lock cable front charging port,1,2,Y02300101
+S23006002,Cross recessed pan head screw and flat washer Assembly M6*16*P1 Black Dacromet 8.8,2,3,Y02300101
+4108010Y0205,License light assembly,2,1,Y02300102
+8208030-Y01,Side retroreflector,2,1,Y02300103
+4133010Y0250,Rear left combination light assy,1,1,Y02300104
+4133020Y0250,Rear right combination light assy,1,2,Y02300104
+BNJ-0270,Tail light buckle,4,3,Y02300104
+ZH1210,Plastic nut seat,6,4,Y02300104
+S32006003,Hexagon flange nut M6*P1 Black Zinc-nickel grade 8,2,5,Y02300104
+S27348003,Cross recessed large half round head tapping screws ST4.8*16 black zinc-nickel,6,6,Y02300104
+6105101Y0205,Electronic controlling lock body left door,1,1,Y02300105
+6105103Y0205,Pull rod electronic controlling lockleft door,1,2,Y02300105
+6105105Y0205,Pull rod electronic controlling lock cylinderleft door,1,3,Y02300105
+6105107Y0205,Lock catch electronic controlling Lock door,2,4,Y02300105
+6105111Y0205,Electronic controlling lock cable left door,2,5,Y02300105
+6105102Y0205,Electronic controlling lock body right door,1,6,Y02300105
+6105104Y0205,Pull rod electronic controlling lock right door,1,7,Y02300105
+S25808001,Hexagonal flower countersunk head screw M8*20*P1.25 Black zinc 8.8 grade with adhesive,4,8,Y02300105
+S99006121,Countersunk head screw M6*12*P1 Silver Dacromet 8.8 with rubber,6,9,Y02300105
+6105207Y0260,Trim door lock latch,2,10,Y02300105
+5606011Y0205,Electric lock system body tailgate,1,1,Y02300106
+6105107Y0205,Lock catch electronic controlling Lock door,1,2,Y02300106
+5606600Y0230,Bobes recess flange screw with black nickel plating M6 1.0,3,3,Y02300106
+S25808001,Hexagonal flower countersunk head screw M8*20*P1.25 Black zinc 8.8 grade with adhesive,2,4,Y02300106
+4121010Y0230,Front left combination light assy (Thick-walled part of daytime running light),1,1,Y02300107
+4121901Y0230,H7 bulb,2,2,Y02300107
+4121903Y0230,Rear cover front left combination light,2,3,Y02300107
+4121020Y0230,Front right combination light assy (Thick-walled part of daytime running light),1,4,Y02300107
+S99006201,Hexagon head bolt spring washer and large flat washer assembly M6*20*P1 Black Dacromet 8.8,8,5,Y02300107
+5107011-Y01,?10 plug cover,6,1,Y02300108
+5107013-Y01,?20 plug cover,20,2,Y02300108
+5111020Y0280,Hot melt ?20 hole plug,4,3,Y02300108
+5111040Y0280,Hot melt ?40 hole plug,4,4,Y02300108
+5107015-Y01,?30 plug cover,6,5,Y02300108
+5107016-Y01,?15 plug cover,12,6,Y02300108
+5107018Y0230,Hole sticker ?25,18,7,Y02300108
+5107101Y0240,?25 Special plug cover for sliding and cocking holes,2,8,Y02300108
+3926010-Y01,Warning triangles,1,1,Y02300109
+3926020-Y01,Reflective vest,1,2,Y02300109
+5302105Y0230,Filler cap tool,1,3,Y02300109
 ,,,,
 ,,,,
 ,,,,

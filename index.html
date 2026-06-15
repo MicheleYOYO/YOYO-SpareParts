@@ -419,3 +419,101 @@ function mostraEsploso(file,codice,id){
 
 </body>
 </html>
+// ---------------- MOSTRA ESPLOSO CON OVERLAY ----------------
+function mostraEsploso(file,codice,id){
+    if(!file){
+        alert("Nessun esploso disponibile per questo ricambio");
+        return;
+    }
+
+    const cartella = MODEL_MAP[modelloCorrente];
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
+
+    const win = window.open("", "_blank");
+
+    win.document.write(`<!DOCTYPE html>
+<html>
+<head>
+<title>Esploso ${codice}</title>
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#container{
+    position:relative;
+    width:100%;
+    text-align:center;
+}
+#explodedImg{
+    width:60%;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+.marker{
+    position:absolute;
+    width:30px;
+    height:30px;
+    background:rgba(255,255,0,0.7);
+    border:2px solid #000;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <img id="explodedImg" src="${url}">
+</div>
+
+<script>
+const coords = ${JSON.stringify(coordinateEsplosi)};
+const fileName = "${file}";
+const partId = "${id}".trim();
+
+const img = document.getElementById("explodedImg");
+const container = document.getElementById("container");
+
+img.onload = function(){
+
+    requestAnimationFrame(() => {
+
+        const naturalW = img.naturalWidth;
+        const naturalH = img.naturalHeight;
+
+        const displayedW = img.clientWidth;
+        const displayedH = img.clientHeight;
+
+        const rectImg = img.getBoundingClientRect();
+        const rectCont = container.getBoundingClientRect();
+
+        const offsetX = rectImg.left - rectCont.left;
+        const offsetY = rectImg.top  - rectCont.top;
+
+        const scaleX = displayedW / naturalW;
+        const scaleY = displayedH / naturalH;
+
+        if(coords[fileName] && coords[fileName][partId]){
+            coords[fileName][partId].forEach(pt=>{
+                const marker = document.createElement("div");
+                marker.className = "marker";
+
+                marker.style.left = (offsetX + pt.x * scaleX) + "px";
+                marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+
+                container.appendChild(marker);
+            });
+        }
+    });
+};
+<\/script>
+
+</body>
+</html>`);
+}

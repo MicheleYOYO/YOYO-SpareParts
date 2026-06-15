@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>YOYO – Mapper Coordinate Esplosi</title>
+<style>
+body{
+    font-family:Arial;
+    margin:20px;
+}
+#imgBox{
+    position:relative;
+    display:inline-block;
+}
+#explodedImg{
+    max-width:90vw;
+    height:auto;
+    border:1px solid #333;
+}
+.marker{
+    position:absolute;
+    width:28px;
+    height:28px;
+    background:rgba(255,255,0,0.7);
+    border:2px solid #000;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+#coordsBox{
+    width:100%;
+    height:200px;
+}
+</style>
+</head>
+<body>
+
+<h1>YOYO – Mapper Coordinate Esplosi</h1>
+
+<h3>1️⃣ Inserisci nome sinottico (es: Y01001)</h3>
+<input id="sinottico" type="text" placeholder="es: Y01001" style="width:200px;font-size:18px;">
+
+<h3>2️⃣ Inserisci ID pezzo (colonna D del CSV)</h3>
+<input id="partId" type="text" placeholder="es: 1" style="width:200px;font-size:18px;">
+
+<h3>3️⃣ Carica immagine esploso</h3>
+<input type="file" id="fileInput" accept="image/*">
+
+<div id="imgBox">
+    <img id="explodedImg">
+</div>
+
+<h3>Coordinate generate</h3>
+<textarea id="coordsBox"></textarea>
+
+<br><br>
+<button onclick="esportaJSON()" style="padding:10px 20px;font-size:18px;">📤 Esporta JSON</button>
+
+<script>
+let coords = {};
+
+document.getElementById("fileInput").addEventListener("change", function(e){
+    const file = e.target.files[0];
+    const img = document.getElementById("explodedImg");
+    img.src = URL.createObjectURL(file);
+});
+
+document.getElementById("explodedImg").addEventListener("click", function(e){
+    const sin = document.getElementById("sinottico").value.trim();
+    const pid = document.getElementById("partId").value.trim();
+
+    if(!sin || !pid){
+        alert("Inserisci sinottico e ID prima di cliccare");
+        return;
+    }
+
+    const rect = this.getBoundingClientRect();
+    const x = Math.round(e.clientX - rect.left);
+    const y = Math.round(e.clientY - rect.top);
+
+    if(!coords[sin]) coords[sin] = {};
+    if(!coords[sin][pid]) coords[sin][pid] = [];
+
+    coords[sin][pid].push({x,y});
+
+    // marker grafico
+    const marker = document.createElement("div");
+    marker.className = "marker";
+    marker.style.left = x + "px";
+    marker.style.top = y + "px";
+    document.getElementById("imgBox").appendChild(marker);
+
+    aggiornaTextarea();
+});
+
+function aggiornaTextarea(){
+    document.getElementById("coordsBox").value = JSON.stringify(coords, null, 4);
+}
+
+function esportaJSON(){
+    const blob = new Blob([JSON.stringify(coords, null, 4)], {type:"application/json"});
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "coordinateEsplosi.json";
+    a.click();
+}
+</script>
+
+</body>
+</html>

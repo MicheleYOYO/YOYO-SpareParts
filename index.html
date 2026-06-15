@@ -107,6 +107,7 @@ function identificaModello() {
     mostraRicambi();
 }
 
+
 // ------------------------------------------------------
 // CARICAMENTO PARTS.csv (tabella generale)
 // ------------------------------------------------------
@@ -162,22 +163,42 @@ async function caricaPartsMY22() {
 
     for (let i = 1; i < righe.length; i++) {
         const cols = righe[i].split(",");
-        const codice      = cols[0];
-        const descrizione = cols[1];
-        const quantita    = cols[2];
-        const modello     = cols[3];
-        const esploso     = cols[4] || "";
-
         partsTableMY22.push({
-            codice: codice.trim(),
-            descrizione: descrizione.trim(),
-            quantita: quantita.trim(),
+            codice: cols[0].trim(),
+            descrizione: cols[1].trim(),
+            quantita: cols[2].trim(),
             modelli: ["MY22"],
-            esploso: esploso.trim()
+            esploso: (cols[4] || "").trim()
         });
     }
 }
 caricaPartsMY22();
+
+
+// ------------------------------------------------------
+// CARICAMENTO partsMY23.csv  (NUOVO)
+// ------------------------------------------------------
+let partsTableMY23 = [];
+
+const PARTS_MY23_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv";
+
+async function caricaPartsMY23() {
+    const response = await fetch(PARTS_MY23_URL);
+    const text = await response.text();
+    const righe = text.split("\n").map(r => r.trim()).filter(r => r.length > 0);
+
+    for (let i = 1; i < righe.length; i++) {
+        const cols = righe[i].split(",");
+        partsTableMY23.push({
+            codice: cols[0].trim(),
+            descrizione: cols[1].trim(),
+            quantita: cols[2].trim(),
+            modelli: ["MY23"],
+            esploso: (cols[4] || "").trim()
+        });
+    }
+}
+caricaPartsMY23();
 
 
 // ------------------------------------------------------
@@ -194,18 +215,12 @@ async function caricaPartsMY24() {
 
     for (let i = 1; i < righe.length; i++) {
         const cols = righe[i].split(",");
-        const codice      = cols[0];
-        const descrizione = cols[1];
-        const quantita    = cols[2];
-        const modello     = cols[3];
-        const esploso     = cols[4] || "";
-
         partsTableMY24.push({
-            codice: codice.trim(),
-            descrizione: descrizione.trim(),
-            quantita: quantita.trim(),
+            codice: cols[0].trim(),
+            descrizione: cols[1].trim(),
+            quantita: cols[2].trim(),
             modelli: ["MY24"],
-            esploso: esploso.trim()
+            esploso: (cols[4] || "").trim()
         });
     }
 }
@@ -237,6 +252,8 @@ function mostraRicambi() {
     let tabella = partsTable;
     if (modelloCorrente === "Y01") {
         tabella = partsTableMY22;
+    } else if (modelloCorrente === "Y0210") {
+        tabella = partsTableMY23;
     } else if (modelloCorrente === "Y0230") {
         tabella = partsTableMY24;
     }
@@ -282,13 +299,18 @@ function mostraRicambi() {
 // ------------------------------------------------------
 function mostraSinottici() {
 
-    // Se NON è stato inserito un VIN → chiedi quale modello visualizzare
     if (!modelloCorrente) {
         let html = `
             <h3>Seleziona il modello per la ricerca visuale</h3>
+
             <button onclick="selezionaModelloVisuale('Y01')" 
                     style="padding:10px; font-size:18px; margin-right:20px;">
                 MY22
+            </button>
+
+            <button onclick="selezionaModelloVisuale('Y0210')" 
+                    style="padding:10px; font-size:18px; margin-right:20px;">
+                MY23
             </button>
 
             <button onclick="selezionaModelloVisuale('Y0230')" 
@@ -301,7 +323,6 @@ function mostraSinottici() {
         return;
     }
 
-    // Se il VIN è stato inserito → comportamento normale
     mostraSinotticiPerModello(modelloCorrente);
 }
 
@@ -316,13 +337,15 @@ function selezionaModelloVisuale(modello) {
 
 
 // ------------------------------------------------------
-// MOSTRA SINOTTICI PER MODELLO (MY22 o MY24)
+// MOSTRA SINOTTICI PER MODELLO
 // ------------------------------------------------------
 function mostraSinotticiPerModello(modello) {
     let tabella = [];
 
     if (modello === "Y01") {
         tabella = partsTableMY22;
+    } else if (modello === "Y0210") {
+        tabella = partsTableMY23;
     } else if (modello === "Y0230") {
         tabella = partsTableMY24;
     } else {
@@ -367,6 +390,8 @@ function mostraRicambiSinottico(codiceEsploso) {
 
     if (modelloCorrente === "Y01") {
         tabella = partsTableMY22;
+    } else if (modelloCorrente === "Y0210") {
+        tabella = partsTableMY23;
     } else if (modelloCorrente === "Y0230") {
         tabella = partsTableMY24;
     }

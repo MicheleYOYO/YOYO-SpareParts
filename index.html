@@ -435,8 +435,8 @@ function mostraRicambiSinottico(codiceEsploso) {
 
     document.getElementById("partsBox").innerHTML = html;
 
-    // 🔥 SCROLL AUTOMATICO IN ALTO
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const box = document.getElementById("partsBox");
+    box.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 

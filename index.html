@@ -278,18 +278,56 @@ function mostraRicambi() {
 
 
 // ------------------------------------------------------
-// RICERCA VISUALE — MOSTRA SINOTTICI DEL MODELLO CORRENTE
+// RICERCA VISUALE — SE NON C'È VIN, CHIEDI MODELLO
 // ------------------------------------------------------
 function mostraSinottici() {
+
+    // Se NON è stato inserito un VIN → chiedi quale modello visualizzare
+    if (!modelloCorrente) {
+        let html = `
+            <h3>Seleziona il modello per la ricerca visuale</h3>
+            <button onclick="selezionaModelloVisuale('Y01')" 
+                    style="padding:10px; font-size:18px; margin-right:20px;">
+                MY22
+            </button>
+
+            <button onclick="selezionaModelloVisuale('Y0230')" 
+                    style="padding:10px; font-size:18px;">
+                MY24
+            </button>
+        `;
+
+        document.getElementById("partsBox").innerHTML = html;
+        return;
+    }
+
+    // Se il VIN è stato inserito → comportamento normale
+    mostraSinotticiPerModello(modelloCorrente);
+}
+
+
+// ------------------------------------------------------
+// SELEZIONE MODELLO MANUALE (senza VIN)
+// ------------------------------------------------------
+function selezionaModelloVisuale(modello) {
+    modelloCorrente = modello;
+    mostraSinotticiPerModello(modelloCorrente);
+}
+
+
+// ------------------------------------------------------
+// MOSTRA SINOTTICI PER MODELLO (MY22 o MY24)
+// ------------------------------------------------------
+function mostraSinotticiPerModello(modello) {
     let tabella = [];
 
-    if (modelloCorrente === "Y01") {
+    if (modello === "Y01") {
         tabella = partsTableMY22;
-    } else if (modelloCorrente === "Y0230") {
+    } else if (modello === "Y0230") {
         tabella = partsTableMY24;
     } else {
         document.getElementById("partsBox").innerHTML =
-            "<p>Identifica prima un VIN valido per vedere i sinottici.</p>";
+            "<p>Nessun sinottico disponibile per questo modello.</p>";
         return;
     }
 
@@ -305,7 +343,7 @@ function mostraSinottici() {
                  style="border:1px solid #333; padding:15px; 
                         width:48%; text-align:center; cursor:pointer;">
                 
-                <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modelloCorrente]}/${s}.jpg"
+                <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modello]}/${s}.jpg"
                      style="width:100%; height:auto;">
 
                 <div style="margin-top:10px; font-weight:bold; font-size:22px;">

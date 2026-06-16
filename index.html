@@ -14,6 +14,7 @@ th{background:#eee;}
 </style>
 </head>
 <body>
+
 <h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
 
 <h2>Identificazione modello tramite VIN</h2>
@@ -35,7 +36,8 @@ th{background:#eee;}
 
 <script>
 // ---------------- VIN ----------------
-let vinTable=[]; let modelloCorrente="";
+let vinTable=[]; 
+let modelloCorrente="";
 const VIN_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/VIN.csv";
 
 async function caricaVIN(){
@@ -177,13 +179,22 @@ const MODEL_MAP={
     "Y0230":"MY24"
 };
 
-// ---------------- COORDINATE ESPLOSI ----------------
-const coordinateEsplosi={
-    "Y01001":{
-        "1":[{x:1121,y:433}],
-        "2":[{x:1897,y:647},{x:1883,y:1024},{x:1950,y:600}]
+// ---------------- COORDINATE DINAMICHE ----------------
+let coordinateEsplosi={};
+
+async function caricaCoordinate(file){
+    const modello = MODEL_MAP[modelloCorrente];
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/coords/${modello}/${file}.json`;
+
+    try{
+        const r = await fetch(url);
+        if(!r.ok) return {};
+        return await r.json();
+    }catch(e){
+        return {};
     }
-};
+}
+
 // ---------------- MOSTRA RICAMBI ----------------
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
@@ -216,6 +227,11 @@ function mostraRicambi(){
     if(filtrati.length===0){
         html+="<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
     }
+
+    html+="</table>";
+    document.getElementById("partsBox").innerHTML=html;
+}
+
 // ---------------- RICERCA VISUALE ----------------
 function mostraSinottici(){
     if(!modelloCorrente){
@@ -240,10 +256,6 @@ function mostraSinotticiPerModello(modello){
     if(modello==="Y01") tabella=partsTableMY22;
     else if(modello==="Y0210") tabella=partsTableMY23;
     else if(modello==="Y0230") tabella=partsTableMY24;
-    else{
-        document.getElementById("partsBox").innerHTML="<p>Nessun sinottico disponibile per questo modello.</p>";
-        return;
-    }
 
     const sinottici=[...new Set(tabella.map(p=>p.esploso).filter(x=>x))];
 
@@ -316,110 +328,16 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-// ---------------- MOSTRA ESPLOSO CON OVERLAY ----------------
-function mostraEsploso(file,codice,id){
+
+// ---------------- MOSTRA ESPLOSO (VECCHIA PURA) ----------------
+async function mostraEsploso(file,codice,id){
     if(!file){
         alert("Nessun esploso disponibile per questo ricambio");
         return;
     }
 
-    const cartella = MODEL_MAP[modelloCorrente];
-    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
-
-    const win = window.open("", "_blank");
-
-    win.document.write(`
-    <html>
-    <head>
-        <title>Esploso ${codice}</title>
-        <style>
-            body{
-                margin:0;
-                padding:0;
-                background:#000;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-            }
-            #container{
-                position:relative;
-                width:100%;
-                text-align:center;
-            }
-            #explodedImg{
-                width:60%;
-                height:auto;
-                display:block;
-                margin:auto;
-            }
-            .marker{
-                position:absolute;
-                width:30px;
-                height:30px;
-                background:rgba(255,255,0,0.7);
-                border:2px solid #000;
-                border-radius:50%;
-                transform:translate(-50%,-50%);
-                pointer-events:none;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="container">
-            <img id="explodedImg" src="${url}">
-        </div>
-
-        <script>
-            const coords = ${JSON.stringify(coordinateEsplosi)};
-            const fileName = "${file}";
-            const partId = "${id}".trim();
-
-            const img = document.getElementById("explodedImg");
-            const container = document.getElementById("container");
-
-            img.onload = function(){
-
-                const naturalW = img.naturalWidth;
-                const naturalH = img.naturalHeight;
-
-                const displayedW = img.clientWidth;
-                const displayedH = img.clientHeight;
-
-                const rect = img.getBoundingClientRect();
-
-                const offsetX = rect.left - container.getBoundingClientRect().left;
-                const offsetY = rect.top  - container.getBoundingClientRect().top;
-
-                const scaleX = displayedW / naturalW;
-                const scaleY = displayedH / naturalH;
-
-                if(coords[fileName] && coords[fileName][partId]){
-                    coords[fileName][partId].forEach(pt=>{
-                        const marker = document.createElement("div");
-                        marker.className = "marker";
-
-                        marker.style.left = (offsetX + pt.x * scaleX) + "px";
-                        marker.style.top  = (offsetY + pt.y * scaleY) + "px";
-
-                        container.appendChild(marker);
-                    });
-                }
-            };
-        <\/script>
-    </body>
-    </html>
-    `);
-}
-</script>
-
-</body>
-</html>
-// ---------------- MOSTRA ESPLOSO CON OVERLAY ----------------
-function mostraEsploso(file,codice,id){
-    if(!file){
-        alert("Nessun esploso disponibile per questo ricambio");
-        return;
-    }
+    // Carico coordinate dal JSON
+    const coords = await caricaCoordinate(file);
 
     const cartella = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
@@ -468,7 +386,7 @@ body{
 </div>
 
 <script>
-const coords = ${JSON.stringify(coordinateEsplosi)};
+const coords = ${JSON.stringify(coords)};
 const fileName = "${file}";
 const partId = "${id}".trim();
 
@@ -494,7 +412,7 @@ img.onload = function(){
         const scaleX = displayedW / naturalW;
         const scaleY = displayedH / naturalH;
 
-              if(coords[fileName] && coords[fileName][partId]){
+        if(coords[fileName] && coords[fileName][partId]){
             coords[fileName][partId].forEach(pt=>{
                 const marker = document.createElement("div");
                 marker.className = "marker";
@@ -507,3 +425,13 @@ img.onload = function(){
         }
     });
 };
+<\/script>
+
+</body>
+</html>`);
+}
+
+</script>
+
+</body>
+</html>

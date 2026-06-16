@@ -177,18 +177,13 @@ const MODEL_MAP={
     "Y0230":"MY24"
 };
 
-// ---------------- COORDINATE ESPLOSI (inizialmente vuoto) ----------------
-let coordinateEsplosi={};
-
-// ---------------- CARICA COORDINATE ----------------
-function caricaCoordinate(file){
-    const cartella = MODEL_MAP[modelloCorrente];
-    const path = `https://micheleyoyo.github.io/YOYO-SpareParts/coords/${cartella}/${file}.json`;
-
-    return fetch(path)
-        .then(r => r.json())
-        .catch(() => null);
-}
+// ---------------- COORDINATE ESPLOSI ----------------
+const coordinateEsplosi={
+    "Y01001":{
+        "1":[{x:1121,y:433}],
+        "2":[{x:1897,y:647},{x:1883,y:1024},{x:1950,y:600}]
+    }
+};
 // ---------------- MOSTRA RICAMBI ----------------
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
@@ -221,11 +216,6 @@ function mostraRicambi(){
     if(filtrati.length===0){
         html+="<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
     }
-
-    html+="</table>";
-    document.getElementById("partsBox").innerHTML=html;
-}
-
 // ---------------- RICERCA VISUALE ----------------
 function mostraSinottici(){
     if(!modelloCorrente){
@@ -326,8 +316,7 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-<!-- ---------------- MOSTRA ESPLOSO CON OVERLAY (VERSIONE 3 + COORDINATE + HOVER) ---------------- -->
-<script>
+// ---------------- MOSTRA ESPLOSO CON OVERLAY ----------------
 function mostraEsploso(file,codice,id){
     if(!file){
         alert("Nessun esploso disponibile per questo ricambio");
@@ -337,15 +326,107 @@ function mostraEsploso(file,codice,id){
     const cartella = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
-    // 1️⃣ Carico coordinate PRIMA di aprire la finestra
-    caricaCoordinate(file).then(data => {
+    const win = window.open("", "_blank");
 
-        coordinateEsplosi = data || {};
+    win.document.write(`
+    <html>
+    <head>
+        <title>Esploso ${codice}</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background:#000;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #container{
+                position:relative;
+                width:100%;
+                text-align:center;
+            }
+            #explodedImg{
+                width:60%;
+                height:auto;
+                display:block;
+                margin:auto;
+            }
+            .marker{
+                position:absolute;
+                width:30px;
+                height:30px;
+                background:rgba(255,255,0,0.7);
+                border:2px solid #000;
+                border-radius:50%;
+                transform:translate(-50%,-50%);
+                pointer-events:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img id="explodedImg" src="${url}">
+        </div>
 
-        // 2️⃣ Apro la finestra popup
-        const win = window.open("", "_blank");
+        <script>
+            const coords = ${JSON.stringify(coordinateEsplosi)};
+            const fileName = "${file}";
+            const partId = "${id}".trim();
 
-        win.document.write(`<!DOCTYPE html>
+            const img = document.getElementById("explodedImg");
+            const container = document.getElementById("container");
+
+            img.onload = function(){
+
+                const naturalW = img.naturalWidth;
+                const naturalH = img.naturalHeight;
+
+                const displayedW = img.clientWidth;
+                const displayedH = img.clientHeight;
+
+                const rect = img.getBoundingClientRect();
+
+                const offsetX = rect.left - container.getBoundingClientRect().left;
+                const offsetY = rect.top  - container.getBoundingClientRect().top;
+
+                const scaleX = displayedW / naturalW;
+                const scaleY = displayedH / naturalH;
+
+                if(coords[fileName] && coords[fileName][partId]){
+                    coords[fileName][partId].forEach(pt=>{
+                        const marker = document.createElement("div");
+                        marker.className = "marker";
+
+                        marker.style.left = (offsetX + pt.x * scaleX) + "px";
+                        marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+
+                        container.appendChild(marker);
+                    });
+                }
+            };
+        <\/script>
+    </body>
+    </html>
+    `);
+}
+</script>
+
+</body>
+</html>
+// ---------------- MOSTRA ESPLOSO CON OVERLAY ----------------
+function mostraEsploso(file,codice,id){
+    if(!file){
+        alert("Nessun esploso disponibile per questo ricambio");
+        return;
+    }
+
+    const cartella = MODEL_MAP[modelloCorrente];
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
+
+    const win = window.open("", "_blank");
+
+    win.document.write(`<!DOCTYPE html>
 <html>
 <head>
 <title>Esploso ${codice}</title>
@@ -369,21 +450,15 @@ body{
     display:block;
     margin:auto;
 }
-
-/* Cerchi invisibili, visibili solo al passaggio del mouse */
 .marker{
     position:absolute;
     width:30px;
     height:30px;
-    background:transparent;
-    border:none;
-    transform:translate(-50%,-50%);
-    cursor:pointer;
-    transition:0.15s;
-}
-.marker:hover{
-    background:rgba(255,255,0,0.5);
+    background:rgba(255,255,0,0.7);
     border:2px solid #000;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
 }
 </style>
 </head>
@@ -427,12 +502,6 @@ img.onload = function(){
                 marker.style.left = (offsetX + pt.x * scaleX) + "px";
                 marker.style.top  = (offsetY + pt.y * scaleY) + "px";
 
-                // click → torna al sinottico nel catalogo
-                marker.onclick = () => {
-                    window.opener.mostraRicambiSinottico(fileName);
-                    window.close();
-                };
-
                 container.appendChild(marker);
             });
         }
@@ -442,6 +511,7 @@ img.onload = function(){
 
 </body>
 </html>`);
-    });
 }
-
+    html+="</table>";
+    document.getElementById("partsBox").innerHTML=html;
+}

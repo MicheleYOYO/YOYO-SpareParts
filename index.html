@@ -326,7 +326,8 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-// ---------------- MOSTRA ESPLOSO CON OVERLAY (VERSIONE 3 + COORDINATE) ----------------
+<!-- ---------------- MOSTRA ESPLOSO CON OVERLAY (VERSIONE 3 + COORDINATE + HOVER) ---------------- -->
+<script>
 function mostraEsploso(file,codice,id){
     if(!file){
         alert("Nessun esploso disponibile per questo ricambio");
@@ -368,15 +369,22 @@ body{
     display:block;
     margin:auto;
 }
+
+/* 🔵 Cerchi invisibili, visibili solo al passaggio del mouse */
 .marker{
     position:absolute;
     width:30px;
     height:30px;
-    background:rgba(255,255,0,0.7);
-    border:2px solid #000;
-    border-radius:50%;
+    background:transparent;
+    border:none;
     transform:translate(-50%,-50%);
-    pointer-events:none;
+    cursor:pointer;
+    transition:0.15s;
+}
+
+.marker:hover{
+    background:rgba(255,255,0,0.5);
+    border:2px solid #000;
 }
 </style>
 </head>
@@ -420,6 +428,12 @@ img.onload = function(){
                 marker.style.left = (offsetX + pt.x * scaleX) + "px";
                 marker.style.top  = (offsetY + pt.y * scaleY) + "px";
 
+                // 🔥 CLICK: torna al sinottico nel catalogo principale
+                marker.onclick = () => {
+                    window.opener.mostraRicambiSinottico(fileName);
+                    window.close();
+                };
+
                 container.appendChild(marker);
             });
         }
@@ -432,6 +446,3 @@ img.onload = function(){
     });
 }
 </script>
-
-</body>
-</html>

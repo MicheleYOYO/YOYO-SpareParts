@@ -352,8 +352,8 @@ img.onload = function(){
         const scaleY = displayedH / naturalH;
 
         if(coords[fileName]){
-            Object.keys(coords[fileName]).forEach(num=>{
-                coords[fileName][num].forEach(pt=>{
+            Object.keys(coords[fileName]).forEach(id=>{
+                coords[fileName][id].forEach(pt=>{
                     const marker = document.createElement("div");
                     marker.className = "marker";
                     marker.style.left = (offsetX + pt.x * scaleX) + "px";
@@ -361,7 +361,7 @@ img.onload = function(){
 
                     marker.onclick = () => {
                         if(window.opener && !window.opener.closed){
-                            window.opener.selezionaRicambioDaMarker(fileName, num);
+                            window.opener.selezionaRicambioDaMarker(fileName, id);
                         }
                         window.close();
                     };
@@ -372,19 +372,11 @@ img.onload = function(){
         }
     });
 };
-
-function tornaAllaHome(){
-    document.getElementById("vinInput").value = "";
-    document.getElementById("searchInput").value = "";
-    modelloCorrente = "";
-    document.getElementById("risultatoVIN").innerText = "";
-    mostraRicambi();
-}
-
 <\/script>
 </body>
 </html>`);
 }
+
 
 /* ================= EVIDENZIAZIONE ================= */
 function selezionaRicambioDaMarker(codiceEsploso, numero){

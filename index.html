@@ -494,7 +494,7 @@ img.onload = function(){
         const scaleX = displayedW / naturalW;
         const scaleY = displayedH / naturalH;
 
-        if(coords[fileName] && coords[fileName][partId]){
+              if(coords[fileName] && coords[fileName][partId]){
             coords[fileName][partId].forEach(pt=>{
                 const marker = document.createElement("div");
                 marker.className = "marker";
@@ -507,11 +507,3 @@ img.onload = function(){
         }
     });
 };
-<\/script>
-
-</body>
-</html>`);
-}
-    html+="</table>";
-    document.getElementById("partsBox").innerHTML=html;
-}

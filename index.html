@@ -234,15 +234,22 @@ function mostraRicambi(){
 
 // ---------------- RICERCA VISUALE ----------------
 function mostraSinottici(){
+    // Se NON c'è un VIN → chiedi quale modello usare
     if(!modelloCorrente){
-        let html=`
+        let html = `
         <h3>Seleziona il modello per la ricerca visuale</h3>
         <button onclick="selezionaModelloVisuale('Y01')" style="padding:10px;font-size:18px;margin-right:20px;">MY22</button>
         <button onclick="selezionaModelloVisuale('Y0210')" style="padding:10px;font-size:18px;margin-right:20px;">MY23</button>
-        <button onclick="selezionaModelloVisuale('Y0230')" style="padding:10px;font-size:18px;">MY24</button>`;
-        document.getElementById("partsBox").innerHTML=html;
+        <button onclick="selezionaModelloVisuale('Y0230')" style="padding:10px;font-size:18px;">MY24</button>
+        `;
+        document.getElementById("partsBox").innerHTML = html;
         return;
     }
+
+    // Se c'è un VIN → mostra direttamente i sinottici del modello identificato
+    mostraSinotticiPerModello(modelloCorrente);
+}
+
     mostraSinotticiPerModello(modelloCorrente);
 }
 

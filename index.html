@@ -194,8 +194,7 @@ async function caricaCoordinate(file){
         return {};
     }
 }
-
-// ---------------- MOSTRA RICAMBI ----------------
+<!-- ===================== MOSTRA RICAMBI ===================== -->
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
     let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
@@ -216,7 +215,7 @@ function mostraRicambi(){
 
     filtrati.forEach(p=>{
         html+=`
-        onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.codice.split('-')[1]}')"
+        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.codice.split('-')[1]}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -232,9 +231,8 @@ function mostraRicambi(){
     document.getElementById("partsBox").innerHTML=html;
 }
 
-// ---------------- RICERCA VISUALE ----------------
+<!-- ===================== RICERCA VISUALE ===================== -->
 function mostraSinottici(){
-    // Se NON c'è un VIN → chiedi quale modello usare
     if(!modelloCorrente){
         let html = `
         <h3>Seleziona il modello per la ricerca visuale</h3>
@@ -246,10 +244,8 @@ function mostraSinottici(){
         return;
     }
 
-    // Se c'è un VIN → mostra direttamente i sinottici del modello identificato
     mostraSinotticiPerModello(modelloCorrente);
 }
-
 
 function selezionaModelloVisuale(modello){
     modelloCorrente=modello;
@@ -281,7 +277,7 @@ function mostraSinotticiPerModello(modello){
     document.getElementById("partsBox").innerHTML=html;
 }
 
-// ---------------- RICAMBI DI UN SINOTTICO ----------------
+<!-- ===================== RICAMBI DI UN SINOTTICO ===================== -->
 function mostraRicambiSinottico(codiceEsploso){
     let tabella=[];
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -296,8 +292,7 @@ function mostraRicambiSinottico(codiceEsploso){
 
     ricambiSinottico.forEach(p=>{
         html+=`
-        onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.codice.split('-')[1]}')"
-
+        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.codice.split('-')[1]}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -326,7 +321,7 @@ function mostraRicambiSinottico(codiceEsploso){
     box.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-// ---------------- HOME ----------------
+<!-- ===================== HOME ===================== -->
 function tornaAllaHome(){
     document.getElementById("vinInput").value="";
     document.getElementById("searchInput").value="";
@@ -335,16 +330,14 @@ function tornaAllaHome(){
     mostraRicambi();
 }
 
-// ---------------- MOSTRA ESPLOSO (VECCHIA PURA) ----------------
+<!-- ===================== MOSTRA ESPLOSO (CORRETTA) ===================== -->
 async function mostraEsploso(file,codice,id){
     if(!file){
         alert("Nessun esploso disponibile per questo ricambio");
         return;
     }
 
-    // Carico coordinate dal JSON
     const coords = await caricaCoordinate(file);
-
     const cartella = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
@@ -382,7 +375,7 @@ body{
     border:2px solid #000;
     border-radius:50%;
     transform:translate(-50%,-50%);
-    pointer-events:none;
+    cursor:pointer;
 }
 </style>
 </head>
@@ -400,7 +393,6 @@ const img = document.getElementById("explodedImg");
 const container = document.getElementById("container");
 
 img.onload = function(){
-
     requestAnimationFrame(() => {
 
         const naturalW = img.naturalWidth;
@@ -422,16 +414,20 @@ img.onload = function(){
             coords[fileName][partId].forEach(pt=>{
                 const marker = document.createElement("div");
                 marker.className = "marker";
-marker.style.left = (offsetX + pt.x * scaleX) + "px";
-marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+                marker.style.left = (offsetX + pt.x * scaleX) + "px";
+                marker.style.top  = (offsetY + pt.y * scaleY) + "px";
 
-marker.onclick = () => {
-    window.opener.evidenziaRicambioDaPopup(partId);
-    window.close();
-};
+                marker.onclick = () => {
+                    if(window.opener && !window.opener.closed){
+                        window.opener.mostraRicambiSinottico(fileName);
+                        window.opener.setTimeout(() => {
+                            window.opener.evidenziaRicambioDaPopup(partId, fileName);
+                        }, 300);
+                    }
+                    window.close();
+                };
 
-container.appendChild(marker);
-
+                container.appendChild(marker);
             });
         }
     });
@@ -439,18 +435,25 @@ container.appendChild(marker);
 <\/script>
 </body>
 </html>`);
-}  // ← chiusura della funzione mostraEsploso
-
-// QUI sotto inizia il codice del tuo index, NON dentro la popup
-
-function evidenziaRicambioDaPopup(idRicambio){
+}
+<!-- ===================== EVIDENZIAZIONE RICAMBIO ===================== -->
+function evidenziaRicambioDaPopup(idRicambio, codiceEsploso){
     const box = document.getElementById("partsBox");
     const righe = box.querySelectorAll("table tr");
 
-    righe.forEach(r => r.style.background = ""); // reset
+    // reset evidenziazioni
+    righe.forEach(r => r.style.background = "");
 
     righe.forEach(r => {
-        if(r.innerText.includes(idRicambio)){
+        const celle = r.querySelectorAll("td");
+        if (celle.length === 0) return;
+
+        const codice = celle[0].innerText.trim(); // prima colonna = codice ricambio
+
+        // esempio: Y01005-2
+        const prefisso = codiceEsploso + "-" + idRicambio;
+
+        if (codice.startsWith(prefisso)) {
             r.style.background = "#ffff66"; // giallo
             r.scrollIntoView({behavior:"smooth", block:"center"});
         }
@@ -460,4 +463,3 @@ function evidenziaRicambioDaPopup(idRicambio){
 </script>
 </body>
 </html>
-

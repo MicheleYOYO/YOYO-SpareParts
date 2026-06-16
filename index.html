@@ -351,22 +351,32 @@ img.onload = function(){
         const scaleX = displayedW / naturalW;
         const scaleY = displayedH / naturalH;
 
-        if(coords[fileName]){
-            Object.keys(coords[fileName]).forEach(id=>{
-                coords[fileName][id].forEach(pt=>{
-                    const marker = document.createElement("div");
-                    marker.className = "marker";
-                    marker.style.left = (offsetX + pt.x * scaleX) + "px";
-                    marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+if(coords[fileName]){
 
-                    marker.onclick = () => {
-                        if(window.opener && !window.opener.closed){
-                            window.opener.selezionaRicambioDaMarker(fileName, id);
-                        }
-                        window.close();
-                    };
+    // Se è stato passato un numero → mostra solo quello
+    const keys = numero ? [String(numero)] : Object.keys(coords[fileName]);
 
-                    container.appendChild(marker);
+    keys.forEach(id=>{
+        if(!coords[fileName][id]) return;
+
+        coords[fileName][id].forEach(pt=>{
+            const marker = document.createElement("div");
+            marker.className = "marker";
+            marker.style.left = (offsetX + pt.x * scaleX) + "px";
+            marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+
+            marker.onclick = () => {
+                if(window.opener && !window.opener.closed){
+                    window.opener.selezionaRicambioDaMarker(fileName, id);
+                }
+                window.close();
+            };
+
+            container.appendChild(marker);
+        });
+    });
+}
+
                 });
             });
         }

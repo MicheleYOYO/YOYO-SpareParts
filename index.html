@@ -370,7 +370,7 @@ body{
     margin:auto;
 }
 
-/* 🔵 Cerchi invisibili, visibili solo al passaggio del mouse */
+/* Cerchi invisibili, visibili solo al passaggio del mouse */
 .marker{
     position:absolute;
     width:30px;
@@ -381,7 +381,6 @@ body{
     cursor:pointer;
     transition:0.15s;
 }
-
 .marker:hover{
     background:rgba(255,255,0,0.5);
     border:2px solid #000;
@@ -428,7 +427,7 @@ img.onload = function(){
                 marker.style.left = (offsetX + pt.x * scaleX) + "px";
                 marker.style.top  = (offsetY + pt.y * scaleY) + "px";
 
-                // 🔥 CLICK: torna al sinottico nel catalogo principale
+                // click → torna al sinottico nel catalogo
                 marker.onclick = () => {
                     window.opener.mostraRicambiSinottico(fileName);
                     window.close();
@@ -445,4 +444,4 @@ img.onload = function(){
 </html>`);
     });
 }
-</script>
+

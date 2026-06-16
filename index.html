@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
+
 <style>
 body{font-family:Arial;margin:20px;}
 input,button{padding:6px;font-size:16px;}
@@ -13,10 +14,12 @@ th{background:#eee;}
 #partsBox table tr:hover{cursor:pointer;}
 </style>
 </head>
+
 <body>
 
 <h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
 
+<!-- VIN -->
 <h2>Identificazione modello tramite VIN</h2>
 <p>Inserisci le ultime 6 cifre del VIN:</p>
 <input type="text" id="vinInput" maxlength="6">
@@ -24,6 +27,7 @@ th{background:#eee;}
 <p id="risultatoVIN" style="font-weight:bold;margin-top:10px;"></p>
 <hr>
 
+<!-- Ricerca -->
 <h2>Ricerca ricambi</h2>
 <input type="text" id="searchInput" placeholder="Cerca ricambio per codice o nome" oninput="mostraRicambi()">
 <br><br>
@@ -36,14 +40,16 @@ th{background:#eee;}
 
 <script>
 /* ================= VIN ================= */
-let vinTable=[]; 
+let vinTable=[];
 let modelloCorrente="";
+
 const VIN_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/VIN.csv";
 
 async function caricaVIN(){
     const r=await fetch(VIN_URL);
     const t=await r.text();
     const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
     for(let i=1;i<righe.length;i++){
         const [start,end,modello]=righe[i].split(",");
         vinTable.push({
@@ -56,122 +62,88 @@ async function caricaVIN(){
 caricaVIN();
 
 function identificaModello(){
-    const vinInput=document.getElementById("vinInput").value.trim();
-    if(!vinInput){
+    const vin=document.getElementById("vinInput").value.trim();
+    if(!vin){
         modelloCorrente="";
         document.getElementById("risultatoVIN").innerText="Inserisci un VIN valido";
         mostraRicambi();
         return;
     }
-    const vinNumber=parseInt(vinInput);
+
+    const vinNum=parseInt(vin);
     modelloCorrente="";
+
     for(let r of vinTable){
-        if(vinNumber>=r.start && vinNumber<=r.end){
+        if(vinNum>=r.start && vinNum<=r.end){
             modelloCorrente=r.modello.trim();
             break;
         }
     }
-    if(!modelloCorrente){
+
+    if(!modelloCorrente)
         document.getElementById("risultatoVIN").innerText="VIN non trovato nei range";
-    } else {
+    else
         document.getElementById("risultatoVIN").innerText="Modello identificato: "+modelloCorrente;
-    }
+
     mostraRicambi();
 }
 
 /* ================= PARTS ================= */
-let partsTable=[];
 let partsTableMY22=[];
+let partsTableMY2205=[];
 let partsTableMY23=[];
 let partsTableMY24=[];
 
-const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
-const PARTS_MY22_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22.csv";
-const PARTS_MY23_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv";
-const PARTS_MY24_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24.csv";
+async function caricaCSV(url, target){
+    try{
+        const r=await fetch(url);
+        if(!r.ok) return;
+        const t=await r.text();
+        const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
-async function caricaPartsGenerale(){
-    const r=await fetch(PARTS_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-    for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-        partsTable.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            modelli:(cols[4]||"").replace(/\*/g,"").trim().split(/\s+/).filter(m=>m.length>0),
-            esploso:(cols[5]||"").trim()
-        });
-    }
+        for(let i=1;i<righe.length;i++){
+            const cols=righe[i].split(",");
+            target.push({
+                codice:cols[0]?.trim()||"",
+                descrizione:cols[1]?.trim()||"",
+                quantita:cols[2]?.trim()||"",
+                id:(cols[3]||"").trim(),
+                esploso:(cols[4]||"").trim()
+            });
+        }
+    }catch(e){}
 }
-caricaPartsGenerale();
 
-async function caricaPartsMY22(){
-    const r=await fetch(PARTS_MY22_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-    for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-        partsTableMY22.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            esploso:(cols[4]||"").trim()
-        });
-    }
-}
-caricaPartsMY22();
-
-async function caricaPartsMY23(){
-    const r=await fetch(PARTS_MY23_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-    for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-        partsTableMY23.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            esploso:(cols[4]||"").trim()
-        });
-    }
-}
-caricaPartsMY23();
-
-async function caricaPartsMY24(){
-    const r=await fetch(PARTS_MY24_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-    for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-        partsTableMY24.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            esploso:(cols[4]||"").trim()
-        });
-    }
-}
-caricaPartsMY24();
+caricaCSV("https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22.csv", partsTableMY22);
+caricaCSV("https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205.csv", partsTableMY2205);
+caricaCSV("https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv", partsTableMY23);
+caricaCSV("https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24.csv", partsTableMY24);
 
 /* ================= MODEL MAP ================= */
 const MODEL_MAP={
     "Y01":"MY22",
+    "Y0105":"MY2205",
     "Y0210":"MY23",
     "Y0230":"MY24"
 };
 
+function getTabellaModello(){
+    if(modelloCorrente==="Y01") return partsTableMY22;
+    if(modelloCorrente==="Y0105") return partsTableMY2205;
+    if(modelloCorrente==="Y0210") return partsTableMY23;
+    if(modelloCorrente==="Y0230") return partsTableMY24;
+    return [];
+}
+
 /* ================= COORDINATE ================= */
 async function caricaCoordinate(file){
-    const modello = MODEL_MAP[modelloCorrente];
-    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/coords/${modello}/${file}.json`;
+    const cartella=MODEL_MAP[modelloCorrente];
+    if(!cartella) return {};
+
+    const url=`https://micheleyoyo.github.io/YOYO-SpareParts/coords/${cartella}/${file}.json`;
+
     try{
-        const r = await fetch(url);
+        const r=await fetch(url);
         if(!r.ok) return {};
         return await r.json();
     }catch(e){
@@ -181,27 +153,20 @@ async function caricaCoordinate(file){
 
 /* ================= MOSTRA RICAMBI ================= */
 function mostraRicambi(){
-    let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
+    const search=(document.getElementById("searchInput").value||"").toLowerCase().trim();
+    const tabella=getTabellaModello();
+
     let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli</th></tr>";
 
-    let tabella=partsTable;
-    if(modelloCorrente==="Y01") tabella=partsTableMY22;
-    else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
-    else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
-
     const filtrati=tabella.filter(p=>{
-        if(search.length>0){
-            const codice=p.codice.toLowerCase();
-            const descrizione=p.descrizione.toLowerCase();
-            if(!codice.includes(search) && !descrizione.includes(search)) return false;
-        }
-        return true;
+        if(!search) return true;
+        return p.codice.toLowerCase().includes(search) ||
+               p.descrizione.toLowerCase().includes(search);
     });
 
     filtrati.forEach(p=>{
-        const numero = parseInt(p.codice.split("-")[1]);
         html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}',${numero})">
+        <tr data-id="${p.id}" onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -209,9 +174,8 @@ function mostraRicambi(){
         </tr>`;
     });
 
-    if(filtrati.length===0){
+    if(filtrati.length===0)
         html+="<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
-    }
 
     html+="</table>";
     document.getElementById("partsBox").innerHTML=html;
@@ -220,39 +184,36 @@ function mostraRicambi(){
 /* ================= RICERCA VISUALE ================= */
 function mostraSinottici(){
     if(!modelloCorrente){
-        let html = `
-        <h3>Seleziona il modello per la ricerca visuale</h3>
-        <button onclick="selezionaModelloVisuale('Y01')">MY22</button>
-        <button onclick="selezionaModelloVisuale('Y0210')">MY23</button>
-        <button onclick="selezionaModelloVisuale('Y0230')">MY24</button>
+        document.getElementById("partsBox").innerHTML=`
+            <h3>Seleziona il modello</h3>
+            <button onclick="selezionaModelloVisuale('Y01')">MY22</button>
+            <button onclick="selezionaModelloVisuale('Y0105')">MY2205</button>
+            <button onclick="selezionaModelloVisuale('Y0210')">MY23</button>
+            <button onclick="selezionaModelloVisuale('Y0230')">MY24</button>
         `;
-        document.getElementById("partsBox").innerHTML = html;
         return;
     }
     mostraSinotticiPerModello(modelloCorrente);
 }
 
-function selezionaModelloVisuale(modello){
-    modelloCorrente=modello;
-    mostraSinotticiPerModello(modelloCorrente);
+function selezionaModelloVisuale(m){
+    modelloCorrente=m;
+    mostraSinotticiPerModello(m);
 }
 
-function mostraSinotticiPerModello(modello){
-    let tabella=[];
-    if(modello==="Y01") tabella=partsTableMY22;
-    else if(modello==="Y0210") tabella=partsTableMY23;
-    else if(modello==="Y0230") tabella=partsTableMY24;
+function mostraSinotticiPerModello(m){
+    const tabella=getTabellaModello();
+    const cartella=MODEL_MAP[m];
 
-    const sinottici=[...new Set(tabella.map(p=>p.esploso).filter(x=>x))];
+    const sinottici=[...new Set(tabella.map(p=>p.esploso.trim()).filter(x=>x))];
 
-    let html="<h3>Seleziona un sinottico</h3>";
-    html+="<div style='display:flex;flex-wrap:wrap;gap:20px;'>";
+    let html="<h3>Seleziona un sinottico</h3><div style='display:flex;flex-wrap:wrap;gap:20px;'>";
 
     sinottici.forEach(s=>{
         html+=`
         <div onclick="mostraRicambiSinottico('${s}')" 
              style="border:1px solid #333;padding:15px;width:45%;cursor:pointer;">
-            <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modello]}/${s}.jpg"
+            <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${s}.jpg"
                  style="width:100%;height:auto;">
             <div style="margin-top:10px;font-weight:bold;font-size:22px;">${s}</div>
         </div>`;
@@ -263,46 +224,44 @@ function mostraSinotticiPerModello(modello){
 }
 
 /* ================= RICAMBI DI UN SINOTTICO ================= */
-function mostraRicambiSinottico(codiceEsploso){
-    let tabella=[];
-    if(modelloCorrente==="Y01") tabella=partsTableMY22;
-    else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
-    else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
+function mostraRicambiSinottico(expl){
+    const tabella=getTabellaModello();
+    const ricambi=tabella.filter(p=>p.esploso===expl);
 
-    const ricambiSinottico=tabella.filter(p=>p.esploso===codiceEsploso);
-
-    let html=`<h2>Ricambi del sinottico ${codiceEsploso}</h2>`;
+    let html=`<h2>Ricambi del sinottico ${expl}</h2>`;
     html+="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
-    ricambiSinottico.forEach(p=>{
-        const numero = parseInt(p.codice.split("-")[1]);
+    ricambi.forEach(p=>{
         html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}',${numero})">
+        <tr data-id="${p.id}" onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
         </tr>`;
     });
 
-    html+="</table>";
+    if(ricambi.length===0)
+        html+="<tr><td colspan='3'>Nessun ricambio trovato</td></tr>";
 
+    html+="</table>";
     document.getElementById("partsBox").innerHTML=html;
 }
 
 /* ================= MOSTRA ESPLOSO ================= */
-async function mostraEsploso(file,codice,numero){
+async function mostraEsploso(file,codice,idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
         return;
     }
 
-    const coords = await caricaCoordinate(file);
-    const cartella = MODEL_MAP[modelloCorrente];
-    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
+    const coords=await caricaCoordinate(file);
+    const cartella=MODEL_MAP[modelloCorrente];
+    const url=`https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
-    const win = window.open("", "_blank");
+    const win=window.open("", "_blank");
 
-    win.document.write(`<!DOCTYPE html>
+    win.document.write(`
+<!DOCTYPE html>
 <html>
 <head>
 <title>Esploso ${codice}</title>
@@ -322,104 +281,100 @@ body{margin:0;background:#000;display:flex;justify-content:center;align-items:ce
 </style>
 </head>
 <body>
+
 <div id="container">
     <img id="explodedImg" src="${url}">
 </div>
 
 <script>
-const coords = ${JSON.stringify(coords)};
-const fileName = "${file}";
+const coords=${JSON.stringify(coords)};
+const fileName="${file}";
+const selectedId="${idRicambio}";
 
-const img = document.getElementById("explodedImg");
-const container = document.getElementById("container");
+const img=document.getElementById("explodedImg");
+const container=document.getElementById("container");
 
-img.onload = function(){
-    requestAnimationFrame(() => {
+img.onload=function(){
+    requestAnimationFrame(()=>{
 
-        const naturalW = img.naturalWidth;
-        const naturalH = img.naturalHeight;
+        const naturalW=img.naturalWidth;
+        const naturalH=img.naturalHeight;
 
-        const displayedW = img.clientWidth;
-        const displayedH = img.clientHeight;
+        const displayedW=img.clientWidth;
+        const displayedH=img.clientHeight;
 
-        const rectImg = img.getBoundingClientRect();
-        const rectCont = container.getBoundingClientRect();
+        const rectImg=img.getBoundingClientRect();
+        const rectCont=container.getBoundingClientRect();
 
-        const offsetX = rectImg.left - rectCont.left;
-        const offsetY = rectImg.top  - rectCont.top;
+        const offsetX=rectImg.left-rectCont.left;
+        const offsetY=rectImg.top-rectCont.top;
 
-        const scaleX = displayedW / naturalW;
-        const scaleY = displayedH / naturalH;
+        const scaleX=displayedW/naturalW;
+        const scaleY=displayedH/naturalH;
 
-if(coords[fileName]){
+        if(coords[fileName]){
+            let keys;
 
-    // Se è stato passato un numero → mostra solo quello
-    const keys = numero ? [String(numero)] : Object.keys(coords[fileName]);
+            if(selectedId && selectedId.trim().length>0)
+                keys=selectedId.split("-");
+            else
+                keys=Object.keys(coords[fileName]);
 
-    keys.forEach(id=>{
-        if(!coords[fileName][id]) return;
+            keys.forEach(id=>{
+                if(!coords[fileName][id]) return;
 
-        coords[fileName][id].forEach(pt=>{
-            const marker = document.createElement("div");
-            marker.className = "marker";
-            marker.style.left = (offsetX + pt.x * scaleX) + "px";
-            marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+                coords[fileName][id].forEach(pt=>{
+                    const marker=document.createElement("div");
+                    marker.className="marker";
+                    marker.style.left=(offsetX+pt.x*scaleX)+"px";
+                    marker.style.top =(offsetY+pt.y*scaleY)+"px";
 
-            marker.onclick = () => {
-                if(window.opener && !window.opener.closed){
-                    window.opener.selezionaRicambioDaMarker(fileName, id);
-                }
-                window.close();
-            };
+                    marker.onclick=()=>{
+                        if(window.opener && !window.opener.closed){
+                            window.opener.selezionaRicambioDaMarker(fileName,id);
+                        }
+                        window.close();
+                    };
 
-            container.appendChild(marker);
-        });
-    });
-}
-
+                    container.appendChild(marker);
                 });
             });
         }
     });
 };
 <\/script>
-</body>
-</html>`);
-}
 
+</body>
+</html>
+`);
+}
 
 /* ================= EVIDENZIAZIONE ================= */
-function selezionaRicambioDaMarker(codiceEsploso, numero){
-    mostraRicambiSinottico(codiceEsploso);
+function selezionaRicambioDaMarker(expl,idRicambio){
+    mostraRicambiSinottico(expl);
 
-    setTimeout(() => {
-        const box = document.getElementById("partsBox");
-        const righe = box.querySelectorAll("table tr");
+    setTimeout(()=>{
+        const righe=document.querySelectorAll("#partsBox table tr");
 
-        righe.forEach(r => r.style.background = "");
-
-        righe.forEach(r => {
-            const celle = r.querySelectorAll("td");
-            if(celle.length === 0) return;
-
-            const codice = celle[0].innerText.trim();
-            const numCod = parseInt(codice.split("-")[1]);
-
-            if(numCod === parseInt(numero)){
-                r.style.background = "#ffff66";
-                r.scrollIntoView({behavior:"smooth", block:"center"});
+        righe.forEach(r=>{
+            r.style.background="";
+            if(r.getAttribute("data-id")===idRicambio){
+                r.style.background="#ffff66";
+                r.scrollIntoView({behavior:"smooth",block:"center"});
             }
         });
-    }, 200);
-}
-function tornaAllaHome(){
-    document.getElementById("vinInput").value = "";
-    document.getElementById("searchInput").value = "";
-    modelloCorrente = "";
-    document.getElementById("risultatoVIN").innerText = "";
-    mostraRicambi();
+    },200);
 }
 
+/* ================= HOME ================= */
+function tornaAllaHome(){
+    document.getElementById("vinInput").value="";
+    document.getElementById("searchInput").value="";
+    modelloCorrente="";
+    document.getElementById("risultatoVIN").innerText="";
+    document.getElementById("partsBox").innerHTML="";
+}
 </script>
+
 </body>
 </html>

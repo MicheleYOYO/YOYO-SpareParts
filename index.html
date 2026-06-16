@@ -216,7 +216,7 @@ function mostraRicambi(){
 
     filtrati.forEach(p=>{
         html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+        onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.codice.split('-')[1]}')"
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -291,7 +291,8 @@ function mostraRicambiSinottico(codiceEsploso){
 
     ricambiSinottico.forEach(p=>{
         html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+        onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.codice.split('-')[1]}')"
+
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>

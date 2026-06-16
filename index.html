@@ -416,11 +416,16 @@ img.onload = function(){
             coords[fileName][partId].forEach(pt=>{
                 const marker = document.createElement("div");
                 marker.className = "marker";
+marker.style.left = (offsetX + pt.x * scaleX) + "px";
+marker.style.top  = (offsetY + pt.y * scaleY) + "px";
 
-                marker.style.left = (offsetX + pt.x * scaleX) + "px";
-                marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+marker.onclick = () => {
+    window.opener.evidenziaRicambioDaPopup(partId);
+    window.close();
+};
 
-                container.appendChild(marker);
+container.appendChild(marker);
+
             });
         }
     });
@@ -432,6 +437,19 @@ img.onload = function(){
 }
 
 </script>
+function evidenziaRicambioDaPopup(idRicambio){
+    const box = document.getElementById("partsBox");
+    const righe = box.querySelectorAll("table tr");
+
+    righe.forEach(r => r.style.background = ""); // reset
+
+    righe.forEach(r => {
+        if(r.innerText.includes(idRicambio)){
+            r.style.background = "#ffff66"; // giallo
+            r.scrollIntoView({behavior:"smooth", block:"center"});
+        }
+    });
+}
 
 </body>
 </html>

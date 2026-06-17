@@ -248,17 +248,17 @@ function mostraRicambiSinottico(expl){
 }
 
 /* ================= MOSTRA ESPLOSO ================= */
-async function mostraEsploso(file,codice,idRicambio){
+async function mostraEsploso(file, codice, idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
         return;
     }
 
-    const coords=await caricaCoordinate(file);
-    const cartella=MODEL_MAP[modelloCorrente];
-    const url=`https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
+    const coords = await caricaCoordinate(file);
+    const cartella = MODEL_MAP[modelloCorrente];
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
-    const win=window.open("", "_blank");
+    const win = window.open("", "_blank");
 
     win.document.write(`
 <!DOCTYPE html>
@@ -267,18 +267,20 @@ async function mostraEsploso(file,codice,idRicambio){
 <title>Esploso ${codice}</title>
 <style>
 body{
-    margin:20px;
+    margin:0;
+    padding:0;
     background:#000;
     font-family:Arial;
 }
 #container{
     position:relative;
-    display:inline-block;
 }
 #explodedImg{
-    max-width:90vw;
+    display:block;
+    width:auto;
     height:auto;
-    border:1px solid #333;
+    max-width:none;
+    max-height:none;
 }
 .marker{
     position:absolute;
@@ -290,7 +292,6 @@ body{
     transform:translate(-50%,-50%);
     cursor:pointer;
 }
-
 </style>
 </head>
 <body>
@@ -300,49 +301,43 @@ body{
 </div>
 
 <script>
-const coords=${JSON.stringify(coords)};
-const fileName="${file}";
-const selectedId="${idRicambio}";
+const coords = ${JSON.stringify(coords)};
+const fileName = "${file}";
+const selectedId = "${idRicambio}";
 
-const img=document.getElementById("explodedImg");
-const container=document.getElementById("container");
+const img = document.getElementById("explodedImg");
+const container = document.getElementById("container");
 
-img.onload=function(){
+img.onload = function(){
     requestAnimationFrame(()=>{
 
-        const naturalW=img.naturalWidth;
-        const naturalH=img.naturalHeight;
+        const naturalW = img.naturalWidth;
+        const naturalH = img.naturalHeight;
 
-        const displayedW=img.clientWidth;
-        const displayedH=img.clientHeight;
+        const displayedW = img.clientWidth;
+        const displayedH = img.clientHeight;
+
+        const scaleX = displayedW / naturalW;
+        const scaleY = displayedH / naturalH;
 
         const offsetX = 0;
-const offsetY = 0;
-
-
-        const scaleX=displayedW/naturalW;
-        const scaleY=displayedH/naturalH;
+        const offsetY = 0;
 
         if(coords[fileName]){
-            let keys;
-
-            if(selectedId && selectedId.trim().length>0)
-                keys=selectedId.split("-");
-            else
-                keys=Object.keys(coords[fileName]);
+            let keys = selectedId ? selectedId.split("-") : Object.keys(coords[fileName]);
 
             keys.forEach(id=>{
                 if(!coords[fileName][id]) return;
 
                 coords[fileName][id].forEach(pt=>{
-                    const marker=document.createElement("div");
-                    marker.className="marker";
-                    marker.style.left=(offsetX+pt.x*scaleX)+"px";
-                    marker.style.top =(offsetY+pt.y*scaleY)+"px";
+                    const marker = document.createElement("div");
+                    marker.className = "marker";
+                    marker.style.left = (offsetX + pt.x * scaleX) + "px";
+                    marker.style.top  = (offsetY + pt.y * scaleY) + "px";
 
-                    marker.onclick=()=>{
+                    marker.onclick = () => {
                         if(window.opener && !window.opener.closed){
-                            window.opener.selezionaRicambioDaMarker(fileName,id);
+                            window.opener.selezionaRicambioDaMarker(fileName, id);
                         }
                         window.close();
                     };
@@ -359,6 +354,7 @@ const offsetY = 0;
 </html>
 `);
 }
+
 
 /* ================= EVIDENZIAZIONE ================= */
 function selezionaRicambioDaMarker(expl,idRicambio){

@@ -301,7 +301,10 @@ body{
 
 <script>
 const coords = ${JSON.stringify(coords)};
-const fileName = "${file}";
+
+// 🔥 Patch fondamentale: togliamo l’estensione dal nome file
+const fileName = "${file}".replace(/\\.[^/.]+$/, "");
+
 const selectedId = "${idRicambio}";
 
 const img = document.getElementById("explodedImg");
@@ -353,6 +356,7 @@ img.onload = function(){
 </html>
 `);
 }
+
 
 
 /* ================= EVIDENZIAZIONE ================= */

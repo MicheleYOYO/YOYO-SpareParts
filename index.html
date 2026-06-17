@@ -274,14 +274,14 @@ body{
     display:inline-block;
 }
 #explodedImg{
-    width:30%;     /* <<< SCALA IDENTICA AL MAPPER */
+    width:60%;     /* <<< stessa scala del mapper */
     height:auto;
     display:block;
 }
 .marker{
     position:absolute;
-    width:35px;
-    height:35px;
+    width:25px;
+    height:25px;
     background:rgba(255,255,0,0.7);
     border:2px solid #000;
     border-radius:50%;
@@ -310,12 +310,6 @@ img.onload = function(){
         const displayedW = img.clientWidth;
         const displayedH = img.clientHeight;
 
-        const naturalW = img.naturalWidth;
-        const naturalH = img.naturalHeight;
-
-        const scaleX = displayedW / naturalW;
-        const scaleY = displayedH / naturalH;
-
         if(coords[fileName]){
             let keys = selectedId ? selectedId.split("-") : Object.keys(coords[fileName]);
 
@@ -325,8 +319,10 @@ img.onload = function(){
                 coords[fileName][id].forEach(pt=>{
                     const m = document.createElement("div");
                     m.className = "marker";
-                    m.style.left = (pt.x * scaleX) + "px";
-                    m.style.top  = (pt.y * scaleY) + "px";
+
+                    // DE-NORMALIZZAZIONE
+                    m.style.left = (pt.x * displayedW) + "px";
+                    m.style.top  = (pt.y * displayedH) + "px";
 
                     m.onclick = () => {
                         if(window.opener && !window.opener.closed){

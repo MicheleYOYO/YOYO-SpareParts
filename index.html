@@ -249,10 +249,7 @@ function mostraRicambiSinottico(expl){
 
 /* ================= MOSTRA ESPLOSO ================= */
 async function mostraEsploso(file, codice, idRicambio){
-    if(!file){
-        alert("Nessun esploso disponibile");
-        return;
-    }
+    if(!file){ alert("Nessun esploso disponibile"); return; }
 
     const coords = await caricaCoordinate(file);
     const cartella = MODEL_MAP[modelloCorrente];
@@ -264,7 +261,7 @@ async function mostraEsploso(file, codice, idRicambio){
 <!DOCTYPE html>
 <html>
 <head>
-<title>Esploso ${codice}</title>
+<title>${codice}</title>
 <style>
 body{
     margin:0;
@@ -277,7 +274,7 @@ body{
     display:inline-block;
 }
 #explodedImg{
-    max-width:90vw;   /* <<< IDENTICO AL MAPPER */
+    width:30%;     /* <<< SCALA IDENTICA AL MAPPER */
     height:auto;
     display:block;
 }
@@ -301,10 +298,7 @@ body{
 
 <script>
 const coords = ${JSON.stringify(coords)};
-
-// 🔥 Patch fondamentale: togliamo l’estensione dal nome file
 const fileName = "${file}".replace(/\\.[^/.]+$/, "");
-
 const selectedId = "${idRicambio}";
 
 const img = document.getElementById("explodedImg");
@@ -313,17 +307,14 @@ const container = document.getElementById("container");
 img.onload = function(){
     requestAnimationFrame(()=>{
 
-        const naturalW = img.naturalWidth;
-        const naturalH = img.naturalHeight;
-
         const displayedW = img.clientWidth;
         const displayedH = img.clientHeight;
 
+        const naturalW = img.naturalWidth;
+        const naturalH = img.naturalHeight;
+
         const scaleX = displayedW / naturalW;
         const scaleY = displayedH / naturalH;
-
-        const offsetX = 0;
-        const offsetY = 0;
 
         if(coords[fileName]){
             let keys = selectedId ? selectedId.split("-") : Object.keys(coords[fileName]);
@@ -332,19 +323,19 @@ img.onload = function(){
                 if(!coords[fileName][id]) return;
 
                 coords[fileName][id].forEach(pt=>{
-                    const marker = document.createElement("div");
-                    marker.className = "marker";
-                    marker.style.left = (offsetX + pt.x * scaleX) + "px";
-                    marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+                    const m = document.createElement("div");
+                    m.className = "marker";
+                    m.style.left = (pt.x * scaleX) + "px";
+                    m.style.top  = (pt.y * scaleY) + "px";
 
-                    marker.onclick = () => {
+                    m.onclick = () => {
                         if(window.opener && !window.opener.closed){
                             window.opener.selezionaRicambioDaMarker(fileName, id);
                         }
                         window.close();
                     };
 
-                    container.appendChild(marker);
+                    container.appendChild(m);
                 });
             });
         }
@@ -356,6 +347,7 @@ img.onload = function(){
 </html>
 `);
 }
+
 
 
 

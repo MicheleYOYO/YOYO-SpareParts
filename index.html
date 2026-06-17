@@ -268,24 +268,23 @@ async function mostraEsploso(file, codice, idRicambio){
 <style>
 body{
     margin:0;
-    padding:0;
+    padding:20px;
     background:#000;
     font-family:Arial;
 }
 #container{
     position:relative;
+    display:inline-block;
 }
 #explodedImg{
-    display:block;
-    width:auto;
+    max-width:90vw;   /* <<< IDENTICO AL MAPPER */
     height:auto;
-    max-width:none;
-    max-height:none;
+    display:block;
 }
 .marker{
     position:absolute;
-    width:30px;
-    height:30px;
+    width:35px;
+    height:35px;
     background:rgba(255,255,0,0.7);
     border:2px solid #000;
     border-radius:50%;
@@ -354,6 +353,7 @@ img.onload = function(){
 </html>
 `);
 }
+
 
 
 /* ================= EVIDENZIAZIONE ================= */

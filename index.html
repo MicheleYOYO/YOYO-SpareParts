@@ -264,7 +264,7 @@ function mostraSinotticiPerModello(modello){
 
     sinottici.forEach(s=>{
         html+=`
-        <div onclick="mostraEsploso('${s}','${s}',null)" 
+        <div onclick="mostraRicambiSinottico('${s}')" 
              style="border:1px solid #333;padding:15px;width:48%;text-align:center;cursor:pointer;">
             <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modello]}/${s}.jpg"
                  style="width:100%;height:auto;">
@@ -276,22 +276,22 @@ function mostraSinotticiPerModello(modello){
     document.getElementById("partsBox").innerHTML=html;
 }
 
-
 // ---------------- RICAMBI DI UN SINOTTICO ----------------
-function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
+function mostraRicambiSinottico(codiceEsploso){
     let tabella=[];
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
     else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
     else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
 
-    const ricambi=tabella.filter(p=>p.esploso===codiceEsploso);
+    const ricambiSinottico=tabella.filter(p=>p.esploso===codiceEsploso);
+    const altriRicambi=tabella.filter(p=>p.esploso!==codiceEsploso);
 
     let html=`<h2>Ricambi del sinottico ${codiceEsploso}</h2>`;
     html+="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
-    ricambi.forEach(p=>{
+    ricambiSinottico.forEach(p=>{
         html+=`
-        <tr data-id="${p.id}" onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -299,105 +299,139 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     });
 
     html+="</table>";
-    document.getElementById("partsBox").innerHTML=html;
 
-    // ⭐ Evidenziazione
-    if(evidenziaId){
-        setTimeout(()=>{
-            const righe=document.querySelectorAll("#partsBox table tr");
-            righe.forEach(r=>{
-                if(r.getAttribute("data-id")===evidenziaId){
-                    r.style.background="#ffff66";
-                    r.scrollIntoView({behavior:"smooth",block:"center"});
-                }
-            });
-        },200);
-    }
+    html+=`<hr><h3>Altri ricambi ${MODEL_MAP[modelloCorrente]}</h3>`;
+    html+="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Sinottico</th></tr>";
+
+    altriRicambi.forEach(p=>{
+        html+=`
+        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+            <td>${p.codice}</td>
+            <td>${p.descrizione}</td>
+            <td>${p.quantita}</td>
+            <td>${p.esploso}</td>
+        </tr>`;
+    });
+
+    html+="</table>";
+
+    const box=document.getElementById("partsBox");
+    box.innerHTML=html;
+    box.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
+// ---------------- HOME ----------------
+function tornaAllaHome(){
+    document.getElementById("vinInput").value="";
+    document.getElementById("searchInput").value="";
+    modelloCorrente="";
+    document.getElementById("risultatoVIN").innerText="";
+    mostraRicambi();
+}
 
-// ---------------- MOSTRA ESPLOSO ----------------
-async function mostraEsploso(file, codice, idRicambio){
+// ---------------- MOSTRA ESPLOSO (VECCHIA PURA) ----------------
+async function mostraEsploso(file,codice,id){
+    if(!file){
+        alert("Nessun esploso disponibile per questo ricambio");
+        return;
+    }
+
+    // Carico coordinate dal JSON
     const coords = await caricaCoordinate(file);
+
     const cartella = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
     const win = window.open("", "_blank");
 
-    win.document.write(`
-<!DOCTYPE html>
+    win.document.write(`<!DOCTYPE html>
 <html>
 <head>
-<title>${codice}</title>
+<title>Esploso ${codice}</title>
 <style>
 body{
     margin:0;
-    padding:20px;
+    padding:0;
     background:#000;
-    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 #container{
     position:relative;
-    display:inline-block;
+    width:100%;
+    text-align:center;
 }
 #explodedImg{
     width:60%;
     height:auto;
     display:block;
+    margin:auto;
 }
 .marker{
     position:absolute;
-    width:25px;
-    height:25px;
+    width:30px;
+    height:30px;
     background:rgba(255,255,0,0.7);
     border:2px solid #000;
     border-radius:50%;
     transform:translate(-50%,-50%);
-    cursor:pointer;
+    pointer-events:none;
 }
 </style>
 </head>
 <body>
-
 <div id="container">
     <img id="explodedImg" src="${url}">
 </div>
 
 <script>
 const coords = ${JSON.stringify(coords)};
-const fileName = "${file}".replace(/\\.[^/.]+$/, "");
+const fileName = "${file}";
+const partId = "${id}".trim();
 
 const img = document.getElementById("explodedImg");
 const container = document.getElementById("container");
 
 img.onload = function(){
-    const displayedW = img.clientWidth;
-    const displayedH = img.clientHeight;
 
-    if(coords[fileName]){
-        Object.keys(coords[fileName]).forEach(id=>{
-            coords[fileName][id].forEach(pt=>{
-                const m = document.createElement("div");
-                m.className = "marker";
+    requestAnimationFrame(() => {
 
-                m.style.left = (pt.x * displayedW) + "px";
-                m.style.top  = (pt.y * displayedH) + "px";
+        const naturalW = img.naturalWidth;
+        const naturalH = img.naturalHeight;
 
-                m.onclick = () => {
-                    if(window.opener && !window.opener.closed){
-                        window.opener.mostraRicambiSinottico(fileName, id);
-                    }
-                    window.close();
-                };
+        const displayedW = img.clientWidth;
+        const displayedH = img.clientHeight;
 
-                container.appendChild(m);
+        const rectImg = img.getBoundingClientRect();
+        const rectCont = container.getBoundingClientRect();
+
+        const offsetX = rectImg.left - rectCont.left;
+        const offsetY = rectImg.top  - rectCont.top;
+
+        const scaleX = displayedW / naturalW;
+        const scaleY = displayedH / naturalH;
+
+        if(coords[fileName] && coords[fileName][partId]){
+            coords[fileName][partId].forEach(pt=>{
+                const marker = document.createElement("div");
+                marker.className = "marker";
+
+                marker.style.left = (offsetX + pt.x * scaleX) + "px";
+                marker.style.top  = (offsetY + pt.y * scaleY) + "px";
+
+                container.appendChild(marker);
             });
-        });
-    }
+        }
+    });
 };
 <\/script>
 
 </body>
-</html>
-`);
+</html>`);
 }
+
+</script>
+
+</body>
+</html>

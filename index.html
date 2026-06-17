@@ -249,8 +249,6 @@ function mostraRicambiSinottico(expl){
 
 /* ================= MOSTRA ESPLOSO ================= */
 async function mostraEsploso(file, codice, idRicambio){
-    if(!file){ alert("Nessun esploso disponibile"); return; }
-
     const coords = await caricaCoordinate(file);
     const cartella = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
@@ -274,7 +272,7 @@ body{
     display:inline-block;
 }
 #explodedImg{
-    width:60%;     /* <<< stessa scala del mapper */
+    width:60%;
     height:auto;
     display:block;
 }
@@ -299,43 +297,35 @@ body{
 <script>
 const coords = ${JSON.stringify(coords)};
 const fileName = "${file}".replace(/\\.[^/.]+$/, "");
-const selectedId = "${idRicambio}";
 
 const img = document.getElementById("explodedImg");
 const container = document.getElementById("container");
 
 img.onload = function(){
-    requestAnimationFrame(()=>{
+    const displayedW = img.clientWidth;
+    const displayedH = img.clientHeight;
 
-        const displayedW = img.clientWidth;
-        const displayedH = img.clientHeight;
+    if(coords[fileName]){
+        Object.keys(coords[fileName]).forEach(id=>{
+            coords[fileName][id].forEach(pt=>{
+                const m = document.createElement("div");
+                m.className = "marker";
 
-        if(coords[fileName]){
-            let keys = selectedId ? selectedId.split("-") : Object.keys(coords[fileName]);
+                // DE-NORMALIZZAZIONE
+                m.style.left = (pt.x * displayedW) + "px";
+                m.style.top  = (pt.y * displayedH) + "px";
 
-            keys.forEach(id=>{
-                if(!coords[fileName][id]) return;
+                m.onclick = () => {
+                    if(window.opener && !window.opener.closed){
+                        window.opener.mostraRicambiSinottico(fileName, id);
+                    }
+                    window.close();
+                };
 
-                coords[fileName][id].forEach(pt=>{
-                    const m = document.createElement("div");
-                    m.className = "marker";
-
-                    // DE-NORMALIZZAZIONE
-                    m.style.left = (pt.x * displayedW) + "px";
-                    m.style.top  = (pt.y * displayedH) + "px";
-
-                    m.onclick = () => {
-                        if(window.opener && !window.opener.closed){
-                            window.opener.selezionaRicambioDaMarker(fileName, id);
-                        }
-                        window.close();
-                    };
-
-                    container.appendChild(m);
-                });
+                container.appendChild(m);
             });
-        }
-    });
+        });
+    }
 };
 <\/script>
 

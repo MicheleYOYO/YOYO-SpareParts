@@ -316,11 +316,9 @@ img.onload=function(){
         const displayedW=img.clientWidth;
         const displayedH=img.clientHeight;
 
-        const rectImg=img.getBoundingClientRect();
-        const rectCont=container.getBoundingClientRect();
+        const offsetX = 0;
+const offsetY = 0;
 
-        const offsetX=rectImg.left-rectCont.left;
-        const offsetY=rectImg.top-rectCont.top;
 
         const scaleX=displayedW/naturalW;
         const scaleY=displayedH/naturalH;

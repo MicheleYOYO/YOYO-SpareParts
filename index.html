@@ -126,6 +126,32 @@ async function caricaPartsMY22(){
 }
 caricaPartsMY22();
 
+// ---------------- PARTS MY2205 ----------------
+let partsTableMY2205=[];
+const PARTS_MY2205_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205.csv";
+
+async function caricaPartsMY2205(){
+    try{
+        const r=await fetch(PARTS_MY2205_URL);
+        if(!r.ok) return;
+        const t=await r.text();
+        const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
+        for(let i=1;i<righe.length;i++){
+            const cols=righe[i].split(",");
+            partsTableMY2205.push({
+                codice:cols[0].trim(),
+                descrizione:cols[1].trim(),
+                quantita:cols[2].trim(),
+                id:(cols[3]||"").trim(),
+                modelli:["MY2205"],
+                esploso:(cols[4]||"").trim()
+            });
+        }
+    }catch(e){}
+}
+caricaPartsMY2205();
+
 // ---------------- PARTS MY23 ----------------
 let partsTableMY23=[];
 const PARTS_MY23_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv";
@@ -175,13 +201,12 @@ caricaPartsMY24();
 // ---------------- MODEL MAP ----------------
 const MODEL_MAP={
     "Y01":"MY22",
+    "Y0205":"MY2205",
     "Y0210":"MY23",
     "Y0230":"MY24"
 };
 
 // ---------------- COORDINATE DINAMICHE ----------------
-let coordinateEsplosi={};
-
 async function caricaCoordinate(file){
     const modello = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/coords/${modello}/${file}.json`;
@@ -202,6 +227,7 @@ function mostraRicambi(){
 
     let tabella=partsTable;
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
+    else if(modelloCorrente==="Y0205") tabella=partsTableMY2205;
     else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
     else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
 
@@ -238,6 +264,7 @@ function mostraSinottici(){
         let html=`
         <h3>Seleziona il modello per la ricerca visuale</h3>
         <button onclick="selezionaModelloVisuale('Y01')" style="padding:10px;font-size:18px;margin-right:20px;">MY22</button>
+        <button onclick="selezionaModelloVisuale('Y0205')" style="padding:10px;font-size:18px;margin-right:20px;">MY2205</button>
         <button onclick="selezionaModelloVisuale('Y0210')" style="padding:10px;font-size:18px;margin-right:20px;">MY23</button>
         <button onclick="selezionaModelloVisuale('Y0230')" style="padding:10px;font-size:18px;">MY24</button>`;
         document.getElementById("partsBox").innerHTML=html;
@@ -254,6 +281,7 @@ function selezionaModelloVisuale(modello){
 function mostraSinotticiPerModello(modello){
     let tabella=[];
     if(modello==="Y01") tabella=partsTableMY22;
+    else if(modello==="Y0205") tabella=partsTableMY2205;
     else if(modello==="Y0210") tabella=partsTableMY23;
     else if(modello==="Y0230") tabella=partsTableMY24;
 
@@ -264,7 +292,7 @@ function mostraSinotticiPerModello(modello){
 
     sinottici.forEach(s=>{
         html+=`
-        <div onclick="mostraRicambiSinottico('${s}')" 
+        <div onclick="mostraEsploso('${s}','${s}',null)" 
              style="border:1px solid #333;padding:15px;width:48%;text-align:center;cursor:pointer;">
             <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modello]}/${s}.jpg"
                  style="width:100%;height:auto;">
@@ -277,21 +305,21 @@ function mostraSinotticiPerModello(modello){
 }
 
 // ---------------- RICAMBI DI UN SINOTTICO ----------------
-function mostraRicambiSinottico(codiceEsploso){
+function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     let tabella=[];
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
+    else if(modelloCorrente==="Y0205") tabella=partsTableMY2205;
     else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
     else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
 
-    const ricambiSinottico=tabella.filter(p=>p.esploso===codiceEsploso);
-    const altriRicambi=tabella.filter(p=>p.esploso!==codiceEsploso);
+    const ricambi=tabella.filter(p=>p.esploso===codiceEsploso);
 
     let html=`<h2>Ricambi del sinottico ${codiceEsploso}</h2>`;
     html+="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
-    ricambiSinottico.forEach(p=>{
+    ricambi.forEach(p=>{
         html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+        <tr data-id="${p.id}" onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -299,25 +327,110 @@ function mostraRicambiSinottico(codiceEsploso){
     });
 
     html+="</table>";
+    document.getElementById("partsBox").innerHTML=html;
 
-    html+=`<hr><h3>Altri ricambi ${MODEL_MAP[modelloCorrente]}</h3>`;
-    html+="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Sinottico</th></tr>";
+    if(evidenziaId){
+        setTimeout(()=>{
+            const righe=document.querySelectorAll("#partsBox table tr");
+            righe.forEach(r=>{
+                if(r.getAttribute("data-id")===evidenziaId){
+                    r.style.background="#ffff66";
+                    r.scrollIntoView({behavior:"smooth",block:"center"});
+                }
+            });
+        },200);
+    }
+}
 
-    altriRicambi.forEach(p=>{
-        html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
-            <td>${p.codice}</td>
-            <td>${p.descrizione}</td>
-            <td>${p.quantita}</td>
-            <td>${p.esploso}</td>
-        </tr>`;
-    });
+// ---------------- MOSTRA ESPLOSO ----------------
+async function mostraEsploso(file, codice, idRicambio){
+    if(!file){
+        alert("Nessun esploso disponibile");
+        return;
+    }
 
-    html+="</table>";
+    const coords = await caricaCoordinate(file);
+    const cartella = MODEL_MAP[modelloCorrente];
+    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
-    const box=document.getElementById("partsBox");
-    box.innerHTML=html;
-    box.scrollIntoView({behavior:'smooth',block:'start'});
+    const win = window.open("", "_blank");
+
+    win.document.write(`
+<!DOCTYPE html>
+<html>
+<head>
+<title>${codice}</title>
+<style>
+body{
+    margin:0;
+    padding:20px;
+    background:#000;
+    font-family:Arial;
+}
+#container{
+    position:relative;
+    display:inline-block;
+}
+#explodedImg{
+    width:60%;
+    height:auto;
+    display:block;
+}
+.marker{
+    position:absolute;
+    width:25px;
+    height:25px;
+    background:rgba(255,255,0,0.7);
+    border:2px solid #000;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+    <img id="explodedImg" src="${url}">
+</div>
+
+<script>
+const coords = ${JSON.stringify(coords)};
+const fileName = "${file}".replace(/\\.[^/.]+$/, "");
+
+const img = document.getElementById("explodedImg");
+const container = document.getElementById("container");
+
+img.onload = function(){
+    const displayedW = img.clientWidth;
+    const displayedH = img.clientHeight;
+
+    if(coords[fileName]){
+        Object.keys(coords[fileName]).forEach(id=>{
+            coords[fileName][id].forEach(pt=>{
+                const m = document.createElement("div");
+                m.className = "marker";
+
+                m.style.left = (pt.x * displayedW) + "px";
+                m.style.top  = (pt.y * displayedH) + "px";
+
+                m.onclick = () => {
+                    if(window.opener && !window.opener.closed){
+                        window.opener.mostraRicambiSinottico(fileName, id);
+                    }
+                    window.close();
+                };
+
+                container.appendChild(m);
+            });
+        });
+    }
+};
+<\/script>
+
+</body>
+</html>
+`);
 }
 
 // ---------------- HOME ----------------
@@ -327,108 +440,6 @@ function tornaAllaHome(){
     modelloCorrente="";
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
-}
-
-// ---------------- MOSTRA ESPLOSO (VECCHIA PURA) ----------------
-async function mostraEsploso(file,codice,id){
-    if(!file){
-        alert("Nessun esploso disponibile per questo ricambio");
-        return;
-    }
-
-    // Carico coordinate dal JSON
-    const coords = await caricaCoordinate(file);
-
-    const cartella = MODEL_MAP[modelloCorrente];
-    const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
-
-    const win = window.open("", "_blank");
-
-    win.document.write(`<!DOCTYPE html>
-<html>
-<head>
-<title>Esploso ${codice}</title>
-<style>
-body{
-    margin:0;
-    padding:0;
-    background:#000;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-#container{
-    position:relative;
-    width:100%;
-    text-align:center;
-}
-#explodedImg{
-    width:60%;
-    height:auto;
-    display:block;
-    margin:auto;
-}
-.marker{
-    position:absolute;
-    width:30px;
-    height:30px;
-    background:rgba(255,255,0,0.7);
-    border:2px solid #000;
-    border-radius:50%;
-    transform:translate(-50%,-50%);
-    pointer-events:none;
-}
-</style>
-</head>
-<body>
-<div id="container">
-    <img id="explodedImg" src="${url}">
-</div>
-
-<script>
-const coords = ${JSON.stringify(coords)};
-const fileName = "${file}";
-const partId = "${id}".trim();
-
-const img = document.getElementById("explodedImg");
-const container = document.getElementById("container");
-
-img.onload = function(){
-
-    requestAnimationFrame(() => {
-
-        const naturalW = img.naturalWidth;
-        const naturalH = img.naturalHeight;
-
-        const displayedW = img.clientWidth;
-        const displayedH = img.clientHeight;
-
-        const rectImg = img.getBoundingClientRect();
-        const rectCont = container.getBoundingClientRect();
-
-        const offsetX = rectImg.left - rectCont.left;
-        const offsetY = rectImg.top  - rectCont.top;
-
-        const scaleX = displayedW / naturalW;
-        const scaleY = displayedH / naturalH;
-
-        if(coords[fileName] && coords[fileName][partId]){
-            coords[fileName][partId].forEach(pt=>{
-                const marker = document.createElement("div");
-                marker.className = "marker";
-
-                marker.style.left = (offsetX + pt.x * scaleX) + "px";
-                marker.style.top  = (offsetY + pt.y * scaleY) + "px";
-
-                container.appendChild(marker);
-            });
-        }
-    });
-};
-<\/script>
-
-</body>
-</html>`);
 }
 
 </script>

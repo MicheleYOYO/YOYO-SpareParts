@@ -443,19 +443,44 @@ const fileName = "${file}".replace(/\\.[^/.]+$/, "");
 const img = document.getElementById("explodedImg");
 const container = document.getElementById("container");
 
+const ricambi = ${JSON.stringify(
+    partsTableMY22
+        .concat(partsTableMY2205)
+        .concat(partsTableMY23)
+        .concat(partsTableMY24)
+)};
+
 img.onload = function(){
     const displayedW = img.clientWidth;
     const displayedH = img.clientHeight;
 
     if(coords[fileName]){
         Object.keys(coords[fileName]).forEach(id=>{
+            
+            // Trova il ricambio corrispondente
+            const ricambio = ricambi.find(r => r.esploso === fileName && r.id == id);
+
             coords[fileName][id].forEach(pt=>{
                 const m = document.createElement("div");
                 m.className = "marker";
 
+                // Tooltip
+                const tip = document.createElement("div");
+                tip.className = "tooltip";
+                tip.textContent = ricambio 
+                    ? (ricambio.codice + " – " + ricambio.descrizione)
+                    : ("ID " + id);
+                m.appendChild(tip);
+
+                // Hover tooltip
+                m.onmouseenter = () => tip.style.opacity = 1;
+                m.onmouseleave = () => tip.style.opacity = 0;
+
+                // Posizione marker
                 m.style.left = (pt.x * displayedW) + "px";
                 m.style.top  = (pt.y * displayedH) + "px";
 
+                // Click → torna alla lista ricambi
                 m.onclick = () => {
                     if(window.opener && !window.opener.closed){
                         window.opener.mostraRicambiSinottico(fileName, id);
@@ -468,6 +493,7 @@ img.onload = function(){
         });
     }
 };
+
 <\/script>
 
 </body>

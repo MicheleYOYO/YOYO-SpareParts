@@ -368,6 +368,7 @@ async function mostraEsploso(file, codice, idRicambio){
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
     const win = window.open("", "_blank");
+    window.explodedWin = win; // 🔥 Salva la finestra per poterla chiudere dopo
 
     win.document.write(`
 <!DOCTYPE html>
@@ -392,10 +393,10 @@ body{
 }
 .marker{
     position:absolute;
-    width:35px;
-    height:35px;
-background:rgba(255,255,0,0.3);
-border:2px solid rgba(0,0,0,0.3);
+    width:25px;
+    height:25px;
+    background:rgba(255,255,0,0.3);   /* giallo più leggero */
+    border:2px solid rgba(0,0,0,0.3);
     border-radius:50%;
     transform:translate(-50%,-50%);
     cursor:pointer;
@@ -446,6 +447,7 @@ img.onload = function(){
 </html>
 `);
 }
+
 
 // ---------------- HOME ----------------
 function tornaAllaHome(){

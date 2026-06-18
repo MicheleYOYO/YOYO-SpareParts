@@ -448,6 +448,15 @@ img.onload = function(){
 </html>
 `);
 }
+function tornaAGrigliaSinottici(){
+    // Torna alla griglia sinottici
+    mostraSinotticiPerModello(modelloCorrente);
+
+    // Chiude la finestra dell’esploso se ancora aperta
+    if(window.explodedWin && !window.explodedWin.closed){
+        window.explodedWin.close();
+    }
+}
 
 
 // ---------------- HOME ----------------

@@ -324,6 +324,11 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
                 style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
             🗂️ Torna alla griglia sinottici
         </button>
+        <button onclick="stampaRicambi('${codiceEsploso}')"
+        style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
+    🖨️ Stampa ricambi
+</button>
+
 
         <h2>Ricambi del sinottico ${codiceEsploso}</h2>
     `;
@@ -456,6 +461,58 @@ function tornaAGrigliaSinottici(){
     if(window.explodedWin && !window.explodedWin.closed){
         window.explodedWin.close();
     }
+}
+function stampaRicambi(codiceEsploso){
+    let tabella=[];
+    if(modelloCorrente==="Y01") tabella=partsTableMY22;
+    else if(modelloCorrente==="Y0205") tabella=partsTableMY2205;
+    else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
+    else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
+
+    const ricambi = tabella.filter(p=>p.esploso===codiceEsploso);
+
+    let html = `
+        <html>
+        <head>
+            <title>Ricambi ${codiceEsploso}</title>
+            <style>
+                body{ font-family:Arial; padding:20px; }
+                h2{ margin-bottom:20px; }
+                table{ width:100%; border-collapse:collapse; }
+                th,td{ border:1px solid #333; padding:8px; }
+                th{ background:#eee; }
+            </style>
+        </head>
+        <body>
+            <h2>Ricambi del sinottico ${codiceEsploso}</h2>
+            <table>
+                <tr>
+                    <th>Codice</th>
+                    <th>Descrizione</th>
+                    <th>Quantità</th>
+                </tr>
+    `;
+
+    ricambi.forEach(p=>{
+        html += `
+            <tr>
+                <td>${p.codice}</td>
+                <td>${p.descrizione}</td>
+                <td>${p.quantita}</td>
+            </tr>
+        `;
+    });
+
+    html += `
+            </table>
+        </body>
+        </html>
+    `;
+
+    const win = window.open("", "_blank");
+    win.document.write(html);
+    win.document.close();
+    win.print();
 }
 
 

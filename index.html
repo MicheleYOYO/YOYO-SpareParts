@@ -312,7 +312,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
     else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
 
-    const ricambi=tabella.filter(p=>p.esploso===codiceEsploso);
+    const ricambi = tabella.filter(p=>p.esploso===codiceEsploso);
 
     let html = `
         <button onclick="mostraEsploso('${codiceEsploso}', '${codiceEsploso}', null)"
@@ -320,7 +320,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
             🔙 Torna al sinottico
         </button>
 
-        <button onclick="mostraSinotticiPerModello(modelloCorrente)"
+        <button onclick="tornaAGrigliaSinottici()"
                 style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
             🗂️ Torna alla griglia sinottici
         </button>
@@ -328,10 +328,10 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
         <h2>Ricambi del sinottico ${codiceEsploso}</h2>
     `;
 
-    html+="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
+    html += "<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
     ricambi.forEach(p=>{
-        html+=`
+        html += `
         <tr data-id="${p.id}" onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
@@ -339,8 +339,8 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
         </tr>`;
     });
 
-    html+="</table>";
-    document.getElementById("partsBox").innerHTML=html;
+    html += "</table>";
+    document.getElementById("partsBox").innerHTML = html;
 
     if(evidenziaId){
         setTimeout(()=>{
@@ -354,6 +354,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
         },200);
     }
 }
+
 
 
 // ---------------- MOSTRA ESPLOSO ----------------

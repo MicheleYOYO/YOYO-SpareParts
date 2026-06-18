@@ -374,7 +374,7 @@ async function mostraEsploso(file, codice, idRicambio){
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${file}.jpg`;
 
     const win = window.open("", "_blank");
-    window.explodedWin = win; // 🔥 Salva la finestra per poterla chiudere dopo
+    window.explodedWin = win;
 
     win.document.write(`
 <!DOCTYPE html>
@@ -401,8 +401,8 @@ body{
     position:absolute;
     width:25px;
     height:25px;
-    background:rgba(255,255,0,0);   /* invisibile */
-    border:2px solid rgba(0,0,0,0); /* invisibile */
+    background:rgba(255,255,0,0);
+    border:2px solid rgba(0,0,0,0);
     border-radius:50%;
     transform:translate(-50%,-50%);
     cursor:pointer;
@@ -424,12 +424,17 @@ body{
     white-space:nowrap;
     pointer-events:none;
     opacity:0;
-    transform:translate(-50%, -120%);
+    top:-10px;
+    left:50%;
+    transform:translate(-50%, -100%);
     transition:opacity 0.15s;
+    max-width:250px;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 </style>
-
 </head>
+
 <body>
 
 <div id="container">
@@ -457,7 +462,6 @@ img.onload = function(){
     if(coords[fileName]){
         Object.keys(coords[fileName]).forEach(id=>{
             
-            // Trova il ricambio corrispondente
             const ricambio = ricambi.find(r => r.esploso === fileName && r.id == id);
 
             coords[fileName][id].forEach(pt=>{
@@ -472,9 +476,28 @@ img.onload = function(){
                     : ("ID " + id);
                 m.appendChild(tip);
 
-                // Hover tooltip
-                m.onmouseenter = () => tip.style.opacity = 1;
-                m.onmouseleave = () => tip.style.opacity = 0;
+                // Tooltip intelligente (non esce dai bordi)
+                m.onmouseenter = () => {
+                    tip.style.opacity = 1;
+
+                    const rect = tip.getBoundingClientRect();
+                    const winW = window.innerWidth;
+
+                    if(rect.left < 0){
+                        tip.style.left = "0px";
+                        tip.style.transform = "translate(0, -100%)";
+                    }
+                    else if(rect.right > winW){
+                        tip.style.left = "100%";
+                        tip.style.transform = "translate(-100%, -100%)";
+                    }
+                };
+
+                m.onmouseleave = () => {
+                    tip.style.opacity = 0;
+                    tip.style.left = "50%";
+                    tip.style.transform = "translate(-50%, -100%)";
+                };
 
                 // Posizione marker
                 m.style.left = (pt.x * displayedW) + "px";
@@ -493,13 +516,13 @@ img.onload = function(){
         });
     }
 };
-
 <\/script>
 
 </body>
 </html>
 `);
 }
+
 function tornaAGrigliaSinottici(){
     // Torna alla griglia sinottici
     mostraSinotticiPerModello(modelloCorrente);

@@ -401,12 +401,19 @@ body{
     position:absolute;
     width:25px;
     height:25px;
-    background:rgba(255,255,0,0.3);   /* giallo più leggero */
-    border:2px solid rgba(0,0,0,0.3);
+    background:rgba(255,255,0,0);   /* invisibile */
+    border:2px solid rgba(0,0,0,0); /* invisibile */
     border-radius:50%;
     transform:translate(-50%,-50%);
     cursor:pointer;
+    transition:0.2s;
 }
+
+.marker:hover{
+    background:rgba(255,255,0,0.4);   /* giallo visibile */
+    border:2px solid rgba(0,0,0,0.6); /* bordo visibile */
+}
+
 </style>
 </head>
 <body>

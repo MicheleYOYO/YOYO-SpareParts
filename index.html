@@ -364,9 +364,11 @@ async function mostraSinotticiPerModello(modello){
         const imgUrl = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${s}.jpg`;
         html+=`
         <div class="sinotticoBox">
-            <div class="sinotticoInner" id="box-${s}">
-                <img id="img-${s}" src="${imgUrl}">
-            </div>
+           <div class="sinotticoInner" id="box-${s}"
+     onclick="mostraEsploso('${s}', '${s}', null)">
+    <img id="img-${s}" src="${imgUrl}">
+</div>
+
             <div class="sinotticoTitle">${s}</div>
         </div>`;
     });
@@ -583,9 +585,15 @@ body{
 
 <body>
 
+<button onclick="window.opener.tornaAGrigliaSinottici(); window.close();"
+        style="padding:10px 20px;font-size:18px;margin-bottom:20px;">
+    🔙 Torna alla griglia
+</button>
+
 <div id="container">
     <img id="explodedImg" src="${url}">
 </div>
+
 
 <script>
 const coords = ${JSON.stringify(coords)};

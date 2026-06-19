@@ -11,6 +11,74 @@ th,td{border:1px solid #333;padding:8px;}
 th{background:#eee;}
 #partsBox table tr:hover td{background-color:#f0f0f0;}
 #partsBox table tr:hover{cursor:pointer;}
+
+/* Griglia sinottici con miniature grandi */
+.sinotticoGrid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:space-between;
+}
+.sinotticoBox{
+    border:1px solid #333;
+    padding:10px;
+    width:48%;
+    box-sizing:border-box;
+    background:#fafafa;
+}
+.sinotticoTitle{
+    margin-top:10px;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+}
+.sinotticoInner{
+    position:relative;
+    width:100%;
+}
+.sinotticoInner img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* Marker nelle miniature */
+.markerMini{
+    position:absolute;
+    width:22px;
+    height:22px;
+    background:rgba(255,255,0,0.0);
+    border:2px solid rgba(0,0,0,0.0);
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    cursor:pointer;
+    transition:0.2s;
+}
+.markerMini:hover{
+    background:rgba(255,255,0,0.5);
+    border:2px solid rgba(0,0,0,0.7);
+}
+
+/* Tooltip per le miniature (stesso stile dell’esploso) */
+.tooltip{
+    position:absolute;
+    background:#333;
+    color:#fff;
+    padding:6px 10px;
+    border-radius:5px;
+    font-size:14px;
+    white-space:nowrap;
+    pointer-events:none;
+    opacity:0;
+    top:-10px;
+    left:50%;
+    transform:translate(-50%, -100%);
+    transition:opacity 0.15s;
+    max-width:250px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    z-index:10;
+}
 </style>
 </head>
 <body>
@@ -278,7 +346,8 @@ function selezionaModelloVisuale(modello){
     mostraSinotticiPerModello(modelloCorrente);
 }
 
-function mostraSinotticiPerModello(modello){
+// ---------------- GRIGLIA SINOTTICI CON CERCHI GIALLI ----------------
+async function mostraSinotticiPerModello(modello){
     let tabella=[];
     if(modello==="Y01") tabella=partsTableMY22;
     else if(modello==="Y0205") tabella=partsTableMY2205;
@@ -288,20 +357,101 @@ function mostraSinotticiPerModello(modello){
     const sinottici=[...new Set(tabella.map(p=>p.esploso).filter(x=>x))];
 
     let html="<h3>Seleziona un sinottico</h3>";
-    html+="<div style='display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;'>";
+    html+=`<div class="sinotticoGrid">`;
 
     sinottici.forEach(s=>{
+        const cartella = MODEL_MAP[modello];
+        const imgUrl = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${s}.jpg`;
         html+=`
-        <div onclick="mostraEsploso('${s}','${s}',null)" 
-             style="border:1px solid #333;padding:15px;width:48%;text-align:center;cursor:pointer;">
-            <img src="https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${MODEL_MAP[modello]}/${s}.jpg"
-                 style="width:100%;height:auto;">
-            <div style="margin-top:10px;font-weight:bold;font-size:22px;">${s}</div>
+        <div class="sinotticoBox">
+            <div class="sinotticoInner" id="box-${s}">
+                <img id="img-${s}" src="${imgUrl}">
+            </div>
+            <div class="sinotticoTitle">${s}</div>
         </div>`;
     });
 
     html+="</div>";
     document.getElementById("partsBox").innerHTML=html;
+
+    // Dopo aver creato l'HTML, inizializza i marker per ogni sinottico
+    sinottici.forEach(s=>{
+        inizializzaMiniaturaSinottico(s);
+    });
+}
+
+// Disegna i cerchi gialli sulle miniature
+async function inizializzaMiniaturaSinottico(sinottico){
+    const coords = await caricaCoordinate(sinottico);
+    if(!coords || !coords[sinottico]) return;
+
+    const img = document.getElementById("img-"+sinottico);
+    if(!img) return;
+
+    const container = document.getElementById("box-"+sinottico);
+    if(!container) return;
+
+    const ricambi = partsTableMY22
+        .concat(partsTableMY2205)
+        .concat(partsTableMY23)
+        .concat(partsTableMY24);
+
+    function disegna(){
+        const displayedW = img.clientWidth;
+        const displayedH = img.clientHeight;
+
+        Object.keys(coords[sinottico]).forEach(id=>{
+            const ricambio = ricambi.find(r => r.esploso === sinottico && r.id == id);
+
+            coords[sinottico][id].forEach(pt=>{
+                const m = document.createElement("div");
+                m.className = "markerMini";
+
+                const tip = document.createElement("div");
+                tip.className = "tooltip";
+                tip.textContent = ricambio
+                    ? (ricambio.codice + " – " + ricambio.descrizione)
+                    : ("ID " + id);
+                m.appendChild(tip);
+
+                m.onmouseenter = () => {
+                    tip.style.opacity = 1;
+                    const rect = tip.getBoundingClientRect();
+                    const winW = window.innerWidth;
+                    if(rect.left < 0){
+                        tip.style.left = "0px";
+                        tip.style.transform = "translate(0, -100%)";
+                    } else if(rect.right > winW){
+                        tip.style.left = "100%";
+                        tip.style.transform = "translate(-100%, -100%)";
+                    }
+                };
+                m.onmouseleave = () => {
+                    tip.style.opacity = 0;
+                    tip.style.left = "50%";
+                    tip.style.transform = "translate(-50%, -100%)";
+                };
+
+                m.style.left = (pt.x * displayedW) + "px";
+                m.style.top  = (pt.y * displayedH) + "px";
+
+                // Click sulla miniatura → apre il sinottico dedicato
+                m.onclick = (ev) => {
+                    ev.stopPropagation();
+                    const codice = ricambio ? ricambio.codice : sinottico;
+                    mostraEsploso(sinottico, codice, id);
+                };
+
+                container.appendChild(m);
+            });
+        });
+    }
+
+    if(img.complete){
+        disegna();
+    }else{
+        img.onload = disegna;
+    }
 }
 
 // ---------------- RICAMBI DI UN SINOTTICO ----------------
@@ -325,10 +475,9 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
             🗂️ Torna alla griglia sinottici
         </button>
         <button onclick="stampaRicambi('${codiceEsploso}')"
-        style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
-    🖨️ Stampa ricambi
-</button>
-
+                style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
+            🖨️ Stampa ricambi
+        </button>
 
         <h2>Ricambi del sinottico ${codiceEsploso}</h2>
     `;
@@ -360,9 +509,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     }
 }
 
-
-
-// ---------------- MOSTRA ESPLOSO ----------------
+// ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ----------------
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
@@ -412,7 +559,6 @@ body{
     background:rgba(255,255,0,0.4);
     border:2px solid rgba(0,0,0,0.6);
 }
-
 /* Tooltip */
 .tooltip{
     position:absolute;
@@ -503,7 +649,7 @@ img.onload = function(){
                 m.style.left = (pt.x * displayedW) + "px";
                 m.style.top  = (pt.y * displayedH) + "px";
 
-                // Click → torna alla lista ricambi
+                // Click → torna alla lista ricambi del sinottico con riga evidenziata
                 m.onclick = () => {
                     if(window.opener && !window.opener.closed){
                         window.opener.mostraRicambiSinottico(fileName, id);
@@ -524,14 +670,12 @@ img.onload = function(){
 }
 
 function tornaAGrigliaSinottici(){
-    // Torna alla griglia sinottici
     mostraSinotticiPerModello(modelloCorrente);
-
-    // Chiude la finestra dell’esploso se ancora aperta
     if(window.explodedWin && !window.explodedWin.closed){
         window.explodedWin.close();
     }
 }
+
 function stampaRicambi(codiceEsploso){
     let tabella=[];
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -585,7 +729,6 @@ function stampaRicambi(codiceEsploso){
     win.print();
 }
 
-
 // ---------------- HOME ----------------
 function tornaAllaHome(){
     document.getElementById("vinInput").value="";
@@ -594,7 +737,6 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-
 </script>
 
 </body>

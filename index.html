@@ -59,7 +59,7 @@ th{background:#eee;}
     border:2px solid rgba(0,0,0,0.7);
 }
 
-/* Tooltip per le miniature (stesso stile dell’esploso) */
+/* Tooltip per miniature ed esploso */
 .tooltip{
     position:absolute;
     background:#333;
@@ -265,7 +265,7 @@ async function caricaPartsMY24(){
     }
 }
 caricaPartsMY24();
-    
+
 // ---------------- NOME SINOTTICI MY24 ----------------
 let nomeSinotticiMY24 = {};
 const NOMESINOTTICI_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24.csv";
@@ -277,7 +277,9 @@ async function caricaNomeSinotticiMY24(){
 
     for(let i=1; i<righe.length; i++){
         const [id, nome] = righe[i].split(",");
-        nomeSinotticiMY24[id.trim()] = nome.trim();
+        if(id && nome){
+            nomeSinotticiMY24[id.trim()] = nome.trim();
+        }
     }
 }
 caricaNomeSinotticiMY24();
@@ -378,24 +380,21 @@ async function mostraSinotticiPerModello(modello){
     sinottici.forEach(s=>{
         const cartella = MODEL_MAP[modello];
         const imgUrl = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${s}.jpg`;
-        html+=`
-       html+=`
-    <div class="sinotticoBox">
-        <div class="sinotticoInner" id="box-${s}"
-             onclick="mostraEsploso('${s}', '${s}', null)">
-            <img id="img-${s}" src="${imgUrl}">
-        </div>
-        <div class="sinotticoTitle">
-            ${MODEL_MAP[modello] === "MY24" && nomeSinotticiMY24[s] ? nomeSinotticiMY24[s] : s}
-        </div>
-    </div>`;
+        const nomeVisibile = (MODEL_MAP[modello]==="MY24" && nomeSinotticiMY24[s]) ? nomeSinotticiMY24[s] : s;
 
+        html+=`
+        <div class="sinotticoBox">
+            <div class="sinotticoInner" id="box-${s}"
+                 onclick="mostraEsploso('${s}', '${s}', null)">
+                <img id="img-${s}" src="${imgUrl}">
+            </div>
+            <div class="sinotticoTitle">${nomeVisibile}</div>
+        </div>`;
     });
 
     html+="</div>";
     document.getElementById("partsBox").innerHTML=html;
 
-    // Dopo aver creato l'HTML, inizializza i marker per ogni sinottico
     sinottici.forEach(s=>{
         inizializzaMiniaturaSinottico(s);
     });
@@ -456,13 +455,6 @@ async function inizializzaMiniaturaSinottico(sinottico){
                 m.style.left = (pt.x * displayedW) + "px";
                 m.style.top  = (pt.y * displayedH) + "px";
 
-                // Click sulla miniatura → apre il sinottico dedicato
-                m.onclick = (ev) => {
-                    ev.stopPropagation();
-                    const codice = ricambio ? ricambio.codice : sinottico;
-                    mostraEsploso(sinottico, codice, id);
-                };
-
                 container.appendChild(m);
             });
         });
@@ -485,6 +477,10 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
 
     const ricambi = tabella.filter(p=>p.esploso===codiceEsploso);
 
+    const nomeVisibile = (MODEL_MAP[modelloCorrente]==="MY24" && nomeSinotticiMY24[codiceEsploso])
+        ? nomeSinotticiMY24[codiceEsploso]
+        : codiceEsploso;
+
     let html = `
         <button onclick="mostraEsploso('${codiceEsploso}', '${codiceEsploso}', null)"
                 style="padding:10px 20px;font-size:18px;margin-bottom:10px;">
@@ -500,12 +496,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
             🖨️ Stampa ricambi
         </button>
 
-        <h2>Ricambi del sinottico ${
-    MODEL_MAP[modelloCorrente] === "MY24" && nomeSinotticiMY24[codiceEsploso]
-    ? nomeSinotticiMY24[codiceEsploso]
-    : codiceEsploso
-}</h2>
-
+        <h2>Ricambi del sinottico ${nomeVisibile}</h2>
     `;
 
     html += "<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
@@ -549,16 +540,15 @@ async function mostraEsploso(file, codice, idRicambio){
     const win = window.open("", "_blank");
     window.explodedWin = win;
 
+    const nomeVisibile = (MODEL_MAP[modelloCorrente]==="MY24" && nomeSinotticiMY24[file])
+        ? nomeSinotticiMY24[file]
+        : codice;
+
     win.document.write(`
 <!DOCTYPE html>
 <html>
 <head>
-<title>${
-    MODEL_MAP[modelloCorrente] === "MY24" && nomeSinotticiMY24[file]
-    ? nomeSinotticiMY24[file]
-    : codice
-}</title>
-
+<title>${nomeVisibile}</title>
 <style>
 body{
     margin:0;
@@ -590,7 +580,6 @@ body{
     background:rgba(255,255,0,0.4);
     border:2px solid rgba(0,0,0,0.6);
 }
-/* Tooltip */
 .tooltip{
     position:absolute;
     background:#333;
@@ -609,12 +598,15 @@ body{
     overflow:hidden;
     text-overflow:ellipsis;
 }
+button{
+    font-size:16px;
+}
 </style>
 </head>
 
 <body>
 
-<button onclick="window.opener.tornaAGrigliaSinottici(); window.close();"
+<button onclick="if(window.opener){window.opener.tornaAGrigliaSinottici();} window.close();"
         style="padding:10px 20px;font-size:18px;margin-bottom:20px;">
     🔙 Torna alla griglia
 </button>
@@ -622,7 +614,6 @@ body{
 <div id="container">
     <img id="explodedImg" src="${url}">
 </div>
-
 
 <script>
 const coords = ${JSON.stringify(coords)};
@@ -644,14 +635,12 @@ img.onload = function(){
 
     if(coords[fileName]){
         Object.keys(coords[fileName]).forEach(id=>{
-            
             const ricambio = ricambi.find(r => r.esploso === fileName && r.id == id);
 
             coords[fileName][id].forEach(pt=>{
                 const m = document.createElement("div");
                 m.className = "marker";
 
-                // Tooltip
                 const tip = document.createElement("div");
                 tip.className = "tooltip";
                 tip.textContent = ricambio 
@@ -659,13 +648,10 @@ img.onload = function(){
                     : ("ID " + id);
                 m.appendChild(tip);
 
-                // Tooltip intelligente (non esce dai bordi)
                 m.onmouseenter = () => {
                     tip.style.opacity = 1;
-
                     const rect = tip.getBoundingClientRect();
                     const winW = window.innerWidth;
-
                     if(rect.left < 0){
                         tip.style.left = "0px";
                         tip.style.transform = "translate(0, -100%)";
@@ -682,11 +668,9 @@ img.onload = function(){
                     tip.style.transform = "translate(-50%, -100%)";
                 };
 
-                // Posizione marker
                 m.style.left = (pt.x * displayedW) + "px";
                 m.style.top  = (pt.y * displayedH) + "px";
 
-                // Click → torna alla lista ricambi del sinottico con riga evidenziata
                 m.onclick = () => {
                     if(window.opener && !window.opener.closed){
                         window.opener.mostraRicambiSinottico(fileName, id);
@@ -706,13 +690,17 @@ img.onload = function(){
 `);
 }
 
+// ---------------- TORNA A GRIGLIA SINOTTICI ----------------
 function tornaAGrigliaSinottici(){
-    mostraSinotticiPerModello(modelloCorrente);
+    if(modelloCorrente){
+        mostraSinotticiPerModello(modelloCorrente);
+    }
     if(window.explodedWin && !window.explodedWin.closed){
         window.explodedWin.close();
     }
 }
 
+// ---------------- STAMPA RICAMBI ----------------
 function stampaRicambi(codiceEsploso){
     let tabella=[];
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -722,10 +710,14 @@ function stampaRicambi(codiceEsploso){
 
     const ricambi = tabella.filter(p=>p.esploso===codiceEsploso);
 
+    const nomeVisibile = (MODEL_MAP[modelloCorrente]==="MY24" && nomeSinotticiMY24[codiceEsploso])
+        ? nomeSinotticiMY24[codiceEsploso]
+        : codiceEsploso;
+
     let html = `
         <html>
         <head>
-            <title>Ricambi ${codiceEsploso}</title>
+            <title>Ricambi ${nomeVisibile}</title>
             <style>
                 body{ font-family:Arial; padding:20px; }
                 h2{ margin-bottom:20px; }
@@ -735,7 +727,7 @@ function stampaRicambi(codiceEsploso){
             </style>
         </head>
         <body>
-            <h2>Ricambi del sinottico ${codiceEsploso}</h2>
+            <h2>Ricambi del sinottico ${nomeVisibile}</h2>
             <table>
                 <tr>
                     <th>Codice</th>

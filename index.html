@@ -686,6 +686,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
 }
 
 /* ---------------- MOSTRA ESPLOSO (FINESTRA POPUP) ---------------- */
+/* ---------------- MOSTRA ESPLOSO (FINESTRA POPUP) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
@@ -774,8 +775,6 @@ body{
     border:1px solid #333;
     cursor:pointer;
 }
-
-/* LISTA RICAMBI NEL POPUP */
 #listaPopup{
     position:fixed;
     top:20px;
@@ -828,12 +827,12 @@ function aggiornaListaPopup(){
     box.innerHTML = "";
 
     lista.forEach(p=>{
-        box.innerHTML += `
+        box.innerHTML += \`
             <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
-                <span>${p.codice}</span>
-                <span>x${p.quantita}</span>
+                <span>\${p.codice}</span>
+                <span>x\${p.quantita}</span>
             </div>
-        `;
+        \`;
     });
 }
 

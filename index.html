@@ -92,7 +92,7 @@ th{background:#eee;}
     white-space:nowrap;
     pointer-events:auto;
     opacity:0;
-    top:35px; /* ABBASSATO DI 20px */
+    top:35px;
     left:50%;
     transform:translate(-50%, 0);
     transition:opacity 0.15s;
@@ -102,12 +102,11 @@ th{background:#eee;}
 }
 
 /* BOX LISTA RICAMBI */
-    
-   #listaBox{
+#listaBox{
     position:fixed;
-    top:20px;          /* PRIMA era bottom */
+    top:20px;
     right:20px;
-    width:360px;       /* PIÙ LARGA */
+    width:360px;
     background:#fff;
     border:2px solid #333;
     padding:12px;
@@ -118,11 +117,17 @@ th{background:#eee;}
     margin-right:6px;
     margin-bottom:6px;
     white-space:nowrap;
-
 }
 #listaBox h3{
     margin-top:0;
     font-size:18px;
+}
+
+/* Nome lista (VIN + data + ora) */
+#nomeListaLabel{
+    font-size:14px;
+    margin-bottom:8px;
+    color:#444;
 }
 
 /* LISTA SCORREVOLE */
@@ -148,9 +153,10 @@ th{background:#eee;}
     padding:2px 6px;
     cursor:pointer;
 }
- #partsBox{
-    margin-right:380px; /* lascia spazio alla finestra lista ricambi */
-}   
+
+#partsBox{
+    margin-right:380px;
+}
 </style>
 </head>
 
@@ -178,6 +184,10 @@ th{background:#eee;}
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
     <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+
+    <!-- Nome lista (VIN + data + ora) -->
+    <div id="nomeListaLabel"></div>
+
     <div id="listaContenuto"></div>
     <hr>
     <button onclick="stampaLista()">🖨️ Stampa</button>
@@ -188,15 +198,25 @@ th{background:#eee;}
 <script>
 /* ---------------- LISTA RICAMBI ---------------- */
 let listaRicambi = [];
-
+let nomeLista = localStorage.getItem("nomeLista") || "";
+/* Salva lista + nome lista */
 function salvaLista(){
     localStorage.setItem("listaRicambi", JSON.stringify(listaRicambi));
+    localStorage.setItem("nomeLista", nomeLista);
 }
+
+/* Carica lista + nome lista */
 function caricaLista(){
     const data = localStorage.getItem("listaRicambi");
     if(data) listaRicambi = JSON.parse(data);
+
+    nomeLista = localStorage.getItem("nomeLista") || "";
+    document.getElementById("nomeListaLabel").textContent = nomeLista;
+
     renderListaRicambi();
 }
+
+/* Aggiungi ricambio */
 function aggiungiALista(codice, descrizione, quantita){
     const esiste = listaRicambi.find(x=>x.codice===codice);
     if(esiste){
@@ -207,20 +227,27 @@ function aggiungiALista(codice, descrizione, quantita){
     salvaLista();
     renderListaRicambi();
 }
+
+/* Rimuovi ricambio */
 function rimuoviDaLista(codice){
     listaRicambi = listaRicambi.filter(x=>x.codice!==codice);
     salvaLista();
     renderListaRicambi();
 }
+
+/* Svuota lista */
 function svuotaLista(){
     listaRicambi = [];
     salvaLista();
     renderListaRicambi();
 }
+
+/* Render lista ricambi */
 function renderListaRicambi(){
     const box = document.getElementById("listaContenuto");
     const count = document.getElementById("listaCount");
     box.innerHTML = "";
+
     listaRicambi.forEach(item=>{
         box.innerHTML += `
             <div class="listaItem">
@@ -230,8 +257,10 @@ function renderListaRicambi(){
             </div>
         `;
     });
+
     count.textContent = listaRicambi.length;
 }
+
 caricaLista();
 
 /* ---------------- ESPORTA CSV ---------------- */
@@ -246,9 +275,11 @@ function esportaCSV(){
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "lista_ricambi.csv";
-    a.click();
 
+    /* Nome file = nome lista */
+    a.download = nomeLista ? nomeLista + ".csv" : "lista_ricambi.csv";
+
+    a.click();
     URL.revokeObjectURL(url);
 }
 
@@ -273,6 +304,7 @@ async function caricaVIN(){
 }
 caricaVIN();
 
+/* Identifica modello + genera nome lista */
 function identificaModello(){
     const vinInput=document.getElementById("vinInput").value.trim();
     if(!vinInput){
@@ -281,21 +313,38 @@ function identificaModello(){
         mostraRicambi();
         return;
     }
+
     const vinNumber=parseInt(vinInput);
     modelloCorrente="";
+
     for(let r of vinTable){
         if(vinNumber>=r.start && vinNumber<=r.end){
             modelloCorrente=r.modello.trim();
             break;
         }
     }
+
     if(!modelloCorrente){
         document.getElementById("risultatoVIN").innerText="VIN non trovato nei range";
     } else {
         document.getElementById("risultatoVIN").innerText="Modello identificato: "+modelloCorrente;
+
+        /* GENERA NOME LISTA = VIN + data + ora */
+        const now = new Date();
+        const giorno = String(now.getDate()).padStart(2,"0");
+        const mese = String(now.getMonth()+1).padStart(2,"0");
+        const anno = now.getFullYear();
+        const ore = String(now.getHours()).padStart(2,"0");
+        const min = String(now.getMinutes()).padStart(2,"0");
+
+        nomeLista = `VIN ${vinInput} – ${giorno}/${mese}/${anno} ${ore}:${min}`;
+        document.getElementById("nomeListaLabel").textContent = nomeLista;
+        salvaLista();
     }
+
     mostraRicambi();
 }
+
 /* ---------------- PARTS GENERALE ---------------- */
 let partsTable=[];
 const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
@@ -414,7 +463,6 @@ async function caricaPartsMY24(){
     }
 }
 caricaPartsMY24();
-
 /* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
 const NOMESINOTTICI_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24.csv";
@@ -549,6 +597,7 @@ async function mostraSinotticiPerModello(modello){
         inizializzaMiniaturaSinottico(s);
     });
 }
+
 /* ---------------- CERCHI + TOOLTIP + AGGIUNTA ALLA LISTA ---------------- */
 async function inizializzaMiniaturaSinottico(sinottico){
     const coords = await caricaCoordinate(sinottico);
@@ -677,7 +726,6 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
         },200);
     }
 }
-
 /* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
@@ -696,6 +744,7 @@ async function mostraEsploso(file, codice, idRicambio){
         ? nomeSinotticiMY24[file]
         : codice;
 
+    /* --- FINESTRA POPUP COMPLETA --- */
     win.document.write(`
 <!DOCTYPE html>
 <html>
@@ -767,6 +816,30 @@ body{
     border:1px solid #333;
     cursor:pointer;
 }
+
+/* --- LISTA RICAMBI NEL POPUP --- */
+#listaPopup{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:300px;
+    background:#fff;
+    border:2px solid #333;
+    padding:10px;
+    z-index:9999;
+    border-radius:6px;
+    max-height:200px;
+    overflow-y:auto;
+}
+#listaPopup h3{
+    margin-top:0;
+    font-size:18px;
+}
+.listaPopupItem{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:5px;
+}
 </style>
 </head>
 
@@ -781,13 +854,21 @@ body{
     <img id="explodedImg" src="${url}">
 </div>
 
+<!-- LISTA RICAMBI POPUP -->
+<div id="listaPopup">
+    <h3>Lista ricambi</h3>
+    <div id="listaPopupContenuto"></div>
+</div>
+
 <script>
+/* Dati passati dal main */
 const coords = ${JSON.stringify(coords)};
 const fileName = "${file}".replace(/\\.[^/.]+$/, "");
 
 const img = document.getElementById("explodedImg");
 const container = document.getElementById("container");
 
+/* Ricambi unificati */
 const ricambi = ${JSON.stringify(
     partsTableMY22
         .concat(partsTableMY2205)
@@ -795,6 +876,25 @@ const ricambi = ${JSON.stringify(
         .concat(partsTableMY24)
 )};
 
+/* --- FUNZIONE PER AGGIORNARE LA LISTA NEL POPUP --- */
+function aggiornaListaPopup(){
+    if(!window.opener) return;
+
+    const lista = window.opener.listaRicambi || [];
+    const box = document.getElementById("listaPopupContenuto");
+    box.innerHTML = "";
+
+    lista.forEach(p=>{
+        box.innerHTML += \`
+            <div class="listaPopupItem">
+                <span>\${p.codice}</span>
+                <span>x\${p.quantita}</span>
+            </div>
+        \`;
+    });
+}
+
+/* --- DISEGNO MARKER --- */
 img.onload = function(){
     const displayedW = img.clientWidth;
     const displayedH = img.clientHeight;
@@ -819,8 +919,9 @@ img.onload = function(){
                 add.textContent = "➕ Aggiungi alla lista";
                 add.onclick = (ev)=>{
                     ev.stopPropagation();
-                    if(ricambio){
+                    if(ricambio && window.opener){
                         window.opener.aggiungiALista(ricambio.codice, ricambio.descrizione, 1);
+                        aggiornaListaPopup();
                     }
                 };
                 m.appendChild(add);
@@ -848,6 +949,8 @@ img.onload = function(){
             });
         });
     }
+
+    aggiornaListaPopup();
 };
 <\/script>
 
@@ -855,13 +958,12 @@ img.onload = function(){
 </html>
 `);
 }
-
 /* ---------------- STAMPA LISTA ---------------- */
 function stampaLista(){
     let html = `
         <html>
         <head>
-            <title>Lista ricambi</title>
+            <title>${nomeLista || "Lista ricambi"}</title>
             <style>
                 body{ font-family:Arial; padding:20px; }
                 table{ width:100%; border-collapse:collapse; }
@@ -870,7 +972,7 @@ function stampaLista(){
             </style>
         </head>
         <body>
-            <h2>Lista ricambi</h2>
+            <h2>${nomeLista || "Lista ricambi"}</h2>
             <table>
                 <tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>
     `;

@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
+
 <style>
 body{font-family:Arial;margin:20px;}
 input,button{padding:6px;font-size:16px;}
@@ -12,7 +13,7 @@ th{background:#eee;}
 #partsBox table tr:hover td{background-color:#f0f0f0;}
 #partsBox table tr:hover{cursor:pointer;}
 
-/* Griglia sinottici con miniature grandi */
+/* Griglia sinottici */
 .sinotticoGrid{
     display:flex;
     flex-wrap:wrap;
@@ -42,7 +43,7 @@ th{background:#eee;}
     display:block;
 }
 
-/* Marker nelle miniature */
+/* Marker miniature */
 .markerMini{
     position:absolute;
     width:22px;
@@ -59,7 +60,7 @@ th{background:#eee;}
     border:2px solid rgba(0,0,0,0.7);
 }
 
-/* Tooltip per miniature ed esploso */
+/* Tooltip principale */
 .tooltip{
     position:absolute;
     background:#333;
@@ -79,8 +80,61 @@ th{background:#eee;}
     text-overflow:ellipsis;
     z-index:10;
 }
+
+/* Tooltip aggiuntivo giallo */
+.tooltipAdd{
+    position:absolute;
+    background:#ffeb3b;
+    color:#000;
+    padding:4px 8px;
+    border-radius:4px;
+    font-size:13px;
+    white-space:nowrap;
+    pointer-events:auto;
+    opacity:0;
+    top:15px;
+    left:50%;
+    transform:translate(-50%, 0);
+    transition:opacity 0.15s;
+    border:1px solid #333;
+    cursor:pointer;
+    z-index:11;
+}
+
+/* BOX LISTA RICAMBI */
+#listaBox{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:300px;
+    background:#fff;
+    border:2px solid #333;
+    padding:10px;
+    z-index:9999;
+}
+#listaBox h3{
+    margin-top:0;
+    font-size:18px;
+}
+.listaItem{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:5px;
+    font-size:14px;
+}
+.listaItem span{
+    flex:1;
+}
+.listaItem button{
+    background:red;
+    color:white;
+    border:none;
+    padding:2px 6px;
+    cursor:pointer;
+}
 </style>
 </head>
+
 <body>
 
 <h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
@@ -102,8 +156,65 @@ th{background:#eee;}
 <h2>Catalogo Ricambi</h2>
 <div id="partsBox"></div>
 
+<!-- BOX LISTA RICAMBI -->
+<div id="listaBox">
+    <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+    <div id="listaContenuto"></div>
+    <hr>
+    <button onclick="stampaLista()">🖨️ Stampa lista</button>
+    <button onclick="svuotaLista()">🗑️ Svuota</button>
+</div>
+
 <script>
-// ---------------- VIN ----------------
+/* ---------------- LISTA RICAMBI ---------------- */
+let listaRicambi = [];
+
+function salvaLista(){
+    localStorage.setItem("listaRicambi", JSON.stringify(listaRicambi));
+}
+function caricaLista(){
+    const data = localStorage.getItem("listaRicambi");
+    if(data) listaRicambi = JSON.parse(data);
+    renderListaRicambi();
+}
+function aggiungiALista(codice, descrizione, quantita){
+    const esiste = listaRicambi.find(x=>x.codice===codice);
+    if(esiste){
+        esiste.quantita += 1;
+    } else {
+        listaRicambi.push({ codice, descrizione, quantita:1 });
+    }
+    salvaLista();
+    renderListaRicambi();
+}
+function rimuoviDaLista(codice){
+    listaRicambi = listaRicambi.filter(x=>x.codice!==codice);
+    salvaLista();
+    renderListaRicambi();
+}
+function svuotaLista(){
+    listaRicambi = [];
+    salvaLista();
+    renderListaRicambi();
+}
+function renderListaRicambi(){
+    const box = document.getElementById("listaContenuto");
+    const count = document.getElementById("listaCount");
+    box.innerHTML = "";
+    listaRicambi.forEach(item=>{
+        box.innerHTML += `
+            <div class="listaItem">
+                <span>${item.codice}</span>
+                <span>x${item.quantita}</span>
+                <button onclick="rimuoviDaLista('${item.codice}')">X</button>
+            </div>
+        `;
+    });
+    count.textContent = listaRicambi.length;
+}
+caricaLista();
+
+/* ---------------- VIN ---------------- */
 let vinTable=[]; 
 let modelloCorrente="";
 const VIN_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/VIN.csv";
@@ -116,14 +227,7 @@ async function caricaVIN(){
         const [start,end,modello]=righe[i].split(",");
         vinTable.push({
             start:parseInt(start.trim()),
-            end:parseInt(end.trim()),
-            modello:modello.trim()
-        });
-    }
-}
-caricaVIN();
-
-function identificaModello(){
+          function identificaModello(){
     const vinInput=document.getElementById("vinInput").value.trim();
     if(!vinInput){
         modelloCorrente="";
@@ -147,7 +251,7 @@ function identificaModello(){
     mostraRicambi();
 }
 
-// ---------------- PARTS GENERALE ----------------
+/* ---------------- PARTS GENERALE ---------------- */
 let partsTable=[];
 const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
 
@@ -171,7 +275,7 @@ async function caricaParts(){
 }
 caricaParts();
 
-// ---------------- PARTS MY22 ----------------
+/* ---------------- PARTS MY22 ---------------- */
 let partsTableMY22=[];
 const PARTS_MY22_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22.csv";
 
@@ -194,7 +298,7 @@ async function caricaPartsMY22(){
 }
 caricaPartsMY22();
 
-// ---------------- PARTS MY2205 ----------------
+/* ---------------- PARTS MY2205 ---------------- */
 let partsTableMY2205=[];
 const PARTS_MY2205_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205.csv";
 
@@ -220,7 +324,7 @@ async function caricaPartsMY2205(){
 }
 caricaPartsMY2205();
 
-// ---------------- PARTS MY23 ----------------
+/* ---------------- PARTS MY23 ---------------- */
 let partsTableMY23=[];
 const PARTS_MY23_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv";
 
@@ -243,7 +347,7 @@ async function caricaPartsMY23(){
 }
 caricaPartsMY23();
 
-// ---------------- PARTS MY24 ----------------
+/* ---------------- PARTS MY24 ---------------- */
 let partsTableMY24=[];
 const PARTS_MY24_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24.csv";
 
@@ -266,7 +370,7 @@ async function caricaPartsMY24(){
 }
 caricaPartsMY24();
 
-// ---------------- NOME SINOTTICI MY24 ----------------
+/* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
 const NOMESINOTTICI_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24.csv";
 
@@ -284,7 +388,7 @@ async function caricaNomeSinotticiMY24(){
 }
 caricaNomeSinotticiMY24();
 
-// ---------------- MODEL MAP ----------------
+/* ---------------- MODEL MAP ---------------- */
 const MODEL_MAP={
     "Y01":"MY22",
     "Y0205":"MY2205",
@@ -292,7 +396,7 @@ const MODEL_MAP={
     "Y0230":"MY24"
 };
 
-// ---------------- COORDINATE DINAMICHE ----------------
+/* ---------------- COORDINATE DINAMICHE ---------------- */
 async function caricaCoordinate(file){
     const modello = MODEL_MAP[modelloCorrente];
     const url = `https://micheleyoyo.github.io/YOYO-SpareParts/coords/${modello}/${file}.json`;
@@ -306,10 +410,10 @@ async function caricaCoordinate(file){
     }
 }
 
-// ---------------- MOSTRA RICAMBI ----------------
+/* ---------------- MOSTRA RICAMBI ---------------- */
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
-    let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th></tr>";
+    let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th><th>Aggiungi</th></tr>";
 
     let tabella=partsTable;
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -333,18 +437,19 @@ function mostraRicambi(){
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
             <td>${p.modelli.join(", ")}</td>
+            <td><button onclick="event.stopPropagation(); aggiungiALista('${p.codice}','${p.descrizione}',1)">➕</button></td>
         </tr>`;
     });
 
     if(filtrati.length===0){
-        html+="<tr><td colspan='4'>Nessun ricambio trovato</td></tr>";
+        html+="<tr><td colspan='5'>Nessun ricambio trovato</td></tr>";
     }
 
     html+="</table>";
     document.getElementById("partsBox").innerHTML=html;
 }
 
-// ---------------- RICERCA VISUALE ----------------
+/* ---------------- RICERCA VISUALE ---------------- */
 function mostraSinottici(){
     if(!modelloCorrente){
         let html=`
@@ -364,7 +469,7 @@ function selezionaModelloVisuale(modello){
     mostraSinotticiPerModello(modelloCorrente);
 }
 
-// ---------------- GRIGLIA SINOTTICI CON CERCHI GIALLI ----------------
+/* ---------------- GRIGLIA SINOTTICI ---------------- */
 async function mostraSinotticiPerModello(modello){
     let tabella=[];
     if(modello==="Y01") tabella=partsTableMY22;
@@ -399,8 +504,13 @@ async function mostraSinotticiPerModello(modello){
         inizializzaMiniaturaSinottico(s);
     });
 }
-
-// Disegna i cerchi gialli sulle miniature
+  end:parseInt(end.trim()),
+            modello:modello.trim()
+        });
+    }
+}
+caricaVIN();
+/* ---------------- CERCHI + TOOLTIP + AGGIUNTA ALLA LISTA ---------------- */
 async function inizializzaMiniaturaSinottico(sinottico){
     const coords = await caricaCoordinate(sinottico);
     if(!coords || !coords[sinottico]) return;
@@ -427,6 +537,7 @@ async function inizializzaMiniaturaSinottico(sinottico){
                 const m = document.createElement("div");
                 m.className = "markerMini";
 
+                /* Tooltip principale */
                 const tip = document.createElement("div");
                 tip.className = "tooltip";
                 tip.textContent = ricambio
@@ -434,26 +545,36 @@ async function inizializzaMiniaturaSinottico(sinottico){
                     : ("ID " + id);
                 m.appendChild(tip);
 
+                /* Tooltip aggiuntivo giallo */
+                const add = document.createElement("div");
+                add.className = "tooltipAdd";
+                add.textContent = "➕ Aggiungi alla lista";
+                add.onclick = (ev)=>{
+                    ev.stopPropagation();
+                    if(ricambio){
+                        aggiungiALista(ricambio.codice, ricambio.descrizione, 1);
+                    }
+                };
+                m.appendChild(add);
+
+                /* Hover */
                 m.onmouseenter = () => {
                     tip.style.opacity = 1;
-                    const rect = tip.getBoundingClientRect();
-                    const winW = window.innerWidth;
-                    if(rect.left < 0){
-                        tip.style.left = "0px";
-                        tip.style.transform = "translate(0, -100%)";
-                    } else if(rect.right > winW){
-                        tip.style.left = "100%";
-                        tip.style.transform = "translate(-100%, -100%)";
-                    }
+                    add.style.opacity = 1;
                 };
                 m.onmouseleave = () => {
                     tip.style.opacity = 0;
-                    tip.style.left = "50%";
-                    tip.style.transform = "translate(-50%, -100%)";
+                    add.style.opacity = 0;
                 };
 
+                /* Posizione */
                 m.style.left = (pt.x * displayedW) + "px";
                 m.style.top  = (pt.y * displayedH) + "px";
+
+                /* Click → comportamento attuale */
+                m.onclick = () => {
+                    mostraEsploso(sinottico, ricambio ? ricambio.codice : sinottico, id);
+                };
 
                 container.appendChild(m);
             });
@@ -467,7 +588,7 @@ async function inizializzaMiniaturaSinottico(sinottico){
     }
 }
 
-// ---------------- RICAMBI DI UN SINOTTICO ----------------
+/* ---------------- RICAMBI DI UN SINOTTICO ---------------- */
 function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     let tabella=[];
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -491,22 +612,19 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
                 style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
             🗂️ Torna alla griglia sinottici
         </button>
-        <button onclick="stampaRicambi('${codiceEsploso}')"
-                style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
-            🖨️ Stampa ricambi
-        </button>
 
         <h2>Ricambi del sinottico ${nomeVisibile}</h2>
     `;
 
-    html += "<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
+    html += "<table><tr><th>Aggiungi</th><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
     ricambi.forEach(p=>{
         html += `
-        <tr data-id="${p.id}" onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
-            <td>${p.codice}</td>
-            <td>${p.descrizione}</td>
-            <td>${p.quantita}</td>
+        <tr data-id="${p.id}">
+            <td><button onclick="aggiungiALista('${p.codice}','${p.descrizione}',1); event.stopPropagation();">➕</button></td>
+            <td onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">${p.codice}</td>
+            <td onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">${p.descrizione}</td>
+            <td onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">${p.quantita}</td>
         </tr>`;
     });
 
@@ -526,7 +644,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     }
 }
 
-// ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ----------------
+/* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
@@ -598,8 +716,22 @@ body{
     overflow:hidden;
     text-overflow:ellipsis;
 }
-button{
-    font-size:16px;
+.tooltipAdd{
+    position:absolute;
+    background:#ffeb3b;
+    color:#000;
+    padding:4px 8px;
+    border-radius:4px;
+    font-size:13px;
+    white-space:nowrap;
+    pointer-events:auto;
+    opacity:0;
+    top:15px;
+    left:50%;
+    transform:translate(-50%, 0);
+    transition:opacity 0.15s;
+    border:1px solid #333;
+    cursor:pointer;
 }
 </style>
 </head>
@@ -648,24 +780,24 @@ img.onload = function(){
                     : ("ID " + id);
                 m.appendChild(tip);
 
-                m.onmouseenter = () => {
-                    tip.style.opacity = 1;
-                    const rect = tip.getBoundingClientRect();
-                    const winW = window.innerWidth;
-                    if(rect.left < 0){
-                        tip.style.left = "0px";
-                        tip.style.transform = "translate(0, -100%)";
-                    }
-                    else if(rect.right > winW){
-                        tip.style.left = "100%";
-                        tip.style.transform = "translate(-100%, -100%)";
+                const add = document.createElement("div");
+                add.className = "tooltipAdd";
+                add.textContent = "➕ Aggiungi alla lista";
+                add.onclick = (ev)=>{
+                    ev.stopPropagation();
+                    if(ricambio){
+                        window.opener.aggiungiALista(ricambio.codice, ricambio.descrizione, 1);
                     }
                 };
+                m.appendChild(add);
 
+                m.onmouseenter = () => {
+                    tip.style.opacity = 1;
+                    add.style.opacity = 1;
+                };
                 m.onmouseleave = () => {
                     tip.style.opacity = 0;
-                    tip.style.left = "50%";
-                    tip.style.transform = "translate(-50%, -100%)";
+                    add.style.opacity = 0;
                 };
 
                 m.style.left = (pt.x * displayedW) + "px";
@@ -690,53 +822,26 @@ img.onload = function(){
 `);
 }
 
-// ---------------- TORNA A GRIGLIA SINOTTICI ----------------
-function tornaAGrigliaSinottici(){
-    if(modelloCorrente){
-        mostraSinotticiPerModello(modelloCorrente);
-    }
-    if(window.explodedWin && !window.explodedWin.closed){
-        window.explodedWin.close();
-    }
-}
-
-// ---------------- STAMPA RICAMBI ----------------
-function stampaRicambi(codiceEsploso){
-    let tabella=[];
-    if(modelloCorrente==="Y01") tabella=partsTableMY22;
-    else if(modelloCorrente==="Y0205") tabella=partsTableMY2205;
-    else if(modelloCorrente==="Y0210") tabella=partsTableMY23;
-    else if(modelloCorrente==="Y0230") tabella=partsTableMY24;
-
-    const ricambi = tabella.filter(p=>p.esploso===codiceEsploso);
-
-    const nomeVisibile = (MODEL_MAP[modelloCorrente]==="MY24" && nomeSinotticiMY24[codiceEsploso])
-        ? nomeSinotticiMY24[codiceEsploso]
-        : codiceEsploso;
-
+/* ---------------- STAMPA LISTA ---------------- */
+function stampaLista(){
     let html = `
         <html>
         <head>
-            <title>Ricambi ${nomeVisibile}</title>
+            <title>Lista ricambi</title>
             <style>
                 body{ font-family:Arial; padding:20px; }
-                h2{ margin-bottom:20px; }
                 table{ width:100%; border-collapse:collapse; }
                 th,td{ border:1px solid #333; padding:8px; }
                 th{ background:#eee; }
             </style>
         </head>
         <body>
-            <h2>Ricambi del sinottico ${nomeVisibile}</h2>
+            <h2>Lista ricambi</h2>
             <table>
-                <tr>
-                    <th>Codice</th>
-                    <th>Descrizione</th>
-                    <th>Quantità</th>
-                </tr>
+                <tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>
     `;
 
-    ricambi.forEach(p=>{
+    listaRicambi.forEach(p=>{
         html += `
             <tr>
                 <td>${p.codice}</td>
@@ -758,7 +863,7 @@ function stampaRicambi(codiceEsploso){
     win.print();
 }
 
-// ---------------- HOME ----------------
+/* ---------------- HOME ---------------- */
 function tornaAllaHome(){
     document.getElementById("vinInput").value="";
     document.getElementById("searchInput").value="";
@@ -766,7 +871,7 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-</script>
 
+</script>
 </body>
 </html>

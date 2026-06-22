@@ -958,6 +958,9 @@ img.onload = function(){
 </html>
 `);
 }
+win.onload = () => {
+    if (win.aggiornaListaPopup) win.aggiornaListaPopup();
+};    
 /* ---------------- STAMPA LISTA ---------------- */
 function stampaLista(){
     let html = `

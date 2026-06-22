@@ -92,7 +92,7 @@ th{background:#eee;}
     white-space:nowrap;
     pointer-events:auto;
     opacity:0;
-    top:15px;
+    top:35px; /* ABBASSATO DI 20px */
     left:50%;
     transform:translate(-50%, 0);
     transition:opacity 0.15s;
@@ -116,6 +116,14 @@ th{background:#eee;}
     margin-top:0;
     font-size:18px;
 }
+
+/* LISTA SCORREVOLE */
+#listaContenuto{
+    max-height:200px;
+    overflow-y:auto;
+    padding-right:5px;
+}
+
 .listaItem{
     display:flex;
     justify-content:space-between;
@@ -161,7 +169,8 @@ th{background:#eee;}
     <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
     <div id="listaContenuto"></div>
     <hr>
-    <button onclick="stampaLista()">🖨️ Stampa lista</button>
+    <button onclick="stampaLista()">🖨️ Stampa</button>
+    <button onclick="esportaCSV()">📄 Esporta CSV</button>
     <button onclick="svuotaLista()">🗑️ Svuota</button>
 </div>
 
@@ -213,6 +222,24 @@ function renderListaRicambi(){
     count.textContent = listaRicambi.length;
 }
 caricaLista();
+
+/* ---------------- ESPORTA CSV ---------------- */
+function esportaCSV(){
+    let csv = "codice,descrizione,quantita\n";
+    listaRicambi.forEach(p=>{
+        csv += `${p.codice},${p.descrizione},${p.quantita}\n`;
+    });
+
+    const blob = new Blob([csv], {type:"text/csv"});
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "lista_ricambi.csv";
+    a.click();
+
+    URL.revokeObjectURL(url);
+}
 
 /* ---------------- VIN ---------------- */
 let vinTable=[]; 
@@ -511,8 +538,7 @@ async function mostraSinotticiPerModello(modello){
         inizializzaMiniaturaSinottico(s);
     });
 }
-
-/* ---------------- CERCHI + TOOLTIP ---------------- */
+/* ---------------- CERCHI + TOOLTIP + AGGIUNTA ALLA LISTA ---------------- */
 async function inizializzaMiniaturaSinottico(sinottico){
     const coords = await caricaCoordinate(sinottico);
     if(!coords || !coords[sinottico]) return;
@@ -641,7 +667,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     }
 }
 
-/* ---------------- MOSTRA ESPLOSO ---------------- */
+/* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
@@ -699,11 +725,6 @@ body{
     position:absolute;
     background:#333;
     color:#fff;
-    padding:6px 10px
-    .tooltip{
-    position:absolute;
-    background:#333;
-    color:#fff;
     padding:6px 10px;
     border-radius:5px;
     font-size:14px;
@@ -728,7 +749,7 @@ body{
     white-space:nowrap;
     pointer-events:auto;
     opacity:0;
-    top:15px;
+    top:35px;
     left:50%;
     transform:translate(-50%, 0);
     transition:opacity 0.15s;
@@ -739,6 +760,15 @@ body{
 </head>
 
 <body>
+
+<button onclick="if(window.opener){window.opener.mostraSinottici();} window.close();"
+        style="padding:10px 20px;font-size:18px;margin-bottom:20px;">
+    🔙 Torna alla griglia
+</button>
+
+<div id="container">
+    <img id="explodedImg" src="${url}">
+</div>
 
 <script>
 const coords = ${JSON.stringify(coords)};

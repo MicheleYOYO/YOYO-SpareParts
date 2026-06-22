@@ -223,11 +223,19 @@ async function caricaVIN(){
     const r=await fetch(VIN_URL);
     const t=await r.text();
     const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
     for(let i=1;i<righe.length;i++){
         const [start,end,modello]=righe[i].split(",");
         vinTable.push({
             start:parseInt(start.trim()),
-          function identificaModello(){
+            end:parseInt(end.trim()),
+            modello:modello.trim()
+        });
+    }
+}
+caricaVIN();
+
+function identificaModello(){
     const vinInput=document.getElementById("vinInput").value.trim();
     if(!vinInput){
         modelloCorrente="";
@@ -250,7 +258,6 @@ async function caricaVIN(){
     }
     mostraRicambi();
 }
-
 /* ---------------- PARTS GENERALE ---------------- */
 let partsTable=[];
 const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
@@ -504,13 +511,8 @@ async function mostraSinotticiPerModello(modello){
         inizializzaMiniaturaSinottico(s);
     });
 }
-  end:parseInt(end.trim()),
-            modello:modello.trim()
-        });
-    }
-}
-caricaVIN();
-/* ---------------- CERCHI + TOOLTIP + AGGIUNTA ALLA LISTA ---------------- */
+
+/* ---------------- CERCHI + TOOLTIP ---------------- */
 async function inizializzaMiniaturaSinottico(sinottico){
     const coords = await caricaCoordinate(sinottico);
     if(!coords || !coords[sinottico]) return;
@@ -537,7 +539,6 @@ async function inizializzaMiniaturaSinottico(sinottico){
                 const m = document.createElement("div");
                 m.className = "markerMini";
 
-                /* Tooltip principale */
                 const tip = document.createElement("div");
                 tip.className = "tooltip";
                 tip.textContent = ricambio
@@ -545,7 +546,6 @@ async function inizializzaMiniaturaSinottico(sinottico){
                     : ("ID " + id);
                 m.appendChild(tip);
 
-                /* Tooltip aggiuntivo giallo */
                 const add = document.createElement("div");
                 add.className = "tooltipAdd";
                 add.textContent = "➕ Aggiungi alla lista";
@@ -557,7 +557,6 @@ async function inizializzaMiniaturaSinottico(sinottico){
                 };
                 m.appendChild(add);
 
-                /* Hover */
                 m.onmouseenter = () => {
                     tip.style.opacity = 1;
                     add.style.opacity = 1;
@@ -567,11 +566,9 @@ async function inizializzaMiniaturaSinottico(sinottico){
                     add.style.opacity = 0;
                 };
 
-                /* Posizione */
                 m.style.left = (pt.x * displayedW) + "px";
                 m.style.top  = (pt.y * displayedH) + "px";
 
-                /* Click → comportamento attuale */
                 m.onclick = () => {
                     mostraEsploso(sinottico, ricambio ? ricambio.codice : sinottico, id);
                 };
@@ -608,7 +605,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
             🔙 Torna al sinottico
         </button>
 
-        <button onclick="tornaAGrigliaSinottici()"
+        <button onclick="mostraSinottici()"
                 style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
             🗂️ Torna alla griglia sinottici
         </button>
@@ -644,7 +641,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     }
 }
 
-/* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
+/* ---------------- MOSTRA ESPLOSO ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
         alert("Nessun esploso disponibile");
@@ -702,6 +699,11 @@ body{
     position:absolute;
     background:#333;
     color:#fff;
+    padding:6px 10px
+    .tooltip{
+    position:absolute;
+    background:#333;
+    color:#fff;
     padding:6px 10px;
     border-radius:5px;
     font-size:14px;
@@ -737,15 +739,6 @@ body{
 </head>
 
 <body>
-
-<button onclick="if(window.opener){window.opener.tornaAGrigliaSinottici();} window.close();"
-        style="padding:10px 20px;font-size:18px;margin-bottom:20px;">
-    🔙 Torna alla griglia
-</button>
-
-<div id="container">
-    <img id="explodedImg" src="${url}">
-</div>
 
 <script>
 const coords = ${JSON.stringify(coords)};

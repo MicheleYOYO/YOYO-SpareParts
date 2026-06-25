@@ -817,8 +817,20 @@ body{
     cursor:pointer;
 }
 
-<style>
-/* --- LISTA RICAMBI NEL POPUP (STILI CORRETTI) --- */
+/* --- LISTA RICAMBI NEL POPUP --- */
+<div id="listaPopup" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 340px;
+    max-height: 600px;
+    overflow-y: auto;
+    background: #fff;
+    border: 2px solid #333;
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 9999;
+}
 #listaPopup h3{
     margin-top:0;
     font-size:18px;
@@ -829,7 +841,6 @@ body{
     margin-bottom:5px;
 }
 </style>
-
 </head>
 
 <body>

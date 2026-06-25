@@ -854,11 +854,37 @@ body{
     <img id="explodedImg" src="${url}">
 </div>
 
-<!-- LISTA RICAMBI POPUP -->
-<div id="listaPopup">
-    <h3>Lista ricambi</h3>
-    <div id="listaPopupContenuto"></div>
+<!-- LISTA RICAMBI POPUP (VERSIONE CORRETTA) -->
+<div id="listaPopup" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 340px; /* ridotta di ~5mm */
+    background: #fff;
+    border: 2px solid #333;
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 9999;
+">
+    <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+
+    <!-- Nome lista -->
+    <div id="nomeListaLabel" style="font-weight:bold; margin-bottom:10px;"></div>
+
+    <!-- CONTENUTO LISTA (OBBLIGATORIO!) -->
+    <div id="listaPopupContenuto" style="
+        max-height: 400px;
+        overflow-y: auto;
+        margin-top: 10px;
+    "></div>
+
+    <hr>
+
+    <button onclick="stampaLista()">🖨️ Stampa</button>
+    <button onclick="esportaCSV()">📄 Esporta CSV</button>
+    <button onclick="svuotaLista()">🗑️ Svuota</button>
 </div>
+
 
 <script>
 /* Dati passati dal main */

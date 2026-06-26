@@ -839,7 +839,7 @@ const fileName = "${file}".replace(/\\.[^/.]+$/, "");
 const img = document.getElementById("explodedImg");
 const container = document.getElementById("container");
 
-const ricambi = ${JSON.stringify(
+const ricambi = JSON.parse(`${JSON.stringify(
     partsTableMY22
         .concat(partsTableMY2205)
         .concat(partsTableMY23)

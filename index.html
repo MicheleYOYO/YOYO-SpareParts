@@ -361,7 +361,7 @@ async function caricaParts(){
             descrizione:cols[1].trim(),
             quantita:cols[2].trim(),
             id:(cols[3]||"").trim(),
-            modelli:(cols[4]||"").replace(/\*/g,"").trim().split(/\s+/).filter(m=>m.length>0),
+            modelli:(cols[3]||"").replace(/\*/g,"").trim().split(/\s+/).filter(m=>m.length>0),
             esploso:(cols[5]||"").trim()
         });
     }

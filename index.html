@@ -196,9 +196,15 @@ th{background:#eee;}
 </div>
 
 <script>
+<!-- ========================= -->
+<!--   LISTA RICAMBI LOGICA    -->
+<!-- ========================= -->
+
+<script>
 /* ---------------- LISTA RICAMBI ---------------- */
 let listaRicambi = [];
 let nomeLista = localStorage.getItem("nomeLista") || "";
+
 /* Salva lista + nome lista */
 function salvaLista(){
     localStorage.setItem("listaRicambi", JSON.stringify(listaRicambi));
@@ -282,7 +288,28 @@ function esportaCSV(){
     a.click();
     URL.revokeObjectURL(url);
 }
+/* ========================================================= */
+/*   FUNZIONE CORRETTA PER APRIRE UN RICAMBIO DALLA LISTA    */
+/* ========================================================= */
+function apriRicambio(codice){
+    // Cerca il ricambio in tutte le tabelle
+    const r = partsTableMY22
+        .concat(partsTableMY2205)
+        .concat(partsTableMY23)
+        .concat(partsTableMY24)
+        .find(x => x.codice === codice);
 
+    if(!r){
+        alert("Ricambio non trovato");
+        return;
+    }
+
+    // Imposta il modello corretto
+    modelloCorrente = r.modelli[0];
+
+    // Apri l’esploso corretto
+    mostraEsploso(r.esploso, r.codice, r.id);
+}
 /* ---------------- VIN ---------------- */
 let vinTable=[]; 
 let modelloCorrente="";
@@ -303,95 +330,6 @@ async function caricaVIN(){
     }
 }
 caricaVIN();
-
-/* Identifica modello + genera nome lista */
-function identificaModello(){
-    const vinInput=document.getElementById("vinInput").value.trim();
-    if(!vinInput){
-        modelloCorrente="";
-        document.getElementById("risultatoVIN").innerText="Inserisci un VIN valido";
-        mostraRicambi();
-        return;
-    }
-
-    const vinNumber=parseInt(vinInput);
-    modelloCorrente="";
-
-    for(let r of vinTable){
-        if(vinNumber>=r.start && vinNumber<=r.end){
-            modelloCorrente=r.modello.trim();
-            break;
-        }
-    }
-
-    if(!modelloCorrente){
-        document.getElementById("risultatoVIN").innerText="VIN non trovato nei range";
-    } else {
-        document.getElementById("risultatoVIN").innerText="Modello identificato: "+modelloCorrente;
-
-        /* GENERA NOME LISTA = VIN + data + ora */
-        const now = new Date();
-        const giorno = String(now.getDate()).padStart(2,"0");
-        const mese = String(now.getMonth()+1).padStart(2,"0");
-        const anno = now.getFullYear();
-        const ore = String(now.getHours()).padStart(2,"0");
-        const min = String(now.getMinutes()).padStart(2,"0");
-
-        nomeLista = `VIN ${vinInput} – ${giorno}/${mese}/${anno} ${ore}:${min}`;
-        document.getElementById("nomeListaLabel").textContent = nomeLista;
-        salvaLista();
-    }
-
-    mostraRicambi();
-}
-
-/* ---------------- PARTS GENERALE ---------------- */
-let partsTable=[];
-const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
-
-async function caricaParts(){
-    const r=await fetch(PARTS_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-
-    for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-        partsTable.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            modelli:(cols[4]||"").replace(/\*/g,"").trim().split(/\s+/).filter(m=>m.length>0),
-            esploso:(cols[5]||"").trim()
-        });
-    }
-    mostraRicambi();
-}
-caricaParts();
-
-/* ---------------- PARTS MY22 ---------------- */
-let partsTableMY22=[];
-const PARTS_MY22_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22.csv";
-
-async function caricaPartsMY22(){
-    const r=await fetch(PARTS_MY22_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-
-    for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-        partsTableMY22.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            modelli:["MY22"],
-            esploso:(cols[4]||"").trim()
-        });
-    }
-}
-caricaPartsMY22();
-
 /* ---------------- PARTS MY2205 ---------------- */
 let partsTableMY2205=[];
 const PARTS_MY2205_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205.csv";
@@ -463,6 +401,7 @@ async function caricaPartsMY24(){
     }
 }
 caricaPartsMY24();
+
 /* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
 const NOMESINOTTICI_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24.csv";
@@ -525,7 +464,7 @@ function mostraRicambi(){
 
     filtrati.forEach(p=>{
         html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+        <tr onclick="apriRicambio('${p.codice}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
@@ -597,7 +536,6 @@ async function mostraSinotticiPerModello(modello){
         inizializzaMiniaturaSinottico(s);
     });
 }
-
 /* ---------------- CERCHI + TOOLTIP + AGGIUNTA ALLA LISTA ---------------- */
 async function inizializzaMiniaturaSinottico(sinottico){
     const coords = await caricaCoordinate(sinottico);
@@ -726,6 +664,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
         },200);
     }
 }
+
 /* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
@@ -816,30 +755,7 @@ body{
     border:1px solid #333;
     cursor:pointer;
 }
-
-/* --- LISTA RICAMBI NEL POPUP --- */
-<div id="listaPopup" style="
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 340px;
-    max-height: 600px;
-    overflow-y: auto;
-    background: #fff;
-    border: 2px solid #333;
-    padding: 12px;
-    border-radius: 6px;
-    z-index: 9999;
-}
-#listaPopup h3{
-    margin-top:0;
-    font-size:18px;
-}
-.listaPopupItem{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:5px;
-}
+/* --- LISTA RICAMBI POPUP (VERSIONE CORRETTA) --- */
 </style>
 </head>
 
@@ -854,12 +770,12 @@ body{
     <img id="explodedImg" src="${url}">
 </div>
 
-<!-- LISTA RICAMBI POPUP (VERSIONE CORRETTA) -->
+<!-- LISTA RICAMBI POPUP (UNICA VERSIONE CORRETTA) -->
 <div id="listaPopup" style="
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 340px; /* ridotta di ~5mm */
+    width: 340px;
     background: #fff;
     border: 2px solid #333;
     padding: 12px;
@@ -871,7 +787,7 @@ body{
     <!-- Nome lista -->
     <div id="nomeListaLabel" style="font-weight:bold; margin-bottom:10px;"></div>
 
-    <!-- CONTENUTO LISTA (OBBLIGATORIO!) -->
+    <!-- CONTENUTO LISTA -->
     <div id="listaPopupContenuto" style="
         max-height: 90vh;
         overflow-y: auto;
@@ -884,7 +800,6 @@ body{
     <button onclick="esportaCSV()">📄 Esporta CSV</button>
     <button onclick="svuotaLista()">🗑️ Svuota</button>
 </div>
-
 
 <script>
 /* Dati passati dal main */
@@ -911,12 +826,12 @@ function aggiornaListaPopup(){
     box.innerHTML = "";
 
     lista.forEach(p=>{
-        box.innerHTML += \`
+        box.innerHTML += `
             <div class="listaPopupItem">
-                <span>\${p.codice}</span>
-                <span>x\${p.quantita}</span>
+                <span>${p.codice}</span>
+                <span>x${p.quantita}</span>
             </div>
-        \`;
+        `;
     });
 }
 
@@ -978,15 +893,13 @@ img.onload = function(){
 
     aggiornaListaPopup();
 };
-<\/script>
+</script>
 
 </body>
 </html>
 `);
 }
-win.onload = () => {
-    if (win.aggiornaListaPopup) win.aggiornaListaPopup();
-};    
+
 /* ---------------- STAMPA LISTA ---------------- */
 function stampaLista(){
     let html = `

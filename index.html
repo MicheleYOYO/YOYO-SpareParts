@@ -583,7 +583,7 @@ async function mostraSinotticiPerModello(modello){
         html+=`
         <div class="sinotticoBox">
             <div class="sinotticoInner" id="box-${s}"
-                 onclick="mostraEsploso('${s}', null)"
+                 onclick="mostraEsploso('${s}', '${s}', null)">
                 <img id="img-${s}" src="${imgUrl}">
             </div>
             <div class="sinotticoTitle">${nomeVisibile}</div>
@@ -918,24 +918,6 @@ function aggiornaListaPopup(){
             </div>
         \`;
     });
-}
-/* --- APRI SINOTTICO DA LISTA GLOBALE --- */
-function apriRicambioDaListaGlobale(codice) {
-    if (!window.opener) return;
-
-    // Cerca il ricambio nella tabella unificata
-    const r = ricambi.find(x => x.codice === codice);
-    if (!r) return;
-
-    // Se il ricambio non ha un esploso associato, non può aprire nulla
-    if (!r.esploso || !r.id) {
-        alert("Questo ricambio non ha un sinottico associato.");
-        return;
-    }
-
-    // Chiama la funzione del main per aprire il sinottico corretto
-    window.opener.mostraEsploso(r.esploso, r.id);
-    window.close();
 }
 
 /* --- DISEGNO MARKER --- */

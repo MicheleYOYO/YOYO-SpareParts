@@ -252,8 +252,12 @@ function renderListaRicambi(){
         box.innerHTML += `
             <div class="listaItem">
                 <span>${item.codice}</span>
-                <span>x${item.quantita}</span>
-                <button onclick="rimuoviDaLista('${item.codice}')">X</button>
+
+                <div class="qtyControls">
+                    <button class="qtyBtn" onclick="decrementaDaLista('${item.codice}')">-</button>
+                    <span class="qtyValue">${item.quantita}</span>
+                    <button class="qtyBtn" onclick="incrementaDaLista('${item.codice}')">+</button>
+                </div>
             </div>
         `;
     });
@@ -262,6 +266,35 @@ function renderListaRicambi(){
 }
 
 caricaLista();
+function rimuoviDaLista(codice){
+    listaRicambi = listaRicambi.filter(x => x.codice !== codice);
+    salvaLista();
+    renderListaRicambi();
+}
+
+function incrementaDaLista(codice){
+    const item = listaRicambi.find(x => x.codice === codice);
+    if(item){
+        item.quantita++;
+        salvaLista();
+        renderListaRicambi();
+    }
+}
+
+function decrementaDaLista(codice){
+    const item = listaRicambi.find(x => x.codice === codice);
+    if(item){
+        if(item.quantita > 1){
+            item.quantita--;
+        } else {
+            // se arriva a 0 → rimuoviamo
+            listaRicambi = listaRicambi.filter(x => x.codice !== codice);
+        }
+        salvaLista();
+        renderListaRicambi();
+    }
+}
+
 
 /* ---------------- ESPORTA CSV ---------------- */
 function esportaCSV(){

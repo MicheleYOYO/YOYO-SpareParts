@@ -919,6 +919,24 @@ function aggiornaListaPopup(){
         \`;
     });
 }
+/* --- APRI SINOTTICO DA LISTA GLOBALE --- */
+function apriRicambioDaListaGlobale(codice) {
+    if (!window.opener) return;
+
+    // Cerca il ricambio nella tabella unificata
+    const r = ricambi.find(x => x.codice === codice);
+    if (!r) return;
+
+    // Se il ricambio non ha un esploso associato, non può aprire nulla
+    if (!r.esploso || !r.id) {
+        alert("Questo ricambio non ha un sinottico associato.");
+        return;
+    }
+
+    // Chiama la funzione del main per aprire il sinottico corretto
+    window.opener.mostraEsploso(r.esploso, r.id);
+    window.close();
+}
 
 /* --- DISEGNO MARKER --- */
 img.onload = function(){

@@ -195,6 +195,31 @@ th{background:#eee;}
     font-weight: bold;
     font-size: 14px;
 }
+ /* Popup scelta modello per esploso */
+.popupModelli {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background: #fff;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 10000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    min-width: 260px;
+}
+.popupModelli h3 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.popupModelli button {
+    margin: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+   
 </style>
 </head>
 
@@ -559,6 +584,13 @@ const MODEL_MAP={
     "Y0210":"MY23",
     "Y0230":"MY24"
 };
+/* Mappa inversa: da MYxx a codice interno Yxx */
+const REVERSE_MODEL_MAP = {
+    "MY22": "Y01",
+    "MY2205": "Y0205",
+    "MY23": "Y0210",
+    "MY24": "Y0230"
+};    
 
 /* ---------------- COORDINATE DINAMICHE ---------------- */
 async function caricaCoordinate(file){
@@ -594,16 +626,18 @@ function mostraRicambi(){
         return true;
     });
 
-    filtrati.forEach(p=>{
-        html+=`
-        <tr onclick="mostraEsploso('${p.esploso}','${p.codice}','${p.id}')">
+  filtrati.forEach(p=>{
+    const modelliStr = (p.modelli || []).join(" ");
+    html+=`
+        <tr onclick="scegliModelloRicambio('${p.codice}', '${modelliStr}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
             <td>${p.modelli.join(", ")}</td>
             <td><button onclick="event.stopPropagation(); aggiungiALista('${p.codice}','${p.descrizione}',1)">➕</button></td>
         </tr>`;
-    });
+});
+
 
     if(filtrati.length===0){
         html+="<tr><td colspan='5'>Nessun ricambio trovato</td></tr>";
@@ -611,6 +645,75 @@ function mostraRicambi(){
 
     html+="</table>";
     document.getElementById("partsBox").innerHTML=html;
+}
+/* ---------------- SCELTA MODELLO PER RICAMBIO ---------------- */
+function scegliModelloRicambio(codice, modelliStr){
+    // modelliStr es: "MY22 MY23 MY24"
+    const modelli = modelliStr.split(/\s+/).filter(m => m.length > 0);
+
+    if(modelli.length === 0){
+        alert("Nessun modello compatibile indicato per questo ricambio.");
+        return;
+    }
+
+    // Se c'è un solo modello, apriamo direttamente
+    if(modelli.length === 1){
+        apriEsplosoPerModello(codice, modelli[0]);
+        return;
+    }
+
+    // Popup scelta modello
+    const existing = document.getElementById("popupModelli");
+    if(existing) existing.remove();
+
+    let html = `<div id="popupModelli" class="popupModelli">
+        <h3>Apri esploso per ${codice}</h3>
+        <p>Seleziona il modello:</p>`;
+
+    modelli.forEach(m => {
+        html += `<button onclick="apriEsplosoPerModello('${codice}', '${m}')">${m}</button>`;
+    });
+
+    html += `<button onclick="chiudiPopupModelli()">Chiudi</button></div>`;
+
+    document.body.insertAdjacentHTML("beforeend", html);
+}
+
+function chiudiPopupModelli(){
+    const p = document.getElementById("popupModelli");
+    if(p) p.remove();
+}
+
+/* ---------------- APERTURA ESPLOSO PER MODELLO ---------------- */
+function apriEsplosoPerModello(codice, modelloVisibile){
+    // modelloVisibile es: "MY23"
+    const codiceInterno = REVERSE_MODEL_MAP[modelloVisibile];
+    if(!codiceInterno){
+        alert("Modello non riconosciuto: " + modelloVisibile);
+        return;
+    }
+
+    // scegli la tabella giusta
+    let tabella = [];
+    if(modelloVisibile === "MY22") tabella = partsTableMY22;
+    else if(modelloVisibile === "MY2205") tabella = partsTableMY2205;
+    else if(modelloVisibile === "MY23") tabella = partsTableMY23;
+    else if(modelloVisibile === "MY24") tabella = partsTableMY24;
+
+    const ricambio = tabella.find(p => p.codice === codice);
+    if(!ricambio){
+        alert("Ricambio " + codice + " non trovato nel catalogo " + modelloVisibile);
+        chiudiPopupModelli();
+        return;
+    }
+
+    // Impostiamo il modello corrente al codice interno (Y01, Y0210, ecc.)
+    modelloCorrente = codiceInterno;
+
+    // Apriamo l'esploso usando la tua funzione esistente
+    mostraEsploso(ricambio.esploso, ricambio.codice, ricambio.id);
+
+    chiudiPopupModelli();
 }
 
 /* ---------------- RICERCA VISUALE ---------------- */

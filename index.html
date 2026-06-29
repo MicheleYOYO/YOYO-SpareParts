@@ -452,14 +452,20 @@ async function caricaParts(){
 
     for(let i=1;i<righe.length;i++){
         const cols=righe[i].split(",");
-        partsTable.push({
-            codice:cols[0].trim(),
-            descrizione:cols[1].trim(),
-            quantita:cols[2].trim(),
-            id:(cols[3]||"").trim(),
-            modelli:(cols[3]||"").replace(/\*/g,"").trim().split(/\s+/).filter(m=>m.length>0),
-            esploso:(cols[5]||"").trim()
-        });
+partsTable.push({
+    codice: cols[0].trim(),
+    descrizione: cols[1].trim(),
+    quantita: cols[2].trim(),
+    id: (cols[3] || "").trim(),
+    modelli: (cols[3] || "")
+        .replace(/\*/g, "")
+        .trim()
+        .split(/\s+/)
+        .map(m => m === "MY22.5" ? "MY2205" : m)
+        .filter(m => m.length > 0),
+    esploso: (cols[5] || "").trim()
+});
+
     }
     mostraRicambi();
 }

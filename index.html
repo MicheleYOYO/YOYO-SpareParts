@@ -301,8 +301,16 @@ function rimuoviDaLista(codice){
 /* Svuota lista */
 function svuotaLista(){
     listaRicambi = [];
+
+    // 🔥 Azzera anche il nome lista (VIN + data + ora)
+    nomeLista = "";
+    localStorage.removeItem("nomeLista");
+
     salvaLista();
     renderListaRicambi();
+
+    // 🔥 Aggiorna la label visiva
+    document.getElementById("nomeListaLabel").textContent = "";
 }
 
 /* Render lista ricambi */

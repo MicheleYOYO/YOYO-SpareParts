@@ -590,6 +590,24 @@ async function caricaNomeSinotticiMY24(){
     }
 }
 caricaNomeSinotticiMY24();
+    
+/* ---------------- NOME SINOTTICI MY23 ---------------- */
+let nomeSinotticiMY23 = {};
+const NOMESINOTTICI_MY23_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY23.csv";
+
+async function caricaNomeSinotticiMY23(){
+    const r = await fetch(NOMESINOTTICI_MY23_URL);
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
+    for(let i=1; i<righe.length; i++){
+        const [id, nome] = righe[i].split(",");
+        if(id && nome){
+            nomeSinotticiMY23[id.trim()] = nome.trim();
+        }
+    }
+}
+caricaNomeSinotticiMY23();
 
 /* ---------------- MODEL MAP ---------------- */
 const MODEL_MAP={
@@ -766,7 +784,15 @@ async function mostraSinotticiPerModello(modello){
     sinottici.forEach(s=>{
         const cartella = MODEL_MAP[modello];
         const imgUrl = `https://micheleyoyo.github.io/YOYO-SpareParts/esplosi/${cartella}/${s}.jpg`;
-        const nomeVisibile = (MODEL_MAP[modello]==="MY24" && nomeSinotticiMY24[s]) ? nomeSinotticiMY24[s] : s;
+        let nomeVisibile = s;
+
+if (MODEL_MAP[modello] === "MY24" && nomeSinotticiMY24[s]) {
+    nomeVisibile = nomeSinotticiMY24[s];
+}
+else if (MODEL_MAP[modello] === "MY23" && nomeSinotticiMY23[s]) {
+    nomeVisibile = nomeSinotticiMY23[s];
+}
+
 
         html+=`
         <div class="sinotticoBox">

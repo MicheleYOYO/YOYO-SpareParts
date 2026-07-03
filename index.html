@@ -608,6 +608,25 @@ async function caricaNomeSinotticiMY23(){
     }
 }
 caricaNomeSinotticiMY23();
+    
+    /* ---------------- NOME SINOTTICI MY22 ---------------- */
+let nomeSinotticiMY22 = {};
+const NOMESINOTTICI_MY22_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY22.csv";
+
+async function caricaNomeSinotticiMY22(){
+    const r = await fetch(NOMESINOTTICI_MY22_URL);
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
+    for(let i=1; i<righe.length; i++){
+        const [id, nome] = righe[i].split(",");
+        if(id && nome){
+            nomeSinotticiMY22[id.trim()] = nome.trim();
+        }
+    }
+}
+caricaNomeSinotticiMY22();
+
 
 /* ---------------- MODEL MAP ---------------- */
 const MODEL_MAP={
@@ -791,6 +810,9 @@ if (MODEL_MAP[modello] === "MY24" && nomeSinotticiMY24[s]) {
 }
 else if (MODEL_MAP[modello] === "MY23" && nomeSinotticiMY23[s]) {
     nomeVisibile = nomeSinotticiMY23[s];
+}
+else if (MODEL_MAP[modello] === "MY22" && nomeSinotticiMY22[s]) {
+    nomeVisibile = nomeSinotticiMY22[s];
 }
 
 

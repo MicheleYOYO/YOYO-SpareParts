@@ -91,9 +91,7 @@ S32006003,hexagon nut with flange,4,2,Y0205008
 2142010-Y01,Motor controller assembly,1,1,Y0205009
 Q1460820,Hex bolt  spring washer and plain washer assy M8×20,4,2,Y0205009
 3600000-Y01,Vehicle electronic Unit,1,,Y02050010
-3601010-Y01,Body control module（BCM）,1,1,Y02050010
-3601010Y0200,Body control module（BCM）,1,1,Y02050010
-3601010Y0201,Body control module (BCM) (ENI customized version),1,1,Y02050010
+3601010Y0205,Body control module（BCM）,1,1,Y02050010
 S32006003,hexagon nut with flange,2,2,Y02050010
 3700000-Y01,Vehicle Electrical Equipment,1,,Y02050011
 3703010-Y01,12V Battery,1,1,Y02050011
@@ -124,32 +122,27 @@ ST0205,Cross-recessed tapping screw M2*5,2,,Y02050011
 3820000-Y01,Center screen assembly,1,,Y02050012
 3820010-Y01,Central screen (7inch),1,1,Y02050012
 3820020Y0202,Central screen (7inch),1,,Y02050012
-3820000Y0201,Central screen Assy (ENI customized version),1,,Y02050012
-3820010Y0201,Central screen (7inch) (ENI customized version),1,1,Y02050012
-3820020Y0203,Central screen (7inch) (ENI customized version),1,,Y02050012
 S27348002,Cross-recessed half-round large head self-tapping screw,4,2,Y02050012
 3820012-Y01,Phone holder,1,3,Y02050012
-4000000-Y01,Low-voltage Wiring Harness Assy,1,,Y02050013
-4002010-Y01,Front compartment wiring harness,1,1,Y02050013
-4002010Y0201,Front compartment wiring harness assy (ENI customized version),1,1,Y02050013
+4000000Y0205,Low-voltage Wiring Harness Assy,1,,Y02050013
+4002010Y0205,Front compartment wiring harness,1,1,Y02050013
 4002020-Y01,Roof ceiling wiring harness assy,1,2,Y02050013
 4002020Y0200,roof wiring harness assembly hall version,1,2,Y02050013
 4002030-Y01,Left door wiring harness assy,1,3,Y02050013
 4002030Y0200,Left door wiring harness assy (Hall version),1,3,Y02050013
 4002040-Y01,Right door wiring harness assy,1,4,Y02050013
 4002040Y0200,Right door wiring harness assy (Hall version),1,4,Y02050013
-4003010-Y01,Main wiring harness assy,1,5,Y02050013
+4003010Y0205,Main wiring harness assy,1,5,Y02050013
 4003010Y0200,Main wiring harness assy (Hall version),1,5,Y02050013
 4003010Y0201,Main wiring harness assy (Hall version) (ENI customized version),1,5,Y02050013
 S18606003,Hexagon bolt with flange,2,6,Y02050013
 S27348002,Cross-recessed half-round large head self-tapping screw,2,7,Y02050013
-4003020-Y01,Auxiliary dashboard wiring harness assy,1,8,Y02050013
+4003020Y0205,Auxiliary dashboard wiring harness assy,1,8,Y02050013
 4013010-Y01,Tailgate wiring harness assy,1,9,Y02050013
 4013010Y0200,Tailgate wiring harness assy (Hall version),1,9,Y02050013
 4013020-Y01,Rear bumper harness assembly,1,10,Y02050013
-4013020Y0201,Wiring harness assy  rear bumper (ENI customized version),1,10,Y02050013
 5200000-Y01,Wiper and Washer System,1,,Y02050014
-5205010-Y01,Wiper motor,1,1,Y02050014
+5205010Y200,Wiper motor,1,1,Y02050014
 S32006003,hexagon nut with flange,4,2,Y02050014
 5205020Y0200,Wiper arm (including nozzle leather hose),1,3,Y02050014
 5205030Y0200,Wiper blade,1,4,Y02050014
@@ -158,20 +151,20 @@ Q1860635,Hexagon bolts with flange M6X35,2,6,Y02050014
 5207020Y0200,Two-way hose assy,1,7,Y02050014
 5205040Y0200,Front wiper nut cap,1,8,Y02050014
 S32006003,hexagon nut with flange,1,9,Y02050014
-8100000-Y01,Air conditioning system,1,,Y02050015
-8103010-Y01,Electric compressor assembly,1,1,Y02050015
+8100000Y0205,Air conditioning system,1,,Y02050015
+8103010Y0205,Electric compressor assembly,1,1,Y02050015
 S32008001,hexagon nut with flange,4,2,Y02050015
 8103020-Y01,Compressor control unit,1,3,Y02050015
 S32006003,hexagon nut with flange,4,4,Y02050015
-8105010-Y01,Condenser assembly,1,5,Y02050015
+8105010Y0205,Condenser assembly,1,5,Y02050015
 8107010Y0205,HVAC assembly,1,6,Y02050015
 S32006003,hexagon nut with flange,3,7,Y02050015
 Q402B06,gasket,3,8,Y02050015
-8108010Y0101,Compressor suction pipe (EU filler),1,9,Y02050015
-8108020-Y01,Compressor exhaust pipe,1,10,Y02050015
-8108030Y0101,Fluid inlet pipe  evaporation tank,1,11,Y02050015
+8108010Y0205,Compressor suction pipe (EU filler),1,9,Y02050015
+8108020Y0205,Compressor exhaust pipe,1,10,Y02050015
+8108030Y0205,Fluid inlet pipe  evaporation tank,1,11,Y02050015
 S14606002,Hexagon head bolt  spring washer and plain washer assy,5,12,Y02050015
-8112010-Y01,Air conditioning control panel assembly,1,13,Y02050015
+8112010Y0205,Air conditioning control panel assembly,1,13,Y02050015
 S27342003,Cross recessed large half round head tapping screw 4.2 × 13,2,14,Y02050015
 Q1460625,Hexagon bolt  spring washer and plain washer assy,4,15,Y02050015
 S14606005,Hexagon bolt  spring washer and plain washer assy M6×16,2,16,Y02050015

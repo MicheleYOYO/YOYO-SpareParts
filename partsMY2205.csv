@@ -258,16 +258,16 @@ S40312001,Spring washer,2,33,Y02050019
 S18512003,Hexagon bolt with flange,1,38,Y02050019
 Q218B0810,Hexagon socket head cap screws,8,39,Y02050019
 3100000-Y01,Wheeling System,1,,Y02050020
-"3100100-Y01,""14"""" steel wheel assembly"",4,1,Y010021",,,,
+3100100-Y01,14" steel wheel assembly,4,1,Y02050020
 3100101-Y01,Tire (155/65-R14),1,2,Y02050020
 3100109-Y01,Winter tire (155/65-R14),1,2,Y02050020
 3100106-Y01,14”steel wheel,1,3,Y02050020
 3100102-Y01,Inflating valve,1,4,Y02050020
 3106107Y0240,Wheel nut (steel wheel),4,5,Y02050020
-"3100110-Y01,""15"""" aluminum wheel assembly"",4,6,Y010021",,,,
+3100110-Y01,""15"""" aluminum wheel assembly"",4,6,Y02050020
 3100111-Y01,Tire (155/60-R15),1,7,Y02050020
 3100112-Y01,All season tire (155/60-R15),1,7,Y02050020
-"3100105-Y01,""15"""" aluminum wheel"",1,8,Y010021",,,,
+3100105-Y01,""15"""" aluminum wheel"",1,8,Y02050020
 3100113-Y01TR413,Cycle valve,1,9,Y02050020
 3106106Y0240,Wheel nut (steel wheel),4,10,Y02050020
 3400000-Y01,Steering  system ,1,,Y02050021

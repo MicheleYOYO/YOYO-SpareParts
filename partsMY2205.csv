@@ -28,25 +28,25 @@ Q1461025,M10×25 Cross recessed hexagon bolt with indentation  single coil lock 
 2101030Y0201,Battery box assy (ENI customized version),1,,
 Q174B0530T1F,M5*30-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,4,,
 Q174B0310T1F,M3*10-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,3,,
-2109010-Y01,Control box  power system (formerly HV box),1,4,Y0205004
+2109010Y0205,Control box  power system (formerly HV box),1,4,Y0205004
 2109011-Y01,HV box casing,1,04-gen,Y0205004
 2109211-Y01,HV box cover,1,04-feb,Y0205004
 Q174B0410T1F,M4*10-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,8,04-mar,Y0205004
-2109012-Y01,+,1,04-apr,Y0205004
+2109119Y0205,Splitter,1,4-4,Y0205004
 Q174B0416T1F,M4*16-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,1,04-mag,Y0205004
 Q304B04,Outer hexagonal nut,1,04-giu,Y0205004
 2101012-Y01,HV sampling case,1,04-lug,Y0205004
 Q174B0414T1F,M4* 14- 304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,4,04-ago,Y0205004
-Q32004,Hexagon nut with flange,4,04-set,Y0205004
-2109015-Y01,150A relay,1,04-ott,Y0205004
+Q32004,Hexagon nut with flange,4,4-9,Y0205004
+2109015-Y01,150A relay,1,4-10,Y0205004
 Q174B0620T1F,M6* 20- 304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,2,04-nov,Y0205004
-2109016-Y01,50A relay,1,04-dic,Y0205004
+2109016-Y01,50A relay,1,4-12,Y0205004
 Q174B0620T1F,M6* 20- 304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,2,04-ott,Y0205004
-S32006003,hexagon nut with flange,2,apr-13,Y0205004
-2109017-Y01,20A relay,2,apr-14,Y0205004
+S32006003,hexagon nut with flange,2,4-13,Y0205004
+2109017-Y01,20A relay,2,4-14,Y0205004
 Q174B0416T1F,M4*16-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,4,04-mag,Y0205004
 Q32004,Hexagon nut with flange,4,apr-15,Y0205004
-2109018-Y01,300A 750V slow-blow fuse,1,apr-16,Y0205004
+2109018-Y01,300A 750V slow-blow fuse,1,4-16,Y0205004
 Q174B0818T1F,M8*18-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,2,apr-17,Y0205004
 2109119-Y01,50A 750V slow-blow fuse,1,apr-18,Y0205004
 Q174B0614T1F,M6*14-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,2,apr-19,Y0205004
@@ -56,7 +56,7 @@ Q174B0614T1F,M6*14-304 Cross recessed outer hexagonal bolt  single coil lock was
 Q174B0414T1F,M4* 14- 304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,6,04-giu,Y0205004
 Q32004,Hexagon nut with flange,6,04-set,Y0205004
 Q174B0614T1F,M6*14-304 Cross recessed outer hexagonal bolt  single coil lock washer and plain washer assemblies,2,apr-19,Y0205004
-2109113-Y01,Communications wiring harness  high-voltage box,1,apr-23,Y0205004
+2109113Y0205,Communications wiring harness  high-voltage box,1,apr-23,Y0205004
 S14606005,Hexagon bolt  spring washer and plain washer assy M6×16,4,,Y0205004
 2103000-Y01,Drive Motor Assembly,1,,Y0205005
 2103010-Y01,Motor (7.5KW),1,1,Y0205005
@@ -66,29 +66,24 @@ Q401B12,Plain washer,4,4,Y0205005
 S34012001,Hexagon nuts  style 1,4,5,Y0205005
 2103020-Y01,Phase line pressing plate,1,6,Y0205005
 S32006003,hexagon nut with flange,2,7,Y0205005
-2105000-Y01,High-Voltage Wiring Harness Assy,1,,Y0205006
+2105000Y0205,High-Voltage Wiring Harness Assy,1,,Y0205006
 2105010-Y01,Positive wiring harness  motor controller,1,1,Y0205006
 2105020-Y01,Negative wiring harness  motor controller,1,2,Y0205006
-2105030-Y01,High voltage wiring harness  auxiliary system,1,3,Y0205006
+2105030Y0205,High voltage wiring harness  auxiliary system,1,3,Y0205006
 2105040-Y01,Double-pipe clamping piece (Ф34),2,4,Y0205006
 S32006003,hexagon nut with flange,2,5,Y0205006
 2105050-Y01,Change-over wiring harness  power-off switch,1,6,Y0205006
 2105060-Y01,Dual-head hoop line card(19mm),1,7,Y0205006
-2107000-Y01,Charging system,1,,
-2107010-Y01,On-Board Charger(OBC),1,1,
-Q1460820,Hex bolt  spring washer and plain washer assy M8×20,4,2,
-2107020-Y01,European standard charging socket,1,3,
-S18606003,Hexagon bolt with flange,4,4,
-2105040-Y01,Double-pipe clamping piece (Ф34),4,5,
-S32006003,hexagon nut with flange,4,6,
-2107030-Y01,EV Charger (EN),1,7,
-2105060-Y01,Dual-head hoop line card(19mm),3,8,
-S32006003,hexagon nut with flange,3,9,
-2107040-Y01,Double-head charger (EN),1,10,
-2107050-Y01,Charging gun bag,1,11,
-2110000-Y01,DCDC Converter assy,1,,
-2110010-Y01,DCDC converter,1,1,
-S32006003,hexagon nut with flange,4,2,
+2107000Y0200,Charging system,1,
+2107060Y0200,OBC and DCDC assembly,1,	
+S18408006,Hexagon bolt with flange,1,	
+S18608002,Hexagon bolt with flange,2,
+2107070Y0200,OBC and DCDC assembly connecting bracket,1,
+S18608002,Hexagon bolt with flange,2,
+2107020Y0200,European standard charging base,1,
+2107030-Y01,EV Charger (EN),1,
+2107040-Y01,Double-head charger (EN),1,	
+2107050-Y01,Charging gun bag,1,
 2108000-Y01,VBU assembly,1,,Y0205008
 2108010-Y01,Vehicle control unit,1,1,Y0205008
 2108010Y0201,Vehicle control unit (ENI customized version),1,2,Y0205008

@@ -74,16 +74,16 @@ S32006003,hexagon nut with flange,2,7,Y0205005
 S32006003,hexagon nut with flange,2,5,Y0205006
 2105050-Y01,Change-over wiring harness  power-off switch,1,6,Y0205006
 2105060-Y01,Dual-head hoop line card(19mm),1,7,Y0205006
-2107000Y0200,Charging system,1,,
-2107060Y0200,OBC and DCDC assembly,1,,
-S18408006,Hexagon bolt with flange,1,,
-S18608002,Hexagon bolt with flange,2,,
-2107070Y0200,OBC and DCDC assembly connecting bracket,1,,
-S18608002,Hexagon bolt with flange,2,,
-2107020Y0200,European standard charging base,1,,
-2107030-Y01,EV Charger (EN),1,,
-2107040-Y01,Double-head charger (EN),1,,
-2107050-Y01,Charging gun bag,1,,
+2107000Y0200,Charging system,1,,Y0205007
+2107060Y0200,OBC and DCDC assembly,1,,Y0205007
+S18408006,Hexagon bolt with flange,1,,Y0205007
+S18608002,Hexagon bolt with flange,2,,Y0205007
+2107070Y0200,OBC and DCDC assembly connecting bracket,1,,Y0205007
+S18608002,Hexagon bolt with flange,2,,Y0205007
+2107020Y0200,European standard charging base,1,,Y0205007
+2107030-Y01,EV Charger (EN),1,,Y0205007
+2107040-Y01,Double-head charger (EN),1,,Y0205007
+2107050-Y01,Charging gun bag,1,,Y0205007
 2108000-Y01,VBU assembly,1,,Y0205008
 2108010-Y01,Vehicle control unit,1,1,Y0205008
 2108010Y0201,Vehicle control unit (ENI customized version),1,2,Y0205008

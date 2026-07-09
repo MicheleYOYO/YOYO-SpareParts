@@ -703,7 +703,11 @@ function mostraRicambi(){
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
             <td>${p.modelli.join(", ")}</td>
-            <td><button onclick="event.stopPropagation(); aggiungiALista('${p.codice}','${p.descrizione}',1)">➕</button></td>
+            <td>
+    <button onclick="event.stopPropagation(); aggiungiALista('${p.codice}','${p.descrizione}',1)">➕</button>
+    <button onclick="event.stopPropagation(); decrementaDaLista('${p.codice}')">➖</button>
+</td>
+
         </tr>`;
 });
 

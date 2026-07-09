@@ -434,7 +434,7 @@ function identificaModello(){
     if(!vinInput){
         modelloCorrente="";
         document.getElementById("risultatoVIN").innerText="Inserisci un VIN valido";
-        mostraRicambi();
+        Ricambi();
         return;
     }
 
@@ -466,7 +466,7 @@ function identificaModello(){
         salvaLista();
     }
 
-    mostraRicambi();
+    Ricambi();
 }
 
 /* ---------------- PARTS GENERALE ---------------- */
@@ -495,7 +495,7 @@ partsTable.push({
 });
 
     }
-    mostraRicambi();
+    Ricambi();
 }
 caricaParts();
 
@@ -695,8 +695,8 @@ async function caricaCoordinate(file){
     }
 }
 
-/* ---------------- MOSTRA RICAMBI ---------------- */
-function mostraRicambi(){
+/* ----------------  RICAMBI ---------------- */
+function Ricambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
     let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th><th>Aggiungi</th></tr>";
 
@@ -1210,8 +1210,10 @@ img.onload = function(){
             const ricambio = ricambi.find(r => r.esploso === fileName && r.id == id);
 
             coords[fileName][id].forEach(pt=>{
-                const m = document.createElement("div");
-                m.className = "marker";
+               const m = document.createElement("div");
+m.className = "marker";
+m.dataset.id = id;
+
 
                 const tip = document.createElement("div");
                 tip.className = "tooltip";

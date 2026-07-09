@@ -434,7 +434,7 @@ function identificaModello(){
     if(!vinInput){
         modelloCorrente="";
         document.getElementById("risultatoVIN").innerText="Inserisci un VIN valido";
-        Ricambi();
+        mostraRicambi();
         return;
     }
 
@@ -466,7 +466,7 @@ function identificaModello(){
         salvaLista();
     }
 
-    Ricambi();
+    mostraRicambi();
 }
 
 /* ---------------- PARTS GENERALE ---------------- */
@@ -495,7 +495,7 @@ partsTable.push({
 });
 
     }
-    Ricambi();
+    mostraRicambi();
 }
 caricaParts();
 
@@ -695,8 +695,8 @@ async function caricaCoordinate(file){
     }
 }
 
-/* ----------------  RICAMBI ---------------- */
-function Ricambi(){
+/* ---------------- MOSTRA RICAMBI ---------------- */
+function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
     let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th><th>Aggiungi</th></tr>";
 
@@ -1097,6 +1097,29 @@ body{
     cursor:pointer;
 }
 
+/* --- LISTA RICAMBI NEL POPUP --- */
+<div id="listaPopup" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 340px;
+    max-height: 600px;
+    overflow-y: auto;
+    background: #fff;
+    border: 2px solid #333;
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 9999;
+}
+#listaPopup h3{
+    margin-top:0;
+    font-size:18px;
+}
+.listaPopupItem{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:5px;
+}
 </style>
 </head>
 
@@ -1187,10 +1210,8 @@ img.onload = function(){
             const ricambio = ricambi.find(r => r.esploso === fileName && r.id == id);
 
             coords[fileName][id].forEach(pt=>{
-               const m = document.createElement("div");
-m.className = "marker";
-m.dataset.id = id;
-
+                const m = document.createElement("div");
+                m.className = "marker";
 
                 const tip = document.createElement("div");
                 tip.className = "tooltip";
@@ -1236,21 +1257,6 @@ m.dataset.id = id;
     }
 
     aggiornaListaPopup();
-    
-        /* --- EVIDENZIA IL RICAMBIO CLICCATO --- */
-    if (${idRicambio ? `"${idRicambio}"` : "null"}) {
-        const marker = container.querySelector(`.marker[data-id='${idRicambio}']`);
-        if (marker) {
-            marker.style.background = "rgba(255,255,0,0.7)";
-            marker.style.border = "2px solid #000";
-
-            setTimeout(() => {
-                marker.style.background = "rgba(255,255,0,0)";
-                marker.style.border = "2px solid rgba(0,0,0,0)";
-            }, 5000);
-        }
-    }
-
 };
 <\/script>
 

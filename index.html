@@ -626,6 +626,24 @@ async function caricaNomeSinotticiMY22(){
     }
 }
 caricaNomeSinotticiMY22();
+    
+/* ---------------- NOME SINOTTICI MY2205 ---------------- */
+let nomeSinotticiMY2205 = {};
+const NOMESINOTTICI_MY2205_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY2205.csv";
+
+async function caricaNomeSinotticiMY2205(){
+    const r = await fetch(NOMESINOTTICI_MY2205_URL);
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
+    for(let i=1; i<righe.length; i++){
+        const [id, nome] = righe[i].split(",");
+        if(id && nome){
+            nomeSinotticiMY2205[id.trim()] = nome.trim();
+        }
+    }
+}
+caricaNomeSinotticiMY2205();
 
 
 /* ---------------- MODEL MAP ---------------- */

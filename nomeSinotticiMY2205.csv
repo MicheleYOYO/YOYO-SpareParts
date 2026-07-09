@@ -1,13 +1,13 @@
 id,NOME
-Y02050001,Accelerating system
-Y02050002,Power battery assembly
-Y02050003,Drive motor assembly
-Y02050004,HV wire harness assembly
-Y02050005,Charging system
-Y02050006,Vehicle controller assembly
-Y02050007,Motor controller assembly
-Y02050008,Vehicle electronics
-Y02050009,Vehicle electrical equipment
+Y0205001,Accelerating system
+Y0205002,Power battery assembly
+Y0205003,Drive motor assembly
+Y0205004,HV wire harness assembly
+Y0205005,Charging system
+Y0205006,Vehicle controller assembly
+Y0205007,Motor controller assembly
+Y0205008,Vehicle electronics
+Y0205009,Vehicle electrical equipment
 Y02050010,Central screen assembly
 Y02050011,LV wire harness assembly
 Y02050012,Wiper washing system

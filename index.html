@@ -1259,6 +1259,21 @@ m.dataset.id = id;
     }
 
     aggiornaListaPopup();
+    
+        /* --- EVIDENZIA IL RICAMBIO CLICCATO --- */
+    if (${idRicambio ? `"${idRicambio}"` : "null"}) {
+        const marker = container.querySelector(`.marker[data-id='${idRicambio}']`);
+        if (marker) {
+            marker.style.background = "rgba(255,255,0,0.7)";
+            marker.style.border = "2px solid #000";
+
+            setTimeout(() => {
+                marker.style.background = "rgba(255,255,0,0)";
+                marker.style.border = "2px solid rgba(0,0,0,0)";
+            }, 5000);
+        }
+    }
+
 };
 <\/script>
 

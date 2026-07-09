@@ -40,7 +40,7 @@ S32008002,Hexagon nut with flange,4,MY23 MY22.5 MY24
 2912115-Y01,Brake lining,4,MY23 MY22 MY22.5
 2912116-Y01,Rear brake disc,2,MY23 MY22 MY22.5
 2912119Y0210,Nut filler plug,1,MY23
-2912120Y0210, Nut ?drain plug,1,MY23
+2912120Y0210, Nut drain plug,1,MY23
 2912121-Y01,Vent valve,1,MY23 MY22 MY22.5
 2912123-Y01,Left halfaxle,1,MY23 MY22 MY22.5
 2912124-Y01,Right halfaxle,1,MY23 MY22 MY22.5
@@ -190,8 +190,8 @@ S32006002,Hexagon nut with flange,2,MY23
 2108010Y0210,Vehicle control unit VBU,1,MY23
 2142010Y0210,Motor controller,1,MY23 MY24
 2142040Y0210,MCU grounding wire,1,MY23
-7925040-Y01,T-BOX?4G?,1,MY23 MY22 MY22.5
-7925040Y0210,T-BOX?4G?,1,MY23 MY24
+7925040-Y01,T-BOX (4G),1,MY23 MY22 MY22.5
+7925040Y0210,T-BOX(4G),1,MY23 MY24
 2101100Y0210-Z002,Power Battery Box device,1,MY23
 2101019Y0210,Battery positive wire harness,1,MY23
 210101AY0210,Battery negative wiring harness,1,MY23
@@ -207,7 +207,7 @@ S32006002,Hexagon nut with flange,2,MY23
 2109211Y0210,40A relay,1,MY23
 2109018-Y01,300A slow-blow fuse,1,MY23 MY22 MY22.5
 2109111-Y01,20A slow-blow fuse,1,MY23 MY22 MY22.5
-2109112-Y01,75?100Wprecharge resistence,1,MY23 MY22 MY22.5
+2109112-Y01,75Ω-100W precharge resistance,1,MY23 MY22 MY22.5
 2109113Y0210,Communications wiring harness high-voltage box,1,MY23
 2109119-Y01,50A slow-blow fuse,2,MY23 MY22 MY22.5
 S14606005,Hexagon bolt spring washer and plain washer assy M6 16,4,MY23 MY22 MY22.5
@@ -227,7 +227,7 @@ S18608002,Hexagon bolt with flange,2,MY23 MY22 MY22.5
 2107030-Y01,EV Charger (EN),1,MY23 MY22 MY22.5 MY24
 2107040-Y01,Double-head charger (EN),1,MY23 MY22 MY22.5 MY24
 2107050-Y01,Charging gun bag,1,MY23 MY22 MY22.5 MY24
-3601010Y0210,Body control module?BCM?,1,MY23
+3601010Y0210,Body control module (BCM),1,MY23
 Q1860620,Hexagon bolt with flange,3,MY23 MY22 MY22.5
 3704010Y0210,Passive start switch,1,MY23 MY24
 3791020Y0210,PE switch (with antenna),1,MY23 MY24
@@ -659,7 +659,7 @@ Q174B0410T1F,M4*10-304 Cross recessed outer hexagonal bolt single coil lock wash
 5306142-Y01,Sponge strip (W12* T5),1,MY22 MY22.5
 Q1461025,M10 25 Cross recessed hexagon bolt with indentation single coil lock washer and plain washer assemblies,4,MY22
 2101020-Y01,Power battery module,3,MY22
-2101011-Y01,Battery sampling unit? BSU?,1,MY22
+2101011-Y01,Battery sampling unit  (BSU),1,MY22
 2109013-Y01,Left mounting bracket BSU,1,MY22
 2109014-Y01,Right mounting bracket BSU,1,MY22
 2101030-Y01,Switching mode special socket ,1,MY22
@@ -703,8 +703,8 @@ Q1460820,Hex bolt spring washer and plain washer assy M8 20,4,MY22 MY22.5
 2142000-Y01,Motor control unit assy,1,MY22
 2142010-Y01,Motor controller assembly,1,MY22 MY22.5
 3600000-Y01,Vehicle electronic Unit,1,MY22
-3601010-Y01,Body control module?BCM?,1,MY22
-3601010Y0200,Body control module?BCM?,1,MY22
+3601010-Y01,Body control module (BCM),1,MY22
+3601010Y0200,Body control module (BCM),1,MY22
 3601010Y0201,Body control module (BCM) (ENI customized version),1,MY22
 3700000-Y01,Vehicle Electrical Equipment,1,MY22
 3704010-Y01,Passive start switch,1,MY22 MY22.5
@@ -1235,10 +1235,10 @@ S18608007,Hexagon flange face bolt M8*150 silver Dacromet,2,MY24
 5101571Y0240,Torque beam mounting bracket assembly,1,MY24
 5101272Y0240,Upper mounting bracket condenser,2,MY24
 S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2,MY24
-5133832Y0280,Rear bumper mounting bracket ?,1,MY24
+5133832Y0280,Rear bumper mounting bracket,1,MY24
 5101850-Y01,Front suspension spring reinforced beam outer plate assembly - left,1,MY24
 5101860-Y01,Front suspension spring strengthens beam outer plate assembly - right,1,MY24
-5133834Y0280,Rear bumper mounting bracket ?,2,MY24
+5133834Y0280,Rear bumper mounting bracket,2,MY24
 5701090-Y01,Top stringer assembly,1,MY24
 5701011-Y01,Cover the front cross beam on the cover,1,MY24
 5701030-Y01,Roof front beam lower plate assembly,1,MY24
@@ -1253,7 +1253,7 @@ S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2
 5401303-Y01,Left pillar A strengthens the upper plate segment,1,MY24
 5401310-Y01,Upper left hinge reinforced plate assembly,1,MY24
 5401330-Y01,Left lower hinge reinforced plate assembly,1,MY24
-5401313Y0230,Headlight bracket ? - left assembly,1,MY24
+5401313Y0230,Headlight bracket - left assembly,1,MY24
 5401011-Y01,Left roof front beam connecting plate,1,MY24
 5401015-Y01,Left top side beam inner plate,1,MY24
 5401017-Y01,Left posterior medial segment,1,MY24
@@ -1269,15 +1269,15 @@ S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2
 5401304-Y01,Right pillar A strengthens the upper plate segment,1,MY24
 5401320-Y01,Right upper hinge reinforcing plate assembly,1,MY24
 5401340-Y01,Lower right hinge reinforcing plate assembly,1,MY24
-5401413Y0230,Headlight bracket ? - right assembly,1,MY24
+5401413Y0230,Headlight bracket - right assembly,1,MY24
 5401012-Y01,Right top front beam connecting plate,1,MY24
 5401016-Y01,Right top side beam inner plate,1,MY24
 5401018-Y01,Right side surrounding inferior posterior inner plate,1,MY24
 5401810Y0240,Upper panel assembly right side perimeter back inner panel,1,MY24
 5701038Y0240,Rear hinge reinforced plate right,1,MY24
-5130158Y0240,Battery bottom skeleton beam ? - left,1,MY24
-5130258Y0240,Battery bottom skeleton beam ? - right,1,MY24
-5101790Y0230,Middle floor lower beam assy ?,1,MY24
+5130158Y0240,Battery bottom skeleton beam - left,1,MY24
+5130258Y0240,Battery bottom skeleton beam - right,1,MY24
+5101790Y0230,Middle floor lower beam assy,1,MY24
 5301037-Y01,Mounting bracket assembly on the lower right of the front wall,1,MY24
 5101503-Y01,Rear repair cover plate support plate,1,MY24
 5101803-Y01,Rear floor seal - Left,1,MY24
@@ -1296,11 +1296,11 @@ S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2
 5101759Y0230,Handbrake mounting bracket assembly,1,MY24
 5130100Y0250,Rear left stringer assembly,1,MY24
 5130200Y0250,Rear right stringer assembly,1,MY24
-5130710Y0240,Rear floor skeleton beam ? assembly,1,MY24
-5130301Y0240,Rear floor skeleton stringer ? - left assembly,1,MY24
-5130401Y0240,Rear floor skeleton stringer ? - right assembly,1,MY24
-5130156Y0240,Rear left floor frame stringer ? patch plate,1,MY24
-5130256Y0240,Rear right floor frame stringer ? patch,1,MY24
+5130710Y0240,Rear floor skeleton beam assembly,1,MY24
+5130301Y0240,Rear floor skeleton stringer - left assembly,1,MY24
+5130401Y0240,Rear floor skeleton stringer - right assembly,1,MY24
+5130156Y0240,Rear left floor frame stringer patch plate,1,MY24
+5130256Y0240,Rear right floor frame stringer patch,1,MY24
 5301120Y0210,Accelerator pedal mounting bracket assembly,1,MY24
 5301400-Y01,Front wheel cover - right assembly,1,MY24
 5301300-Y01,Front wheel cover - left assembly,1,MY24
@@ -1336,17 +1336,17 @@ S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2
 5101278Y0240,Stringer reinforcing plate middle right,1,MY24
 5101650Y0240,Middle floor lower stringer left assembly,2,MY24
 5103760Y0240,Middle floor rear beam assembly,1,MY24
-5101770Y0240,Middle floor lower beam assembly ?,1,MY24
+5101770Y0240,Middle floor lower beam assembly,1,MY24
 5101910Y0240,Rear left swing arm mounting base assembly,1,MY24
 5101920Y0240,Rear right swing arm mounting base assembly,1,MY24
-5101981Y0240,Beam connector ? left assembly,1,MY24
-5101991Y0240,Beam connector ? right assembly,1,MY24
-5130128Y0240,Rear brake hose bracket left ?,2,MY24
-5104760-Y01,Middle floor lower beam assembly ?,1,MY24
+5101981Y0240,Beam connector left assembly,1,MY24
+5101991Y0240,Beam connector right assembly,1,MY24
+5130128Y0240,Rear brake hose bracket left,2,MY24
+5104760-Y01,Middle floor lower beam assembly,1,MY24
 5101175Y0230,Handbrake wire fixed bracket,1,MY24
 5301190Y0240,Front wall reinforcement beam assembly,1,MY24
 5301103Y0240,Front wall reinforcement under beam assembly,1,MY24
-5301140Y0205,Brake pedal mounting bracket ? assembly,1,MY24
+5301140Y0205,Brake pedal mounting bracket assembly,1,MY24
 5301050Y0250,Right wiper mounting bracket assembly,1,MY24
 5301510-Y01,Wiper holder assembly,1,MY24
 5301530-Y01,Front windshield upper beam assembly,1,MY24
@@ -1356,7 +1356,7 @@ S18608201,Hexagon flange bolt with guide M8*20*P1.25 Silver Dacromet 8.8 class,2
 5301971Y0230,VCU mounting bracket assembly,1,MY24
 5101125Y0230,Underfloor protection panel mounting bracket assembly,2,MY24
 S37110003,Rectangular nut M10*1.25 Dacromet 10 class,2,MY24
-5133812Y0250,Battery lower skeleton beam ?,1,MY24
+5133812Y0250,Battery lower skeleton beam,1,MY24
 5133820Y0280,Battery lower skeleton beam assembly,1,MY24
 5133992Y0210B,Front cover plate power battery box,1,MY24
 5133820Y0250,Battery lower skeleton beam assembly,1,MY24
@@ -1467,7 +1467,7 @@ S99008001,Hexagon flange nut M8 Silver Dacromet,4,MY24
 6309102Y0240,Mounting bracket pneumatic stay bar tailgate- right,1,MY24
 Z6900100Y0230,Front left seat assembly,1,MY24
 Z6900200Y0230,Front right seat assembly,1,MY24
-S40210002,Large washer ?10 black Dacromet,4,MY24
+S40210002,Large washer Φ10 black Dacromet,4,MY24
 8201010Y0205,Inner rear-view mirror,1,MY24
 8204010Y0230,Sun visor assembly,2,MY24
 5606032Y0210,Handle front charging port cap lock,1,MY24
@@ -1480,8 +1480,8 @@ S40210002,Large washer ?10 black Dacromet,4,MY24
 4121901Y0210,H7 bulb,2,MY24
 4121903Y0210,Rear cover front left combination light,2,MY24
 4121020Y0210,Front right combination light assy (Thick-walled part of daytime running light),1,MY24
-5111020Y0280,Hot melt ?20 hole plug,4,MY24
-5111040Y0280,Hot melt ?40 hole plug,4,MY24
-5107018Y0210,Hole sticker ?25,18,MY24
+5111020Y0280,Hot melt Φ20 hole plug,4,MY24
+5111040Y0280,Hot melt Φ40 hole plug,4,MY24
+5107018Y0210,Hole sticker Φ25,18,MY24
 5107101Y0240,?25 Special plug cover for sliding and cocking holes,2,MY24
 5302105Y0230,Filler cap tool,1,MY24

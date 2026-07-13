@@ -195,8 +195,9 @@ th{background:#eee;}
     font-weight: bold;
     font-size: 14px;
 }
- /* Pulsanti mini per tabella ricambi */
-.btnMini {
+/* Stile unificato per tutti i pulsanti + e - */
+.btnMini,
+.qtyBtn {
     width: 20px;
     height: 20px;
     border-radius: 4px;
@@ -211,9 +212,11 @@ th{background:#eee;}
     transition: 0.2s;
 }
 
-.btnMini:hover {
+.btnMini:hover,
+.qtyBtn:hover {
     background: #ccc;
 }
+
    
  /* Popup scelta modello per esploso */
 .popupModelli {

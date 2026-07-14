@@ -212,6 +212,28 @@ table td {
     gap: 6px;
 }
 
+.listaItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.listaInfo {
+    max-width: 200px;      /* NON allarghiamo il box */
+    font-size: 12px;       /* font ridotto di 2 punti */
+    line-height: 1.2;
+}
+
+.listaCodice {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.listaDescrizione {
+    white-space: normal;      /* permette il testo su più righe */
+    word-wrap: break-word;    /* va a capo se troppo lunga */
+}
 
    
  /* Popup scelta modello per esploso */
@@ -340,16 +362,21 @@ function renderListaRicambi(){
 
     listaRicambi.forEach(item=>{
         box.innerHTML += `
-            <div class="listaItem">
-                <span>${item.codice}</span>
+<div class="listaItem">
 
- <div class="qtyControls">
-    <button class="btnMini" onclick="decrementaDaLista('${item.codice}')">➖</button>
-    <span class="qtyValue">${item.quantita}</span>
-    <button class="btnMini" onclick="incrementaDaLista('${item.codice}')">➕</button>
+    <div class="listaInfo">
+        <div class="listaCodice">${item.codice}</div>
+        <div class="listaDescrizione">${item.descrizione}</div>
+    </div>
+
+    <div class="qtyControls">
+        <button class="btnMini" onclick="decrementaDaLista('${item.codice}')">➖</button>
+        <span class="qtyValue">${item.quantita}</span>
+        <button class="btnMini" onclick="incrementaDaLista('${item.codice}')">➕</button>
+    </div>
+
 </div>
 
-            </div>
         `;
     });
 

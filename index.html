@@ -448,10 +448,13 @@ function identificaModello(){
         }
     }
 
-    if(!modelloCorrente){
-        document.getElementById("risultatoVIN").innerText="VIN non trovato nei range";
-    } else {
-        document.getElementById("risultatoVIN").innerText="Modello identificato: "+modelloCorrente;
+   if(!modelloCorrente){
+    document.getElementById("risultatoVIN").innerText = "VIN non trovato nei range";
+} else {
+    const modelloMY = MODEL_MAP[modelloCorrente] || "Modello sconosciuto";
+    document.getElementById("risultatoVIN").innerText =
+        "Modello identificato: " + modelloCorrente + " (" + modelloMY + ")";
+
 
         /* GENERA NOME LISTA = VIN + data + ora */
         const now = new Date();

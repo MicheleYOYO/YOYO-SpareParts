@@ -1,84 +1,84 @@
-id;NOME
-Y0205001;Sistema di accelerazione
-Y0205002;Assieme batteria di trazione
-Y0205003;Assieme motore di trazione
-Y0205004;Assieme cablaggio alta tensione
-Y0205005;Sistema di ricarica
-Y0205006;Assieme controller veicolo
-Y0205007;Assieme controller motore
-Y0205008;Elettronica veicolo
-Y0205009;Equipaggiamento elettrico veicolo
-Y02050010;Assieme schermo centrale
-Y02050011;Assieme cablaggio bassa tensione
-Y02050012;Sistema tergi e lavavetri
-Y02050013;Sistema climatizzazione
-Y02050014;Apparecchi audio?video e comunicazione
-Y02050015;Sistema sospensione anteriore (I)
-Y02050016;Sistema sospensione anteriore (II)
-Y02050017;Sistema sospensione posteriore
-Y02050018;Sistema ruote
-Y02050019;Sistema sterzo
-Y02050020;Sistema frenante (I)
-Y02050021;Sistema frenante (II)
-Y02050022;Sistema frenante (III)
-Y02050023;Assieme scocca grezza (body?in?white)
-Y02050024;Assieme pannelli di accesso
-Y02050025;Assieme staffa di fissaggio batteria
-Y02050026;Assieme staffe montaggio longheroni laterali
-Y02050027;Assieme staffa montaggio condensatore
-Y02050028;Assieme porte sinistra e destra
-Y02050029;Assieme portellone posteriore
-Y02050030;Assieme staffa centrale paraurti posteriore
-Y02050031;Assieme staffa tubo freno posteriore a due componenti
-Y02050032;Assieme scocca grezza (body?in?white)
-Y02050033;Assieme scocca grezza (body?in?white)
-Y02050034;Assieme traversa cruscotto
-Y02050035;Sistema elementi di chiusura
-Y02050036;Sistema barra di sostegno portellone
-Y02050037;Assieme guida con rivestimento in gomma
-Y02050038;Sistema meccanismo di chiusura
-Y02050039;Sistema di tenuta
-Y02050040;Sistema alzacristalli
-Y02050041;Sistema maniglia esterna
-Y02050042;Sistema specchietto retrovisore esterno
-Y02050043;Sistema cerniere paraurti posteriore
-Y02050044;Sistema catarifrangenti
-Y02050045;Tubo convogliatore anteriore
-Y02050046;Assieme pedana di benvenuto
-Y02050047;Sistema parasole
-Y02050048;Sistema cinture di sicurezza
-Y02050049;Sistema specchietto retrovisore interno
-Y02050050;Assieme accessori cruscotto ausiliari
-Y02050051;Sistema maniglia interna porta
-Y02050052;Sistema sedili
-Y02050053;Attrezzi di bordo
-Y02050054;Assieme cordino tasca porta
-Y02050055;Assieme piano di carico posteriore
-Y02050056;Assieme membrana impermeabile porta
-Y02050057;Assieme blocco in gomma alzacristalli
-Y02050058;Segnaletica veicolo
-Y02050059;Sistema illuminazione
-Y02050060;Sistema copertura superiore
-Y02050061;Sistema modanature esterne laterali (I)
-Y02050062;Sistema modanature esterne laterali (II)
-Y02050063;Sistema parafango
-Y02050064;Sistema modanatura inferiore parabrezza
-Y02050065;Sistema rivestimento vano anteriore
-Y02050066;Sistema copertura presa di ricarica
-Y02050067;Sistema paraurti anteriore
-Y02050068;Sistema paraurti posteriore
-Y02050069;Sistema cruscotto (I)
-Y02050070;Sistema cruscotto (II)
-Y02050071;Sistema cruscotto (III)
-Y02050072;Sistema copertura devioluci
-Y02050073;Sistema console
-Y02050074;Sistema protezione montante
-Y02050075;Sistema rivestimento cielo interno
-Y02050076;Sistema porta anteriore (I)
-Y02050077;Sistema porta anteriore (II)
-Y02050078;Sistema portellone
-Y02050079;Sistema protezione inferiore
-Y02050080;Sistema paraspruzzi
-Y02050081;Assieme coppa decorativa ruota in acciaio (optional)
-Y02050082;Sistema parabrezza
-Y02050083;Sistema moquette / tappetini
+id,NOME
+Y0205001,Sistema di accelerazione
+Y0205002,Assieme batteria di trazione
+Y0205003,Assieme motore di trazione
+Y0205004,Assieme cablaggio alta tensione
+Y0205005,Sistema di ricarica
+Y0205006,Assieme controller veicolo
+Y0205007,Assieme controller motore
+Y0205008,Elettronica veicolo
+Y0205009,Equipaggiamento elettrico veicolo
+Y02050010,Assieme schermo centrale
+Y02050011,Assieme cablaggio bassa tensione
+Y02050012,Sistema tergi e lavavetri
+Y02050013,Sistema climatizzazione
+Y02050014,Apparecchi audio?video e comunicazione
+Y02050015,Sistema sospensione anteriore (I)
+Y02050016,Sistema sospensione anteriore (II)
+Y02050017,Sistema sospensione posteriore
+Y02050018,Sistema ruote
+Y02050019,Sistema sterzo
+Y02050020,Sistema frenante (I)
+Y02050021,Sistema frenante (II)
+Y02050022,Sistema frenante (III)
+Y02050023,Assieme scocca grezza (body?in?white)
+Y02050024,Assieme pannelli di accesso
+Y02050025,Assieme staffa di fissaggio batteria
+Y02050026,Assieme staffe montaggio longheroni laterali
+Y02050027,Assieme staffa montaggio condensatore
+Y02050028,Assieme porte sinistra e destra
+Y02050029,Assieme portellone posteriore
+Y02050030,Assieme staffa centrale paraurti posteriore
+Y02050031,Assieme staffa tubo freno posteriore a due componenti
+Y02050032,Assieme scocca grezza (body?in?white)
+Y02050033,Assieme scocca grezza (body?in?white)
+Y02050034,Assieme traversa cruscotto
+Y02050035,Sistema elementi di chiusura
+Y02050036,Sistema barra di sostegno portellone
+Y02050037,Assieme guida con rivestimento in gomma
+Y02050038,Sistema meccanismo di chiusura
+Y02050039,Sistema di tenuta
+Y02050040,Sistema alzacristalli
+Y02050041,Sistema maniglia esterna
+Y02050042,Sistema specchietto retrovisore esterno
+Y02050043,Sistema cerniere paraurti posteriore
+Y02050044,Sistema catarifrangenti
+Y02050045,Tubo convogliatore anteriore
+Y02050046,Assieme pedana di benvenuto
+Y02050047,Sistema parasole
+Y02050048,Sistema cinture di sicurezza
+Y02050049,Sistema specchietto retrovisore interno
+Y02050050,Assieme accessori cruscotto ausiliari
+Y02050051,Sistema maniglia interna porta
+Y02050052,Sistema sedili
+Y02050053,Attrezzi di bordo
+Y02050054,Assieme cordino tasca porta
+Y02050055,Assieme piano di carico posteriore
+Y02050056,Assieme membrana impermeabile porta
+Y02050057,Assieme blocco in gomma alzacristalli
+Y02050058,Segnaletica veicolo
+Y02050059,Sistema illuminazione
+Y02050060,Sistema copertura superiore
+Y02050061,Sistema modanature esterne laterali (I)
+Y02050062,Sistema modanature esterne laterali (II)
+Y02050063,Sistema parafango
+Y02050064,Sistema modanatura inferiore parabrezza
+Y02050065,Sistema rivestimento vano anteriore
+Y02050066,Sistema copertura presa di ricarica
+Y02050067,Sistema paraurti anteriore
+Y02050068,Sistema paraurti posteriore
+Y02050069,Sistema cruscotto (I)
+Y02050070,Sistema cruscotto (II)
+Y02050071,Sistema cruscotto (III)
+Y02050072,Sistema copertura devioluci
+Y02050073,Sistema console
+Y02050074,Sistema protezione montante
+Y02050075,Sistema rivestimento cielo interno
+Y02050076,Sistema porta anteriore (I)
+Y02050077,Sistema porta anteriore (II)
+Y02050078,Sistema portellone
+Y02050079,Sistema protezione inferiore
+Y02050080,Sistema paraspruzzi
+Y02050081,Assieme coppa decorativa ruota in acciaio (optional)
+Y02050082,Sistema parabrezza
+Y02050083,Sistema moquette / tappetini

@@ -1,921 +1,921 @@
-﻿codice;descrizione;quantita;id;esploso
-1108001-Y01;Sistema accelerazione;1;;Y01001
-1108010-Y01;Pedale acceleratore elettrico;1;1;Y01001
-Q1860625;Bullone esagonale con flangia;3;2;Y01001
-2101000-Y01;Assieme batteria di potenza;;;Y01002
-2101000-Y0201;Assieme batteria di potenza (con serratura batteria) (versione ENI);;;Y01002
-2101010-Y01;Scatola batteria di potenza;1;1;Y01002
-2101010Y0201;Scatola batteria di potenza;;;Y01002
-2101013-Y01;Boccola anti?attrito;6;01-feb;Y01002
-2101017-Y01;Bullone antifurto scatola batteria;2;01-mar;Y01002
-2101018-Y01;Piastra copertura scatola batteria;1;01-apr;Y01002
-2101018Y0201;Piastra copertura scatola batteria (con serratura batteria) (versione ENI);;;Y01002
-2101019-Y01;Cablaggio positivo batteria;1;01-mag;Y01002
-210101A-Y01;Cablaggio negativo batteria;1;01-giu;Y01002
-210101B-Y01;Fast?plug scatola batteria;1;01-lug;Y01002
-210101C-Y01;Cablaggio comunicazione scatola batteria;1;01-ago;Y01002
-210101H-Y01;Linea collegamento moduli;2;01-set;Y01002
-Q174B0614T1F;Bullone esagonale esterno M6 14 con rondella elastica e rondella piana;6;01-ott;Y01002
-Q174B0425T1F;Bullone esagonale esterno M4 25 con rondella elastica e rondella piana;12;01-nov;Y01002
-Q174B0410T1F;Bullone esagonale esterno M4 10 con rondella elastica e rondella piana;8;01-dic;Y01002
-5306142-Y01;Striscia spugna (W12*T5);;gen-13;Y01002
-Q1461025;Bullone esagonale M10 25 con rondella elastica e rondella piana;4;;Y01002
-2101020-Y01;Modulo batteria di potenza;3;3;Y01003
-2101011-Y01;Unit  campionamento batteria (BSU);1;03-gen;Y01003
-2109013-Y01;Staffa montaggio BSU sinistra;1;03-feb;Y01003
-2109014-Y01;Staffa montaggio BSU destra;1;03-mar;Y01003
-2101030-Y01;Presa speciale modalit  commutazione;1;;
-2101030Y0201;Assieme scatola batteria (versione ENI);1;;
-Q174B0530T1F;Bullone esagonale esterno M5 30 con rondella elastica e rondella piana;4;;
-Q174B0310T1F;Bullone esagonale esterno M3 10 con rondella elastica e rondella piana;3;;
-2109010-Y01;Scatola controllo sistema di potenza (ex HV box);1;4;Y01004
-2109011-Y01;Involucro HV box;1;04-gen;Y01004
-2109211-Y01;Coperchio HV box;1;04-feb;Y01004
-Q174B0410T1F;Bullone esagonale esterno M4 10 con rondella elastica e rondella piana;8;04-mar;Y01004
-2109012-Y01;Sensore corrente;1;04-apr;Y01004
-Q174B0416T1F;Bullone esagonale esterno M4 16 con rondella elastica e rondella piana;1;04-mag;Y01004
-Q304B04;Dado esagonale esterno;1;04-giu;Y01004
-2101012-Y01;Scatola campionamento HV;1;04-lug;Y01004
-Q174B0414T1F;Bullone esagonale esterno M4 14 con rondella elastica e rondella piana;4;04-ago;Y01004
-Q32004;Dado esagonale con flangia;4;04-set;Y01004
-2109015-Y01;Rel  150A;1;04-ott;Y01004
-Q174B0620T1F;Bullone esagonale esterno M6 20 con rondella elastica e rondella piana;2;04-nov;Y01004
-2109016-Y01;Rel  50A;1;04-dic;Y01004
-Q174B0620T1F;Bullone esagonale esterno M6 20 con rondella elastica e rondella piana;2;04-ott;Y01004
-S32006003;Dado esagonale con flangia;2;apr-13;Y01004
-2109017-Y01;Rel  20A;2;apr-14;Y01004
-Q174B0416T1F;Bullone esagonale esterno M4 16 con rondella elastica e rondella piana;4;04-mag;Y01004
-Q32004;Dado esagonale con flangia;4;apr-15;Y01004
-2109018-Y01;Fusibile ritardato 300A 750V;1;apr-16;Y01004
-Q174B0818T1F;Bullone esagonale esterno M8 18 con rondella elastica e rondella piana;2;apr-17;Y01004
-2109119-Y01;Fusibile ritardato 50A 750V;1;apr-18;Y01004
-Q174B0614T1F;Bullone esagonale esterno M6 14 con rondella elastica e rondella piana;2;apr-19;Y01004
-2109111-Y01;Fusibile ritardato 20A 750V;1;apr-20;Y01004
-Q174B0614T1F;Bullone esagonale esterno M6 14 con rondella elastica e rondella piana;2;apr-19;Y01004
-2109112-Y01;Resistenza precarica 75? 100W;1;apr-21;Y01004
-Q174B0414T1F;Bullone esagonale esterno M4 14 con rondella elastica e rondella piana;6;04-giu;Y01004
-Q32004;Dado esagonale con flangia;6;04-set;Y01004
-Q174B0614T1F;Bullone esagonale esterno M6 14 con rondella elastica e rondella piana;2;apr-19;Y01004
-2109113-Y01;Cablaggio comunicazione scatola alta tensione;1;apr-23;Y01004
-S14606005;Bullone esagonale con rondella elastica e rondella piana M6 16;4;;Y01004
-2103000-Y01;Assieme motore di trazione;1;;Y01005
-2103010-Y01;Motore (7.5KW);1;1;Y01005
-Q1841255;Bullone esagonale con flangia;4;2;Y01005
-S40312001;Rondella elastica;4;3;Y01005
-Q401B12;Rondella piana;4;4;Y01005
-S34012001;Dado esagonale tipo 1;4;5;Y01005
-2103020-Y01;Piastra pressacavo linea di fase;1;6;Y01005
-S32006003;Dado esagonale con flangia;2;7;Y01005
-2105000-Y01;Assieme cablaggio alta tensione;1;;Y01006
-2105010-Y01;Cablaggio positivo controller motore;1;1;Y01006
-2105020-Y01;Cablaggio negativo controller motore;1;2;Y01006
-2105030-Y01;Cablaggio alta tensione sistema ausiliario;1;3;Y01006
-2105040-Y01;Clip doppio tubo ( 34);2;4;Y01006
-S32006003;Dado esagonale con flangia;2;5;Y01006
-2105050-Y01;Cablaggio commutazione interruttore power?off;1;6;Y01006
-2105060-Y01;Clip doppia testa (19mm);1;7;Y01006
-2107000-Y01;Sistema di ricarica;1;;Y01007
-2107010-Y01;Caricatore di bordo (OBC);1;1;Y01007
-Q1460820;Bullone M8 20 con rondella elastica e rondella piana;4;2;Y01007
-2107020-Y01;Presa di ricarica standard europea;1;3;Y01007
-S18606003;Bullone esagonale con flangia;4;4;Y01007
-2105040-Y01;Clip doppio tubo ( 34);4;5;Y01007
-S32006003;Dado esagonale con flangia;4;6;Y01007
-2107030-Y01;Caricatore EV (EN);1;7;Y01007
-2105060-Y01;Clip doppia testa (19mm);3;8;Y01007
-S32006003;Dado esagonale con flangia;3;9;Y01007
-2107040-Y01;Caricatore doppia testa (EN);1;10;Y01007
-2107050-Y01;Borsa pistola di ricarica;1;11;Y01007
-2110000-Y01;Assieme convertitore DCDC;1;;Y01008
-2110010-Y01;Convertitore DCDC;1;1;Y01008
-S32006003;Dado esagonale con flangia;4;2;Y01008
-2108000-Y01;Assieme VCU;1;;Y01009
-2108010-Y01;Unit  controllo veicolo;1;1;Y01009
-2108010Y0201;Unit  controllo veicolo (versione ENI);1;2;Y01009
-S32006003;Dado esagonale con flangia;4;3;Y01009
-2142000-Y01;Assieme unit  controllo motore;1;;Y010010
-2142010-Y01;Assieme controller motore;1;1;Y010010
-Q1460820;Bullone M8 20 con rondella elastica e rondella piana;4;2;Y010010
-3600000-Y01;Unit  elettronica veicolo;1;;Y010011
-3601010-Y01;Modulo controllo carrozzeria (BCM);1;1;Y010011
-3601010Y0200;Modulo controllo carrozzeria (BCM);1;1;Y010011
-3601010Y0201;Modulo controllo carrozzeria (BCM) (versione ENI);1;1;Y010011
-S32006003;Dado esagonale con flangia;2;2;Y010011
-3700000-Y01;Equipaggiamento elettrico veicolo;1;;Y010012
-3703010-Y01;Batteria 12V;1;1;Y010012
-3704010-Y01;Interruttore avvio passivo;1;2;Y010012
-3721010-Y01;Clacson alta tonalit ;1;3;Y010012
-Q1860630;Bullone esagonale con flangia M6 30;1;4;Y010012
-3736010-Y01;Interruttore power?off;1;5;Y010012
-3736011-Y01;Protezione interruttore power?off;1;;Y010012
-S14606005;Bullone M6 16 con rondella elastica e rondella piana;2;6;Y010012
-3746010-Y01;Interruttore comando alzacristalli;2;9;Y010012
-3766010-Y01;Interruttore avviso;1;10;Y010012
-3774010-Y01;Assieme interruttore combinato;1;11;Y010012
-S23004001;Vite testa cilindrica a croce;2;12;Y010012
-3778010-Y01;Blocco volante;1;13;Y010012
-3781010-Y01;Interruttore marce;1;14;Y010012
-3781010-Y01-A;Interruttore marce (senza posizione S);1;;Y010012
-3782010-Y01;Interruttore regolazione specchietto retrovisore elettrico;1;15;Y010012
-3790010-Y01;Cilindro serratura porta sinistra;1;16;Y010012
-3790030-Y01;Anello fermo cilindro serratura porta sinistra;1;17;Y010012
-3790020-Y01;Interruttore apertura portellone;1;18;Y010012
-3791010-Y01;Telecomando;2;19;Y010012
-3791010Y0201;Telecomando (versione ENI);1;;Y010012
-3791020-Y01;Interruttore PE (con antenna);1;20;Y010012
-3504102-Y01;Interruttore freno;2;21;Y010012
-3721020-Y01;Allarme bassa velocit  (AVAS);1;24;Y010012
-S32006003;Dado esagonale con flangia;2;;Y010012
-ST0205;Vite autofilettante a croce M2 5;2;;Y010012
-3820000-Y01;Assieme schermo centrale;1;;Y010013
-3820010-Y01;Schermo centrale (7 pollici);1;1;Y010013
-3820020Y0202;Schermo centrale (7 pollici);1;;Y010013
-3820000Y0201;Assieme schermo centrale (versione ENI);1;;Y010013
-3820010Y0201;Schermo centrale (7 pollici) (versione ENI);1;1;Y010013
-3820020Y0203;Schermo centrale (7 pollici) (versione ENI);1;;Y010013
-S27348002;Vite autofilettante testa larga semitonda a croce;4;2;Y010013
-3820012-Y01;Supporto telefono;1;3;Y010013
-4000000-Y01;Assieme cablaggio bassa tensione;1;;Y010014
-4002010-Y01;Cablaggio vano anteriore;1;1;Y010014
-4002010Y0201;Assieme cablaggio vano anteriore (versione ENI);1;1;Y010014
-4002020-Y01;Assieme cablaggio tetto;1;2;Y010014
-4002020Y0200;Assieme cablaggio tetto (versione Hall);1;2;Y010014
-4002030-Y01;Assieme cablaggio porta sinistra;1;3;Y010014
-4002030Y0200;Assieme cablaggio porta sinistra (versione Hall);1;3;Y010014
-4002040-Y01;Assieme cablaggio porta destra;1;4;Y010014
-4002040Y0200;Assieme cablaggio porta destra (versione Hall);1;4;Y010014
-4003010-Y01;Assieme cablaggio principale;1;5;Y010014
-4003010Y0200;Assieme cablaggio principale (versione Hall);1;5;Y010014
-4003010Y0201;Assieme cablaggio principale (versione Hall) (versione ENI);1;5;Y010014
-S18606003;Bullone esagonale con flangia;2;6;Y010014
-S27348002;Vite autofilettante testa larga semitonda a croce;2;7;Y010014
-4003020-Y01;Assieme cablaggio cruscotto ausiliario;1;8;Y010014
-4013010-Y01;Assieme cablaggio portellone;1;9;Y010014
-4013010Y0200;Assieme cablaggio portellone (versione Hall);1;9;Y010014
-4013020-Y01;Assieme cablaggio paraurti posteriore;1;10;Y010014
-4013020Y0201;Assieme cablaggio paraurti posteriore (versione ENI);1;10;Y010014
-5200000-Y01;Sistema tergicristallo e lavavetri;1;;Y010015
-5205010-Y01;Motore tergicristallo;1;1;Y010015
-S32006003;Dado esagonale con flangia;4;2;Y010015
-5205020Y0200;Braccio tergicristallo (con tubo ugello);1;3;Y010015
-5205030Y0200;Lama tergicristallo;1;4;Y010015
-5207010-Y01;Assieme vaschetta lavavetri (con tubo acqua);1;5;Y010015
-Q1860635;Bulloni esagonali con flangia M6 35;2;6;Y010015
-5207020Y0200;Assieme tubo a due vie;1;7;Y010015
-5205040Y0200;Cappuccio dado tergicristallo anteriore;1;8;Y010015
-S32006003;Dado esagonale con flangia;1;9;Y010015
-8100000-Y01;Sistema climatizzazione;1;;Y010016
-8103010-Y01;Assieme compressore elettrico;1;1;Y010016
-S32008001;Dado esagonale con flangia;4;2;Y010016
-8103020-Y01;Unit  controllo compressore;1;3;Y010016
-S32006003;Dado esagonale con flangia;4;4;Y010016
-8105010-Y01;Assieme condensatore;1;5;Y010016
-8107010Y0205;Assieme HVAC;1;6;Y010016
-S32006003;Dado esagonale con flangia;3;7;Y010016
-Q402B06;Guarnizione;3;8;Y010016
-8108010Y0101;Tubo aspirazione compressore (EU filler);1;9;Y010016
-8108020-Y01;Tubo scarico compressore;1;10;Y010016
-8108030Y0101;Tubo ingresso fluido serbatoio evaporazione;1;11;Y010016
-S14606002;Bullone testa esagonale con rondella elastica e rondella piana;5;12;Y010016
-8112010-Y01;Assieme pannello controllo climatizzatore;1;13;Y010016
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;2;14;Y010016
-Q1460625;Bullone testa esagonale con rondella elastica e rondella piana;4;15;Y010016
-S14606005;Bullone M6 16 con rondella elastica e rondella piana;2;16;Y010016
-7900000-Y01;Dispositivo comunicazione informazioni;;;Y010017
-7903010-Y01;Antenna avvio;1;1;Y010017
-S32006003;Dado esagonale con flangia;2;2;Y010017
-7911010-Y01;Altoparlante;1;3;Y010017
-S27348002;Vite autofilettante testa larga semitonda a croce;4;4;Y010017
-7925040-Y01;T?BOX (4G);1;5;Y010017
-S32006003;Dado esagonale con flangia;2;6;Y010017
-7925020-Y01;USB cruscotto ausiliario;1;7;Y010017
-7925030-Y01;USB cruscotto;1;8;Y010017
-2901000-Y01;Sospensione anteriore;1;;Y010018
-2801100Y0210;Assieme telaio ausiliario anteriore;1;1;Y010018
-S18510001;Bullone esagonale con flangia;8;2;Y010018
-Q1841050TF61;Bulloni flangiati;8;;Y010018
-Q1461025;Bullone esagonale M10 25 con rondella elastica e rondella piana;8;;Y010018
-2904100Y0210;Assieme braccio oscillante anteriore;2; 3/4;Y010018
-S18510006;Dado esagonale all?metal a coppia prevalente con flangia;2;5;Y010018
-S33110001;Dado esagonale all?metal a coppia prevalente con flangia;2;6;Y010018
-Q32010;Dado esagonale con flangia;2;6;Y010018
-2906100-Y01;Assieme barra stabilizzatrice;1;7;Y010018
-2906101Y0210;Barra stabilizzatrice anteriore;1;8;Y010018
-2906102-Y01;Boccola barra stabilizzatrice;2;9;Y010018
-2906103Y0210;Staffa montaggio barra stabilizzatrice;2;10;Y010018
-2906105-Y01;Boccola terminale barra stabilizzatrice;4;11;Y010018
-2906108Y0210;Rondella grande  12;2;12;Y010018
-2906107-Y01;Rondella grande  16;2;13;Y010018
-S38312001;Dado scanalato esagonale tipo II;2;14;Y010018
-S50032001;Spina di sicurezza;2;15;Y010018
-Q1461030;Bullone testa esagonale con rondella elastica e rondella piana;4;16;Y010018
-2904101-Y01;Assieme ammortizzatore anteriore sinistro;1;1;Y010019
-2904102-Y01;Assieme ammortizzatore anteriore destro;1;2;Y010019
-S32008001;Dado esagonale con flangia;4;3;Y010019
-S18512001;Bullone esagonale con flangia;4;4;Y010019
-S33112001;Dado esagonale all?metal a coppia prevalente con flangia;4;5;Y010019
-3501101-Y01;Assieme freno anteriore sinistro con fusello sterzo;1;6;Y010019
-3501102-Y01;Assieme freno anteriore destro con fusello sterzo;1;7;Y010019
-3501113-Y01;Assieme pinza freno sinistra;1;8;Y010019
-3501112-Y01;Fusello sterzo sinistro;1;9;Y010019
-3501120-Y01;Pastiglia freno;4;10;Y010019
-3501115-Y01;Bullone montaggio staffa;4;11;Y010019
-3501123-Y01;Assieme pinza freno destra;1;12;Y010019
-3501122-Y01;Fusello sterzo destro;1;13;Y010019
-3501111-Y01;Disco freno anteriore;2;14;Y010019
-S18510005;Bullone esagonale con flangia;2;15;Y010019
-S33110001;Dado esagonale all?metal a coppia prevalente con flangia;2;16;Y010019
-3501118-Y01;Anello dentato ABS;2;17;Y010019
-3501119-Y01;Bulloni limitatori cuscinetto;2;18;Y010019
-2911000-Y01;Sospensione posteriore;1;;Y010020
-2912135-Y01;Rondella anello di ritegno;1;;Y010020
-2912100-Y01;Assieme asse di trasmissione posteriore;1;1;Y010020
-2912111-Y01;Tubo asse;1;2;Y010020
-2912112-Y01;Assieme riduttore principale;1;3;Y010020
-2912113-Y01;Pinza freno;1;4;Y010020
-2912114-Y01;Pinza freno;1;5;Y010020
-2912129-Y01;Bullone montaggio staffa;4;6;Y010020
-2912115-Y01;Pastiglia freno;4;7;Y010020
-2912116-Y01;Disco freno posteriore;2;8;Y010020
-2912166-Y01;Rondella tenuta motore;1;9;Y010020
-2912119-Y01;Tappo riempimento dado;1;10;Y010020
-2912132-Y01;Guarnizione tappo riempimento;;;Y010020
-2912120-Y01;Tappo scarico dado;1;11;Y010020
-2912133-Y01;Guarnizione tappo scarico;;;Y010020
-2912121-Y01;Valvola sfiato;1;12;Y010020
-2912123-Y01;Semiasse sinistro;1;13;Y010020
-2912124-Y01;Semiasse destro;1;14;Y010020
-2912125-Y01;Paraolio semiasse;2;15;Y010020
-2912126-Y01;Paraolio albero ingresso;1;16;Y010020
-2912127-Y01;Anello elastico foro;2;17;Y010020
-2912128-Y01;Parafango;2;18;Y010020
-2912118-Y01;Dado bloccaggio disco freno;2;19;Y010020
-Q5004036;Spina di sicurezza;2;20;Y010020
-2914300-Y01;Assieme barra di spinta;2;21;Y010020
-S18512004;Bullone esagonale con flangia;6;22;Y010020
-S33112001;Dado esagonale all?metal a coppia prevalente con flangia;10;23;Y010020
-Q1851020;Bullone esagonale con flangia;2;24;Y010020
-2912017-Y01;Staffa montaggio motore;1;25;Y010020
-S18606004;Bullone esagonale con flangia;2;26;Y010020
-2912130-Y01;Dado esagonale con flangia;2;27;Y010020
-2912131-Y01;Bullone esagonale con flangia;7;28;Y010020
-2915100-Y01;Ammortizzatore posteriore;2;29;Y010020
-S18512001;Bullone esagonale con flangia;2;30;Y010020
-S34012001;Dado esagonale tipo 1;2;31;Y010020
-S40212002;Rondella grande;2;32;Y010020
-S40312001;Rondella elastica;2;33;Y010020
-2912011-Y01;Molla elicoidale posteriore;2;34;Y010020
-2912012Y0210;Sede superiore montaggio molla posteriore;2;35;Y010020
-2912013Y0210;Tampone posteriore;2;36;Y010020
-2914200-Y01;Barra bilanciamento posteriore;1;37;Y010020
-S18512003;Bullone esagonale con flangia;1;38;Y010020
-Q218B0810;Vite testa cilindrica esagonale;8;39;Y010020
-3100000-Y01;Sistema ruote;1;;Y010021
-3100100-Y01;Assieme ruota acciaio 14 ;4;1;Y010021
-3100101-Y01;Pneumatico (155/65?R14);1;2;Y010021
-3100109-Y01;Pneumatico invernale (155/65?R14);1;2;Y010021
-3100106-Y01;Ruota acciaio 14 ;1;3;Y010021
-3100102-Y01;Valvola gonfiaggio;1;4;Y010021
-3106107Y0240;Dado ruota (cerchio acciaio);4;5;Y010021
-3100110-Y01;Assieme ruota alluminio 15 ;4;6;Y010021
-3100111-Y01;Pneumatico (155/60?R15);1;7;Y010021
-3100112-Y01;Pneumatico quattro stagioni (155/60?R15);1;7;Y010021
-3100105-Y01;Ruota alluminio 15 ;1;8;Y010021
-3100113-Y01TR413;Valvola ruota;1;9;Y010021
-3106106Y0240;Dado ruota (cerchio acciaio);4;10;Y010021
-3400000-Y01;Sistema sterzo;1;;Y010022
-3400101-Y01;Assieme scatola guida con tiranti;1;1;Y010022
-3400111-Y01;Corpo scatola guida con tirante interno;1;2;Y010022
-3400118-Y01;Staffa fermo;1;3;Y010022
-3400113-Y01;Testina sterzo;2;4;Y010022
-3400102-Y01;Assieme albero sterzo inferiore;1;5;Y010022
-3400103-Y01;Assieme colonna sterzo;1;6;Y010022
-3400134-Y01;Corpo volante;1;7;Y010022
-S18608002;Bullone esagonale con flangia;2;8;Y010022
-S18608005;Bullone esagonale con flangia;1;9;Y010022
-S32008001;Dado esagonale con flangia;1;10;Y010022
-S38312001;Dado scanalato esagonale tipo II;2;11;Y010022
-S50032001;Spina di sicurezza;2;12;Y010022
-S18608002;Bullone esagonale con flangia;2;13;Y010022
-Q1841050;Bullone esagonale con flangia;2;14;Y010022
-3400135-Y01;Copertura clacson;1;15;Y010022
-3400123-Y01;Colonna sterzo meccanica;1;16;Y010022
-3400124-Y01;Giunto universale colonna sterzo;1;17;Y010022
-3400125-Y01;Dado esagonale all?metal a coppia prevalente con flangia;1;18;Y010022
-3400126-Y01;Bullone testa esagonale;3;19;Y010022
-3400132-Y01;Assale inferiore sterzo;1;20;Y010022
-3400108-Y01;Protezione albero inferiore colonna sterzo;1;21;Y010022
-3400104-Y01;Assieme volante;1;22;Y010022
-3400114-Y01;Copertura antipolvere;2;23;Y010022
-3500000-Y01;Sistema frenante;1;;Y010023
-3508100-Y01;Assieme meccanismo freno di stazionamento;1;1;Y010023
-3508101-Y01;Pedale freno di stazionamento;1;2;Y010023
-S51008001;Perno asse;1;;Y010023
-S50032001;Spina di sicurezza;1;;Y010023
-3508102-Y01;Cavo freno di stazionamento anteriore;1;3;Y010023
-3508103-Y01;Cavo freno di stazionamento posteriore sinistro;1;4;Y010023
-3508104-Y01;Cavo freno di stazionamento posteriore destro;1;5;Y010023
-S32008001;Dado esagonale con flangia;3;6;Y010023
-S18606003;Bullone esagonale con flangia;3;7;Y010023
-3506048-Y01;Anello fermamolla cavo freno di stazionamento;1;8;Y010023
-S50108001;Perno di bloccaggio;1;9;Y010023
-3540102-Y01;Assieme serbatoio vuoto;1;1;Y010024
-3540121-Y01;Serbatoio vuoto;1;2;Y010024
-3540122-Y01;Tappo di tenuta;1;3;Y010024
-3540123-Y01;Assieme controller;1;4;Y010024
-3540124-Y01;Tubo silicone (655);1;5;Y010024
-3540125-Y01;Fascetta tubo;2;6;Y010024
-S18406003;Bullone esagonale con flangia;2;7;Y010024
-Q402B06;Guarnizione;2;8;Y010024
-Q67405100;Fascetta plastica;1;9;Y010024
-3540103-Y01;Assieme pompa vuoto elettronica;1;10;Y010024
-3540131-Y01;Pompa vuoto;1;11;Y010024
-3540132-Y01;Boccola anti?vibrazione;4;12;Y010024
-3540133-Y01;Tubo gomma 90 5mm;1;13;Y010024
-3540134-Y01;Filtro;1;14;Y010024
-3540135-Y01;Tubo gomma 115 5mm;1;15;Y010024
-3540136-Y01;Giunto a T;1;16;Y010024
-3540125-Y01;Fascetta tubo;8;17;Y010024
-Q1860630;Bulloni esagonali con flangia M6 30;4;18;Y010024
-3540101-Y01;Servofreno con cilindro maestro;1;1;Y010025
-3540111-Y01;Servofreno;1;2;Y010025
-3540113-Y01;Serbatoio olio freni;1;3;Y010025
-3540114-Y01;Tappo serbatoio liquido freni;5;4;Y010025
-3550101-Y01;Controller ABS;1;5;Y010025
-3550111-Y01;Boccola montaggio controller ABS;1;6;Y010025
-3506105-Y01;Anello fermamolla tubo freno;4;7;Y010025
-3506106-Y01;Bullone cavo (hollow bolt);4;8;Y010025
-3506112-Y01;Tubo freno posteriore;2;9;Y010025
-3504101-Y01;Assieme pedale freno;1;10;Y010025
-S32008001;Dado esagonale con flangia;4;11;Y010025
-Q1840820;Bullone esagonale con flangia;2;12;Y010025
-3506109-Y01;Tubo freno anteriore sinistro;1;13;Y010025
-3506111-Y01;Tubo freno anteriore destro;1;14;Y010025
-3506114-Y01;Tubo freno posteriore destro sezione anteriore;1;15;Y010025
-3506121-Y01;Tubo freno posteriore destro sezione posteriore;1;16;Y010025
-3506115-Y01;Tubo freno posteriore sinistro sezione anteriore;1;17;Y010025
-3506122-Y01;Tubo freno posteriore sinistro sezione posteriore;1;18;Y010025
-3506101-Y01;Tubo cilindro maestro ? ABS;2;19;Y010025
-3506113Y0210;Clip tubo doppio foro;4;20;Y010025
-3506116Y0210;Clip tubo foro singolo;4;21;Y010025
-3506107-Y01;Rondella in rame;8;22;Y010025
-3550300-Y01;Sensore velocit  ruota anteriore;2;23;Y010025
-3550302-Y01;Staffa sensore velocit  ruota anteriore;2;24;Y010025
-Q1860816;Bullone flangiato esagonale;4;25;Y010025
-S18606003;Bullone esagonale con flangia;2;26;Y010025
-S32006003;Dado esagonale con flangia;2;27;Y010025
-3550400-Y01;Sensore velocit  ruota posteriore;2;28;Y010025
-S18606003;Bullone esagonale con flangia;2;29;Y010025
-3506104-Y01;Tubo freno anteriore;2;30;Y010025
-5010010-Y01;Assieme scocca grezza;1;1;Y010026
-5101210-Y01;Assieme telaio vano anteriore;1;2;Y010026
-5101170-Y01;Assieme telaio pavimento intermedio;1;3;Y010026
-5101230-Y01;Assieme telaio pavimento posteriore;1;4;Y010026
-5101130-Y01;Assieme supporto molla sospensione anteriore sinistra;1;5;Y010026
-5101140-Y01;Assieme supporto molla sospensione anteriore destra;1;6;Y010026
-5301000-Y01;Assieme parete anteriore;1;7;Y010026
-5101750-Y01;Assieme vasca sedile;1;8;Y010026
-5101940-Y01;Assieme pavimento posteriore;1;9;Y010026
-5601110-Y01;Assieme pannello esterno parete posteriore;1;10;Y010026
-5401350-Y01;Componente pannello interno montante A sinistro;1;11;Y010026
-5401360-Y01;Componente pannello interno montante A destro;1;12;Y010026
-5401230-Y01;Assieme pannello interno soglia sinistra;1;13;Y010026
-5401240-Y01;Assieme pannello interno soglia destra;1;14;Y010026
-5401030-Y01;Assieme pannello interno soglia lato sinistro;1;15;Y010026
-5401040-Y01;Assieme pannello interno soglia lato destro;1;16;Y010026
-5401010-Y01;Assieme parete laterale sinistra;1;17;Y010026
-5401020-Y01;Assieme parete laterale destra;1;18;Y010026
-5701010-Y01;Assieme copertura tetto;1;19;Y010026
-5101900-Y01;Assieme pannello accesso;1;;Y010027
-5101901-Y01;Pannello accesso;1;1;Y010027
-5101903-Y01;Guarnizione pannello accesso;1;2;Y010027
-S18606003;Bullone esagonale con flangia;4;3;Y010027
-5301813-Y01;Piastra di pressione;1;1;Y010028
-5301811-Y01;Tirante batteria;2;2;Y010028
-S32006003;Dado esagonale con flangia;2;3;Y010028
-5401170-Y01;Staffa montaggio componente trave tubolare sinistra;1;1;Y010029
-5401180-Y01;Staffa montaggio componente trave tubolare destra;1;2;Y010029
-S18606003;Bullone esagonale con flangia;8;3;Y010029
-5101273-Y01;Staffa montaggio condensatore;2;1;Y010030
-S18606003;Bullone esagonale con flangia;2;2;Y010030
-6101010-Y01;Assieme saldatura porta sinistra;1;1;Y010031
-6101020-Y01;Assieme saldatura porta destra;1;2;Y010031
-6106010-Y01;Cerniera superiore porta laterale;2;3;Y010031
-6106030-Y01;Cerniera inferiore porta laterale;2;4;Y010031
-S18608010;Bullone esagonale con flangia;16;5;Y010031
-6301710-Y01;Assieme traversa superiore telaio interno portellone;1;1;Y010032
-6301591-Y01;Piastra montaggio serratura portellone;1;2;Y010032
-6301552-Y01;Piastra montaggio tampone portellone destra;1;3;Y010032
-6301551-Y01;Piastra montaggio tampone portellone sinistra;1;4;Y010032
-6306310-Y01;Cerniera portellone;2;5;Y010032
-S32008001;Dado esagonale con flangia;4;6;Y010032
-S18408002;Bullone esagonale con flangia;4;7;Y010032
-Q2734812;Vite autofilettante testa larga semitonda a croce;6;8;Y010032
-S23006002;Vite testa cilindrica a croce con rondella elastica e rondella piana;22;9;Y010032
-5103520-Y01;Assieme staffa montaggio intermedia paraurti posteriore;1;1;Y010033
-S18608009;Bullone esagonale con flangia;2;2;Y010033
-5101263-Y01;Staffa montaggio tubo freno posteriore sinistra;1;1;Y010034
-5101264-Y01;Staffa montaggio tubo freno posteriore destra;1;2;Y010034
-S18606003;Bullone esagonale con flangia;6;3;Y010034
-5101467-Y01;Piastra montaggio interruttore power?off;1;1;Y010035
-5101216-Y01;Staffa montaggio allarme bassa velocit ;1;1;Y010036
-S18606003;Bullone esagonale con flangia;2;2;Y010036
-5301700-Y01;Assieme trave cruscotto;1;;Y010036
-5301710-Y01;Assieme corpo trave cruscotto;1;1;Y010037
-S18606003;Bullone esagonale con flangia;2;2;Y010037
-ZH2204-21;Dado lamellare tipo A;4;3;Y010037
-S18608009;Bullone esagonale con flangia;4;4;Y010037
-S32006003;Dado esagonale con flangia;2;5;Y010037
-5107000-Y01;Sistema tappi chiusura;1;;Y010038
-5107011-Y01;Tappo chiusura  10;11;1;Y010038
-5107016-Y01;Tappo chiusura  15;2;2;Y010038
-5107013-Y01;Tappo chiusura  20;16;3;Y010038
-5107015-Y01;Tappo chiusura  30;6;4;Y010038
-5107014-Y01;Tappo chiusura  40;4;5;Y010038
-5107001-Y01;Tampone portellone;2;6;Y010038
-5107003-Y01;Tampone porta laterale;6;7;Y010038
-5107017-Y01;Adesivo foro  20;2;8;Y010038
-5107018-Y01;Adesivo foro  25;4;9;Y010038
-5107019-Y01;Adesivo foro  30;1;10;Y010038
-3400105-Y01;Boccola colonna sterzo;1;11;Y010038
-5107021-Y01;Tappo tubo quadro 40 40 m3;2;12;Y010038
-6309100-Y01;Sistema barra pneumatica portellone;1;;Y010039
-6309110-Y01;Molla a gas;2;1;Y010039
-6309101-Y01;Staffa montaggio barra pneumatica portellone sinistra;1;2;Y010039
-6309102-Y01;Staffa montaggio barra pneumatica portellone destra;1;3;Y010039
-6309103-Y01;Perno sferico molla a gas;2;4;Y010039
-S18606003;Bullone esagonale con flangia;4;5;Y010039
-6101000-Y01;Assieme rivestimento guida gomma;1;;Y010040
-6101760-Y01;Assieme rivestimento guida anteriore porta sinistra;1;1;Y010040
-6101740-Y01;Assieme rivestimento guida anteriore porta destra;1;2;Y010040
-6101730-Y01;Rivestimento in gomma guida posteriore porta sinistra;1;3;Y010040
-6107133-Y01;Blocco di fissaggio finestrino triangolare posteriore sinistro;1;4;Y010040
-6101750-Y01;Rivestimento in gomma guida posteriore porta destra;1;5;Y010040
-6107134-Y01;Blocco di fissaggio finestrino triangolare posteriore destro;1;6;Y010040
-S14606005;Bullone esagonale con rondella elastica e rondella piana M6 16;14;7;Y010040
-6105000-Y01;Sistema di chiusura;1;;Y010041
-6105100-Y01;Serratura elettronica porta sinistra;1;1;Y010041
-6105101-Y01;Corpo serratura elettronica porta sinistra;1;2;Y010041
-6105103-Y01;Tirante serratura elettronica porta sinistra;1;3;Y010041
-6105105-Y01;Tirante cilindro serratura elettronica porta sinistra;1;4;Y010041
-6105111-Y01;Cavo serratura elettronica porta sinistra;1;5;Y010041
-6105107-Y01;Scrocco serratura elettronica porta;3;6;Y010041
-Q2400614;Vite svasata con rondella dentata esterna;6;7;Y010041
-Q2580816;Vite svasata con rondella dentata esterna;6;8;Y010041
-6105200-Y01;Sistema serratura elettronica porta destra;1;9;Y010041
-6105102-Y01;Corpo serratura elettronica porta destra;1;10;Y010041
-6105104-Y01;Tirante serratura elettronica porta destra;1;11;Y010041
-6105112-Y01;Cavo serratura elettronica porta destra;1;12;Y010041
-5606010-Y01;Sistema serratura elettrica portellone;1;13;Y010041
-5606011-Y01;Corpo serratura elettrica portellone;1;14;Y010041
-S14606002;Bullone esagonale con rondella elastica e rondella piana;3;15;Y010041
-5606030-Y01;Sistema di estrazione sportellino presa di ricarica;1;16;Y010041
-5606032-Y01;Maniglia blocco sportellino presa di ricarica;1;17;Y010041
-S23006002;Vite a testa cilindrica con rondella piana e rondella elastica;2;18;Y010041
-5606033-Y01;Cavo blocco sportellino presa di ricarica;1;19;Y010041
-5606034-Y01;Fascette fermacavo  7;2;20;Y010041
-157-00135(HTC);Fermacavo con perno;2;21;Y010041
-6107000-Y01;Sistema di tenuta;1;;Y010042
-6307111-Y01;Guarnizione portellone;1;1;Y010042
-6307113-Y01;Guarnizione superiore portellone;1;2;Y010042
-6307114Y0210;Guarnizione superiore portellone;1;;Y010042
-6107117-Y01;Guarnizione esterna vetro porta sinistra;1;3;Y010042
-6107118-Y01;Guarnizione esterna vetro porta destra;1;4;Y010042
-6107121-Y01;Guarnizione interna vetro porta sinistra;1;5;Y010042
-6107122-Y01;Guarnizione interna vetro porta destra;1;6;Y010042
-6107111-Y01;Guarnizione apertura porta anteriore sinistra;1;7;Y010042
-6107112-Y01;Guarnizione apertura porta anteriore destra;1;8;Y010042
-5206011-Y01;Guarnizione parabrezza anteriore;1;9;Y010042
-5701211-Y01;Guarnizione tetto apribile sinistra;1;10;Y010042
-5701212-Y01;Guarnizione tetto apribile destra;1;11;Y010042
-6107131-Y01;Guarnizione finestrino triangolare anteriore sinistra;1;12;Y010042
-6107132-Y01;Guarnizione finestrino triangolare anteriore destra;1;13;Y010042
-6107135-Y01;Guarnizione superiore scatola batteria;1;14;Y010042
-6107136-Y01;Guarnizione inferiore scatola batteria;1;15;Y010042
-6107137Y0210;Rondella di tenuta tetto;1;16;Y010042
-6107115-Y01;Canale fango anteriore porta sinistra;1;17;Y010042
-6107127-Y01;Canale fango posteriore porta sinistra;1;18;Y010042
-6107116-Y01;Canale fango anteriore porta destra;1;19;Y010042
-6107128-Y01;Canale fango posteriore porta destra;1;20;Y010042
-6104000-Y01;Sistema alzacristalli;1;;Y010043
-6104110-Y01;Alzacristallo elettrico porta sinistra (Hall);1;1;Y010043
-6104110-Y01-A;Alzacristallo elettrico porta sinistra (non-Hall);1;;Y010043
-6104120-Y01;Alzacristallo elettrico porta destra (Hall);1;2;Y010043
-6104120-Y01-A;Alzacristallo elettrico porta destra (non-Hall);1;;Y010043
-S32006003;Dado esagonale con flangia;14;3;Y010043
-6105500-Y01;Sistema maniglia esterna;1;;Y010044
-6105510Y0205D;Maniglia esterna porta sinistra;1;1;Y010044
-6105520Y0205D;Maniglia esterna porta destra;1;2;Y010044
-S18606003;Bullone esagonale con flangia;6;3;Y010044
-8202000-Y01;Sistema specchietto retrovisore esterno;1;;Y010045
-8202010-Y01D;Specchietto retrovisore esterno sinistro;1;1;Y010045
-8202011-Y01D;Specchietto retrovisore esterno sinistro (versione alternativa);1;2;Y010045
-8202012Y0210;Lente specchietto retrovisore sinistro;1;3;Y010045
-S23006002;Vite a testa cilindrica con rondella elastica e piana;6;4;Y010045
-8202020-Y01D;Specchietto retrovisore esterno destro;1;5;Y010045
-8202021-Y01D;Specchietto retrovisore esterno destro (versione alternativa);1;6;Y010045
-8202022Y0210;Lente specchietto retrovisore destro;1;7;Y010045
-2804200-Y01;Sistema cerniera paraurti posteriore;1;;Y010046
-2804201-Y01;Cerniera paraurti posteriore sinistra;1;1;Y010046
-2804202-Y01;Cerniera paraurti anteriore destra;1;2;Y010046
-Q1460816;Bullone esagonale con rondella elastica e piana;4;3;Y010046
-S27348002;Vite autofilettante testa larga semitonda;8;4;Y010046
-8208130-Y01;Sistema catarifrangente;1;;Y010047
-8208010-Y01;Catarifrangente posteriore sinistro;1;1;Y010047
-8208020-Y01;Catarifrangente posteriore destro;1;2;Y010047
-8208030-Y01;Catarifrangente laterale;2;3;Y010047
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;4;4;Y010047
-8200105Y0210;Tubo di troppo pieno anteriore;1;1;Y010048
-S67325001;Fascetta elastica in acciaio;1;2;Y010048
-5606034-Y01;Fascette fermacavo  7;2;3;Y010048
-8200150-Y01;Pedana di benvenuto;1;;Y010049
-8200151Y0210;Pedana sinistra;1;1;Y010049
-8200152Y0210;Pedana destra;1;2;Y010049
-8204001-Y01;Sistema aletta parasole;1;;Y010050
-8204010Y0205;Aletta parasole;2;1;Y010050
-8204020Y0205;Piastra copribase aletta parasole;2;2;Y010050
-S21406001;Vite a testa cilindrica M5 16;4;3;Y010050
-5810001-Y01;Sistema cintura di sicurezza;1;;Y010051
-5810010-Y01;Cintura di sicurezza sinistra;1;1;Y010051
-5810020-Y01;Cintura di sicurezza destra;1;2;Y010051
-5810011-Y01;Attacco cintura sinistra;1;3;Y010051
-5810021-Y01;Attacco cintura destra;1;4;Y010051
-8201001-Y01;Sistema specchietto retrovisore interno;1;;Y010052
-8201010-Y01;Specchietto retrovisore interno;1;1;Y010052
-5305010-Y01;Accessori cruscotto ausiliario;1;;Y010053
-5305013Y0220;Tampone in gomma 1;1;1;Y010053
-5305014Y0220;Tampone in gomma 2;1;2;Y010053
-5305015Y0220;Tampone in gomma 3;1;3;Y010053
-5305031-Y01;Cerniera maniglione;1;4;Y010053
-5305032-Y01;Femmina fissaggio maniglione;1;5;Y010053
-5305033-Y01;Maschio fissaggio maniglione;1;;Y010053
-Z056;Cuscinetto;2;6;Y010053
-S27348002;Vite autofilettante testa larga semitonda;6;7;Y010053
-8104010-Y01;Griglia ventilazione assy;1;;Y010054
-8104011-Y01;Griglia ventilazione;2;1;Y010054
-6105300-Y01;Sistema maniglia interna;1;;Y010055
-6105330Y0205;Maniglia interna sinistra;1;1;Y010055
-6105340Y0205;Maniglia interna destra;1;2;Y010055
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;8;3;Y010055
-6800100-Y01;Sistema sedili;;;Y010056
-6900100Y0210-Z001;Sedile anteriore sinistro;1;;Y010056
-6900200Y0210-Z001;Sedile anteriore destro;1;;Y010056
-6800010-Y01;Sedile anteriore sinistro;1;1;Y010056
-6900010-Y01;Sedile anteriore destro;1;2;Y010056
-6800101-Y01;Copertura staffa sedile;4;3;Y010056
-6900300Y0210;Copertura staffa sedile sinistra;2;;Y010056
-6900400Y0210;Copertura staffa sedile destra;2;;Y010056
-Q1860825;Bullone esagonale con flangia;8;4;Y010056
-Q402B08F62;Rondella bullone fissaggio sedile;8;;Y010056
-3900010-Y01;Sistema attrezzi di bordo;1;;Y010057
-3926010-Y01;Triangolo di emergenza;1;1;Y010057
-5528250-Y01;Tasca portaoggetti con cordino;1;;Y010058
-5528013-Y01;Cordino tasca portaoggetti;2;1;Y010058
-5528015-Y01;Rete portaoggetti lato passeggero;1;2;Y010058
-S29404001;Vite autofilettante testa larga semitonda;5;3;Y010058
-8200110-Y01;Supporto posteriore;1;;Y010059
-8200111-Y01;Supporto posteriore;1;1;Y010059
-8200113-Y01;Piastra base cerniera sinistra;1;2;Y010059
-8200114-Y01;Piastra interna cerniera sinistra;1;3;Y010059
-8200115-Y01;Piastra base cerniera destra;1;4;Y010059
-8200116-Y01;Piastra interna cerniera destra;1;5;Y010059
-S27342004;Vite autofilettante testa larga semitonda;4;6;Y010059
-8200117-Y01;Blocco di fine corsa supporto posteriore;2;7;Y010059
-6101900-Y01;Membrana impermeabile porta;1;;Y010060
-6101901Y0205;Membrana impermeabile superiore porta sinistra;1;1;Y010060
-6101902Y0205;Membrana impermeabile superiore porta destra;1;2;Y010060
-6101903Y0205;Membrana impermeabile inferiore porta sinistra/destra;1;3;Y010060
-6101903Y0205;Membrana impermeabile inferiore porta sinistra/destra;1;4;Y010060
-8200100-Y01;Sistema blocco sollevatore;1;;Y010061
-8200101-Y01;Blocco sollevatore;4;1;Y010061
-S40210001;Rondella grande;4;2;Y010061
-S18408004;Bullone esagonale con flangia;4;3;Y010061
-5306150-Y01;Assieme identificazione veicolo;1;;Y010062
-5306153-Y01;Etichetta specifiche ventola condensatore;1;1;Y010062
-5306154-Y01;Etichetta refrigerante A/C;1;2;Y010062
-5306155-Y01;Targhetta veicolo;1;3;Y010062
-5306156-Y01;Logo X;1;4;Y010062
-5306157-Y01;Logo YOYO;1;5;Y010062
-5306163-Y01;Etichetta pneumatici 14 ;1;6;Y010062
-5306164-Y01;Etichetta pneumatici 15 ;1;6;Y010062
-5306010Y0220;Logo XEV;1;7;Y010062
-4100000-Y01;Sistema luci;1;;Y010063
-4121030-Y01;Assieme faro anteriore sinistro (parte a parete spessa della luce diurna);1;1;Y010063
-S14606005;Bullone esagonale con rondella elastica e rondella piana M6 16;8;2;Y010063
-4121040-Y01;Assieme faro anteriore destro (parte a parete spessa della luce diurna);1;3;Y010063
-4108010-Y01;Assieme luce targa;2;4;Y010063
-4123010-Y01;Luce plafoniera;1;5;Y010063
-S21405002;Vite a testa cilindrica con impronta a croce M5 16;2;6;Y010063
-4133010-Y01;Assieme faro posteriore sinistro;1;7;Y010063
-4133010-Y01-B;Assieme faro posteriore sinistro;1;;Y010063
-4133010-Y01-A;Assieme faro posteriore sinistro;1;;Y010063
-S18606003;Bullone esagonale con flangia;6;8;Y010063
-S32006003;Dado esagonale con flangia;2;9;Y010063
-ZH860;Fermo fanale posteriore;4;10;Y010063
-4133020-Y01;Assieme faro posteriore destro;1;11;Y010063
-4133020-Y01-B;Assieme faro posteriore destro;1;;Y010063
-4133020-Y01-A;Assieme faro posteriore destro;1;;Y010063
-5702001-Y01;Sistema tetto;1;;Y010064
-5702010-Y01D;Assieme copertura tetto;1;1;Y010064
-5702020-Y01D;Assieme copertura tetto;1;;Y010064
-5702013-Y01;Guarnizione impermeabile in spugna tetto (W12 T8);1;2;Y010064
-5702015-Y01;Nastro adesivo in gomma butilica per impermeabilizzazione e sigillatura;1;3;Y010064
-5702017-Y01;Rondella di tenuta impermeabile copertura tetto;4;4;Y010064
-S27348004;Vite autofilettante testa larga semitonda;4;5;Y010064
-ZH1255;Fermo a D;10;6;Y010064
-802011;Sigillante parabrezza anteriore (morbido);1;7;Y010064
-5400009-Y01;Sistema esterno parete laterale;1;;Y010065
-5400010-Y01D;Pannello rifinitura superiore anteriore parete sinistra;1;1;Y010065
-ZH1255;Fermo a D;17;2;Y010065
-S18606003;Bullone esagonale con flangia;8;3;Y010065
-5400030-Y01D;Pannello rifinitura superiore posteriore parete sinistra;1;4;Y010065
-ZH1210;Supporto dado plastico;16;5;Y010065
-S27348002;Vite autofilettante testa larga semitonda;14;6;Y010065
-5400500-Y01D;Piccolo pannello rifinitura parete sinistra;1;7;Y010065
-5400331-Y01;Piccola rifinitura esterna lato sinistro;1;8;Y010065
-5400332-Y01;Piccola rifinitura interna lato sinistro;1;9;Y010065
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;1;10;Y010065
-ZH680;Fermo metallico a V;3;11;Y010065
-5400101-Y01D;Piastra parafango posteriore sinistra;1;12;Y010065
-ZH2204-16;Dado a lamella tipo A;4;13;Y010065
-5400771-Y01D;Soglia inferiore sinistra;1;14;Y010065
-ZH2204-6;Dado a lamella tipo B;1;15;Y010065
-6102051-Y01;Spugna antipolvere;1;16;Y010065
-2804508-Y01;Staffa montaggio paraurti posteriore sinistro;1;17;Y010065
-Q2214816;Vite autofilettante testa svasata con rondella piana;4;18;Y010065
-5400009-Y01;Sistema esterno parete laterale;1;;Y010066
-5400020-Y01D;Pannello rifinitura superiore anteriore parete destra;1;1;Y010066
-ZH1255;Fermo a D;17;2;Y010066
-S18606003;Bullone esagonale con flangia;8;3;Y010066
-5400040-Y01D;Pannello rifinitura superiore posteriore parete destra;1;4;Y010066
-ZH1210;Supporto dado plastico;16;5;Y010066
-S27348002;Vite autofilettante testa larga semitonda;14;6;Y010066
-5400600-Y01D;Piccolo pannello rifinitura parete destra;1;7;Y010066
-5400341-Y01;Piccola rifinitura esterna lato destro;1;8;Y010066
-5400342-Y01;Piccola rifinitura interna lato destro;1;9;Y010066
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;1;10;Y010066
-ZH680;Fermo metallico a V;3;11;Y010066
-5400201-Y01D;Piastra parafango posteriore destra;1;12;Y010066
-ZH2204-16;Dado a lamella tipo A;4;13;Y010066
-5400781-Y01D;Soglia inferiore destra;1;14;Y010066
-ZH2204-6;Dado a lamella tipo B;1;15;Y010066
-6102051-Y01;Spugna antipolvere;1;16;Y010066
-2804509-Y01;Staffa montaggio paraurti posteriore destro;1;17;Y010066
-Q2214816;Vite autofilettante testa svasata con rondella piana;4;18;Y010066
-8403100-Y01;Sistema parafango;1;;Y010067
-8403111-Y01D;Assieme saldatura parafango sinistro;1;1;Y010067
-8403102-Y01;Pannello inferiore rifinitura finestrino triangolare sinistro;1;2;Y010067
-8403121-Y01D;Assieme saldatura parafango sinistro;1;3;Y010067
-8403202-Y01;Pannello inferiore rifinitura finestrino triangolare destro;1;4;Y010067
-ZH1255;Fermo a D;2;5;Y010067
-S27348002;Vite autofilettante testa larga semitonda;2;6;Y010067
-ZH680;Fermo metallico a V;2;7;Y010067
-S18606003;Bullone esagonale con flangia;6;8;Y010067
-ZH2204-16;Dado a lamella tipo A;2;9;Y010067
-5306148Y0210;Nastro biadesivo (W10mm T0.8mm);;10;Y010067
-5302000-Y01;Sistema pannello rifinitura parabrezza inferiore;1;;Y010068
-5302020-Y01;Piastra copertura tergicristallo anteriore;1;1;Y010068
-S27348002;Vite autofilettante testa larga semitonda;6;2;Y010068
-5302003-Y01;Corpo canalina flusso anteriore;1;3;Y010068
-S18606003;Bullone esagonale con flangia;8;4;Y010068
-5302007-Y01D;Pannello rifinitura superiore faro anteriore sinistro;1;5;Y010068
-ZH830;Fermo a scatto (testa piccola);2;6;Y010068
-5302008-Y01D;Pannello rifinitura superiore faro anteriore destro;1;7;Y010068
-8402500-Y01;Sistema rifinitura cofano;1;;Y010069
-B8402510-Y01D;Assieme cofano anteriore;1;1;Y010069
-S18606003;Bullone esagonale con flangia;2;2;Y010069
-8402517Y01A;Supporto cofano sinistro;1;;Y010069
-8402518Y01A;Supporto cofano destro;1;;Y010069
-S27342004;Vite autofilettante testa larga semitonda;4;;Y010069
-5302010-Y01;Assieme piastra copertura presa di ricarica anteriore;1;;Y010070
-5302011-Y01D;Piastra copertura presa di ricarica anteriore;1;1;Y010070
-5302013-Y01;Piastra interna presa di ricarica anteriore;1;;Y010070
-5302015-Y01;Base presa di ricarica anteriore;1;;Y010070
-5302017-Y01;Perno rotante presa di ricarica anteriore;1;;Y010070
-Q5002525;Spina di sicurezza;1;;Y010070
-Z054;Molla;1;;Y010070
-5302030-Y01;Assieme base presa di ricarica anteriore;1;2;Y010070
-2803000-Y01;Sistema paraurti anteriore;1;;Y010071
-2803013-Y01;Staffa montaggio paraurti anteriore sinistro;1;1;Y010071
-S18606003;Bullone esagonale con flangia;11;2;Y010071
-ZH2204-16;Dado a lamella tipo A;6;3;Y010071
-2803014-Y01;Staffa montaggio paraurti anteriore destro;1;4;Y010071
-2803010-Y01D;Assieme corpo paraurti anteriore;1;5;Y010071
-2803001-Y01D;Corpo paraurti anteriore;1;6;Y010071
-2803009-Y01D;Pannello inferiore rifinitura paraurti anteriore;1;7;Y010071
-Z056;Cuscinetto;2;8;Y010071
-2803011-Y01D;Pannello inferiore faro anteriore sinistro;1;9;Y010071
-2803012-Y01D;Pannello inferiore faro anteriore destro;1;10;Y010071
-2803007-Y01D;Pannello rifinitura paraurti anteriore;1;11;Y010071
-2803017-Y01;Piastra montaggio targa anteriore;1;13;Y010071
-ZH2204-6;Dado a lamella tipo B;4;14;Y010071
-Z039;Vite;4;15;Y010071
-2803003-Y01D;Pannello centrale rifinitura paraurti anteriore;1;16;Y010071
-2803005-Y01D;Striscia rifinitura paraurti anteriore;1;17;Y010071
-2803019-Y01;Deflettore aria pannello rifinitura paraurti anteriore;1;18;Y010071
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;2;20;Y010071
-S27348002;Vite autofilettante testa larga semitonda;2;21;Y010071
-2804500-Y01;Sistema paraurti posteriore;1;;Y010072
-2804520-Y01D;Sportello mobile assieme paraurti posteriore;1;1;Y010072
-ZH2204-16;Dado a lamella tipo A;2;2;Y010072
-S18606003;Bullone esagonale con flangia;4;3;Y010072
-2804515-Y01;Bullone antifurto M8 45;2;4;Y010072
-2804510Y0210D;Assieme corpo paraurti posteriore;1;5;Y010072
-2804501Y0210D;Corpo paraurti posteriore;1;6;Y010072
-2804504-Y01D;Rifinitura superiore paraurti posteriore;1;7;Y010072
-2804505-Y01D;Rifinitura inferiore paraurti posteriore;1;8;Y010072
-Z024;Dado di espansione metallico;8;9;Y010072
-S27348002;Vite autofilettante testa larga semitonda;4;10;Y010072
-ZH2204-11;Dado a lamella tipo B con dado M8;2;11;Y010072
-5107003-Y01;Tampone porta laterale;4;12;Y010072
-ZH1210;Supporto dado plastico;4;13;Y010072
-2804507;Tappo cieco  25;2;14;Y010072
-ZH2204-6;Dado a lamella tipo B;2;15;Y010072
-5306001-Y01;Sistema cruscotto;1;;Y010073
-5306151-Y01D;Mascherina strumenti;1;1;Y010073
-5306161-Y01;Pannello controllo telecomando A/C;1;2;Y010073
-5306139-Y01;Bocchetta aria destra;1;3;Y010073
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;9;4;Y010073
-ZH2204-16;Dado a lamella tipo A;2;5;Y010073
-ZH680;Fermo metallico a V;7;6;Y010073
-5306200Y0205D;Assieme bocchetta aria centrale;1;7;Y010073
-5306001-Y01;Sistema cruscotto;1;;Y010074
-5306131-Y01;Quadro strumenti;1;1;Y010074
-5306121-Y01;Bocchetta aria sbrinatore sinistra;1;2;Y010074
-5306123-Y01;Deflettore aria sbrinatore sinistro;1;3;Y010074
-5306122-Y01;Bocchetta aria sbrinatore destra;1;4;Y010074
-5306124-Y01;Deflettore aria sbrinatore destro;1;5;Y010074
-5306134-Y01;Vano portaoggetti cruscotto;1;6;Y010074
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;9;7;Y010074
-ZH680;Fermo metallico a V;9;8;Y010074
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;7;9;Y010074
-ZH2204-16;Dado a lamella tipo A;2;10;Y010074
-S18606003;Bullone esagonale con flangia;3;11;Y010074
-S27348004;Vite autofilettante testa larga semitonda;1;12;Y010074
-5306001-Y01;Sistema cruscotto;1;;Y010075
-5306133-Y01;Corpo inferiore cruscotto;1;1;Y010075
-S18606003;Bullone esagonale con flangia;5;2;Y010075
-5306104-Y01;Condotto aria bocchetta centrale;1;3;Y010075
-5306136-Y01;Condotto sbrinatore sinistro;1;4;Y010075
-5306141-Y01;Condotto sbrinatore destro;1;5;Y010075
-5306030-Y01;Assieme sbrinatore anteriore;1;6;Y010075
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;16;7;Y010075
-5306102-Y01;Copertura altoparlante;2;8;Y010075
-ZH2204-16;Dado a lamella tipo A;10;9;Y010075
-Z024;Dado di espansione metallico;4;10;Y010075
-5306002-Y01;Sistema copertura devio-luci;1;;Y010076
-3774011-Y01;Scudo sterzo superiore;1;1;Y010076
-3774013-Y01;Scudo sterzo inferiore;1;2;Y010076
-S27348002;Vite autofilettante testa larga semitonda;1;3;Y010076
-S23006002;Vite a testa cilindrica con rondella piana e rondella elastica;3;4;Y010076
-5305001-Y01;Sistema cruscotto ausiliario;1;;Y010077
-5305011-Y01;Corpo cruscotto ausiliario;1;1;Y010077
-5305012-Y01;Copertura vite;4;2;Y010077
-5305016-Y01;Piastra copertura anteriore inferiore cruscotto ausiliario;1;3;Y010077
-5305017-Y01D;Pannello cruscotto ausiliario;1;4;Y010077
-5305019-Y01;Piastra copertura posteriore cruscotto ausiliario;1;5;Y010077
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;6;6;Y010077
-Z024;Dado di espansione metallico;3;7;Y010077
-5305020-Y01;Assieme struttura mancorrente;1;8;Y010077
-5305028-Y01D;Pannello sinistro mancorrente;1;;Y010077
-5305029-Y01D;Pannello destro mancorrente;;;Y010077
-5305027-Y01;Piastra inferiore mancorrente;1;9;Y010077
-Z056;Cuscinetto;2;10;Y010077
-S18606003;Bullone esagonale con flangia;6;11;Y010077
-5402001-Y01;Sistema pannelli protezione colonne;1;;Y010078
-5402031-Y01;Pannello superiore protezione interno montante A sinistro;1;1;Y010078
-ZH1255;Fermo a D;51;2;Y010078
-ZH1210;Supporto dado plastico;25;3;Y010078
-S27348002;Vite autofilettante testa larga semitonda;25;4;Y010078
-5402041-Y01;Pannello superiore protezione interno montante A destro;1;5;Y010078
-5402131-Y01;Pannello protezione interno cornice finestrino anteriore;1;6;Y010078
-5402051-Y01;Pannello inferiore protezione interno montante A sinistro;1;7;Y010078
-5402061-Y01;Pannello inferiore protezione interno montante A destro;1;8;Y010078
-5402011-Y01;Pannello protezione interno parete sinistra anteriore;1;9;Y010078
-S32006003;Dado esagonale con flangia;5;10;Y010078
-5402021-Y01;Pannello protezione interno parete destra anteriore;1;11;Y010078
-S18606003;Bullone esagonale con flangia;1;12;Y010078
-5402111-Y01;Striscia rifinitura interna soglia sinistra;1;13;Y010078
-5402121-Y01;Striscia rifinitura interna soglia destra;1;14;Y010078
-5402071-Y01;Pannello protezione interno parete sinistra posteriore;1;15;Y010078
-5402081-Y01;Pannello protezione interno parete destra posteriore;1;16;Y010078
-5402141-Y01;Pannello protezione interno soglia posteriore;1;17;Y010078
-5402091-Y01;Pannello inferiore protezione interno parete sinistra posteriore;1;18;Y010078
-5402101-Y01;Pannello inferiore protezione interno parete destra posteriore;1;19;Y010078
-5402128-Y01;Copertura apertura servizio sinistra;1;20;Y010078
-5402129-Y01;Copertura apertura servizio destra;1;21;Y010078
-5402133-Y01;Poggiapiede sinistro;1;22;Y010078
-Q1860625;Bullone esagonale con flangia;3;23;Y010078
-5402147-Y01;Copertura vite;3;24;Y010078
-5402053-Y01;Copertura apertura riparazione inferiore montante A sinistro;1;25;Y010078
-5402063-Y01;Copertura apertura riparazione inferiore montante A destro;1;26;Y010078
-5703001-Y01;Sistema interni e cielo;1;;Y010079
-5703011-Y01;Rivestimento interno cielo tetto;1;1;Y010079
-ZH1610;Fermo cielo tetto;13;2;Y010079
-ZH1210;Supporto dado plastico;6;3;Y010079
-S27348002;Vite autofilettante testa larga semitonda;6;4;Y010079
-5703021-Y01;Copertura apertura servizio cerniera sinistra portellone;1;5;Y010079
-5703022-Y01;Copertura apertura servizio cerniera destra portellone;1;6;Y010079
-6102001-Y01;Sistema porta anteriore;1;;Y010080
-6102071-Y01;Pannello rifinitura finestrino anteriore porta sinistra;1;1;Y010080
-S27342004;Vite autofilettante testa larga semitonda;4;2;Y010080
-5306148Y0210;Nastro biadesivo (W10mm T0.8mm);;3;Y010080
-6102075-Y01D;Pannello esterno porta sinistra;1;4;Y010081
-6102077-Y01D;Pannello inferiore rifinitura porta sinistra;1;5;Y010081
-S27348002;Vite autofilettante testa larga semitonda;5;6;Y010081
-ZH2204-16;Dado a lamella tipo A;5;7;Y010081
-ZH1255;Fermo a D;21;8;Y010081
-S23006002;Vite a testa cilindrica con rondella piana e rondella elastica;8;9;Y010081
-6102073-Y01D;Pannello superiore rifinitura porta sinistra;1;10;Y010081
-ZH680;Fermo metallico a V;19;11;Y010081
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;8;12;Y010081
-6102011-Y01;Pannello interno porta sinistra;1;13;Y010081
-6102032-Y01;Piastra montaggio cinghia tiraporta sinistra;1;14;Y010081
-6102033-Y01;Cinghia tiraporta in pelle;1;15;Y010081
-Q1860620;Bullone esagonale con flangia;1;16;Y010081
-ZH850;Fermo a C;6;17;Y010081
-6102031-Y01D;Pannello intermedio rifinitura sinistra;1;18;Y010081
-6102051-Y01;Spugna antipolvere;;19;Y010081
-6102086-Y01;Copertura rifinitura cerniera superiore porta sinistra;1;20;Y010081
-6102087-Y01;Copertura rifinitura cerniera inferiore porta sinistra;1;21;Y010081
-6102079-Y01;Piastra montaggio interruttore PE;1;22;Y010081
-S27348004;Vite autofilettante testa larga semitonda;1;23;Y010081
-6102001-Y01;Sistema porta anteriore;1;;Y010082
-6102081-Y01;Pannello rifinitura finestrino anteriore porta destra;1;1;Y010082
-S27342004;Vite autofilettante testa larga semitonda;2;2;Y010082
-5306148Y0210;Nastro biadesivo (W10mm T0.8mm);;3;Y010082
-6102076-Y01D;Pannello esterno porta destra;1;4;Y010082
-6102078-Y01D;Pannello inferiore rifinitura porta destra;1;5;Y010082
-S27348002;Vite autofilettante testa larga semitonda;5;6;Y010082
-ZH2204-16;Dado a lamella tipo A;5;7;Y010082
-ZH1255;Fermo a D;21;8;Y010082
-S23006002;Vite a testa cilindrica con rondella piana e rondella elastica;8;9;Y010082
-6102074-Y01D;Pannello superiore rifinitura porta destra;1;10;Y010082
-ZH680;Fermo metallico a V;19;11;Y010082
-S27342003;Vite autofilettante testa larga semitonda 4.2 13;8;12;Y010082
-6102040-Y01;Assieme pannello interno porta destra;1;12;Y010082
-6102021-Y01;Pannello interno porta destra;1;13;Y010082
-6102042-Y01;Piastra montaggio cinghia tiraporta destra;1;14;Y010082
-6102033-Y01;Cinghia tiraporta in pelle;1;15;Y010082
-Q1860620;Bullone esagonale con flangia;1;16;Y010082
-ZH850;Fermo a C;6;17;Y010082
-6102041-Y01D;Pannello intermedio rifinitura destra;1;18;Y010082
-6102051-Y01;Spugna antipolvere;;19;Y010082
-6102088-Y01;Copertura rifinitura cerniera inferiore porta destra;1;20;Y010082
-6102089-Y01;Copertura rifinitura cerniera superiore porta destra;1;21;Y010082
-S27348004;Vite autofilettante testa larga semitonda;1;22;Y010082
-6302001-Y01;Sistema portellone;1;;Y010083
-6302010-Y01;Assieme portellone;1;1;Y010083
-6302011-Y01;Portellone;1;2;Y010083
-6302021-Y01;Piastra supporto vetro portellone sinistra;1;3;Y010083
-S27348002;Vite autofilettante testa larga semitonda;8;4;Y010083
-6302022-Y01;Piastra supporto vetro portellone destra;1;5;Y010083
-6302017-Y01D;Piastra superiore spoiler;1;6;Y010083
-5306149Y0210;Nastro biadesivo (W10mm T0.8mm);;7;Y010083
-ZH680;Fermo metallico a V;6;8;Y010083
-6302015-Y01;Copertura serratura apertura servizio;1;9;Y010083
-6302016-Y01;Pannello rifinitura serratura;1;10;Y010083
-ZH830;Fermo a scatto (testa piccola);4;11;Y010083
-6302018-Y01D;Pannello inferiore spoiler;1;12;Y010083
-5306148Y0210;Nastro biadesivo (W10mm T0.8mm);;13;Y010083
-5107101Y0210;Pannello protezione inferiore sinistro;1;1;Y010083
-5107102-Y01;Pannello protezione inferiore destro;1;2;Y010083
-5107103Y0210;Pannello protezione inferiore centrale;1;3;Y010083
-ZH830;Fermo a scatto (testa piccola);2;4;Y010083
-S32006003;Dado esagonale con flangia;17;5;Y010083
-3100000-Y01;Sistema ruote;1;;Y010084
-3102111-Y01;Pannello protezione passaruota anteriore sinistro;1;1;Y010084
-ZH830;Fermo a scatto (testa piccola);19;2;Y010084
-ZH890;Fermo a scatto (testa grande);5;;Y010084
-Q2214816;Vite autofilettante testa svasata con rondella piana;12;3;Y010084
-Z058;Fermo a perno;10;4;Y010084
-3102112-Y01;Pannello protezione passaruota anteriore destro;1;5;Y010084
-3102113-Y01;Pannello protezione passaruota posteriore sinistro;1;6;Y010084
-3102117-Y01;Pannello rifinitura laterale passaruota posteriore sinistro;1;7;Y010084
-3102114-Y01;Pannello protezione passaruota posteriore destro;1;8;Y010084
-3102118-Y01;Pannello rifinitura laterale passaruota posteriore destro;1;9;Y010084
-3100120-Y01;Assieme copertura cerchio ruota in acciaio;4;1;Y010085
-3100107-Y01;Copertura cerchio in acciaio;4;2;Y010085
-3100108-Y01;Copertura cerchio acciaio;4;3;Y010085
-3100104-Y01;Copertura decorativa cerchio ruota;4;4;Y010085
-5200010-Y01;Sistema vetri parabrezza;1;;Y010086
-5206010-Y01;Vetro parabrezza anteriore;1;1;Y010086
-5206030-Y01;Vetro tetto sinistro;1;2;Y010086
-5206040-Y01;Vetro tetto destro;1;3;Y010086
-6303010-Y01;Vetro parabrezza posteriore;1;4;Y010086
-5603100Y0210;Sistema vetro parabrezza posteriore;1;;Y010086
-5203010-Y01;Vetro finestrino triangolare anteriore sinistro;1;5;Y010086
-5203020-Y01;Vetro finestrino triangolare anteriore destro;1;6;Y010086
-6103010-Y01;Vetro finestrino porta sinistra;1;7;Y010086
-6103020-Y01;Vetro finestrino porta destra;1;8;Y010086
-5109100-Y01;Sistema tappeti;1;;Y010087
-5109101-Y01;Corpo tappeto;1;1;Y010087
-5109103-Y01;Piastra copertura bagagliaio;1;2;Y010087
-5109104-Y01;Tampone cuscinetto piastra bagagliaio;4;3;Y010087
-5109109-Y01;Tampone cuscinetto 2 piastra bagagliaio;2;4;Y010087
-5109105-Y01;Tappetino poggiapiedi;1;5;Y010087
-5109106-Y01;Cuscinetto isolante I tappeto;1;6;Y010087
-5109107-Y01;Cuscinetto isolante II tappeto;1;7;Y010087
-5109108-Y01;Cuscinetto isolante III tappeto;2;8;Y010087
-ZH830;Fermo a scatto (testa piccola);2;9;Y010087
-Z058;Fermo a perno;1;10;Y010087
+﻿codice,descrizione,quantita,id,esploso
+1108001-Y01,Sistema accelerazione,1,,Y01001
+1108010-Y01,Pedale acceleratore elettrico,1,1,Y01001
+Q1860625,Bullone esagonale con flangia,3,2,Y01001
+2101000-Y01,Assieme batteria di potenza,,,Y01002
+2101000-Y0201,Assieme batteria di potenza (con serratura batteria) (versione ENI),,,Y01002
+2101010-Y01,Scatola batteria di potenza,1,1,Y01002
+2101010Y0201,Scatola batteria di potenza,,,Y01002
+2101013-Y01,Boccola anti?attrito,6,01-feb,Y01002
+2101017-Y01,Bullone antifurto scatola batteria,2,01-mar,Y01002
+2101018-Y01,Piastra copertura scatola batteria,1,01-apr,Y01002
+2101018Y0201,Piastra copertura scatola batteria (con serratura batteria) (versione ENI),,,Y01002
+2101019-Y01,Cablaggio positivo batteria,1,01-mag,Y01002
+210101A-Y01,Cablaggio negativo batteria,1,01-giu,Y01002
+210101B-Y01,Fast?plug scatola batteria,1,01-lug,Y01002
+210101C-Y01,Cablaggio comunicazione scatola batteria,1,01-ago,Y01002
+210101H-Y01,Linea collegamento moduli,2,01-set,Y01002
+Q174B0614T1F,Bullone esagonale esterno M6 14 con rondella elastica e rondella piana,6,01-ott,Y01002
+Q174B0425T1F,Bullone esagonale esterno M4 25 con rondella elastica e rondella piana,12,01-nov,Y01002
+Q174B0410T1F,Bullone esagonale esterno M4 10 con rondella elastica e rondella piana,8,01-dic,Y01002
+5306142-Y01,Striscia spugna (W12*T5),,gen-13,Y01002
+Q1461025,Bullone esagonale M10 25 con rondella elastica e rondella piana,4,,Y01002
+2101020-Y01,Modulo batteria di potenza,3,3,Y01003
+2101011-Y01,Unit  campionamento batteria (BSU),1,03-gen,Y01003
+2109013-Y01,Staffa montaggio BSU sinistra,1,03-feb,Y01003
+2109014-Y01,Staffa montaggio BSU destra,1,03-mar,Y01003
+2101030-Y01,Presa speciale modalit  commutazione,1,,
+2101030Y0201,Assieme scatola batteria (versione ENI),1,,
+Q174B0530T1F,Bullone esagonale esterno M5 30 con rondella elastica e rondella piana,4,,
+Q174B0310T1F,Bullone esagonale esterno M3 10 con rondella elastica e rondella piana,3,,
+2109010-Y01,Scatola controllo sistema di potenza (ex HV box),1,4,Y01004
+2109011-Y01,Involucro HV box,1,04-gen,Y01004
+2109211-Y01,Coperchio HV box,1,04-feb,Y01004
+Q174B0410T1F,Bullone esagonale esterno M4 10 con rondella elastica e rondella piana,8,04-mar,Y01004
+2109012-Y01,Sensore corrente,1,04-apr,Y01004
+Q174B0416T1F,Bullone esagonale esterno M4 16 con rondella elastica e rondella piana,1,04-mag,Y01004
+Q304B04,Dado esagonale esterno,1,04-giu,Y01004
+2101012-Y01,Scatola campionamento HV,1,04-lug,Y01004
+Q174B0414T1F,Bullone esagonale esterno M4 14 con rondella elastica e rondella piana,4,04-ago,Y01004
+Q32004,Dado esagonale con flangia,4,04-set,Y01004
+2109015-Y01,Rel  150A,1,04-ott,Y01004
+Q174B0620T1F,Bullone esagonale esterno M6 20 con rondella elastica e rondella piana,2,04-nov,Y01004
+2109016-Y01,Rel  50A,1,04-dic,Y01004
+Q174B0620T1F,Bullone esagonale esterno M6 20 con rondella elastica e rondella piana,2,04-ott,Y01004
+S32006003,Dado esagonale con flangia,2,apr-13,Y01004
+2109017-Y01,Rel  20A,2,apr-14,Y01004
+Q174B0416T1F,Bullone esagonale esterno M4 16 con rondella elastica e rondella piana,4,04-mag,Y01004
+Q32004,Dado esagonale con flangia,4,apr-15,Y01004
+2109018-Y01,Fusibile ritardato 300A 750V,1,apr-16,Y01004
+Q174B0818T1F,Bullone esagonale esterno M8 18 con rondella elastica e rondella piana,2,apr-17,Y01004
+2109119-Y01,Fusibile ritardato 50A 750V,1,apr-18,Y01004
+Q174B0614T1F,Bullone esagonale esterno M6 14 con rondella elastica e rondella piana,2,apr-19,Y01004
+2109111-Y01,Fusibile ritardato 20A 750V,1,apr-20,Y01004
+Q174B0614T1F,Bullone esagonale esterno M6 14 con rondella elastica e rondella piana,2,apr-19,Y01004
+2109112-Y01,Resistenza precarica 75? 100W,1,apr-21,Y01004
+Q174B0414T1F,Bullone esagonale esterno M4 14 con rondella elastica e rondella piana,6,04-giu,Y01004
+Q32004,Dado esagonale con flangia,6,04-set,Y01004
+Q174B0614T1F,Bullone esagonale esterno M6 14 con rondella elastica e rondella piana,2,apr-19,Y01004
+2109113-Y01,Cablaggio comunicazione scatola alta tensione,1,apr-23,Y01004
+S14606005,Bullone esagonale con rondella elastica e rondella piana M6 16,4,,Y01004
+2103000-Y01,Assieme motore di trazione,1,,Y01005
+2103010-Y01,Motore (7.5KW),1,1,Y01005
+Q1841255,Bullone esagonale con flangia,4,2,Y01005
+S40312001,Rondella elastica,4,3,Y01005
+Q401B12,Rondella piana,4,4,Y01005
+S34012001,Dado esagonale tipo 1,4,5,Y01005
+2103020-Y01,Piastra pressacavo linea di fase,1,6,Y01005
+S32006003,Dado esagonale con flangia,2,7,Y01005
+2105000-Y01,Assieme cablaggio alta tensione,1,,Y01006
+2105010-Y01,Cablaggio positivo controller motore,1,1,Y01006
+2105020-Y01,Cablaggio negativo controller motore,1,2,Y01006
+2105030-Y01,Cablaggio alta tensione sistema ausiliario,1,3,Y01006
+2105040-Y01,Clip doppio tubo ( 34),2,4,Y01006
+S32006003,Dado esagonale con flangia,2,5,Y01006
+2105050-Y01,Cablaggio commutazione interruttore power?off,1,6,Y01006
+2105060-Y01,Clip doppia testa (19mm),1,7,Y01006
+2107000-Y01,Sistema di ricarica,1,,Y01007
+2107010-Y01,Caricatore di bordo (OBC),1,1,Y01007
+Q1460820,Bullone M8 20 con rondella elastica e rondella piana,4,2,Y01007
+2107020-Y01,Presa di ricarica standard europea,1,3,Y01007
+S18606003,Bullone esagonale con flangia,4,4,Y01007
+2105040-Y01,Clip doppio tubo ( 34),4,5,Y01007
+S32006003,Dado esagonale con flangia,4,6,Y01007
+2107030-Y01,Caricatore EV (EN),1,7,Y01007
+2105060-Y01,Clip doppia testa (19mm),3,8,Y01007
+S32006003,Dado esagonale con flangia,3,9,Y01007
+2107040-Y01,Caricatore doppia testa (EN),1,10,Y01007
+2107050-Y01,Borsa pistola di ricarica,1,11,Y01007
+2110000-Y01,Assieme convertitore DCDC,1,,Y01008
+2110010-Y01,Convertitore DCDC,1,1,Y01008
+S32006003,Dado esagonale con flangia,4,2,Y01008
+2108000-Y01,Assieme VCU,1,,Y01009
+2108010-Y01,Unit  controllo veicolo,1,1,Y01009
+2108010Y0201,Unit  controllo veicolo (versione ENI),1,2,Y01009
+S32006003,Dado esagonale con flangia,4,3,Y01009
+2142000-Y01,Assieme unit  controllo motore,1,,Y010010
+2142010-Y01,Assieme controller motore,1,1,Y010010
+Q1460820,Bullone M8 20 con rondella elastica e rondella piana,4,2,Y010010
+3600000-Y01,Unit  elettronica veicolo,1,,Y010011
+3601010-Y01,Modulo controllo carrozzeria (BCM),1,1,Y010011
+3601010Y0200,Modulo controllo carrozzeria (BCM),1,1,Y010011
+3601010Y0201,Modulo controllo carrozzeria (BCM) (versione ENI),1,1,Y010011
+S32006003,Dado esagonale con flangia,2,2,Y010011
+3700000-Y01,Equipaggiamento elettrico veicolo,1,,Y010012
+3703010-Y01,Batteria 12V,1,1,Y010012
+3704010-Y01,Interruttore avvio passivo,1,2,Y010012
+3721010-Y01,Clacson alta tonalit ,1,3,Y010012
+Q1860630,Bullone esagonale con flangia M6 30,1,4,Y010012
+3736010-Y01,Interruttore power?off,1,5,Y010012
+3736011-Y01,Protezione interruttore power?off,1,,Y010012
+S14606005,Bullone M6 16 con rondella elastica e rondella piana,2,6,Y010012
+3746010-Y01,Interruttore comando alzacristalli,2,9,Y010012
+3766010-Y01,Interruttore avviso,1,10,Y010012
+3774010-Y01,Assieme interruttore combinato,1,11,Y010012
+S23004001,Vite testa cilindrica a croce,2,12,Y010012
+3778010-Y01,Blocco volante,1,13,Y010012
+3781010-Y01,Interruttore marce,1,14,Y010012
+3781010-Y01-A,Interruttore marce (senza posizione S),1,,Y010012
+3782010-Y01,Interruttore regolazione specchietto retrovisore elettrico,1,15,Y010012
+3790010-Y01,Cilindro serratura porta sinistra,1,16,Y010012
+3790030-Y01,Anello fermo cilindro serratura porta sinistra,1,17,Y010012
+3790020-Y01,Interruttore apertura portellone,1,18,Y010012
+3791010-Y01,Telecomando,2,19,Y010012
+3791010Y0201,Telecomando (versione ENI),1,,Y010012
+3791020-Y01,Interruttore PE (con antenna),1,20,Y010012
+3504102-Y01,Interruttore freno,2,21,Y010012
+3721020-Y01,Allarme bassa velocit  (AVAS),1,24,Y010012
+S32006003,Dado esagonale con flangia,2,,Y010012
+ST0205,Vite autofilettante a croce M2 5,2,,Y010012
+3820000-Y01,Assieme schermo centrale,1,,Y010013
+3820010-Y01,Schermo centrale (7 pollici),1,1,Y010013
+3820020Y0202,Schermo centrale (7 pollici),1,,Y010013
+3820000Y0201,Assieme schermo centrale (versione ENI),1,,Y010013
+3820010Y0201,Schermo centrale (7 pollici) (versione ENI),1,1,Y010013
+3820020Y0203,Schermo centrale (7 pollici) (versione ENI),1,,Y010013
+S27348002,Vite autofilettante testa larga semitonda a croce,4,2,Y010013
+3820012-Y01,Supporto telefono,1,3,Y010013
+4000000-Y01,Assieme cablaggio bassa tensione,1,,Y010014
+4002010-Y01,Cablaggio vano anteriore,1,1,Y010014
+4002010Y0201,Assieme cablaggio vano anteriore (versione ENI),1,1,Y010014
+4002020-Y01,Assieme cablaggio tetto,1,2,Y010014
+4002020Y0200,Assieme cablaggio tetto (versione Hall),1,2,Y010014
+4002030-Y01,Assieme cablaggio porta sinistra,1,3,Y010014
+4002030Y0200,Assieme cablaggio porta sinistra (versione Hall),1,3,Y010014
+4002040-Y01,Assieme cablaggio porta destra,1,4,Y010014
+4002040Y0200,Assieme cablaggio porta destra (versione Hall),1,4,Y010014
+4003010-Y01,Assieme cablaggio principale,1,5,Y010014
+4003010Y0200,Assieme cablaggio principale (versione Hall),1,5,Y010014
+4003010Y0201,Assieme cablaggio principale (versione Hall) (versione ENI),1,5,Y010014
+S18606003,Bullone esagonale con flangia,2,6,Y010014
+S27348002,Vite autofilettante testa larga semitonda a croce,2,7,Y010014
+4003020-Y01,Assieme cablaggio cruscotto ausiliario,1,8,Y010014
+4013010-Y01,Assieme cablaggio portellone,1,9,Y010014
+4013010Y0200,Assieme cablaggio portellone (versione Hall),1,9,Y010014
+4013020-Y01,Assieme cablaggio paraurti posteriore,1,10,Y010014
+4013020Y0201,Assieme cablaggio paraurti posteriore (versione ENI),1,10,Y010014
+5200000-Y01,Sistema tergicristallo e lavavetri,1,,Y010015
+5205010-Y01,Motore tergicristallo,1,1,Y010015
+S32006003,Dado esagonale con flangia,4,2,Y010015
+5205020Y0200,Braccio tergicristallo (con tubo ugello),1,3,Y010015
+5205030Y0200,Lama tergicristallo,1,4,Y010015
+5207010-Y01,Assieme vaschetta lavavetri (con tubo acqua),1,5,Y010015
+Q1860635,Bulloni esagonali con flangia M6 35,2,6,Y010015
+5207020Y0200,Assieme tubo a due vie,1,7,Y010015
+5205040Y0200,Cappuccio dado tergicristallo anteriore,1,8,Y010015
+S32006003,Dado esagonale con flangia,1,9,Y010015
+8100000-Y01,Sistema climatizzazione,1,,Y010016
+8103010-Y01,Assieme compressore elettrico,1,1,Y010016
+S32008001,Dado esagonale con flangia,4,2,Y010016
+8103020-Y01,Unit  controllo compressore,1,3,Y010016
+S32006003,Dado esagonale con flangia,4,4,Y010016
+8105010-Y01,Assieme condensatore,1,5,Y010016
+8107010Y0205,Assieme HVAC,1,6,Y010016
+S32006003,Dado esagonale con flangia,3,7,Y010016
+Q402B06,Guarnizione,3,8,Y010016
+8108010Y0101,Tubo aspirazione compressore (EU filler),1,9,Y010016
+8108020-Y01,Tubo scarico compressore,1,10,Y010016
+8108030Y0101,Tubo ingresso fluido serbatoio evaporazione,1,11,Y010016
+S14606002,Bullone testa esagonale con rondella elastica e rondella piana,5,12,Y010016
+8112010-Y01,Assieme pannello controllo climatizzatore,1,13,Y010016
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,2,14,Y010016
+Q1460625,Bullone testa esagonale con rondella elastica e rondella piana,4,15,Y010016
+S14606005,Bullone M6 16 con rondella elastica e rondella piana,2,16,Y010016
+7900000-Y01,Dispositivo comunicazione informazioni,,,Y010017
+7903010-Y01,Antenna avvio,1,1,Y010017
+S32006003,Dado esagonale con flangia,2,2,Y010017
+7911010-Y01,Altoparlante,1,3,Y010017
+S27348002,Vite autofilettante testa larga semitonda a croce,4,4,Y010017
+7925040-Y01,T?BOX (4G),1,5,Y010017
+S32006003,Dado esagonale con flangia,2,6,Y010017
+7925020-Y01,USB cruscotto ausiliario,1,7,Y010017
+7925030-Y01,USB cruscotto,1,8,Y010017
+2901000-Y01,Sospensione anteriore,1,,Y010018
+2801100Y0210,Assieme telaio ausiliario anteriore,1,1,Y010018
+S18510001,Bullone esagonale con flangia,8,2,Y010018
+Q1841050TF61,Bulloni flangiati,8,,Y010018
+Q1461025,Bullone esagonale M10 25 con rondella elastica e rondella piana,8,,Y010018
+2904100Y0210,Assieme braccio oscillante anteriore,2, 3/4,Y010018
+S18510006,Dado esagonale all?metal a coppia prevalente con flangia,2,5,Y010018
+S33110001,Dado esagonale all?metal a coppia prevalente con flangia,2,6,Y010018
+Q32010,Dado esagonale con flangia,2,6,Y010018
+2906100-Y01,Assieme barra stabilizzatrice,1,7,Y010018
+2906101Y0210,Barra stabilizzatrice anteriore,1,8,Y010018
+2906102-Y01,Boccola barra stabilizzatrice,2,9,Y010018
+2906103Y0210,Staffa montaggio barra stabilizzatrice,2,10,Y010018
+2906105-Y01,Boccola terminale barra stabilizzatrice,4,11,Y010018
+2906108Y0210,Rondella grande  12,2,12,Y010018
+2906107-Y01,Rondella grande  16,2,13,Y010018
+S38312001,Dado scanalato esagonale tipo II,2,14,Y010018
+S50032001,Spina di sicurezza,2,15,Y010018
+Q1461030,Bullone testa esagonale con rondella elastica e rondella piana,4,16,Y010018
+2904101-Y01,Assieme ammortizzatore anteriore sinistro,1,1,Y010019
+2904102-Y01,Assieme ammortizzatore anteriore destro,1,2,Y010019
+S32008001,Dado esagonale con flangia,4,3,Y010019
+S18512001,Bullone esagonale con flangia,4,4,Y010019
+S33112001,Dado esagonale all?metal a coppia prevalente con flangia,4,5,Y010019
+3501101-Y01,Assieme freno anteriore sinistro con fusello sterzo,1,6,Y010019
+3501102-Y01,Assieme freno anteriore destro con fusello sterzo,1,7,Y010019
+3501113-Y01,Assieme pinza freno sinistra,1,8,Y010019
+3501112-Y01,Fusello sterzo sinistro,1,9,Y010019
+3501120-Y01,Pastiglia freno,4,10,Y010019
+3501115-Y01,Bullone montaggio staffa,4,11,Y010019
+3501123-Y01,Assieme pinza freno destra,1,12,Y010019
+3501122-Y01,Fusello sterzo destro,1,13,Y010019
+3501111-Y01,Disco freno anteriore,2,14,Y010019
+S18510005,Bullone esagonale con flangia,2,15,Y010019
+S33110001,Dado esagonale all?metal a coppia prevalente con flangia,2,16,Y010019
+3501118-Y01,Anello dentato ABS,2,17,Y010019
+3501119-Y01,Bulloni limitatori cuscinetto,2,18,Y010019
+2911000-Y01,Sospensione posteriore,1,,Y010020
+2912135-Y01,Rondella anello di ritegno,1,,Y010020
+2912100-Y01,Assieme asse di trasmissione posteriore,1,1,Y010020
+2912111-Y01,Tubo asse,1,2,Y010020
+2912112-Y01,Assieme riduttore principale,1,3,Y010020
+2912113-Y01,Pinza freno,1,4,Y010020
+2912114-Y01,Pinza freno,1,5,Y010020
+2912129-Y01,Bullone montaggio staffa,4,6,Y010020
+2912115-Y01,Pastiglia freno,4,7,Y010020
+2912116-Y01,Disco freno posteriore,2,8,Y010020
+2912166-Y01,Rondella tenuta motore,1,9,Y010020
+2912119-Y01,Tappo riempimento dado,1,10,Y010020
+2912132-Y01,Guarnizione tappo riempimento,,,Y010020
+2912120-Y01,Tappo scarico dado,1,11,Y010020
+2912133-Y01,Guarnizione tappo scarico,,,Y010020
+2912121-Y01,Valvola sfiato,1,12,Y010020
+2912123-Y01,Semiasse sinistro,1,13,Y010020
+2912124-Y01,Semiasse destro,1,14,Y010020
+2912125-Y01,Paraolio semiasse,2,15,Y010020
+2912126-Y01,Paraolio albero ingresso,1,16,Y010020
+2912127-Y01,Anello elastico foro,2,17,Y010020
+2912128-Y01,Parafango,2,18,Y010020
+2912118-Y01,Dado bloccaggio disco freno,2,19,Y010020
+Q5004036,Spina di sicurezza,2,20,Y010020
+2914300-Y01,Assieme barra di spinta,2,21,Y010020
+S18512004,Bullone esagonale con flangia,6,22,Y010020
+S33112001,Dado esagonale all?metal a coppia prevalente con flangia,10,23,Y010020
+Q1851020,Bullone esagonale con flangia,2,24,Y010020
+2912017-Y01,Staffa montaggio motore,1,25,Y010020
+S18606004,Bullone esagonale con flangia,2,26,Y010020
+2912130-Y01,Dado esagonale con flangia,2,27,Y010020
+2912131-Y01,Bullone esagonale con flangia,7,28,Y010020
+2915100-Y01,Ammortizzatore posteriore,2,29,Y010020
+S18512001,Bullone esagonale con flangia,2,30,Y010020
+S34012001,Dado esagonale tipo 1,2,31,Y010020
+S40212002,Rondella grande,2,32,Y010020
+S40312001,Rondella elastica,2,33,Y010020
+2912011-Y01,Molla elicoidale posteriore,2,34,Y010020
+2912012Y0210,Sede superiore montaggio molla posteriore,2,35,Y010020
+2912013Y0210,Tampone posteriore,2,36,Y010020
+2914200-Y01,Barra bilanciamento posteriore,1,37,Y010020
+S18512003,Bullone esagonale con flangia,1,38,Y010020
+Q218B0810,Vite testa cilindrica esagonale,8,39,Y010020
+3100000-Y01,Sistema ruote,1,,Y010021
+3100100-Y01,Assieme ruota acciaio 14 ,4,1,Y010021
+3100101-Y01,Pneumatico (155/65?R14),1,2,Y010021
+3100109-Y01,Pneumatico invernale (155/65?R14),1,2,Y010021
+3100106-Y01,Ruota acciaio 14 ,1,3,Y010021
+3100102-Y01,Valvola gonfiaggio,1,4,Y010021
+3106107Y0240,Dado ruota (cerchio acciaio),4,5,Y010021
+3100110-Y01,Assieme ruota alluminio 15 ,4,6,Y010021
+3100111-Y01,Pneumatico (155/60?R15),1,7,Y010021
+3100112-Y01,Pneumatico quattro stagioni (155/60?R15),1,7,Y010021
+3100105-Y01,Ruota alluminio 15 ,1,8,Y010021
+3100113-Y01TR413,Valvola ruota,1,9,Y010021
+3106106Y0240,Dado ruota (cerchio acciaio),4,10,Y010021
+3400000-Y01,Sistema sterzo,1,,Y010022
+3400101-Y01,Assieme scatola guida con tiranti,1,1,Y010022
+3400111-Y01,Corpo scatola guida con tirante interno,1,2,Y010022
+3400118-Y01,Staffa fermo,1,3,Y010022
+3400113-Y01,Testina sterzo,2,4,Y010022
+3400102-Y01,Assieme albero sterzo inferiore,1,5,Y010022
+3400103-Y01,Assieme colonna sterzo,1,6,Y010022
+3400134-Y01,Corpo volante,1,7,Y010022
+S18608002,Bullone esagonale con flangia,2,8,Y010022
+S18608005,Bullone esagonale con flangia,1,9,Y010022
+S32008001,Dado esagonale con flangia,1,10,Y010022
+S38312001,Dado scanalato esagonale tipo II,2,11,Y010022
+S50032001,Spina di sicurezza,2,12,Y010022
+S18608002,Bullone esagonale con flangia,2,13,Y010022
+Q1841050,Bullone esagonale con flangia,2,14,Y010022
+3400135-Y01,Copertura clacson,1,15,Y010022
+3400123-Y01,Colonna sterzo meccanica,1,16,Y010022
+3400124-Y01,Giunto universale colonna sterzo,1,17,Y010022
+3400125-Y01,Dado esagonale all?metal a coppia prevalente con flangia,1,18,Y010022
+3400126-Y01,Bullone testa esagonale,3,19,Y010022
+3400132-Y01,Assale inferiore sterzo,1,20,Y010022
+3400108-Y01,Protezione albero inferiore colonna sterzo,1,21,Y010022
+3400104-Y01,Assieme volante,1,22,Y010022
+3400114-Y01,Copertura antipolvere,2,23,Y010022
+3500000-Y01,Sistema frenante,1,,Y010023
+3508100-Y01,Assieme meccanismo freno di stazionamento,1,1,Y010023
+3508101-Y01,Pedale freno di stazionamento,1,2,Y010023
+S51008001,Perno asse,1,,Y010023
+S50032001,Spina di sicurezza,1,,Y010023
+3508102-Y01,Cavo freno di stazionamento anteriore,1,3,Y010023
+3508103-Y01,Cavo freno di stazionamento posteriore sinistro,1,4,Y010023
+3508104-Y01,Cavo freno di stazionamento posteriore destro,1,5,Y010023
+S32008001,Dado esagonale con flangia,3,6,Y010023
+S18606003,Bullone esagonale con flangia,3,7,Y010023
+3506048-Y01,Anello fermamolla cavo freno di stazionamento,1,8,Y010023
+S50108001,Perno di bloccaggio,1,9,Y010023
+3540102-Y01,Assieme serbatoio vuoto,1,1,Y010024
+3540121-Y01,Serbatoio vuoto,1,2,Y010024
+3540122-Y01,Tappo di tenuta,1,3,Y010024
+3540123-Y01,Assieme controller,1,4,Y010024
+3540124-Y01,Tubo silicone (655),1,5,Y010024
+3540125-Y01,Fascetta tubo,2,6,Y010024
+S18406003,Bullone esagonale con flangia,2,7,Y010024
+Q402B06,Guarnizione,2,8,Y010024
+Q67405100,Fascetta plastica,1,9,Y010024
+3540103-Y01,Assieme pompa vuoto elettronica,1,10,Y010024
+3540131-Y01,Pompa vuoto,1,11,Y010024
+3540132-Y01,Boccola anti?vibrazione,4,12,Y010024
+3540133-Y01,Tubo gomma 90 5mm,1,13,Y010024
+3540134-Y01,Filtro,1,14,Y010024
+3540135-Y01,Tubo gomma 115 5mm,1,15,Y010024
+3540136-Y01,Giunto a T,1,16,Y010024
+3540125-Y01,Fascetta tubo,8,17,Y010024
+Q1860630,Bulloni esagonali con flangia M6 30,4,18,Y010024
+3540101-Y01,Servofreno con cilindro maestro,1,1,Y010025
+3540111-Y01,Servofreno,1,2,Y010025
+3540113-Y01,Serbatoio olio freni,1,3,Y010025
+3540114-Y01,Tappo serbatoio liquido freni,5,4,Y010025
+3550101-Y01,Controller ABS,1,5,Y010025
+3550111-Y01,Boccola montaggio controller ABS,1,6,Y010025
+3506105-Y01,Anello fermamolla tubo freno,4,7,Y010025
+3506106-Y01,Bullone cavo (hollow bolt),4,8,Y010025
+3506112-Y01,Tubo freno posteriore,2,9,Y010025
+3504101-Y01,Assieme pedale freno,1,10,Y010025
+S32008001,Dado esagonale con flangia,4,11,Y010025
+Q1840820,Bullone esagonale con flangia,2,12,Y010025
+3506109-Y01,Tubo freno anteriore sinistro,1,13,Y010025
+3506111-Y01,Tubo freno anteriore destro,1,14,Y010025
+3506114-Y01,Tubo freno posteriore destro sezione anteriore,1,15,Y010025
+3506121-Y01,Tubo freno posteriore destro sezione posteriore,1,16,Y010025
+3506115-Y01,Tubo freno posteriore sinistro sezione anteriore,1,17,Y010025
+3506122-Y01,Tubo freno posteriore sinistro sezione posteriore,1,18,Y010025
+3506101-Y01,Tubo cilindro maestro ? ABS,2,19,Y010025
+3506113Y0210,Clip tubo doppio foro,4,20,Y010025
+3506116Y0210,Clip tubo foro singolo,4,21,Y010025
+3506107-Y01,Rondella in rame,8,22,Y010025
+3550300-Y01,Sensore velocit  ruota anteriore,2,23,Y010025
+3550302-Y01,Staffa sensore velocit  ruota anteriore,2,24,Y010025
+Q1860816,Bullone flangiato esagonale,4,25,Y010025
+S18606003,Bullone esagonale con flangia,2,26,Y010025
+S32006003,Dado esagonale con flangia,2,27,Y010025
+3550400-Y01,Sensore velocit  ruota posteriore,2,28,Y010025
+S18606003,Bullone esagonale con flangia,2,29,Y010025
+3506104-Y01,Tubo freno anteriore,2,30,Y010025
+5010010-Y01,Assieme scocca grezza,1,1,Y010026
+5101210-Y01,Assieme telaio vano anteriore,1,2,Y010026
+5101170-Y01,Assieme telaio pavimento intermedio,1,3,Y010026
+5101230-Y01,Assieme telaio pavimento posteriore,1,4,Y010026
+5101130-Y01,Assieme supporto molla sospensione anteriore sinistra,1,5,Y010026
+5101140-Y01,Assieme supporto molla sospensione anteriore destra,1,6,Y010026
+5301000-Y01,Assieme parete anteriore,1,7,Y010026
+5101750-Y01,Assieme vasca sedile,1,8,Y010026
+5101940-Y01,Assieme pavimento posteriore,1,9,Y010026
+5601110-Y01,Assieme pannello esterno parete posteriore,1,10,Y010026
+5401350-Y01,Componente pannello interno montante A sinistro,1,11,Y010026
+5401360-Y01,Componente pannello interno montante A destro,1,12,Y010026
+5401230-Y01,Assieme pannello interno soglia sinistra,1,13,Y010026
+5401240-Y01,Assieme pannello interno soglia destra,1,14,Y010026
+5401030-Y01,Assieme pannello interno soglia lato sinistro,1,15,Y010026
+5401040-Y01,Assieme pannello interno soglia lato destro,1,16,Y010026
+5401010-Y01,Assieme parete laterale sinistra,1,17,Y010026
+5401020-Y01,Assieme parete laterale destra,1,18,Y010026
+5701010-Y01,Assieme copertura tetto,1,19,Y010026
+5101900-Y01,Assieme pannello accesso,1,,Y010027
+5101901-Y01,Pannello accesso,1,1,Y010027
+5101903-Y01,Guarnizione pannello accesso,1,2,Y010027
+S18606003,Bullone esagonale con flangia,4,3,Y010027
+5301813-Y01,Piastra di pressione,1,1,Y010028
+5301811-Y01,Tirante batteria,2,2,Y010028
+S32006003,Dado esagonale con flangia,2,3,Y010028
+5401170-Y01,Staffa montaggio componente trave tubolare sinistra,1,1,Y010029
+5401180-Y01,Staffa montaggio componente trave tubolare destra,1,2,Y010029
+S18606003,Bullone esagonale con flangia,8,3,Y010029
+5101273-Y01,Staffa montaggio condensatore,2,1,Y010030
+S18606003,Bullone esagonale con flangia,2,2,Y010030
+6101010-Y01,Assieme saldatura porta sinistra,1,1,Y010031
+6101020-Y01,Assieme saldatura porta destra,1,2,Y010031
+6106010-Y01,Cerniera superiore porta laterale,2,3,Y010031
+6106030-Y01,Cerniera inferiore porta laterale,2,4,Y010031
+S18608010,Bullone esagonale con flangia,16,5,Y010031
+6301710-Y01,Assieme traversa superiore telaio interno portellone,1,1,Y010032
+6301591-Y01,Piastra montaggio serratura portellone,1,2,Y010032
+6301552-Y01,Piastra montaggio tampone portellone destra,1,3,Y010032
+6301551-Y01,Piastra montaggio tampone portellone sinistra,1,4,Y010032
+6306310-Y01,Cerniera portellone,2,5,Y010032
+S32008001,Dado esagonale con flangia,4,6,Y010032
+S18408002,Bullone esagonale con flangia,4,7,Y010032
+Q2734812,Vite autofilettante testa larga semitonda a croce,6,8,Y010032
+S23006002,Vite testa cilindrica a croce con rondella elastica e rondella piana,22,9,Y010032
+5103520-Y01,Assieme staffa montaggio intermedia paraurti posteriore,1,1,Y010033
+S18608009,Bullone esagonale con flangia,2,2,Y010033
+5101263-Y01,Staffa montaggio tubo freno posteriore sinistra,1,1,Y010034
+5101264-Y01,Staffa montaggio tubo freno posteriore destra,1,2,Y010034
+S18606003,Bullone esagonale con flangia,6,3,Y010034
+5101467-Y01,Piastra montaggio interruttore power?off,1,1,Y010035
+5101216-Y01,Staffa montaggio allarme bassa velocit ,1,1,Y010036
+S18606003,Bullone esagonale con flangia,2,2,Y010036
+5301700-Y01,Assieme trave cruscotto,1,,Y010036
+5301710-Y01,Assieme corpo trave cruscotto,1,1,Y010037
+S18606003,Bullone esagonale con flangia,2,2,Y010037
+ZH2204-21,Dado lamellare tipo A,4,3,Y010037
+S18608009,Bullone esagonale con flangia,4,4,Y010037
+S32006003,Dado esagonale con flangia,2,5,Y010037
+5107000-Y01,Sistema tappi chiusura,1,,Y010038
+5107011-Y01,Tappo chiusura  10,11,1,Y010038
+5107016-Y01,Tappo chiusura  15,2,2,Y010038
+5107013-Y01,Tappo chiusura  20,16,3,Y010038
+5107015-Y01,Tappo chiusura  30,6,4,Y010038
+5107014-Y01,Tappo chiusura  40,4,5,Y010038
+5107001-Y01,Tampone portellone,2,6,Y010038
+5107003-Y01,Tampone porta laterale,6,7,Y010038
+5107017-Y01,Adesivo foro  20,2,8,Y010038
+5107018-Y01,Adesivo foro  25,4,9,Y010038
+5107019-Y01,Adesivo foro  30,1,10,Y010038
+3400105-Y01,Boccola colonna sterzo,1,11,Y010038
+5107021-Y01,Tappo tubo quadro 40 40 m3,2,12,Y010038
+6309100-Y01,Sistema barra pneumatica portellone,1,,Y010039
+6309110-Y01,Molla a gas,2,1,Y010039
+6309101-Y01,Staffa montaggio barra pneumatica portellone sinistra,1,2,Y010039
+6309102-Y01,Staffa montaggio barra pneumatica portellone destra,1,3,Y010039
+6309103-Y01,Perno sferico molla a gas,2,4,Y010039
+S18606003,Bullone esagonale con flangia,4,5,Y010039
+6101000-Y01,Assieme rivestimento guida gomma,1,,Y010040
+6101760-Y01,Assieme rivestimento guida anteriore porta sinistra,1,1,Y010040
+6101740-Y01,Assieme rivestimento guida anteriore porta destra,1,2,Y010040
+6101730-Y01,Rivestimento in gomma guida posteriore porta sinistra,1,3,Y010040
+6107133-Y01,Blocco di fissaggio finestrino triangolare posteriore sinistro,1,4,Y010040
+6101750-Y01,Rivestimento in gomma guida posteriore porta destra,1,5,Y010040
+6107134-Y01,Blocco di fissaggio finestrino triangolare posteriore destro,1,6,Y010040
+S14606005,Bullone esagonale con rondella elastica e rondella piana M6 16,14,7,Y010040
+6105000-Y01,Sistema di chiusura,1,,Y010041
+6105100-Y01,Serratura elettronica porta sinistra,1,1,Y010041
+6105101-Y01,Corpo serratura elettronica porta sinistra,1,2,Y010041
+6105103-Y01,Tirante serratura elettronica porta sinistra,1,3,Y010041
+6105105-Y01,Tirante cilindro serratura elettronica porta sinistra,1,4,Y010041
+6105111-Y01,Cavo serratura elettronica porta sinistra,1,5,Y010041
+6105107-Y01,Scrocco serratura elettronica porta,3,6,Y010041
+Q2400614,Vite svasata con rondella dentata esterna,6,7,Y010041
+Q2580816,Vite svasata con rondella dentata esterna,6,8,Y010041
+6105200-Y01,Sistema serratura elettronica porta destra,1,9,Y010041
+6105102-Y01,Corpo serratura elettronica porta destra,1,10,Y010041
+6105104-Y01,Tirante serratura elettronica porta destra,1,11,Y010041
+6105112-Y01,Cavo serratura elettronica porta destra,1,12,Y010041
+5606010-Y01,Sistema serratura elettrica portellone,1,13,Y010041
+5606011-Y01,Corpo serratura elettrica portellone,1,14,Y010041
+S14606002,Bullone esagonale con rondella elastica e rondella piana,3,15,Y010041
+5606030-Y01,Sistema di estrazione sportellino presa di ricarica,1,16,Y010041
+5606032-Y01,Maniglia blocco sportellino presa di ricarica,1,17,Y010041
+S23006002,Vite a testa cilindrica con rondella piana e rondella elastica,2,18,Y010041
+5606033-Y01,Cavo blocco sportellino presa di ricarica,1,19,Y010041
+5606034-Y01,Fascette fermacavo  7,2,20,Y010041
+157-00135(HTC),Fermacavo con perno,2,21,Y010041
+6107000-Y01,Sistema di tenuta,1,,Y010042
+6307111-Y01,Guarnizione portellone,1,1,Y010042
+6307113-Y01,Guarnizione superiore portellone,1,2,Y010042
+6307114Y0210,Guarnizione superiore portellone,1,,Y010042
+6107117-Y01,Guarnizione esterna vetro porta sinistra,1,3,Y010042
+6107118-Y01,Guarnizione esterna vetro porta destra,1,4,Y010042
+6107121-Y01,Guarnizione interna vetro porta sinistra,1,5,Y010042
+6107122-Y01,Guarnizione interna vetro porta destra,1,6,Y010042
+6107111-Y01,Guarnizione apertura porta anteriore sinistra,1,7,Y010042
+6107112-Y01,Guarnizione apertura porta anteriore destra,1,8,Y010042
+5206011-Y01,Guarnizione parabrezza anteriore,1,9,Y010042
+5701211-Y01,Guarnizione tetto apribile sinistra,1,10,Y010042
+5701212-Y01,Guarnizione tetto apribile destra,1,11,Y010042
+6107131-Y01,Guarnizione finestrino triangolare anteriore sinistra,1,12,Y010042
+6107132-Y01,Guarnizione finestrino triangolare anteriore destra,1,13,Y010042
+6107135-Y01,Guarnizione superiore scatola batteria,1,14,Y010042
+6107136-Y01,Guarnizione inferiore scatola batteria,1,15,Y010042
+6107137Y0210,Rondella di tenuta tetto,1,16,Y010042
+6107115-Y01,Canale fango anteriore porta sinistra,1,17,Y010042
+6107127-Y01,Canale fango posteriore porta sinistra,1,18,Y010042
+6107116-Y01,Canale fango anteriore porta destra,1,19,Y010042
+6107128-Y01,Canale fango posteriore porta destra,1,20,Y010042
+6104000-Y01,Sistema alzacristalli,1,,Y010043
+6104110-Y01,Alzacristallo elettrico porta sinistra (Hall),1,1,Y010043
+6104110-Y01-A,Alzacristallo elettrico porta sinistra (non-Hall),1,,Y010043
+6104120-Y01,Alzacristallo elettrico porta destra (Hall),1,2,Y010043
+6104120-Y01-A,Alzacristallo elettrico porta destra (non-Hall),1,,Y010043
+S32006003,Dado esagonale con flangia,14,3,Y010043
+6105500-Y01,Sistema maniglia esterna,1,,Y010044
+6105510Y0205D,Maniglia esterna porta sinistra,1,1,Y010044
+6105520Y0205D,Maniglia esterna porta destra,1,2,Y010044
+S18606003,Bullone esagonale con flangia,6,3,Y010044
+8202000-Y01,Sistema specchietto retrovisore esterno,1,,Y010045
+8202010-Y01D,Specchietto retrovisore esterno sinistro,1,1,Y010045
+8202011-Y01D,Specchietto retrovisore esterno sinistro (versione alternativa),1,2,Y010045
+8202012Y0210,Lente specchietto retrovisore sinistro,1,3,Y010045
+S23006002,Vite a testa cilindrica con rondella elastica e piana,6,4,Y010045
+8202020-Y01D,Specchietto retrovisore esterno destro,1,5,Y010045
+8202021-Y01D,Specchietto retrovisore esterno destro (versione alternativa),1,6,Y010045
+8202022Y0210,Lente specchietto retrovisore destro,1,7,Y010045
+2804200-Y01,Sistema cerniera paraurti posteriore,1,,Y010046
+2804201-Y01,Cerniera paraurti posteriore sinistra,1,1,Y010046
+2804202-Y01,Cerniera paraurti anteriore destra,1,2,Y010046
+Q1460816,Bullone esagonale con rondella elastica e piana,4,3,Y010046
+S27348002,Vite autofilettante testa larga semitonda,8,4,Y010046
+8208130-Y01,Sistema catarifrangente,1,,Y010047
+8208010-Y01,Catarifrangente posteriore sinistro,1,1,Y010047
+8208020-Y01,Catarifrangente posteriore destro,1,2,Y010047
+8208030-Y01,Catarifrangente laterale,2,3,Y010047
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,4,4,Y010047
+8200105Y0210,Tubo di troppo pieno anteriore,1,1,Y010048
+S67325001,Fascetta elastica in acciaio,1,2,Y010048
+5606034-Y01,Fascette fermacavo  7,2,3,Y010048
+8200150-Y01,Pedana di benvenuto,1,,Y010049
+8200151Y0210,Pedana sinistra,1,1,Y010049
+8200152Y0210,Pedana destra,1,2,Y010049
+8204001-Y01,Sistema aletta parasole,1,,Y010050
+8204010Y0205,Aletta parasole,2,1,Y010050
+8204020Y0205,Piastra copribase aletta parasole,2,2,Y010050
+S21406001,Vite a testa cilindrica M5 16,4,3,Y010050
+5810001-Y01,Sistema cintura di sicurezza,1,,Y010051
+5810010-Y01,Cintura di sicurezza sinistra,1,1,Y010051
+5810020-Y01,Cintura di sicurezza destra,1,2,Y010051
+5810011-Y01,Attacco cintura sinistra,1,3,Y010051
+5810021-Y01,Attacco cintura destra,1,4,Y010051
+8201001-Y01,Sistema specchietto retrovisore interno,1,,Y010052
+8201010-Y01,Specchietto retrovisore interno,1,1,Y010052
+5305010-Y01,Accessori cruscotto ausiliario,1,,Y010053
+5305013Y0220,Tampone in gomma 1,1,1,Y010053
+5305014Y0220,Tampone in gomma 2,1,2,Y010053
+5305015Y0220,Tampone in gomma 3,1,3,Y010053
+5305031-Y01,Cerniera maniglione,1,4,Y010053
+5305032-Y01,Femmina fissaggio maniglione,1,5,Y010053
+5305033-Y01,Maschio fissaggio maniglione,1,,Y010053
+Z056,Cuscinetto,2,6,Y010053
+S27348002,Vite autofilettante testa larga semitonda,6,7,Y010053
+8104010-Y01,Griglia ventilazione assy,1,,Y010054
+8104011-Y01,Griglia ventilazione,2,1,Y010054
+6105300-Y01,Sistema maniglia interna,1,,Y010055
+6105330Y0205,Maniglia interna sinistra,1,1,Y010055
+6105340Y0205,Maniglia interna destra,1,2,Y010055
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,8,3,Y010055
+6800100-Y01,Sistema sedili,,,Y010056
+6900100Y0210-Z001,Sedile anteriore sinistro,1,,Y010056
+6900200Y0210-Z001,Sedile anteriore destro,1,,Y010056
+6800010-Y01,Sedile anteriore sinistro,1,1,Y010056
+6900010-Y01,Sedile anteriore destro,1,2,Y010056
+6800101-Y01,Copertura staffa sedile,4,3,Y010056
+6900300Y0210,Copertura staffa sedile sinistra,2,,Y010056
+6900400Y0210,Copertura staffa sedile destra,2,,Y010056
+Q1860825,Bullone esagonale con flangia,8,4,Y010056
+Q402B08F62,Rondella bullone fissaggio sedile,8,,Y010056
+3900010-Y01,Sistema attrezzi di bordo,1,,Y010057
+3926010-Y01,Triangolo di emergenza,1,1,Y010057
+5528250-Y01,Tasca portaoggetti con cordino,1,,Y010058
+5528013-Y01,Cordino tasca portaoggetti,2,1,Y010058
+5528015-Y01,Rete portaoggetti lato passeggero,1,2,Y010058
+S29404001,Vite autofilettante testa larga semitonda,5,3,Y010058
+8200110-Y01,Supporto posteriore,1,,Y010059
+8200111-Y01,Supporto posteriore,1,1,Y010059
+8200113-Y01,Piastra base cerniera sinistra,1,2,Y010059
+8200114-Y01,Piastra interna cerniera sinistra,1,3,Y010059
+8200115-Y01,Piastra base cerniera destra,1,4,Y010059
+8200116-Y01,Piastra interna cerniera destra,1,5,Y010059
+S27342004,Vite autofilettante testa larga semitonda,4,6,Y010059
+8200117-Y01,Blocco di fine corsa supporto posteriore,2,7,Y010059
+6101900-Y01,Membrana impermeabile porta,1,,Y010060
+6101901Y0205,Membrana impermeabile superiore porta sinistra,1,1,Y010060
+6101902Y0205,Membrana impermeabile superiore porta destra,1,2,Y010060
+6101903Y0205,Membrana impermeabile inferiore porta sinistra/destra,1,3,Y010060
+6101903Y0205,Membrana impermeabile inferiore porta sinistra/destra,1,4,Y010060
+8200100-Y01,Sistema blocco sollevatore,1,,Y010061
+8200101-Y01,Blocco sollevatore,4,1,Y010061
+S40210001,Rondella grande,4,2,Y010061
+S18408004,Bullone esagonale con flangia,4,3,Y010061
+5306150-Y01,Assieme identificazione veicolo,1,,Y010062
+5306153-Y01,Etichetta specifiche ventola condensatore,1,1,Y010062
+5306154-Y01,Etichetta refrigerante A/C,1,2,Y010062
+5306155-Y01,Targhetta veicolo,1,3,Y010062
+5306156-Y01,Logo X,1,4,Y010062
+5306157-Y01,Logo YOYO,1,5,Y010062
+5306163-Y01,Etichetta pneumatici 14 ,1,6,Y010062
+5306164-Y01,Etichetta pneumatici 15 ,1,6,Y010062
+5306010Y0220,Logo XEV,1,7,Y010062
+4100000-Y01,Sistema luci,1,,Y010063
+4121030-Y01,Assieme faro anteriore sinistro (parte a parete spessa della luce diurna),1,1,Y010063
+S14606005,Bullone esagonale con rondella elastica e rondella piana M6 16,8,2,Y010063
+4121040-Y01,Assieme faro anteriore destro (parte a parete spessa della luce diurna),1,3,Y010063
+4108010-Y01,Assieme luce targa,2,4,Y010063
+4123010-Y01,Luce plafoniera,1,5,Y010063
+S21405002,Vite a testa cilindrica con impronta a croce M5 16,2,6,Y010063
+4133010-Y01,Assieme faro posteriore sinistro,1,7,Y010063
+4133010-Y01-B,Assieme faro posteriore sinistro,1,,Y010063
+4133010-Y01-A,Assieme faro posteriore sinistro,1,,Y010063
+S18606003,Bullone esagonale con flangia,6,8,Y010063
+S32006003,Dado esagonale con flangia,2,9,Y010063
+ZH860,Fermo fanale posteriore,4,10,Y010063
+4133020-Y01,Assieme faro posteriore destro,1,11,Y010063
+4133020-Y01-B,Assieme faro posteriore destro,1,,Y010063
+4133020-Y01-A,Assieme faro posteriore destro,1,,Y010063
+5702001-Y01,Sistema tetto,1,,Y010064
+5702010-Y01D,Assieme copertura tetto,1,1,Y010064
+5702020-Y01D,Assieme copertura tetto,1,,Y010064
+5702013-Y01,Guarnizione impermeabile in spugna tetto (W12 T8),1,2,Y010064
+5702015-Y01,Nastro adesivo in gomma butilica per impermeabilizzazione e sigillatura,1,3,Y010064
+5702017-Y01,Rondella di tenuta impermeabile copertura tetto,4,4,Y010064
+S27348004,Vite autofilettante testa larga semitonda,4,5,Y010064
+ZH1255,Fermo a D,10,6,Y010064
+802011,Sigillante parabrezza anteriore (morbido),1,7,Y010064
+5400009-Y01,Sistema esterno parete laterale,1,,Y010065
+5400010-Y01D,Pannello rifinitura superiore anteriore parete sinistra,1,1,Y010065
+ZH1255,Fermo a D,17,2,Y010065
+S18606003,Bullone esagonale con flangia,8,3,Y010065
+5400030-Y01D,Pannello rifinitura superiore posteriore parete sinistra,1,4,Y010065
+ZH1210,Supporto dado plastico,16,5,Y010065
+S27348002,Vite autofilettante testa larga semitonda,14,6,Y010065
+5400500-Y01D,Piccolo pannello rifinitura parete sinistra,1,7,Y010065
+5400331-Y01,Piccola rifinitura esterna lato sinistro,1,8,Y010065
+5400332-Y01,Piccola rifinitura interna lato sinistro,1,9,Y010065
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,1,10,Y010065
+ZH680,Fermo metallico a V,3,11,Y010065
+5400101-Y01D,Piastra parafango posteriore sinistra,1,12,Y010065
+ZH2204-16,Dado a lamella tipo A,4,13,Y010065
+5400771-Y01D,Soglia inferiore sinistra,1,14,Y010065
+ZH2204-6,Dado a lamella tipo B,1,15,Y010065
+6102051-Y01,Spugna antipolvere,1,16,Y010065
+2804508-Y01,Staffa montaggio paraurti posteriore sinistro,1,17,Y010065
+Q2214816,Vite autofilettante testa svasata con rondella piana,4,18,Y010065
+5400009-Y01,Sistema esterno parete laterale,1,,Y010066
+5400020-Y01D,Pannello rifinitura superiore anteriore parete destra,1,1,Y010066
+ZH1255,Fermo a D,17,2,Y010066
+S18606003,Bullone esagonale con flangia,8,3,Y010066
+5400040-Y01D,Pannello rifinitura superiore posteriore parete destra,1,4,Y010066
+ZH1210,Supporto dado plastico,16,5,Y010066
+S27348002,Vite autofilettante testa larga semitonda,14,6,Y010066
+5400600-Y01D,Piccolo pannello rifinitura parete destra,1,7,Y010066
+5400341-Y01,Piccola rifinitura esterna lato destro,1,8,Y010066
+5400342-Y01,Piccola rifinitura interna lato destro,1,9,Y010066
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,1,10,Y010066
+ZH680,Fermo metallico a V,3,11,Y010066
+5400201-Y01D,Piastra parafango posteriore destra,1,12,Y010066
+ZH2204-16,Dado a lamella tipo A,4,13,Y010066
+5400781-Y01D,Soglia inferiore destra,1,14,Y010066
+ZH2204-6,Dado a lamella tipo B,1,15,Y010066
+6102051-Y01,Spugna antipolvere,1,16,Y010066
+2804509-Y01,Staffa montaggio paraurti posteriore destro,1,17,Y010066
+Q2214816,Vite autofilettante testa svasata con rondella piana,4,18,Y010066
+8403100-Y01,Sistema parafango,1,,Y010067
+8403111-Y01D,Assieme saldatura parafango sinistro,1,1,Y010067
+8403102-Y01,Pannello inferiore rifinitura finestrino triangolare sinistro,1,2,Y010067
+8403121-Y01D,Assieme saldatura parafango sinistro,1,3,Y010067
+8403202-Y01,Pannello inferiore rifinitura finestrino triangolare destro,1,4,Y010067
+ZH1255,Fermo a D,2,5,Y010067
+S27348002,Vite autofilettante testa larga semitonda,2,6,Y010067
+ZH680,Fermo metallico a V,2,7,Y010067
+S18606003,Bullone esagonale con flangia,6,8,Y010067
+ZH2204-16,Dado a lamella tipo A,2,9,Y010067
+5306148Y0210,Nastro biadesivo (W10mm T0.8mm),,10,Y010067
+5302000-Y01,Sistema pannello rifinitura parabrezza inferiore,1,,Y010068
+5302020-Y01,Piastra copertura tergicristallo anteriore,1,1,Y010068
+S27348002,Vite autofilettante testa larga semitonda,6,2,Y010068
+5302003-Y01,Corpo canalina flusso anteriore,1,3,Y010068
+S18606003,Bullone esagonale con flangia,8,4,Y010068
+5302007-Y01D,Pannello rifinitura superiore faro anteriore sinistro,1,5,Y010068
+ZH830,Fermo a scatto (testa piccola),2,6,Y010068
+5302008-Y01D,Pannello rifinitura superiore faro anteriore destro,1,7,Y010068
+8402500-Y01,Sistema rifinitura cofano,1,,Y010069
+B8402510-Y01D,Assieme cofano anteriore,1,1,Y010069
+S18606003,Bullone esagonale con flangia,2,2,Y010069
+8402517Y01A,Supporto cofano sinistro,1,,Y010069
+8402518Y01A,Supporto cofano destro,1,,Y010069
+S27342004,Vite autofilettante testa larga semitonda,4,,Y010069
+5302010-Y01,Assieme piastra copertura presa di ricarica anteriore,1,,Y010070
+5302011-Y01D,Piastra copertura presa di ricarica anteriore,1,1,Y010070
+5302013-Y01,Piastra interna presa di ricarica anteriore,1,,Y010070
+5302015-Y01,Base presa di ricarica anteriore,1,,Y010070
+5302017-Y01,Perno rotante presa di ricarica anteriore,1,,Y010070
+Q5002525,Spina di sicurezza,1,,Y010070
+Z054,Molla,1,,Y010070
+5302030-Y01,Assieme base presa di ricarica anteriore,1,2,Y010070
+2803000-Y01,Sistema paraurti anteriore,1,,Y010071
+2803013-Y01,Staffa montaggio paraurti anteriore sinistro,1,1,Y010071
+S18606003,Bullone esagonale con flangia,11,2,Y010071
+ZH2204-16,Dado a lamella tipo A,6,3,Y010071
+2803014-Y01,Staffa montaggio paraurti anteriore destro,1,4,Y010071
+2803010-Y01D,Assieme corpo paraurti anteriore,1,5,Y010071
+2803001-Y01D,Corpo paraurti anteriore,1,6,Y010071
+2803009-Y01D,Pannello inferiore rifinitura paraurti anteriore,1,7,Y010071
+Z056,Cuscinetto,2,8,Y010071
+2803011-Y01D,Pannello inferiore faro anteriore sinistro,1,9,Y010071
+2803012-Y01D,Pannello inferiore faro anteriore destro,1,10,Y010071
+2803007-Y01D,Pannello rifinitura paraurti anteriore,1,11,Y010071
+2803017-Y01,Piastra montaggio targa anteriore,1,13,Y010071
+ZH2204-6,Dado a lamella tipo B,4,14,Y010071
+Z039,Vite,4,15,Y010071
+2803003-Y01D,Pannello centrale rifinitura paraurti anteriore,1,16,Y010071
+2803005-Y01D,Striscia rifinitura paraurti anteriore,1,17,Y010071
+2803019-Y01,Deflettore aria pannello rifinitura paraurti anteriore,1,18,Y010071
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,2,20,Y010071
+S27348002,Vite autofilettante testa larga semitonda,2,21,Y010071
+2804500-Y01,Sistema paraurti posteriore,1,,Y010072
+2804520-Y01D,Sportello mobile assieme paraurti posteriore,1,1,Y010072
+ZH2204-16,Dado a lamella tipo A,2,2,Y010072
+S18606003,Bullone esagonale con flangia,4,3,Y010072
+2804515-Y01,Bullone antifurto M8 45,2,4,Y010072
+2804510Y0210D,Assieme corpo paraurti posteriore,1,5,Y010072
+2804501Y0210D,Corpo paraurti posteriore,1,6,Y010072
+2804504-Y01D,Rifinitura superiore paraurti posteriore,1,7,Y010072
+2804505-Y01D,Rifinitura inferiore paraurti posteriore,1,8,Y010072
+Z024,Dado di espansione metallico,8,9,Y010072
+S27348002,Vite autofilettante testa larga semitonda,4,10,Y010072
+ZH2204-11,Dado a lamella tipo B con dado M8,2,11,Y010072
+5107003-Y01,Tampone porta laterale,4,12,Y010072
+ZH1210,Supporto dado plastico,4,13,Y010072
+2804507,Tappo cieco  25,2,14,Y010072
+ZH2204-6,Dado a lamella tipo B,2,15,Y010072
+5306001-Y01,Sistema cruscotto,1,,Y010073
+5306151-Y01D,Mascherina strumenti,1,1,Y010073
+5306161-Y01,Pannello controllo telecomando A/C,1,2,Y010073
+5306139-Y01,Bocchetta aria destra,1,3,Y010073
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,9,4,Y010073
+ZH2204-16,Dado a lamella tipo A,2,5,Y010073
+ZH680,Fermo metallico a V,7,6,Y010073
+5306200Y0205D,Assieme bocchetta aria centrale,1,7,Y010073
+5306001-Y01,Sistema cruscotto,1,,Y010074
+5306131-Y01,Quadro strumenti,1,1,Y010074
+5306121-Y01,Bocchetta aria sbrinatore sinistra,1,2,Y010074
+5306123-Y01,Deflettore aria sbrinatore sinistro,1,3,Y010074
+5306122-Y01,Bocchetta aria sbrinatore destra,1,4,Y010074
+5306124-Y01,Deflettore aria sbrinatore destro,1,5,Y010074
+5306134-Y01,Vano portaoggetti cruscotto,1,6,Y010074
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,9,7,Y010074
+ZH680,Fermo metallico a V,9,8,Y010074
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,7,9,Y010074
+ZH2204-16,Dado a lamella tipo A,2,10,Y010074
+S18606003,Bullone esagonale con flangia,3,11,Y010074
+S27348004,Vite autofilettante testa larga semitonda,1,12,Y010074
+5306001-Y01,Sistema cruscotto,1,,Y010075
+5306133-Y01,Corpo inferiore cruscotto,1,1,Y010075
+S18606003,Bullone esagonale con flangia,5,2,Y010075
+5306104-Y01,Condotto aria bocchetta centrale,1,3,Y010075
+5306136-Y01,Condotto sbrinatore sinistro,1,4,Y010075
+5306141-Y01,Condotto sbrinatore destro,1,5,Y010075
+5306030-Y01,Assieme sbrinatore anteriore,1,6,Y010075
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,16,7,Y010075
+5306102-Y01,Copertura altoparlante,2,8,Y010075
+ZH2204-16,Dado a lamella tipo A,10,9,Y010075
+Z024,Dado di espansione metallico,4,10,Y010075
+5306002-Y01,Sistema copertura devio-luci,1,,Y010076
+3774011-Y01,Scudo sterzo superiore,1,1,Y010076
+3774013-Y01,Scudo sterzo inferiore,1,2,Y010076
+S27348002,Vite autofilettante testa larga semitonda,1,3,Y010076
+S23006002,Vite a testa cilindrica con rondella piana e rondella elastica,3,4,Y010076
+5305001-Y01,Sistema cruscotto ausiliario,1,,Y010077
+5305011-Y01,Corpo cruscotto ausiliario,1,1,Y010077
+5305012-Y01,Copertura vite,4,2,Y010077
+5305016-Y01,Piastra copertura anteriore inferiore cruscotto ausiliario,1,3,Y010077
+5305017-Y01D,Pannello cruscotto ausiliario,1,4,Y010077
+5305019-Y01,Piastra copertura posteriore cruscotto ausiliario,1,5,Y010077
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,6,6,Y010077
+Z024,Dado di espansione metallico,3,7,Y010077
+5305020-Y01,Assieme struttura mancorrente,1,8,Y010077
+5305028-Y01D,Pannello sinistro mancorrente,1,,Y010077
+5305029-Y01D,Pannello destro mancorrente,,,Y010077
+5305027-Y01,Piastra inferiore mancorrente,1,9,Y010077
+Z056,Cuscinetto,2,10,Y010077
+S18606003,Bullone esagonale con flangia,6,11,Y010077
+5402001-Y01,Sistema pannelli protezione colonne,1,,Y010078
+5402031-Y01,Pannello superiore protezione interno montante A sinistro,1,1,Y010078
+ZH1255,Fermo a D,51,2,Y010078
+ZH1210,Supporto dado plastico,25,3,Y010078
+S27348002,Vite autofilettante testa larga semitonda,25,4,Y010078
+5402041-Y01,Pannello superiore protezione interno montante A destro,1,5,Y010078
+5402131-Y01,Pannello protezione interno cornice finestrino anteriore,1,6,Y010078
+5402051-Y01,Pannello inferiore protezione interno montante A sinistro,1,7,Y010078
+5402061-Y01,Pannello inferiore protezione interno montante A destro,1,8,Y010078
+5402011-Y01,Pannello protezione interno parete sinistra anteriore,1,9,Y010078
+S32006003,Dado esagonale con flangia,5,10,Y010078
+5402021-Y01,Pannello protezione interno parete destra anteriore,1,11,Y010078
+S18606003,Bullone esagonale con flangia,1,12,Y010078
+5402111-Y01,Striscia rifinitura interna soglia sinistra,1,13,Y010078
+5402121-Y01,Striscia rifinitura interna soglia destra,1,14,Y010078
+5402071-Y01,Pannello protezione interno parete sinistra posteriore,1,15,Y010078
+5402081-Y01,Pannello protezione interno parete destra posteriore,1,16,Y010078
+5402141-Y01,Pannello protezione interno soglia posteriore,1,17,Y010078
+5402091-Y01,Pannello inferiore protezione interno parete sinistra posteriore,1,18,Y010078
+5402101-Y01,Pannello inferiore protezione interno parete destra posteriore,1,19,Y010078
+5402128-Y01,Copertura apertura servizio sinistra,1,20,Y010078
+5402129-Y01,Copertura apertura servizio destra,1,21,Y010078
+5402133-Y01,Poggiapiede sinistro,1,22,Y010078
+Q1860625,Bullone esagonale con flangia,3,23,Y010078
+5402147-Y01,Copertura vite,3,24,Y010078
+5402053-Y01,Copertura apertura riparazione inferiore montante A sinistro,1,25,Y010078
+5402063-Y01,Copertura apertura riparazione inferiore montante A destro,1,26,Y010078
+5703001-Y01,Sistema interni e cielo,1,,Y010079
+5703011-Y01,Rivestimento interno cielo tetto,1,1,Y010079
+ZH1610,Fermo cielo tetto,13,2,Y010079
+ZH1210,Supporto dado plastico,6,3,Y010079
+S27348002,Vite autofilettante testa larga semitonda,6,4,Y010079
+5703021-Y01,Copertura apertura servizio cerniera sinistra portellone,1,5,Y010079
+5703022-Y01,Copertura apertura servizio cerniera destra portellone,1,6,Y010079
+6102001-Y01,Sistema porta anteriore,1,,Y010080
+6102071-Y01,Pannello rifinitura finestrino anteriore porta sinistra,1,1,Y010080
+S27342004,Vite autofilettante testa larga semitonda,4,2,Y010080
+5306148Y0210,Nastro biadesivo (W10mm T0.8mm),,3,Y010080
+6102075-Y01D,Pannello esterno porta sinistra,1,4,Y010081
+6102077-Y01D,Pannello inferiore rifinitura porta sinistra,1,5,Y010081
+S27348002,Vite autofilettante testa larga semitonda,5,6,Y010081
+ZH2204-16,Dado a lamella tipo A,5,7,Y010081
+ZH1255,Fermo a D,21,8,Y010081
+S23006002,Vite a testa cilindrica con rondella piana e rondella elastica,8,9,Y010081
+6102073-Y01D,Pannello superiore rifinitura porta sinistra,1,10,Y010081
+ZH680,Fermo metallico a V,19,11,Y010081
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,8,12,Y010081
+6102011-Y01,Pannello interno porta sinistra,1,13,Y010081
+6102032-Y01,Piastra montaggio cinghia tiraporta sinistra,1,14,Y010081
+6102033-Y01,Cinghia tiraporta in pelle,1,15,Y010081
+Q1860620,Bullone esagonale con flangia,1,16,Y010081
+ZH850,Fermo a C,6,17,Y010081
+6102031-Y01D,Pannello intermedio rifinitura sinistra,1,18,Y010081
+6102051-Y01,Spugna antipolvere,,19,Y010081
+6102086-Y01,Copertura rifinitura cerniera superiore porta sinistra,1,20,Y010081
+6102087-Y01,Copertura rifinitura cerniera inferiore porta sinistra,1,21,Y010081
+6102079-Y01,Piastra montaggio interruttore PE,1,22,Y010081
+S27348004,Vite autofilettante testa larga semitonda,1,23,Y010081
+6102001-Y01,Sistema porta anteriore,1,,Y010082
+6102081-Y01,Pannello rifinitura finestrino anteriore porta destra,1,1,Y010082
+S27342004,Vite autofilettante testa larga semitonda,2,2,Y010082
+5306148Y0210,Nastro biadesivo (W10mm T0.8mm),,3,Y010082
+6102076-Y01D,Pannello esterno porta destra,1,4,Y010082
+6102078-Y01D,Pannello inferiore rifinitura porta destra,1,5,Y010082
+S27348002,Vite autofilettante testa larga semitonda,5,6,Y010082
+ZH2204-16,Dado a lamella tipo A,5,7,Y010082
+ZH1255,Fermo a D,21,8,Y010082
+S23006002,Vite a testa cilindrica con rondella piana e rondella elastica,8,9,Y010082
+6102074-Y01D,Pannello superiore rifinitura porta destra,1,10,Y010082
+ZH680,Fermo metallico a V,19,11,Y010082
+S27342003,Vite autofilettante testa larga semitonda 4.2 13,8,12,Y010082
+6102040-Y01,Assieme pannello interno porta destra,1,12,Y010082
+6102021-Y01,Pannello interno porta destra,1,13,Y010082
+6102042-Y01,Piastra montaggio cinghia tiraporta destra,1,14,Y010082
+6102033-Y01,Cinghia tiraporta in pelle,1,15,Y010082
+Q1860620,Bullone esagonale con flangia,1,16,Y010082
+ZH850,Fermo a C,6,17,Y010082
+6102041-Y01D,Pannello intermedio rifinitura destra,1,18,Y010082
+6102051-Y01,Spugna antipolvere,,19,Y010082
+6102088-Y01,Copertura rifinitura cerniera inferiore porta destra,1,20,Y010082
+6102089-Y01,Copertura rifinitura cerniera superiore porta destra,1,21,Y010082
+S27348004,Vite autofilettante testa larga semitonda,1,22,Y010082
+6302001-Y01,Sistema portellone,1,,Y010083
+6302010-Y01,Assieme portellone,1,1,Y010083
+6302011-Y01,Portellone,1,2,Y010083
+6302021-Y01,Piastra supporto vetro portellone sinistra,1,3,Y010083
+S27348002,Vite autofilettante testa larga semitonda,8,4,Y010083
+6302022-Y01,Piastra supporto vetro portellone destra,1,5,Y010083
+6302017-Y01D,Piastra superiore spoiler,1,6,Y010083
+5306149Y0210,Nastro biadesivo (W10mm T0.8mm),,7,Y010083
+ZH680,Fermo metallico a V,6,8,Y010083
+6302015-Y01,Copertura serratura apertura servizio,1,9,Y010083
+6302016-Y01,Pannello rifinitura serratura,1,10,Y010083
+ZH830,Fermo a scatto (testa piccola),4,11,Y010083
+6302018-Y01D,Pannello inferiore spoiler,1,12,Y010083
+5306148Y0210,Nastro biadesivo (W10mm T0.8mm),,13,Y010083
+5107101Y0210,Pannello protezione inferiore sinistro,1,1,Y010083
+5107102-Y01,Pannello protezione inferiore destro,1,2,Y010083
+5107103Y0210,Pannello protezione inferiore centrale,1,3,Y010083
+ZH830,Fermo a scatto (testa piccola),2,4,Y010083
+S32006003,Dado esagonale con flangia,17,5,Y010083
+3100000-Y01,Sistema ruote,1,,Y010084
+3102111-Y01,Pannello protezione passaruota anteriore sinistro,1,1,Y010084
+ZH830,Fermo a scatto (testa piccola),19,2,Y010084
+ZH890,Fermo a scatto (testa grande),5,,Y010084
+Q2214816,Vite autofilettante testa svasata con rondella piana,12,3,Y010084
+Z058,Fermo a perno,10,4,Y010084
+3102112-Y01,Pannello protezione passaruota anteriore destro,1,5,Y010084
+3102113-Y01,Pannello protezione passaruota posteriore sinistro,1,6,Y010084
+3102117-Y01,Pannello rifinitura laterale passaruota posteriore sinistro,1,7,Y010084
+3102114-Y01,Pannello protezione passaruota posteriore destro,1,8,Y010084
+3102118-Y01,Pannello rifinitura laterale passaruota posteriore destro,1,9,Y010084
+3100120-Y01,Assieme copertura cerchio ruota in acciaio,4,1,Y010085
+3100107-Y01,Copertura cerchio in acciaio,4,2,Y010085
+3100108-Y01,Copertura cerchio acciaio,4,3,Y010085
+3100104-Y01,Copertura decorativa cerchio ruota,4,4,Y010085
+5200010-Y01,Sistema vetri parabrezza,1,,Y010086
+5206010-Y01,Vetro parabrezza anteriore,1,1,Y010086
+5206030-Y01,Vetro tetto sinistro,1,2,Y010086
+5206040-Y01,Vetro tetto destro,1,3,Y010086
+6303010-Y01,Vetro parabrezza posteriore,1,4,Y010086
+5603100Y0210,Sistema vetro parabrezza posteriore,1,,Y010086
+5203010-Y01,Vetro finestrino triangolare anteriore sinistro,1,5,Y010086
+5203020-Y01,Vetro finestrino triangolare anteriore destro,1,6,Y010086
+6103010-Y01,Vetro finestrino porta sinistra,1,7,Y010086
+6103020-Y01,Vetro finestrino porta destra,1,8,Y010086
+5109100-Y01,Sistema tappeti,1,,Y010087
+5109101-Y01,Corpo tappeto,1,1,Y010087
+5109103-Y01,Piastra copertura bagagliaio,1,2,Y010087
+5109104-Y01,Tampone cuscinetto piastra bagagliaio,4,3,Y010087
+5109109-Y01,Tampone cuscinetto 2 piastra bagagliaio,2,4,Y010087
+5109105-Y01,Tappetino poggiapiedi,1,5,Y010087
+5109106-Y01,Cuscinetto isolante I tappeto,1,6,Y010087
+5109107-Y01,Cuscinetto isolante II tappeto,1,7,Y010087
+5109108-Y01,Cuscinetto isolante III tappeto,2,8,Y010087
+ZH830,Fermo a scatto (testa piccola),2,9,Y010087
+Z058,Fermo a perno,1,10,Y010087

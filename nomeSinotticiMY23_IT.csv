@@ -1,86 +1,86 @@
-id;NOME
-Y02100001;Acceleration System
-Y02100002;Front Suspension (1)
-Y02100003;Front Suspension (2)
-Y02100004;Rear Suspension
-Y02100005;Wheeling System
-Y02100006;Steering  system 
-Y02100007;System (1)
-Y02100008;Brake System (2)
-Y02100009;Brake System (3)
-Y02100010;On-vehicle Tool System
-Y02100011;Power Battery Assy
-Y02100012;Drive Motor Assembly
-Y02100013;VBU assembly
-Y02100014;Motor control unit assy
-Y02100015;Information Communication Device
-Y02100016;Power battery box electrical Unit
-Y02100017;High voltage box unit
-Y02100018;High-Voltage Wiring Harness Assy
-Y02100019;Charging system
-Y02100020;Body control module (BCM)
-Y02100021;Vehicle electrical Units
-Y02100022;KEY device
-Y02100023;Low-voltage Wiring Harness Assy
-Y02100024;Center screen assembly
-Y02100025;Wiper and Washer System
-Y02100026;Air conditioning system
-Y02100027;Front bumper system
-Y02100028;Rear Bumper Hinge System
-Y02100029;Rear Bumper System
-Y02100030;Switching Accessory System
-Y02100031;Wheeling System
-Y02100032;Bottom Guard panel System
-Y02100033;Windshield Glass System
-Y02100034;Front Windshield Lower Trim Panel System
-Y02100035;Cover plate assy front charging port
-Y02100036;Vehicle Identification Assy
-Y02100037;Exterior System Side Wall (1)
-Y02100038;Exterior System Side Wall (2)
-Y02100039;Roof system
-Y02100040;Front door system (1)
-Y02100041;Front door system (2)
-Y02100042;Welcome pedal assembly
-Y02100043;Hood Trim System
-Y02100044;Fender system
-Y02100045;Lights System
-Y02100046;Seat belt system
-Y02100047;Guide rail rubber coating assembly
-Y02100048;Door Waterproof Membrane Assy
-Y02100049;Glass Regulator System
-Y02100050;Locking Mechanism System
-Y02100051;Inner Handle System
-Y02100052;Outer Handle System
-Y02100053;Sealing system
-Y02100054;Tailgate Stay Bar System
-Y02100055;Seat system
-Y02100056;Lifter rubber block system
-Y02100057;Inner Rear-view Mirror System
-Y02100058;Outer Rear-view Mirror System
-Y02100059;Sun visor system
-Y02100060;Retroreflector System
-Y02100061;Body-in-white Assy (1)
-Y02100062;Body-in-white Assy (2)
-Y02100063;Body-in-white Assy (3)
-Y02100064;Body-in-white Assy (4)
-Y02100065;Body-in-white Assy (5)
-Y02100066;Body-in-white Assy (6)
-Y02100067;Body-in-white Assy (7)
-Y02100068;Body-in-white Assy (8)
-Y02100069;Body-in-white Assy (9)
-Y02100070;Power Battery Box Device
-Y02100071;Dashboard Cross Beam Assy
-Y02100072;Carpet system
-Y02100073;Auxiliary Dashboard System (1)
-Y02100074;Auxiliary Dashboard System (2)
-Y02100075;Dashboard System (1)
-Y02100076;Dashboard System (2)
-Y02100077;Dashboard System (3)
-Y02100078;Combination Switch Shield System
-Y02100079;Column Guard Panel System
-Y02100080;Interiors and Ceiling System
-Y02100081;Front Door Inner Panel System (1)
-Y02100082;Front Door Inner Panel System (2)
-Y02100083;Front Door Inner Panel System (3)
-Y02100084;Tailgate system
-Y02100085;Rear carrier assy
+id,NOME
+Y02100001,Acceleration System
+Y02100002,Front Suspension (1)
+Y02100003,Front Suspension (2)
+Y02100004,Rear Suspension
+Y02100005,Wheeling System
+Y02100006,Steering  system 
+Y02100007,System (1)
+Y02100008,Brake System (2)
+Y02100009,Brake System (3)
+Y02100010,On-vehicle Tool System
+Y02100011,Power Battery Assy
+Y02100012,Drive Motor Assembly
+Y02100013,VBU assembly
+Y02100014,Motor control unit assy
+Y02100015,Information Communication Device
+Y02100016,Power battery box electrical Unit
+Y02100017,High voltage box unit
+Y02100018,High-Voltage Wiring Harness Assy
+Y02100019,Charging system
+Y02100020,Body control module (BCM)
+Y02100021,Vehicle electrical Units
+Y02100022,KEY device
+Y02100023,Low-voltage Wiring Harness Assy
+Y02100024,Center screen assembly
+Y02100025,Wiper and Washer System
+Y02100026,Air conditioning system
+Y02100027,Front bumper system
+Y02100028,Rear Bumper Hinge System
+Y02100029,Rear Bumper System
+Y02100030,Switching Accessory System
+Y02100031,Wheeling System
+Y02100032,Bottom Guard panel System
+Y02100033,Windshield Glass System
+Y02100034,Front Windshield Lower Trim Panel System
+Y02100035,Cover plate assy front charging port
+Y02100036,Vehicle Identification Assy
+Y02100037,Exterior System Side Wall (1)
+Y02100038,Exterior System Side Wall (2)
+Y02100039,Roof system
+Y02100040,Front door system (1)
+Y02100041,Front door system (2)
+Y02100042,Welcome pedal assembly
+Y02100043,Hood Trim System
+Y02100044,Fender system
+Y02100045,Lights System
+Y02100046,Seat belt system
+Y02100047,Guide rail rubber coating assembly
+Y02100048,Door Waterproof Membrane Assy
+Y02100049,Glass Regulator System
+Y02100050,Locking Mechanism System
+Y02100051,Inner Handle System
+Y02100052,Outer Handle System
+Y02100053,Sealing system
+Y02100054,Tailgate Stay Bar System
+Y02100055,Seat system
+Y02100056,Lifter rubber block system
+Y02100057,Inner Rear-view Mirror System
+Y02100058,Outer Rear-view Mirror System
+Y02100059,Sun visor system
+Y02100060,Retroreflector System
+Y02100061,Body-in-white Assy (1)
+Y02100062,Body-in-white Assy (2)
+Y02100063,Body-in-white Assy (3)
+Y02100064,Body-in-white Assy (4)
+Y02100065,Body-in-white Assy (5)
+Y02100066,Body-in-white Assy (6)
+Y02100067,Body-in-white Assy (7)
+Y02100068,Body-in-white Assy (8)
+Y02100069,Body-in-white Assy (9)
+Y02100070,Power Battery Box Device
+Y02100071,Dashboard Cross Beam Assy
+Y02100072,Carpet system
+Y02100073,Auxiliary Dashboard System (1)
+Y02100074,Auxiliary Dashboard System (2)
+Y02100075,Dashboard System (1)
+Y02100076,Dashboard System (2)
+Y02100077,Dashboard System (3)
+Y02100078,Combination Switch Shield System
+Y02100079,Column Guard Panel System
+Y02100080,Interiors and Ceiling System
+Y02100081,Front Door Inner Panel System (1)
+Y02100082,Front Door Inner Panel System (2)
+Y02100083,Front Door Inner Panel System (3)
+Y02100084,Tailgate system
+Y02100085,Rear carrier assy

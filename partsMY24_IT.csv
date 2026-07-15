@@ -1,914 +1,914 @@
-codice;descrizione;quantita;id;esploso
-1108010Y0230;Pedale acceleratore elettrico;1;1;Y02300001
-S18606002;Bullone esagonale con flangia M6*20 zincatura nera;3;2;Y02300001
-3508100Y0230;Leva comando freno di stazionamento;1;1;Y02300002
-3508200Y0230;Cavo freno di stazionamento anteriore;1;2;Y02300002
-3508300Y0230;Cavo freno di stazionamento sinistro;1;3;Y02300002
-3508400Y0230;Cavo freno di stazionamento destro;1;4;Y02300002
-S99035001;Morsetto universale tubo ÿ20ñÿ10;1;5;Y02300002
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;2;6;Y02300002
-S32008002;Dado esagonale flangiato M8 zincatura argento;2;7;Y02300002
-3540102Y0240-Z001;Serbatoio del vuoto con sensore assemblato;1;1;Y02300003
-3540102Y0211;Serbatoio del vuoto;1;2;Y02300003
-3540106Y0230;Sensore del vuoto;1;3;Y02300003
-3540103Y0240-Z001;Pompa del vuoto elettronica con tubo di scarico assy;1;4;Y02300003
-3540103Y0211;Pompa del vuoto elettronica;1;5;Y02300003
-3540104Y0240;Tubo di sfiato pompa del vuoto elettronica;1;6;Y02300003
-3540400Y0240;Tubo del vuoto;1;7;Y02300003
-S18406002;Bulloni flangiati esagonali M6*45 zincatura argento;2;8;Y02300003
-S32008002;Dado esagonale flangiato M8 zincatura argento;2;9;Y02300003
-3506011Y0240;Primo tubo rigido uscita olio;1;1;Y02300004
-3506012Y0240;Secondo tubo rigido uscita olio;1;2;Y02300004
-3506013Y0240;Tubo freno anteriore sinistro;1;3;Y02300004
-3506014Y0240;Tubo freno anteriore destro;1;4;Y02300004
-3506015Y0240;Tubo freno posteriore sinistro rigido I;1;5;Y02300004
-3506016Y0240;Tubo freno posteriore destro rigido I;1;6;Y02300004
-3506100Y0230;Tubo flessibile freno anteriore sinistro;1;7;Y02300004
-3506105Y0230;Anello di ritegno molla tubo freno;2;8;Y02300004
-3506107Y0230;Rondella di tenuta;4;9;Y02300004
-3506106Y0230;Bulloni punzonati;2;10;Y02300004
-3506116Y0240;Clip tubo foro singolo;2;11;Y02300004
-3506200Y0230;Tubo flessibile freno anteriore destro;1;12;Y02300004
-3550300Y0240;Sensore velocit‡ ruota anteriore sinistra;1;13;Y02300004
-3550400Y0240;Sensore velocit‡ ruota anteriore destra;1;14;Y02300004
-3506113Y0240;Clip tubo doppio foro;2;15;Y02300004
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;2;16;Y02300004
-3506300Y0240;Assieme tubo flessibile freno posteriore;2;1;Y02300005
-3506020Y0230;Tubo freno posteriore rigido III;2;2;Y02300005
-3506017Y0240;Tubo freno posteriore sinistro rigido II;1;3;Y02300005
-3506018Y0240;Tubo freno posteriore destro rigido II;5;4;Y02300005
-3506105Y0230;Anello di ritegno molla tubo freno;4;5;Y02300005
-3506113Y0240;Clip tubo doppio foro;1;6;Y02300005
-3506116Y0240;Clip tubo foro singolo;3;7;Y02300005
-3550500Y0240B;Sensore velocit‡ ruota posteriore sinistra;1;8;Y02300005
-3550600Y0240B;Sensore velocit‡ ruota posteriore destra;1;9;Y02300005
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;2;10;Y02300005
-3540101Y0230;Servofreno a depressione;1;1;Y02300006
-3550100Y0230;Centralina ABS assy;1;2;Y02300006
-3569100Y0240;Pedale freno assy;1;3;Y02300006
-S18608003;Bullone flangiato esagonale M8*20 zincatura argento;2;4;Y02300006
-S32008002;Dado esagonale flangiato M8 zincatura argento;4;5;Y02300006
-S50108001;Spina di bloccaggio ÿ8;1;6;Y02300006
-S51008001;Perno ÿ8*25;1;7;Y02300006
-3540113Y0230;Tappo serbatoio liquido freni;1;8;Y02300006
-2915100Y0230;Ammortizzatore posteriore;2;1;Y02300007
-2912011Y0230;Molla elicoidale posteriore;2;2;Y02300007
-2914300Y0240;Assieme barra di spinta;2;3;Y02300007
-2914200Y0230;Barra stabilizzatrice posteriore;1;4;Y02300007
-2912013Y0230;Tampone posteriore;2;5;Y02300007
-2912012Y0230;Base superiore montaggio molla posteriore;2;6;Y02300007
-S18512004;Bulloni flangiati esagonali M12*85 zincatura argento;4;7;Y02300007
-S18512001;Bulloni flangiati esagonali M12*55 zincatura argento;2;8;Y02300007
-S18512003;Bulloni flangiati esagonali M12*75 zincatura argento;1;9;Y02300007
-2906106Y0230;Rondella grande ÿ12;1;10;Y02300007
-S40212002;Rondella grande ÿ12 zincatura nera;2;11;Y02300007
-S33112001;Dado autobloccante esagonale flangiato M12 zincatura argento T13;10;12;Y02300007
-S18512901;Bullone flangiato esagonale M12*90*P1.25 zincatura argento classe 10.9;2;13;Y02300007
-3100101Y0230;Pneumatico (155/70-R13);4;1;Y02300008
-3100106Y0230;"Cerchio in acciaio 13""";4;2;Y02300008
-3100102Y0240;Valvola gonfiaggio (TR418);4;3;Y02300008
-3106107Y0240;Dado ruota (cerchio acciaio);16;4;Y02300008
-5306163Y0230;"Etichetta pneumatico - 13""";1;5;Y02300008
-3100105-Y01;"Cerchio in alluminio 15"" (chiaro)";4;1;Y02300009
-3100101Y0241;Pneumatico (155/60-R15);4;2;Y02300009
-3100102Y0241;Valvola gonfiaggio (TR413);4;3;Y02300009
-3106106Y0240;Dado ruota (cerchio alluminio);16;4;Y02300009
-3100104-Y01;Copricerchio;4;5;Y02300009
-5306164Y0230;"Etichetta pneumatico - 15""";1;6;Y02300009
-Z3400104Y0240;Volante con comandi;1;1;Y02300010
-3400104Y0240;Volante assy;1;2;Y02300010
-3400135Y0230;Copertura clacson;1;3;Y02300010
-3400106Y0230;Colonna sterzo elettrica assy;1;1;Y02300011
-3400102Y0230;Albero sterzo inferiore assy;1;2;Y02300011
-3400108Y0230;Protezione albero inferiore sterzo;1;3;Y02300011
-Q32312F61;Dado volante;1;4;Y02300011
-3400161Y0230;Colonna sterzo con motore;1;5;Y02300011
-3400162Y0230;Giunto cardanico colonna sterzo;1;6;Y02300011
-Q1420830T13F61;Bullone testa esagonale con rondella elastica;1;7;Y02300011
-3400166Y0230;Bullone testa esagonale con rondella elastica e piana;2;8;Y02300011
-3400165Y0230;Staffa centralina EPS;1;9;Y02300011
-3400164Y0230;Centralina EPS;1;10;Y02300011
-S32008002;Dado esagonale flangiato M8 zincatura argento;3;11;Y02300011
-S18608006;Bullone flangiato esagonale M8*70 zincato;1;12;Y02300011
-Q1420830T13F61;Bullone testa esagonale con rondella elastica;2;13;Y02300011
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;2;14;Y02300011
-3400101Y0230;Scatola guida con tiranti assy;1;1;Y02300012
-S33112001;Dado autobloccante esagonale flangiato M12 zincatura argento T13;2;2;Y02300012
-S50032002;Spina elastica;2;3;Y02300012
-Q381B12;Dado esagonale scanalato tipo I;2;4;Y02300012
-3400113Y0230;Testina sterzo;2;5;Y02300012
-3400111Y0230;Scatola guida con tirante interno;1;6;Y02300012
-3400116Y0230;Cuffia parapolvere;2;7;Y02300012
-16850006;Fascetta cuffia parapolvere;2;8;Y02300012
-16812004;Collare tubo cuffia parapolvere;2;9;Y02300012
-S18512002;Bulloni flangiati esagonali M12*65 zincatura argento;2;10;Y02300012
-3400115Y0230;Manicotto sigillante;1;11;Y02300012
-3400114Y0230;Base sigillante;1;12;Y02300012
-2801100Y0240;Telaio ausiliario anteriore assy;1;1;Y02300013
-2904100Y0230;Braccio oscillante anteriore assy;2;2;Y02300013
-2906101Y0230;Barra stabilizzatrice anteriore;1;3;Y02300013
-2906102-Y01;Boccola barra stabilizzatrice;2;4;Y02300013
-2906103Y0230;Staffa montaggio barra stabilizzatrice;2;5;Y02300013
-2906105-Y01;Boccola terminale barra stabilizzatrice;4;6;Y02300013
-2906106Y0230;Rondella grande ÿ12;2;7;Y02300013
-2906107Y0230;Rondella grande ÿ16;2;8;Y02300013
-S18510001;Bulloni flangiati esagonali M10*25 zincatura argento;10;9;Y02300013
-S33110001;Dado autobloccante esagonale flangiato M10 zincatura argento T13;4;10;Y02300013
-S18510006;Bulloni flangiati esagonali M10*75 zincatura argento;2;11;Y02300013
-S33112001;Dado autobloccante esagonale flangiato M12 zincatura argento T13;2;12;Y02300013
-3501102Y0230;Freno anteriore destro con mozzo assy;1;1;Y02300014
-3501101Y0230;Freno anteriore sinistro con mozzo assy;1;2;Y02300014
-3501112Y0230;Snodo sterzo sinistro con albero intermedio;1;3;Y02300014
-3501113Y0230;Pinza freno sinistra assy;1;4;Y02300014
-3501122Y0230;Snodo sterzo destro con albero intermedio;1;5;Y02300014
-3501123Y0230;Pinza freno destra assy;1;6;Y02300014
-3501114Y0230;Unit‡ mozzo ruota con corona ABS;2;7;Y02300014
-3501111Y0230;Disco freno;2;8;Y02300014
-3501115Y0230;Pastiglia freno anteriore esterna;2;9;Y02300014
-3501117Y0240;Bullone staffa pinza (con flangia);4;10;Y02300014
-3501118Y0240;Dado centrale;2;11;Y02300014
-3501120Y0240;Coperchio terminale;2;12;Y02300014
-S18510005;Bulloni flangiati esagonali M10*50 zincatura argento;2;13;Y02300014
-3501116Y0230;Pastiglia freno anteriore sinistra interna;1;14;Y02300014
-3501126Y0230;Pastiglia freno anteriore destra interna;1;15;Y02300014
-S33110001;Dado autobloccante esagonale flangiato M10 zincatura argento T13;2;16;Y02300014
-2904101Y0230;Ammortizzatore anteriore sinistro assy;1;1;Y02300015
-2904102Y0230;Ammortizzatore anteriore destro assy;1;2;Y02300015
-S33112001;Dado autobloccante esagonale flangiato M12 zincatura argento T13;4;3;Y02300015
-S18512001;Bulloni flangiati esagonali M12*55 zincatura argento;4;4;Y02300015
-S32008002;Dado esagonale flangiato M8 zincatura argento;4;5;Y02300015
-Z2912100Y0230;Assale posteriore con cavo freno stazionamento;1;1;Y02300016
-2912101Y0230;Tamburo freno;2;1;Y02300017
-2912102Y0230;Freno destro assy;1;2;Y02300017
-2912103Y0230;Assieme semiasse;2;3;Y02300017
-2912104Y0230;Paraolio semiasse;2;4;Y02300017
-2912105Y0230;Assieme carcassa assale posteriore;1;5;Y02300017
-2912106Y0230;Freno sinistro assy;1;6;Y02300017
-2912107Y0230;Assieme riduttore finale;1;7;Y02300017
-2912108Y0230;Bullone collegamento freno;8;8;Y02300017
-2912109Y0230;Rondella 10;8;9;Y02300017
-2912110Y0230;Dado collegamento freno;8;10;Y02300017
-2912111Y0230;Dado collegamento riduttore finale M8;8;11;Y02300017
-2912112Y0230;Rondella 8;8;12;Y02300017
-2912113Y0230;Valvola di sfiato;1;13;Y02300017
-2912114Y0230;Tappo di scarico assy;1;14;Y02300017
-2912115Y0230;Guarnizione tappo di scarico;1;15;Y02300017
-2912116Y0230;Guarnizione tappo di riempimento;1;16;Y02300017
-2912117Y0230;Tappo di riempimento;1;17;Y02300017
-S18408002;Bullone flangiato esagonale M8*20 zincatura argento;4;18;Y02300017
-S32008002;Dado flangiato esagonale M8 zincatura argento;2;19;Y02300017
-2912017Y0230;Staffa montaggio E?Motor;1;20;Y02300017
-S18408004;Bullone flangiato esagonale M8*30*P1.25 zincatura argento classe 8.8;3;21;Y02300017
-2912118Y0230;Ceppo freno sinistro assy;1;22;Y02300017
-2912119Y0230;Cepoo freno destro assy;1;23;Y02300017
-2101020Y0230;Modulo batteria di potenza;3;1;Y02300018
-2101024Y0230;Piastra coprimodulo 1;1;2;Y02300018
-2101025Y0230;Piastra coprimodulo 2;1;3;Y02300018
-2101026Y0230;Piastra fissaggio cablaggio;1;4;Y02300018
-2101037Y0230;Maniglia pacco batteria;1;5;Y02300018
-2101038Y0230;Maniglia lamiera di fissaggio;2;6;Y02300018
-2101039Y0230;Film riscaldante Y02;1;7;Y02300018
-2101040Y0230;Anello di tenuta;3;8;Y02300018
-2101041Y0230;Connessione flessibile terminale positivo;1;9;Y02300018
-2101042Y0230;Connessione flessibile terminale negativo;1;10;Y02300018
-2101043Y0230;Barra rigida rame terminale negativo;1;11;Y02300018
-2101011Y0230;BSU?SINOEV;1;12;Y02300018
-2101049Y0230-Z001;Cablaggio rapido assy;1;13;Y02300018
-2101044Y0230;Rivetti plastici foro 3.7 BNJ?0005B;25;14;Y02300018
-2101045Y0230;Valvola di sfiato modello VV?P124?00?KS1;1;15;Y02300018
-2101055Y0230;Bulloni esagonali M6*12 con flangia zincatura nera (con adesivo nylon);3;16;Y02300018
-2101056Y0230;Bulloni esagonali M5*30 zincatura nera con rondella a molla e rondella piana;4;17;Y02300018
-2101057Y0230;Dadi esagonali flangiati zincatura nera tipo coppia prevalente (inserto non metallico);2;18;Y02300018
-2101058Y0230;Vite testa bombata esagonale cava M4*10 zincatura nera con rondella a molla e rondella piana;4;19;Y02300018
-2101060Y0230;Bulloni esagonali M4*20 zincatura nera con rondella a molla e rondella piana;42;20;Y02300018
-2101061Y0230;Vite testa bombata esagonale cava M3*10 zincatura nera con rondella a molla e rondella piana;14;21;Y02300018
-2101064Y0230;Vite svasata testa piatta M4*10 zincatura nera;4;22;Y02300018
-2101046Y0230;Fascetta BNJ?0181 foro 5.5;2;23;Y02300018
-2101054Y0230;Etichetta avvertimento alta tensione;1;24;Y02300018
-2103010Y0250;Motore di trazione;1;1;Y02300019
-2103020Y0240;Staffa cablaggio trifase motore;1;2;Y02300019
-S18408004;Bullone flangiato esagonale M8*30*P1.25 zincatura argento classe 8.8;3;3;Y02300019
-4002616Y0230;Bullone di massa M6 (filettatura FT);1;4;Y02300019
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;2;5;Y02300019
-2108010Y0250;VCU assy;1;1;Y02300020
-S32006003;Dado flangiato esagonale M6*P1 zincatura nero?nichel classe 8;4;2;Y02300020
-2142010Y0230;Corpo controller motore;1;1;Y02300021
-S18408004;Bullone flangiato esagonale M8*30*P1.25 zincatura argento classe 8.8;8;2;Y02300021
-4002616Y0230;Bullone di massa M6 (filettatura FT);1;3;Y02300021
-2105010Y0230;Cablaggio positivo controller motore;1;1;Y02300022
-2105020Y0230;Cablaggio negativo controller motore;1;2;Y02300022
-2105040Y0230;Cavo conversione PTC & compressore;1;3;Y02300022
-2105050Y0230;Cablaggio alta tensione sistema ausiliario;1;4;Y02300022
-2105020Y0230;Cablaggio commutazione alta tensione sistema ausiliario;1;5;Y02300022
-2105060-Y01;Fascetta doppia testa (19mm);1;6;Y02300022
-S32006003;Dado flangiato esagonale M6*P1 zincatura nero?nichel classe 8;1;7;Y02300022
-2107020Y0230;Presa di ricarica (EN);1;1;Y02300023
-2107030-Y01;Caricatore EV (EN);1;2;Y02300023
-2107060Y0230;Assieme tre?in?uno;1;3;Y02300023
-2107061Y0230;Staffa superiore sinistra tre?in?uno;1;4;Y02300023
-2107062Y0230;Staffa inferiore tre?in?uno;1;5;Y02300023
-2107063Y0230;Staffa superiore destra tre?in?uno;1;6;Y02300023
-4002616Y0230;Bullone di massa M6 (filettatura FT);1;7;Y02300023
-S18406004;Bullone flangiato esagonale M6*16*P1 zincatura nera classe 8.8;6;8;Y02300023
-S18608003;Bullone flangiato esagonale M8*20 zincatura argento;4;9;Y02300023
-S32008002;Dado flangiato esagonale M8 zincatura argento;1;10;Y02300023
-S18608009;Bullone flangiato esagonale M8*16*P1.25 zincatura argento classe 8.8;1;11;Y02300023
-2107050-Y01;Borsa caricatore;1;12;Y02300023
-2107064Y0230;Fusibile 63A;2;13;Y02300023
-2107040-Y01;Caricatore doppia testa (EN);1;14;Y02300023
-Z2101100Y0230;Dispositivo scatola batteria di potenza;1;1;Y02300024
-Z2101100Y0280;Dispositivo scatola batteria di potenza;1;1;Y02300025
-2101013Y0230;Boccola anti?attrito;6;1;Y02300026
-210101B-Y01;Fast?plug scatola batteria;3;2;Y02300026
-210101AY0230;Cablaggio negativo batteria;1;3;Y02300026
-2101019Y0230;Cablaggio positivo batteria;1;4;Y02300026
-210101H-Y01;Cavo collegamento moduli batteria;2;5;Y02300026
-210101CY0230;Cablaggio comunicazione scatola batteria;1;6;Y02300026
-210101DY0230;Tappo gomma passaggio cavi positivo/negativo batteria;2;7;Y02300026
-Z2109100Y0230;Assieme scatola alta tensione;1;1;Y02300027
-2101012Y0230;Scatola acquisizione alta tensione;1;1;Y02300028
-2101054Y0230;Etichetta avvertimento alta tensione;1;2;Y02300028
-2109010Y0230B;Scatola alta tensione;1;3;Y02300028
-2101518Y0240;Shunt;1;4;Y02300028
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;4;5;Y02300028
-2109011Y0250;Cassa scatola alta tensione assy;1;6;Y02300028
-2109015Y0250;RelË 150A;1;7;Y02300028
-2109017-Y01;RelË 20A;2;8;Y02300028
-2109018Y0250;Fusibile ritardato 300A;1;9;Y02300028
-2101515Y0240;Fusibile riscaldamento;1;10;Y02300028
-2109112Y0250;Resistenza pre?carica 25? 60W;1;11;Y02300028
-2109113Y0250;Cablaggio comunicazione scatola alta tensione;1;12;Y02300028
-3601010Y0240;Modulo controllo carrozzeria (BCM);1;1;Y02300029
-3601030Y0230;Antenna avviamento;1;2;Y02300029
-3704010Y0230;Interruttore avviamento passivo;1;3;Y02300029
-3791020Y0230;Interruttore PE (con antenna);1;4;Y02300029
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;3;5;Y02300029
-S27348004;Vite autofilettante testa semitonda ST4.8*13 zincatura nero?nichel;2;6;Y02300029
-3721010Y0240;Clacson alta frequenza;1;1;Y02300030
-3774010Y0230;Assieme devioluci;1;2;Y02300030
-S23004001;Vite testa cilindrica M4*10 con rondella piana zincatura colorata classe 4.8;2;3;Y02300030
-3782010-Y01;Interruttore regolazione specchietto elettrico;1;4;Y02300030
-S27342003;Vite autofilettante testa semitonda ST4.2*13 zincatura nero?nichel;4;5;Y02300030
-3504102Y0230;Interruttore freno;1;6;Y02300030
-3778010Y0200;Blocco sterzo;1;7;Y02300030
-3781010Y0250;Interruttore marce;1;8;Y02300030
-S18606003;Bullone flangiato esagonale M6*16*P1 zincatura nera classe 8.8;1;9;Y02300030
-3790020-Y01;Interruttore apertura portellone;1;10;Y02300030
-3766010Y0230;Interruttore avviso;1;11;Y02300030
-3746010Y0240;Interruttore alzacristalli;2;12;Y02300030
-3790040Y0230;Sportellino mobile paraurti posteriore;1;13;Y02300030
-3774020Y0230;Assieme spirale volante (clock spring);1;14;Y02300030
-3790010Y0230-Z001;Cilindro serratura porta sinistra con chiave meccanica;1;1;Y02300031
-3790030-Y01;Seeger cilindro serratura porta sinistra;1;2;Y02300031
-3791001Y0230;Telecomando chiave assy;1;3;Y02300031
-4002010Y0230;Cablaggio vano anteriore assy;1;1;Y02300032
-4002020Y0230;Cablaggio tetto assy;1;2;Y02300032
-4002030Y0240;Cablaggio porta sinistra assy;1;3;Y02300032
-4002040Y0240;Cablaggio porta destra assy;1;4;Y02300032
-4003010Y0230;Cablaggio principale assy;1;5;Y02300032
-S18606002;Bullone flangiato esagonale M6*20 zincatura nera;2;6;Y02300032
-S27348002;Vite autofilettante testa semitonda ST4.8*16 zincatura nera;2;7;Y02300032
-S18406001;Bulloni flangiati esagonali M6*12*P1 zincatura nera classe 8.8;2;8;Y02300032
-4002200Y0230;Cablaggio lato destro assy;1;9;Y02300032
-4003020Y0230;Cablaggio ausiliario cruscotto assy;1;10;Y02300032
-4013010Y0250;Cablaggio portellone assy;1;11;Y02300032
-4013020Y0250;Cablaggio paraurti posteriore assy;1;12;Y02300032
-4002616Y0230;Bullone di massa M6 (filettatura FT);11;13;Y02300032
-4003011Y0230;Staffa cablaggio principale;1;14;Y02300032
-S14606121;Bullone testa esagonale M6*12 con rondella elastica e piana zincatura argento classe 8.8;1;15;Y02300032
-4014010Y0230;Cablaggio serratura scatola batteria;1;16;Y02300032
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;2;17;Y02300032
-5205010Y0200;Motorino tergicristallo;1;1;Y02300033
-5205020Y0200;Braccio tergicristallo (con tubo ugello);1;2;Y02300033
-5205030Y0200;Lama tergicristallo;1;3;Y02300033
-5205040Y0200;Cappuccio dado tergicristallo;1;4;Y02300033
-5207030Y0240;Tubo lavacristallo;1;5;Y02300033
-5207010Y0240;Serbatoio lavacristallo assy;1;6;Y02300033
-5207020Y0200;Tubo a due vie assy;1;7;Y02300033
-5207020Y0240;Cappuccio antipolvere bocchettone serbatoio lavacristallo;1;8;Y02300033
-S99006201;Bullone testa esagonale M6*20 con rondella elastica e rondella grande zincatura nera classe 8.8;2;9;Y02300033
-S32006003;Dado flangiato esagonale M6*P1 zincatura nero?nichel classe 8;5;10;Y02300033
-3820050Y0205;Interruttore volante;1;1;Y02300034
-3820010Y0205;Antenna GPS + antenna radio assy;1;2;Y02300034
-7911010Y0241;Altoparlante;2;3;Y02300034
-3820021Y0205;Unit‡ principale;1;4;Y02300034
-3820022Y0205;Schermo LCD;1;5;Y02300034
-7925020Y0240;USB assy cruscotto ausiliario;1;6;Y02300034
-7925030Y0240;USB assy quadro strumenti;1;7;Y02300034
-S18406001;Bulloni flangiati esagonali M6*12*P1 zincatura nera classe 8.8;2;8;Y02300034
-S18606003;Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8;4;9;Y02300034
-S27348002;Viti autofilettanti a testa semitonda larga ST4.8*16 zincatura nera;4;10;Y02300034
-3820010Y0230;Assieme antenna radio e navigazione;1;11;Y02300034
-3820011Y0230;Staffa di montaggio antenna;1;12;Y02300034
-8103010Y0230;Assieme compressore elettrico;1;1;Y02300035
-4002616Y0230;Bullone di massa M6 (filettatura FT);1;2;Y02300035
-8103011Y0230;Assieme staffa compressore elettrico;2;3;Y02300035
-8105010Y0230;Assieme condensatore;1;4;Y02300035
-8105011Y0230;Assieme ventola elettronica;1;5;Y02300035
-8108020Y0230;Tubo di scarico compressore;1;6;Y02300035
-8108040Y0230;Assieme linea di refrigerazione;1;7;Y02300035
-5306153Y0230;Etichetta specifiche condensatore/ventola;1;8;Y02300035
-5306154Y0230;Etichetta refrigerante climatizzatore;1;9;Y02300035
-S32008002;Dado flangiato esagonale M8 zincatura dacromet argento;6;10;Y02300035
-S18608007;Bullone flangiato M8*150 zincatura dacromet argento;2;11;Y02300035
-S14606004;Bullone testa esagonale con rondella elastica e piana M6*35 zincatura dacromet argento;4;12;Y02300035
-S14606003;Bullone testa esagonale con rondella elastica e piana M6*25 zincatura dacromet argento;4;13;Y02300035
-S14606002;Bullone testa esagonale con rondella elastica e piana M6*20 zincatura dacromet argento;2;14;Y02300035
-8107010Y0230;Assieme HVAC;1;1;Y02300036
-8112010Y0240;Assieme pannello controllo climatizzatore;1;2;Y02300036
-5306104Y0230;Condotto aria ñ bocchetta centrale;1;3;Y02300036
-5306030Y0230;Assieme sbrinatore anteriore;1;4;Y02300036
-5306136Y0230;Condotto sbrinamento sinistro;1;5;Y02300036
-5306141Y0230;Condotto sbrinamento destro;1;6;Y02300036
-S27342003;Viti autofilettanti testa semitonda larga ST4.2*13 zincatura nero?nichel;2;7;Y02300036
-S27348002;Viti autofilettanti testa semitonda larga ST4.8*16 zincatura nera;16;8;Y02300036
-S32008002;Dado flangiato esagonale M8 zincatura dacromet argento;5;9;Y02300036
-7925040Y0230;T?BOX;1;1;Y02300037
-S32006003;Dado flangiato esagonale M6*P1 zincatura nero?nichel grado 8;3;2;Y02300037
-7925041Y0230;Antenna GPS+4G;1;3;Y02300037
-3703010Y0230;Batteria 12V;1;1;Y02300038
-S18606002;Bullone flangiato M6*20 zincatura dacromet nera;4;2;Y02300038
-6301711Y0240;Piastra rinforzo cerniere portellone sinistra;1;1;Y02300039
-6301713Y0240;Piastra rinforzo cerniere portellone destra;1;2;Y02300039
-6301591Y0240;Assieme staffa serratura portellone;1;3;Y02300039
-5101571Y0240;Assieme staffa trave di torsione;1;4;Y02300039
-S18510001;Bulloni flangiati M10*25 zincatura dacromet argento;5;5;Y02300039
-5101272Y0240;Staffa superiore condensatore;2;6;Y02300039
-S18408006;Bullone flangiato M8*12*P1.25 zincatura dacromet nera 8.8;2;7;Y02300039
-5101191Y0230;Staffa MCU ñ componente II;1;8;Y02300039
-5101187Y0230;Staffa MCU ñ componente I;1;9;Y02300039
-S18608201;Bullone flangiato con guida M8*20*P1.25 zincatura dacromet argento 8.8;2;10;Y02300039
-5133832Y0280;Staffa montaggio paraurti posteriore;1;11;Y02300039
-5101850-Y01;Piastra esterna rinforzo molla sospensione anteriore ñ sinistra;1;1;Y02300040
-5101860-Y01;Piastra esterna rinforzo molla sospensione anteriore ñ destra;1;2;Y02300040
-5401170-Y01;Staffa montaggio trave tubolare sinistra;1;3;Y02300040
-5401180-Y01;Staffa montaggio trave tubolare destra;1;4;Y02300040
-6101100Y0230;Assieme porta anteriore sinistra;1;5;Y02300040
-6106010Y0230;Cerniera superiore porta;2;6;Y02300040
-6106030Y0230;Cerniera inferiore porta;2;7;Y02300040
-S18608010;Bullone flangiato M8*25*P1.25 zincatura dacromet argento classe 10.9;16;8;Y02300040
-6101200Y0230;Assieme porta anteriore destra;1;9;Y02300040
-S18606003;Bulloni flangiati M6*16*P1 zincatura dacromet nera 8.8;12;10;Y02300040
-5133834Y0280;Staffa montaggio paraurti posteriore;2;11;Y02300040
-5701090-Y01;Assieme longherone superiore;1;1;Y02300041
-5701011-Y01;Copertura trave anteriore tetto;1;2;Y02300041
-5701030-Y01;Piastra inferiore trave anteriore tetto;1;3;Y02300041
-5701020Y0240;Assieme trave posteriore tetto;1;4;Y02300041
-5601112Y0280;Assieme trave posteriore tetto;1;5;Y02300041
-5401030-Y01;Pannello interno soglia porta sinistra;1;1;Y02300042
-5401230-Y01;Pannello interno soglia sinistra;1;2;Y02300042
-5401111-Y01;Pannello esterno lato sinistro;1;3;Y02300042
-5401110-Y01;Staffa montaggio paraurti posteriore sinistra;1;4;Y02300042
-5401150-Y01;Assieme canalina flusso posteriore sinistra;1;5;Y02300042
-5101551-Y01;Staffa integrata montaggio;1;6;Y02300042
-5401810-Y01;Piastra montaggio serratura porta sinistra;1;7;Y02300042
-5401301-Y01;Piastra rinforzo montante A sinistra;1;8;Y02300042
-5401303-Y01;Segmento superiore rinforzo montante A sinistra;1;9;Y02300042
-5401310-Y01;Piastra rinforzo cerniera superiore sinistra;1;10;Y02300042
-5401330-Y01;Piastra rinforzo cerniera inferiore sinistra;1;11;Y02300042
-5401313Y0230;Staffa faro sinistro;1;12;Y02300042
-5401011-Y01;Piastra collegamento trave anteriore tetto sinistra;1;13;Y02300042
-5401015-Y01;Piastra interna trave laterale superiore sinistra;1;14;Y02300042
-5401017-Y01;Segmento posteriore interno sinistro;1;15;Y02300042
-5401710Y0240;Assieme pannello interno posteriore sinistro;1;16;Y02300042
-5701037Y0240;Piastra rinforzo cerniera posteriore sinistra;1;17;Y02300042
-5401713Y0240;Piastra dado cintura di sicurezza;1;18;Y02300042
-5401350-Y01;Pannello interno montante A sinistro;1;19;Y02300042
-5401040-Y01;Pannello interno soglia porta destra;1;1;Y02300043
-5401240Y0230;Pannello interno soglia destra;1;2;Y02300043
-5401112-Y01;Pannello esterno lato destro;1;3;Y02300043
-5101551-Y01;Staffa integrata montaggio;1;4;Y02300043
-5401120-Y01;Staffa montaggio paraurti posteriore destra;1;5;Y02300043
-5401160-Y01;Assieme canalina flusso posteriore destra;1;6;Y02300043
-5401820-Y01;Piastra montaggio serratura porta destra;1;7;Y02300043
-5401302-Y01;Piastra rinforzo montante A destra;1;8;Y02300043
-5401304-Y01;Segmento superiore rinforzo montante A destra;1;9;Y02300043
-5401320-Y01;Piastra rinforzo cerniera superiore destra;1;10;Y02300043
-5401340-Y01;Piastra rinforzo cerniera inferiore destra;1;11;Y02300043
-5401413Y0230;Staffa faro destro;1;12;Y02300043
-5401012-Y01;Piastra collegamento trave anteriore tetto destra;1;13;Y02300043
-5401016-Y01;Piastra interna trave laterale superiore destra;1;14;Y02300043
-5401018-Y01;Piastra interna posteriore inferiore destra;1;15;Y02300043
-5401810Y0240;Assieme pannello interno posteriore destro;1;16;Y02300043
-5701038Y0240;Piastra rinforzo cerniera posteriore destra;1;17;Y02300043
-5401713Y0240;Piastra dado cintura di sicurezza;1;18;Y02300043
-5401360-Y01;Pannello interno montante A destro;1;19;Y02300043
-5130158Y0240;Trave scheletro inferiore batteria ñ sinistra;1;1;Y02300044
-5130258Y0240;Trave scheletro inferiore batteria ñ destra;1;2;Y02300044
-5101790Y0230;Assieme trave inferiore pavimento centrale;1;3;Y02300044
-5301037-Y01;Staffa montaggio parete anteriore lato destro inferiore;1;4;Y02300044
-5101503-Y01;Piastra supporto copertura riparazione posteriore;1;5;Y02300044
-5101803-Y01;Guarnizione pavimento posteriore sinistra;1;6;Y02300044
-5101804-Y01;Guarnizione pavimento posteriore destra;1;7;Y02300044
-5601130-Y01;Pannello interno posteriore;1;8;Y02300044
-5101950Y0230;Guarnizione pavimento centrale sinistra;1;9;Y02300044
-5101960Y0230;Guarnizione pavimento centrale destra;1;10;Y02300044
-5101801-Y01;Piastra sigillante schienale sedile;1;11;Y02300044
-5101751-Y01;Corpo vasca;1;12;Y02300044
-5101753-Y01;Piastra sigillante vasca sinistra;1;13;Y02300044
-5101745Y0230;Piastra sigillante vasca destra;1;14;Y02300044
-5102630-Y01;Assieme trave rinforzo sedile anteriore;1;15;Y02300044
-5102620Y0250;Assieme trave rinforzo sedile posteriore;1;16;Y02300044
-5101331Y0230;Staffa anteriore montaggio cruscotto ausiliario;1;17;Y02300044
-5101341Y0230;Staffa posteriore montaggio cruscotto ausiliario;1;18;Y02300044
-5101759Y0230;Staffa montaggio freno a mano;1;19;Y02300044
-5130100Y0250;Assieme longherone posteriore sinistro;1;1;Y02300045
-5130200Y0250;Assieme longherone posteriore destro;1;2;Y02300045
-5130710Y0240;Assieme trave scheletro pavimento posteriore;1;3;Y02300045
-5130301Y0240;Longherone scheletro pavimento posteriore sinistro;1;4;Y02300045
-5130401Y0240;Longherone scheletro pavimento posteriore destro;1;5;Y02300045
-5130156Y0240;Piastra rinforzo longherone pavimento posteriore sinistro;1;6;Y02300045
-5130256Y0240;Piastra rinforzo longherone pavimento posteriore destro;1;7;Y02300045
-5301120Y0230;Staffa montaggio pedale acceleratore;1;8;Y02300045
-5301400-Y01;Assieme copertura ruota anteriore destra;1;9;Y02300045
-5301300-Y01;Assieme copertura ruota anteriore sinistra;1;10;Y02300045
-5101739Y0230;Base montaggio piantone sterzo;1;11;Y02300045
-5101731-Y01;Corpo pavimento centrale;1;12;Y02300045
-5101480Y0240;Piastra esterna anteriore longherone destro;1;1;Y02300046
-5101490Y0240;Piastra esterna anteriore longherone sinistro;1;2;Y02300046
-5101573-Y01;Piastra interna rinforzo molla sospensione anteriore sinistra;1;3;Y02300046
-5101311-Y01;Piastra superiore supporto molla sospensione anteriore sinistra;1;4;Y02300046
-5101131Y0240;Piastra inferiore supporto molla sospensione anteriore sinistra;1;5;Y02300046
-5101577Y0240;Piastra collegamento copertura ruota anteriore sinistra;1;6;Y02300046
-5101710-Y01;Staffa faro II ñ sinistra;1;7;Y02300046
-5101574-Y01;Piastra interna rinforzo molla sospensione anteriore destra;1;8;Y02300046
-5101141Y0240;Piastra inferiore supporto molla sospensione anteriore destra;1;9;Y02300046
-5101143Y0240;Piastra collegamento copertura ruota anteriore destra;1;10;Y02300046
-5101720-Y01;Staffa faro II ñ destra;1;11;Y02300046
-5101312-Y01;Piastra superiore supporto molla sospensione anteriore destra;1;12;Y02300046
-5101933-Y01;Staffa tubo freno posteriore;2;13;Y02300046
-5101470Y0230;Assieme longherone anteriore sinistro;1;1;Y02300047
-5101390Y0230;Assieme longherone anteriore destro;1;2;Y02300047
-5101820Y0240;Assieme trave inferiore presa di ricarica;1;3;Y02300047
-5101830Y0240;Assieme trave superiore presa di ricarica;1;4;Y02300047
-5101291Y0240;Staffa montaggio protezione anteriore destra;1;5;Y02300047
-5101283Y0240;Staffa montaggio protezione anteriore sinistra;1;6;Y02300047
-5101287Y0240;Piastra collegamento protezione anteriore sinistra;1;7;Y02300047
-5101297Y0240;Piastra collegamento protezione anteriore destra;1;8;Y02300047
-5301110Y0240;Assieme corpo parete anteriore;1;9;Y02300047
-5301151-Y01;Piastra montaggio pompa freno;1;10;Y02300047
-5301165Y0230;Assieme staffa piccola climatizzatore;1;11;Y02300047
-5301153Y0250;Piastra di rinforzo superiore sinistra paratia anteriore assieme;1;12;Y02300047
-5101174-Y01;Piastra di chiusura traversa inferiore pianale centrale;1;1;Y02300048
-5101178Y0240;Piastra di rinforzo longherone centrale sinistro;1;2;Y02300048
-5101278Y0240;Piastra di rinforzo longherone centrale destro;1;3;Y02300048
-5101650Y0240;Assieme longherone inferiore sinistro pianale centrale;2;4;Y02300048
-5103760Y0240;Assieme traversa posteriore pianale centrale;1;5;Y02300048
-5101770Y0240;Assieme traversa inferiore pianale centrale;1;6;Y02300048
-5101910Y0240;Assieme basamento fissaggio braccio oscillante posteriore sinistro;1;7;Y02300048
-5101920Y0240;Assieme basamento fissaggio braccio oscillante posteriore destro;1;8;Y02300048
-5101981Y0240;Assieme giunto traversa sinistro;1;9;Y02300048
-5101991Y0240;Assieme giunto traversa destro;1;10;Y02300048
-5130128Y0240;Staffa tubo flessibile freno posteriore sinistra;2;11;Y02300048
-5104760-Y01;Assieme traversa inferiore pianale centrale;1;12;Y02300048
-5101175Y0230;Staffa fissaggio cavo freno di stazionamento;1;13;Y02300048
-5301190Y0240;Assieme trave di rinforzo paratia anteriore;1;1;Y02300049
-5301103Y0240;Assieme trave inferiore di rinforzo paratia anteriore;1;2;Y02300049
-5301140Y0205;Assieme staffa fissaggio pedale freno;1;3;Y02300049
-5301050Y0250;Assieme staffa fissaggio tergicristallo destro;1;4;Y02300049
-5301510-Y01;Assieme supporto tergicristallo;1;5;Y02300049
-5301530-Y01;Assieme trave superiore parabrezza;1;6;Y02300049
-5301570Y0240;Assieme trave inferiore parabrezza;1;7;Y02300049
-5301039-Y01;Piastra di rinforzo staffa superiore piantone sterzo;1;8;Y02300049
-5301541-Y01;Assieme staffa superiore piantone sterzo;1;9;Y02300049
-5301971Y0230;Assieme staffa fissaggio VCU;1;10;Y02300049
-5101125Y0230;Assieme staffa fissaggio pannello protezione sottoscocca;2;11;Y02300049
-5301710Y0211;Assieme trave corpo plancia strumenti;1;1;Y02300050
-S18608009;Vite flangiata esagonale M8*16*P1.25 Dacromet argento classe 8.8;4;2;Y02300050
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;2;3;Y02300050
-5133990Y0211;Assieme trave posteriore cassa batteria;1;1;Y02300051
-S37110003;Dado rettangolare M10*1.25 Dacromet classe 10;2;2;Y02300051
-S18510003;Vite flangiata esagonale M10*35*P1.25 Dacromet argento classe 10.9;12;3;Y02300051
-5606600Y0230;Vite flangiata a impronta Bobes con nichel nero M6 1.0;6;4;Y02300051
-5133812Y0250;Trave inferiore scheletro batteria;1;5;Y02300051
-5133820Y0280;Assieme trave inferiore scheletro batteria;1;6;Y02300051
-5133992Y0230B;Piastra copertura anteriore cassa batteria di trazione;1;7;Y02300051
-S14604001;Vite esagonale con rondella elastica e piana assieme M4*16*P0.7 classe 8.8;12;8;Y02300051
-5133990Y0211;Assieme trave posteriore cassa batteria;1;1;Y02300052
-S37110003;Dado rettangolare M10*1.25 Dacromet classe 10;2;2;Y02300052
-S18510003;Vite flangiata esagonale M10*35*P1.25 Dacromet argento classe 10.9;12;3;Y02300052
-5606600Y0230;Vite flangiata a impronta Bobes con nichel nero M6 1.0;6;4;Y02300052
-5133812Y0250;Trave inferiore scheletro batteria;1;5;Y02300052
-5133820Y0250;Assieme trave inferiore scheletro batteria;1;6;Y02300052
-5133992Y0230B;Piastra copertura anteriore cassa batteria di trazione;1;7;Y02300052
-S14604001;Vite esagonale con rondella elastica e piana assieme M4*16*P0.7 classe 8.8;12;8;Y02300052
-8200111-Y01;Portapacchi posteriore;1;1;Y02300053
-8200113-Y01;Piastra base cerniera sinistra;1;2;Y02300053
-8200114-Y01;Piastra interna cerniera sinistra;1;3;Y02300053
-8200115-Y01;Piastra base cerniera destra;1;4;Y02300053
-8200116-Y01;Pannello interno cerniera destra;1;5;Y02300053
-8200117-Y01;Blocco di fine corsa portapacchi posteriore;2;6;Y02300053
-S27342004;Vite autofilettante a croce testa semitonda grande ST4.2*9.5 zincata nera;4;7;Y02300053
-5109105-Y01B;Tappetino poggiapiedi;1;8;Y02300053
-B5305040Y0230;Assieme bracciolo;1;9;Y02300053
-5305065Y0230;Tampone in gomma;1;10;Y02300053
-5305064Y0230D;Pannello rivestimento sinistro bracciolo;1;11;Y02300053
-5305066Y0230D;Pannello rivestimento destro bracciolo;1;12;Y02300053
-5306020;Assieme corpo superiore plancia strumenti;1;1;Y02300054
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;9;2;Y02300054
-6102051-Y01;Spugna antipolvere;1;3;Y02300054
-5306134Y0240;Vano portaoggetti plancia strumenti;1;4;Y02300054
-ZH680;Fissatore metallico a V;9;5;Y02300054
-ZH2204-16;Dado a lamella tipo A;3;6;Y02300054
-5306121-Y01;Bocchetta aria sbrinatore sinistra;1;7;Y02300054
-5306123-Y01;Deflettore aria sbrinatore sinistro;1;8;Y02300054
-6102051-Y01;Spugna antipolvere;1;9;Y02300054
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;4;10;Y02300054
-5306122-Y01;Bocchetta aria sbrinatore destra;1;11;Y02300054
-5306124-Y01;Deflettore aria sbrinatore destro;1;12;Y02300054
-5306161-Y01;Cornice pannello comando climatizzatore;1;13;Y02300054
-S27342004;Vite autofilettante a croce testa semitonda grande ST4.2*9.5 zincata nera;5;14;Y02300054
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;3;15;Y02300054
-5306140-Y01;Assieme bocchetta aria destra;1;1;Y02300055
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;6;2;Y02300055
-5306200Y0205D;Assieme bocchetta aria centrale;1;3;Y02300055
-5306151Y0240D;Mascherina quadro strumenti;1;4;Y02300055
-ZH2204-6;Dado a lamella tipo B;2;5;Y02300055
-ZH680;Fissatore metallico a V;7;6;Y02300055
-5306040Y0230;Assieme corpo inferiore plancia strumenti;1;1;Y02300056
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;5;2;Y02300056
-5306208Y0230;Imbottitura frontale quadro strumenti;3;3;Y02300056
-3774011Y0230;Carter superiore piantone sterzo;1;1;Y02300057
-3774013Y0230;Carter inferiore piantone sterzo;1;2;Y02300057
-S27342003;Vite autofilettante a croce testa semitonda grande ST4.2*13 zinco-nichel nero;1;3;Y02300057
-S23006002;Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8;3;4;Y02300057
-5402031-Y01;Pannello superiore protezione interno montante A sinistro;1;1;Y02300058
-5402041-Y01;Pannello superiore protezione interno montante A destro;1;2;Y02300058
-5402131-Y01;Pannello protezione interno cornice finestrino anteriore;1;3;Y02300058
-5402051-Y01;Pannello inferiore protezione interno montante A sinistro;1;4;Y02300058
-5402053-Y01;Coperchio apertura riparazione inferiore montante A sinistro;1;5;Y02300058
-5402061-Y01;Pannello inferiore protezione interno montante A destro;1;6;Y02300058
-5402063-Y01;Coperchio apertura riparazione inferiore montante A destro;1;7;Y02300058
-5402011Y0230;Pannello protezione interno anteriore sinistro;1;8;Y02300058
-5402021Y0230;Pannello protezione interno anteriore destro;1;9;Y02300058
-ZH1210;Sede dado plastica;25;10;Y02300058
-S32006003;Dado flangiato esagonale M6*P1 zinco-nichel nero classe 8;2;11;Y02300058
-S23006002;Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8;2;12;Y02300058
-ZH1255;Fermaglio a D;50;13;Y02300058
-ZH1506;Fissatore plastico a V;2;14;Y02300058
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;26;15;Y02300058
-5402111-Y01;Modanatura interna battitacco sinistro;1;1;Y02300059
-5402121-Y01;Modanatura interna battitacco destro;1;2;Y02300059
-5402071-Y01;Pannello protezione interno posteriore sinistro;1;3;Y02300059
-5402081-Y01;Pannello protezione interno posteriore destro;1;4;Y02300059
-5402141-Y01;Pannello protezione interno battitacco posteriore;1;5;Y02300059
-5402091-Y01;Pannello inferiore protezione interno posteriore sinistro;1;6;Y02300059
-5402101-Y01;Pannello inferiore protezione interno posteriore destro;1;7;Y02300059
-5402128-Y01;Coperchio apertura servizio sinistro;1;8;Y02300059
-5402129-Y01;Coperchio apertura servizio destro;1;9;Y02300059
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;26;10;Y02300059
-ZH1210;Sede dado plastica;25;11;Y02300059
-ZH1255;Fermaglio a D;50;12;Y02300059
-5703011Y0240;Rivestimento interno cielo tetto;1;1;Y02300060
-ZH1610;Fermaglio cielo tetto;13;2;Y02300060
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;6;3;Y02300060
-5703021Y0240;Coperchio apertura servizio cerniera sinistra portellone;1;4;Y02300060
-5703022Y0240;Coperchio apertura servizio cerniera destra portellone;1;5;Y02300060
-ZH1210;Sede dado plastica;6;6;Y02300060
-6102011Y0230;Pannello interno porta sinistra;1;1;Y02300061
-6102032-Y01;Piastra fissaggio cinghia di trazione sinistra;1;2;Y02300061
-S27342003;Vite autofilettante a croce testa semitonda grande ST4.2*13 zinco-nichel nero;2;3;Y02300061
-6102033-Y01;Cinghia in pelle porta;1;4;Y02300061
-ZH1255;Fermaglio a D;11;5;Y02300061
-6102031Y0240D;Pannello rivestimento intermedio sinistro;1;6;Y02300061
-ZH680;Fissatore metallico a V;11;7;Y02300061
-6102072Y0230;Pannello rivestimento interno guida anteriore sinistra;1;8;Y02300061
-6102086-Y01;Copertura cerniera superiore porta sinistra;1;9;Y02300061
-6102087-Y01;Copertura cerniera inferiore porta sinistra;1;10;Y02300061
-ZH850;Fermaglio a C;6;11;Y02300061
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;5;12;Y02300061
-S27348004;Vite autofilettante a croce testa semitonda grande ST4.8*13 zinco-nichel nero;1;13;Y02300061
-S23006002;Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8;1;14;Y02300061
-6102051-Y01;Spugna antipolvere;1;15;Y02300061
-S21406001;Vite a croce testa cilindrica M6*25*P1 zinco nero classe 4.8;1;16;Y02300061
-6102021Y0260;Pannello interno porta destra;1;1;Y02300062
-6102042-Y01;Piastra fissaggio cinghia di trazione destra;1;2;Y02300062
-S27342003;Vite autofilettante a croce testa semitonda grande ST4.2*13 zinco-nichel nero;2;3;Y02300062
-6102033-Y01;Cinghia in pelle porta;1;4;Y02300062
-ZH1255;Fermaglio a D;11;5;Y02300062
-6102041Y0240D;Pannello rivestimento intermedio destro;1;6;Y02300062
-ZH680;Fissatore metallico a V;11;7;Y02300062
-6102082Y0230;Pannello rivestimento interno guida anteriore destra porta;1;8;Y02300062
-6102089-Y01;Copertura cerniera superiore porta destra;1;9;Y02300062
-6102088-Y01;Copertura cerniera inferiore porta destra;1;10;Y02300062
-ZH850;Fermaglio a C;6;11;Y02300062
-S27348002;Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere;5;12;Y02300062
-S27348004;Vite autofilettante a croce testa semitonda larga ST4.8*13 zincatura nero?nichel;1;13;Y02300062
-S23006002;Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8;1;14;Y02300062
-6102051-Y01;Spugna antipolvere;1;15;Y02300062
-S21406001;Vite a croce testa cilindrica M6*25*P1 zincatura nera classe 4.8;1;16;Y02300062
-6102050Y0260;Gancio nascosto;1;17;Y02300062
-6302011Y0250;Portellone;1;1;Y02300063
-6302016Y0240;Copertura servizio;1;2;Y02300063
-5109101Y0230;Corpo tappeto;1;1;Y02300064
-5109150Y0230;Pannello di ispezione;1;2;Y02300064
-Z058;Fermaglio a perno;1;3;Y02300064
-ZH830;Fermaglio a scatto (testa piccola);2;4;Y02300064
-5109103Y0230;Piastra copertura bagagliaio;1;5;Y02300064
-5606600Y0230;Vite flangiata recess Bobes M6 1.0 nichel nero;4;6;Y02300064
-5305010Y0230;Assieme corpo cruscotto ausiliario;1;1;Y02300065
-5305016Y0230;Assieme rivestimento inferiore cruscotto ausiliario;1;2;Y02300065
-S27342003;Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero;2;3;Y02300065
-5305012-Y01;Cappuccio vite;2;4;Y02300065
-5305013Y0230;Tappetino portabicchiere;1;5;Y02300065
-5305014Y0230;Tappetino vano portaoggetti centrale;1;6;Y02300065
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;7;7;Y02300065
-5305017Y0230D;Pannello verniciato cruscotto ausiliario;1;8;Y02300065
-3102111Y0240;Parafango anteriore sinistro;1;1;Y02300066
-3102112Y0240;Parafango anteriore destro;1;2;Y02300066
-3102113Y0240;Parafango posteriore sinistro;1;3;Y02300066
-3102117Y0240;Pannello laterale posteriore sinistro;1;4;Y02300066
-3102114Y0240;Parafango posteriore destro;1;5;Y02300066
-3102118Y0240;Pannello laterale posteriore destro;1;6;Y02300066
-Z058;Fermaglio a perno;16;7;Y02300066
-ZH830;Fermaglio a scatto (testa piccola);6;8;Y02300066
-ZH890;Fermaglio a scatto (testa grande);18;9;Y02300066
-S22148002;Vite autofilettante testa esagonale con rondella larga ST5*20 zincatura nero?nichel;18;10;Y02300066
-5603100Y0250;Assieme vetro lunotto posteriore;1;1;Y02300067
-5206010Y0240;Vetro parabrezza anteriore;1;1;Y02300068
-5206011Y0230;Guarnizione parabrezza anteriore;1;2;Y02300068
-5107103Y0230;Protezione inferiore;1;1;Y02300069
-Z058;Fermaglio a perno;16;2;Y02300069
-3100104-Y01;Copricerchio;4;3;Y02300069
-3100120Y0230;Assieme copricerchio ruota acciaio;4;4;Y02300069
-2804901Y0230;Blocco guida commutazione;2;5;Y02300069
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;4;6;Y02300069
-5400100Y0240D;Assieme pannello rifinitura superiore sinistra;1;1;Y02300070
-5400300Y0240D;Assieme pannello rifinitura superiore posteriore sinistra;1;2;Y02300070
-5400500Y0260D;Assieme rifinitura piccola lato sinistro;1;3;Y02300070
-5400777-Y01;Fermaglio;4;4;Y02300070
-ZH680;Fissatore metallico a V;3;5;Y02300070
-5400101-Y01D;Piastra ruota posteriore sinistra;1;6;Y02300070
-Q221B4213F71;Vite testa cilindrica + rondella piana;4;7;Y02300070
-5400773-Y01D;Soglia inferiore sinistra;1;8;Y02300070
-ZH1210;Sede dado plastica;12;9;Y02300070
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;12;10;Y02300070
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;4;11;Y02300070
-ZH1255;Fermaglio a D;16;12;Y02300070
-5400315Y0230;Fermaglio a D lungo;2;13;Y02300070
-6102051-Y01;Spugna antipolvere;1;14;Y02300070
-5400324Y0230;Tappetino spugna impermeabile;1;15;Y02300070
-S22148002;Vite testa cilindrica + rondella piana ST4.8*16 zincatura nero?nichel;1;16;Y02300070
-ZH830;Fermaglio a scatto (testa piccola);2;17;Y02300070
-ZH2204-16;Dado a lamella tipo A;1;18;Y02300070
-S99006161;Vite testa cilindrica interna + rondella plastica M6*16*P1 zincatura nero?nichel;4;19;Y02300070
-5400783-Y01D;Soglia inferiore destra;1;1;Y02300071
-S22148002;Vite testa cilindrica + rondella piana ST4.8*16 zincatura nero?nichel;1;2;Y02300071
-5400200Y0240D;Assieme pannello rifinitura superiore anteriore destro;1;3;Y02300071
-5400400Y0240D;Assieme pannello rifinitura superiore posteriore destro;1;4;Y02300071
-5400600Y0260D;Assieme rifinitura piccola lato destro;1;5;Y02300071
-Q221B4213F71;Vite testa cilindrica + rondella piana;4;6;Y02300071
-ZH680;Fissatore metallico a V;3;7;Y02300071
-5400201-Y01D;Piastra ruota posteriore destra;1;8;Y02300071
-ZH1255;Fermaglio a D;17;9;Y02300071
-ZH1210;Sede dado plastica;12;10;Y02300071
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;12;11;Y02300071
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;4;12;Y02300071
-6102051-Y01;Spugna antipolvere;1;13;Y02300071
-5400315Y0230;Fermaglio a D lungo;2;14;Y02300071
-5400324Y0230;Tappetino spugna impermeabile;1;15;Y02300071
-5400777-Y01;Fermaglio;4;16;Y02300071
-S99006161;Vite testa cilindrica interna + rondella plastica M6*16*P1 zincatura nero?nichel;4;17;Y02300071
-ZH830;Fermaglio a scatto (testa piccola);2;18;Y02300071
-ZH2204-16;Dado a lamella tipo A;1;19;Y02300071
-5702110Y0240D;Assieme copertura tetto;1;1;Y02300072
-5702301Y0240;Bullone F copertura tetto;6;2;Y02300072
-ZH1255;Fermaglio a D;2;3;Y02300072
-5702018Y0240;Guarnizione impermeabile copertura tetto;10;4;Y02300072
-S32006003;Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8;10;5;Y02300072
-6102071Y0230;Pannello rifinitura finestrino anteriore porta sinistra;1;1;Y02300073
-6102077-Y01D;Pannello inferiore porta sinistra;1;2;Y02300073
-6102500Y0240D;Pannello esterno porta sinistra;1;3;Y02300073
-ZH1255;Fermaglio a D;7;4;Y02300073
-6102073Y0240D;Pannello superiore porta sinistra;1;5;Y02300073
-6102057Y0260;Fissatore metallico a V;13;6;Y02300073
-6102079Y0240;Piastra montaggio interruttore PE;1;7;Y02300073
-ZH2204-16;Dado a lamella tipo A;6;8;Y02300073
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;14;9;Y02300073
-S27342004;Vite autofilettante testa semitonda larga ST4.2*9.5 zincata nera;6;10;Y02300073
-S32006003;Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8;6;11;Y02300073
-S27342003;Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero;8;12;Y02300073
-5306148Y0230;Nastro biadesivo (larghezza 10mm spessore 0.8mm); ;13;Y02300073
-6102052Y0240;Bullone montaggio pannello esterno porta;3;14;Y02300073
-6102507Y0240;Spugna antipolvere;1;15;Y02300073
-6102055Y0240;Dado a lamella tipo A - ST4.2;1;16;Y02300073
-6102509Y0240;Feltro 100◊20◊0.7;1;17;Y02300073
-6102081Y0230;Pannello rifinitura finestrino anteriore porta destra;1;1;Y02300074
-6102600Y0240D;Pannello esterno porta destra;1;2;Y02300074
-ZH1255;Fermaglio a D;7;3;Y02300074
-ZH2204-16;Dado a lamella tipo A;6;4;Y02300074
-6102078-Y01D;Pannello inferiore porta destra;1;5;Y02300074
-6102074Y0240D;Pannello superiore porta destra;1;6;Y02300074
-6102057Y0260;Fissatore metallico a V;13;7;Y02300074
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;14;8;Y02300074
-S27342004;Vite autofilettante testa semitonda larga ST4.2*9.5 zincata nera;6;9;Y02300074
-S32006003;Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8;6;10;Y02300074
-S27342003;Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero;8;11;Y02300074
-5306148Y0230;Nastro biadesivo (larghezza 10mm spessore 0.8mm); ;12;Y02300074
-6102052Y0240;Bullone montaggio pannello esterno porta;3;13;Y02300074
-6102507Y0240;Spugna antipolvere;1;14;Y02300074
-6102055Y0240;Dado a lamella tipo A - ST4.2;1;15;Y02300074
-6102509Y0240;Feltro 100◊20◊0.7;1;16;Y02300074
-5306158Y0230;Logo PRO;1;1;Y02300075
-5306156-Y01;Logo X;1;2;Y02300075
-5306157-Y01;Logo YOYO;1;3;Y02300075
-5306010Y0220;Logo XEV;1;4;Y02300075
-5302100Y0240;Assieme copertura tergicristallo anteriore;1;1;Y02300076
-5302102Y0240;Copertura bocchettone liquido lavavetri (I);1;2;Y02300076
-5302200Y0240;Assieme vasca flusso anteriore;1;3;Y02300076
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;6;4;Y02300076
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;8;5;Y02300076
-5302700Y0230D;Pannello rifinitura superiore faro sinistro;1;6;Y02300076
-5302800Y0230D;Pannello rifinitura superiore faro destro;1;7;Y02300076
-ZH830;Fermaglio a scatto (testa piccola);2;8;Y02300076
-8200105Y0230;Tubo troppo pieno anteriore;1;9;Y02300076
-S67325001;Fascetta a vite tipo C ÿ16ñ25;1;10;Y02300076
-8200151Y0230;Pedana di benvenuto sinistra;1;1;Y02300077
-8200152Y0230;Pedana di benvenuto destra;1;2;Y02300077
-5704100Y0240;Assieme vetro tetto sinistro;1;1;Y02300078
-5701211Y0230;Guarnizione vetro tetto sinistra;1;2;Y02300078
-5704200Y0240;Assieme vetro tetto destro;1;3;Y02300078
-5701212Y0230;Guarnizione vetro tetto destra;1;4;Y02300078
-8402110Y0240D;Assieme cofano anteriore saldato;1;1;Y02300079
-8402505Y0230;Manopola cofano anteriore sinistra;1;2;Y02300079
-8402506Y0230;Manopola cofano anteriore destra;1;3;Y02300079
-8402507Y0230;Base clip metallica cofano anteriore;2;4;Y02300079
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;2;5;Y02300079
-S27348004;Vite autofilettante testa semitonda larga ST4.8*13 zinco?nichel nero;2;6;Y02300079
-8403101Y0240D;Parafango sinistro;1;1;Y02300080
-8403107Y0240;Sede dado plastica;10;2;Y02300080
-ZH2204-16;Dado a lamella tipo A;8;3;Y02300080
-8403105Y0240;Staffa parafango sinistro;1;4;Y02300080
-8403102-Y01;Pannello inferiore finestrino triangolare sinistro;1;5;Y02300080
-8403201Y0240D;Parafango destro;1;6;Y02300080
-8403205Y0240;Staffa parafango destro;1;7;Y02300080
-8403202-Y01;Pannello inferiore finestrino triangolare destro;1;8;Y02300080
-5306148Y0230;Nastro biadesivo (larghezza 10mm spessore 0.8mm); ;9;Y02300080
-S22148002;Vite testa cilindrica + rondella piana ST4.8*16 zinco?nichel nero;20;10;Y02300080
-ZH1255;Fermaglio a D;2;11;Y02300080
-8403109Y0240;Fermaglio a fungo (L25 W20 T5.5);6;12;Y02300080
-2803013Y0240;Staffa montaggio paraurti anteriore sinistra;1;1;Y02300081
-2803014Y0240;Staffa montaggio paraurti anteriore destra;1;2;Y02300081
-2803002Y0230D-KIT;Kit servizio paraurti anteriore;1;3;Y02300081
-2803009-Y01D;Pannello inferiore rifinitura paraurti anteriore;1;4;Y02300081
-2803007-Y01D;Pannello superiore rifinitura paraurti anteriore;1;5;Y02300081
-2803003-Y01D;Pannello centrale rifinitura paraurti anteriore;1;6;Y02300081
-2803005-Y01D;Modanatura paraurti anteriore;1;7;Y02300081
-2803011-Y01D;Pannello inferiore rifinitura faro anteriore sinistro;1;8;Y02300081
-2803012-Y01D;Pannello inferiore rifinitura faro anteriore destro;1;9;Y02300081
-5302031Y0230;Base presa di ricarica anteriore;1;10;Y02300081
-5302032Y0230;Pannello interno copertura presa di ricarica anteriore;1;11;Y02300081
-5302033Y0230;Perni copertura presa di ricarica anteriore;1;12;Y02300081
-5302034Y0230;Molla copertura presa di ricarica anteriore;1;13;Y02300081
-Z056;Tampone;3;14;Y02300081
-5302011Y0230D;Copertura presa di ricarica anteriore;1;15;Y02300081
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;2;16;Y02300081
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;11;17;Y02300081
-ZH2204-16;Dado a lamella tipo A;6;18;Y02300081
-2804100Y0250D;Assieme corpo paraurti posteriore;1;1;Y02300082
-S22148002;Vite flangiata recess Bobes M6 1.0 nichel nero;2;2;Y02300082
-ZH1210;Sede dado plastica;4;3;Y02300082
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;6;4;Y02300082
-2804521Y0230D;Assieme saldatura porta scorrevole paraurti posteriore;1;5;Y02300082
-2804530Y0230;Pannello interno porta scorrevole;1;6;Y02300082
-2804201Y0240;Staffa montaggio paraurti posteriore sinistra;1;7;Y02300082
-ZH2204-16;Dado a lamella tipo A;6;8;Y02300082
-2804301Y0240;Staffa montaggio paraurti posteriore destra;1;9;Y02300082
-S27342003;Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero;4;10;Y02300082
-2804101Y0250D;Corpo paraurti posteriore;1;11;Y02300082
-5107003-Y01;Tampone battuta porta laterale;4;12;Y02300082
-2804102Y0250D;Piastra inferiore rifinitura paraurti posteriore;1;13;Y02300082
-ZH2204-6;Dado a lamella tipo B;4;14;Y02300082
-ZH830;Fermaglio a scatto (testa piccola);2;15;Y02300082
-4133041Y0240;Catadiottro posteriore sinistro;1;16;Y02300082
-4133042Y0240;Catadiottro posteriore destro;1;17;Y02300082
-S18608201;Vite flangiata esagonale con guida M8*20*P1.25 Dacromet argento classe 8.8;4;1;Y02300083
-2804201Y0230;Cerniera paraurti posteriore sinistra;1;2;Y02300083
-2804202Y0230;Cerniera paraurti posteriore destra;1;3;Y02300083
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;10;4;Y02300083
-6302010Y0240D;Pannello superiore spoiler cofano;1;1;Y02300084
-6302018-Y01D;Pannello inferiore spoiler cofano;1;2;Y02300084
-5306148Y0230;Nastro biadesivo (larghezza 10mm spessore 0.8mm); ;3;Y02300084
-ZH680;Fissatore metallico a V;4;4;Y02300084
-4123010Y0205;Luce tetto;1;1;Y02300085
-4123020Y0205;Schermo luce tetto;1;2;Y02300085
-S21405002;Vite a croce testa cilindrica M5*16*P0.8 zincatura colorata classe 4.8;2;3;Y02300085
-5810010-Y01;Cintura di sicurezza sinistra;1;1;Y02300086
-5810020-Y01;Cintura di sicurezza destra;1;2;Y02300086
-5810011-Y01;Attacco cintura sinistra;1;3;Y02300086
-5810021-Y01;Attacco cintura destra;1;4;Y02300086
-6101710Y0230;Assieme guida anteriore porta sinistra;1;1;Y02300087
-6101720Y0230;Assieme guida anteriore porta destra;1;2;Y02300087
-6101750Y0230;Assieme rivestimento gomma guida posteriore porta sinistra;1;3;Y02300087
-6107127Y0230;Canale fango posteriore porta sinistra;1;4;Y02300087
-6101733Y0230;Blocco montaggio finestrino triangolare posteriore sinistro;1;5;Y02300087
-6101760Y0230;Assieme rivestimento gomma guida posteriore porta destra;1;6;Y02300087
-6107128Y0230;Canale fango posteriore porta destra;1;7;Y02300087
-6101734Y0230;Blocco montaggio finestrino triangolare posteriore destro;1;8;Y02300087
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;4;9;Y02300087
-S99006201;Vite testa esagonale con rondella elastica e rondella larga M6*20*P1 Dacromet nero classe 8.8;8;10;Y02300087
-6101901Y0205;Assieme membrana impermeabile superiore porta sinistra;1;1;Y02300088
-6101902Y0205;Assieme membrana impermeabile superiore porta destra;1;2;Y02300088
-6101903Y0205;Membrana impermeabile inferiore porte sinistra e destra;2;3;Y02300088
-6103200Y0240;Vetro porta destra;1;1;Y02300089
-6104120Y0230;Assieme alzacristallo elettrico porta destra;1;2;Y02300089
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;8;3;Y02300089
-6103100Y0240;Vetro porta sinistra;1;4;Y02300089
-5203010-Y01;Vetro finestrino triangolare anteriore sinistro;1;5;Y02300089
-6104110Y0230;Assieme alzacristallo elettrico porta sinistra;1;6;Y02300089
-5203020-Y01;Vetro finestrino triangolare anteriore destro;1;7;Y02300089
-5606410Y0230;Assieme serratura cassa batteria;2;1;Y02300090
-S18606002;Vite flangiata esagonale M6*20 Dacromet nero;4;2;Y02300090
-5606420Y0230;Assieme gancio serraggio cassa batteria;2;3;Y02300090
-S32008002;Dado flangiato esagonale M8 Dacromet argento;4;4;Y02300090
-5107014-Y01;Tappo copertura ÿ40;2;5;Y02300090
-6105330Y0205;Assieme maniglia interna sinistra;1;1;Y02300091
-6105340Y0205;Assieme maniglia interna destra;1;2;Y02300091
-S27342003;Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero;8;3;Y02300091
-6105510Y0205D;Assieme maniglia esterna porta sinistra;1;1;Y02300092
-6105520Y0205D;Assieme maniglia esterna porta destra;1;2;Y02300092
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;6;3;Y02300092
-6107116Y0230;Angolo giunto canale fango anteriore porta destra;1;1;Y02300093
-6107115Y0230;Angolo giunto canale fango anteriore porta sinistra;1;2;Y02300093
-6107132Y0230;Guarnizione finestrino triangolare anteriore destro;1;3;Y02300093
-6107131Y0230;Guarnizione finestrino triangolare anteriore sinistro;1;4;Y02300093
-6107118Y0230;Guarnizione esterna vetro porta destra;1;5;Y02300093
-6107117Y0230;Guarnizione esterna vetro porta sinistra;1;6;Y02300093
-6107112Y0230;Guarnizione apertura porta anteriore destra;1;7;Y02300093
-6107111Y0230;Guarnizione apertura porta anteriore sinistra;1;8;Y02300093
-6107122Y0230;Guarnizione interna vetro porta destra;1;9;Y02300093
-6107121Y0230;Guarnizione interna vetro porta sinistra;1;10;Y02300093
-6307111Y0230;Guarnizione portellone;1;1;Y02300094
-6107113Y0230;Guarnizione superiore apertura porta anteriore sinistra;1;2;Y02300094
-6107114Y0230;Guarnizione superiore apertura porta anteriore destra;1;3;Y02300094
-6107135Y0230;Guarnizione cassa batteria;1;4;Y02300094
-6107137Y0230;Rondella guarnizione tetto;1;5;Y02300094
-6309110Y0240;Molla a gas;2;1;Y02300095
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;4;2;Y02300095
-6309200Y0240;Cerniera portellone;2;3;Y02300095
-6309103Y0240;Perno sferico molla a gas;2;4;Y02300095
-S99008001;Dado flangiato esagonale M8 Dacromet argento;4;5;Y02300095
-S18408002;Vite flangiata testa esagonale M8*20*P1.25 Dacromet nero classe 8.8;4;6;Y02300095
-6309300Y0240;Tampone battuta portellone;2;7;Y02300095
-6309101Y0240;Staffa montaggio barra pneumatica portellone sinistra;1;8;Y02300095
-6309102Y0240;Staffa montaggio barra pneumatica portellone destra;1;9;Y02300095
-Z6900100Y0230;Sedile anteriore sinistro assieme;1;1;Y02300096
-Z6900200Y0230;Sedile anteriore destro assieme;1;2;Y02300096
-6900300Y0230;Copertura staffa sedile sinistra;2;3;Y02300096
-6900400Y0230;Copertura staffa sedile destra;2;4;Y02300096
-S18510002;Vite flangiata esagonale M10*25*P1.25 Dacromet nero classe 10.9 con adesivo;8;5;Y02300096
-8200101-Y01;Tampone gomma sollevatore;4;1;Y02300097
-S18408004;Vite flangiata testa esagonale M8*30*P1.25 Dacromet argento classe 8.8;4;2;Y02300097
-S40210002;Rondella grande ÿ10 Dacromet nero;4;3;Y02300097
-8201010Y0205;Specchietto retrovisore interno;1;1;Y02300098
-8204010Y0230;Assieme aletta parasole;2;1;Y02300099
-8204020Y0205;Copertura base aletta parasole;2;2;Y02300099
-S21406001;Vite a croce testa cilindrica M6*25*P1 zincatura nera classe 4.8;4;3;Y02300099
-8202010Y0230D;Assieme specchietto retrovisore esterno sinistro;1;1;Y02300100
-8202020Y0230D;Assieme specchietto retrovisore esterno destro;1;2;Y02300100
-S18606003;Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8;6;3;Y02300100
-8202011Y0230D;Assieme specchietto retrovisore esterno sinistro (completo);1;4;Y02300100
-8202012Y0230;Lente specchietto retrovisore esterno sinistro;1;5;Y02300100
-8202021Y0230D;Assieme specchietto retrovisore esterno destro (completo);1;6;Y02300100
-8202022Y0230;Lente specchietto retrovisore esterno destro;1;7;Y02300100
-5606032Y0230;Maniglia serratura copertura presa di ricarica;1;1;Y02300101
-5606033Y0230;Cavo serratura copertura presa di ricarica;1;2;Y02300101
-S23006002;Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8;2;3;Y02300101
-4108010Y0205;Assieme luce targa;2;1;Y02300102
-8208030-Y01;Catadiottro laterale;2;1;Y02300103
-4133010Y0250;Assieme fanale posteriore sinistro;1;1;Y02300104
-4133020Y0250;Assieme fanale posteriore destro;1;2;Y02300104
-BNJ-0270;Fermaglio fanale posteriore;4;3;Y02300104
-ZH1210;Sede dado plastica;6;4;Y02300104
-S32006003;Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8;2;5;Y02300104
-S27348003;Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero;6;6;Y02300104
-6105101Y0205;Corpo serratura elettronica porta sinistra;1;1;Y02300105
-6105103Y0205;Asta comando serratura elettronica porta sinistra;1;2;Y02300105
-6105105Y0205;Asta comando cilindro serratura elettronica porta sinistra;1;3;Y02300105
-6105107Y0205;Gancio serratura elettronica porta;2;4;Y02300105
-6105111Y0205;Cavo serratura elettronica porta sinistra;2;5;Y02300105
-6105102Y0205;Corpo serratura elettronica porta destra;1;6;Y02300105
-6105104Y0205;Asta comando serratura elettronica porta destra;1;7;Y02300105
-S25808001;Vite testa svasata ìfioreî M8*20*P1.25 zincatura nera classe 8.8 con adesivo;4;8;Y02300105
-S99006121;Vite testa svasata M6*12*P1 Dacromet argento classe 8.8 con gommino;6;9;Y02300105
-6105207Y0260;Rifinitura chiusura porta;2;10;Y02300105
-5606011Y0205;Corpo serratura elettrica portellone;1;1;Y02300106
-6105107Y0205;Gancio serratura elettronica porta;1;2;Y02300106
-5606600Y0230;Vite flangiata recess Bobes M6 1.0 nichel nero;3;3;Y02300106
-S25808001;Vite testa svasata ìfioreî M8*20*P1.25 zincatura nera classe 8.8 con adesivo;2;4;Y02300106
-4121010Y0230;Assieme faro anteriore sinistro (parte spessa DRL);1;1;Y02300107
-4121901Y0230;Lampadina H7;2;2;Y02300107
-4121903Y0230;Coperchio posteriore faro anteriore sinistro;2;3;Y02300107
-4121020Y0230;Assieme faro anteriore destro (parte spessa DRL);1;4;Y02300107
-S99006201;Vite testa esagonale con rondella elastica e rondella larga M6*20*P1 Dacromet nero classe 8.8;8;5;Y02300107
-5107011-Y01;Tappo ÿ10;6;1;Y02300108
-5107013-Y01;Tappo ÿ20;20;2;Y02300108
-5111020Y0280;Tappo foro ÿ20 a caldo;4;3;Y02300108
-5111040Y0280;Tappo foro ÿ40 a caldo;4;4;Y02300108
-5107015-Y01;Tappo ÿ30;6;5;Y02300108
-5107016-Y01;Tappo ÿ15;12;6;Y02300108
-5107018Y0230;Etichetta foro ÿ25;18;7;Y02300108
-5107101Y0240;Tappo speciale ÿ25 per fori scorrimento e ribaltamento;2;8;Y02300108
-3926010-Y01;Triangolo di emergenza;1;1;Y02300109
-3926020-Y01;Gilet riflettente;1;2;Y02300109
-5302105Y0230;Attrezzo tappo riempimento;1;3;Y02300109
+codice,descrizione,quantita,id,esploso
+1108010Y0230,Pedale acceleratore elettrico,1,1,Y02300001
+S18606002,Bullone esagonale con flangia M6*20 zincatura nera,3,2,Y02300001
+3508100Y0230,Leva comando freno di stazionamento,1,1,Y02300002
+3508200Y0230,Cavo freno di stazionamento anteriore,1,2,Y02300002
+3508300Y0230,Cavo freno di stazionamento sinistro,1,3,Y02300002
+3508400Y0230,Cavo freno di stazionamento destro,1,4,Y02300002
+S99035001,Morsetto universale tubo √ò20‚Äì√ò10,1,5,Y02300002
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,2,6,Y02300002
+S32008002,Dado esagonale flangiato M8 zincatura argento,2,7,Y02300002
+3540102Y0240-Z001,Serbatoio del vuoto con sensore assemblato,1,1,Y02300003
+3540102Y0211,Serbatoio del vuoto,1,2,Y02300003
+3540106Y0230,Sensore del vuoto,1,3,Y02300003
+3540103Y0240-Z001,Pompa del vuoto elettronica con tubo di scarico assy,1,4,Y02300003
+3540103Y0211,Pompa del vuoto elettronica,1,5,Y02300003
+3540104Y0240,Tubo di sfiato pompa del vuoto elettronica,1,6,Y02300003
+3540400Y0240,Tubo del vuoto,1,7,Y02300003
+S18406002,Bulloni flangiati esagonali M6*45 zincatura argento,2,8,Y02300003
+S32008002,Dado esagonale flangiato M8 zincatura argento,2,9,Y02300003
+3506011Y0240,Primo tubo rigido uscita olio,1,1,Y02300004
+3506012Y0240,Secondo tubo rigido uscita olio,1,2,Y02300004
+3506013Y0240,Tubo freno anteriore sinistro,1,3,Y02300004
+3506014Y0240,Tubo freno anteriore destro,1,4,Y02300004
+3506015Y0240,Tubo freno posteriore sinistro rigido I,1,5,Y02300004
+3506016Y0240,Tubo freno posteriore destro rigido I,1,6,Y02300004
+3506100Y0230,Tubo flessibile freno anteriore sinistro,1,7,Y02300004
+3506105Y0230,Anello di ritegno molla tubo freno,2,8,Y02300004
+3506107Y0230,Rondella di tenuta,4,9,Y02300004
+3506106Y0230,Bulloni punzonati,2,10,Y02300004
+3506116Y0240,Clip tubo foro singolo,2,11,Y02300004
+3506200Y0230,Tubo flessibile freno anteriore destro,1,12,Y02300004
+3550300Y0240,Sensore velocit√† ruota anteriore sinistra,1,13,Y02300004
+3550400Y0240,Sensore velocit√† ruota anteriore destra,1,14,Y02300004
+3506113Y0240,Clip tubo doppio foro,2,15,Y02300004
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,2,16,Y02300004
+3506300Y0240,Assieme tubo flessibile freno posteriore,2,1,Y02300005
+3506020Y0230,Tubo freno posteriore rigido III,2,2,Y02300005
+3506017Y0240,Tubo freno posteriore sinistro rigido II,1,3,Y02300005
+3506018Y0240,Tubo freno posteriore destro rigido II,5,4,Y02300005
+3506105Y0230,Anello di ritegno molla tubo freno,4,5,Y02300005
+3506113Y0240,Clip tubo doppio foro,1,6,Y02300005
+3506116Y0240,Clip tubo foro singolo,3,7,Y02300005
+3550500Y0240B,Sensore velocit√† ruota posteriore sinistra,1,8,Y02300005
+3550600Y0240B,Sensore velocit√† ruota posteriore destra,1,9,Y02300005
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,2,10,Y02300005
+3540101Y0230,Servofreno a depressione,1,1,Y02300006
+3550100Y0230,Centralina ABS assy,1,2,Y02300006
+3569100Y0240,Pedale freno assy,1,3,Y02300006
+S18608003,Bullone flangiato esagonale M8*20 zincatura argento,2,4,Y02300006
+S32008002,Dado esagonale flangiato M8 zincatura argento,4,5,Y02300006
+S50108001,Spina di bloccaggio √ò8,1,6,Y02300006
+S51008001,Perno √ò8*25,1,7,Y02300006
+3540113Y0230,Tappo serbatoio liquido freni,1,8,Y02300006
+2915100Y0230,Ammortizzatore posteriore,2,1,Y02300007
+2912011Y0230,Molla elicoidale posteriore,2,2,Y02300007
+2914300Y0240,Assieme barra di spinta,2,3,Y02300007
+2914200Y0230,Barra stabilizzatrice posteriore,1,4,Y02300007
+2912013Y0230,Tampone posteriore,2,5,Y02300007
+2912012Y0230,Base superiore montaggio molla posteriore,2,6,Y02300007
+S18512004,Bulloni flangiati esagonali M12*85 zincatura argento,4,7,Y02300007
+S18512001,Bulloni flangiati esagonali M12*55 zincatura argento,2,8,Y02300007
+S18512003,Bulloni flangiati esagonali M12*75 zincatura argento,1,9,Y02300007
+2906106Y0230,Rondella grande √ò12,1,10,Y02300007
+S40212002,Rondella grande √ò12 zincatura nera,2,11,Y02300007
+S33112001,Dado autobloccante esagonale flangiato M12 zincatura argento T13,10,12,Y02300007
+S18512901,Bullone flangiato esagonale M12*90*P1.25 zincatura argento classe 10.9,2,13,Y02300007
+3100101Y0230,Pneumatico (155/70-R13),4,1,Y02300008
+3100106Y0230,"Cerchio in acciaio 13""",4,2,Y02300008
+3100102Y0240,Valvola gonfiaggio (TR418),4,3,Y02300008
+3106107Y0240,Dado ruota (cerchio acciaio),16,4,Y02300008
+5306163Y0230,"Etichetta pneumatico - 13""",1,5,Y02300008
+3100105-Y01,"Cerchio in alluminio 15"" (chiaro)",4,1,Y02300009
+3100101Y0241,Pneumatico (155/60-R15),4,2,Y02300009
+3100102Y0241,Valvola gonfiaggio (TR413),4,3,Y02300009
+3106106Y0240,Dado ruota (cerchio alluminio),16,4,Y02300009
+3100104-Y01,Copricerchio,4,5,Y02300009
+5306164Y0230,"Etichetta pneumatico - 15""",1,6,Y02300009
+Z3400104Y0240,Volante con comandi,1,1,Y02300010
+3400104Y0240,Volante assy,1,2,Y02300010
+3400135Y0230,Copertura clacson,1,3,Y02300010
+3400106Y0230,Colonna sterzo elettrica assy,1,1,Y02300011
+3400102Y0230,Albero sterzo inferiore assy,1,2,Y02300011
+3400108Y0230,Protezione albero inferiore sterzo,1,3,Y02300011
+Q32312F61,Dado volante,1,4,Y02300011
+3400161Y0230,Colonna sterzo con motore,1,5,Y02300011
+3400162Y0230,Giunto cardanico colonna sterzo,1,6,Y02300011
+Q1420830T13F61,Bullone testa esagonale con rondella elastica,1,7,Y02300011
+3400166Y0230,Bullone testa esagonale con rondella elastica e piana,2,8,Y02300011
+3400165Y0230,Staffa centralina EPS,1,9,Y02300011
+3400164Y0230,Centralina EPS,1,10,Y02300011
+S32008002,Dado esagonale flangiato M8 zincatura argento,3,11,Y02300011
+S18608006,Bullone flangiato esagonale M8*70 zincato,1,12,Y02300011
+Q1420830T13F61,Bullone testa esagonale con rondella elastica,2,13,Y02300011
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,2,14,Y02300011
+3400101Y0230,Scatola guida con tiranti assy,1,1,Y02300012
+S33112001,Dado autobloccante esagonale flangiato M12 zincatura argento T13,2,2,Y02300012
+S50032002,Spina elastica,2,3,Y02300012
+Q381B12,Dado esagonale scanalato tipo I,2,4,Y02300012
+3400113Y0230,Testina sterzo,2,5,Y02300012
+3400111Y0230,Scatola guida con tirante interno,1,6,Y02300012
+3400116Y0230,Cuffia parapolvere,2,7,Y02300012
+16850006,Fascetta cuffia parapolvere,2,8,Y02300012
+16812004,Collare tubo cuffia parapolvere,2,9,Y02300012
+S18512002,Bulloni flangiati esagonali M12*65 zincatura argento,2,10,Y02300012
+3400115Y0230,Manicotto sigillante,1,11,Y02300012
+3400114Y0230,Base sigillante,1,12,Y02300012
+2801100Y0240,Telaio ausiliario anteriore assy,1,1,Y02300013
+2904100Y0230,Braccio oscillante anteriore assy,2,2,Y02300013
+2906101Y0230,Barra stabilizzatrice anteriore,1,3,Y02300013
+2906102-Y01,Boccola barra stabilizzatrice,2,4,Y02300013
+2906103Y0230,Staffa montaggio barra stabilizzatrice,2,5,Y02300013
+2906105-Y01,Boccola terminale barra stabilizzatrice,4,6,Y02300013
+2906106Y0230,Rondella grande √ò12,2,7,Y02300013
+2906107Y0230,Rondella grande √ò16,2,8,Y02300013
+S18510001,Bulloni flangiati esagonali M10*25 zincatura argento,10,9,Y02300013
+S33110001,Dado autobloccante esagonale flangiato M10 zincatura argento T13,4,10,Y02300013
+S18510006,Bulloni flangiati esagonali M10*75 zincatura argento,2,11,Y02300013
+S33112001,Dado autobloccante esagonale flangiato M12 zincatura argento T13,2,12,Y02300013
+3501102Y0230,Freno anteriore destro con mozzo assy,1,1,Y02300014
+3501101Y0230,Freno anteriore sinistro con mozzo assy,1,2,Y02300014
+3501112Y0230,Snodo sterzo sinistro con albero intermedio,1,3,Y02300014
+3501113Y0230,Pinza freno sinistra assy,1,4,Y02300014
+3501122Y0230,Snodo sterzo destro con albero intermedio,1,5,Y02300014
+3501123Y0230,Pinza freno destra assy,1,6,Y02300014
+3501114Y0230,Unit√† mozzo ruota con corona ABS,2,7,Y02300014
+3501111Y0230,Disco freno,2,8,Y02300014
+3501115Y0230,Pastiglia freno anteriore esterna,2,9,Y02300014
+3501117Y0240,Bullone staffa pinza (con flangia),4,10,Y02300014
+3501118Y0240,Dado centrale,2,11,Y02300014
+3501120Y0240,Coperchio terminale,2,12,Y02300014
+S18510005,Bulloni flangiati esagonali M10*50 zincatura argento,2,13,Y02300014
+3501116Y0230,Pastiglia freno anteriore sinistra interna,1,14,Y02300014
+3501126Y0230,Pastiglia freno anteriore destra interna,1,15,Y02300014
+S33110001,Dado autobloccante esagonale flangiato M10 zincatura argento T13,2,16,Y02300014
+2904101Y0230,Ammortizzatore anteriore sinistro assy,1,1,Y02300015
+2904102Y0230,Ammortizzatore anteriore destro assy,1,2,Y02300015
+S33112001,Dado autobloccante esagonale flangiato M12 zincatura argento T13,4,3,Y02300015
+S18512001,Bulloni flangiati esagonali M12*55 zincatura argento,4,4,Y02300015
+S32008002,Dado esagonale flangiato M8 zincatura argento,4,5,Y02300015
+Z2912100Y0230,Assale posteriore con cavo freno stazionamento,1,1,Y02300016
+2912101Y0230,Tamburo freno,2,1,Y02300017
+2912102Y0230,Freno destro assy,1,2,Y02300017
+2912103Y0230,Assieme semiasse,2,3,Y02300017
+2912104Y0230,Paraolio semiasse,2,4,Y02300017
+2912105Y0230,Assieme carcassa assale posteriore,1,5,Y02300017
+2912106Y0230,Freno sinistro assy,1,6,Y02300017
+2912107Y0230,Assieme riduttore finale,1,7,Y02300017
+2912108Y0230,Bullone collegamento freno,8,8,Y02300017
+2912109Y0230,Rondella 10,8,9,Y02300017
+2912110Y0230,Dado collegamento freno,8,10,Y02300017
+2912111Y0230,Dado collegamento riduttore finale M8,8,11,Y02300017
+2912112Y0230,Rondella 8,8,12,Y02300017
+2912113Y0230,Valvola di sfiato,1,13,Y02300017
+2912114Y0230,Tappo di scarico assy,1,14,Y02300017
+2912115Y0230,Guarnizione tappo di scarico,1,15,Y02300017
+2912116Y0230,Guarnizione tappo di riempimento,1,16,Y02300017
+2912117Y0230,Tappo di riempimento,1,17,Y02300017
+S18408002,Bullone flangiato esagonale M8*20 zincatura argento,4,18,Y02300017
+S32008002,Dado flangiato esagonale M8 zincatura argento,2,19,Y02300017
+2912017Y0230,Staffa montaggio E?Motor,1,20,Y02300017
+S18408004,Bullone flangiato esagonale M8*30*P1.25 zincatura argento classe 8.8,3,21,Y02300017
+2912118Y0230,Ceppo freno sinistro assy,1,22,Y02300017
+2912119Y0230,Cepoo freno destro assy,1,23,Y02300017
+2101020Y0230,Modulo batteria di potenza,3,1,Y02300018
+2101024Y0230,Piastra coprimodulo 1,1,2,Y02300018
+2101025Y0230,Piastra coprimodulo 2,1,3,Y02300018
+2101026Y0230,Piastra fissaggio cablaggio,1,4,Y02300018
+2101037Y0230,Maniglia pacco batteria,1,5,Y02300018
+2101038Y0230,Maniglia lamiera di fissaggio,2,6,Y02300018
+2101039Y0230,Film riscaldante Y02,1,7,Y02300018
+2101040Y0230,Anello di tenuta,3,8,Y02300018
+2101041Y0230,Connessione flessibile terminale positivo,1,9,Y02300018
+2101042Y0230,Connessione flessibile terminale negativo,1,10,Y02300018
+2101043Y0230,Barra rigida rame terminale negativo,1,11,Y02300018
+2101011Y0230,BSU?SINOEV,1,12,Y02300018
+2101049Y0230-Z001,Cablaggio rapido assy,1,13,Y02300018
+2101044Y0230,Rivetti plastici foro 3.7 BNJ?0005B,25,14,Y02300018
+2101045Y0230,Valvola di sfiato modello VV?P124?00?KS1,1,15,Y02300018
+2101055Y0230,Bulloni esagonali M6*12 con flangia zincatura nera (con adesivo nylon),3,16,Y02300018
+2101056Y0230,Bulloni esagonali M5*30 zincatura nera con rondella a molla e rondella piana,4,17,Y02300018
+2101057Y0230,Dadi esagonali flangiati zincatura nera tipo coppia prevalente (inserto non metallico),2,18,Y02300018
+2101058Y0230,Vite testa bombata esagonale cava M4*10 zincatura nera con rondella a molla e rondella piana,4,19,Y02300018
+2101060Y0230,Bulloni esagonali M4*20 zincatura nera con rondella a molla e rondella piana,42,20,Y02300018
+2101061Y0230,Vite testa bombata esagonale cava M3*10 zincatura nera con rondella a molla e rondella piana,14,21,Y02300018
+2101064Y0230,Vite svasata testa piatta M4*10 zincatura nera,4,22,Y02300018
+2101046Y0230,Fascetta BNJ?0181 foro 5.5,2,23,Y02300018
+2101054Y0230,Etichetta avvertimento alta tensione,1,24,Y02300018
+2103010Y0250,Motore di trazione,1,1,Y02300019
+2103020Y0240,Staffa cablaggio trifase motore,1,2,Y02300019
+S18408004,Bullone flangiato esagonale M8*30*P1.25 zincatura argento classe 8.8,3,3,Y02300019
+4002616Y0230,Bullone di massa M6 (filettatura FT),1,4,Y02300019
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,2,5,Y02300019
+2108010Y0250,VCU assy,1,1,Y02300020
+S32006003,Dado flangiato esagonale M6*P1 zincatura nero?nichel classe 8,4,2,Y02300020
+2142010Y0230,Corpo controller motore,1,1,Y02300021
+S18408004,Bullone flangiato esagonale M8*30*P1.25 zincatura argento classe 8.8,8,2,Y02300021
+4002616Y0230,Bullone di massa M6 (filettatura FT),1,3,Y02300021
+2105010Y0230,Cablaggio positivo controller motore,1,1,Y02300022
+2105020Y0230,Cablaggio negativo controller motore,1,2,Y02300022
+2105040Y0230,Cavo conversione PTC & compressore,1,3,Y02300022
+2105050Y0230,Cablaggio alta tensione sistema ausiliario,1,4,Y02300022
+2105020Y0230,Cablaggio commutazione alta tensione sistema ausiliario,1,5,Y02300022
+2105060-Y01,Fascetta doppia testa (19mm),1,6,Y02300022
+S32006003,Dado flangiato esagonale M6*P1 zincatura nero?nichel classe 8,1,7,Y02300022
+2107020Y0230,Presa di ricarica (EN),1,1,Y02300023
+2107030-Y01,Caricatore EV (EN),1,2,Y02300023
+2107060Y0230,Assieme tre?in?uno,1,3,Y02300023
+2107061Y0230,Staffa superiore sinistra tre?in?uno,1,4,Y02300023
+2107062Y0230,Staffa inferiore tre?in?uno,1,5,Y02300023
+2107063Y0230,Staffa superiore destra tre?in?uno,1,6,Y02300023
+4002616Y0230,Bullone di massa M6 (filettatura FT),1,7,Y02300023
+S18406004,Bullone flangiato esagonale M6*16*P1 zincatura nera classe 8.8,6,8,Y02300023
+S18608003,Bullone flangiato esagonale M8*20 zincatura argento,4,9,Y02300023
+S32008002,Dado flangiato esagonale M8 zincatura argento,1,10,Y02300023
+S18608009,Bullone flangiato esagonale M8*16*P1.25 zincatura argento classe 8.8,1,11,Y02300023
+2107050-Y01,Borsa caricatore,1,12,Y02300023
+2107064Y0230,Fusibile 63A,2,13,Y02300023
+2107040-Y01,Caricatore doppia testa (EN),1,14,Y02300023
+Z2101100Y0230,Dispositivo scatola batteria di potenza,1,1,Y02300024
+Z2101100Y0280,Dispositivo scatola batteria di potenza,1,1,Y02300025
+2101013Y0230,Boccola anti?attrito,6,1,Y02300026
+210101B-Y01,Fast?plug scatola batteria,3,2,Y02300026
+210101AY0230,Cablaggio negativo batteria,1,3,Y02300026
+2101019Y0230,Cablaggio positivo batteria,1,4,Y02300026
+210101H-Y01,Cavo collegamento moduli batteria,2,5,Y02300026
+210101CY0230,Cablaggio comunicazione scatola batteria,1,6,Y02300026
+210101DY0230,Tappo gomma passaggio cavi positivo/negativo batteria,2,7,Y02300026
+Z2109100Y0230,Assieme scatola alta tensione,1,1,Y02300027
+2101012Y0230,Scatola acquisizione alta tensione,1,1,Y02300028
+2101054Y0230,Etichetta avvertimento alta tensione,1,2,Y02300028
+2109010Y0230B,Scatola alta tensione,1,3,Y02300028
+2101518Y0240,Shunt,1,4,Y02300028
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,4,5,Y02300028
+2109011Y0250,Cassa scatola alta tensione assy,1,6,Y02300028
+2109015Y0250,Rel√® 150A,1,7,Y02300028
+2109017-Y01,Rel√® 20A,2,8,Y02300028
+2109018Y0250,Fusibile ritardato 300A,1,9,Y02300028
+2101515Y0240,Fusibile riscaldamento,1,10,Y02300028
+2109112Y0250,Resistenza pre?carica 25? 60W,1,11,Y02300028
+2109113Y0250,Cablaggio comunicazione scatola alta tensione,1,12,Y02300028
+3601010Y0240,Modulo controllo carrozzeria (BCM),1,1,Y02300029
+3601030Y0230,Antenna avviamento,1,2,Y02300029
+3704010Y0230,Interruttore avviamento passivo,1,3,Y02300029
+3791020Y0230,Interruttore PE (con antenna),1,4,Y02300029
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,3,5,Y02300029
+S27348004,Vite autofilettante testa semitonda ST4.8*13 zincatura nero?nichel,2,6,Y02300029
+3721010Y0240,Clacson alta frequenza,1,1,Y02300030
+3774010Y0230,Assieme devioluci,1,2,Y02300030
+S23004001,Vite testa cilindrica M4*10 con rondella piana zincatura colorata classe 4.8,2,3,Y02300030
+3782010-Y01,Interruttore regolazione specchietto elettrico,1,4,Y02300030
+S27342003,Vite autofilettante testa semitonda ST4.2*13 zincatura nero?nichel,4,5,Y02300030
+3504102Y0230,Interruttore freno,1,6,Y02300030
+3778010Y0200,Blocco sterzo,1,7,Y02300030
+3781010Y0250,Interruttore marce,1,8,Y02300030
+S18606003,Bullone flangiato esagonale M6*16*P1 zincatura nera classe 8.8,1,9,Y02300030
+3790020-Y01,Interruttore apertura portellone,1,10,Y02300030
+3766010Y0230,Interruttore avviso,1,11,Y02300030
+3746010Y0240,Interruttore alzacristalli,2,12,Y02300030
+3790040Y0230,Sportellino mobile paraurti posteriore,1,13,Y02300030
+3774020Y0230,Assieme spirale volante (clock spring),1,14,Y02300030
+3790010Y0230-Z001,Cilindro serratura porta sinistra con chiave meccanica,1,1,Y02300031
+3790030-Y01,Seeger cilindro serratura porta sinistra,1,2,Y02300031
+3791001Y0230,Telecomando chiave assy,1,3,Y02300031
+4002010Y0230,Cablaggio vano anteriore assy,1,1,Y02300032
+4002020Y0230,Cablaggio tetto assy,1,2,Y02300032
+4002030Y0240,Cablaggio porta sinistra assy,1,3,Y02300032
+4002040Y0240,Cablaggio porta destra assy,1,4,Y02300032
+4003010Y0230,Cablaggio principale assy,1,5,Y02300032
+S18606002,Bullone flangiato esagonale M6*20 zincatura nera,2,6,Y02300032
+S27348002,Vite autofilettante testa semitonda ST4.8*16 zincatura nera,2,7,Y02300032
+S18406001,Bulloni flangiati esagonali M6*12*P1 zincatura nera classe 8.8,2,8,Y02300032
+4002200Y0230,Cablaggio lato destro assy,1,9,Y02300032
+4003020Y0230,Cablaggio ausiliario cruscotto assy,1,10,Y02300032
+4013010Y0250,Cablaggio portellone assy,1,11,Y02300032
+4013020Y0250,Cablaggio paraurti posteriore assy,1,12,Y02300032
+4002616Y0230,Bullone di massa M6 (filettatura FT),11,13,Y02300032
+4003011Y0230,Staffa cablaggio principale,1,14,Y02300032
+S14606121,Bullone testa esagonale M6*12 con rondella elastica e piana zincatura argento classe 8.8,1,15,Y02300032
+4014010Y0230,Cablaggio serratura scatola batteria,1,16,Y02300032
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,2,17,Y02300032
+5205010Y0200,Motorino tergicristallo,1,1,Y02300033
+5205020Y0200,Braccio tergicristallo (con tubo ugello),1,2,Y02300033
+5205030Y0200,Lama tergicristallo,1,3,Y02300033
+5205040Y0200,Cappuccio dado tergicristallo,1,4,Y02300033
+5207030Y0240,Tubo lavacristallo,1,5,Y02300033
+5207010Y0240,Serbatoio lavacristallo assy,1,6,Y02300033
+5207020Y0200,Tubo a due vie assy,1,7,Y02300033
+5207020Y0240,Cappuccio antipolvere bocchettone serbatoio lavacristallo,1,8,Y02300033
+S99006201,Bullone testa esagonale M6*20 con rondella elastica e rondella grande zincatura nera classe 8.8,2,9,Y02300033
+S32006003,Dado flangiato esagonale M6*P1 zincatura nero?nichel classe 8,5,10,Y02300033
+3820050Y0205,Interruttore volante,1,1,Y02300034
+3820010Y0205,Antenna GPS + antenna radio assy,1,2,Y02300034
+7911010Y0241,Altoparlante,2,3,Y02300034
+3820021Y0205,Unit√† principale,1,4,Y02300034
+3820022Y0205,Schermo LCD,1,5,Y02300034
+7925020Y0240,USB assy cruscotto ausiliario,1,6,Y02300034
+7925030Y0240,USB assy quadro strumenti,1,7,Y02300034
+S18406001,Bulloni flangiati esagonali M6*12*P1 zincatura nera classe 8.8,2,8,Y02300034
+S18606003,Bulloni flangiati esagonali M6*16*P1 zincatura nera classe 8.8,4,9,Y02300034
+S27348002,Viti autofilettanti a testa semitonda larga ST4.8*16 zincatura nera,4,10,Y02300034
+3820010Y0230,Assieme antenna radio e navigazione,1,11,Y02300034
+3820011Y0230,Staffa di montaggio antenna,1,12,Y02300034
+8103010Y0230,Assieme compressore elettrico,1,1,Y02300035
+4002616Y0230,Bullone di massa M6 (filettatura FT),1,2,Y02300035
+8103011Y0230,Assieme staffa compressore elettrico,2,3,Y02300035
+8105010Y0230,Assieme condensatore,1,4,Y02300035
+8105011Y0230,Assieme ventola elettronica,1,5,Y02300035
+8108020Y0230,Tubo di scarico compressore,1,6,Y02300035
+8108040Y0230,Assieme linea di refrigerazione,1,7,Y02300035
+5306153Y0230,Etichetta specifiche condensatore/ventola,1,8,Y02300035
+5306154Y0230,Etichetta refrigerante climatizzatore,1,9,Y02300035
+S32008002,Dado flangiato esagonale M8 zincatura dacromet argento,6,10,Y02300035
+S18608007,Bullone flangiato M8*150 zincatura dacromet argento,2,11,Y02300035
+S14606004,Bullone testa esagonale con rondella elastica e piana M6*35 zincatura dacromet argento,4,12,Y02300035
+S14606003,Bullone testa esagonale con rondella elastica e piana M6*25 zincatura dacromet argento,4,13,Y02300035
+S14606002,Bullone testa esagonale con rondella elastica e piana M6*20 zincatura dacromet argento,2,14,Y02300035
+8107010Y0230,Assieme HVAC,1,1,Y02300036
+8112010Y0240,Assieme pannello controllo climatizzatore,1,2,Y02300036
+5306104Y0230,Condotto aria ‚Äì bocchetta centrale,1,3,Y02300036
+5306030Y0230,Assieme sbrinatore anteriore,1,4,Y02300036
+5306136Y0230,Condotto sbrinamento sinistro,1,5,Y02300036
+5306141Y0230,Condotto sbrinamento destro,1,6,Y02300036
+S27342003,Viti autofilettanti testa semitonda larga ST4.2*13 zincatura nero?nichel,2,7,Y02300036
+S27348002,Viti autofilettanti testa semitonda larga ST4.8*16 zincatura nera,16,8,Y02300036
+S32008002,Dado flangiato esagonale M8 zincatura dacromet argento,5,9,Y02300036
+7925040Y0230,T?BOX,1,1,Y02300037
+S32006003,Dado flangiato esagonale M6*P1 zincatura nero?nichel grado 8,3,2,Y02300037
+7925041Y0230,Antenna GPS+4G,1,3,Y02300037
+3703010Y0230,Batteria 12V,1,1,Y02300038
+S18606002,Bullone flangiato M6*20 zincatura dacromet nera,4,2,Y02300038
+6301711Y0240,Piastra rinforzo cerniere portellone sinistra,1,1,Y02300039
+6301713Y0240,Piastra rinforzo cerniere portellone destra,1,2,Y02300039
+6301591Y0240,Assieme staffa serratura portellone,1,3,Y02300039
+5101571Y0240,Assieme staffa trave di torsione,1,4,Y02300039
+S18510001,Bulloni flangiati M10*25 zincatura dacromet argento,5,5,Y02300039
+5101272Y0240,Staffa superiore condensatore,2,6,Y02300039
+S18408006,Bullone flangiato M8*12*P1.25 zincatura dacromet nera 8.8,2,7,Y02300039
+5101191Y0230,Staffa MCU ‚Äì componente II,1,8,Y02300039
+5101187Y0230,Staffa MCU ‚Äì componente I,1,9,Y02300039
+S18608201,Bullone flangiato con guida M8*20*P1.25 zincatura dacromet argento 8.8,2,10,Y02300039
+5133832Y0280,Staffa montaggio paraurti posteriore,1,11,Y02300039
+5101850-Y01,Piastra esterna rinforzo molla sospensione anteriore ‚Äì sinistra,1,1,Y02300040
+5101860-Y01,Piastra esterna rinforzo molla sospensione anteriore ‚Äì destra,1,2,Y02300040
+5401170-Y01,Staffa montaggio trave tubolare sinistra,1,3,Y02300040
+5401180-Y01,Staffa montaggio trave tubolare destra,1,4,Y02300040
+6101100Y0230,Assieme porta anteriore sinistra,1,5,Y02300040
+6106010Y0230,Cerniera superiore porta,2,6,Y02300040
+6106030Y0230,Cerniera inferiore porta,2,7,Y02300040
+S18608010,Bullone flangiato M8*25*P1.25 zincatura dacromet argento classe 10.9,16,8,Y02300040
+6101200Y0230,Assieme porta anteriore destra,1,9,Y02300040
+S18606003,Bulloni flangiati M6*16*P1 zincatura dacromet nera 8.8,12,10,Y02300040
+5133834Y0280,Staffa montaggio paraurti posteriore,2,11,Y02300040
+5701090-Y01,Assieme longherone superiore,1,1,Y02300041
+5701011-Y01,Copertura trave anteriore tetto,1,2,Y02300041
+5701030-Y01,Piastra inferiore trave anteriore tetto,1,3,Y02300041
+5701020Y0240,Assieme trave posteriore tetto,1,4,Y02300041
+5601112Y0280,Assieme trave posteriore tetto,1,5,Y02300041
+5401030-Y01,Pannello interno soglia porta sinistra,1,1,Y02300042
+5401230-Y01,Pannello interno soglia sinistra,1,2,Y02300042
+5401111-Y01,Pannello esterno lato sinistro,1,3,Y02300042
+5401110-Y01,Staffa montaggio paraurti posteriore sinistra,1,4,Y02300042
+5401150-Y01,Assieme canalina flusso posteriore sinistra,1,5,Y02300042
+5101551-Y01,Staffa integrata montaggio,1,6,Y02300042
+5401810-Y01,Piastra montaggio serratura porta sinistra,1,7,Y02300042
+5401301-Y01,Piastra rinforzo montante A sinistra,1,8,Y02300042
+5401303-Y01,Segmento superiore rinforzo montante A sinistra,1,9,Y02300042
+5401310-Y01,Piastra rinforzo cerniera superiore sinistra,1,10,Y02300042
+5401330-Y01,Piastra rinforzo cerniera inferiore sinistra,1,11,Y02300042
+5401313Y0230,Staffa faro sinistro,1,12,Y02300042
+5401011-Y01,Piastra collegamento trave anteriore tetto sinistra,1,13,Y02300042
+5401015-Y01,Piastra interna trave laterale superiore sinistra,1,14,Y02300042
+5401017-Y01,Segmento posteriore interno sinistro,1,15,Y02300042
+5401710Y0240,Assieme pannello interno posteriore sinistro,1,16,Y02300042
+5701037Y0240,Piastra rinforzo cerniera posteriore sinistra,1,17,Y02300042
+5401713Y0240,Piastra dado cintura di sicurezza,1,18,Y02300042
+5401350-Y01,Pannello interno montante A sinistro,1,19,Y02300042
+5401040-Y01,Pannello interno soglia porta destra,1,1,Y02300043
+5401240Y0230,Pannello interno soglia destra,1,2,Y02300043
+5401112-Y01,Pannello esterno lato destro,1,3,Y02300043
+5101551-Y01,Staffa integrata montaggio,1,4,Y02300043
+5401120-Y01,Staffa montaggio paraurti posteriore destra,1,5,Y02300043
+5401160-Y01,Assieme canalina flusso posteriore destra,1,6,Y02300043
+5401820-Y01,Piastra montaggio serratura porta destra,1,7,Y02300043
+5401302-Y01,Piastra rinforzo montante A destra,1,8,Y02300043
+5401304-Y01,Segmento superiore rinforzo montante A destra,1,9,Y02300043
+5401320-Y01,Piastra rinforzo cerniera superiore destra,1,10,Y02300043
+5401340-Y01,Piastra rinforzo cerniera inferiore destra,1,11,Y02300043
+5401413Y0230,Staffa faro destro,1,12,Y02300043
+5401012-Y01,Piastra collegamento trave anteriore tetto destra,1,13,Y02300043
+5401016-Y01,Piastra interna trave laterale superiore destra,1,14,Y02300043
+5401018-Y01,Piastra interna posteriore inferiore destra,1,15,Y02300043
+5401810Y0240,Assieme pannello interno posteriore destro,1,16,Y02300043
+5701038Y0240,Piastra rinforzo cerniera posteriore destra,1,17,Y02300043
+5401713Y0240,Piastra dado cintura di sicurezza,1,18,Y02300043
+5401360-Y01,Pannello interno montante A destro,1,19,Y02300043
+5130158Y0240,Trave scheletro inferiore batteria ‚Äì sinistra,1,1,Y02300044
+5130258Y0240,Trave scheletro inferiore batteria ‚Äì destra,1,2,Y02300044
+5101790Y0230,Assieme trave inferiore pavimento centrale,1,3,Y02300044
+5301037-Y01,Staffa montaggio parete anteriore lato destro inferiore,1,4,Y02300044
+5101503-Y01,Piastra supporto copertura riparazione posteriore,1,5,Y02300044
+5101803-Y01,Guarnizione pavimento posteriore sinistra,1,6,Y02300044
+5101804-Y01,Guarnizione pavimento posteriore destra,1,7,Y02300044
+5601130-Y01,Pannello interno posteriore,1,8,Y02300044
+5101950Y0230,Guarnizione pavimento centrale sinistra,1,9,Y02300044
+5101960Y0230,Guarnizione pavimento centrale destra,1,10,Y02300044
+5101801-Y01,Piastra sigillante schienale sedile,1,11,Y02300044
+5101751-Y01,Corpo vasca,1,12,Y02300044
+5101753-Y01,Piastra sigillante vasca sinistra,1,13,Y02300044
+5101745Y0230,Piastra sigillante vasca destra,1,14,Y02300044
+5102630-Y01,Assieme trave rinforzo sedile anteriore,1,15,Y02300044
+5102620Y0250,Assieme trave rinforzo sedile posteriore,1,16,Y02300044
+5101331Y0230,Staffa anteriore montaggio cruscotto ausiliario,1,17,Y02300044
+5101341Y0230,Staffa posteriore montaggio cruscotto ausiliario,1,18,Y02300044
+5101759Y0230,Staffa montaggio freno a mano,1,19,Y02300044
+5130100Y0250,Assieme longherone posteriore sinistro,1,1,Y02300045
+5130200Y0250,Assieme longherone posteriore destro,1,2,Y02300045
+5130710Y0240,Assieme trave scheletro pavimento posteriore,1,3,Y02300045
+5130301Y0240,Longherone scheletro pavimento posteriore sinistro,1,4,Y02300045
+5130401Y0240,Longherone scheletro pavimento posteriore destro,1,5,Y02300045
+5130156Y0240,Piastra rinforzo longherone pavimento posteriore sinistro,1,6,Y02300045
+5130256Y0240,Piastra rinforzo longherone pavimento posteriore destro,1,7,Y02300045
+5301120Y0230,Staffa montaggio pedale acceleratore,1,8,Y02300045
+5301400-Y01,Assieme copertura ruota anteriore destra,1,9,Y02300045
+5301300-Y01,Assieme copertura ruota anteriore sinistra,1,10,Y02300045
+5101739Y0230,Base montaggio piantone sterzo,1,11,Y02300045
+5101731-Y01,Corpo pavimento centrale,1,12,Y02300045
+5101480Y0240,Piastra esterna anteriore longherone destro,1,1,Y02300046
+5101490Y0240,Piastra esterna anteriore longherone sinistro,1,2,Y02300046
+5101573-Y01,Piastra interna rinforzo molla sospensione anteriore sinistra,1,3,Y02300046
+5101311-Y01,Piastra superiore supporto molla sospensione anteriore sinistra,1,4,Y02300046
+5101131Y0240,Piastra inferiore supporto molla sospensione anteriore sinistra,1,5,Y02300046
+5101577Y0240,Piastra collegamento copertura ruota anteriore sinistra,1,6,Y02300046
+5101710-Y01,Staffa faro II ‚Äì sinistra,1,7,Y02300046
+5101574-Y01,Piastra interna rinforzo molla sospensione anteriore destra,1,8,Y02300046
+5101141Y0240,Piastra inferiore supporto molla sospensione anteriore destra,1,9,Y02300046
+5101143Y0240,Piastra collegamento copertura ruota anteriore destra,1,10,Y02300046
+5101720-Y01,Staffa faro II ‚Äì destra,1,11,Y02300046
+5101312-Y01,Piastra superiore supporto molla sospensione anteriore destra,1,12,Y02300046
+5101933-Y01,Staffa tubo freno posteriore,2,13,Y02300046
+5101470Y0230,Assieme longherone anteriore sinistro,1,1,Y02300047
+5101390Y0230,Assieme longherone anteriore destro,1,2,Y02300047
+5101820Y0240,Assieme trave inferiore presa di ricarica,1,3,Y02300047
+5101830Y0240,Assieme trave superiore presa di ricarica,1,4,Y02300047
+5101291Y0240,Staffa montaggio protezione anteriore destra,1,5,Y02300047
+5101283Y0240,Staffa montaggio protezione anteriore sinistra,1,6,Y02300047
+5101287Y0240,Piastra collegamento protezione anteriore sinistra,1,7,Y02300047
+5101297Y0240,Piastra collegamento protezione anteriore destra,1,8,Y02300047
+5301110Y0240,Assieme corpo parete anteriore,1,9,Y02300047
+5301151-Y01,Piastra montaggio pompa freno,1,10,Y02300047
+5301165Y0230,Assieme staffa piccola climatizzatore,1,11,Y02300047
+5301153Y0250,Piastra di rinforzo superiore sinistra paratia anteriore assieme,1,12,Y02300047
+5101174-Y01,Piastra di chiusura traversa inferiore pianale centrale,1,1,Y02300048
+5101178Y0240,Piastra di rinforzo longherone centrale sinistro,1,2,Y02300048
+5101278Y0240,Piastra di rinforzo longherone centrale destro,1,3,Y02300048
+5101650Y0240,Assieme longherone inferiore sinistro pianale centrale,2,4,Y02300048
+5103760Y0240,Assieme traversa posteriore pianale centrale,1,5,Y02300048
+5101770Y0240,Assieme traversa inferiore pianale centrale,1,6,Y02300048
+5101910Y0240,Assieme basamento fissaggio braccio oscillante posteriore sinistro,1,7,Y02300048
+5101920Y0240,Assieme basamento fissaggio braccio oscillante posteriore destro,1,8,Y02300048
+5101981Y0240,Assieme giunto traversa sinistro,1,9,Y02300048
+5101991Y0240,Assieme giunto traversa destro,1,10,Y02300048
+5130128Y0240,Staffa tubo flessibile freno posteriore sinistra,2,11,Y02300048
+5104760-Y01,Assieme traversa inferiore pianale centrale,1,12,Y02300048
+5101175Y0230,Staffa fissaggio cavo freno di stazionamento,1,13,Y02300048
+5301190Y0240,Assieme trave di rinforzo paratia anteriore,1,1,Y02300049
+5301103Y0240,Assieme trave inferiore di rinforzo paratia anteriore,1,2,Y02300049
+5301140Y0205,Assieme staffa fissaggio pedale freno,1,3,Y02300049
+5301050Y0250,Assieme staffa fissaggio tergicristallo destro,1,4,Y02300049
+5301510-Y01,Assieme supporto tergicristallo,1,5,Y02300049
+5301530-Y01,Assieme trave superiore parabrezza,1,6,Y02300049
+5301570Y0240,Assieme trave inferiore parabrezza,1,7,Y02300049
+5301039-Y01,Piastra di rinforzo staffa superiore piantone sterzo,1,8,Y02300049
+5301541-Y01,Assieme staffa superiore piantone sterzo,1,9,Y02300049
+5301971Y0230,Assieme staffa fissaggio VCU,1,10,Y02300049
+5101125Y0230,Assieme staffa fissaggio pannello protezione sottoscocca,2,11,Y02300049
+5301710Y0211,Assieme trave corpo plancia strumenti,1,1,Y02300050
+S18608009,Vite flangiata esagonale M8*16*P1.25 Dacromet argento classe 8.8,4,2,Y02300050
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,2,3,Y02300050
+5133990Y0211,Assieme trave posteriore cassa batteria,1,1,Y02300051
+S37110003,Dado rettangolare M10*1.25 Dacromet classe 10,2,2,Y02300051
+S18510003,Vite flangiata esagonale M10*35*P1.25 Dacromet argento classe 10.9,12,3,Y02300051
+5606600Y0230,Vite flangiata a impronta Bobes con nichel nero M6 1.0,6,4,Y02300051
+5133812Y0250,Trave inferiore scheletro batteria,1,5,Y02300051
+5133820Y0280,Assieme trave inferiore scheletro batteria,1,6,Y02300051
+5133992Y0230B,Piastra copertura anteriore cassa batteria di trazione,1,7,Y02300051
+S14604001,Vite esagonale con rondella elastica e piana assieme M4*16*P0.7 classe 8.8,12,8,Y02300051
+5133990Y0211,Assieme trave posteriore cassa batteria,1,1,Y02300052
+S37110003,Dado rettangolare M10*1.25 Dacromet classe 10,2,2,Y02300052
+S18510003,Vite flangiata esagonale M10*35*P1.25 Dacromet argento classe 10.9,12,3,Y02300052
+5606600Y0230,Vite flangiata a impronta Bobes con nichel nero M6 1.0,6,4,Y02300052
+5133812Y0250,Trave inferiore scheletro batteria,1,5,Y02300052
+5133820Y0250,Assieme trave inferiore scheletro batteria,1,6,Y02300052
+5133992Y0230B,Piastra copertura anteriore cassa batteria di trazione,1,7,Y02300052
+S14604001,Vite esagonale con rondella elastica e piana assieme M4*16*P0.7 classe 8.8,12,8,Y02300052
+8200111-Y01,Portapacchi posteriore,1,1,Y02300053
+8200113-Y01,Piastra base cerniera sinistra,1,2,Y02300053
+8200114-Y01,Piastra interna cerniera sinistra,1,3,Y02300053
+8200115-Y01,Piastra base cerniera destra,1,4,Y02300053
+8200116-Y01,Pannello interno cerniera destra,1,5,Y02300053
+8200117-Y01,Blocco di fine corsa portapacchi posteriore,2,6,Y02300053
+S27342004,Vite autofilettante a croce testa semitonda grande ST4.2*9.5 zincata nera,4,7,Y02300053
+5109105-Y01B,Tappetino poggiapiedi,1,8,Y02300053
+B5305040Y0230,Assieme bracciolo,1,9,Y02300053
+5305065Y0230,Tampone in gomma,1,10,Y02300053
+5305064Y0230D,Pannello rivestimento sinistro bracciolo,1,11,Y02300053
+5305066Y0230D,Pannello rivestimento destro bracciolo,1,12,Y02300053
+5306020,Assieme corpo superiore plancia strumenti,1,1,Y02300054
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,9,2,Y02300054
+6102051-Y01,Spugna antipolvere,1,3,Y02300054
+5306134Y0240,Vano portaoggetti plancia strumenti,1,4,Y02300054
+ZH680,Fissatore metallico a V,9,5,Y02300054
+ZH2204-16,Dado a lamella tipo A,3,6,Y02300054
+5306121-Y01,Bocchetta aria sbrinatore sinistra,1,7,Y02300054
+5306123-Y01,Deflettore aria sbrinatore sinistro,1,8,Y02300054
+6102051-Y01,Spugna antipolvere,1,9,Y02300054
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,4,10,Y02300054
+5306122-Y01,Bocchetta aria sbrinatore destra,1,11,Y02300054
+5306124-Y01,Deflettore aria sbrinatore destro,1,12,Y02300054
+5306161-Y01,Cornice pannello comando climatizzatore,1,13,Y02300054
+S27342004,Vite autofilettante a croce testa semitonda grande ST4.2*9.5 zincata nera,5,14,Y02300054
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,3,15,Y02300054
+5306140-Y01,Assieme bocchetta aria destra,1,1,Y02300055
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,6,2,Y02300055
+5306200Y0205D,Assieme bocchetta aria centrale,1,3,Y02300055
+5306151Y0240D,Mascherina quadro strumenti,1,4,Y02300055
+ZH2204-6,Dado a lamella tipo B,2,5,Y02300055
+ZH680,Fissatore metallico a V,7,6,Y02300055
+5306040Y0230,Assieme corpo inferiore plancia strumenti,1,1,Y02300056
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,5,2,Y02300056
+5306208Y0230,Imbottitura frontale quadro strumenti,3,3,Y02300056
+3774011Y0230,Carter superiore piantone sterzo,1,1,Y02300057
+3774013Y0230,Carter inferiore piantone sterzo,1,2,Y02300057
+S27342003,Vite autofilettante a croce testa semitonda grande ST4.2*13 zinco-nichel nero,1,3,Y02300057
+S23006002,Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8,3,4,Y02300057
+5402031-Y01,Pannello superiore protezione interno montante A sinistro,1,1,Y02300058
+5402041-Y01,Pannello superiore protezione interno montante A destro,1,2,Y02300058
+5402131-Y01,Pannello protezione interno cornice finestrino anteriore,1,3,Y02300058
+5402051-Y01,Pannello inferiore protezione interno montante A sinistro,1,4,Y02300058
+5402053-Y01,Coperchio apertura riparazione inferiore montante A sinistro,1,5,Y02300058
+5402061-Y01,Pannello inferiore protezione interno montante A destro,1,6,Y02300058
+5402063-Y01,Coperchio apertura riparazione inferiore montante A destro,1,7,Y02300058
+5402011Y0230,Pannello protezione interno anteriore sinistro,1,8,Y02300058
+5402021Y0230,Pannello protezione interno anteriore destro,1,9,Y02300058
+ZH1210,Sede dado plastica,25,10,Y02300058
+S32006003,Dado flangiato esagonale M6*P1 zinco-nichel nero classe 8,2,11,Y02300058
+S23006002,Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8,2,12,Y02300058
+ZH1255,Fermaglio a D,50,13,Y02300058
+ZH1506,Fissatore plastico a V,2,14,Y02300058
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,26,15,Y02300058
+5402111-Y01,Modanatura interna battitacco sinistro,1,1,Y02300059
+5402121-Y01,Modanatura interna battitacco destro,1,2,Y02300059
+5402071-Y01,Pannello protezione interno posteriore sinistro,1,3,Y02300059
+5402081-Y01,Pannello protezione interno posteriore destro,1,4,Y02300059
+5402141-Y01,Pannello protezione interno battitacco posteriore,1,5,Y02300059
+5402091-Y01,Pannello inferiore protezione interno posteriore sinistro,1,6,Y02300059
+5402101-Y01,Pannello inferiore protezione interno posteriore destro,1,7,Y02300059
+5402128-Y01,Coperchio apertura servizio sinistro,1,8,Y02300059
+5402129-Y01,Coperchio apertura servizio destro,1,9,Y02300059
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,26,10,Y02300059
+ZH1210,Sede dado plastica,25,11,Y02300059
+ZH1255,Fermaglio a D,50,12,Y02300059
+5703011Y0240,Rivestimento interno cielo tetto,1,1,Y02300060
+ZH1610,Fermaglio cielo tetto,13,2,Y02300060
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,6,3,Y02300060
+5703021Y0240,Coperchio apertura servizio cerniera sinistra portellone,1,4,Y02300060
+5703022Y0240,Coperchio apertura servizio cerniera destra portellone,1,5,Y02300060
+ZH1210,Sede dado plastica,6,6,Y02300060
+6102011Y0230,Pannello interno porta sinistra,1,1,Y02300061
+6102032-Y01,Piastra fissaggio cinghia di trazione sinistra,1,2,Y02300061
+S27342003,Vite autofilettante a croce testa semitonda grande ST4.2*13 zinco-nichel nero,2,3,Y02300061
+6102033-Y01,Cinghia in pelle porta,1,4,Y02300061
+ZH1255,Fermaglio a D,11,5,Y02300061
+6102031Y0240D,Pannello rivestimento intermedio sinistro,1,6,Y02300061
+ZH680,Fissatore metallico a V,11,7,Y02300061
+6102072Y0230,Pannello rivestimento interno guida anteriore sinistra,1,8,Y02300061
+6102086-Y01,Copertura cerniera superiore porta sinistra,1,9,Y02300061
+6102087-Y01,Copertura cerniera inferiore porta sinistra,1,10,Y02300061
+ZH850,Fermaglio a C,6,11,Y02300061
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,5,12,Y02300061
+S27348004,Vite autofilettante a croce testa semitonda grande ST4.8*13 zinco-nichel nero,1,13,Y02300061
+S23006002,Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8,1,14,Y02300061
+6102051-Y01,Spugna antipolvere,1,15,Y02300061
+S21406001,Vite a croce testa cilindrica M6*25*P1 zinco nero classe 4.8,1,16,Y02300061
+6102021Y0260,Pannello interno porta destra,1,1,Y02300062
+6102042-Y01,Piastra fissaggio cinghia di trazione destra,1,2,Y02300062
+S27342003,Vite autofilettante a croce testa semitonda grande ST4.2*13 zinco-nichel nero,2,3,Y02300062
+6102033-Y01,Cinghia in pelle porta,1,4,Y02300062
+ZH1255,Fermaglio a D,11,5,Y02300062
+6102041Y0240D,Pannello rivestimento intermedio destro,1,6,Y02300062
+ZH680,Fissatore metallico a V,11,7,Y02300062
+6102082Y0230,Pannello rivestimento interno guida anteriore destra porta,1,8,Y02300062
+6102089-Y01,Copertura cerniera superiore porta destra,1,9,Y02300062
+6102088-Y01,Copertura cerniera inferiore porta destra,1,10,Y02300062
+ZH850,Fermaglio a C,6,11,Y02300062
+S27348002,Viti autofilettanti a croce testa semitonda grande ST4.8*16 zincate nere,5,12,Y02300062
+S27348004,Vite autofilettante a croce testa semitonda larga ST4.8*13 zincatura nero?nichel,1,13,Y02300062
+S23006002,Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8,1,14,Y02300062
+6102051-Y01,Spugna antipolvere,1,15,Y02300062
+S21406001,Vite a croce testa cilindrica M6*25*P1 zincatura nera classe 4.8,1,16,Y02300062
+6102050Y0260,Gancio nascosto,1,17,Y02300062
+6302011Y0250,Portellone,1,1,Y02300063
+6302016Y0240,Copertura servizio,1,2,Y02300063
+5109101Y0230,Corpo tappeto,1,1,Y02300064
+5109150Y0230,Pannello di ispezione,1,2,Y02300064
+Z058,Fermaglio a perno,1,3,Y02300064
+ZH830,Fermaglio a scatto (testa piccola),2,4,Y02300064
+5109103Y0230,Piastra copertura bagagliaio,1,5,Y02300064
+5606600Y0230,Vite flangiata recess Bobes M6 1.0 nichel nero,4,6,Y02300064
+5305010Y0230,Assieme corpo cruscotto ausiliario,1,1,Y02300065
+5305016Y0230,Assieme rivestimento inferiore cruscotto ausiliario,1,2,Y02300065
+S27342003,Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero,2,3,Y02300065
+5305012-Y01,Cappuccio vite,2,4,Y02300065
+5305013Y0230,Tappetino portabicchiere,1,5,Y02300065
+5305014Y0230,Tappetino vano portaoggetti centrale,1,6,Y02300065
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,7,7,Y02300065
+5305017Y0230D,Pannello verniciato cruscotto ausiliario,1,8,Y02300065
+3102111Y0240,Parafango anteriore sinistro,1,1,Y02300066
+3102112Y0240,Parafango anteriore destro,1,2,Y02300066
+3102113Y0240,Parafango posteriore sinistro,1,3,Y02300066
+3102117Y0240,Pannello laterale posteriore sinistro,1,4,Y02300066
+3102114Y0240,Parafango posteriore destro,1,5,Y02300066
+3102118Y0240,Pannello laterale posteriore destro,1,6,Y02300066
+Z058,Fermaglio a perno,16,7,Y02300066
+ZH830,Fermaglio a scatto (testa piccola),6,8,Y02300066
+ZH890,Fermaglio a scatto (testa grande),18,9,Y02300066
+S22148002,Vite autofilettante testa esagonale con rondella larga ST5*20 zincatura nero?nichel,18,10,Y02300066
+5603100Y0250,Assieme vetro lunotto posteriore,1,1,Y02300067
+5206010Y0240,Vetro parabrezza anteriore,1,1,Y02300068
+5206011Y0230,Guarnizione parabrezza anteriore,1,2,Y02300068
+5107103Y0230,Protezione inferiore,1,1,Y02300069
+Z058,Fermaglio a perno,16,2,Y02300069
+3100104-Y01,Copricerchio,4,3,Y02300069
+3100120Y0230,Assieme copricerchio ruota acciaio,4,4,Y02300069
+2804901Y0230,Blocco guida commutazione,2,5,Y02300069
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,4,6,Y02300069
+5400100Y0240D,Assieme pannello rifinitura superiore sinistra,1,1,Y02300070
+5400300Y0240D,Assieme pannello rifinitura superiore posteriore sinistra,1,2,Y02300070
+5400500Y0260D,Assieme rifinitura piccola lato sinistro,1,3,Y02300070
+5400777-Y01,Fermaglio,4,4,Y02300070
+ZH680,Fissatore metallico a V,3,5,Y02300070
+5400101-Y01D,Piastra ruota posteriore sinistra,1,6,Y02300070
+Q221B4213F71,Vite testa cilindrica + rondella piana,4,7,Y02300070
+5400773-Y01D,Soglia inferiore sinistra,1,8,Y02300070
+ZH1210,Sede dado plastica,12,9,Y02300070
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,12,10,Y02300070
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,4,11,Y02300070
+ZH1255,Fermaglio a D,16,12,Y02300070
+5400315Y0230,Fermaglio a D lungo,2,13,Y02300070
+6102051-Y01,Spugna antipolvere,1,14,Y02300070
+5400324Y0230,Tappetino spugna impermeabile,1,15,Y02300070
+S22148002,Vite testa cilindrica + rondella piana ST4.8*16 zincatura nero?nichel,1,16,Y02300070
+ZH830,Fermaglio a scatto (testa piccola),2,17,Y02300070
+ZH2204-16,Dado a lamella tipo A,1,18,Y02300070
+S99006161,Vite testa cilindrica interna + rondella plastica M6*16*P1 zincatura nero?nichel,4,19,Y02300070
+5400783-Y01D,Soglia inferiore destra,1,1,Y02300071
+S22148002,Vite testa cilindrica + rondella piana ST4.8*16 zincatura nero?nichel,1,2,Y02300071
+5400200Y0240D,Assieme pannello rifinitura superiore anteriore destro,1,3,Y02300071
+5400400Y0240D,Assieme pannello rifinitura superiore posteriore destro,1,4,Y02300071
+5400600Y0260D,Assieme rifinitura piccola lato destro,1,5,Y02300071
+Q221B4213F71,Vite testa cilindrica + rondella piana,4,6,Y02300071
+ZH680,Fissatore metallico a V,3,7,Y02300071
+5400201-Y01D,Piastra ruota posteriore destra,1,8,Y02300071
+ZH1255,Fermaglio a D,17,9,Y02300071
+ZH1210,Sede dado plastica,12,10,Y02300071
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,12,11,Y02300071
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,4,12,Y02300071
+6102051-Y01,Spugna antipolvere,1,13,Y02300071
+5400315Y0230,Fermaglio a D lungo,2,14,Y02300071
+5400324Y0230,Tappetino spugna impermeabile,1,15,Y02300071
+5400777-Y01,Fermaglio,4,16,Y02300071
+S99006161,Vite testa cilindrica interna + rondella plastica M6*16*P1 zincatura nero?nichel,4,17,Y02300071
+ZH830,Fermaglio a scatto (testa piccola),2,18,Y02300071
+ZH2204-16,Dado a lamella tipo A,1,19,Y02300071
+5702110Y0240D,Assieme copertura tetto,1,1,Y02300072
+5702301Y0240,Bullone F copertura tetto,6,2,Y02300072
+ZH1255,Fermaglio a D,2,3,Y02300072
+5702018Y0240,Guarnizione impermeabile copertura tetto,10,4,Y02300072
+S32006003,Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8,10,5,Y02300072
+6102071Y0230,Pannello rifinitura finestrino anteriore porta sinistra,1,1,Y02300073
+6102077-Y01D,Pannello inferiore porta sinistra,1,2,Y02300073
+6102500Y0240D,Pannello esterno porta sinistra,1,3,Y02300073
+ZH1255,Fermaglio a D,7,4,Y02300073
+6102073Y0240D,Pannello superiore porta sinistra,1,5,Y02300073
+6102057Y0260,Fissatore metallico a V,13,6,Y02300073
+6102079Y0240,Piastra montaggio interruttore PE,1,7,Y02300073
+ZH2204-16,Dado a lamella tipo A,6,8,Y02300073
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,14,9,Y02300073
+S27342004,Vite autofilettante testa semitonda larga ST4.2*9.5 zincata nera,6,10,Y02300073
+S32006003,Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8,6,11,Y02300073
+S27342003,Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero,8,12,Y02300073
+5306148Y0230,Nastro biadesivo (larghezza 10mm spessore 0.8mm), ,13,Y02300073
+6102052Y0240,Bullone montaggio pannello esterno porta,3,14,Y02300073
+6102507Y0240,Spugna antipolvere,1,15,Y02300073
+6102055Y0240,Dado a lamella tipo A - ST4.2,1,16,Y02300073
+6102509Y0240,Feltro 100√ó20√ó0.7,1,17,Y02300073
+6102081Y0230,Pannello rifinitura finestrino anteriore porta destra,1,1,Y02300074
+6102600Y0240D,Pannello esterno porta destra,1,2,Y02300074
+ZH1255,Fermaglio a D,7,3,Y02300074
+ZH2204-16,Dado a lamella tipo A,6,4,Y02300074
+6102078-Y01D,Pannello inferiore porta destra,1,5,Y02300074
+6102074Y0240D,Pannello superiore porta destra,1,6,Y02300074
+6102057Y0260,Fissatore metallico a V,13,7,Y02300074
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,14,8,Y02300074
+S27342004,Vite autofilettante testa semitonda larga ST4.2*9.5 zincata nera,6,9,Y02300074
+S32006003,Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8,6,10,Y02300074
+S27342003,Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero,8,11,Y02300074
+5306148Y0230,Nastro biadesivo (larghezza 10mm spessore 0.8mm), ,12,Y02300074
+6102052Y0240,Bullone montaggio pannello esterno porta,3,13,Y02300074
+6102507Y0240,Spugna antipolvere,1,14,Y02300074
+6102055Y0240,Dado a lamella tipo A - ST4.2,1,15,Y02300074
+6102509Y0240,Feltro 100√ó20√ó0.7,1,16,Y02300074
+5306158Y0230,Logo PRO,1,1,Y02300075
+5306156-Y01,Logo X,1,2,Y02300075
+5306157-Y01,Logo YOYO,1,3,Y02300075
+5306010Y0220,Logo XEV,1,4,Y02300075
+5302100Y0240,Assieme copertura tergicristallo anteriore,1,1,Y02300076
+5302102Y0240,Copertura bocchettone liquido lavavetri (I),1,2,Y02300076
+5302200Y0240,Assieme vasca flusso anteriore,1,3,Y02300076
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,6,4,Y02300076
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,8,5,Y02300076
+5302700Y0230D,Pannello rifinitura superiore faro sinistro,1,6,Y02300076
+5302800Y0230D,Pannello rifinitura superiore faro destro,1,7,Y02300076
+ZH830,Fermaglio a scatto (testa piccola),2,8,Y02300076
+8200105Y0230,Tubo troppo pieno anteriore,1,9,Y02300076
+S67325001,Fascetta a vite tipo C √ò16‚Äì25,1,10,Y02300076
+8200151Y0230,Pedana di benvenuto sinistra,1,1,Y02300077
+8200152Y0230,Pedana di benvenuto destra,1,2,Y02300077
+5704100Y0240,Assieme vetro tetto sinistro,1,1,Y02300078
+5701211Y0230,Guarnizione vetro tetto sinistra,1,2,Y02300078
+5704200Y0240,Assieme vetro tetto destro,1,3,Y02300078
+5701212Y0230,Guarnizione vetro tetto destra,1,4,Y02300078
+8402110Y0240D,Assieme cofano anteriore saldato,1,1,Y02300079
+8402505Y0230,Manopola cofano anteriore sinistra,1,2,Y02300079
+8402506Y0230,Manopola cofano anteriore destra,1,3,Y02300079
+8402507Y0230,Base clip metallica cofano anteriore,2,4,Y02300079
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,2,5,Y02300079
+S27348004,Vite autofilettante testa semitonda larga ST4.8*13 zinco?nichel nero,2,6,Y02300079
+8403101Y0240D,Parafango sinistro,1,1,Y02300080
+8403107Y0240,Sede dado plastica,10,2,Y02300080
+ZH2204-16,Dado a lamella tipo A,8,3,Y02300080
+8403105Y0240,Staffa parafango sinistro,1,4,Y02300080
+8403102-Y01,Pannello inferiore finestrino triangolare sinistro,1,5,Y02300080
+8403201Y0240D,Parafango destro,1,6,Y02300080
+8403205Y0240,Staffa parafango destro,1,7,Y02300080
+8403202-Y01,Pannello inferiore finestrino triangolare destro,1,8,Y02300080
+5306148Y0230,Nastro biadesivo (larghezza 10mm spessore 0.8mm), ,9,Y02300080
+S22148002,Vite testa cilindrica + rondella piana ST4.8*16 zinco?nichel nero,20,10,Y02300080
+ZH1255,Fermaglio a D,2,11,Y02300080
+8403109Y0240,Fermaglio a fungo (L25 W20 T5.5),6,12,Y02300080
+2803013Y0240,Staffa montaggio paraurti anteriore sinistra,1,1,Y02300081
+2803014Y0240,Staffa montaggio paraurti anteriore destra,1,2,Y02300081
+2803002Y0230D-KIT,Kit servizio paraurti anteriore,1,3,Y02300081
+2803009-Y01D,Pannello inferiore rifinitura paraurti anteriore,1,4,Y02300081
+2803007-Y01D,Pannello superiore rifinitura paraurti anteriore,1,5,Y02300081
+2803003-Y01D,Pannello centrale rifinitura paraurti anteriore,1,6,Y02300081
+2803005-Y01D,Modanatura paraurti anteriore,1,7,Y02300081
+2803011-Y01D,Pannello inferiore rifinitura faro anteriore sinistro,1,8,Y02300081
+2803012-Y01D,Pannello inferiore rifinitura faro anteriore destro,1,9,Y02300081
+5302031Y0230,Base presa di ricarica anteriore,1,10,Y02300081
+5302032Y0230,Pannello interno copertura presa di ricarica anteriore,1,11,Y02300081
+5302033Y0230,Perni copertura presa di ricarica anteriore,1,12,Y02300081
+5302034Y0230,Molla copertura presa di ricarica anteriore,1,13,Y02300081
+Z056,Tampone,3,14,Y02300081
+5302011Y0230D,Copertura presa di ricarica anteriore,1,15,Y02300081
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,2,16,Y02300081
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,11,17,Y02300081
+ZH2204-16,Dado a lamella tipo A,6,18,Y02300081
+2804100Y0250D,Assieme corpo paraurti posteriore,1,1,Y02300082
+S22148002,Vite flangiata recess Bobes M6 1.0 nichel nero,2,2,Y02300082
+ZH1210,Sede dado plastica,4,3,Y02300082
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,6,4,Y02300082
+2804521Y0230D,Assieme saldatura porta scorrevole paraurti posteriore,1,5,Y02300082
+2804530Y0230,Pannello interno porta scorrevole,1,6,Y02300082
+2804201Y0240,Staffa montaggio paraurti posteriore sinistra,1,7,Y02300082
+ZH2204-16,Dado a lamella tipo A,6,8,Y02300082
+2804301Y0240,Staffa montaggio paraurti posteriore destra,1,9,Y02300082
+S27342003,Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero,4,10,Y02300082
+2804101Y0250D,Corpo paraurti posteriore,1,11,Y02300082
+5107003-Y01,Tampone battuta porta laterale,4,12,Y02300082
+2804102Y0250D,Piastra inferiore rifinitura paraurti posteriore,1,13,Y02300082
+ZH2204-6,Dado a lamella tipo B,4,14,Y02300082
+ZH830,Fermaglio a scatto (testa piccola),2,15,Y02300082
+4133041Y0240,Catadiottro posteriore sinistro,1,16,Y02300082
+4133042Y0240,Catadiottro posteriore destro,1,17,Y02300082
+S18608201,Vite flangiata esagonale con guida M8*20*P1.25 Dacromet argento classe 8.8,4,1,Y02300083
+2804201Y0230,Cerniera paraurti posteriore sinistra,1,2,Y02300083
+2804202Y0230,Cerniera paraurti posteriore destra,1,3,Y02300083
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,10,4,Y02300083
+6302010Y0240D,Pannello superiore spoiler cofano,1,1,Y02300084
+6302018-Y01D,Pannello inferiore spoiler cofano,1,2,Y02300084
+5306148Y0230,Nastro biadesivo (larghezza 10mm spessore 0.8mm), ,3,Y02300084
+ZH680,Fissatore metallico a V,4,4,Y02300084
+4123010Y0205,Luce tetto,1,1,Y02300085
+4123020Y0205,Schermo luce tetto,1,2,Y02300085
+S21405002,Vite a croce testa cilindrica M5*16*P0.8 zincatura colorata classe 4.8,2,3,Y02300085
+5810010-Y01,Cintura di sicurezza sinistra,1,1,Y02300086
+5810020-Y01,Cintura di sicurezza destra,1,2,Y02300086
+5810011-Y01,Attacco cintura sinistra,1,3,Y02300086
+5810021-Y01,Attacco cintura destra,1,4,Y02300086
+6101710Y0230,Assieme guida anteriore porta sinistra,1,1,Y02300087
+6101720Y0230,Assieme guida anteriore porta destra,1,2,Y02300087
+6101750Y0230,Assieme rivestimento gomma guida posteriore porta sinistra,1,3,Y02300087
+6107127Y0230,Canale fango posteriore porta sinistra,1,4,Y02300087
+6101733Y0230,Blocco montaggio finestrino triangolare posteriore sinistro,1,5,Y02300087
+6101760Y0230,Assieme rivestimento gomma guida posteriore porta destra,1,6,Y02300087
+6107128Y0230,Canale fango posteriore porta destra,1,7,Y02300087
+6101734Y0230,Blocco montaggio finestrino triangolare posteriore destro,1,8,Y02300087
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,4,9,Y02300087
+S99006201,Vite testa esagonale con rondella elastica e rondella larga M6*20*P1 Dacromet nero classe 8.8,8,10,Y02300087
+6101901Y0205,Assieme membrana impermeabile superiore porta sinistra,1,1,Y02300088
+6101902Y0205,Assieme membrana impermeabile superiore porta destra,1,2,Y02300088
+6101903Y0205,Membrana impermeabile inferiore porte sinistra e destra,2,3,Y02300088
+6103200Y0240,Vetro porta destra,1,1,Y02300089
+6104120Y0230,Assieme alzacristallo elettrico porta destra,1,2,Y02300089
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,8,3,Y02300089
+6103100Y0240,Vetro porta sinistra,1,4,Y02300089
+5203010-Y01,Vetro finestrino triangolare anteriore sinistro,1,5,Y02300089
+6104110Y0230,Assieme alzacristallo elettrico porta sinistra,1,6,Y02300089
+5203020-Y01,Vetro finestrino triangolare anteriore destro,1,7,Y02300089
+5606410Y0230,Assieme serratura cassa batteria,2,1,Y02300090
+S18606002,Vite flangiata esagonale M6*20 Dacromet nero,4,2,Y02300090
+5606420Y0230,Assieme gancio serraggio cassa batteria,2,3,Y02300090
+S32008002,Dado flangiato esagonale M8 Dacromet argento,4,4,Y02300090
+5107014-Y01,Tappo copertura √ò40,2,5,Y02300090
+6105330Y0205,Assieme maniglia interna sinistra,1,1,Y02300091
+6105340Y0205,Assieme maniglia interna destra,1,2,Y02300091
+S27342003,Vite autofilettante testa semitonda larga ST4.2*13 zinco?nichel nero,8,3,Y02300091
+6105510Y0205D,Assieme maniglia esterna porta sinistra,1,1,Y02300092
+6105520Y0205D,Assieme maniglia esterna porta destra,1,2,Y02300092
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,6,3,Y02300092
+6107116Y0230,Angolo giunto canale fango anteriore porta destra,1,1,Y02300093
+6107115Y0230,Angolo giunto canale fango anteriore porta sinistra,1,2,Y02300093
+6107132Y0230,Guarnizione finestrino triangolare anteriore destro,1,3,Y02300093
+6107131Y0230,Guarnizione finestrino triangolare anteriore sinistro,1,4,Y02300093
+6107118Y0230,Guarnizione esterna vetro porta destra,1,5,Y02300093
+6107117Y0230,Guarnizione esterna vetro porta sinistra,1,6,Y02300093
+6107112Y0230,Guarnizione apertura porta anteriore destra,1,7,Y02300093
+6107111Y0230,Guarnizione apertura porta anteriore sinistra,1,8,Y02300093
+6107122Y0230,Guarnizione interna vetro porta destra,1,9,Y02300093
+6107121Y0230,Guarnizione interna vetro porta sinistra,1,10,Y02300093
+6307111Y0230,Guarnizione portellone,1,1,Y02300094
+6107113Y0230,Guarnizione superiore apertura porta anteriore sinistra,1,2,Y02300094
+6107114Y0230,Guarnizione superiore apertura porta anteriore destra,1,3,Y02300094
+6107135Y0230,Guarnizione cassa batteria,1,4,Y02300094
+6107137Y0230,Rondella guarnizione tetto,1,5,Y02300094
+6309110Y0240,Molla a gas,2,1,Y02300095
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,4,2,Y02300095
+6309200Y0240,Cerniera portellone,2,3,Y02300095
+6309103Y0240,Perno sferico molla a gas,2,4,Y02300095
+S99008001,Dado flangiato esagonale M8 Dacromet argento,4,5,Y02300095
+S18408002,Vite flangiata testa esagonale M8*20*P1.25 Dacromet nero classe 8.8,4,6,Y02300095
+6309300Y0240,Tampone battuta portellone,2,7,Y02300095
+6309101Y0240,Staffa montaggio barra pneumatica portellone sinistra,1,8,Y02300095
+6309102Y0240,Staffa montaggio barra pneumatica portellone destra,1,9,Y02300095
+Z6900100Y0230,Sedile anteriore sinistro assieme,1,1,Y02300096
+Z6900200Y0230,Sedile anteriore destro assieme,1,2,Y02300096
+6900300Y0230,Copertura staffa sedile sinistra,2,3,Y02300096
+6900400Y0230,Copertura staffa sedile destra,2,4,Y02300096
+S18510002,Vite flangiata esagonale M10*25*P1.25 Dacromet nero classe 10.9 con adesivo,8,5,Y02300096
+8200101-Y01,Tampone gomma sollevatore,4,1,Y02300097
+S18408004,Vite flangiata testa esagonale M8*30*P1.25 Dacromet argento classe 8.8,4,2,Y02300097
+S40210002,Rondella grande √ò10 Dacromet nero,4,3,Y02300097
+8201010Y0205,Specchietto retrovisore interno,1,1,Y02300098
+8204010Y0230,Assieme aletta parasole,2,1,Y02300099
+8204020Y0205,Copertura base aletta parasole,2,2,Y02300099
+S21406001,Vite a croce testa cilindrica M6*25*P1 zincatura nera classe 4.8,4,3,Y02300099
+8202010Y0230D,Assieme specchietto retrovisore esterno sinistro,1,1,Y02300100
+8202020Y0230D,Assieme specchietto retrovisore esterno destro,1,2,Y02300100
+S18606003,Viti flangiate esagonali M6*16*P1 Dacromet nero classe 8.8,6,3,Y02300100
+8202011Y0230D,Assieme specchietto retrovisore esterno sinistro (completo),1,4,Y02300100
+8202012Y0230,Lente specchietto retrovisore esterno sinistro,1,5,Y02300100
+8202021Y0230D,Assieme specchietto retrovisore esterno destro (completo),1,6,Y02300100
+8202022Y0230,Lente specchietto retrovisore esterno destro,1,7,Y02300100
+5606032Y0230,Maniglia serratura copertura presa di ricarica,1,1,Y02300101
+5606033Y0230,Cavo serratura copertura presa di ricarica,1,2,Y02300101
+S23006002,Vite a croce testa cilindrica con rondella piana assieme M6*16*P1 Dacromet nero classe 8.8,2,3,Y02300101
+4108010Y0205,Assieme luce targa,2,1,Y02300102
+8208030-Y01,Catadiottro laterale,2,1,Y02300103
+4133010Y0250,Assieme fanale posteriore sinistro,1,1,Y02300104
+4133020Y0250,Assieme fanale posteriore destro,1,2,Y02300104
+BNJ-0270,Fermaglio fanale posteriore,4,3,Y02300104
+ZH1210,Sede dado plastica,6,4,Y02300104
+S32006003,Dado flangiato esagonale M6*P1 zinco?nichel nero classe 8,2,5,Y02300104
+S27348003,Viti autofilettanti testa semitonda larga ST4.8*16 zinco?nichel nero,6,6,Y02300104
+6105101Y0205,Corpo serratura elettronica porta sinistra,1,1,Y02300105
+6105103Y0205,Asta comando serratura elettronica porta sinistra,1,2,Y02300105
+6105105Y0205,Asta comando cilindro serratura elettronica porta sinistra,1,3,Y02300105
+6105107Y0205,Gancio serratura elettronica porta,2,4,Y02300105
+6105111Y0205,Cavo serratura elettronica porta sinistra,2,5,Y02300105
+6105102Y0205,Corpo serratura elettronica porta destra,1,6,Y02300105
+6105104Y0205,Asta comando serratura elettronica porta destra,1,7,Y02300105
+S25808001,Vite testa svasata ‚Äúfiore‚Äù M8*20*P1.25 zincatura nera classe 8.8 con adesivo,4,8,Y02300105
+S99006121,Vite testa svasata M6*12*P1 Dacromet argento classe 8.8 con gommino,6,9,Y02300105
+6105207Y0260,Rifinitura chiusura porta,2,10,Y02300105
+5606011Y0205,Corpo serratura elettrica portellone,1,1,Y02300106
+6105107Y0205,Gancio serratura elettronica porta,1,2,Y02300106
+5606600Y0230,Vite flangiata recess Bobes M6 1.0 nichel nero,3,3,Y02300106
+S25808001,Vite testa svasata ‚Äúfiore‚Äù M8*20*P1.25 zincatura nera classe 8.8 con adesivo,2,4,Y02300106
+4121010Y0230,Assieme faro anteriore sinistro (parte spessa DRL),1,1,Y02300107
+4121901Y0230,Lampadina H7,2,2,Y02300107
+4121903Y0230,Coperchio posteriore faro anteriore sinistro,2,3,Y02300107
+4121020Y0230,Assieme faro anteriore destro (parte spessa DRL),1,4,Y02300107
+S99006201,Vite testa esagonale con rondella elastica e rondella larga M6*20*P1 Dacromet nero classe 8.8,8,5,Y02300107
+5107011-Y01,Tappo √ò10,6,1,Y02300108
+5107013-Y01,Tappo √ò20,20,2,Y02300108
+5111020Y0280,Tappo foro √ò20 a caldo,4,3,Y02300108
+5111040Y0280,Tappo foro √ò40 a caldo,4,4,Y02300108
+5107015-Y01,Tappo √ò30,6,5,Y02300108
+5107016-Y01,Tappo √ò15,12,6,Y02300108
+5107018Y0230,Etichetta foro √ò25,18,7,Y02300108
+5107101Y0240,Tappo speciale √ò25 per fori scorrimento e ribaltamento,2,8,Y02300108
+3926010-Y01,Triangolo di emergenza,1,1,Y02300109
+3926020-Y01,Gilet riflettente,1,2,Y02300109
+5302105Y0230,Attrezzo tappo riempimento,1,3,Y02300109

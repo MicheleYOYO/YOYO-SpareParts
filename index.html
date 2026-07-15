@@ -267,6 +267,10 @@ table td {
 <body>
 
 <h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
+    
+<div id="langSwitcher" style="position:absolute; top:20px; right:20px; cursor:pointer;">
+    <img id="langIcon" src="img/flag_en.png" width="32" title="Change language">
+</div>
 
 <h2>Identificazione modello tramite VIN</h2>
 <p>Inserisci le ultime 6 cifre del VIN:</p>
@@ -303,6 +307,30 @@ table td {
 /* ---------------- LISTA RICAMBI ---------------- */
     let lingua = "EN";   // lingua di default: EN (italiano)
 // in futuro potrai mettere "EN", "FR", "DE", ecc.
+function toggleLingua() {
+    // Cambia lingua
+    lingua = (lingua === "EN") ? "IT" : "EN";
+
+    // Cambia icona
+    const icon = document.getElementById("langIcon");
+    if (lingua === "EN") {
+        icon.src = "img/flag_en.png";
+    } else {
+        icon.src = "img/flag_it.png";
+    }
+document.getElementById("langSwitcher").addEventListener("click", toggleLingua);
+
+    // Ricarica i file nomeSinottici
+    caricaNomeSinotticiMY22();
+    caricaNomeSinotticiMY2205();
+    caricaNomeSinotticiMY23();
+    caricaNomeSinotticiMY24();
+
+    // Aggiorna la pagina
+    mostraRicambi();
+}
+
+    
 let listaRicambi = [];
 let nomeLista = localStorage.getItem("nomeLista") || "";
 /* Salva lista + nome lista */

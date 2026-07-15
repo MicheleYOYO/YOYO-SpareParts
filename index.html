@@ -267,10 +267,6 @@ table td {
 <body>
 
 <h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
-    
-<div id="langSwitcher" style="position:absolute; top:20px; right:20px; cursor:pointer;">
-    <img id="langIcon" src="img/flag_it.png" width="32" title="Cambia lingua">
-</div>
 
 <h2>Identificazione modello tramite VIN</h2>
 <p>Inserisci le ultime 6 cifre del VIN:</p>
@@ -304,56 +300,6 @@ table td {
 </div>
 
 <script>
-    let lingua = "IT"; // lingua predefinita
-function toggleLingua() {
-    // Cambia lingua
-    lingua = (lingua === "IT") ? "EN" : "IT";
-
-    // Cambia icona
-    const icon = document.getElementById("langIcon");
-    if (lingua === "IT") {
-        icon.src = "img/flag_it.png";
-    } else {
-        icon.src = "img/flag_en.png";
-    }
-
-    // 🔥 Ricarica tutte le tabelle ricambi nella nuova lingua
-    ricaricaTabelleLingua();
-
-    // 🔥 Ricarica anche i sinottici (fondamentale!)
-    ricaricaSinotticiLingua();
-
-    // Aggiorna la vista
-    mostraRicambi();
-}
-
-
-function ricaricaTabelleLingua() {
-    partsTableMY22 = [];
-    partsTableMY2205 = [];
-    partsTableMY23 = [];
-    partsTableMY24 = [];
-
-    caricaPartsMY22();
-    caricaPartsMY2205();
-    caricaPartsMY23();
-    caricaPartsMY24();
-}
-function ricaricaSinotticiLingua() {
-    nomeSinotticiMY22 = {};
-    nomeSinotticiMY2205 = {};
-    nomeSinotticiMY23 = {};
-    nomeSinotticiMY24 = {};
-
-    caricaNomeSinotticiMY22();
-    caricaNomeSinotticiMY2205();
-    caricaNomeSinotticiMY23();
-    caricaNomeSinotticiMY24();
-}
-
-document.getElementById("langSwitcher").addEventListener("click", toggleLingua);
-
-
 /* ---------------- LISTA RICAMBI ---------------- */
 let listaRicambi = [];
 let nomeLista = localStorage.getItem("nomeLista") || "";
@@ -585,7 +531,7 @@ caricaParts();
 
 /* ---------------- PARTS MY22 ---------------- */
 let partsTableMY22=[];
-const PARTS_MY22_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/PartsMY22_${lingua}.csv`;
+const PARTS_MY22_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22.csv";
 
 async function caricaPartsMY22(){
     const r=await fetch(PARTS_MY22_URL);
@@ -608,7 +554,7 @@ caricaPartsMY22();
 
 /* ---------------- PARTS MY2205 ---------------- */
 let partsTableMY2205=[];
-const PARTS_MY2205_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/PartiMY2205_${lingua}.csv`;
+const PARTS_MY2205_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205.csv";
 
 async function caricaPartsMY2205(){
     try{
@@ -634,8 +580,7 @@ caricaPartsMY2205();
 
 /* ---------------- PARTS MY23 ---------------- */
 let partsTableMY23=[];
-const PARTS_MY23_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/PartiMY23_${lingua}.csv`;
-
+const PARTS_MY23_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv";
 
 async function caricaPartsMY23(){
     const r=await fetch(PARTS_MY23_URL);
@@ -658,7 +603,7 @@ caricaPartsMY23();
 
 /* ---------------- PARTS MY24 ---------------- */
 let partsTableMY24=[];
-const PARTS_MY24_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/PartiMY24_${lingua}.csv`;
+const PARTS_MY24_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24.csv";
 
 async function caricaPartsMY24(){
     const r=await fetch(PARTS_MY24_URL);
@@ -680,7 +625,7 @@ async function caricaPartsMY24(){
 caricaPartsMY24();
 /* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
-const NOMESINOTTICI_MY24_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24_${lingua}.csv`;
+const NOMESINOTTICI_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24.csv";
 
 async function caricaNomeSinotticiMY24(){
     const r = await fetch(NOMESINOTTICI_MY24_URL);
@@ -698,7 +643,7 @@ caricaNomeSinotticiMY24();
     
 /* ---------------- NOME SINOTTICI MY23 ---------------- */
 let nomeSinotticiMY23 = {};
-const NOMESINOTTICI_MY23_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY23_${lingua}.csv`;
+const NOMESINOTTICI_MY23_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY23.csv";
 
 async function caricaNomeSinotticiMY23(){
     const r = await fetch(NOMESINOTTICI_MY23_URL);
@@ -716,7 +661,7 @@ caricaNomeSinotticiMY23();
     
     /* ---------------- NOME SINOTTICI MY22 ---------------- */
 let nomeSinotticiMY22 = {};
-const NOMESINOTTICI_MY22_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY22_${lingua}.csv`;
+const NOMESINOTTICI_MY22_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY22.csv";
 
 async function caricaNomeSinotticiMY22(){
     const r = await fetch(NOMESINOTTICI_MY22_URL);
@@ -734,7 +679,7 @@ caricaNomeSinotticiMY22();
     
 /* ---------------- NOME SINOTTICI MY2205 ---------------- */
 let nomeSinotticiMY2205 = {};
-const NOMESINOTTICI_MY2205_URL = `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY2205_${lingua}.csv`;
+const NOMESINOTTICI_MY2205_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY2205.csv";
 
 async function caricaNomeSinotticiMY2205(){
     const r = await fetch(NOMESINOTTICI_MY2205_URL);

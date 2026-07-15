@@ -1,110 +1,110 @@
-id;NOME
-Y02300001;Sistema di controllo dellíaccelerazione
-Y02300002;Sistema frenante 1
-Y02300003;Sistema frenante 2
-Y02300004;Sistema frenante 3
-Y02300005;Sistema frenante 4
-Y02300006;Sistema frenante 5
-Y02300007;Sistema sospensione posteriore
-Y02300008;Sistema ruote
-Y02300009;Sistema ruote ñ Configurazione opzionale
-Y02300010;Sistema sterzo 1
-Y02300011;Sistema sterzo 2
-Y02300012;Sistema sterzo 3
-Y02300013;Sistema sospensione anteriore 1
-Y02300014;Sistema sospensione anteriore 2
-Y02300015;Sistema sospensione anteriore 3
-Y02300016;Sistema asse motrice posteriore 1
-Y02300017;Sistema asse motrice posteriore 2
-Y02300018;Sistema batteria di trazione
-Y02300019;Sistema motore di trazione
-Y02300020;Unit‡ di controllo veicolo
-Y02300021;Assieme unit‡ di controllo motore
-Y02300022;Sistema cablaggio alta tensione
-Y02300023;Sistema di ricarica
-Y02300024;Unit‡ elettrica box batteria di trazione 1
-Y02300025;Unit‡ elettrica box batteria di trazione 2
-Y02300026;Unit‡ elettrica box batteria di trazione 3
-Y02300027;Unit‡ box alta tensione 1
-Y02300028;Unit‡ box alta tensione 2
-Y02300029;Sistema controllo carrozzeria
-Y02300030;Unit‡ elettriche veicolo
-Y02300031;Sistema chiave
-Y02300032;Sistema cablaggio bassa tensione
-Y02300033;Sistema tergi e lavavetri
-Y02300034;Sistema schermo centrale
-Y02300035;Sistema climatizzazione 1
-Y02300036;Sistema climatizzazione 2
-Y02300037;Dispositivo comunicazione e informazione
-Y02300038;Dispositivo batteria 12V
-Y02300039;Sistema scocca grezza 1
-Y02300040;Sistema scocca grezza 2
-Y02300041;Sistema scocca grezza 3
-Y02300042;Sistema scocca grezza 4
-Y02300043;Sistema scocca grezza 5
-Y02300044;Sistema scocca grezza 6
-Y02300045;Sistema scocca grezza 7
-Y02300046;Sistema scocca grezza 8
-Y02300047;Sistema scocca grezza 9
-Y02300048;Sistema scocca grezza 10
-Y02300049;Sistema scocca grezza 11
-Y02300050;Sistema traversa quadro strumenti
-Y02300051;Dispositivo box batteria di trazione 1
-Y02300052;Dispositivo box batteria di trazione 2
-Y02300053;Sistema interni premium
-Y02300054;Sistema quadro strumenti 1
-Y02300055;Sistema quadro strumenti 2
-Y02300056;Sistema quadro strumenti 3
-Y02300057;Sistema copertura devioluci
-Y02300058;Sistema pannello protezione colonna 1
-Y02300059;Sistema pannello protezione colonna 2
-Y02300060;Sistema interni e cielo
-Y02300061;Sistema pannello interno porta anteriore 1
-Y02300062;Sistema pannello interno porta anteriore 2
-Y02300063;Sistema interni portellone
-Y02300064;Sistema interni portellone
-Y02300065;Sistema cruscotto ausiliario
-Y02300066;Sistema ruote
-Y02300067;Sistema parabrezza posteriore
-Y02300068;Sistema parabrezza anteriore
-Y02300069;Sistema esterni premium
-Y02300070;Sistema parete laterale esterna 1
-Y02300071;Sistema parete laterale esterna 2
-Y02300072;Sistema copertura tetto
-Y02300073;Sistema pannello porta laterale anteriore 1
-Y02300074;Sistema pannello porta laterale anteriore 2
-Y02300075;Dispositivo identificazione veicolo
-Y02300076;Sistema modanatura inferiore parabrezza
-Y02300077;Sistema pedana di benvenuto
-Y02300078;Sistema vetro tetto
-Y02300079;Sistema rivestimento cofano
-Y02300080;Sistema parafango
-Y02300081;Dispositivo paraurti anteriore
-Y02300082;Dispositivo paraurti posteriore 1
-Y02300083;Dispositivo paraurti posteriore 2
-Y02300084;Dispositivo spoiler cofano
-Y02300085;Dispositivo illuminazione interna
-Y02300086;Sistema cinture di sicurezza
-Y02300087;Sistema rivestimento guida con gomma
-Y02300088;Sistema membrana impermeabile porta
-Y02300089;Sistema alzacristalli
-Y02300090;Sistema serratura box batteria
-Y02300091;Sistema maniglia interna
-Y02300092;Sistema maniglia esterna
-Y02300093;Sistema di tenuta 1
-Y02300094;Sistema di tenuta 2
-Y02300095;Sistema barra di sostegno portellone
-Y02300096;Dispositivo sedile anteriore
-Y02300097;Sistema accessori premium
-Y02300098;Sistema specchietto retrovisore interno
-Y02300099;Sistema parasole
-Y02300100;Sistema specchietto retrovisore esterno
-Y02300101;Assieme copertura sportello presa di ricarica
-Y02300102;Dispositivo luce targa
-Y02300103;Dispositivo catarifrangente laterale
-Y02300104;Dispositivo fanale posteriore combinato
-Y02300105;Sistema serratura porta laterale anteriore
-Y02300106;Dispositivo serratura e maniglia portellone
-Y02300107;Dispositivo fanale anteriore combinato
-Y02300108;Sistema copertura presa elettrica
-Y02300109;Sistema attrezzi di bordo
+id,NOME
+Y02300001,Sistema di controllo dell‚Äôaccelerazione
+Y02300002,Sistema frenante 1
+Y02300003,Sistema frenante 2
+Y02300004,Sistema frenante 3
+Y02300005,Sistema frenante 4
+Y02300006,Sistema frenante 5
+Y02300007,Sistema sospensione posteriore
+Y02300008,Sistema ruote
+Y02300009,Sistema ruote ‚Äì Configurazione opzionale
+Y02300010,Sistema sterzo 1
+Y02300011,Sistema sterzo 2
+Y02300012,Sistema sterzo 3
+Y02300013,Sistema sospensione anteriore 1
+Y02300014,Sistema sospensione anteriore 2
+Y02300015,Sistema sospensione anteriore 3
+Y02300016,Sistema asse motrice posteriore 1
+Y02300017,Sistema asse motrice posteriore 2
+Y02300018,Sistema batteria di trazione
+Y02300019,Sistema motore di trazione
+Y02300020,Unit√† di controllo veicolo
+Y02300021,Assieme unit√† di controllo motore
+Y02300022,Sistema cablaggio alta tensione
+Y02300023,Sistema di ricarica
+Y02300024,Unit√† elettrica box batteria di trazione 1
+Y02300025,Unit√† elettrica box batteria di trazione 2
+Y02300026,Unit√† elettrica box batteria di trazione 3
+Y02300027,Unit√† box alta tensione 1
+Y02300028,Unit√† box alta tensione 2
+Y02300029,Sistema controllo carrozzeria
+Y02300030,Unit√† elettriche veicolo
+Y02300031,Sistema chiave
+Y02300032,Sistema cablaggio bassa tensione
+Y02300033,Sistema tergi e lavavetri
+Y02300034,Sistema schermo centrale
+Y02300035,Sistema climatizzazione 1
+Y02300036,Sistema climatizzazione 2
+Y02300037,Dispositivo comunicazione e informazione
+Y02300038,Dispositivo batteria 12V
+Y02300039,Sistema scocca grezza 1
+Y02300040,Sistema scocca grezza 2
+Y02300041,Sistema scocca grezza 3
+Y02300042,Sistema scocca grezza 4
+Y02300043,Sistema scocca grezza 5
+Y02300044,Sistema scocca grezza 6
+Y02300045,Sistema scocca grezza 7
+Y02300046,Sistema scocca grezza 8
+Y02300047,Sistema scocca grezza 9
+Y02300048,Sistema scocca grezza 10
+Y02300049,Sistema scocca grezza 11
+Y02300050,Sistema traversa quadro strumenti
+Y02300051,Dispositivo box batteria di trazione 1
+Y02300052,Dispositivo box batteria di trazione 2
+Y02300053,Sistema interni premium
+Y02300054,Sistema quadro strumenti 1
+Y02300055,Sistema quadro strumenti 2
+Y02300056,Sistema quadro strumenti 3
+Y02300057,Sistema copertura devioluci
+Y02300058,Sistema pannello protezione colonna 1
+Y02300059,Sistema pannello protezione colonna 2
+Y02300060,Sistema interni e cielo
+Y02300061,Sistema pannello interno porta anteriore 1
+Y02300062,Sistema pannello interno porta anteriore 2
+Y02300063,Sistema interni portellone
+Y02300064,Sistema interni portellone
+Y02300065,Sistema cruscotto ausiliario
+Y02300066,Sistema ruote
+Y02300067,Sistema parabrezza posteriore
+Y02300068,Sistema parabrezza anteriore
+Y02300069,Sistema esterni premium
+Y02300070,Sistema parete laterale esterna 1
+Y02300071,Sistema parete laterale esterna 2
+Y02300072,Sistema copertura tetto
+Y02300073,Sistema pannello porta laterale anteriore 1
+Y02300074,Sistema pannello porta laterale anteriore 2
+Y02300075,Dispositivo identificazione veicolo
+Y02300076,Sistema modanatura inferiore parabrezza
+Y02300077,Sistema pedana di benvenuto
+Y02300078,Sistema vetro tetto
+Y02300079,Sistema rivestimento cofano
+Y02300080,Sistema parafango
+Y02300081,Dispositivo paraurti anteriore
+Y02300082,Dispositivo paraurti posteriore 1
+Y02300083,Dispositivo paraurti posteriore 2
+Y02300084,Dispositivo spoiler cofano
+Y02300085,Dispositivo illuminazione interna
+Y02300086,Sistema cinture di sicurezza
+Y02300087,Sistema rivestimento guida con gomma
+Y02300088,Sistema membrana impermeabile porta
+Y02300089,Sistema alzacristalli
+Y02300090,Sistema serratura box batteria
+Y02300091,Sistema maniglia interna
+Y02300092,Sistema maniglia esterna
+Y02300093,Sistema di tenuta 1
+Y02300094,Sistema di tenuta 2
+Y02300095,Sistema barra di sostegno portellone
+Y02300096,Dispositivo sedile anteriore
+Y02300097,Sistema accessori premium
+Y02300098,Sistema specchietto retrovisore interno
+Y02300099,Sistema parasole
+Y02300100,Sistema specchietto retrovisore esterno
+Y02300101,Assieme copertura sportello presa di ricarica
+Y02300102,Dispositivo luce targa
+Y02300103,Dispositivo catarifrangente laterale
+Y02300104,Dispositivo fanale posteriore combinato
+Y02300105,Sistema serratura porta laterale anteriore
+Y02300106,Dispositivo serratura e maniglia portellone
+Y02300107,Dispositivo fanale anteriore combinato
+Y02300108,Sistema copertura presa elettrica
+Y02300109,Sistema attrezzi di bordo

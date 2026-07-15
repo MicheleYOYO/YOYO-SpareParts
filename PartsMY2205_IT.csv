@@ -3,9 +3,9 @@ codice,descrizione,quantita,id,esploso
 1108010-Y01,Pedale acceleratore elettrico,1,1,Y0205001
 Q1860625,Bullone esagonale con flangia,3,2,Y0205001
 2101000Y0205,Assieme batteria di potenza,1,Y0205002,
-2101000-Y0201,Assieme batteria di potenza (con blocco batteria) (versione ENI),1,Y0205002,
+2101000-Y0201,Assieme batteria di potenza (con blocco batteria) (versione ENI),1,1,Y0205002
 2101010Y0205,Scatola batteria di potenza,1,1,Y0205002
-2101010Y0201,Scatola batteria di potenza,1,Y0205002,
+2101010Y0201,Scatola batteria di potenza,1,1,Y0205002
 2101013-Y01,Boccola anti?attrito,6,01-feb,Y0205002
 2101017-Y01,Bullone antifurto scatola batteria,2,01-mar,Y0205002
 2101018-Y01,Piastra copertura scatola batteria,1,01-apr,Y0205002

@@ -40,3 +40,10 @@ PARTS_LIST,Lista ricambi,Parts list
 PRINT,Stampa,Print
 EXPORT_CSV,Esporta CSV,Export CSV
 EMPTY_LIST,Svuota,Empty
+MODEL_DETECTED,Modello rilevato:,Detected model:
+BTN_EMPTY,Svuota,Empty
+BTN_VISUAL,Ricerca visuale,Visual search
+BTN_VIN,Ricerca per VIN,VIN search
+SEARCH_PLACEHOLDER,Cerca ricambi...,Search parts...
+VIN_PLACEHOLDER,Inserisci VIN...,Enter VIN...
+TITLE_RICAMBI,Ricerca ricambi,Parts search

@@ -11,3 +11,6 @@ PARTS_LIST,Lista ricambi,Parts list
 PRINT,Stampa,Print
 EXPORT_CSV,Esporta CSV,Export CSV
 EMPTY,Svuota,Clear
+VIN_INVALID,Inserisci un VIN valido,Enter a valid VIN
+VIN_NOT_FOUND,VIN non trovato nei range,VIN not found in ranges
+VIN_FOUND,Modello identificato:,Model identified:

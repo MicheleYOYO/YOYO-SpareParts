@@ -16,3 +16,9 @@ VIN_NOT_FOUND,VIN non trovato nei range,VIN not found in ranges
 VIN_FOUND,Modello identificato:,Model identified:
 VIN_INSERT,Inserisci le ultime 6 cifre del VIN,Enter the last 6 digits of the VIN
 VIN_IDENTIFY,Identifica,Identify
+TH_CODE,Codice,Code
+TH_DESC,Descrizione,Description
+TH_QTY,Quantità,Quantity
+TH_MODELS,Modelli compatibili,Compatible models
+TH_ADD,Aggiungi,Add
+NO_PARTS,Nessun ricambio trovato,No parts found

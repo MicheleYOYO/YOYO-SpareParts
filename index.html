@@ -300,6 +300,13 @@ table td {
 </div>
 
 <script>
+    let linguaCorrente = "IT";   // IT o EN
+function cambiaLingua(lang){
+    linguaCorrente = lang;
+    caricaTuttiINomiSinottici();   // ricarica i CSV corretti
+    mostraSinottici();             // aggiorna la griglia
+}
+
 /* ---------------- LISTA RICAMBI ---------------- */
 let listaRicambi = [];
 let nomeLista = localStorage.getItem("nomeLista") || "";
@@ -623,78 +630,75 @@ async function caricaPartsMY24(){
     }
 }
 caricaPartsMY24();
+    
+function urlNomeSinottici(model){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinottici${model}${suff}.csv`;
+}
+
+    
 /* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
-const NOMESINOTTICI_MY24_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY24.csv";
 
 async function caricaNomeSinotticiMY24(){
-    const r = await fetch(NOMESINOTTICI_MY24_URL);
+    const r = await fetch(urlNomeSinottici("MY24"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-
+    nomeSinotticiMY24 = {};
     for(let i=1; i<righe.length; i++){
         const [id, nome] = righe[i].split(",");
-        if(id && nome){
-            nomeSinotticiMY24[id.trim()] = nome.trim();
-        }
+        if(id && nome) nomeSinotticiMY24[id.trim()] = nome.trim();
     }
 }
-caricaNomeSinotticiMY24();
     
 /* ---------------- NOME SINOTTICI MY23 ---------------- */
 let nomeSinotticiMY23 = {};
-const NOMESINOTTICI_MY23_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY23.csv";
 
 async function caricaNomeSinotticiMY23(){
-    const r = await fetch(NOMESINOTTICI_MY23_URL);
+    const r = await fetch(urlNomeSinottici("MY23"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-
+    nomeSinotticiMY23 = {};
     for(let i=1; i<righe.length; i++){
         const [id, nome] = righe[i].split(",");
-        if(id && nome){
-            nomeSinotticiMY23[id.trim()] = nome.trim();
-        }
+        if(id && nome) nomeSinotticiMY23[id.trim()] = nome.trim();
     }
 }
-caricaNomeSinotticiMY23();
     
     /* ---------------- NOME SINOTTICI MY22 ---------------- */
 let nomeSinotticiMY22 = {};
-const NOMESINOTTICI_MY22_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY22.csv";
 
 async function caricaNomeSinotticiMY22(){
-    const r = await fetch(NOMESINOTTICI_MY22_URL);
+    const r = await fetch(urlNomeSinottici("MY22"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-
+    nomeSinotticiMY22 = {};
     for(let i=1; i<righe.length; i++){
         const [id, nome] = righe[i].split(",");
-        if(id && nome){
-            nomeSinotticiMY22[id.trim()] = nome.trim();
-        }
+        if(id && nome) nomeSinotticiMY22[id.trim()] = nome.trim();
     }
 }
-caricaNomeSinotticiMY22();
     
 /* ---------------- NOME SINOTTICI MY2205 ---------------- */
 let nomeSinotticiMY2205 = {};
-const NOMESINOTTICI_MY2205_URL = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinotticiMY2205.csv";
 
 async function caricaNomeSinotticiMY2205(){
-    const r = await fetch(NOMESINOTTICI_MY2205_URL);
+    const r = await fetch(urlNomeSinottici("MY2205"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
-
+    nomeSinotticiMY2205 = {};
     for(let i=1; i<righe.length; i++){
         const [id, nome] = righe[i].split(",");
-        if(id && nome){
-            nomeSinotticiMY2205[id.trim()] = nome.trim();
-        }
+        if(id && nome) nomeSinotticiMY2205[id.trim()] = nome.trim();
     }
 }
-caricaNomeSinotticiMY2205();
-
+async function caricaTuttiINomiSinottici(){
+    await caricaNomeSinotticiMY24();
+    await caricaNomeSinotticiMY23();
+    await caricaNomeSinotticiMY22();
+    await caricaNomeSinotticiMY2205();
+}
+caricaTuttiINomiSinottici();
 
 /* ---------------- MODEL MAP ---------------- */
 const MODEL_MAP={

@@ -28,3 +28,8 @@ CLOSE,Chiudi,Close
 NO_MODEL_COMPAT,Nessun modello compatibile indicato per questo ricambio,No compatible model indicated for this part
 MODEL_UNKNOWN,Modello non riconosciuto:,Unknown model:
 PART_NOT_FOUND,Ricambio non trovato nel catalogo:,Part not found in catalog:
+SELECT_MODEL_VISUAL,Seleziona il modello per la ricerca visuale,Select model for visual search
+BACK_TO_SINOTTICO,Torna al sinottico,Back to diagram
+BACK_TO_GRID,Torna alla griglia sinottici,Back to diagram grid
+PARTS_OF_SINOTTICO,Ricambi del sinottico,Parts of diagram
+ADD_TO_LIST,Aggiungi alla lista,Add to list

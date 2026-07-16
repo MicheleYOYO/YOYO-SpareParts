@@ -318,9 +318,36 @@ table td {
     let linguaCorrente = "IT";   // IT o EN
 function cambiaLingua(lang){
     linguaCorrente = lang;
-    caricaTuttiINomiSinottici();   // ricarica i CSV corretti
-    mostraSinottici();             // aggiorna la griglia
+    caricaTuttiINomiSinottici().then(()=>{
+        aggiornaLinguaUI();
+    });
 }
+
+function aggiornaLinguaUI(){
+    // Se sei nella griglia sinottici
+    if (document.querySelector('.sinotticoGrid')) {
+        mostraSinottici();
+        return;
+    }
+
+    // Se sei dentro un sinottico aperto
+    const titoloSin = document.querySelector('h2');
+    if (titoloSin && titoloSin.textContent.includes("Ricambi del sinottico")) {
+        const esploso = titoloSin.textContent.replace("Ricambi del sinottico ", "").trim();
+        mostraRicambiSinottico(esploso);
+        return;
+    }
+
+    // Se sei nella tabella ricambi
+    if (document.querySelector('#partsBox table')) {
+        mostraRicambi();
+        return;
+    }
+
+    // Se sei nella home
+    mostraRicambi();
+}
+
 
 /* ---------------- LISTA RICAMBI ---------------- */
 let listaRicambi = [];

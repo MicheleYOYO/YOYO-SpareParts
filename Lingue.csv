@@ -25,3 +25,6 @@ NO_PARTS,Nessun ricambio trovato,No parts found
 OPEN_EXPLODED,Apri esploso per,Open exploded for
 SELECT_MODEL,Seleziona il modello:,Select model:
 CLOSE,Chiudi,Close
+NO_MODEL_COMPAT,Nessun modello compatibile indicato per questo ricambio,No compatible model indicated for this part
+MODEL_UNKNOWN,Modello non riconosciuto:,Unknown model:
+PART_NOT_FOUND,Ricambio non trovato nel catalogo:,Part not found in catalog:

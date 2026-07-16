@@ -284,41 +284,45 @@ document.addEventListener("DOMContentLoaded", () => {
     <img id="langIcon" src="img/flag_en.png" width="32" title="Change language">
 </div>
 
-<h1>YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
+<h1 id="TITLE_MAIN">YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
     
-<div id="langSwitcher" style="position:absolute; top:20px; right:20px; cursor:pointer;">
-    <img id="langIcon" src="img/flag_en.png" width="32" title="Change language">
-</div>
 
-<h2>Identificazione modello tramite VIN</h2>
-<p>Inserisci le ultime 6 cifre del VIN:</p>
+
+<h2 id="VIN_IDENT">Identificazione modello tramite VIN</h2>
+<p id="VIN_INPUT_LABEL">Inserisci le ultime 6 cifre del VIN:</p>
 <input type="text" id="vinInput" maxlength="6">
-<button onclick="identificaModello()">Identifica</button>
+<button id="BTN_IDENTIFICA" onclick="identificaModello()">Identifica</button>
 <p id="risultatoVIN" style="font-weight:bold;margin-top:10px;"></p>
 <hr>
 
-<h2>Ricerca ricambi</h2>
-<input type="text" id="searchInput" placeholder="Cerca ricambio per codice o nome" oninput="mostraRicambi()">
+<h2 id="SEARCH_PARTS">Ricerca ricambi</h2>
+<input type="text" id="searchInput" placeholder="" oninput="mostraRicambi()">
 <br><br>
-<button onclick="mostraSinottici()">🔍 Ricerca visuale</button>
-<button onclick="tornaAllaHome()">🏠 Torna alla pagina iniziale</button>
+<button id="BTN_VISUAL_SEARCH" onclick="mostraSinottici()">🔍 Ricerca visuale</button>
+<button id="BTN_BACK_HOME" onclick="tornaAllaHome()">🏠 Torna alla pagina iniziale</button>
+
 <hr>
 
-<h2>Catalogo Ricambi</h2>
+<h2 id="CATALOG_TITLE">Catalogo Ricambi</h2>
+
 <div id="partsBox"></div>
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
-    <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+   <h3 id="PARTS_LIST">📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+
 
     <!-- Nome lista (VIN + data + ora) -->
     <div id="nomeListaLabel"></div>
 
     <div id="listaContenuto"></div>
     <hr>
-    <button onclick="stampaLista()">🖨️ Stampa</button>
-    <button onclick="esportaCSV()">📄 Esporta CSV</button>
-    <button onclick="svuotaLista()">🗑️ Svuota</button>
+    <button id="BTN_PRINT" onclick="stampaLista()">🖨️ Stampa</button>
+
+   <button id="BTN_EXPORT_CSV" onclick="esportaCSV()">📄 Esporta CSV</button>
+
+   <button id="BTN_EMPTY" onclick="svuotaLista()">🗑️ Svuota</button>
+
 </div>
 
 <script>
@@ -336,7 +340,7 @@ function toggleLingua() {
     } else {
         icon.src = "img/flag_it.png";
     }
-document.getElementById("langSwitcher").addEventListener("click", toggleLingua);
+
 
     // Ricarica i file nomeSinottici
     caricaNomeSinotticiMY22();

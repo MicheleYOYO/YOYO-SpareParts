@@ -33,3 +33,10 @@ BACK_TO_SINOTTICO,Torna al sinottico,Back to diagram
 BACK_TO_GRID,Torna alla griglia sinottici,Back to diagram grid
 PARTS_OF_SINOTTICO,Ricambi del sinottico,Parts of diagram
 ADD_TO_LIST,Aggiungi alla lista,Add to list
+NO_EXPLODED,Nessun esploso disponibile,No exploded view available
+BACK_TO_GRID,Torna alla griglia,Back to grid
+ADD_TO_LIST,Aggiungi alla lista,Add to list
+PARTS_LIST,Lista ricambi,Parts list
+PRINT,Stampa,Print
+EXPORT_CSV,Esporta CSV,Export CSV
+EMPTY_LIST,Svuota,Empty

@@ -22,3 +22,6 @@ TH_QTY,Quantità,Quantity
 TH_MODELS,Modelli compatibili,Compatible models
 TH_ADD,Aggiungi,Add
 NO_PARTS,Nessun ricambio trovato,No parts found
+OPEN_EXPLODED,Apri esploso per,Open exploded for
+SELECT_MODEL,Seleziona il modello:,Select model:
+CLOSE,Chiudi,Close

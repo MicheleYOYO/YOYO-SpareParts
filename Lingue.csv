@@ -14,3 +14,5 @@ EMPTY,Svuota,Clear
 VIN_INVALID,Inserisci un VIN valido,Enter a valid VIN
 VIN_NOT_FOUND,VIN non trovato nei range,VIN not found in ranges
 VIN_FOUND,Modello identificato:,Model identified:
+VIN_INSERT,Inserisci le ultime 6 cifre del VIN,Enter the last 6 digits of the VIN
+VIN_IDENTIFY,Identifica,Identify

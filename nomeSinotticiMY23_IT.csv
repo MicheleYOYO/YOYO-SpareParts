@@ -1,86 +1,86 @@
-id;NOME
-Y02100001;Sistema di accelerazione
-Y02100002;Sospensione anteriore (1)
-Y02100003;Sospensione anteriore (2)
-Y02100004;Sospensione posteriore
-Y02100005;Sistema ruote
-Y02100006;Sistema sterzo
-Y02100007;Sistema freni (1)
-Y02100008;Sistema freni (2)
-Y02100009;Sistema freni (3)
-Y02100010;Kit attrezzi di bordo
-Y02100011;Assieme batteria di trazione
-Y02100012;Assieme motore elettrico di trazione
-Y02100013;Assieme VBU (Vehicle Battery Unit)
-Y02100014;Assieme centralina controllo motore elettrico (MCU)
-Y02100015;Dispositivo di comunicazione / telematica
-Y02100016;Unit‡ elettrica box batteria
-Y02100017;Unit‡ box alta tensione
-Y02100018;Assieme cablaggio alta tensione
-Y02100019;Sistema di ricarica
-Y02100020;Modulo di controllo carrozzeria (BCM ñ Body Control Module)
-Y02100021;Unit‡ elettriche veicolo
-Y02100022;Dispositivo KEY / sistema chiave
-Y02100023;Assieme cablaggio bassa tensione
-Y02100024;Assieme display centrale
-Y02100025;Sistema tergicristallo e lavavetri
-Y02100026;Sistema climatizzazione
-Y02100027;Sistema paraurti anteriore
-Y02100028;Sistema cerniera paraurti posteriore
-Y02100029;Sistema paraurti posteriore
-Y02100030;Sistema comandi accessori
-Y02100031;Sistema ruote
-Y02100032;Sistema protezione inferiore / scudo inferiore
-Y02100033;Sistema vetro parabrezza
-Y02100034;Sistema modanatura inferiore parabrezza
-Y02100035;Assieme copertura porta di ricarica anteriore
-Y02100036;Assieme identificazione veicolo
-Y02100037;Sistema esterno fiancata (1)
-Y02100038;Sistema esterno fiancata (2)
-Y02100039;Sistema tetto
-Y02100040;Sistema porta anteriore (1)
-Y02100041;Sistema porta anteriore (2)
-Y02100042;Assieme pedana di ingresso
-Y02100043;Sistema modanatura cofano
-Y02100044;Sistema parafango
-Y02100045;Sistema luci / illuminazione
-Y02100046;Sistema cintura di sicurezza
-Y02100047;Assieme rivestimento guida scorrimento
-Y02100048;Assieme membrana impermeabile porta
-Y02100049;Sistema alzacristalli
-Y02100050;Sistema serratura
-Y02100051;Sistema maniglia interna
-Y02100052;Sistema maniglia esterna
-Y02100053;Sistema guarnizioni
-Y02100054;Assieme barra sostegno portellone
-Y02100055;Sistema sedile
-Y02100056;Assieme tampone gomma sollevatore
-Y02100057;Sistema specchietto retrovisore interno
-Y02100058;Sistema specchietto retrovisore esterno
-Y02100059;Sistema aletta parasole
-Y02100060;Sistema catarifrangente
-Y02100061;Assieme scocca nuda (1)
-Y02100062;Assieme scocca nuda (2)
-Y02100063;Assieme scocca nuda (3)
-Y02100064;Assieme scocca nuda (4)
-Y02100065;Assieme scocca nuda (5)
-Y02100066;Assieme scocca nuda (6)
-Y02100067;Assieme scocca nuda (7)
-Y02100068;Assieme scocca nuda (8)
-Y02100069;Assieme scocca nuda (9)
-Y02100070;Assieme box batteria
-Y02100071;Assieme traversa cruscotto
-Y02100072;Sistema tappetini / moquette
-Y02100073;Assieme cruscotto ausiliario (1)
-Y02100074;Assieme cruscotto ausiliario (2)
-Y02100075;Sistema cruscotto (1)
-Y02100076;Sistema cruscotto (2)
-Y02100077;Sistema cruscotto (3)
-Y02100078;Sistema copertura devioluci
-Y02100079;Sistema pannello protezione colonna sterzo
-Y02100080;Sistema interni e cielo
-Y02100081;Sistema pannello interno porta anteriore (1)
-Y02100082;Sistema pannello interno porta anteriore (2)
-Y02100083;Sistema pannello interno porta anteriore (3)
-Y02100084;Sistema portellone
-Y02100085;Assieme portapacchi posteriore
+id,NOME
+Y02100001,Sistema di accelerazione
+Y02100002,Sospensione anteriore (1)
+Y02100003,Sospensione anteriore (2)
+Y02100004,Sospensione posteriore
+Y02100005,Sistema ruote
+Y02100006,Sistema sterzo
+Y02100007,Sistema freni (1)
+Y02100008,Sistema freni (2)
+Y02100009,Sistema freni (3)
+Y02100010,Kit attrezzi di bordo
+Y02100011,Assieme batteria di trazione
+Y02100012,Assieme motore elettrico di trazione
+Y02100013,Assieme VBU (Vehicle Battery Unit)
+Y02100014,Assieme centralina controllo motore elettrico (MCU)
+Y02100015,Dispositivo di comunicazione / telematica
+Y02100016,Unit√† elettrica box batteria
+Y02100017,Unit√† box alta tensione
+Y02100018,Assieme cablaggio alta tensione
+Y02100019,Sistema di ricarica
+Y02100020,Modulo di controllo carrozzeria (BCM ‚Äì Body Control Module)
+Y02100021,Unit√† elettriche veicolo
+Y02100022,Dispositivo KEY / sistema chiave
+Y02100023,Assieme cablaggio bassa tensione
+Y02100024,Assieme display centrale
+Y02100025,Sistema tergicristallo e lavavetri
+Y02100026,Sistema climatizzazione
+Y02100027,Sistema paraurti anteriore
+Y02100028,Sistema cerniera paraurti posteriore
+Y02100029,Sistema paraurti posteriore
+Y02100030,Sistema comandi accessori
+Y02100031,Sistema ruote
+Y02100032,Sistema protezione inferiore / scudo inferiore
+Y02100033,Sistema vetro parabrezza
+Y02100034,Sistema modanatura inferiore parabrezza
+Y02100035,Assieme copertura porta di ricarica anteriore
+Y02100036,Assieme identificazione veicolo
+Y02100037,Sistema esterno fiancata (1)
+Y02100038,Sistema esterno fiancata (2)
+Y02100039,Sistema tetto
+Y02100040,Sistema porta anteriore (1)
+Y02100041,Sistema porta anteriore (2)
+Y02100042,Assieme pedana di ingresso
+Y02100043,Sistema modanatura cofano
+Y02100044,Sistema parafango
+Y02100045,Sistema luci / illuminazione
+Y02100046,Sistema cintura di sicurezza
+Y02100047,Assieme rivestimento guida scorrimento
+Y02100048,Assieme membrana impermeabile porta
+Y02100049,Sistema alzacristalli
+Y02100050,Sistema serratura
+Y02100051,Sistema maniglia interna
+Y02100052,Sistema maniglia esterna
+Y02100053,Sistema guarnizioni
+Y02100054,Assieme barra sostegno portellone
+Y02100055,Sistema sedile
+Y02100056,Assieme tampone gomma sollevatore
+Y02100057,Sistema specchietto retrovisore interno
+Y02100058,Sistema specchietto retrovisore esterno
+Y02100059,Sistema aletta parasole
+Y02100060,Sistema catarifrangente
+Y02100061,Assieme scocca nuda (1)
+Y02100062,Assieme scocca nuda (2)
+Y02100063,Assieme scocca nuda (3)
+Y02100064,Assieme scocca nuda (4)
+Y02100065,Assieme scocca nuda (5)
+Y02100066,Assieme scocca nuda (6)
+Y02100067,Assieme scocca nuda (7)
+Y02100068,Assieme scocca nuda (8)
+Y02100069,Assieme scocca nuda (9)
+Y02100070,Assieme box batteria
+Y02100071,Assieme traversa cruscotto
+Y02100072,Sistema tappetini / moquette
+Y02100073,Assieme cruscotto ausiliario (1)
+Y02100074,Assieme cruscotto ausiliario (2)
+Y02100075,Sistema cruscotto (1)
+Y02100076,Sistema cruscotto (2)
+Y02100077,Sistema cruscotto (3)
+Y02100078,Sistema copertura devioluci
+Y02100079,Sistema pannello protezione colonna sterzo
+Y02100080,Sistema interni e cielo
+Y02100081,Sistema pannello interno porta anteriore (1)
+Y02100082,Sistema pannello interno porta anteriore (2)
+Y02100083,Sistema pannello interno porta anteriore (3)
+Y02100084,Sistema portellone
+Y02100085,Assieme portapacchi posteriore

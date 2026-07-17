@@ -730,7 +730,7 @@ async function caricaPartsMY24(){
 caricaPartsMY24();
 
     
-function urlNomeSinottici(model){
+function urlnomeSinottici(model){
     const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
     return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinottici${model}${suff}.csv`;
 }
@@ -776,8 +776,8 @@ async function caricaParts(model){
 /* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
 
-async function caricaNomeSinotticiMY24(){
-    const r = await fetch(urlNomeSinottici("MY24"));
+async function caricanomeSinotticiMY24(){
+    const r = await fetch(urlnomeSinottici("MY24"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY24 = {};
@@ -790,8 +790,8 @@ async function caricaNomeSinotticiMY24(){
 /* ---------------- NOME SINOTTICI MY23 ---------------- */
 let nomeSinotticiMY23 = {};
 
-async function caricaNomeSinotticiMY23(){
-    const r = await fetch(urlNomeSinottici("MY23"));
+async function caricanomeSinotticiMY23(){
+    const r = await fetch(urlnomeSinottici("MY23"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY23 = {};
@@ -804,8 +804,8 @@ async function caricaNomeSinotticiMY23(){
     /* ---------------- NOME SINOTTICI MY22 ---------------- */
 let nomeSinotticiMY22 = {};
 
-async function caricaNomeSinotticiMY22(){
-    const r = await fetch(urlNomeSinottici("MY22"));
+async function caricanomeSinotticiMY22(){
+    const r = await fetch(urlnomeSinottici("MY22"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY22 = {};
@@ -818,8 +818,8 @@ async function caricaNomeSinotticiMY22(){
 /* ---------------- NOME SINOTTICI MY2205 ---------------- */
 let nomeSinotticiMY2205 = {};
 
-async function caricaNomeSinotticiMY2205(){
-    const r = await fetch(urlNomeSinottici("MY2205"));
+async function caricanomeSinotticiMY2205(){
+    const r = await fetch(urlnomeSinottici("MY2205"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY2205 = {};
@@ -829,10 +829,10 @@ async function caricaNomeSinotticiMY2205(){
     }
 }
 async function caricaTuttiINomiSinottici(){
-    await caricaNomeSinotticiMY24();
-    await caricaNomeSinotticiMY23();
-    await caricaNomeSinotticiMY22();
-    await caricaNomeSinotticiMY2205();
+    await caricanomeSinotticiMY24();
+    await caricanomeSinotticiMY23();
+    await caricanomeSinotticiMY22();
+    await caricanomeSinotticiMY2205();
 }
 caricaTuttiINomiSinottici();
 

@@ -323,6 +323,7 @@ function cambiaLingua(lang){
         caricaDizionario(),          // <-- nuovo
         caricaTuttiINomiSinottici()  // <-- già esistente
     ]).then(()=>{
+        caricaParts();
         aggiornaTestiPagina();       // <-- nuovo
         aggiornaLinguaUI();          // <-- già esistente
     });

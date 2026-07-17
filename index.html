@@ -570,33 +570,40 @@ function identificaModello(){
 }
 
 /* ---------------- PARTS GENERALE ---------------- */
-let partsTable=[];
-const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
+let partsTable = [];
+
+function PARTS_URL(){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts${suff}.csv`;
+}
 
 async function caricaParts(){
-    const r=await fetch(PARTS_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+    partsTable = []; // <-- fondamentale
+
+    const r = await fetch(PARTS_URL());
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
     for(let i=1;i<righe.length;i++){
         const cols=righe[i].split(",");
-partsTable.push({
-    codice: cols[0].trim(),
-    descrizione: cols[1].trim(),
-    quantita: cols[2].trim(),
-    id: (cols[3] || "").trim(),
-    modelli: (cols[3] || "")
-        .replace(/\*/g, "")
-        .trim()
-        .split(/\s+/)
-        .map(m => m === "MY22.5" ? "MY2205" : m)
-        .filter(m => m.length > 0),
-    esploso: (cols[5] || "").trim()
-});
-
+        partsTable.push({
+            codice: cols[0].trim(),
+            descrizione: cols[1].trim(),
+            quantita: cols[2].trim(),
+            id: (cols[3] || "").trim(),
+            modelli: (cols[3] || "")
+                .replace(/\*/g, "")
+                .trim()
+                .split(/\s+/)
+                .map(m => m === "MY22.5" ? "MY2205" : m)
+                .filter(m => m.length > 0),
+            esploso: (cols[5] || "").trim()
+        });
     }
+
     mostraRicambi();
 }
+
 caricaParts();
 
 /* ---------------- PARTS MY22 ---------------- */

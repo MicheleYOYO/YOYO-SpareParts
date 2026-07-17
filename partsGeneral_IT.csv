@@ -10,8 +10,8 @@ S18510001,Bullone esagonale con flangia,8,MY23 MY22 MY22.5 MY24
 2906102-Y01,Boccola barra stabilizzatrice,2,MY23 MY22 MY22.5 MY24
 2906103Y0210,Staffa montaggio barra stabilizzatrice,2,MY23 MY22 MY22.5 MY24
 2906105-Y01,Boccola terminale barra stabilizzatrice,4,MY23 MY22 MY22.5 MY24
-2906106Y0210,Rondella grande Ø12,2,MY23 MY24
-2906107Y0210,Rondella grande Ø16,2,MY23 MY24
+2906106Y0210,Rondella grande Ã˜12,2,MY23 MY24
+2906107Y0210,Rondella grande Ã˜16,2,MY23 MY24
 S33110001,Dado esagonale in metallo a coppia prevalente con flangia,2,MY23 MY22 MY22.5 MY24
 S33112001,Dado esagonale in metallo a coppia prevalente con flangia,2,MY23 MY22 MY22.5 MY24
 S18510006,Bullone esagonale con flangia,2,MY23 MY22 MY22.5 MY24
@@ -66,7 +66,7 @@ S40312001,Rondella elastica,2,MY23 MY22 MY22.5
 2914200Y0210,Barra bilanciamento posteriore,1,MY23 MY24
 S18512003,Bullone esagonale con flangia,1,MY23 MY22 MY22.5 MY24
 Q218B0810,Viti testa cilindrica esagonale,8,MY23 MY22 MY22.5
-2906108Y0210,Rondella grande Ø12,1,MY23 MY22 MY22.5
+2906108Y0210,Rondella grande Ã˜12,1,MY23 MY22 MY22.5
 3100100-Y01,"Cerchio acciaio 14""",4,MY23 MY22 MY22.5
 3100101-Y01,Pneumatico (155/65-R14),4,MY23 MY22 MY22.5
 3100106-Y01,"Cerchio acciaio 14""",4,MY23 MY22 MY22.5
@@ -134,8 +134,8 @@ Q1840645,Bullone esagonale con flangia,4,MY23
 S51008001,Perno asse,1,MY23 MY22 MY24
 3504101Y0205,Assieme pedale freno,1,MY23
 Q1840820,Bullone esagonale con flangia,2,MY23 MY22 MY22.5
-3506101Y0210,Tubo cilindro maestro ? ABS (1ª camera),1,MY23
-3506102Y0210,Tubo cilindro maestro ? ABS (2ª camera),1,MY23
+3506101Y0210,Tubo cilindro maestro ? ABS (1Âª camera),1,MY23
+3506102Y0210,Tubo cilindro maestro ? ABS (2Âª camera),1,MY23
 3506109Y0210,Tubo freno anteriore sinistro,1,MY23
 3506111Y0210,Tubo freno anteriore destro,1,MY23
 3506115Y0210,Tubo freno posteriore sinistro sezione anteriore,1,MY23
@@ -144,10 +144,10 @@ Q1840820,Bullone esagonale con flangia,2,MY23 MY22 MY22.5
 3506121Y0210,Tubo freno posteriore destro sezione posteriore,1,MY23
 3506113Y0210,Clip tubo doppio foro,4,MY23 MY22 MY22.5
 3506116Y0210,Clip tubo foro singolo,4,MY23 MY22 MY22.5
-3550300-Y01,Sensore velocità ruota anteriore,2,MY23 MY22 MY22.5
-3550302-Y01,Staffa sensore velocità ruota anteriore,2,MY23 MY22 MY22.5
+3550300-Y01,Sensore velocitÃ  ruota anteriore,2,MY23 MY22 MY22.5
+3550302-Y01,Staffa sensore velocitÃ  ruota anteriore,2,MY23 MY22 MY22.5
 S32006003,Dado esagonale con flangia,2,MY23 MY22 MY22.5 MY24
-3550400-Y01,Sensore velocità ruota posteriore,2,MY23 MY22 MY22.5
+3550400-Y01,Sensore velocitÃ  ruota posteriore,2,MY23 MY22 MY22.5
 3506104Y0210,Tubo freno anteriore,2,MY23
 3506112Y0210,Tubo freno posteriore,2,MY23
 3506106Y0210,Bulloni punzonati,4,MY23 MY24
@@ -187,7 +187,7 @@ S18408004,Bullone esagonale con flangia,3,MY23 MY22 MY22.5 MY24
 S14606004,Bullone testa esagonale con rondella elastica e rondella piana,2,MY23 MY24
 S32006002,Dado esagonale con flangia,2,MY23
 2103030Y0210,Cavo di massa,1,MY23
-2108010Y0210,Unità di controllo veicolo VBU,1,MY23
+2108010Y0210,UnitÃ  di controllo veicolo VBU,1,MY23
 2142010Y0210,Controller motore,1,MY23 MY24
 2142040Y0210,Cavo di massa MCU,1,MY23
 7925040-Y01,T-BOX (4G),1,MY23 MY22 MY22.5
@@ -201,10 +201,10 @@ S32006002,Dado esagonale con flangia,2,MY23
 2101013Y0210,Boccola anti?attrito,6,MY23 MY24
 2109010Y0210,Assieme scatola alta tensione,1,MY23
 2109011Y0210,Assieme involucro scatola alta tensione,1,MY23
-2109015Y0210,Relè 150A,1,MY23
-2109016Y0210,Relè 60A,1,MY23
-2109017-Y01,Relè 20A,3,MY23 MY22 MY22.5 MY24
-2109211Y0210,Relè 40A,1,MY23
+2109015Y0210,RelÃ¨ 150A,1,MY23
+2109016Y0210,RelÃ¨ 60A,1,MY23
+2109017-Y01,RelÃ¨ 20A,3,MY23 MY22 MY22.5 MY24
+2109211Y0210,RelÃ¨ 40A,1,MY23
 2109018-Y01,Fusibile ritardato 300A,1,MY23 MY22 MY22.5
 2109111-Y01,Fusibile ritardato 20A,1,MY23 MY22 MY22.5
 2109112-Y01,Resistenza di pre?carica 75??100W,1,MY23 MY22 MY22.5
@@ -232,12 +232,12 @@ Q1860620,Bullone esagonale con flangia,3,MY23 MY22 MY22.5
 3704010Y0210,Interruttore avvio passivo,1,MY23 MY24
 3791020Y0210,Interruttore PE (con antenna),1,MY23 MY24
 3601030Y0210,Antenna avvio,1,MY23 MY24
-S27348002,Vite autofilettante testa larga tonda a croce 4.8×16,2,MY23 MY22 MY22.5 MY24
+S27348002,Vite autofilettante testa larga tonda a croce 4.8Ã—16,2,MY23 MY22 MY22.5 MY24
 ZH1210,Supporto dado plastico,2,MY23 MY22 MY22.5 MY24
 3791011Y0210,Chip telecomando,2,MY23
 3703010-Y01,Batteria 12V,1,MY23 MY22 MY22.5
-3721010Y0210,Clacson alta tonalità,1,MY23
-3721020Y0210,Allarme bassa velocità (AVAS),1,MY23
+3721010Y0210,Clacson alta tonalitÃ ,1,MY23
+3721020Y0210,Allarme bassa velocitÃ  (AVAS),1,MY23
 S14606003,Bullone con rondella elastica e rondella piana,1,MY23 MY24
 3736010-Y01,Interruttore power?off,1,MY23 MY22 MY22.5
 3736011-Y01,Protezione interruttore power?off,1,MY23 MY22
@@ -293,7 +293,7 @@ S14606002,Bullone M6 con rondella elastica e rondella piana,1,MY23 MY22 MY22.5 M
 8108020Y0210,Tubo scarico compressore,1,MY23
 8108030Y0210,Tubo ingresso fluido serbatoio evaporazione,1,MY23
 8112010Y0210,Assieme pannello controllo climatizzatore,1,MY23
-S27342003,Vite autofilettante testa larga semitonda a croce 4.2×13,18,MY23 MY22 MY22.5 MY24
+S27342003,Vite autofilettante testa larga semitonda a croce 4.2Ã—13,18,MY23 MY22 MY22.5 MY24
 5306104Y0210,Condotto aria uscita centrale,1,MY23 MY24
 5306030Y0210,Assieme sbrinatore anteriore,1,MY23 MY24
 5306136Y0210,Condotto sbrinamento sinistro,1,MY23 MY24
@@ -447,7 +447,7 @@ S99006121,Vite testa svasata a croce con rondella conica,6,MY23 MY24
 6105107-Y01,Scrocco serratura elettronica porta,1,MY23 MY22 MY22.5
 5606032-Y01,Maniglia serratura copertura porta di ricarica,1,MY23 MY22 MY22.5
 5606033-Y01,Cavo serratura copertura porta di ricarica,1,MY23 MY22 MY22.5
-5606034-Y01,Fascetta fermacavo Ø7,3,MY23 MY22 MY22.5
+5606034-Y01,Fascetta fermacavo Ã˜7,3,MY23 MY22 MY22.5
 S27348004,Vite autofilettante testa larga semitonda a croce,2,MY23 MY22 MY22.5 MY24
 8403111-Y01D,Assieme saldatura parafango sinistro,1,MY23 MY22 MY22.5
 8403102-Y01,Pannello inferiore finestrino triangolare sinistro,1,MY23 MY22 MY22.5 MY24
@@ -492,4 +492,4 @@ S99006121,Vite testa svasata a croce con rondella conica,6,MY23 MY24
 6105107-Y01,Scrocco serratura elettronica porta,1,MY23 MY22 MY22.5
 5606032-Y01,Maniglia serratura copertura porta di ricarica,1,MY23 MY22 MY22.5
 5606033-Y01,Cavo serratura copertura porta di ricarica,1,MY23 MY22 MY22.5
-5606034-Y01,Fascetta fermacavo Ø7,3,MY23 MY22 MY22.5
+5606034-Y01,Fascetta fermacavo Ã˜7,3,MY23 MY22 MY22.5

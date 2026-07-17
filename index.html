@@ -579,11 +579,9 @@ function PARTS_URL(){
 }
 
 async function caricaParts(){
-    partsTable = []; // <-- fondamentale
+    partsTable = []; // <-- fondamentale per evitare duplicati
 
     const r = await fetch(PARTS_URL());
-    if(!r.ok) return;
-
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
@@ -594,11 +592,14 @@ async function caricaParts(){
             codice: cols[0].trim(),
             descrizione: cols[1].trim(),
             quantita: cols[2].trim(),
-
-            // Le colonne non esistono nel CSV generale → le mettiamo vuote
-            id: "",
-            modelli: [],
-            esploso: ""
+            id: (cols[3] || "").trim(),
+            modelli: (cols[3] || "")
+                .replace(/\*/g, "")
+                .trim()
+                .split(/\s+/)
+                .map(m => m === "MY22.5" ? "MY2205" : m)
+                .filter(m => m.length > 0),
+            esploso: (cols[5] || "").trim()
         });
     }
 
@@ -606,6 +607,7 @@ async function caricaParts(){
 }
 
 caricaParts();
+
 
 /* ---------------- PARTS MY22 ---------------- */
 let partsTableMY22=[];

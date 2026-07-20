@@ -286,10 +286,22 @@ table td {
 </div>
 
 <h2 id="vinIdent">Identificazione modello tramite VIN</h2>
-<p id="vinInsert">Inserisci le ultime 6 cifre del VIN:</p>
-<input type="text" id="vinInput" maxlength="6">
-<button id="vinButton" onclick="identificaModello()">Identifica</button>
-<p id="risultatoVIN" style="font-weight:bold;margin-top:10px;"></p>
+
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+    <label id="vinInsert" for="vinInput" style="font-size:18px;">
+        Inserisci le ultime 6 cifre del VIN:
+    </label>
+
+    <input type="text" id="vinInput" maxlength="6" 
+           style="padding:6px; font-size:16px; width:120px;">
+
+    <button id="vinButton" onclick="identificaModello()" 
+            style="padding:6px 12px; font-size:16px;">
+        Identifica
+    </button>
+</div>
+
+<p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
 <hr>
 
 <h2 id="searchParts">Ricerca ricambi</h2>

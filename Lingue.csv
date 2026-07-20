@@ -13,7 +13,7 @@ PRINT,Stampa,Print
 EXPORT_CSV,Esporta CSV,Export CSV
 EMPTY,Svuota,Clear
 COL_CODE,Codice,Code
-COL_DESC,Descrizione, Description
+COL_DESC,Descrizione,Description
 COL_QTY,Quantità,Qty
-COL_MODELS,Modelli compatibili, COmpatible models
-COL_ACTIONS,Azioni,Action
+COL_MODELS,Modelli compatibili,Compatible models
+COL_ACTIONS,Azioni,Actions

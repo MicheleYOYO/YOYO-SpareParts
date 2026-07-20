@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
@@ -285,64 +285,52 @@ table td {
 
 </div>
 
-<div id="topBar" style="
-    position:sticky;
-    top:0;
-    background:white;
-    z-index:9999;
-    padding-bottom:10px;
-    border-bottom:2px solid #ddd;
-">
+<h2 id="vinIdent">Identificazione modello tramite VIN</h2>
 
-    <h2 id="vinIdent">Identificazione modello tramite VIN</h2>
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+    <label id="vinInsert" for="vinInput" style="font-size:18px;">
+        Inserisci le ultime 6 cifre del VIN:
+    </label>
 
-    <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
-        <label id="vinInsert" for="vinInput" style="font-size:18px;">
-            Inserisci le ultime 6 cifre del VIN:
-        </label>
+    <input type="text" id="vinInput" maxlength="6" 
+           style="padding:6px; font-size:16px; width:120px;">
 
-        <input type="text" id="vinInput" maxlength="6"
-               style="padding:6px; font-size:16px; width:120px;">
+    <button id="vinButton" onclick="identificaModello()" 
+            style="padding:6px 12px; font-size:16px;">
+        Identifica
+    </button>
+</div>
 
-        <button id="vinButton" onclick="identificaModello()"
-                style="padding:6px 12px; font-size:16px;">
-            Identifica
-        </button>
-        <span id="risultatoVIN" style="font-weight:bold; margin-left:20px;"></span>
-    </div>
+<p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
+<hr>
 
-    <h2 id="searchParts">Ricerca ricambi</h2>
+<h2 id="searchParts">Ricerca ricambi</h2>
 
-    <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
-        <input type="text" id="searchInput"
-               placeholder="Cerca ricambio per codice o nome"
-               oninput="mostraRicambi()"
-               style="padding:6px; font-size:16px; width:260px;">
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
 
-        <button id="visualSearch"
-                onclick="mostraSinottici()"
-                style="padding:6px 12px; font-size:16px;">
-            🔍 Ricerca visuale
-        </button>
+    <input type="text" id="searchInput"
+           placeholder="Ricerca per codice o nome"
+           oninput="mostraRicambi()"
+           style="padding:6px; font-size:16px; width:260px;">
 
-        <button id="backHome"
-                onclick="tornaAllaHome()"
-                style="padding:6px 12px; font-size:16px;">
-            🏠 Home
-        </button>
-    </div>
+    <button id="visualSearch"
+            onclick="mostraSinottici()"
+            style="padding:6px 12px; font-size:16px;">
+        🔍 Ricerca visuale
+    </button>
 
-    <hr>
-
-    <h2 id="catalogTitle">Catalogo Ricambi</h2>
+    <button id="backHome"
+            onclick="tornaAllaHome()"
+            style="padding:6px 12px; font-size:16px;">
+        🏠 Home
+    </button>
 
 </div>
-    
-<div id="partsBox" style="
-    max-height: calc(100vh - 300px);
-    overflow-y: auto;
-">
-</div>
+
+<hr>
+
+<h2 id="catalogTitle">Catalogo Ricambi</h2>
+<div id="partsBox"></div>
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
@@ -358,7 +346,7 @@ table td {
 </div>
 
 <script>
-    let linguaCorrente = "EN";   // IT o EN
+    let linguaCorrente = "IT";   // IT o EN
     let dizionario = {}; 
 function cambiaLingua(lang){
     linguaCorrente = lang;
@@ -422,8 +410,7 @@ function aggiornaLinguaUI(){
     // Se sei nella home → ricarica ricambi generali
     mostraRicambi();
 }
-<script>
-    
+
 function aggiornaTestiPagina(){
     document.getElementById("titleMain").innerText = dizionario["TITLE_MAIN"];
     document.getElementById("vinIdent").innerText = dizionario["VIN_IDENT"];
@@ -933,14 +920,14 @@ async function caricaCoordinate(file){
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
 
-let html = `<table>
-    <tr>
-        <th>${dizionario["COL_CODE"]}</th>
-        <th>${dizionario["COL_DESC"]}</th>
-        <th>${dizionario["COL_QTY"]}</th>
-        <th>${dizionario["COL_MODELS"]}</th>
-        <th>${dizionario["COL_ACTIONS"]}</th>
-    </tr>`;
+    let html = `<table>
+        <tr>
+            <th>${dizionario["PARTS_CODE"]}</th>
+            <th>${dizionario["PARTS_DESC"]}</th>
+            <th>${dizionario["PARTS_QTY"]}</th>
+            <th>${dizionario["PARTS_MODELS"]}</th>
+            <th>${dizionario["PARTS_ADD"]}</th>
+        </tr>`;
 
     let tabella=partsTable;
     if(modelloCorrente==="Y01") tabella=partsTableMY22;

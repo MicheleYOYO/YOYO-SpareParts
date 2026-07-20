@@ -422,16 +422,17 @@ function aggiornaLinguaUI(){
     // Se sei nella home → ricarica ricambi generali
     mostraRicambi();
 }
-
+<script>
+    
 function aggiornaTestiPagina(){
-    document.getElementById("titleMain").innerText = dizionario["TITLE_MAIN"].toUpperCase();
+    document.getElementById("titleMain").innerText = dizionario["TITLE_MAIN"];
     document.getElementById("vinIdent").innerText = dizionario["VIN_IDENT"];
     document.getElementById("vinInsert").innerText = dizionario["VIN_INSERT"];
     document.getElementById("vinButton").innerText = dizionario["VIN_BUTTON"];
     document.getElementById("searchParts").innerText = dizionario["SEARCH_PARTS"];
     document.getElementById("visualSearch").innerText = dizionario["VISUAL_SEARCH"];
     document.getElementById("backHome").innerText = dizionario["BACK_HOME"];
-    document.getElementById("catalogTitle").innerText = dizionario["CATALOG_TITLE"].toUpperCase();
+    document.getElementById("catalogTitle").innerText = dizionario["CATALOG_TITLE"];
     document.getElementById("selectSinottico").innerText = dizionario["SELECT_SINOTTICO"];
     document.getElementById("partsListTitle").innerText = dizionario["PARTS_LIST"];
     document.getElementById("printButton").innerText = dizionario["PRINT"];

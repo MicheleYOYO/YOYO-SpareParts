@@ -265,17 +265,23 @@ table td {
 </head>
 
 <body>
-
-<div style="display:flex; align-items:center; justify-content:flex-start; gap:20px; margin-bottom:20px;">
-
-    <h1 id="titleMain" style="margin:0;">YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
-
-    <select id="linguaSelect" 
+<div id="langBox" style="
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:99999;
+">
+    <select id="linguaSelect"
             onchange="cambiaLingua(this.value)"
             style="font-size:18px; padding:6px 10px; border-radius:6px; cursor:pointer;">
         <option value="IT">🇮🇹 IT</option>
         <option value="EN">🇬🇧 EN</option>
     </select>
+</div>
+
+<div style="display:flex; align-items:center; justify-content:flex-start; gap:20px; margin-bottom:20px;">
+
+    <h1 id="titleMain" style="margin:0;">YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
 
 </div>
 
@@ -299,7 +305,6 @@ table td {
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
     <h3 id="partsListTitle">📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
-<h2 id="searchParts">Ricerca ricambi</h2>
     <!-- Nome lista (VIN + data + ora) -->
     <div id="nomeListaLabel"></div>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
@@ -285,60 +285,52 @@ table td {
 
 </div>
 
-<div id="topBar" style="
-    position:sticky;
-    top:0;
-    background:white;
-    z-index:9999;
-    padding-bottom:10px;
-    border-bottom:2px solid #ddd;
-">
+<h2 id="vinIdent">Identificazione modello tramite VIN</h2>
 
-    <h2 id="vinIdent">Identificazione modello tramite VIN</h2>
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+    <label id="vinInsert" for="vinInput" style="font-size:18px;">
+        Inserisci le ultime 6 cifre del VIN:
+    </label>
 
-    <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
-        <label id="vinInsert" for="vinInput" style="font-size:18px;">
-            Inserisci le ultime 6 cifre del VIN:
-        </label>
+    <input type="text" id="vinInput" maxlength="6" 
+           style="padding:6px; font-size:16px; width:120px;">
 
-        <input type="text" id="vinInput" maxlength="6"
-               style="padding:6px; font-size:16px; width:120px;">
-
-        <button id="vinButton" onclick="identificaModello()"
-                style="padding:6px 12px; font-size:16px;">
-            Identifica
-        </button>
-    </div>
-
-    <h2 id="searchParts">Ricerca ricambi</h2>
-
-    <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
-        <input type="text" id="searchInput"
-               placeholder="Cerca ricambio per codice o nome"
-               oninput="mostraRicambi()"
-               style="padding:6px; font-size:16px; width:260px;">
-
-        <button id="visualSearch"
-                onclick="mostraSinottici()"
-                style="padding:6px 12px; font-size:16px;">
-            🔍 Ricerca visuale
-        </button>
-
-        <button id="backHome"
-                onclick="tornaAllaHome()"
-                style="padding:6px 12px; font-size:16px;">
-            🏠 Home
-        </button>
-    </div>
-
-    <hr>
-
-    <h2 id="catalogTitle">Catalogo Ricambi</h2>
-<div id="partsBox" style="
-    max-height: calc(100vh - 300px);
-    overflow-y: auto;
-">
+    <button id="vinButton" onclick="identificaModello()" 
+            style="padding:6px 12px; font-size:16px;">
+        Identifica
+    </button>
 </div>
+
+<p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
+<hr>
+
+<h2 id="searchParts">Ricerca ricambi</h2>
+
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+
+    <input type="text" id="searchInput"
+           placeholder="Ricerca per codice o nome"
+           oninput="mostraRicambi()"
+           style="padding:6px; font-size:16px; width:260px;">
+
+    <button id="visualSearch"
+            onclick="mostraSinottici()"
+            style="padding:6px 12px; font-size:16px;">
+        🔍 Ricerca visuale
+    </button>
+
+    <button id="backHome"
+            onclick="tornaAllaHome()"
+            style="padding:6px 12px; font-size:16px;">
+        🏠 Home
+    </button>
+
+</div>
+
+<hr>
+
+<h2 id="catalogTitle">Catalogo Ricambi</h2>
+<div id="partsBox"></div>
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
@@ -354,23 +346,25 @@ table td {
 </div>
 
 <script>
-    let linguaCorrente = "EN";   // IT o EN
+    let linguaCorrente = "IT";   // IT o EN
     let dizionario = {}; 
 function cambiaLingua(lang){
     linguaCorrente = lang;
 
-    Promise.all([
-        caricaDizionario(),
-        caricaTuttiINomiSinottici(),
-        caricaParts(),          // generale
-        caricaPartsMY22(),      // MY22
-        caricaPartsMY2205(),    // MY2205
-        caricaPartsMY23(),      // MY23
-        caricaPartsMY24()       // MY24
-    ]).then(()=>{
-        aggiornaTestiPagina();
-        mostraRicambi();        // qui, UNA sola volta
-    });
+Promise.all([
+    caricaDizionario(),
+    caricaTuttiINomiSinottici()
+]).then(()=>{
+    caricaParts();          // generale
+    caricaPartsMY22();      // MY22
+    caricaPartsMY2205();    // MY2205
+    caricaPartsMY23();      // MY23
+    caricaPartsMY24();      // MY24
+
+    aggiornaTestiPagina();
+    aggiornaLinguaUI();
+});
+
 }
 
 
@@ -662,6 +656,8 @@ async function caricaParts(){
     mostraRicambi();
 }
 
+caricaParts();
+
 /* ---------------- PARTS MY22 ---------------- */
 let partsTableMY22=[];
 
@@ -688,6 +684,9 @@ async function caricaPartsMY22(){
         });
     }
 }
+
+caricaPartsMY22();
+
 
 /* ---------------- PARTS MY2205 ---------------- */
 let partsTableMY2205=[];
@@ -719,6 +718,9 @@ async function caricaPartsMY2205(){
     }catch(e){}
 }
 
+caricaPartsMY2205();
+
+
 /* ---------------- PARTS MY23 ---------------- */
 let partsTableMY23=[];
 
@@ -746,6 +748,9 @@ async function caricaPartsMY23(){
     }
 }
 
+caricaPartsMY23();
+
+
 /* ---------------- PARTS MY24 ---------------- */
 let partsTableMY24=[];
 
@@ -772,6 +777,9 @@ async function caricaPartsMY24(){
         });
     }
 }
+
+caricaPartsMY24();
+
     
 function urlnomeSinottici(model){
     const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
@@ -912,14 +920,14 @@ async function caricaCoordinate(file){
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
 
-   let html = `<table>
-    <tr>
-        <th>${dizionario["COL_CODE"]}</th>
-        <th>${dizionario["COL_DESC"]}</th>
-        <th>${dizionario["COL_QTY"]}</th>
-        <th>${dizionario["COL_MODELS"]}</th>
-        <th>${dizionario["COL_ACTIONS"]}</th>
-    </tr>`;
+    let html = `<table>
+        <tr>
+            <th>${dizionario["PARTS_CODE"]}</th>
+            <th>${dizionario["PARTS_DESC"]}</th>
+            <th>${dizionario["PARTS_QTY"]}</th>
+            <th>${dizionario["PARTS_MODELS"]}</th>
+            <th>${dizionario["PARTS_ADD"]}</th>
+        </tr>`;
 
     let tabella=partsTable;
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -958,6 +966,7 @@ function mostraRicambi(){
     html+="</table>";
     document.getElementById("partsBox").innerHTML=html;
 }
+
 
 /* ---------------- SCELTA MODELLO PER RICAMBIO ---------------- */
 function scegliModelloRicambio(codice, modelliStr){
@@ -1544,9 +1553,9 @@ function tornaAllaHome(){
     document.getElementById("searchInput").value="";
     modelloCorrente="";
     document.getElementById("risultatoVIN").innerText="";
-    aggiornaLinguaUI();
+    mostraRicambi();
 }
-cambiaLingua("EN");
+
 </script>
 </body>
 </html>

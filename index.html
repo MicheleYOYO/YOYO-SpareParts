@@ -630,7 +630,7 @@ function PARTS_URL(){
 }
 
 async function caricaParts(){
-    partsTable = []; // <-- fondamentale
+    partsTable = [];
 
     const r = await fetch(PARTS_URL());
     if(!r.ok) return;
@@ -646,17 +646,22 @@ async function caricaParts(){
             descrizione: cols[1].trim(),
             quantita: cols[2].trim(),
 
-            // Le colonne non esistono nel CSV generale → le mettiamo vuote
-            id: "",
-            modelli: [],
-            esploso: ""
+            id: (cols[3] || "").trim(),
+
+            modelli: (cols[4] || "")
+                .replace(/\*/g, "")
+                .trim()
+                .split(/\s+/)
+                .map(m => m === "MY22.5" ? "MY2205" : m)
+                .filter(m => m.length > 0),
+
+            esploso: (cols[5] || "").trim()
         });
     }
 
     mostraRicambi();
 }
 
-caricaParts();
 
 /* ---------------- PARTS MY22 ---------------- */
 let partsTableMY22=[];

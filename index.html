@@ -359,20 +359,18 @@ table td {
 function cambiaLingua(lang){
     linguaCorrente = lang;
 
-Promise.all([
-    caricaDizionario(),
-    caricaTuttiINomiSinottici()
-]).then(()=>{
-    caricaParts();          // generale
-    caricaPartsMY22();      // MY22
-    caricaPartsMY2205();    // MY2205
-    caricaPartsMY23();      // MY23
-    caricaPartsMY24();      // MY24
-
-    aggiornaTestiPagina();
-    mostraRicambi();
-});
-
+    Promise.all([
+        caricaDizionario(),
+        caricaTuttiINomiSinottici(),
+        caricaParts(),          // generale
+        caricaPartsMY22(),      // MY22
+        caricaPartsMY2205(),    // MY2205
+        caricaPartsMY23(),      // MY23
+        caricaPartsMY24()       // MY24
+    ]).then(()=>{
+        aggiornaTestiPagina();
+        mostraRicambi();        // qui, UNA sola volta
+    });
 }
 
 

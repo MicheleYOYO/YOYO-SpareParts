@@ -285,11 +285,11 @@ table td {
 
 </div>
 
-<h2 id="vinIdent">Identificazione modello tramite VIN</h2>
+<h2 id="vinIdent">Model identification via VIN</h2>
 
 <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
     <label id="vinInsert" for="vinInput" style="font-size:18px;">
-        Inserisci le ultime 6 cifre del VIN:
+        Enter the last 6 digits of the VIN:
     </label>
 
     <input type="text" id="vinInput" maxlength="6" 
@@ -297,26 +297,26 @@ table td {
 
     <button id="vinButton" onclick="identificaModello()" 
             style="padding:6px 12px; font-size:16px;">
-        Identifica
+        Identify
     </button>
 </div>
 
 <p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
 <hr>
 
-<h2 id="searchParts">Ricerca ricambi</h2>
+<h2 id="searchParts">Parts search</h2>
 
 <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
 
     <input type="text" id="searchInput"
-           placeholder="Ricerca per codice o nome"
+           placeholder="Search by code or name"
            oninput="mostraRicambi()"
            style="padding:6px; font-size:16px; width:260px;">
 
     <button id="visualSearch"
             onclick="mostraSinottici()"
             style="padding:6px 12px; font-size:16px;">
-        🔍 Ricerca visuale
+        🔍 Visual search
     </button>
 
     <button id="backHome"
@@ -329,20 +329,20 @@ table td {
 
 <hr>
 
-<h2 id="catalogTitle">Catalogo Ricambi</h2>
+<h2 id="catalogTitle">Parts catalogue</h2>
 <div id="partsBox"></div>
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
-    <h3 id="partsListTitle">📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+    <h3 id="partsListTitle">📦 Parts list (<span id="listaCount">0</span>)</h3>
     <!-- Nome lista (VIN + data + ora) -->
     <div id="nomeListaLabel"></div>
 
     <div id="listaContenuto"></div>
     <hr>
-    <button id="printButton" onclick="stampaLista()">🖨️ Stampa</button>
-    <button id="exportCSV" onclick="esportaCSV()">📄 Esporta CSV</button>
-    <button id="emptyButton" onclick="svuotaLista()">🗑️ Svuota</button>
+    <button id="printButton" onclick="stampaLista()">🖨️ Print</button>
+    <button id="exportCSV" onclick="esportaCSV()">📄 CSV export</button>
+    <button id="emptyButton" onclick="svuotaLista()">🗑️ Empty</button>
 </div>
 
 <script>
@@ -974,7 +974,7 @@ function scegliModelloRicambio(codice, modelliStr){
     const modelli = modelliStr.split(/\s+/).filter(m => m.length > 0);
 
     if(modelli.length === 0){
-        alert("Nessun modello compatibile indicato per questo ricambio.");
+        alert("No compatible model indicated for this part");
         return;
     }
 
@@ -989,14 +989,14 @@ function scegliModelloRicambio(codice, modelliStr){
     if(existing) existing.remove();
 
     let html = `<div id="popupModelli" class="popupModelli">
-        <h3>Apri esploso per ${codice}</h3>
-        <p>Seleziona il modello:</p>`;
+        <h3>Open diagram view for ${codice}</h3>
+        <p>Select the model:</p>`;
 
     modelli.forEach(m => {
         html += `<button onclick="apriEsplosoPerModello('${codice}', '${m}')">${m}</button>`;
     });
 
-    html += `<button onclick="chiudiPopupModelli()">Chiudi</button></div>`;
+    html += `<button onclick="chiudiPopupModelli()">Close</button></div>`;
 
     document.body.insertAdjacentHTML("beforeend", html);
 }
@@ -1011,7 +1011,7 @@ function apriEsplosoPerModello(codice, modelloVisibile){
     // modelloVisibile es: "MY23"
     const codiceInterno = REVERSE_MODEL_MAP[modelloVisibile];
     if(!codiceInterno){
-        alert("Modello non riconosciuto: " + modelloVisibile);
+        alert("Unknown model: " + modelloVisibile);
         return;
     }
 
@@ -1068,7 +1068,7 @@ async function mostraSinotticiPerModello(modello){
 
     const sinottici=[...new Set(tabella.map(p=>p.esploso).filter(x=>x))];
 
-    let html="<h3 id='selectSinottico'>Seleziona un sinottico</h3>";
+    let html="<h3 id='selectSinottico'>Select a diagram</h3>";
     html+=`<div class="sinotticoGrid">`;
 
     sinottici.forEach(s=>{
@@ -1207,15 +1207,15 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
     let html = `
         <button onclick="mostraEsploso('${codiceEsploso}', '${codiceEsploso}', null)"
                 style="padding:10px 20px;font-size:18px;margin-bottom:10px;">
-            🔙 Torna al sinottico
+            🔙 Back to diagram
         </button>
 
         <button onclick="mostraSinottici()"
                 style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
-            🗂️ Torna alla griglia sinottici
+            🗂️ Back to diagram grid
         </button>
 
-        <h2>Ricambi del sinottico ${nomeVisibile}</h2>
+        <h2>Parts of the diagram ${nomeVisibile}</h2>
     `;
 
     html += "<table><tr><th>Aggiungi</th><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
@@ -1248,7 +1248,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
 /* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
-        alert("Nessun esploso disponibile");
+        alert("No diagram available");
         return;
     }
 
@@ -1366,7 +1366,7 @@ body{
 
 <button onclick="if(window.opener){window.opener.mostraSinottici();} window.close();"
         style="padding:10px 20px;font-size:18px;margin-bottom:20px;">
-    🔙 Torna alla griglia
+    🔙 Back to grid
 </button>
 
 <div id="container">
@@ -1385,7 +1385,7 @@ body{
     border-radius: 6px;
     z-index: 9999;
 ">
-    <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
+    <h3>📦 Parts list (<span id="listaCount">0</span>)</h3>
 
     <!-- Nome lista -->
     <div id="nomeListaLabel" style="font-weight:bold; margin-bottom:10px;"></div>
@@ -1511,7 +1511,7 @@ function stampaLista(){
     let html = `
         <html>
         <head>
-            <title>${nomeLista || "Lista ricambi"}</title>
+            <title>${nomeLista || "Parts list"}</title>
             <style>
                 body{ font-family:Arial; padding:20px; }
                 table{ width:100%; border-collapse:collapse; }
@@ -1520,9 +1520,9 @@ function stampaLista(){
             </style>
         </head>
         <body>
-            <h2>${nomeLista || "Lista ricambi"}</h2>
+            <h2>${nomeLista || "Parts list"}</h2>
             <table>
-                <tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>
+                <tr><th>Code</th><th>Description</th><th>Quantity</th></tr>
     `;
 
     listaRicambi.forEach(p=>{

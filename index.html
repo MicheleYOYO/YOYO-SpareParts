@@ -334,15 +334,15 @@ table td {
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
-    <h3 id="partsListTitle">📦 <span id="partsListTitleText"></span> (<span id="listaCount">0</span>)</h3>
+    <h3 id="partsListTitle">📦 Parts list (<span id="listaCount">0</span>)</h3>
     <!-- Nome lista (VIN + data + ora) -->
     <div id="nomeListaLabel"></div>
 
     <div id="listaContenuto"></div>
     <hr>
-    <button id="printButton">🖨️ <span id="printButtonText"></span></button>
-<button id="exportCSV">📄 <span id="exportCSVText"></span></button>
-<button id="emptyButton">🗑️ <span id="emptyButtonText"></span></button>
+    <button id="printButton" onclick="stampaLista()">🖨️ Print</button>
+    <button id="exportCSV" onclick="esportaCSV()">📄 CSV export</button>
+    <button id="emptyButton" onclick="svuotaLista()">🗑️ Empty</button>
 </div>
 
 <script>
@@ -421,12 +421,10 @@ function aggiornaTestiPagina(){
     document.getElementById("backHome").innerText = dizionario["BACK_HOME"];
     document.getElementById("catalogTitle").innerText = dizionario["CATALOG_TITLE"];
     document.getElementById("selectSinottico").innerText = dizionario["SELECT_SINOTTICO"];
-
-    // LISTA RICAMBI (corretto)
-    document.getElementById("partsListTitleText").innerText = dizionario["PARTS_LIST"];
-    document.getElementById("printButtonText").innerText = dizionario["PRINT"];
-    document.getElementById("exportCSVText").innerText = dizionario["EXPORT_CSV"];
-    document.getElementById("emptyButtonText").innerText = dizionario["EMPTY"];
+    document.getElementById("partsListTitle").innerText = dizionario["PARTS_LIST"];
+    document.getElementById("printButton").innerText = dizionario["PRINT"];
+    document.getElementById("exportCSV").innerText = dizionario["EXPORT_CSV"];
+    document.getElementById("emptyButton").innerText = dizionario["EMPTY"];
 }
 
 /* ---------------- LISTA RICAMBI ---------------- */

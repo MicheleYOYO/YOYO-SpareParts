@@ -275,7 +275,7 @@ table td {
             onchange="cambiaLingua(this.value)"
             style="font-size:18px; padding:6px 10px; border-radius:6px; cursor:pointer;">
         <option value="IT">🇮🇹 IT</option>
-        <option value="EN">🇬🇧 EN</option>
+        <option value="EN" selected>🇬🇧 EN</option>
     </select>
 </div>
 
@@ -346,7 +346,7 @@ table td {
 </div>
 
 <script>
-    let linguaCorrente = "IT";   // IT o EN
+    let linguaCorrente = "EN";   // IT o EN
     let dizionario = {}; 
 function cambiaLingua(lang){
     linguaCorrente = lang;
@@ -1555,7 +1555,8 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-
+/* 🔥 Imposta lingua EN all'avvio */
+cambiaLingua("EN");
 </script>
 </body>
 </html>

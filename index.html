@@ -298,48 +298,57 @@ table td {
     padding-bottom:10px;
     border-bottom:2px solid #ddd;
 ">
-<h2 id="vinIdent">Identificazione modello tramite VIN</h2>
 
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
-    <label id="vinInsert" for="vinInput" style="font-size:18px;">
-        Inserisci le ultime 6 cifre del VIN:
-    </label>
+    <!-- CONTENITORE FLESSIBILE -->
+    <div style="display:flex; gap:40px; align-items:flex-start;">
 
-    <input type="text" id="vinInput" maxlength="6" 
-           style="padding:6px; font-size:16px; width:120px;">
+        <!-- COLONNA VIN -->
+        <div style="flex:1;">
+            <h2 id="vinIdent">Identificazione modello tramite VIN</h2>
 
-    <button id="vinButton" onclick="identificaModello()" 
-            style="padding:6px 12px; font-size:16px;">
-        Identifica
-    </button>
-</div>
+            <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+                <label id="vinInsert" for="vinInput" style="font-size:18px;">
+                    Inserisci le ultime 6 cifre del VIN:
+                </label>
 
-<p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
-<hr>
+                <input type="text" id="vinInput" maxlength="6" 
+                       style="padding:6px; font-size:16px; width:120px;">
 
+                <button id="vinButton" onclick="identificaModello()" 
+                        style="padding:6px 12px; font-size:16px;">
+                    Identifica
+                </button>
+            </div>
 
+            <p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
+        </div>
 
-<h2 id="searchParts">Ricerca ricambi</h2>
+        <!-- COLONNA RICERCA RICAMBI -->
+        <div style="flex:1;">
+            <h2 id="searchParts">Ricerca ricambi</h2>
 
-<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+            <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+                <input type="text" id="searchInput"
+                       placeholder="Cerca ricambio per codice o nome"
+                       oninput="mostraRicambi()"
+                       style="padding:6px; font-size:16px; width:260px;">
 
-    <input type="text" id="searchInput"
-           placeholder="Cerca ricambio per codice o nome"
-           oninput="mostraRicambi()"
-           style="padding:6px; font-size:16px; width:260px;">
+                <button id="visualSearch"
+                        onclick="mostraSinottici()"
+                        style="padding:6px 12px; font-size:16px;">
+                    🔍 Ricerca visuale
+                </button>
 
-    <button id="visualSearch"
-            onclick="mostraSinottici()"
-            style="padding:6px 12px; font-size:16px;">
-        🔍 Ricerca visuale
-    </button>
+                <button id="backHome"
+                        onclick="tornaAllaHome()"
+                        style="padding:6px 12px; font-size:16px;">
+                    🏠 Home
+                </button>
+            </div>
+        </div>
 
-    <button id="backHome"
-            onclick="tornaAllaHome()"
-            style="padding:6px 12px; font-size:16px;">
-        🏠 Home
-    </button>
-</div>
+    </div> <!-- fine flex -->
+
 </div>
 
 <hr>

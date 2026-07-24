@@ -306,15 +306,26 @@ table td {
         <div style="flex:1;">
             <h2 id="vinIdent" style="margin-top:-20px;">Identificazione modello tramite VIN</h2>
 
-            <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:10px;">
+<div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:10px;">
 
-    <label id="vinInsert" for="vinInput" style="font-size:18px;">
-        Inserisci le ultime 6 cifre del VIN:
-    </label>
+    <!-- RIGA: campo VIN + risultato VIN -->
+    <div style="display:flex; align-items:center; gap:20px;">
 
-    <input type="text" id="vinInput" maxlength="6" 
-           style="padding:6px; font-size:16px; width:120px;">
+        <div style="display:flex; flex-direction:column;">
+            <label id="vinInsert" for="vinInput" style="font-size:18px;">
+                Inserisci le ultime 6 cifre del VIN:
+            </label>
 
+            <input type="text" id="vinInput" maxlength="6" 
+                   style="padding:6px; font-size:16px; width:120px;">
+        </div>
+
+        <!-- QUI appare il modello identificato -->
+        <span id="risultatoVIN" style="font-weight:bold; font-size:18px;"></span>
+
+    </div>
+
+    <!-- Pulsante sotto -->
     <button id="vinButton" onclick="identificaModello()" 
             style="padding:6px 12px; font-size:16px; width:120px;">
         Identifica

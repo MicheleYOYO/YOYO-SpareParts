@@ -327,24 +327,26 @@ table td {
 <div style="flex:1; margin-left:-450px;">
     <h2 id="searchParts" style="margin-top:-20px;">Ricerca ricambi</h2>
 
-    <div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
-        <input type="text" id="searchInput"
-               placeholder="inserisci codice o nome"
-               oninput="mostraRicambi()"
-               style="padding:6px; font-size:16px; width:260px;">
+   <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:10px;">
 
-        <button id="visualSearch"
-                onclick="mostraSinottici()"
-                style="padding:6px 12px; font-size:16px;">
-            🔍 Ricerca visuale
-        </button>
+    <input type="text" id="searchInput"
+           placeholder="Cerca ricambio per codice o nome"
+           oninput="mostraRicambi()"
+           style="padding:6px; font-size:16px; width:260px;">
 
-        <button id="backHome"
-                onclick="tornaAllaHome()"
-                style="padding:6px 12px; font-size:16px;">
-            🏠 Home
-        </button>
-    </div>
+    <button id="visualSearch"
+            onclick="mostraSinottici()"
+            style="padding:6px 12px; font-size:16px; width:260px;">
+        🔍 Ricerca visuale
+    </button>
+
+    <button id="backHome"
+            onclick="tornaAllaHome()"
+            style="padding:6px 12px; font-size:16px; width:260px;">
+        🏠 Home
+    </button>
+
+</div>
 </div>
 
 </div>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>YOYO UNIQUE SPARE PARTS CATALOGUE</title>
 
 <style>
-body{font-family:Arial;margin:120px 20px 20px 20px;}
+body{font-family:Arial;margin:20px;}
 input,button{padding:6px;font-size:16px;}
 table{border-collapse:collapse;width:100%;margin-top:20px;}
 th,td{border:1px solid #333;padding:8px;}
@@ -100,11 +100,11 @@ th{background:#eee;}
     cursor:pointer;
     z-index:11;
 }
-    
+
 /* BOX LISTA RICAMBI */
 #listaBox{
     position:fixed;
-    top:60px;
+    top:20px;
     right:20px;
     width:350px;
     background:#fff;
@@ -265,145 +265,118 @@ table td {
 </head>
 
 <body>
-
-<div style="
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    gap:20px;
-    margin-bottom:20px;
+<div id="langBox" style="
+    position:fixed;
+    top:20px;
+    right:420px;
+    z-index:99999;
 ">
-    <h1 id="titleMain" style="margin:0;">
-        YOYO UNIQUE SPARE PARTS CATALOGUE
-    </h1>
-
-    <select id="linguaSelect" 
+    <select id="linguaSelect"
             onchange="cambiaLingua(this.value)"
             style="font-size:18px; padding:6px 10px; border-radius:6px; cursor:pointer;">
         <option value="IT">🇮🇹 IT</option>
-        <option value="EN">🇬🇧 EN</option>
+        <option value="EN" selected>🇬🇧 EN</option>
     </select>
+</div>
+
+<div style="display:flex; align-items:center; justify-content:flex-start; gap:20px; margin-bottom:20px;">
+
+    <h1 id="titleMain" style="margin:0;">YOYO UNIQUE SPARE PARTS CATALOGUE</h1>
 
 </div>
 
-<div id="topBar" style="
-    position:sticky;
-    top:120px;
-    background:white;
-    z-index:9999;
-    padding-bottom:10px;
-    border-bottom:2px solid #ddd;
-">
+<h2 id="vinIdent">Model identification via VIN</h2>
 
-    <!-- CONTENITORE FLESSIBILE -->
-    <div style="display:flex; gap:40px; align-items:flex-start;">
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
+    <label id="vinInsert" for="vinInput" style="font-size:18px;">
+        Enter the last 6 digits of the VIN:
+    </label>
 
-        <!-- COLONNA VIN -->
-        <div style="flex:1;">
-            <h2 id="vinIdent" style="margin-top:-20px;">Identificazione modello tramite VIN</h2>
+    <input type="text" id="vinInput" maxlength="6" 
+           style="padding:6px; font-size:16px; width:120px;">
 
-<div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:10px;">
-
-    <!-- RIGA: campo VIN + risultato VIN -->
-<div style="display:flex; align-items:flex-end; gap:10px;">
-
-    <div style="display:flex; flex-direction:column;">
-        <label id="vinInsert" for="vinInput" style="font-size:18px;">
-            Inserisci le ultime 6 cifre del VIN:
-        </label>
-
-        <input type="text" id="vinInput" maxlength="6" 
-               style="padding:6px; font-size:16px; width:120px;">
-    </div>
-
-    <span id="risultatoVIN" 
-          style="font-weight:bold; font-size:16px; padding-bottom:4px; margin-left:-120px;">
-    </span>
-
-</div>
-
-    <!-- Pulsante sotto -->
     <button id="vinButton" onclick="identificaModello()" 
-            style="padding:6px 12px; font-size:16px; width:135px;">
-        Identifica
+            style="padding:6px 12px; font-size:16px;">
+        Identify
     </button>
-
 </div>
 
-            <p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
-        </div>
+<p id="risultatoVIN" style="font-weight:bold; margin-top:10px;"></p>
+<hr>
 
-       <!-- COLONNA RICERCA RICAMBI -->
-<div style="flex:1; margin-left:-400px;">
-    <h2 id="searchParts" style="margin-top:-20px;">Ricerca ricambi</h2>
+<h2 id="searchParts">Parts search</h2>
 
-   <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; margin-bottom:10px;">
+<div style="display:flex; align-items:center; gap:15px; margin-bottom:10px;">
 
     <input type="text" id="searchInput"
-       placeholder="Cerca ricambio per codice o nome"
-       oninput="mostraRicambi()"
-       style="padding:6px; font-size:16px; min-width:260px; max-width:260px; width:260px;">
-
+           placeholder="Search by code or name"
+           oninput="mostraRicambi()"
+           style="padding:6px; font-size:16px; width:260px;">
 
     <button id="visualSearch"
             onclick="mostraSinottici()"
-            style="padding:6px 12px; font-size:16px; width:275px;">
-        🔍 Ricerca visuale
+            style="padding:6px 12px; font-size:16px;">
+        🔍 Visual search
     </button>
 
     <button id="backHome"
             onclick="tornaAllaHome()"
-            style="padding:6px 12px; font-size:16px; width:275px;">
+            style="padding:6px 12px; font-size:16px;">
         🏠 Home
     </button>
-
-</div>
-</div>
 
 </div>
 
 <hr>
 
-
-<h2>Catalogo Ricambi</h2>
-<div id="partsBox" style="
-    max-height: calc(100vh - 300px);
-    overflow-y: auto;
-">
-</div>
-
+<h2 id="catalogTitle">Parts catalogue</h2>
+<div id="partsBox"></div>
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
-    <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
-
+    <h3 id="partsListTitle">📦 Parts list (<span id="listaCount">0</span>)</h3>
     <!-- Nome lista (VIN + data + ora) -->
     <div id="nomeListaLabel"></div>
 
     <div id="listaContenuto"></div>
     <hr>
-    <button onclick="stampaLista()">🖨️ Stampa</button>
-    <button onclick="esportaCSV()">📄 Esporta CSV</button>
-    <button onclick="svuotaLista()">🗑️ Svuota</button>
+    <button id="printButton" onclick="stampaLista()">🖨️ Print</button>
+    <button id="exportCSV" onclick="esportaCSV()">📄 CSV export</button>
+    <button id="emptyButton" onclick="svuotaLista()">🗑️ Empty</button>
 </div>
 
 <script>
-    let linguaCorrente = "IT";   // IT o EN
+    let linguaCorrente = "EN";   // IT o EN
+    let dizionario = {}; 
 function cambiaLingua(lang){
     linguaCorrente = lang;
-    caricaTuttiINomiSinottici().then(()=>{
-        aggiornaLinguaUI();
-    });
+
+Promise.all([
+    caricaDizionario(),
+    caricaTuttiINomiSinottici()
+]).then(()=>{
+    caricaParts();          // generale
+    caricaPartsMY22();      // MY22
+    caricaPartsMY2205();    // MY2205
+    caricaPartsMY23();      // MY23
+    caricaPartsMY24();      // MY24
+
+    aggiornaTestiPagina();
+    aggiornaLinguaUI();
+});
+
 }
 
+
 function aggiornaLinguaUI(){
-    // Se sei nella griglia sinottici
+
+    // Se sei nella griglia sinottici → ricarica sinottici
     if (document.querySelector('.sinotticoGrid')) {
-        mostraSinottici();
+        mostraSinotticiPerModello(modelloCorrente);
         return;
     }
 
-    // Se sei dentro un sinottico aperto
+    // Se sei dentro un sinottico aperto → ricarica ricambi del sinottico
     const titoloSin = document.querySelector('h2');
     if (titoloSin && titoloSin.textContent.includes("Ricambi del sinottico")) {
         const esploso = titoloSin.textContent.replace("Ricambi del sinottico ", "").trim();
@@ -411,16 +384,48 @@ function aggiornaLinguaUI(){
         return;
     }
 
-    // Se sei nella tabella ricambi
+    // Se sei in un esploso → ricarica esploso
+    const esplosoImg = document.querySelector('.explosoImg');
+    if (esplosoImg) {
+        const file = esplosoImg.dataset.file;
+        const codice = esplosoImg.dataset.codice;
+        const idRicambio = esplosoImg.dataset.idricambio || null;
+
+        mostraEsploso(file, codice, idRicambio);
+        return;
+    }
+
+    // Se sei nella tabella ricambi → ricarica tabella
     if (document.querySelector('#partsBox table')) {
         mostraRicambi();
         return;
     }
 
-    // Se sei nella home
+    // Se sei nella lista ricambi → ricarica lista
+    if (document.getElementById("listaRicambi")) {
+        renderListaRicambi();
+        return;
+    }
+
+    // Se sei nella home → ricarica ricambi generali
     mostraRicambi();
 }
 
+function aggiornaTestiPagina(){
+    document.getElementById("titleMain").innerText = dizionario["TITLE_MAIN"];
+    document.getElementById("vinIdent").innerText = dizionario["VIN_IDENT"];
+    document.getElementById("vinInsert").innerText = dizionario["VIN_INSERT"];
+    document.getElementById("vinButton").innerText = dizionario["VIN_BUTTON"];
+    document.getElementById("searchParts").innerText = dizionario["SEARCH_PARTS"];
+    document.getElementById("visualSearch").innerText = dizionario["VISUAL_SEARCH"];
+    document.getElementById("backHome").innerText = dizionario["BACK_HOME"];
+    document.getElementById("catalogTitle").innerText = dizionario["CATALOG_TITLE"];
+    document.getElementById("selectSinottico").innerText = dizionario["SELECT_SINOTTICO"];
+    document.getElementById("partsListTitle").innerText = dizionario["PARTS_LIST"];
+    document.getElementById("printButton").innerText = dizionario["PRINT"];
+    document.getElementById("exportCSV").innerText = dizionario["EXPORT_CSV"];
+    document.getElementById("emptyButton").innerText = dizionario["EMPTY"];
+}
 
 /* ---------------- LISTA RICAMBI ---------------- */
 let listaRicambi = [];
@@ -506,11 +511,6 @@ function renderListaRicambi(){
 }
 
 caricaLista();
-function rimuoviDaLista(codice){
-    listaRicambi = listaRicambi.filter(x => x.codice !== codice);
-    salvaLista();
-    renderListaRicambi();
-}
 
 function incrementaDaLista(codice){
     const item = listaRicambi.find(x => x.codice === codice);
@@ -582,7 +582,7 @@ function identificaModello(){
     const vinInput=document.getElementById("vinInput").value.trim();
     if(!vinInput){
         modelloCorrente="";
-        document.getElementById("risultatoVIN").innerText="Inserisci un VIN valido";
+        document.getElementById("risultatoVIN").innerText = dizionario["VIN_INVALID"];
         mostraRicambi();
         return;
     }
@@ -598,11 +598,11 @@ function identificaModello(){
     }
 
    if(!modelloCorrente){
-    document.getElementById("risultatoVIN").innerText = "VIN non trovato nei range";
+    document.getElementById("risultatoVIN").innerText = dizionario["VIN_NOT_FOUND"];
 } else {
     const modelloMY = MODEL_MAP[modelloCorrente] || "Modello sconosciuto";
     document.getElementById("risultatoVIN").innerText =
-        "Modello identificato: " + modelloCorrente + " (" + modelloMY + ")";
+    dizionario["VIN_IDENTIFIED"] + " " + modelloCorrente + " (" + modelloMY + ")";
 
 
         /* GENERA NOME LISTA = VIN + data + ora */
@@ -622,43 +622,55 @@ function identificaModello(){
 }
 
 /* ---------------- PARTS GENERALE ---------------- */
-let partsTable=[];
-const PARTS_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts.csv";
+let partsTable = [];
+
+function PARTS_URL(){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts${suff}.csv`;
+}
 
 async function caricaParts(){
-    const r=await fetch(PARTS_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+    partsTable = []; // <-- fondamentale
+
+    const r = await fetch(PARTS_URL());
+    if(!r.ok) return;
+
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
     for(let i=1;i<righe.length;i++){
-        const cols=righe[i].split(",");
-partsTable.push({
-    codice: cols[0].trim(),
-    descrizione: cols[1].trim(),
-    quantita: cols[2].trim(),
-    id: (cols[3] || "").trim(),
-    modelli: (cols[3] || "")
-        .replace(/\*/g, "")
-        .trim()
-        .split(/\s+/)
-        .map(m => m === "MY22.5" ? "MY2205" : m)
-        .filter(m => m.length > 0),
-    esploso: (cols[5] || "").trim()
-});
+        const cols = righe[i].split(",");
 
+        partsTable.push({
+            codice: cols[0].trim(),
+            descrizione: cols[1].trim(),
+            quantita: cols[2].trim(),
+
+            // Le colonne non esistono nel CSV generale → le mettiamo vuote
+            id: "",
+            modelli: [],
+            esploso: ""
+        });
     }
+
     mostraRicambi();
 }
+
 caricaParts();
 
 /* ---------------- PARTS MY22 ---------------- */
 let partsTableMY22=[];
-const PARTS_MY22_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22.csv";
+
+function PARTS_MY22_URL(){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY22${suff}.csv`;
+}
 
 async function caricaPartsMY22(){
-    const r=await fetch(PARTS_MY22_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+    partsTableMY22 = [];
+    const r = await fetch(PARTS_MY22_URL());
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
     for(let i=1;i<righe.length;i++){
         const cols=righe[i].split(",");
@@ -672,18 +684,25 @@ async function caricaPartsMY22(){
         });
     }
 }
+
 caricaPartsMY22();
+
 
 /* ---------------- PARTS MY2205 ---------------- */
 let partsTableMY2205=[];
-const PARTS_MY2205_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205.csv";
+
+function PARTS_MY2205_URL(){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY2205${suff}.csv`;
+}
 
 async function caricaPartsMY2205(){
+    partsTableMY2205 = [];
     try{
-        const r=await fetch(PARTS_MY2205_URL);
+        const r = await fetch(PARTS_MY2205_URL());
         if(!r.ok) return;
-        const t=await r.text();
-        const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+        const t = await r.text();
+        const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
         for(let i=1;i<righe.length;i++){
             const cols=righe[i].split(",");
@@ -698,16 +717,23 @@ async function caricaPartsMY2205(){
         }
     }catch(e){}
 }
+
 caricaPartsMY2205();
+
 
 /* ---------------- PARTS MY23 ---------------- */
 let partsTableMY23=[];
-const PARTS_MY23_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23.csv";
+
+function PARTS_MY23_URL(){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY23${suff}.csv`;
+}
 
 async function caricaPartsMY23(){
-    const r=await fetch(PARTS_MY23_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+    partsTableMY23 = [];
+    const r = await fetch(PARTS_MY23_URL());
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
     for(let i=1;i<righe.length;i++){
         const cols=righe[i].split(",");
@@ -721,16 +747,23 @@ async function caricaPartsMY23(){
         });
     }
 }
+
 caricaPartsMY23();
+
 
 /* ---------------- PARTS MY24 ---------------- */
 let partsTableMY24=[];
-const PARTS_MY24_URL="https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24.csv";
+
+function PARTS_MY24_URL(){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/partsMY24${suff}.csv`;
+}
 
 async function caricaPartsMY24(){
-    const r=await fetch(PARTS_MY24_URL);
-    const t=await r.text();
-    const righe=t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+    partsTableMY24 = [];
+    const r = await fetch(PARTS_MY24_URL());
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
 
     for(let i=1;i<righe.length;i++){
         const cols=righe[i].split(",");
@@ -744,19 +777,58 @@ async function caricaPartsMY24(){
         });
     }
 }
+
 caricaPartsMY24();
+
     
-function urlNomeSinottici(model){
+function urlnomeSinottici(model){
     const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
     return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/nomeSinottici${model}${suff}.csv`;
 }
 
-    
+ async function caricaDizionario(){
+    const url = "https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/main/Lingue.csv";
+    const r = await fetch(url);
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
+    const intestazione = righe[0].split(",");
+    const idxLingua = intestazione.indexOf(linguaCorrente);
+
+    dizionario = {};
+
+    for(let i=1; i<righe.length; i++){
+        const campi = righe[i].split(",");
+        const key = campi[0];
+        const testo = campi[idxLingua];
+        dizionario[key] = testo;
+    }
+}
+function urlPartsModello(model){
+    const suff = (linguaCorrente === "EN") ? "_EN" : "_IT";
+    return `https://raw.githubusercontent.com/MicheleYOYO/YOYO-SpareParts/refs/heads/main/Parts${model}${suff}.csv`;
+}
+async function caricaPartsModello(model){
+    const url = urlPartsModello(model);
+    const r = await fetch(url);
+    const t = await r.text();
+    const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
+
+    let lista = [];
+
+    for(let i=1; i<righe.length; i++){
+        const campi = righe[i].split(",");
+        lista.push(campi);
+    }
+
+    return lista;
+}
+   
 /* ---------------- NOME SINOTTICI MY24 ---------------- */
 let nomeSinotticiMY24 = {};
 
-async function caricaNomeSinotticiMY24(){
-    const r = await fetch(urlNomeSinottici("MY24"));
+async function caricanomeSinotticiMY24(){
+    const r = await fetch(urlnomeSinottici("MY24"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY24 = {};
@@ -769,8 +841,8 @@ async function caricaNomeSinotticiMY24(){
 /* ---------------- NOME SINOTTICI MY23 ---------------- */
 let nomeSinotticiMY23 = {};
 
-async function caricaNomeSinotticiMY23(){
-    const r = await fetch(urlNomeSinottici("MY23"));
+async function caricanomeSinotticiMY23(){
+    const r = await fetch(urlnomeSinottici("MY23"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY23 = {};
@@ -783,8 +855,8 @@ async function caricaNomeSinotticiMY23(){
     /* ---------------- NOME SINOTTICI MY22 ---------------- */
 let nomeSinotticiMY22 = {};
 
-async function caricaNomeSinotticiMY22(){
-    const r = await fetch(urlNomeSinottici("MY22"));
+async function caricanomeSinotticiMY22(){
+    const r = await fetch(urlnomeSinottici("MY22"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY22 = {};
@@ -797,8 +869,8 @@ async function caricaNomeSinotticiMY22(){
 /* ---------------- NOME SINOTTICI MY2205 ---------------- */
 let nomeSinotticiMY2205 = {};
 
-async function caricaNomeSinotticiMY2205(){
-    const r = await fetch(urlNomeSinottici("MY2205"));
+async function caricanomeSinotticiMY2205(){
+    const r = await fetch(urlnomeSinottici("MY2205"));
     const t = await r.text();
     const righe = t.split("\n").map(x=>x.trim()).filter(x=>x.length>0);
     nomeSinotticiMY2205 = {};
@@ -808,10 +880,10 @@ async function caricaNomeSinotticiMY2205(){
     }
 }
 async function caricaTuttiINomiSinottici(){
-    await caricaNomeSinotticiMY24();
-    await caricaNomeSinotticiMY23();
-    await caricaNomeSinotticiMY22();
-    await caricaNomeSinotticiMY2205();
+    await caricanomeSinotticiMY24();
+    await caricanomeSinotticiMY23();
+    await caricanomeSinotticiMY22();
+    await caricanomeSinotticiMY2205();
 }
 caricaTuttiINomiSinottici();
 
@@ -847,7 +919,15 @@ async function caricaCoordinate(file){
 /* ---------------- MOSTRA RICAMBI ---------------- */
 function mostraRicambi(){
     let search=(document.getElementById("searchInput")?.value||"").toLowerCase().trim();
-    let html="<table><tr><th>Codice</th><th>Descrizione</th><th>Quantità</th><th>Modelli compatibili</th><th>Aggiungi</th></tr>";
+
+    let html = `<table>
+        <tr>
+            <th>${dizionario["PARTS_CODE"]}</th>
+            <th>${dizionario["PARTS_DESC"]}</th>
+            <th>${dizionario["PARTS_QTY"]}</th>
+            <th>${dizionario["PARTS_MODELS"]}</th>
+            <th>${dizionario["PARTS_ADD"]}</th>
+        </tr>`;
 
     let tabella=partsTable;
     if(modelloCorrente==="Y01") tabella=partsTableMY22;
@@ -864,37 +944,37 @@ function mostraRicambi(){
         return true;
     });
 
-  filtrati.forEach(p=>{
-    const modelliStr = (p.modelli || []).join(" ");
-    html+=`
+    filtrati.forEach(p=>{
+        const modelliStr = (p.modelli || []).join(" ");
+        html+=`
         <tr onclick="scegliModelloRicambio('${p.codice}', '${modelliStr}')">
             <td>${p.codice}</td>
             <td>${p.descrizione}</td>
             <td>${p.quantita}</td>
             <td>${p.modelli.join(", ")}</td>
             <td>
-    <button class="btnMini" onclick="event.stopPropagation(); decrementaDaLista('${p.codice}')">➖</button>
-    <button class="btnMini" onclick="event.stopPropagation(); aggiungiALista('${p.codice}','${p.descrizione}',1)">➕</button>
-</td>
-
+                <button class="btnMini" onclick="event.stopPropagation(); decrementaDaLista('${p.codice}')">➖</button>
+                <button class="btnMini" onclick="event.stopPropagation(); aggiungiALista('${p.codice}','${p.descrizione}',1)">➕</button>
+            </td>
         </tr>`;
-});
-
+    });
 
     if(filtrati.length===0){
-        html+="<tr><td colspan='5'>Nessun ricambio trovato</td></tr>";
+        html+=`<tr><td colspan="5">${dizionario["NO_PARTS_FOUND"]}</td></tr>`;
     }
 
     html+="</table>";
     document.getElementById("partsBox").innerHTML=html;
 }
+
+
 /* ---------------- SCELTA MODELLO PER RICAMBIO ---------------- */
 function scegliModelloRicambio(codice, modelliStr){
     // modelliStr es: "MY22 MY23 MY24"
     const modelli = modelliStr.split(/\s+/).filter(m => m.length > 0);
 
     if(modelli.length === 0){
-        alert("Nessun modello compatibile indicato per questo ricambio.");
+        alert("No compatible model indicated for this part");
         return;
     }
 
@@ -909,14 +989,14 @@ function scegliModelloRicambio(codice, modelliStr){
     if(existing) existing.remove();
 
     let html = `<div id="popupModelli" class="popupModelli">
-        <h3>Apri esploso per ${codice}</h3>
-        <p>Seleziona il modello:</p>`;
+    <h3>${dizionario["OPEN_DIAGRAM_FOR"]} ${codice}</h3>
+    <p>${dizionario["SELECT_MODEL"]}</p>`;
 
     modelli.forEach(m => {
         html += `<button onclick="apriEsplosoPerModello('${codice}', '${m}')">${m}</button>`;
     });
 
-    html += `<button onclick="chiudiPopupModelli()">Chiudi</button></div>`;
+    html += `<button onclick="chiudiPopupModelli()">${dizionario["CLOSE"]}</button></div>`;
 
     document.body.insertAdjacentHTML("beforeend", html);
 }
@@ -931,7 +1011,7 @@ function apriEsplosoPerModello(codice, modelloVisibile){
     // modelloVisibile es: "MY23"
     const codiceInterno = REVERSE_MODEL_MAP[modelloVisibile];
     if(!codiceInterno){
-        alert("Modello non riconosciuto: " + modelloVisibile);
+        alert("Unknown model: " + modelloVisibile);
         return;
     }
 
@@ -962,7 +1042,7 @@ function apriEsplosoPerModello(codice, modelloVisibile){
 function mostraSinottici(){
     if(!modelloCorrente){
         let html=`
-        <h3>Seleziona il modello per la ricerca visuale</h3>
+        <h3>${dizionario["SELECT_MODEL_VISUAL"]}</h3>
         <button onclick="selezionaModelloVisuale('Y01')" style="padding:10px;font-size:18px;margin-right:20px;">MY22</button>
         <button onclick="selezionaModelloVisuale('Y0205')" style="padding:10px;font-size:18px;margin-right:20px;">MY2205</button>
         <button onclick="selezionaModelloVisuale('Y0210')" style="padding:10px;font-size:18px;margin-right:20px;">MY23</button>
@@ -988,7 +1068,7 @@ async function mostraSinotticiPerModello(modello){
 
     const sinottici=[...new Set(tabella.map(p=>p.esploso).filter(x=>x))];
 
-    let html="<h3>Seleziona un sinottico</h3>";
+    let html=`<h3 id="selectSinottico">${dizionario["SELECT_SINOTTICO"]}</h3>`;
     html+=`<div class="sinotticoGrid">`;
 
     sinottici.forEach(s=>{
@@ -1023,8 +1103,16 @@ else if (MODEL_MAP[modello] === "MY2205" && nomeSinotticiMY2205[s]) {
     document.getElementById("partsBox").innerHTML=html;
 
     sinottici.forEach(s=>{
+    const img = document.getElementById("img-"+s);
+
+    if (!img) return;
+
+    if (img.complete) {
         inizializzaMiniaturaSinottico(s);
-    });
+    } else {
+        img.onload = () => inizializzaMiniaturaSinottico(s);
+    }
+});
 }
 
 /* ---------------- CERCHI + TOOLTIP + AGGIUNTA ALLA LISTA ---------------- */
@@ -1038,10 +1126,12 @@ async function inizializzaMiniaturaSinottico(sinottico){
     const container = document.getElementById("box-"+sinottico);
     if(!container) return;
 
-    const ricambi = partsTableMY22
-        .concat(partsTableMY2205)
-        .concat(partsTableMY23)
-        .concat(partsTableMY24);
+    let ricambi = [];
+
+if (modelloCorrente === "Y01") ricambi = partsTableMY22;
+else if (modelloCorrente === "Y0205") ricambi = partsTableMY2205;
+else if (modelloCorrente === "Y0210") ricambi = partsTableMY23;
+else if (modelloCorrente === "Y0230") ricambi = partsTableMY24;
 
     function disegna(){
         const displayedW = img.clientWidth;
@@ -1116,17 +1206,17 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
 
     let html = `
         <button onclick="mostraEsploso('${codiceEsploso}', '${codiceEsploso}', null)"
-                style="padding:10px 20px;font-size:18px;margin-bottom:10px;">
-            🔙 Torna al sinottico
-        </button>
+        style="padding:10px 20px;font-size:18px;margin-bottom:10px;">
+    🔙 ${dizionario["BACK_TO_DIAGRAM"]}
+</button>
 
-        <button onclick="mostraSinottici()"
-                style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
-            🗂️ Torna alla griglia sinottici
-        </button>
+<button onclick="mostraSinottici()"
+        style="padding:10px 20px;font-size:18px;margin-left:10px;margin-bottom:20px;">
+    🗂️ ${dizionario["BACK_TO_GRID"]}
+</button>
 
-        <h2>Ricambi del sinottico ${nomeVisibile}</h2>
-    `;
+<h2>${dizionario["PARTS_OF_DIAGRAM"]} ${nomeVisibile}</h2>
+`;
 
     html += "<table><tr><th>Aggiungi</th><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>";
 
@@ -1158,7 +1248,7 @@ function mostraRicambiSinottico(codiceEsploso, evidenziaId = null){
 /* ---------------- MOSTRA ESPLOSO (FINESTRA DEDICATA) ---------------- */
 async function mostraEsploso(file, codice, idRicambio){
     if(!file){
-        alert("Nessun esploso disponibile");
+        alert("No diagram available");
         return;
     }
 
@@ -1276,7 +1366,7 @@ body{
 
 <button onclick="if(window.opener){window.opener.mostraSinottici();} window.close();"
         style="padding:10px 20px;font-size:18px;margin-bottom:20px;">
-    🔙 Torna alla griglia
+    🔙 Back to grid
 </button>
 
 <div id="container">
@@ -1295,23 +1385,24 @@ body{
     border-radius: 6px;
     z-index: 9999;
 ">
-    <h3>📦 Lista ricambi (<span id="listaCount">0</span>)</h3>
 
-    <!-- Nome lista -->
-    <div id="nomeListaLabel" style="font-weight:bold; margin-bottom:10px;"></div>
+    <h3>${dizionario["PARTS_LIST"]} (<span id="listaCount">0</span>)</h3>
 
-    <!-- CONTENUTO LISTA (OBBLIGATORIO!) -->
-    <div id="listaPopupContenuto" style="
-        max-height: 90vh;
-        overflow-y: auto;
-        margin-top: 10px;
-    "></div>
+<!-- Nome lista -->
+<div id="nomeListaLabel" style="font-weight:bold; margin-bottom:10px;"></div>
 
-    <hr>
+<!-- CONTENUTO LISTA (OBBLIGATORIO!) -->
+<div id="listaPopupContenuto" style="
+    max-height: 90vh;
+    overflow-y: auto;
+    margin-top: 10px;
+"></div>
 
-    <button onclick="stampaLista()">🖨️ Stampa</button>
-    <button onclick="esportaCSV()">📄 Esporta CSV</button>
-    <button onclick="svuotaLista()">🗑️ Svuota</button>
+<hr>
+
+<button onclick="stampaLista()">🖨️ ${dizionario["PRINT"]}</button>
+<button onclick="esportaCSV()">📄 ${dizionario["EXPORT_CSV"]}</button>
+<button onclick="svuotaLista()">🗑️ ${dizionario["EMPTY"]}</button>
 </div>
 
 
@@ -1416,12 +1507,13 @@ img.onload = function(){
 win.onload = () => {
     if (win.aggiornaListaPopup) win.aggiornaListaPopup();
 };    
+
 /* ---------------- STAMPA LISTA ---------------- */
 function stampaLista(){
     let html = `
         <html>
         <head>
-            <title>${nomeLista || "Lista ricambi"}</title>
+            <title>${nomeLista || "Parts list"}</title>
             <style>
                 body{ font-family:Arial; padding:20px; }
                 table{ width:100%; border-collapse:collapse; }
@@ -1430,9 +1522,9 @@ function stampaLista(){
             </style>
         </head>
         <body>
-            <h2>${nomeLista || "Lista ricambi"}</h2>
+            <h2>${nomeLista || "Parts list"}</h2>
             <table>
-                <tr><th>Codice</th><th>Descrizione</th><th>Quantità</th></tr>
+                <tr><th>Code</th><th>Description</th><th>Quantity</th></tr>
     `;
 
     listaRicambi.forEach(p=>{
@@ -1450,7 +1542,6 @@ function stampaLista(){
         </body>
         </html>
     `;
-
     const win = window.open("", "_blank");
     win.document.write(html);
     win.document.close();
@@ -1465,7 +1556,8 @@ function tornaAllaHome(){
     document.getElementById("risultatoVIN").innerText="";
     mostraRicambi();
 }
-
+/* 🔥 Imposta lingua EN all'avvio */
+cambiaLingua("EN");
 </script>
 </body>
 </html>

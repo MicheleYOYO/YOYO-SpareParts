@@ -22,7 +22,7 @@ PARTS_DESC,Descrizione,Description
 PARTS_QTY,Quantità,Qty
 PARTS_MODELS,Modelli compatibili,Compatible models
 PARTS_ADD,aggiungi,add
-NO_PARTS_FOUND,nesseun ricambio trovato,no part found
+NO_PARTS_FOUND,nessun ricambio trovato,No part found
 VIN_IDENTIFIED,Modello identificato:,Model identified:
 VIN_INVALID,Inserisci un VIN valido,Enter a valid VIN
 VIN_NOT_FOUND,VIN non trovato nei range,VIN not found in ranges

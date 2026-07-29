@@ -17,3 +17,9 @@ COL_DESC,Descrizione,Description
 COL_QTY,Quantità,Qty
 COL_MODELS,Modelli compatibili,Compatible models
 COL_ACTIONS,Azioni,Actions
+PARTS_CODE,Codice,Code
+PARTS_DESC,Descrizione,Description
+PARTS_QTY,Quantità,Qty
+PARTS_MODELS,Modelli compatibili,Compatible models
+PARTS_ADD,aggiungi,add
+NO_PARTS_FOUND,nesseun ricambio trovato,no part found

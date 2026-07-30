@@ -329,20 +329,22 @@ table td {
 
 <hr>
 
-<h2 id="catalogTitle">Parts catalogue</h2>
+<h2 id="catalogTitle"><span id="catalogTitleText"></span></h2>
 <div id="partsBox"></div>
 
 <!-- BOX LISTA RICAMBI -->
 <div id="listaBox">
-    <h3 id="partsListTitle">📦 Parts list (<span id="listaCount">0</span>)</h3>
+    <h3 id="partsListTitle">
+        📦 <span id="partsListTitleText"></span> (<span id="listaCount">0</span>)
+    </h3>
     <!-- Nome lista (VIN + data + ora) -->
     <div id="nomeListaLabel"></div>
 
     <div id="listaContenuto"></div>
     <hr>
-    <button id="printButton" onclick="stampaLista()">🖨️ Print</button>
-    <button id="exportCSV" onclick="esportaCSV()">📄 CSV export</button>
-    <button id="emptyButton" onclick="svuotaLista()">🗑️ Empty</button>
+    <button id="printButton" onclick="stampaLista()">🖨️ <span id="printButtonText"></span></button>
+    <button id="exportCSV" onclick="esportaCSV()">📄 <span id="exportCSVText"></span></button>
+    <button id="emptyButton" onclick="svuotaLista()">🗑️ <span id="emptyButtonText"></span></button>
 </div>
 
 <script>
